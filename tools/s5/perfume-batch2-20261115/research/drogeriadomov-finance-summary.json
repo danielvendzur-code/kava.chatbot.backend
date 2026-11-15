@@ -1,0 +1,123 @@
+{
+  "slug": "drogeriadomov",
+  "ico": "51468221",
+  "at": "2026-11-15T14:54:21.468281+00:00",
+  "operator": [
+    [
+      [
+        {
+          "value": "IMD BRAND s.r.o.",
+          "validFrom": "2018-06-21"
+        },
+        {
+          "value": "Alanig s.r.o.",
+          "validFrom": "2018-03-15",
+          "validTo": "2018-06-20"
+        }
+      ],
+      null
+    ]
+  ],
+  "unit": 1762002,
+  "statement": 6854590,
+  "reports": [
+    {
+      "id": 10133278,
+      "template": 699,
+      "tables": [
+        [
+          {
+            "sk": "Strana aktív",
+            "en": "Assets"
+          },
+          [
+            "1979648",
+            "43348",
+            "1936300",
+            "1641607",
+            "57841",
+            "41559",
+            "16282",
+            "20127",
+            "2032",
+            "2032",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ],
+        [
+          {
+            "sk": "Strana pasív",
+            "en": "Liabilities and equity"
+          },
+          [
+            "1936300",
+            "1641607",
+            "980358",
+            "856117",
+            "5000",
+            "5000",
+            "5000",
+            "5000",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ],
+        [
+          {
+            "sk": "Výkaz ziskov a strát",
+            "en": "Income statement"
+          },
+          [
+            "11440144",
+            "12244652",
+            "11440135",
+            "12241850",
+            "11439545",
+            "12239452",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      ],
+      "attachments": [
+        {
+          "id": 12509292,
+          "meno": "Účtovná závierka PODindiv..PDF",
+          "velkostPrilohy": 826886,
+          "pocetStran": 0,
+          "jazyk": "SK",
+          "digest": "cfc05e9a792571588c05f573ee2b3f6cd3d51a6c1a968d614c330600ca3e66bf",
+          "mimeType": "application/pdf"
+        },
+        {
+          "id": 12509293,
+          "meno": "POD_2120716081_IR_2025_4709577_6126411.pdf",
+          "velkostPrilohy": 440936,
+          "pocetStran": 12,
+          "jazyk": "SLK",
+          "digest": "ce9c55d8a5cd3cda661fa24a38d8ffd954b3e3b3da51f2a7f0c577253b0e3cf8",
+          "mimeType": "application/pdf"
+        }
+      ]
+    }
+  ]
+}

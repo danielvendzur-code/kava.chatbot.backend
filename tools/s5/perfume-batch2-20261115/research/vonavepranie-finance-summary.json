@@ -1,0 +1,123 @@
+{
+  "slug": "vonavepranie",
+  "ico": "44492197",
+  "at": "2026-11-15T14:44:49.126925+00:00",
+  "operator": [
+    [
+      [
+        {
+          "value": "HAPPY NAILS, s.r.o.",
+          "validFrom": "2008-11-11",
+          "validTo": "2009-06-26"
+        },
+        {
+          "value": "PRO NAILS, s.r.o.",
+          "validFrom": "2009-06-27"
+        }
+      ],
+      null
+    ]
+  ],
+  "unit": 573076,
+  "statement": 6854567,
+  "reports": [
+    {
+      "id": 10133213,
+      "template": 699,
+      "tables": [
+        [
+          {
+            "sk": "Strana aktív",
+            "en": "Assets"
+          },
+          [
+            "120760",
+            "35883",
+            "84877",
+            "89829",
+            "38789",
+            "35883",
+            "2906",
+            "1885",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ],
+        [
+          {
+            "sk": "Strana pasív",
+            "en": "Liabilities and equity"
+          },
+          [
+            "84877",
+            "89829",
+            "74910",
+            "68060",
+            "6639",
+            "6639",
+            "6639",
+            "6639",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "44518",
+            "44518"
+          ]
+        ],
+        [
+          {
+            "sk": "Výkaz ziskov a strát",
+            "en": "Income statement"
+          },
+          [
+            "389369",
+            "447667",
+            "389054",
+            "447013",
+            "388850",
+            "445833",
+            "",
+            "",
+            "81",
+            "1150",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      ],
+      "attachments": [
+        {
+          "id": 12509193,
+          "meno": "Účtovná závierka PODindiv..PDF",
+          "velkostPrilohy": 823344,
+          "pocetStran": 0,
+          "jazyk": "SK",
+          "digest": "dc0ab9409a174a592cd72f0c48d068284280e362af0ee47ed930021ea43ba12b",
+          "mimeType": "application/pdf"
+        },
+        {
+          "id": 12509194,
+          "meno": "POD_2022712901_IR_2025_4709907_6126793.pdf",
+          "velkostPrilohy": 439546,
+          "pocetStran": 12,
+          "jazyk": "SLK",
+          "digest": "40ad5f267784da1c921e23607fc5918d5c52dff29dfd452b61d3ff3e0c591062",
+          "mimeType": "application/pdf"
+        }
+      ]
+    }
+  ]
+}

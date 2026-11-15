@@ -1,0 +1,214 @@
+{
+  "commit": "c89c39dab76672b5350ed0e7b5cc0e27173e90cb",
+  "scope": "Reserved isolated company packages; unchanged c9core; sourceIDmock only, not integrated/Preview",
+  "coreUnchanged": true,
+  "paidCalls": 0,
+  "companies": {
+    "dews": {
+      "leaves": [
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "1"
+          },
+          "id": "1",
+          "url": "https://www.dews.sk/passion_no_1/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "5"
+          },
+          "id": "5",
+          "url": "https://www.dews.sk/fresh-wind-no--5/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "depth",
+            "fragranceProfile": "2"
+          },
+          "id": "2",
+          "url": "https://www.dews.sk/reve-de-voyage-no--2/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "depth",
+            "fragranceProfile": "6"
+          },
+          "id": "6",
+          "url": "https://www.dews.sk/jewel_no_6/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "herbs",
+            "fragranceProfile": "3"
+          },
+          "id": "3",
+          "url": "https://www.dews.sk/wildflower_no_3/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "herbs",
+            "fragranceProfile": "4"
+          },
+          "id": "4",
+          "url": "https://www.dews.sk/golden-mango-no--4/"
+        }
+      ],
+      "questions": [
+        {
+          "answers": {},
+          "step": {
+            "key": "fragranceDirection",
+            "options": [
+              "floral",
+              "depth",
+              "herbs"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "1",
+              "5"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "depth"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "2",
+              "6"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "herbs"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "3",
+              "4"
+            ]
+          }
+        }
+      ],
+      "formulaCount": 6,
+      "status": "PASS"
+    },
+    "siluvone": {
+      "leaves": [
+        {
+          "answers": {
+            "fragranceDirection": "soft",
+            "fragranceProfile": "1"
+          },
+          "id": "1",
+          "url": "https://www.siluvone.sk/sensuale-250ml/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "soft",
+            "fragranceProfile": "2"
+          },
+          "id": "2",
+          "url": "https://www.siluvone.sk/lilly-250ml/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "depth",
+            "fragranceProfile": "3"
+          },
+          "id": "3",
+          "url": "https://www.siluvone.sk/terra-250ml/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "depth",
+            "fragranceProfile": "6"
+          },
+          "id": "6",
+          "url": "https://www.siluvone.sk/fiori-250ml/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "4"
+          },
+          "id": "4",
+          "url": "https://www.siluvone.sk/mattina-250ml/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "5"
+          },
+          "id": "5",
+          "url": "https://www.siluvone.sk/carreza-250ml/"
+        }
+      ],
+      "questions": [
+        {
+          "answers": {},
+          "step": {
+            "key": "fragranceDirection",
+            "options": [
+              "soft",
+              "depth",
+              "fresh"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "soft"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "1",
+              "2"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "depth"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "3",
+              "6"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "4",
+              "5"
+            ]
+          }
+        }
+      ],
+      "formulaCount": 6,
+      "status": "PASS"
+    }
+  }
+}

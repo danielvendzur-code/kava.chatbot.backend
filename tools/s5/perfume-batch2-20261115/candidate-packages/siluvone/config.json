@@ -1,0 +1,229 @@
+{
+  "slug": "siluvone",
+  "owner": "PERFUME_WORKER",
+  "claimCommit": "c4f966fd812b8be8b77490b3190c7862ebaf9989",
+  "series": "s5",
+  "segment": "fragrance",
+  "status": "SOURCE_PACKAGE_VERIFIED",
+  "catalogue": "/catalogues/siluvone.js",
+  "requiredEngineContract": "s5-fragrance-direction-profile-v1",
+  "quickChips": [
+    "Vanilka a myrha",
+    "Citrón a levanduľa",
+    "Jablko a škorica",
+    "Porovnať dve vône"
+  ],
+  "offlineReplyRequirements": [
+    {
+      "chip": "Vanilka a myrha",
+      "match": "vanilk|myrh",
+      "productIds": [
+        "1"
+      ]
+    },
+    {
+      "chip": "Citrón a levanduľa",
+      "match": "citron|levand",
+      "productIds": [
+        "4"
+      ]
+    },
+    {
+      "chip": "Jablko a škorica",
+      "match": "jablk|skoric",
+      "productIds": [
+        "6"
+      ]
+    }
+  ],
+  "compareProductIds": [
+    "1",
+    "6"
+  ],
+  "addon": {
+    "enabled": false,
+    "reason": "No separate compatible exact accessory verified. Distinct alternative+comparison only."
+  },
+  "budgetQuestion": false,
+  "enableRuntime": false,
+  "sharedCoreVerifiedAt": "c9e4da04e19339492a4ffe91428e8ac960b866b6",
+  "resultExtrasScript": "/n447/s5/fragrance-result-extras.js",
+  "registryObject": {
+    "series": "s5",
+    "type": "cosmetics",
+    "segment": "fragrance",
+    "name": "SI·LU",
+    "country": "SK",
+    "logos": {
+      "landing": "/assets/s5/siluvone/logo.png",
+      "header": "/assets/s5/siluvone/logo.png",
+      "avatar": "/assets/s5/siluvone/avatar.svg"
+    },
+    "brand": {
+      "name": "SI·LU",
+      "domain": "siluvone.sk",
+      "website": "https://www.siluvone.sk/",
+      "lang": "sk",
+      "fullName": "SI·LU",
+      "url": "https://www.siluvone.sk/",
+      "logo": "/assets/s5/siluvone/logo.png",
+      "mark": "/assets/s5/siluvone/avatar.svg",
+      "greeting": "Dobrý deň. Pomôžem vám porovnať vybrané vône na pranie, ich balenia a ceny.",
+      "quickChips": [
+        "Vanilka a myrha",
+        "Citrón a levanduľa",
+        "Jablko a škorica",
+        "Porovnať dve vône"
+      ],
+      "theme": {
+        "brand": "#6333ba",
+        "accent": "#d8bc68",
+        "soft": "#f5f1ed",
+        "paper": "#fff",
+        "ink": "#2a252a",
+        "line": "#e5dbd7"
+      }
+    },
+    "traitCopy": {
+      "soft": [
+        "Vanilka s citrusmi",
+        "",
+        "Vanilka s citrusmi",
+        ""
+      ],
+      "1": [
+        "Vanilka, myrha a citrusy",
+        "",
+        "Vanilka, myrha a citrusy",
+        ""
+      ],
+      "2": [
+        "Citrusy s vanilkovým kvetom",
+        "",
+        "Citrusy s vanilkovým kvetom",
+        ""
+      ],
+      "fresh": [
+        "Svieži citrusový charakter",
+        "",
+        "Svieži citrusový charakter",
+        ""
+      ],
+      "4": [
+        "Citrón a levanduľa",
+        "",
+        "Citrón a levanduľa",
+        ""
+      ],
+      "5": [
+        "Pomaranč, ambra a biele pižmo",
+        "",
+        "Pomaranč, ambra a biele pižmo",
+        ""
+      ],
+      "depth": [
+        "Drevo alebo ovocie s korením",
+        "",
+        "Drevo alebo ovocie s korením",
+        ""
+      ],
+      "3": [
+        "Pomaranč a cédrové drevo",
+        "",
+        "Pomaranč a cédrové drevo",
+        ""
+      ],
+      "6": [
+        "Jablko, škorica a ylang ylang",
+        "",
+        "Jablko, škorica a ylang ylang",
+        ""
+      ]
+    },
+    "stepCopy": {
+      "fragranceDirection": [
+        "Aká vôňa je vám blízka?",
+        "",
+        "Vonné tóny"
+      ],
+      "fragranceProfile": [
+        "Ktorá kombinácia vás láka?",
+        "",
+        "Vonné tóny"
+      ]
+    },
+    "compareFocus": true,
+    "upsellFocus": {},
+    "choicePhotos": {
+      "soft": [
+        "/assets/s3/scenes-k2/vanilla.jpg"
+      ],
+      "1": [
+        "/assets/s5/siluvone/1.png"
+      ],
+      "2": [
+        "/assets/s5/siluvone/2.png"
+      ],
+      "fresh": [
+        "/assets/s3/scenes-k2/citrus.jpg"
+      ],
+      "4": [
+        "/assets/s5/siluvone/4.png"
+      ],
+      "5": [
+        "/assets/s5/siluvone/5.png"
+      ],
+      "depth": [
+        "/assets/s3/scenes-k2/pine.jpg"
+      ],
+      "3": [
+        "/assets/s5/siluvone/3.png"
+      ],
+      "6": [
+        "/assets/s5/siluvone/6.png"
+      ]
+    },
+    "compareProductIds": [
+      "1",
+      "6"
+    ],
+    "segmentText": {
+      "entryNote": "Vône na pranie · konkrétne balenia · porovnanie",
+      "titleSuffix": "výber vône",
+      "tab": "Výber vône",
+      "advisorName": "Poradca vôní",
+      "entrySmall": "VÝBER VÔNE",
+      "entryTitle": "Nájsť vôňu podľa tónov",
+      "placeholder": "Spýtajte sa na tóny alebo balenie…",
+      "heading": "Pomôžte zákazníkovi nájsť vôňu na pranie podľa jeho vkusu.",
+      "lead": "Výber ukáže konkrétny parfum na pranie s fotografiou, profilom vône, presným balením, cenou a odkazom. Dve odlišné vône možno porovnať.",
+      "includedChat": "Charakter vôní na pranie, balenia a ceny.",
+      "includedAdvisor": "Výber vône na pranie a porovnanie dvoch kompozícií.",
+      "greeting": "Dobrý deň. Pomôžem vám porovnať vybrané vône na pranie, ich balenia a ceny.",
+      "teaserTitle": "Vyberte si vôňu podľa tónov",
+      "teaserNote": "Otvoriť výber vône",
+      "teaserAria": "Otvoriť poradcu pre výber vône",
+      "source": "siluvone-demo"
+    },
+    "fragranceResultExtras": {
+      "version": 1,
+      "enabled": true,
+      "alternatives": {
+        "1": "2",
+        "2": "1",
+        "4": "5",
+        "5": "4",
+        "3": "6",
+        "6": "3"
+      },
+      "scentProfile": {
+        "version": 1,
+        "mode": "source-notes-no-numeric-strength"
+      }
+    },
+    "fragrancePresentation": {
+      "version": 1,
+      "hideStepEstimate": true
+    }
+  }
+}

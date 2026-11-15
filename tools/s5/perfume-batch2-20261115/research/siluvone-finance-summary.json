@@ -1,0 +1,115 @@
+{
+  "slug": "siluvone",
+  "ico": "56438761",
+  "at": "2026-11-15T14:44:49.125689+00:00",
+  "operator": [
+    [
+      [
+        {
+          "value": "SI.LU, s.r.o.",
+          "validFrom": "2024-08-14"
+        }
+      ],
+      null
+    ]
+  ],
+  "unit": 2325454,
+  "statement": 6968655,
+  "reports": [
+    {
+      "id": 10269274,
+      "template": 687,
+      "tables": [
+        [
+          {
+            "sk": "Strana aktív"
+          },
+          [
+            "32705",
+            "43060",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ],
+        [
+          {
+            "sk": "Strana pasív"
+          },
+          [
+            "32705",
+            "43060",
+            "-19407",
+            "-567",
+            "5000",
+            "5000",
+            "5000",
+            "5000",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ],
+        [
+          {
+            "sk": "Výkaz ziskov a strát"
+          },
+          [
+            "19578",
+            "52",
+            "18279",
+            "52",
+            "1269",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "30",
+            "",
+            "37979",
+            "5279"
+          ]
+        ]
+      ],
+      "attachments": [
+        {
+          "id": 12730154,
+          "meno": "Účtovná závierka MÚJ.PDF",
+          "velkostPrilohy": 94973,
+          "pocetStran": 0,
+          "jazyk": "SK",
+          "digest": "0ca42005e69ae8a381f45565e6f536e46bf9ce7eca5ff060ec35d94e0ffaa60d",
+          "mimeType": "application/pdf"
+        },
+        {
+          "id": 12730155,
+          "meno": "MUJ_2122308716_IR_2025_4802363_6232883.pdf",
+          "velkostPrilohy": 178260,
+          "pocetStran": 5,
+          "jazyk": "SLK",
+          "digest": "337962a7301f29b08d0f5e91cdd45b8dbe70cca43cd7396c86e0c6fef2bed058",
+          "mimeType": "application/pdf"
+        }
+      ]
+    }
+  ]
+}

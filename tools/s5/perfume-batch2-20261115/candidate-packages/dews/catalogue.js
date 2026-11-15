@@ -1,0 +1,707 @@
+globalThis.CX_CATALOGUES ||= {};
+globalThis.CX_CATALOGUES.dews = {
+ "brand": "DEWS",
+ "domain": "dews.sk",
+ "operator": {
+  "name": "WAJDA SK s. r. o.",
+  "ico": "55473911",
+  "country": "SK",
+  "activeNoEnd": true,
+  "officialRegistry": "https://api.statistics.sk/rpo/v1/search?identifier=55473911"
+ },
+ "series": "s5",
+ "segment": "fragrance",
+ "lang": "sk",
+ "country": "SK",
+ "currency": "EUR",
+ "status": "SOURCE_PACKAGE_VERIFIED",
+ "products": [
+  {
+   "id": "1",
+   "name": "Passion No. 1",
+   "url": "https://www.dews.sk/passion_no_1/",
+   "priceAmount": 12.99,
+   "price": "12,99 €",
+   "currency": "EUR",
+   "volume": "250 ml",
+   "category": "fragrance",
+   "kind": "Parfum na pranie",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Jazmín a dotyk vanilky. Parfum na pranie.",
+   "reason": "Jazmín a dotyk vanilky. Parfum na pranie.",
+   "photo": "/assets/s5/dews/1.jpg",
+   "source": {
+    "series": "s5",
+    "url": "https://www.dews.sk/passion_no_1/",
+    "verifiedAt": "2026-11-15T14:55:01.146234+00:00",
+    "sourceSha256": "715e79b8f7dce7cf42b0f9142a563c4ddf18bcdf06453a68d836161578dcb3ff",
+    "usagePurpose": "laundry-fragrance",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "Official single fixed SKU schema.org Offer",
+     "availability": "https://schema.org/InStock",
+     "sku": "ESH0001",
+     "publishedCodes": [
+      {
+       "code": "ESH0001",
+       "weight": 0.25
+      }
+     ],
+     "quantity": "UNKNOWN"
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 12.99,
+     "currency": "EUR",
+     "vatSource": "https://www.dews.sk/passion_no_1/",
+     "vatEvidence": "Public priceWithVat matches exact fixed-product Offer price; no sample minimum."
+    },
+    "packEvidence": {
+     "pack": "250 ml",
+     "scope": "Literal product title or description, not shipping weight."
+    },
+    "variantSelectionRequired": false,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://cdn.myshoptet.com/usr/www.dews.sk/user/shop/big/23_no-01.jpg?ff=1&x=1024&y=768&q=85&ts=69a3158e&sg=161563f2",
+    "photoEvidence": {
+     "id": "1",
+     "file": "1.jpg",
+     "url": "https://cdn.myshoptet.com/usr/www.dews.sk/user/shop/big/23_no-01.jpg?ff=1&x=1024&y=768&q=85&ts=69a3158e&sg=161563f2",
+     "sha256": "fd58a030f3bd292ac7e86f3665c5cc5161eadd5d5af0f1ca806282d4d82dbe4a",
+     "width": 1024,
+     "height": 768,
+     "verifiedAt": "2026-11-15T15:00:59.168861+00:00",
+     "scope": "Original official product bytes, no edits or invented packaging."
+    },
+    "scent": "Jazmín a dotyk vanilky",
+    "fragrance": {
+     "notes": [
+      "jazmín",
+      "vanilka"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Parfum na pranie",
+     "profileBasis": "Official scent descriptors; no invented numerical weights or personal perfume pyramid.",
+     "notesEvidence": {
+      "url": "https://www.dews.sk/passion_no_1/",
+      "sourceText": "Profil: jazmín, vanilka\nParfum na pranie, NO. 1 – PASSION: Aromatická Óda pre Vaše Prádlo Nechajte sa okúzliť vôňou NO. 1 – PASSION – jazmínovou aurou, ktorá obklopí vašu bielizeň a pretrvá nielen vo vašej pamäti. Toto harmonické spojenie podmanivých kvetinových tónov a sviežeho ranného vzduchu prepožičia vášmu prádlu ľahkú eleganciu, no napriek tomu zostane nezabudnuteľne prevoňané. S jednou fľašou si môžete túto luxusnú arómu užiť až na 50 praní. Doprajte si vôňu, ktorá rozžiari váš deň! Stačí kvapka: Vďaka extrémne koncentrovanej receptúre je zaistený intenzívny a dlhotrvajúci zážitok z vône. Maximálna výdrž: Jedno balenie vám poslúži na až 50 praní, čo zaručuje dlhodobé a ekonomické použitie. Všestrannosť: Je vhodná do sušičky. Vôňa sa v teple nádherne rozvinie a uchová si svoju sviežosť aj po sušení. Premeňte bežné pranie na relaxačný moment pri prameni čistej prírody!\nHarmonické prepojenie kvetinových tónov, náznaku sladkej vanilky a sviežeho ranného vzduchu prevoňá vaše prádlo s nevídanou ľahkosťou, no napriek tomu nezabudnuteľne a intenzívne. Tento parfém na pranie je sofistikovanou voňavou alternatívou k bežným avivážam. Vďaka obsahu esenciálnych a vonných olejov prepožičia prádlu hlbokú, výraznú vôňu, no zároveň je šetrný – bez zaťaženia vlákien a akýchkoľvek zvyškov v práčke. Charakter Vône: Jazmín – Omamná kvetinová sviežosť – Jemný, sladký dotyk vanilky. Svieža, nežná a elegantná. Vôňa, ktorá podčiarkne každý deň a zahalí každú látku do jedinečného, príjemného závoja. Objem: 250 ml Ultra koncentrovaný luxusný parfum (alternatíva aviváže) Použitie: Do dávkovača pre aviváž Teplotný rozsah: Účinný pri všetkých teplotách, až do 95 °C Vhodné pre: Všetky druhy textílií, vrátane funkčnej bielizne Jemná a decentná: 5 ml Stredná: 10 ml Dlhotrvajúca: 20 ml (Maximálna a intenzívna po dlhé dni to je Dews) Tip pre sušičku: Parfum je vhodný aj pre bielizeň, ktorú následne sušíte v sušičke. Vôňa zostane dlho svieža a podmanivá to je Dews. Prípravok je určený výhradne do práčky (oddiel pre aviváž). Pri poliatí akéhokoľvek povrchu ihneď utrite navlhčenou handrou/opláchnite vodou. Po skončení pracieho cyklu odporúčame oddiel pre aviváž opláchnuť vodou/utrieť navlhčenou handrou a vytrieť do sucha. UFI: 8NH2-T9ES-E00W-2DYQ",
+      "sourceLanguage": "sk",
+      "scope": "Official product short/full description. Navigation grouping is editorial, not manufacturer family.",
+      "originalSourceText": "Parfum na pranie, NO. 1 – PASSION: Aromatická Óda pre Vaše Prádlo Nechajte sa okúzliť vôňou NO. 1 – PASSION – jazmínovou aurou, ktorá obklopí vašu bielizeň a pretrvá nielen vo vašej pamäti. Toto harmonické spojenie podmanivých kvetinových tónov a sviežeho ranného vzduchu prepožičia vášmu prádlu ľahkú eleganciu, no napriek tomu zostane nezabudnuteľne prevoňané. S jednou fľašou si môžete túto luxusnú arómu užiť až na 50 praní. Doprajte si vôňu, ktorá rozžiari váš deň! Stačí kvapka: Vďaka extrémne koncentrovanej receptúre je zaistený intenzívny a dlhotrvajúci zážitok z vône. Maximálna výdrž: Jedno balenie vám poslúži na až 50 praní, čo zaručuje dlhodobé a ekonomické použitie. Všestrannosť: Je vhodná do sušičky. Vôňa sa v teple nádherne rozvinie a uchová si svoju sviežosť aj po sušení. Premeňte bežné pranie na relaxačný moment pri prameni čistej prírody!\nHarmonické prepojenie kvetinových tónov, náznaku sladkej vanilky a sviežeho ranného vzduchu prevoňá vaše prádlo s nevídanou ľahkosťou, no napriek tomu nezabudnuteľne a intenzívne. Tento parfém na pranie je sofistikovanou voňavou alternatívou k bežným avivážam. Vďaka obsahu esenciálnych a vonných olejov prepožičia prádlu hlbokú, výraznú vôňu, no zároveň je šetrný – bez zaťaženia vlákien a akýchkoľvek zvyškov v práčke. Charakter Vône: Jazmín – Omamná kvetinová sviežosť – Jemný, sladký dotyk vanilky. Svieža, nežná a elegantná. Vôňa, ktorá podčiarkne každý deň a zahalí každú látku do jedinečného, príjemného závoja. Objem: 250 ml Ultra koncentrovaný luxusný parfum (alternatíva aviváže) Použitie: Do dávkovača pre aviváž Teplotný rozsah: Účinný pri všetkých teplotách, až do 95 °C Vhodné pre: Všetky druhy textílií, vrátane funkčnej bielizne Jemná a decentná: 5 ml Stredná: 10 ml Dlhotrvajúca: 20 ml (Maximálna a intenzívna po dlhé dni to je Dews) Tip pre sušičku: Parfum je vhodný aj pre bielizeň, ktorú následne sušíte v sušičke. Vôňa zostane dlho svieža a podmanivá to je Dews. Prípravok je určený výhradne do práčky (oddiel pre aviváž). Pri poliatí akéhokoľvek povrchu ihneď utrite navlhčenou handrou/opláchnite vodou. Po skončení pracieho cyklu odporúčame oddiel pre aviváž opláchnuť vodou/utrieť navlhčenou handrou a vytrieť do sucha. UFI: 8NH2-T9ES-E00W-2DYQ",
+      "noteFormMapping": [
+       {
+        "display": "jazmín",
+        "sourceFragments": [
+         "Jazmín"
+        ]
+       },
+       {
+        "display": "vanilka",
+        "sourceFragments": [
+         "vanilky"
+        ]
+       }
+      ],
+      "qualification": "Faithful Slovak grammatical normalization of original source forms; no new note facts."
+     }
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "No personal skin application, health or allergy safety promise, fabric compatibility filter, guaranteed duration, dose calculator, budget/cart integration or numerical note percentages.",
+     "No automatic transfer of source marketing claims about all fabrics, dryer use, ingredient safety or chemical-free composition.",
+     "DEWS pack artwork includes manufacturer sample promotion; demo does not promise free samples."
+    ],
+    "selectionTraits": {
+     "fragranceDirection": "floral",
+     "fragranceProfile": "1"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.dews.sk/passion_no_1/",
+     "sourceText": "Profil: jazmín, vanilka\nParfum na pranie, NO. 1 – PASSION: Aromatická Óda pre Vaše Prádlo Nechajte sa okúzliť vôňou NO. 1 – PASSION – jazmínovou aurou, ktorá obklopí vašu bielizeň a pretrvá nielen vo vašej pamäti. Toto harmonické spojenie podmanivých kvetinových tónov a sviežeho ranného vzduchu prepožičia vášmu prádlu ľahkú eleganciu, no napriek tomu zostane nezabudnuteľne prevoňané. S jednou fľašou si môžete túto luxusnú arómu užiť až na 50 praní. Doprajte si vôňu, ktorá rozžiari váš deň! Stačí kvapka: Vďaka extrémne koncentrovanej receptúre je zaistený intenzívny a dlhotrvajúci zážitok z vône. Maximálna výdrž: Jedno balenie vám poslúži na až 50 praní, čo zaručuje dlhodobé a ekonomické použitie. Všestrannosť: Je vhodná do sušičky. Vôňa sa v teple nádherne rozvinie a uchová si svoju sviežosť aj po sušení. Premeňte bežné pranie na relaxačný moment pri prameni čistej prírody!\nHarmonické prepojenie kvetinových tónov, náznaku sladkej vanilky a sviežeho ranného vzduchu prevoňá vaše prádlo s nevídanou ľahkosťou, no napriek tomu nezabudnuteľne a intenzívne. Tento parfém na pranie je sofistikovanou voňavou alternatívou k bežným avivážam. Vďaka obsahu esenciálnych a vonných olejov prepožičia prádlu hlbokú, výraznú vôňu, no zároveň je šetrný – bez zaťaženia vlákien a akýchkoľvek zvyškov v práčke. Charakter Vône: Jazmín – Omamná kvetinová sviežosť – Jemný, sladký dotyk vanilky. Svieža, nežná a elegantná. Vôňa, ktorá podčiarkne každý deň a zahalí každú látku do jedinečného, príjemného závoja. Objem: 250 ml Ultra koncentrovaný luxusný parfum (alternatíva aviváže) Použitie: Do dávkovača pre aviváž Teplotný rozsah: Účinný pri všetkých teplotách, až do 95 °C Vhodné pre: Všetky druhy textílií, vrátane funkčnej bielizne Jemná a decentná: 5 ml Stredná: 10 ml Dlhotrvajúca: 20 ml (Maximálna a intenzívna po dlhé dni to je Dews) Tip pre sušičku: Parfum je vhodný aj pre bielizeň, ktorú následne sušíte v sušičke. Vôňa zostane dlho svieža a podmanivá to je Dews. Prípravok je určený výhradne do práčky (oddiel pre aviváž). Pri poliatí akéhokoľvek povrchu ihneď utrite navlhčenou handrou/opláchnite vodou. Po skončení pracieho cyklu odporúčame oddiel pre aviváž opláchnuť vodou/utrieť navlhčenou handrou a vytrieť do sucha. UFI: 8NH2-T9ES-E00W-2DYQ",
+     "navigationLabel": "Jazmín a dotyk vanilky",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    }
+   }
+  },
+  {
+   "id": "2",
+   "name": "Rêve de Voyage No. 2",
+   "url": "https://www.dews.sk/reve-de-voyage-no--2/",
+   "priceAmount": 12.99,
+   "price": "12,99 €",
+   "currency": "EUR",
+   "volume": "250 ml",
+   "category": "fragrance",
+   "kind": "Parfum na pranie",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Citrusový a drevitý charakter. Parfum na pranie.",
+   "reason": "Citrusový a drevitý charakter. Parfum na pranie.",
+   "photo": "/assets/s5/dews/2.jpg",
+   "source": {
+    "series": "s5",
+    "url": "https://www.dews.sk/reve-de-voyage-no--2/",
+    "verifiedAt": "2026-11-15T14:55:01.149219+00:00",
+    "sourceSha256": "d616aa33a361036c8c6fab0fc8d167fef505180a634481bb6160cc679df8e504",
+    "usagePurpose": "laundry-fragrance",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "Official single fixed SKU schema.org Offer",
+     "availability": "https://schema.org/InStock",
+     "sku": "ESH0002",
+     "publishedCodes": [
+      {
+       "code": "ESH0002",
+       "weight": 0.25
+      }
+     ],
+     "quantity": "UNKNOWN"
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 12.99,
+     "currency": "EUR",
+     "vatSource": "https://www.dews.sk/reve-de-voyage-no--2/",
+     "vatEvidence": "Public priceWithVat matches exact fixed-product Offer price; no sample minimum."
+    },
+    "packEvidence": {
+     "pack": "250 ml",
+     "scope": "Literal product title or description, not shipping weight."
+    },
+    "variantSelectionRequired": false,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://cdn.myshoptet.com/usr/www.dews.sk/user/shop/big/43_no-02.jpg?ff=1&x=1024&y=768&q=85&ts=69a3159d&sg=161563f2",
+    "photoEvidence": {
+     "id": "2",
+     "file": "2.jpg",
+     "url": "https://cdn.myshoptet.com/usr/www.dews.sk/user/shop/big/43_no-02.jpg?ff=1&x=1024&y=768&q=85&ts=69a3159d&sg=161563f2",
+     "sha256": "c8b9fa718650a94ac3e0383a45091aaedb0d0e90418f72ff8f1eaa0848a78bf5",
+     "width": 1024,
+     "height": 768,
+     "verifiedAt": "2026-11-15T15:00:59.850740+00:00",
+     "scope": "Original official product bytes, no edits or invented packaging."
+    },
+    "scent": "Citrusový a drevitý charakter",
+    "fragrance": {
+     "notes": [
+      "citrusová",
+      "kvetinová",
+      "drevitá"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Parfum na pranie",
+     "profileBasis": "Official scent descriptors; no invented numerical weights or personal perfume pyramid.",
+     "notesEvidence": {
+      "url": "https://www.dews.sk/reve-de-voyage-no--2/",
+      "sourceText": "Profil: citrusová, kvetinová, drevitá\nParfum na pranie, Rêve de Voyage No. 2: Vôňa, ktorá cestuje s vami Rêve de Voyage No. 2 je váš tekutý cestovný pas – viac než len parfum na bielizeň. Je to vstupenka do vašej obľúbenej destinácie a sviežosť ako po letnom výlete do prírody, ktorú si môžete užívať každý deň. Tóny: Citrusová, kvetinová, drevitá Esencia: Vôňa sa otvára energizujúcim citrusovým nádychom, ktorý evokuje slnkom zaliate pobrežie. Plynule prechádza do jemného kvetinového srdca a kulminuje v hrejivom, zmyselnom drevitom objatí. Doprajte si cestu za zážitkami zakaždým, keď periete – od prvého privoňania až po dlhotrvajúce ticho prírody na vašej bielizni. Stačí kvapka: Vďaka extrémne koncentrovanej receptúre je zaistený intenzívny a dlhotrvajúci zážitok z vône. Maximálna výdrž: Jedno balenie vám poslúži na až 50 praní, čo zaručuje dlhodobé a ekonomické použitie. Všestrannosť: Je vhodná do sušičky. Vôňa sa v teple nádherne rozvinie a uchová si svoju sviežosť aj po sušení. Premeňte bežné pranie na relaxačný moment pri prameni čistej prírody!\nCharakter vône Nežné bylinky – Rozkvitnuté kvety – Objavte letnú hebkosť Táto vôňa je čisté objatie. Je ľahká, je svieža a tak neskutočne prirodzená. Dotkne sa nielen vašej bielizne, ale pohladí aj dušu a rozjasní celý deň. Tóny: Citrusová, kvetinová, drevitá Naše parfémy Dews sú sľubom čistoty: sú oslobodené od ťažkých kovov, škodlivých rezíduí, dioxánu, SVHC, parabénov, PBT/vPvB látok, mikroplastov a nanočastíc. S láskou k prírode: netestované na zvieratách a s hrdosťou vegánske. Objem: 250 ml Ultra koncentrovaný luxusný parfum (alternatíva aviváže) Použitie: Do dávkovača pre aviváž Teplotný rozsah: Účinný pri všetkých teplotách, až do 95 °C Vhodné pre: Všetky druhy textílií, vrátane funkčnej bielizne Jemná a decentná: 5 ml Stredná: 10 ml Dlhotrvajúca: 20 ml (Maximálna a intenzívna po dlhé dni to je Dews) Tip pre sušičku: Parfum je vhodný aj pre bielizeň, ktorú následne sušíte v sušičke. Vôňa zostane dlho svieža a podmanivá to je Dews. Prípravok je určený výhradne do práčky (oddiel pre aviváž). Pri poliatí akéhokoľvek povrchu ihneď utrite navlhčenou handrou/opláchnite vodou. Po skončení pracieho cyklu odporúčame oddiel pre aviváž opláchnuť vodou/utrieť navlhčenou handrou a vytrieť do sucha. UFI: 6SHM-G9E7-100G-MFWU",
+      "sourceLanguage": "sk",
+      "scope": "Official product short/full description. Navigation grouping is editorial, not manufacturer family.",
+      "originalSourceText": "Parfum na pranie, Rêve de Voyage No. 2: Vôňa, ktorá cestuje s vami Rêve de Voyage No. 2 je váš tekutý cestovný pas – viac než len parfum na bielizeň. Je to vstupenka do vašej obľúbenej destinácie a sviežosť ako po letnom výlete do prírody, ktorú si môžete užívať každý deň. Tóny: Citrusová, kvetinová, drevitá Esencia: Vôňa sa otvára energizujúcim citrusovým nádychom, ktorý evokuje slnkom zaliate pobrežie. Plynule prechádza do jemného kvetinového srdca a kulminuje v hrejivom, zmyselnom drevitom objatí. Doprajte si cestu za zážitkami zakaždým, keď periete – od prvého privoňania až po dlhotrvajúce ticho prírody na vašej bielizni. Stačí kvapka: Vďaka extrémne koncentrovanej receptúre je zaistený intenzívny a dlhotrvajúci zážitok z vône. Maximálna výdrž: Jedno balenie vám poslúži na až 50 praní, čo zaručuje dlhodobé a ekonomické použitie. Všestrannosť: Je vhodná do sušičky. Vôňa sa v teple nádherne rozvinie a uchová si svoju sviežosť aj po sušení. Premeňte bežné pranie na relaxačný moment pri prameni čistej prírody!\nCharakter vône Nežné bylinky – Rozkvitnuté kvety – Objavte letnú hebkosť Táto vôňa je čisté objatie. Je ľahká, je svieža a tak neskutočne prirodzená. Dotkne sa nielen vašej bielizne, ale pohladí aj dušu a rozjasní celý deň. Tóny: Citrusová, kvetinová, drevitá Naše parfémy Dews sú sľubom čistoty: sú oslobodené od ťažkých kovov, škodlivých rezíduí, dioxánu, SVHC, parabénov, PBT/vPvB látok, mikroplastov a nanočastíc. S láskou k prírode: netestované na zvieratách a s hrdosťou vegánske. Objem: 250 ml Ultra koncentrovaný luxusný parfum (alternatíva aviváže) Použitie: Do dávkovača pre aviváž Teplotný rozsah: Účinný pri všetkých teplotách, až do 95 °C Vhodné pre: Všetky druhy textílií, vrátane funkčnej bielizne Jemná a decentná: 5 ml Stredná: 10 ml Dlhotrvajúca: 20 ml (Maximálna a intenzívna po dlhé dni to je Dews) Tip pre sušičku: Parfum je vhodný aj pre bielizeň, ktorú následne sušíte v sušičke. Vôňa zostane dlho svieža a podmanivá to je Dews. Prípravok je určený výhradne do práčky (oddiel pre aviváž). Pri poliatí akéhokoľvek povrchu ihneď utrite navlhčenou handrou/opláchnite vodou. Po skončení pracieho cyklu odporúčame oddiel pre aviváž opláchnuť vodou/utrieť navlhčenou handrou a vytrieť do sucha. UFI: 6SHM-G9E7-100G-MFWU",
+      "noteFormMapping": [
+       {
+        "display": "citrusová",
+        "sourceFragments": [
+         "Citrusová"
+        ]
+       },
+       {
+        "display": "kvetinová",
+        "sourceFragments": [
+         "kvetinová"
+        ]
+       },
+       {
+        "display": "drevitá",
+        "sourceFragments": [
+         "drevitá"
+        ]
+       }
+      ],
+      "qualification": "Faithful Slovak grammatical normalization of original source forms; no new note facts."
+     }
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "No personal skin application, health or allergy safety promise, fabric compatibility filter, guaranteed duration, dose calculator, budget/cart integration or numerical note percentages.",
+     "No automatic transfer of source marketing claims about all fabrics, dryer use, ingredient safety or chemical-free composition.",
+     "DEWS pack artwork includes manufacturer sample promotion; demo does not promise free samples."
+    ],
+    "selectionTraits": {
+     "fragranceDirection": "depth",
+     "fragranceProfile": "2"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.dews.sk/reve-de-voyage-no--2/",
+     "sourceText": "Profil: citrusová, kvetinová, drevitá\nParfum na pranie, Rêve de Voyage No. 2: Vôňa, ktorá cestuje s vami Rêve de Voyage No. 2 je váš tekutý cestovný pas – viac než len parfum na bielizeň. Je to vstupenka do vašej obľúbenej destinácie a sviežosť ako po letnom výlete do prírody, ktorú si môžete užívať každý deň. Tóny: Citrusová, kvetinová, drevitá Esencia: Vôňa sa otvára energizujúcim citrusovým nádychom, ktorý evokuje slnkom zaliate pobrežie. Plynule prechádza do jemného kvetinového srdca a kulminuje v hrejivom, zmyselnom drevitom objatí. Doprajte si cestu za zážitkami zakaždým, keď periete – od prvého privoňania až po dlhotrvajúce ticho prírody na vašej bielizni. Stačí kvapka: Vďaka extrémne koncentrovanej receptúre je zaistený intenzívny a dlhotrvajúci zážitok z vône. Maximálna výdrž: Jedno balenie vám poslúži na až 50 praní, čo zaručuje dlhodobé a ekonomické použitie. Všestrannosť: Je vhodná do sušičky. Vôňa sa v teple nádherne rozvinie a uchová si svoju sviežosť aj po sušení. Premeňte bežné pranie na relaxačný moment pri prameni čistej prírody!\nCharakter vône Nežné bylinky – Rozkvitnuté kvety – Objavte letnú hebkosť Táto vôňa je čisté objatie. Je ľahká, je svieža a tak neskutočne prirodzená. Dotkne sa nielen vašej bielizne, ale pohladí aj dušu a rozjasní celý deň. Tóny: Citrusová, kvetinová, drevitá Naše parfémy Dews sú sľubom čistoty: sú oslobodené od ťažkých kovov, škodlivých rezíduí, dioxánu, SVHC, parabénov, PBT/vPvB látok, mikroplastov a nanočastíc. S láskou k prírode: netestované na zvieratách a s hrdosťou vegánske. Objem: 250 ml Ultra koncentrovaný luxusný parfum (alternatíva aviváže) Použitie: Do dávkovača pre aviváž Teplotný rozsah: Účinný pri všetkých teplotách, až do 95 °C Vhodné pre: Všetky druhy textílií, vrátane funkčnej bielizne Jemná a decentná: 5 ml Stredná: 10 ml Dlhotrvajúca: 20 ml (Maximálna a intenzívna po dlhé dni to je Dews) Tip pre sušičku: Parfum je vhodný aj pre bielizeň, ktorú následne sušíte v sušičke. Vôňa zostane dlho svieža a podmanivá to je Dews. Prípravok je určený výhradne do práčky (oddiel pre aviváž). Pri poliatí akéhokoľvek povrchu ihneď utrite navlhčenou handrou/opláchnite vodou. Po skončení pracieho cyklu odporúčame oddiel pre aviváž opláchnuť vodou/utrieť navlhčenou handrou a vytrieť do sucha. UFI: 6SHM-G9E7-100G-MFWU",
+     "navigationLabel": "Citrusový a drevitý charakter",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    }
+   }
+  },
+  {
+   "id": "3",
+   "name": "Wildflower No. 3",
+   "url": "https://www.dews.sk/wildflower_no_3/",
+   "priceAmount": 12.99,
+   "price": "12,99 €",
+   "currency": "EUR",
+   "volume": "250 ml",
+   "category": "fragrance",
+   "kind": "Parfum na pranie",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Bylinný a jemne sladký charakter. Parfum na pranie.",
+   "reason": "Bylinný a jemne sladký charakter. Parfum na pranie.",
+   "photo": "/assets/s5/dews/3.jpg",
+   "source": {
+    "series": "s5",
+    "url": "https://www.dews.sk/wildflower_no_3/",
+    "verifiedAt": "2026-11-15T14:55:01.151406+00:00",
+    "sourceSha256": "9ac489dc25a69ac7dd4da27701772b6562e53eb27799c36be9997e4f8246742c",
+    "usagePurpose": "laundry-fragrance",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "Official single fixed SKU schema.org Offer",
+     "availability": "https://schema.org/InStock",
+     "sku": "ESH0003",
+     "publishedCodes": [
+      {
+       "code": "ESH0003",
+       "weight": 0.25
+      }
+     ],
+     "quantity": "UNKNOWN"
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 12.99,
+     "currency": "EUR",
+     "vatSource": "https://www.dews.sk/wildflower_no_3/",
+     "vatEvidence": "Public priceWithVat matches exact fixed-product Offer price; no sample minimum."
+    },
+    "packEvidence": {
+     "pack": "250 ml",
+     "scope": "Literal product title or description, not shipping weight."
+    },
+    "variantSelectionRequired": false,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://cdn.myshoptet.com/usr/www.dews.sk/user/shop/big/11-1_no-03.jpg?ff=1&x=1024&y=768&q=85&ts=69a3154d&sg=161563f2",
+    "photoEvidence": {
+     "id": "3",
+     "file": "3.jpg",
+     "url": "https://cdn.myshoptet.com/usr/www.dews.sk/user/shop/big/11-1_no-03.jpg?ff=1&x=1024&y=768&q=85&ts=69a3154d&sg=161563f2",
+     "sha256": "16f19064ed03299703eec1073e41091326be773d11160849609086f1411b99f5",
+     "width": 1024,
+     "height": 768,
+     "verifiedAt": "2026-11-15T15:01:00.592230+00:00",
+     "scope": "Original official product bytes, no edits or invented packaging."
+    },
+    "scent": "Bylinný a jemne sladký charakter",
+    "fragrance": {
+     "notes": [
+      "bylinné arómy",
+      "ľahká sladkosť"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Parfum na pranie",
+     "profileBasis": "Official scent descriptors; no invented numerical weights or personal perfume pyramid.",
+     "notesEvidence": {
+      "url": "https://www.dews.sk/wildflower_no_3/",
+      "sourceText": "Profil: bylinné arómy, ľahká sladkosť\nParfum na pranie, Wildflower No. 3: Symfónia slobody a ľahkosti Wildflower No. 3 je zachytená esencia dokonalej chvíle – vôňa slobody, ľahkosti a rozkvitnutej lúky tesne po letnom daždi. Nejde len o vôňu, je to spomienka na prechádzku prírodou. Jemná kvetinová vôňa pre milovníkov prírody. Táto jedinečná aróma je bylinná, jemne sladká a neopísateľne svieža. Otvára sa náručou divokých kvetov a zelených listov, prechádza do delikátneho sladkého srdca a zanecháva na bielizni pocit čistoty a sviežej, orosenej zeme. Doprajte si dotyk nefalšovanej prírody pri každom oblečení. Stačí kvapka: Vďaka extrémne koncentrovanej receptúre je zaistený intenzívny a dlhotrvajúci zážitok z vône. Maximálna výdrž: Jedno balenie vám poslúži na až 50 praní, čo zaručuje dlhodobé a ekonomické použitie. Všestrannosť: Je vhodná do sušičky. Vôňa sa v teple nádherne rozvinie a uchová si svoju sviežosť aj po sušení. Premeňte bežné pranie na relaxačný moment pri prameni čistej prírody!\nTento parfém na pranie prináša esenciu prírodnej, harmonickej vône. Cítiť v ňom jemné bylinné arómy, ktoré prechádzajú do ľahkej, nevtieravej sladkosti, pripomínajúcej teplé slnečné lúče a pokojné jesenné popoludnie. Je to vôňa čistoty a pohody, ktorá vás obklopí pri každom dotyku. Vďaka prémiovým esenciálnym a vonným olejom získa vaše prádlo dlhotrvajúcu, avšak vzdušnú vôňu, ktorá nezaťažuje vlákna a je šetrná ku všetkým materiálom. Objem: 250 ml Ultra koncentrovaný luxusný parfum (alternatíva aviváže) Použitie: Do dávkovača pre aviváž Teplotný rozsah: Účinný pri všetkých teplotách, až do 95 °C Vhodné pre: Všetky druhy textílií, vrátane funkčnej bielizne Jemná a decentná: 5 ml Stredná: 10 ml Dlhotrvajúca: 20 ml (Maximálna a intenzívna po dlhé dni to je Dews) Tip pre sušičku: Parfum je vhodný aj pre bielizeň, ktorú následne sušíte v sušičke. Vôňa zostane dlho svieža a podmanivá to je Dews. Prípravok je určený výhradne do práčky (oddiel pre aviváž). Pri poliatí akéhokoľvek povrchu ihneď utrite navlhčenou handrou/opláchnite vodou. Po skončení pracieho cyklu odporúčame oddiel pre aviváž opláchnuť vodou/utrieť navlhčenou handrou a vytrieť do sucha. UFI: JMMN-W9CM-Q00F-7YH8",
+      "sourceLanguage": "sk",
+      "scope": "Official product short/full description. Navigation grouping is editorial, not manufacturer family.",
+      "originalSourceText": "Parfum na pranie, Wildflower No. 3: Symfónia slobody a ľahkosti Wildflower No. 3 je zachytená esencia dokonalej chvíle – vôňa slobody, ľahkosti a rozkvitnutej lúky tesne po letnom daždi. Nejde len o vôňu, je to spomienka na prechádzku prírodou. Jemná kvetinová vôňa pre milovníkov prírody. Táto jedinečná aróma je bylinná, jemne sladká a neopísateľne svieža. Otvára sa náručou divokých kvetov a zelených listov, prechádza do delikátneho sladkého srdca a zanecháva na bielizni pocit čistoty a sviežej, orosenej zeme. Doprajte si dotyk nefalšovanej prírody pri každom oblečení. Stačí kvapka: Vďaka extrémne koncentrovanej receptúre je zaistený intenzívny a dlhotrvajúci zážitok z vône. Maximálna výdrž: Jedno balenie vám poslúži na až 50 praní, čo zaručuje dlhodobé a ekonomické použitie. Všestrannosť: Je vhodná do sušičky. Vôňa sa v teple nádherne rozvinie a uchová si svoju sviežosť aj po sušení. Premeňte bežné pranie na relaxačný moment pri prameni čistej prírody!\nTento parfém na pranie prináša esenciu prírodnej, harmonickej vône. Cítiť v ňom jemné bylinné arómy, ktoré prechádzajú do ľahkej, nevtieravej sladkosti, pripomínajúcej teplé slnečné lúče a pokojné jesenné popoludnie. Je to vôňa čistoty a pohody, ktorá vás obklopí pri každom dotyku. Vďaka prémiovým esenciálnym a vonným olejom získa vaše prádlo dlhotrvajúcu, avšak vzdušnú vôňu, ktorá nezaťažuje vlákna a je šetrná ku všetkým materiálom. Objem: 250 ml Ultra koncentrovaný luxusný parfum (alternatíva aviváže) Použitie: Do dávkovača pre aviváž Teplotný rozsah: Účinný pri všetkých teplotách, až do 95 °C Vhodné pre: Všetky druhy textílií, vrátane funkčnej bielizne Jemná a decentná: 5 ml Stredná: 10 ml Dlhotrvajúca: 20 ml (Maximálna a intenzívna po dlhé dni to je Dews) Tip pre sušičku: Parfum je vhodný aj pre bielizeň, ktorú následne sušíte v sušičke. Vôňa zostane dlho svieža a podmanivá to je Dews. Prípravok je určený výhradne do práčky (oddiel pre aviváž). Pri poliatí akéhokoľvek povrchu ihneď utrite navlhčenou handrou/opláchnite vodou. Po skončení pracieho cyklu odporúčame oddiel pre aviváž opláchnuť vodou/utrieť navlhčenou handrou a vytrieť do sucha. UFI: JMMN-W9CM-Q00F-7YH8",
+      "noteFormMapping": [
+       {
+        "display": "bylinné arómy",
+        "sourceFragments": [
+         "bylinné arómy"
+        ]
+       },
+       {
+        "display": "ľahká sladkosť",
+        "sourceFragments": [
+         "ľahkej, nevtieravej sladkosti"
+        ]
+       }
+      ],
+      "qualification": "Faithful Slovak grammatical normalization of original source forms; no new note facts."
+     }
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "No personal skin application, health or allergy safety promise, fabric compatibility filter, guaranteed duration, dose calculator, budget/cart integration or numerical note percentages.",
+     "No automatic transfer of source marketing claims about all fabrics, dryer use, ingredient safety or chemical-free composition.",
+     "DEWS pack artwork includes manufacturer sample promotion; demo does not promise free samples."
+    ],
+    "selectionTraits": {
+     "fragranceDirection": "herbs",
+     "fragranceProfile": "3"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.dews.sk/wildflower_no_3/",
+     "sourceText": "Profil: bylinné arómy, ľahká sladkosť\nParfum na pranie, Wildflower No. 3: Symfónia slobody a ľahkosti Wildflower No. 3 je zachytená esencia dokonalej chvíle – vôňa slobody, ľahkosti a rozkvitnutej lúky tesne po letnom daždi. Nejde len o vôňu, je to spomienka na prechádzku prírodou. Jemná kvetinová vôňa pre milovníkov prírody. Táto jedinečná aróma je bylinná, jemne sladká a neopísateľne svieža. Otvára sa náručou divokých kvetov a zelených listov, prechádza do delikátneho sladkého srdca a zanecháva na bielizni pocit čistoty a sviežej, orosenej zeme. Doprajte si dotyk nefalšovanej prírody pri každom oblečení. Stačí kvapka: Vďaka extrémne koncentrovanej receptúre je zaistený intenzívny a dlhotrvajúci zážitok z vône. Maximálna výdrž: Jedno balenie vám poslúži na až 50 praní, čo zaručuje dlhodobé a ekonomické použitie. Všestrannosť: Je vhodná do sušičky. Vôňa sa v teple nádherne rozvinie a uchová si svoju sviežosť aj po sušení. Premeňte bežné pranie na relaxačný moment pri prameni čistej prírody!\nTento parfém na pranie prináša esenciu prírodnej, harmonickej vône. Cítiť v ňom jemné bylinné arómy, ktoré prechádzajú do ľahkej, nevtieravej sladkosti, pripomínajúcej teplé slnečné lúče a pokojné jesenné popoludnie. Je to vôňa čistoty a pohody, ktorá vás obklopí pri každom dotyku. Vďaka prémiovým esenciálnym a vonným olejom získa vaše prádlo dlhotrvajúcu, avšak vzdušnú vôňu, ktorá nezaťažuje vlákna a je šetrná ku všetkým materiálom. Objem: 250 ml Ultra koncentrovaný luxusný parfum (alternatíva aviváže) Použitie: Do dávkovača pre aviváž Teplotný rozsah: Účinný pri všetkých teplotách, až do 95 °C Vhodné pre: Všetky druhy textílií, vrátane funkčnej bielizne Jemná a decentná: 5 ml Stredná: 10 ml Dlhotrvajúca: 20 ml (Maximálna a intenzívna po dlhé dni to je Dews) Tip pre sušičku: Parfum je vhodný aj pre bielizeň, ktorú následne sušíte v sušičke. Vôňa zostane dlho svieža a podmanivá to je Dews. Prípravok je určený výhradne do práčky (oddiel pre aviváž). Pri poliatí akéhokoľvek povrchu ihneď utrite navlhčenou handrou/opláchnite vodou. Po skončení pracieho cyklu odporúčame oddiel pre aviváž opláchnuť vodou/utrieť navlhčenou handrou a vytrieť do sucha. UFI: JMMN-W9CM-Q00F-7YH8",
+     "navigationLabel": "Bylinný a jemne sladký charakter",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    }
+   }
+  },
+  {
+   "id": "4",
+   "name": "Golden Mango No. 4",
+   "url": "https://www.dews.sk/golden-mango-no--4/",
+   "priceAmount": 12.99,
+   "price": "12,99 €",
+   "currency": "EUR",
+   "volume": "250 ml",
+   "category": "fragrance",
+   "kind": "Parfum na pranie",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Bylinná sviežosť s mangom. Parfum na pranie.",
+   "reason": "Bylinná sviežosť s mangom. Parfum na pranie.",
+   "photo": "/assets/s5/dews/4.jpg",
+   "source": {
+    "series": "s5",
+    "url": "https://www.dews.sk/golden-mango-no--4/",
+    "verifiedAt": "2026-11-15T14:55:01.153327+00:00",
+    "sourceSha256": "aa5ccb2e50ac4486e7b2eded474909803dd6173353bea2664060d6d1953b205b",
+    "usagePurpose": "laundry-fragrance",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "Official single fixed SKU schema.org Offer",
+     "availability": "https://schema.org/InStock",
+     "sku": "ESH0004",
+     "publishedCodes": [
+      {
+       "code": "ESH0004",
+       "weight": 0.25
+      }
+     ],
+     "quantity": "UNKNOWN"
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 12.99,
+     "currency": "EUR",
+     "vatSource": "https://www.dews.sk/golden-mango-no--4/",
+     "vatEvidence": "Public priceWithVat matches exact fixed-product Offer price; no sample minimum."
+    },
+    "packEvidence": {
+     "pack": "250 ml",
+     "scope": "Literal product title or description, not shipping weight."
+    },
+    "variantSelectionRequired": false,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://cdn.myshoptet.com/usr/www.dews.sk/user/shop/big/46-1_no-04.jpg?ff=1&x=1024&y=768&q=85&ts=69a31534&sg=161563f2",
+    "photoEvidence": {
+     "id": "4",
+     "file": "4.jpg",
+     "url": "https://cdn.myshoptet.com/usr/www.dews.sk/user/shop/big/46-1_no-04.jpg?ff=1&x=1024&y=768&q=85&ts=69a31534&sg=161563f2",
+     "sha256": "64b703d52dc53af4f4677cc65b8b895cb7c0a467add21ec5ef284614d8cc36e3",
+     "width": 1024,
+     "height": 768,
+     "verifiedAt": "2026-11-15T15:01:01.535671+00:00",
+     "scope": "Original official product bytes, no edits or invented packaging."
+    },
+    "scent": "Bylinná sviežosť s mangom",
+    "fragrance": {
+     "notes": [
+      "bylinná sviežosť",
+      "mango"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Parfum na pranie",
+     "profileBasis": "Official scent descriptors; no invented numerical weights or personal perfume pyramid.",
+     "notesEvidence": {
+      "url": "https://www.dews.sk/golden-mango-no--4/",
+      "sourceText": "Profil: bylinná sviežosť, mango\nParfum na pranie, GOLDEN MANGO No. 4: Exotická vôňa Slobody GOLDEN MANGO No. 4 stelesňuje vôňu slobody a ľahkosti, no s pridaným exotickým dotykom. Je to harmonické spojenie bylinných a sladkých tónov, svieže ako letný dážď, ale obohatené o hrejivú, slnečnú esenciu zrelého manga. Táto jedinečná aróma je bylinná, jemne sladká a nepopísateľne svieža. Otvára sa náručou divokých byliniek, prechádza do delikátneho srdca s tónmi sladkého manga a zanecháva na bielizni pocit čistoty a slnkom zaliatej záhrady. Stačí kvapka: Vďaka extrémne koncentrovanej receptúre je zaistený intenzívny a dlhotrvajúci zážitok z vône. Maximálna výdrž: Jedno balenie vám poslúži na až 50 praní, čo zaručuje dlhodobé a ekonomické použitie. Všestrannosť: Je vhodná do sušičky. Vôňa sa v teple nádherne rozvinie a uchová si svoju sviežosť aj po sušení. Premeňte bežné pranie na relaxačný moment pri prameni čistej prírody!\nObjavte vôňu slobody a exotickej ľahkosti. GOLDEN MANGO stelesňuje harmonický súzvuk bylinnej sviežosti a hrejivej, slnkom zaliatej sladkosti zrelého manga. Nechajte svoje prádlo prevoňať esenciou, ktorá je rovnako osviežujúca ako letný dážď, no zároveň teplá a žiarivá vďaka exotickému dotyku manga. Je to vôňa, ktorá okamžite prenesie vaše zmysly do diaľok a dodá vášmu dňu bezstarostný nádych. Táto jedinečná kompozícia spája čisté bylinné tóny s tropickou sladkosťou, vytvárajúc tak intenzívnu, dlhotrvajúcu vôňu, ktorá je pritom ľahká a vzdušná. Vďaka obsahu prémiových olejov zostanú vlákna vášho prádla bez zaťaženia, len dokonale prevoňané. Objem: 250 ml Ultra koncentrovaný luxusný parfum (alternatíva aviváže) Použitie: Do dávkovača pre aviváž Teplotný rozsah: Účinný pri všetkých teplotách, až do 95 °C Vhodné pre: Všetky druhy textílií, vrátane funkčnej bielizne Jemná a decentná: 5 ml Stredná: 10 ml Dlhotrvajúca: 20 ml (Maximálna a intenzívna po dlhé dni to je Dews) Tip pre sušičku: Parfum je vhodný aj pre bielizeň, ktorú následne sušíte v sušičke. Vôňa zostane dlho svieža a podmanivá to je Dews. Prípravok je určený výhradne do práčky (oddiel pre aviváž). Pri poliatí akéhokoľvek povrchu ihneď utrite navlhčenou handrou/opláchnite vodou. Po skončení pracieho cyklu odporúčame oddiel pre aviváž opláchnuť vodou/utrieť navlhčenou handroua vytrieť do sucha. UFI: 0W9M-096F-H00W-Q59P",
+      "sourceLanguage": "sk",
+      "scope": "Official product short/full description. Navigation grouping is editorial, not manufacturer family.",
+      "originalSourceText": "Parfum na pranie, GOLDEN MANGO No. 4: Exotická vôňa Slobody GOLDEN MANGO No. 4 stelesňuje vôňu slobody a ľahkosti, no s pridaným exotickým dotykom. Je to harmonické spojenie bylinných a sladkých tónov, svieže ako letný dážď, ale obohatené o hrejivú, slnečnú esenciu zrelého manga. Táto jedinečná aróma je bylinná, jemne sladká a nepopísateľne svieža. Otvára sa náručou divokých byliniek, prechádza do delikátneho srdca s tónmi sladkého manga a zanecháva na bielizni pocit čistoty a slnkom zaliatej záhrady. Stačí kvapka: Vďaka extrémne koncentrovanej receptúre je zaistený intenzívny a dlhotrvajúci zážitok z vône. Maximálna výdrž: Jedno balenie vám poslúži na až 50 praní, čo zaručuje dlhodobé a ekonomické použitie. Všestrannosť: Je vhodná do sušičky. Vôňa sa v teple nádherne rozvinie a uchová si svoju sviežosť aj po sušení. Premeňte bežné pranie na relaxačný moment pri prameni čistej prírody!\nObjavte vôňu slobody a exotickej ľahkosti. GOLDEN MANGO stelesňuje harmonický súzvuk bylinnej sviežosti a hrejivej, slnkom zaliatej sladkosti zrelého manga. Nechajte svoje prádlo prevoňať esenciou, ktorá je rovnako osviežujúca ako letný dážď, no zároveň teplá a žiarivá vďaka exotickému dotyku manga. Je to vôňa, ktorá okamžite prenesie vaše zmysly do diaľok a dodá vášmu dňu bezstarostný nádych. Táto jedinečná kompozícia spája čisté bylinné tóny s tropickou sladkosťou, vytvárajúc tak intenzívnu, dlhotrvajúcu vôňu, ktorá je pritom ľahká a vzdušná. Vďaka obsahu prémiových olejov zostanú vlákna vášho prádla bez zaťaženia, len dokonale prevoňané. Objem: 250 ml Ultra koncentrovaný luxusný parfum (alternatíva aviváže) Použitie: Do dávkovača pre aviváž Teplotný rozsah: Účinný pri všetkých teplotách, až do 95 °C Vhodné pre: Všetky druhy textílií, vrátane funkčnej bielizne Jemná a decentná: 5 ml Stredná: 10 ml Dlhotrvajúca: 20 ml (Maximálna a intenzívna po dlhé dni to je Dews) Tip pre sušičku: Parfum je vhodný aj pre bielizeň, ktorú následne sušíte v sušičke. Vôňa zostane dlho svieža a podmanivá to je Dews. Prípravok je určený výhradne do práčky (oddiel pre aviváž). Pri poliatí akéhokoľvek povrchu ihneď utrite navlhčenou handrou/opláchnite vodou. Po skončení pracieho cyklu odporúčame oddiel pre aviváž opláchnuť vodou/utrieť navlhčenou handroua vytrieť do sucha. UFI: 0W9M-096F-H00W-Q59P",
+      "noteFormMapping": [
+       {
+        "display": "bylinná sviežosť",
+        "sourceFragments": [
+         "bylinnej sviežosti"
+        ]
+       },
+       {
+        "display": "mango",
+        "sourceFragments": [
+         "manga"
+        ]
+       }
+      ],
+      "qualification": "Faithful Slovak grammatical normalization of original source forms; no new note facts."
+     }
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "No personal skin application, health or allergy safety promise, fabric compatibility filter, guaranteed duration, dose calculator, budget/cart integration or numerical note percentages.",
+     "No automatic transfer of source marketing claims about all fabrics, dryer use, ingredient safety or chemical-free composition.",
+     "DEWS pack artwork includes manufacturer sample promotion; demo does not promise free samples."
+    ],
+    "selectionTraits": {
+     "fragranceDirection": "herbs",
+     "fragranceProfile": "4"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.dews.sk/golden-mango-no--4/",
+     "sourceText": "Profil: bylinná sviežosť, mango\nParfum na pranie, GOLDEN MANGO No. 4: Exotická vôňa Slobody GOLDEN MANGO No. 4 stelesňuje vôňu slobody a ľahkosti, no s pridaným exotickým dotykom. Je to harmonické spojenie bylinných a sladkých tónov, svieže ako letný dážď, ale obohatené o hrejivú, slnečnú esenciu zrelého manga. Táto jedinečná aróma je bylinná, jemne sladká a nepopísateľne svieža. Otvára sa náručou divokých byliniek, prechádza do delikátneho srdca s tónmi sladkého manga a zanecháva na bielizni pocit čistoty a slnkom zaliatej záhrady. Stačí kvapka: Vďaka extrémne koncentrovanej receptúre je zaistený intenzívny a dlhotrvajúci zážitok z vône. Maximálna výdrž: Jedno balenie vám poslúži na až 50 praní, čo zaručuje dlhodobé a ekonomické použitie. Všestrannosť: Je vhodná do sušičky. Vôňa sa v teple nádherne rozvinie a uchová si svoju sviežosť aj po sušení. Premeňte bežné pranie na relaxačný moment pri prameni čistej prírody!\nObjavte vôňu slobody a exotickej ľahkosti. GOLDEN MANGO stelesňuje harmonický súzvuk bylinnej sviežosti a hrejivej, slnkom zaliatej sladkosti zrelého manga. Nechajte svoje prádlo prevoňať esenciou, ktorá je rovnako osviežujúca ako letný dážď, no zároveň teplá a žiarivá vďaka exotickému dotyku manga. Je to vôňa, ktorá okamžite prenesie vaše zmysly do diaľok a dodá vášmu dňu bezstarostný nádych. Táto jedinečná kompozícia spája čisté bylinné tóny s tropickou sladkosťou, vytvárajúc tak intenzívnu, dlhotrvajúcu vôňu, ktorá je pritom ľahká a vzdušná. Vďaka obsahu prémiových olejov zostanú vlákna vášho prádla bez zaťaženia, len dokonale prevoňané. Objem: 250 ml Ultra koncentrovaný luxusný parfum (alternatíva aviváže) Použitie: Do dávkovača pre aviváž Teplotný rozsah: Účinný pri všetkých teplotách, až do 95 °C Vhodné pre: Všetky druhy textílií, vrátane funkčnej bielizne Jemná a decentná: 5 ml Stredná: 10 ml Dlhotrvajúca: 20 ml (Maximálna a intenzívna po dlhé dni to je Dews) Tip pre sušičku: Parfum je vhodný aj pre bielizeň, ktorú následne sušíte v sušičke. Vôňa zostane dlho svieža a podmanivá to je Dews. Prípravok je určený výhradne do práčky (oddiel pre aviváž). Pri poliatí akéhokoľvek povrchu ihneď utrite navlhčenou handrou/opláchnite vodou. Po skončení pracieho cyklu odporúčame oddiel pre aviváž opláchnuť vodou/utrieť navlhčenou handroua vytrieť do sucha. UFI: 0W9M-096F-H00W-Q59P",
+     "navigationLabel": "Bylinná sviežosť s mangom",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    }
+   }
+  },
+  {
+   "id": "5",
+   "name": "Fresh Wind No. 5",
+   "url": "https://www.dews.sk/fresh-wind-no--5/",
+   "priceAmount": 12.99,
+   "price": "12,99 €",
+   "currency": "EUR",
+   "volume": "250 ml",
+   "category": "fragrance",
+   "kind": "Parfum na pranie",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Vodný a kvetinový charakter. Parfum na pranie.",
+   "reason": "Vodný a kvetinový charakter. Parfum na pranie.",
+   "photo": "/assets/s5/dews/5.jpg",
+   "source": {
+    "series": "s5",
+    "url": "https://www.dews.sk/fresh-wind-no--5/",
+    "verifiedAt": "2026-11-15T14:55:01.157521+00:00",
+    "sourceSha256": "490c7620dc6df986f91907e3a3007a52e78ac38924d9fad830cfe3c85fecb973",
+    "usagePurpose": "laundry-fragrance",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "Official single fixed SKU schema.org Offer",
+     "availability": "https://schema.org/InStock",
+     "sku": "ESH0005",
+     "publishedCodes": [
+      {
+       "code": "ESH0005",
+       "weight": 0.25
+      }
+     ],
+     "quantity": "UNKNOWN"
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 12.99,
+     "currency": "EUR",
+     "vatSource": "https://www.dews.sk/fresh-wind-no--5/",
+     "vatEvidence": "Public priceWithVat matches exact fixed-product Offer price; no sample minimum."
+    },
+    "packEvidence": {
+     "pack": "250 ml",
+     "scope": "Literal product title or description, not shipping weight."
+    },
+    "variantSelectionRequired": false,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://cdn.myshoptet.com/usr/www.dews.sk/user/shop/big/49-1_no-05.jpg?ff=1&x=1024&y=768&q=85&ts=69a314f6&sg=161563f2",
+    "photoEvidence": {
+     "id": "5",
+     "file": "5.jpg",
+     "url": "https://cdn.myshoptet.com/usr/www.dews.sk/user/shop/big/49-1_no-05.jpg?ff=1&x=1024&y=768&q=85&ts=69a314f6&sg=161563f2",
+     "sha256": "e8411ab4a8aea9e6ecee729a8a1ab317a2e7bd12a97361797d90b4b51d8c729e",
+     "width": 1024,
+     "height": 768,
+     "verifiedAt": "2026-11-15T15:01:02.004678+00:00",
+     "scope": "Original official product bytes, no edits or invented packaging."
+    },
+    "scent": "Vodný a kvetinový charakter",
+    "fragrance": {
+     "notes": [
+      "vodné tóny",
+      "kvetinové akcenty"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Parfum na pranie",
+     "profileBasis": "Official scent descriptors; no invented numerical weights or personal perfume pyramid.",
+     "notesEvidence": {
+      "url": "https://www.dews.sk/fresh-wind-no--5/",
+      "sourceText": "Profil: vodné tóny, kvetinové akcenty\nParfum na pranie, FRESH WIND No. 5: Dotyk Prirodzenej Čistoty FRESH WIND No. 5 je esenciou ticha a priezračnej sviežosti. Predstavuje kompozíciu, ktorá pripomína pokojnú prechádzku popri krištáľovo čistom potoku – tichú, prirodzene čistú a osviežujúcu. Táto aróma je jemná, vodná a kvetinová. Otvára sa sviežimi, vzdušnými tónmi pripomínajúcimi horský vánok, prechádza do delikátneho kvetinového srdca a zanecháva na bielizni pocit čerstvo vypraného prádla a absolútnej čistoty. Stačí kvapka: Vďaka extrémne koncentrovanej receptúre je zaistený intenzívny a dlhotrvajúci zážitok z vône. Maximálna výdrž: Jedno balenie vám poslúži na až 50 praní, čo zaručuje dlhodobé a ekonomické použitie. Všestrannosť: Je vhodná do sušičky. Vôňa sa v teple nádherne rozvinie a uchová si svoju sviežosť aj po sušení. Premeňte bežné pranie na relaxačný moment pri prameni čistej prírody!\nJemná, vodná a kvetinová kompozícia, ktorá upokojuje zmysly. Prináša esenciu prechádzky okolo priezračného potoka – sviežu, tichú a prirodzene čistú. Zahaľte svoje prádlo do vône, ktorá stelesňuje absolútnu čistotu a prirodzenú ľahkosť. Táto aróma je utkaná z vodných tónov, ktoré evokujú krištáľovo priezračnú vodu, a nežných kvetinových akcentov, pripomínajúcich kvitnúce rastliny na brehu. Je to vôňa, ktorá je decentná, no napriek tomu nezameniteľná. Dodá vášmu prádlu dlhotrvajúcu sviežosť, ktorá pôsobí nevtieravo a čisto, rovnako ako ranný vzduch pri vode. Vďaka špičkovým vonným olejom je parfém k vláknam šetrný, ale vôňu poskytuje s maximálnou intenzitou. Objem: 250 ml Ultra koncentrovaný luxusný parfum (alternatíva aviváže) Použitie: Do dávkovača pre aviváž Teplotný rozsah: Účinný pri všetkých teplotách, až do 95 °C Vhodné pre: Všetky druhy textílií, vrátane funkčnej bielizne Jemná a decentná: 5 ml Stredná: 10 ml Dlhotrvajúca: 20 ml (Maximálna a intenzívna po dlhé dni to je Dews) Tip pre sušičku: Parfum je vhodný aj pre bielizeň, ktorú následne sušíte v sušičke. Vôňa zostane dlho svieža a podmanivá to je Dews. Prípravok je určený výhradne do práčky (oddiel pre aviváž). Pri poliatí akéhokoľvek povrchu ihneď utrite navlhčenou handrou/opláchnite vodou. Po skončení pracieho cyklu odporúčame oddiel pre aviváž opláchnuť vodou/utrieť navlhčenou handrou a vytrieť do sucha. UFI: G79P-D90W-7007-0WCR",
+      "sourceLanguage": "sk",
+      "scope": "Official product short/full description. Navigation grouping is editorial, not manufacturer family.",
+      "originalSourceText": "Parfum na pranie, FRESH WIND No. 5: Dotyk Prirodzenej Čistoty FRESH WIND No. 5 je esenciou ticha a priezračnej sviežosti. Predstavuje kompozíciu, ktorá pripomína pokojnú prechádzku popri krištáľovo čistom potoku – tichú, prirodzene čistú a osviežujúcu. Táto aróma je jemná, vodná a kvetinová. Otvára sa sviežimi, vzdušnými tónmi pripomínajúcimi horský vánok, prechádza do delikátneho kvetinového srdca a zanecháva na bielizni pocit čerstvo vypraného prádla a absolútnej čistoty. Stačí kvapka: Vďaka extrémne koncentrovanej receptúre je zaistený intenzívny a dlhotrvajúci zážitok z vône. Maximálna výdrž: Jedno balenie vám poslúži na až 50 praní, čo zaručuje dlhodobé a ekonomické použitie. Všestrannosť: Je vhodná do sušičky. Vôňa sa v teple nádherne rozvinie a uchová si svoju sviežosť aj po sušení. Premeňte bežné pranie na relaxačný moment pri prameni čistej prírody!\nJemná, vodná a kvetinová kompozícia, ktorá upokojuje zmysly. Prináša esenciu prechádzky okolo priezračného potoka – sviežu, tichú a prirodzene čistú. Zahaľte svoje prádlo do vône, ktorá stelesňuje absolútnu čistotu a prirodzenú ľahkosť. Táto aróma je utkaná z vodných tónov, ktoré evokujú krištáľovo priezračnú vodu, a nežných kvetinových akcentov, pripomínajúcich kvitnúce rastliny na brehu. Je to vôňa, ktorá je decentná, no napriek tomu nezameniteľná. Dodá vášmu prádlu dlhotrvajúcu sviežosť, ktorá pôsobí nevtieravo a čisto, rovnako ako ranný vzduch pri vode. Vďaka špičkovým vonným olejom je parfém k vláknam šetrný, ale vôňu poskytuje s maximálnou intenzitou. Objem: 250 ml Ultra koncentrovaný luxusný parfum (alternatíva aviváže) Použitie: Do dávkovača pre aviváž Teplotný rozsah: Účinný pri všetkých teplotách, až do 95 °C Vhodné pre: Všetky druhy textílií, vrátane funkčnej bielizne Jemná a decentná: 5 ml Stredná: 10 ml Dlhotrvajúca: 20 ml (Maximálna a intenzívna po dlhé dni to je Dews) Tip pre sušičku: Parfum je vhodný aj pre bielizeň, ktorú následne sušíte v sušičke. Vôňa zostane dlho svieža a podmanivá to je Dews. Prípravok je určený výhradne do práčky (oddiel pre aviváž). Pri poliatí akéhokoľvek povrchu ihneď utrite navlhčenou handrou/opláchnite vodou. Po skončení pracieho cyklu odporúčame oddiel pre aviváž opláchnuť vodou/utrieť navlhčenou handrou a vytrieť do sucha. UFI: G79P-D90W-7007-0WCR",
+      "noteFormMapping": [
+       {
+        "display": "vodné tóny",
+        "sourceFragments": [
+         "vodných tónov"
+        ]
+       },
+       {
+        "display": "kvetinové akcenty",
+        "sourceFragments": [
+         "kvetinových akcentov"
+        ]
+       }
+      ],
+      "qualification": "Faithful Slovak grammatical normalization of original source forms; no new note facts."
+     }
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "No personal skin application, health or allergy safety promise, fabric compatibility filter, guaranteed duration, dose calculator, budget/cart integration or numerical note percentages.",
+     "No automatic transfer of source marketing claims about all fabrics, dryer use, ingredient safety or chemical-free composition.",
+     "DEWS pack artwork includes manufacturer sample promotion; demo does not promise free samples."
+    ],
+    "selectionTraits": {
+     "fragranceDirection": "floral",
+     "fragranceProfile": "5"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.dews.sk/fresh-wind-no--5/",
+     "sourceText": "Profil: vodné tóny, kvetinové akcenty\nParfum na pranie, FRESH WIND No. 5: Dotyk Prirodzenej Čistoty FRESH WIND No. 5 je esenciou ticha a priezračnej sviežosti. Predstavuje kompozíciu, ktorá pripomína pokojnú prechádzku popri krištáľovo čistom potoku – tichú, prirodzene čistú a osviežujúcu. Táto aróma je jemná, vodná a kvetinová. Otvára sa sviežimi, vzdušnými tónmi pripomínajúcimi horský vánok, prechádza do delikátneho kvetinového srdca a zanecháva na bielizni pocit čerstvo vypraného prádla a absolútnej čistoty. Stačí kvapka: Vďaka extrémne koncentrovanej receptúre je zaistený intenzívny a dlhotrvajúci zážitok z vône. Maximálna výdrž: Jedno balenie vám poslúži na až 50 praní, čo zaručuje dlhodobé a ekonomické použitie. Všestrannosť: Je vhodná do sušičky. Vôňa sa v teple nádherne rozvinie a uchová si svoju sviežosť aj po sušení. Premeňte bežné pranie na relaxačný moment pri prameni čistej prírody!\nJemná, vodná a kvetinová kompozícia, ktorá upokojuje zmysly. Prináša esenciu prechádzky okolo priezračného potoka – sviežu, tichú a prirodzene čistú. Zahaľte svoje prádlo do vône, ktorá stelesňuje absolútnu čistotu a prirodzenú ľahkosť. Táto aróma je utkaná z vodných tónov, ktoré evokujú krištáľovo priezračnú vodu, a nežných kvetinových akcentov, pripomínajúcich kvitnúce rastliny na brehu. Je to vôňa, ktorá je decentná, no napriek tomu nezameniteľná. Dodá vášmu prádlu dlhotrvajúcu sviežosť, ktorá pôsobí nevtieravo a čisto, rovnako ako ranný vzduch pri vode. Vďaka špičkovým vonným olejom je parfém k vláknam šetrný, ale vôňu poskytuje s maximálnou intenzitou. Objem: 250 ml Ultra koncentrovaný luxusný parfum (alternatíva aviváže) Použitie: Do dávkovača pre aviváž Teplotný rozsah: Účinný pri všetkých teplotách, až do 95 °C Vhodné pre: Všetky druhy textílií, vrátane funkčnej bielizne Jemná a decentná: 5 ml Stredná: 10 ml Dlhotrvajúca: 20 ml (Maximálna a intenzívna po dlhé dni to je Dews) Tip pre sušičku: Parfum je vhodný aj pre bielizeň, ktorú následne sušíte v sušičke. Vôňa zostane dlho svieža a podmanivá to je Dews. Prípravok je určený výhradne do práčky (oddiel pre aviváž). Pri poliatí akéhokoľvek povrchu ihneď utrite navlhčenou handrou/opláchnite vodou. Po skončení pracieho cyklu odporúčame oddiel pre aviváž opláchnuť vodou/utrieť navlhčenou handrou a vytrieť do sucha. UFI: G79P-D90W-7007-0WCR",
+     "navigationLabel": "Vodný a kvetinový charakter",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    }
+   }
+  },
+  {
+   "id": "6",
+   "name": "Jewel No. 6",
+   "url": "https://www.dews.sk/jewel_no_6/",
+   "priceAmount": 12.99,
+   "price": "12,99 €",
+   "currency": "EUR",
+   "volume": "250 ml",
+   "category": "fragrance",
+   "kind": "Parfum na pranie",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Bohaté korenisté tóny. Parfum na pranie.",
+   "reason": "Bohaté korenisté tóny. Parfum na pranie.",
+   "photo": "/assets/s5/dews/6.jpg",
+   "source": {
+    "series": "s5",
+    "url": "https://www.dews.sk/jewel_no_6/",
+    "verifiedAt": "2026-11-15T14:55:02.781847+00:00",
+    "sourceSha256": "29f351af252c72980a7eb160e9e1a7cd8b47ffe2b832a6cead361e555e2ee0e5",
+    "usagePurpose": "laundry-fragrance",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "Official single fixed SKU schema.org Offer",
+     "availability": "https://schema.org/InStock",
+     "sku": "ESH0006",
+     "publishedCodes": [
+      {
+       "code": "ESH0006",
+       "weight": 0.25
+      }
+     ],
+     "quantity": "UNKNOWN"
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 12.99,
+     "currency": "EUR",
+     "vatSource": "https://www.dews.sk/jewel_no_6/",
+     "vatEvidence": "Public priceWithVat matches exact fixed-product Offer price; no sample minimum."
+    },
+    "packEvidence": {
+     "pack": "250 ml",
+     "scope": "Literal product title or description, not shipping weight."
+    },
+    "variantSelectionRequired": false,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://cdn.myshoptet.com/usr/www.dews.sk/user/shop/big/34-1_no-06.jpg?ff=1&x=1024&y=768&q=85&ts=69a31580&sg=161563f2",
+    "photoEvidence": {
+     "id": "6",
+     "file": "6.jpg",
+     "url": "https://cdn.myshoptet.com/usr/www.dews.sk/user/shop/big/34-1_no-06.jpg?ff=1&x=1024&y=768&q=85&ts=69a31580&sg=161563f2",
+     "sha256": "3245ab04f7bec15c4b05deeb8f5a49395936411f5a8ad39d8e1f155d27b0f4bd",
+     "width": 1024,
+     "height": 768,
+     "verifiedAt": "2026-11-15T15:01:02.871590+00:00",
+     "scope": "Original official product bytes, no edits or invented packaging."
+    },
+    "scent": "Bohaté korenisté tóny",
+    "fragrance": {
+     "notes": [
+      "korenisté tóny"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Parfum na pranie",
+     "profileBasis": "Official scent descriptors; no invented numerical weights or personal perfume pyramid.",
+     "notesEvidence": {
+      "url": "https://www.dews.sk/jewel_no_6/",
+      "sourceText": "Profil: korenisté tóny\nParfum na pranie, Jewel No. 6: Esencia vášne Predstavte si parfém ako večerný šperk – elegantnú, tajomnú a neodolateľne zmyselnú vôňu, ktorá sa rozvíja s prichádzajúcim súmrakom. Zahaľte svoje prádlo do luxusného a hlbokého závoja aróm. Táto kompozícia spája bohaté korenisté tóny s hladkou eleganciou, vytvárajúc vôňu s charakterom a hĺbkou. Je to intenzívny a sofistikovaný zážitok, ktorý prepožičiava vášmu prádlu zmyselný a dlhotrvajúci podpis. Stačí kvapka: Vďaka extrémne koncentrovanej receptúre zaistíte intenzívny a dlhotrvajúci zážitok z vône. Maximálna výdrž: Jedno balenie vám poslúži na až 50 praní, čo zaručuje ekonomické a dlhodobé použitie. Všestrannosť: Je vhodná do sušičky. Vôňa sa v teple nádherne rozvinie a uchová si svoju sviežosť aj po sušení. Premeňte bežné pranie na moment relaxácie a dotyk čistej, nefalšovanej prírody!\nVôňa je stvorená pre tých, ktorí milujú výrazné a nezabudnuteľné tóny. Nie je to len aviváž, je to skutočný zážitok pre zmysly, ktorý premení každé obliekanie na malý rituál. Vďaka prémiovým esenciálnym olejom je zabezpečená nielen mimoriadna intenzita arómy, ale aj jej pôsobivá dlhotrvácnosť. Tieto vzácne oleje preniknú hlboko do vlákien, kde sa usadia, aby vaše prádlo bolo dokonale svieže a prevoňané celé dni, dokonca aj po vybratí zo skrine. Navyše, na rozdiel od bežných aviváží, náš parfém nezanecháva žiadne syntetické zvyšky, čím chráni funkčnosť a savosť vašich textílií. Vychutnajte si čistotu a luxus v jednom. Objem: 250 ml Ultra koncentrovaný luxusný parfum (alternatíva aviváže) Použitie: Do dávkovača pre aviváž Teplotný rozsah: Účinný pri všetkých teplotách, až do 95 °C Vhodné pre: Všetky druhy textílií, vrátane funkčnej bielizne Jemná a decentná: 5 ml Stredná: 10 ml Dlhotrvajúca: 20 ml (Maximálna a intenzívna po dlhé dni to je Dews) Tip pre sušičku: Parfum je vhodný aj pre bielizeň, ktorú následne sušíte v sušičke. Vôňa zostane dlho svieža a podmanivá to je Dews. Prípravok je určený výhradne do práčky (oddiel pre aviváž). Pri poliatí akéhokoľvek povrchu ihneď utrite navlhčenou handrou/opláchnite vodou. Po skončení pracieho cyklu odporúčame oddiel pre aviváž opláchnuť vodou/utrieť navlhčenou handrou a vytrieť do sucha. UFI: FG48-R94N-P001-KQ0C",
+      "sourceLanguage": "sk",
+      "scope": "Official product short/full description. Navigation grouping is editorial, not manufacturer family.",
+      "originalSourceText": "Parfum na pranie, Jewel No. 6: Esencia vášne Predstavte si parfém ako večerný šperk – elegantnú, tajomnú a neodolateľne zmyselnú vôňu, ktorá sa rozvíja s prichádzajúcim súmrakom. Zahaľte svoje prádlo do luxusného a hlbokého závoja aróm. Táto kompozícia spája bohaté korenisté tóny s hladkou eleganciou, vytvárajúc vôňu s charakterom a hĺbkou. Je to intenzívny a sofistikovaný zážitok, ktorý prepožičiava vášmu prádlu zmyselný a dlhotrvajúci podpis. Stačí kvapka: Vďaka extrémne koncentrovanej receptúre zaistíte intenzívny a dlhotrvajúci zážitok z vône. Maximálna výdrž: Jedno balenie vám poslúži na až 50 praní, čo zaručuje ekonomické a dlhodobé použitie. Všestrannosť: Je vhodná do sušičky. Vôňa sa v teple nádherne rozvinie a uchová si svoju sviežosť aj po sušení. Premeňte bežné pranie na moment relaxácie a dotyk čistej, nefalšovanej prírody!\nVôňa je stvorená pre tých, ktorí milujú výrazné a nezabudnuteľné tóny. Nie je to len aviváž, je to skutočný zážitok pre zmysly, ktorý premení každé obliekanie na malý rituál. Vďaka prémiovým esenciálnym olejom je zabezpečená nielen mimoriadna intenzita arómy, ale aj jej pôsobivá dlhotrvácnosť. Tieto vzácne oleje preniknú hlboko do vlákien, kde sa usadia, aby vaše prádlo bolo dokonale svieže a prevoňané celé dni, dokonca aj po vybratí zo skrine. Navyše, na rozdiel od bežných aviváží, náš parfém nezanecháva žiadne syntetické zvyšky, čím chráni funkčnosť a savosť vašich textílií. Vychutnajte si čistotu a luxus v jednom. Objem: 250 ml Ultra koncentrovaný luxusný parfum (alternatíva aviváže) Použitie: Do dávkovača pre aviváž Teplotný rozsah: Účinný pri všetkých teplotách, až do 95 °C Vhodné pre: Všetky druhy textílií, vrátane funkčnej bielizne Jemná a decentná: 5 ml Stredná: 10 ml Dlhotrvajúca: 20 ml (Maximálna a intenzívna po dlhé dni to je Dews) Tip pre sušičku: Parfum je vhodný aj pre bielizeň, ktorú následne sušíte v sušičke. Vôňa zostane dlho svieža a podmanivá to je Dews. Prípravok je určený výhradne do práčky (oddiel pre aviváž). Pri poliatí akéhokoľvek povrchu ihneď utrite navlhčenou handrou/opláchnite vodou. Po skončení pracieho cyklu odporúčame oddiel pre aviváž opláchnuť vodou/utrieť navlhčenou handrou a vytrieť do sucha. UFI: FG48-R94N-P001-KQ0C",
+      "noteFormMapping": [
+       {
+        "display": "korenisté tóny",
+        "sourceFragments": [
+         "korenisté tóny"
+        ]
+       }
+      ],
+      "qualification": "Faithful Slovak grammatical normalization of original source forms; no new note facts."
+     }
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "No personal skin application, health or allergy safety promise, fabric compatibility filter, guaranteed duration, dose calculator, budget/cart integration or numerical note percentages.",
+     "No automatic transfer of source marketing claims about all fabrics, dryer use, ingredient safety or chemical-free composition.",
+     "DEWS pack artwork includes manufacturer sample promotion; demo does not promise free samples."
+    ],
+    "selectionTraits": {
+     "fragranceDirection": "depth",
+     "fragranceProfile": "6"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.dews.sk/jewel_no_6/",
+     "sourceText": "Profil: korenisté tóny\nParfum na pranie, Jewel No. 6: Esencia vášne Predstavte si parfém ako večerný šperk – elegantnú, tajomnú a neodolateľne zmyselnú vôňu, ktorá sa rozvíja s prichádzajúcim súmrakom. Zahaľte svoje prádlo do luxusného a hlbokého závoja aróm. Táto kompozícia spája bohaté korenisté tóny s hladkou eleganciou, vytvárajúc vôňu s charakterom a hĺbkou. Je to intenzívny a sofistikovaný zážitok, ktorý prepožičiava vášmu prádlu zmyselný a dlhotrvajúci podpis. Stačí kvapka: Vďaka extrémne koncentrovanej receptúre zaistíte intenzívny a dlhotrvajúci zážitok z vône. Maximálna výdrž: Jedno balenie vám poslúži na až 50 praní, čo zaručuje ekonomické a dlhodobé použitie. Všestrannosť: Je vhodná do sušičky. Vôňa sa v teple nádherne rozvinie a uchová si svoju sviežosť aj po sušení. Premeňte bežné pranie na moment relaxácie a dotyk čistej, nefalšovanej prírody!\nVôňa je stvorená pre tých, ktorí milujú výrazné a nezabudnuteľné tóny. Nie je to len aviváž, je to skutočný zážitok pre zmysly, ktorý premení každé obliekanie na malý rituál. Vďaka prémiovým esenciálnym olejom je zabezpečená nielen mimoriadna intenzita arómy, ale aj jej pôsobivá dlhotrvácnosť. Tieto vzácne oleje preniknú hlboko do vlákien, kde sa usadia, aby vaše prádlo bolo dokonale svieže a prevoňané celé dni, dokonca aj po vybratí zo skrine. Navyše, na rozdiel od bežných aviváží, náš parfém nezanecháva žiadne syntetické zvyšky, čím chráni funkčnosť a savosť vašich textílií. Vychutnajte si čistotu a luxus v jednom. Objem: 250 ml Ultra koncentrovaný luxusný parfum (alternatíva aviváže) Použitie: Do dávkovača pre aviváž Teplotný rozsah: Účinný pri všetkých teplotách, až do 95 °C Vhodné pre: Všetky druhy textílií, vrátane funkčnej bielizne Jemná a decentná: 5 ml Stredná: 10 ml Dlhotrvajúca: 20 ml (Maximálna a intenzívna po dlhé dni to je Dews) Tip pre sušičku: Parfum je vhodný aj pre bielizeň, ktorú následne sušíte v sušičke. Vôňa zostane dlho svieža a podmanivá to je Dews. Prípravok je určený výhradne do práčky (oddiel pre aviváž). Pri poliatí akéhokoľvek povrchu ihneď utrite navlhčenou handrou/opláchnite vodou. Po skončení pracieho cyklu odporúčame oddiel pre aviváž opláchnuť vodou/utrieť navlhčenou handrou a vytrieť do sucha. UFI: FG48-R94N-P001-KQ0C",
+     "navigationLabel": "Bohaté korenisté tóny",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    }
+   }
+  }
+ ],
+ "revenue": {
+  "year": 2025,
+  "salesSum": 120686,
+  "currency": "EUR",
+  "source": "https://www.registeruz.sk/cruz-public/api/uctovny-vykaz?id=10293888",
+  "pdfSource": "https://www.registeruz.sk/cruz-public/domain/financialreport/attachment/12775631",
+  "qualification": "WholeEUR/year/ICO checked in official full financial statement; goods plus products/services, not operating revenue."
+ },
+ "size": "PREFERRED_UNDER_500K_EUR_OFFICIAL_2025",
+ "interest": "NOT_ESTABLISHED",
+ "notes": [
+  "Six different compositions, fixed250ml exactSKU price/stock/photo. No variant inflation.",
+  "Source-only package; MAIN laundry brand/backend guard and integration/livePreview QA pending.",
+  "No verified sold compatible accessory: no invented paid addon; distinct alternative and comparison enabled."
+ ]
+};

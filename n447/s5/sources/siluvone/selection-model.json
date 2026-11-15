@@ -1,0 +1,66 @@
+{
+  "key": "fragranceDirection",
+  "question": "Aká vôňa je vám blízka?",
+  "options": [
+    {
+      "value": "soft",
+      "label": "Vanilka s citrusmi",
+      "key": "fragranceProfile",
+      "question": "Ktorá kombinácia vás láka?",
+      "options": [
+        {
+          "value": "1",
+          "label": "Vanilka, myrha a citrusy",
+          "productId": "1",
+          "sourceUrl": "https://www.siluvone.sk/sensuale-250ml/"
+        },
+        {
+          "value": "2",
+          "label": "Citrusy s vanilkovým kvetom",
+          "productId": "2",
+          "sourceUrl": "https://www.siluvone.sk/lilly-250ml/"
+        }
+      ]
+    },
+    {
+      "value": "fresh",
+      "label": "Svieži citrusový charakter",
+      "key": "fragranceProfile",
+      "question": "Ktorá kombinácia vás láka?",
+      "options": [
+        {
+          "value": "4",
+          "label": "Citrón a levanduľa",
+          "productId": "4",
+          "sourceUrl": "https://www.siluvone.sk/mattina-250ml/"
+        },
+        {
+          "value": "5",
+          "label": "Pomaranč, ambra a biele pižmo",
+          "productId": "5",
+          "sourceUrl": "https://www.siluvone.sk/carreza-250ml/"
+        }
+      ]
+    },
+    {
+      "value": "depth",
+      "label": "Drevo alebo ovocie s korením",
+      "key": "fragranceProfile",
+      "question": "Ktorá kombinácia vás láka?",
+      "options": [
+        {
+          "value": "3",
+          "label": "Pomaranč a cédrové drevo",
+          "productId": "3",
+          "sourceUrl": "https://www.siluvone.sk/terra-250ml/"
+        },
+        {
+          "value": "6",
+          "label": "Jablko, škorica a ylang ylang",
+          "productId": "6",
+          "sourceUrl": "https://www.siluvone.sk/fiori-250ml/"
+        }
+      ]
+    }
+  ]
+}

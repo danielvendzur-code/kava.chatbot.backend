@@ -1,0 +1,66 @@
+{
+  "key": "fragranceDirection",
+  "question": "Aká vôňa je vám blízka?",
+  "options": [
+    {
+      "value": "floral",
+      "label": "Kvety a sviežosť",
+      "key": "fragranceProfile",
+      "question": "Ktorá kombinácia vás láka?",
+      "options": [
+        {
+          "value": "1",
+          "label": "Jazmín a dotyk vanilky",
+          "productId": "1",
+          "sourceUrl": "https://www.dews.sk/passion_no_1/"
+        },
+        {
+          "value": "5",
+          "label": "Vodný a kvetinový charakter",
+          "productId": "5",
+          "sourceUrl": "https://www.dews.sk/fresh-wind-no--5/"
+        }
+      ]
+    },
+    {
+      "value": "herbs",
+      "label": "Bylinky a sladší akcent",
+      "key": "fragranceProfile",
+      "question": "Ktorá kombinácia vás láka?",
+      "options": [
+        {
+          "value": "3",
+          "label": "Bylinný a jemne sladký charakter",
+          "productId": "3",
+          "sourceUrl": "https://www.dews.sk/wildflower_no_3/"
+        },
+        {
+          "value": "4",
+          "label": "Bylinná sviežosť s mangom",
+          "productId": "4",
+          "sourceUrl": "https://www.dews.sk/golden-mango-no--4/"
+        }
+      ]
+    },
+    {
+      "value": "depth",
+      "label": "Citrusy, drevo alebo korenie",
+      "key": "fragranceProfile",
+      "question": "Ktorá kombinácia vás láka?",
+      "options": [
+        {
+          "value": "2",
+          "label": "Citrusový a drevitý charakter",
+          "productId": "2",
+          "sourceUrl": "https://www.dews.sk/reve-de-voyage-no--2/"
+        },
+        {
+          "value": "6",
+          "label": "Bohaté korenisté tóny",
+          "productId": "6",
+          "sourceUrl": "https://www.dews.sk/jewel_no_6/"
+        }
+      ]
+    }
+  ]
+}

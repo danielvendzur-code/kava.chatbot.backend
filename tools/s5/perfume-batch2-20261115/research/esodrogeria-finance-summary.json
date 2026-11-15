@@ -1,0 +1,125 @@
+{
+  "slug": "esodrogeria",
+  "ico": "47350318",
+  "at": "2026-11-15T14:54:21.473540+00:00",
+  "operator": [
+    [
+      [
+        {
+          "value": "EsoDrogéria s.r.o.",
+          "validFrom": "2013-07-31",
+          "validTo": "2014-07-03"
+        },
+        {
+          "value": "EsoDrogéria s.r.o. \"v likvidácii\"",
+          "validFrom": "2014-07-04",
+          "validTo": "2018-11-06"
+        },
+        {
+          "value": "EsoDrogéria s.r.o.",
+          "validFrom": "2018-11-07"
+        }
+      ],
+      null
+    ]
+  ],
+  "unit": 1474420,
+  "statement": 7020627,
+  "reports": [
+    {
+      "id": 10324805,
+      "template": 687,
+      "tables": [
+        [
+          {
+            "sk": "Strana aktív"
+          },
+          [
+            "80351",
+            "133171",
+            "13652",
+            "3886",
+            "",
+            "",
+            "13652",
+            "3886",
+            "",
+            "",
+            "13652",
+            "1261",
+            "",
+            "2625",
+            "",
+            ""
+          ]
+        ],
+        [
+          {
+            "sk": "Strana pasív"
+          },
+          [
+            "80351",
+            "133171",
+            "-50035",
+            "40994",
+            "5000",
+            "5000",
+            "5000",
+            "5000",
+            "",
+            "",
+            "91500",
+            "91500",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ],
+        [
+          {
+            "sk": "Výkaz ziskov a strát"
+          },
+          [
+            "292428",
+            "326295",
+            "277269",
+            "314306",
+            "14304",
+            "11989",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "855",
+            "",
+            "374702",
+            "334529"
+          ]
+        ]
+      ],
+      "attachments": [
+        {
+          "id": 12832088,
+          "velkostPrilohy": 77568,
+          "pocetStran": 0,
+          "jazyk": "SK",
+          "meno": "Účtovná závierka MÚJ.PDF",
+          "digest": "04f2685319de9f46b8d6a76b5044686730efb5ad5c3019fdb446ecf895697d75",
+          "mimeType": "application/pdf"
+        },
+        {
+          "id": 12832089,
+          "velkostPrilohy": 180929,
+          "pocetStran": 5,
+          "jazyk": "SLK",
+          "meno": "MUJ_2023819435_IR_2025_4831193_6282930.pdf",
+          "digest": "af3098612f70d482bf41c405adc56f16229941bc560eba812a3bb967aa7c961c",
+          "mimeType": "application/pdf"
+        }
+      ]
+    }
+  ]
+}

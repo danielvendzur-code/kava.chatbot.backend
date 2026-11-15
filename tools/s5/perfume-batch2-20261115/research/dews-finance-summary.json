@@ -1,0 +1,115 @@
+{
+  "slug": "dews",
+  "ico": "55473911",
+  "at": "2026-11-15T14:44:49.124917+00:00",
+  "operator": [
+    [
+      [
+        {
+          "value": "WAJDA SK s. r. o.",
+          "validFrom": "2023-05-23"
+        }
+      ],
+      null
+    ]
+  ],
+  "unit": 2188432,
+  "statement": 6991117,
+  "reports": [
+    {
+      "id": 10293888,
+      "template": 687,
+      "tables": [
+        [
+          {
+            "sk": "Strana aktív"
+          },
+          [
+            "310330",
+            "230237",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ],
+        [
+          {
+            "sk": "Strana pasív"
+          },
+          [
+            "310330",
+            "230237",
+            "25191",
+            "-1319",
+            "30000",
+            "30000",
+            "30000",
+            "30000",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ],
+        [
+          {
+            "sk": "Výkaz ziskov a strát"
+          },
+          [
+            "120686",
+            "",
+            "120686",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "92335",
+            "24191"
+          ]
+        ]
+      ],
+      "attachments": [
+        {
+          "id": 12775630,
+          "meno": "Účtovná závierka MÚJ.PDF",
+          "velkostPrilohy": 75653,
+          "pocetStran": 0,
+          "jazyk": "SK",
+          "digest": "86a32da9c2bc2492b4fa6005f8472dc87da6a44f08e8d70c0d311ac3d0419904",
+          "mimeType": "application/pdf"
+        },
+        {
+          "id": 12775631,
+          "meno": "MUJ_2121996987_IR_2025_4825149_6257124.pdf",
+          "velkostPrilohy": 177767,
+          "pocetStran": 5,
+          "jazyk": "SLK",
+          "digest": "d4978c802e8cea3de2ebc6bedd1897971b8946eadb0c132025f50bbaef48ff06",
+          "mimeType": "application/pdf"
+        }
+      ]
+    }
+  ]
+}

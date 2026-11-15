@@ -1,0 +1,230 @@
+{
+  "runtimeEnabled": false,
+  "owner": "PERFUME_WORKER",
+  "integrationOwner": "MAIN",
+  "registryObject": {
+    "series": "s5",
+    "type": "cosmetics",
+    "segment": "fragrance",
+    "name": "DEWS",
+    "country": "SK",
+    "logos": {
+      "landing": "/assets/s5/dews/logo.png",
+      "header": "/assets/s5/dews/logo.png",
+      "avatar": "/assets/s5/dews/avatar.svg"
+    },
+    "brand": {
+      "name": "DEWS",
+      "domain": "dews.sk",
+      "website": "https://www.dews.sk/",
+      "lang": "sk",
+      "fullName": "DEWS",
+      "url": "https://www.dews.sk/",
+      "logo": "/assets/s5/dews/logo.png",
+      "mark": "/assets/s5/dews/avatar.svg",
+      "greeting": "Dobrý deň. Pomôžem vám porovnať vybrané vône na pranie, ich balenia a ceny.",
+      "quickChips": [
+        "Jazmín a vanilka",
+        "Bylinky a mango",
+        "Korenisté tóny",
+        "Porovnať dve vône"
+      ],
+      "theme": {
+        "brand": "#a9292b",
+        "accent": "#d3ab58",
+        "soft": "#f5f1ed",
+        "paper": "#fff",
+        "ink": "#2a252a",
+        "line": "#e5dbd7"
+      }
+    },
+    "traitCopy": {
+      "floral": [
+        "Kvety a sviežosť",
+        "",
+        "Kvety a sviežosť",
+        ""
+      ],
+      "1": [
+        "Jazmín a dotyk vanilky",
+        "",
+        "Jazmín a dotyk vanilky",
+        ""
+      ],
+      "5": [
+        "Vodný a kvetinový charakter",
+        "",
+        "Vodný a kvetinový charakter",
+        ""
+      ],
+      "herbs": [
+        "Bylinky a sladší akcent",
+        "",
+        "Bylinky a sladší akcent",
+        ""
+      ],
+      "3": [
+        "Bylinný a jemne sladký charakter",
+        "",
+        "Bylinný a jemne sladký charakter",
+        ""
+      ],
+      "4": [
+        "Bylinná sviežosť s mangom",
+        "",
+        "Bylinná sviežosť s mangom",
+        ""
+      ],
+      "depth": [
+        "Citrusy, drevo alebo korenie",
+        "",
+        "Citrusy, drevo alebo korenie",
+        ""
+      ],
+      "2": [
+        "Citrusový a drevitý charakter",
+        "",
+        "Citrusový a drevitý charakter",
+        ""
+      ],
+      "6": [
+        "Bohaté korenisté tóny",
+        "",
+        "Bohaté korenisté tóny",
+        ""
+      ]
+    },
+    "stepCopy": {
+      "fragranceDirection": [
+        "Aká vôňa je vám blízka?",
+        "",
+        "Vonné tóny"
+      ],
+      "fragranceProfile": [
+        "Ktorá kombinácia vás láka?",
+        "",
+        "Vonné tóny"
+      ]
+    },
+    "compareFocus": true,
+    "upsellFocus": {},
+    "choicePhotos": {
+      "floral": [
+        "/assets/s3/scenes-k2/rose.jpg"
+      ],
+      "1": [
+        "/assets/s5/dews/1.jpg"
+      ],
+      "5": [
+        "/assets/s5/dews/5.jpg"
+      ],
+      "herbs": [
+        "/assets/s3/scenes-k2/citrus.jpg"
+      ],
+      "3": [
+        "/assets/s5/dews/3.jpg"
+      ],
+      "4": [
+        "/assets/s5/dews/4.jpg"
+      ],
+      "depth": [
+        "/assets/s3/scenes-k2/pine.jpg"
+      ],
+      "2": [
+        "/assets/s5/dews/2.jpg"
+      ],
+      "6": [
+        "/assets/s5/dews/6.jpg"
+      ]
+    },
+    "compareProductIds": [
+      "1",
+      "6"
+    ],
+    "segmentText": {
+      "entryNote": "Vône na pranie · konkrétne balenia · porovnanie",
+      "titleSuffix": "výber vône",
+      "tab": "Výber vône",
+      "advisorName": "Poradca vôní",
+      "entrySmall": "VÝBER VÔNE",
+      "entryTitle": "Nájsť vôňu podľa tónov",
+      "placeholder": "Spýtajte sa na tóny alebo balenie…",
+      "heading": "Pomôžte zákazníkovi nájsť vôňu na pranie podľa jeho vkusu.",
+      "lead": "Výber ukáže konkrétny parfum na pranie s fotografiou, profilom vône, presným balením, cenou a odkazom. Dve odlišné vône možno porovnať.",
+      "includedChat": "Charakter vôní na pranie, balenia a ceny.",
+      "includedAdvisor": "Výber vône na pranie a porovnanie dvoch kompozícií.",
+      "greeting": "Dobrý deň. Pomôžem vám porovnať vybrané vône na pranie, ich balenia a ceny.",
+      "teaserTitle": "Vyberte si vôňu podľa tónov",
+      "teaserNote": "Otvoriť výber vône",
+      "teaserAria": "Otvoriť poradcu pre výber vône",
+      "source": "dews-demo"
+    },
+    "fragranceResultExtras": {
+      "version": 1,
+      "enabled": true,
+      "alternatives": {
+        "1": "5",
+        "5": "1",
+        "3": "4",
+        "4": "3",
+        "2": "6",
+        "6": "2"
+      },
+      "scentProfile": {
+        "version": 1,
+        "mode": "source-notes-no-numeric-strength"
+      }
+    },
+    "fragrancePresentation": {
+      "version": 1,
+      "hideStepEstimate": true
+    }
+  },
+  "catalogueImport": "/catalogues/dews.js",
+  "backendBrand": "dews",
+  "offlineRules": [
+    {
+      "chip": "Jazmín a vanilka",
+      "match": "jazmin|vanilk",
+      "productIds": [
+        "1"
+      ]
+    },
+    {
+      "chip": "Bylinky a mango",
+      "match": "bylink|mango",
+      "productIds": [
+        "4"
+      ]
+    },
+    {
+      "chip": "Korenisté tóny",
+      "match": "korenist",
+      "productIds": [
+        "6"
+      ]
+    }
+  ],
+  "noCoreLogicChangeRequired": true,
+  "commonFilesModified": [],
+  "companyCss": {
+    "source": "tools/s5/perfume-batch2-20261115/candidate-packages/dews/ui-review.css",
+    "destination": "n447/s5/brands/dews.css",
+    "registryField": {
+      "companyCss": "/n447/s5/brands/dews.css"
+    }
+  },
+  "presentationRequirement": "Existinga918profile+preset and explicit newslug body.dataset.fragranceProfile=visual-v1. Owner standalonepolish separate includes.",
+  "price": "447 EUR +10 EUR/month",
+  "commercialReview": "PREFERRED_UNDER_500K_EUR_OFFICIAL_2025",
+  "emailStatus": "NOT_READY",
+  "production": "NOT_DEPLOYED",
+  "paidCalls": 0,
+  "scopeReview": {
+    "productPurpose": "laundry-fragrance",
+    "recommendationCoreChangeRequired": false,
+    "backendReviewRequired": true,
+    "requiredBackendInstruction": "Laundry fragrance only; not skin perfume. Use only sourced notes/pack/SKU price/stock; avoid health/all-fabric/dryer/duration guarantees. Usage advice requires exact brand official instructions. No invented budget/cart integration.",
+    "workerTouchedSharedBackend": false
+  }
+}
