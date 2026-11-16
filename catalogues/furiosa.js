@@ -1,0 +1,857 @@
+globalThis.CX_CATALOGUES ||= {};
+globalThis.CX_CATALOGUES.furiosa = {
+ "brand": "FURIOSA®",
+ "domain": "furiosa.cz",
+ "series": "s5",
+ "segment": "fragrance",
+ "lang": "cs",
+ "country": "CZ",
+ "currency": "CZK",
+ "products": [
+  {
+   "id": "furiosa-cherry-affair",
+   "name": "FURIOSA® CHERRY AFFAIR",
+   "brand": "FURIOSA®",
+   "url": "https://furiosa.cz/products/furiosa-cherry-affair",
+   "photo": "/assets/s5/furiosa/furiosa-cherry-affair.webp",
+   "priceAmount": 2990,
+   "price": "2990 Kč",
+   "currency": "CZK",
+   "volume": "50 ml",
+   "category": "fragrance",
+   "kind": "Parfém",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Třešeň, červené víno a kadidlo.",
+   "reason": "Třešeň, červené víno a kadidlo.",
+   "source": {
+    "series": "s5",
+    "url": "https://furiosa.cz/products/furiosa-cherry-affair",
+    "verifiedAt": "2026-11-11T06:32:20.210001+00:00",
+    "stock": "InStock",
+    "stockEvidence": {
+     "shopifyVariantId": 56352748339585,
+     "sku": "SP-CHERRYAFFAIR-50",
+     "checkedAt": "2026-11-11T06:32:20.210001+00:00",
+     "schemaAvailability": "https://schema.org/InStock",
+     "currency": "CZK",
+     "variantPhotoUrl": null
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "retailIncludingTaxes": 2990,
+     "currency": "CZK",
+     "vatSource": "https://furiosa.cz/policies/terms-of-service",
+     "vatEvidence": "Ceny zboží jsou uvedeny včetně daně z přidané hodnoty a všech souvisejících poplatků."
+    },
+    "packEvidence": {
+     "pack": "50 ml",
+     "exactOfferUrl": "https://furiosa.cz/products/furiosa-cherry-affair?variant=56352748339585"
+    },
+    "variantSelectionRequired": false,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "suitabilityEvidence": {},
+    "skinTypesListed": [],
+    "photoUrl": "https://cdn.shopify.com/s/files/1/0873/3674/7286/files/01_a8354c04-7589-462f-a2c5-469453eca5a7.png?v=1791200244",
+    "photoEvidence": {
+     "url": "https://cdn.shopify.com/s/files/1/0873/3674/7286/files/01_a8354c04-7589-462f-a2c5-469453eca5a7.png?v=1791200244",
+     "localPath": "/assets/s5/furiosa/furiosa-cherry-affair.webp",
+     "sha256": "e3f0ee2bd9e4e64d38b885fe8f0b2c3538476e8d32b2e4c4bd81e24567ebb525",
+     "width": 510,
+     "height": 680,
+     "downloadedAt": "2026-11-11T06:31:07.816625+00:00"
+    },
+    "scent": "Třešeň, červené víno a kadidlo.",
+    "selectionTraits": {
+     "fragranceDirection": "cherrySweet",
+     "fragranceProfile": "furiosa-cherry-affair"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://furiosa.cz/products/furiosa-cherry-affair",
+     "notePyramid": {
+      "top": "černá třešeň, červené víno, kadidlo",
+      "heart": "kůže, labdanum, papyrus, kosatec",
+      "base": "vanilka, tonka, pačuli, mošus"
+     },
+     "facts": {
+      "description": "Třešeň, červené víno a kadidlo."
+     }
+    },
+    "variants": []
+   }
+  },
+  {
+   "id": "furiosa-sex",
+   "name": "FURIOSA® SEX",
+   "brand": "FURIOSA®",
+   "url": "https://furiosa.cz/products/furiosa%C2%AE-sex",
+   "photo": "/assets/s5/furiosa/furiosa-sex.webp",
+   "priceAmount": 2490,
+   "price": "2490 Kč",
+   "currency": "CZK",
+   "volume": "50 ml",
+   "category": "fragrance",
+   "kind": "Parfém",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Třešňový likér a marcipán.",
+   "reason": "Třešňový likér a marcipán.",
+   "source": {
+    "series": "s5",
+    "url": "https://furiosa.cz/products/furiosa%C2%AE-sex",
+    "verifiedAt": "2026-11-11T06:32:20.210001+00:00",
+    "stock": "InStock",
+    "stockEvidence": {
+     "shopifyVariantId": 54706918588801,
+     "sku": "SP-SEX-50",
+     "checkedAt": "2026-11-11T06:32:20.210001+00:00",
+     "schemaAvailability": "https://schema.org/InStock",
+     "currency": "CZK",
+     "variantPhotoUrl": null
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "retailIncludingTaxes": 2490,
+     "currency": "CZK",
+     "vatSource": "https://furiosa.cz/policies/terms-of-service",
+     "vatEvidence": "Ceny zboží jsou uvedeny včetně daně z přidané hodnoty a všech souvisejících poplatků."
+    },
+    "packEvidence": {
+     "pack": "50 ml",
+     "exactOfferUrl": "https://furiosa.cz/products/furiosa%C2%AE-sex?variant=54706918588801"
+    },
+    "variantSelectionRequired": false,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "suitabilityEvidence": {},
+    "skinTypesListed": [],
+    "photoUrl": "https://cdn.shopify.com/s/files/1/0873/3674/7286/files/250912_FURIOSA_PARFUMES_SEX_V1.jpg?v=1757680480",
+    "photoEvidence": {
+     "url": "https://cdn.shopify.com/s/files/1/0873/3674/7286/files/250912_FURIOSA_PARFUMES_SEX_V1.jpg?v=1757680480",
+     "localPath": "/assets/s5/furiosa/furiosa-sex.webp",
+     "sha256": "2fde73c18d8260f4f50d54277f2c784c989437d2e9dff679e20dcf868e29faf9",
+     "width": 510,
+     "height": 680,
+     "downloadedAt": "2026-11-11T06:31:08.052626+00:00"
+    },
+    "scent": "Třešňový likér a marcipán.",
+    "selectionTraits": {
+     "fragranceDirection": "cherrySweet",
+     "fragranceProfile": "furiosa-sex"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://furiosa.cz/products/furiosa%C2%AE-sex",
+     "notePyramid": {
+      "top": "třešňový a višňový likér, ylang-ylang, zelená nota",
+      "heart": "marcipán, tužebník jilmový, otočník peruánský, růže",
+      "base": "vanilka, tonkové boby, santal, vetiver, guajakové dřevo"
+     },
+     "facts": {
+      "description": "Třešňový likér a marcipán."
+     }
+    },
+    "variants": [
+     {
+      "label": "10 ml",
+      "price": 890,
+      "available": true,
+      "url": "https://furiosa.cz/products/furiosa%C2%AE-sex-10-ml?variant=56401956929921",
+      "evidence": {
+       "shopifyVariantId": 56401956929921,
+       "sku": "SP-SEX-10",
+       "checkedAt": "2026-11-11T06:32:20.210001+00:00",
+       "schemaAvailability": "https://schema.org/InStock",
+       "currency": "CZK",
+       "variantPhotoUrl": null
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "furiosa-matcha-date",
+   "name": "FURIOSA® MATCHA DATE",
+   "brand": "FURIOSA®",
+   "url": "https://furiosa.cz/products/furiosa%C2%AE-matcha-date",
+   "photo": "/assets/s5/furiosa/furiosa-matcha-date.webp",
+   "priceAmount": 2990,
+   "price": "2990 Kč",
+   "currency": "CZK",
+   "volume": "50 ml",
+   "category": "fragrance",
+   "kind": "Parfém",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Matcha, citronová tráva a kokos.",
+   "reason": "Matcha, citronová tráva a kokos.",
+   "source": {
+    "series": "s5",
+    "url": "https://furiosa.cz/products/furiosa%C2%AE-matcha-date",
+    "verifiedAt": "2026-11-11T06:32:20.210001+00:00",
+    "stock": "InStock",
+    "stockEvidence": {
+     "shopifyVariantId": 54894874657153,
+     "sku": "SP-MATCHADATE-50",
+     "checkedAt": "2026-11-11T06:32:20.210001+00:00",
+     "schemaAvailability": "https://schema.org/InStock",
+     "currency": "CZK",
+     "variantPhotoUrl": null
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "retailIncludingTaxes": 2990,
+     "currency": "CZK",
+     "vatSource": "https://furiosa.cz/policies/terms-of-service",
+     "vatEvidence": "Ceny zboží jsou uvedeny včetně daně z přidané hodnoty a všech souvisejících poplatků."
+    },
+    "packEvidence": {
+     "pack": "50 ml",
+     "exactOfferUrl": "https://furiosa.cz/products/furiosa%C2%AE-matcha-date?variant=54894874657153"
+    },
+    "variantSelectionRequired": false,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "suitabilityEvidence": {},
+    "skinTypesListed": [],
+    "photoUrl": "https://cdn.shopify.com/s/files/1/0873/3674/7286/files/MatchaDateParfume_V1_PSD_7e79ca74-cc5a-488c-b919-025eec40904b.jpg?v=1761915923",
+    "photoEvidence": {
+     "url": "https://cdn.shopify.com/s/files/1/0873/3674/7286/files/MatchaDateParfume_V1_PSD_7e79ca74-cc5a-488c-b919-025eec40904b.jpg?v=1761915923",
+     "localPath": "/assets/s5/furiosa/furiosa-matcha-date.webp",
+     "sha256": "5b673f87037bcb9dfa652a526678a9a71c695f2808d8d6cf4a55a3d46cc61bec",
+     "width": 510,
+     "height": 680,
+     "downloadedAt": "2026-11-11T06:31:07.808625+00:00"
+    },
+    "scent": "Matcha, citronová tráva a kokos.",
+    "selectionTraits": {
+     "fragranceDirection": "green",
+     "fragranceProfile": "furiosa-matcha-date"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://furiosa.cz/products/furiosa%C2%AE-matcha-date",
+     "notePyramid": {
+      "top": "bergamot (Kalábrie), žlutá mandarinka",
+      "heart": "ceremoniální matcha, citronová tráva, zelený čaj",
+      "base": "virginský cedr, kokosová pěna, mošus"
+     },
+     "facts": {
+      "description": "Matcha, citronová tráva a kokos."
+     }
+    },
+    "variants": [
+     {
+      "label": "10 ml",
+      "price": 990,
+      "available": true,
+      "url": "https://furiosa.cz/products/furiosa%C2%AE-matcha-date-10-ml?variant=56402298569089",
+      "evidence": {
+       "shopifyVariantId": 56402298569089,
+       "sku": "SP-MATCHADATE-10",
+       "checkedAt": "2026-11-11T06:32:20.210001+00:00",
+       "schemaAvailability": "https://schema.org/InStock",
+       "currency": "CZK",
+       "variantPhotoUrl": null
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "furiosa-candy-as-fck",
+   "name": "FURIOSA® CANDY AS F®CK",
+   "brand": "FURIOSA®",
+   "url": "https://furiosa.cz/products/furiosa-candy-as-fck",
+   "photo": "/assets/s5/furiosa/furiosa-candy-as-fck.webp",
+   "priceAmount": 2990,
+   "price": "2990 Kč",
+   "currency": "CZK",
+   "volume": "50 ml",
+   "category": "fragrance",
+   "kind": "Parfém",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Cukrová vata a marshmallow.",
+   "reason": "Cukrová vata a marshmallow.",
+   "source": {
+    "series": "s5",
+    "url": "https://furiosa.cz/products/furiosa-candy-as-fck",
+    "verifiedAt": "2026-11-11T06:32:20.210001+00:00",
+    "stock": "InStock",
+    "stockEvidence": {
+     "shopifyVariantId": 56186255540609,
+     "sku": "SP-CANDYASFCK-50",
+     "checkedAt": "2026-11-11T06:32:20.210001+00:00",
+     "schemaAvailability": "https://schema.org/InStock",
+     "currency": "CZK",
+     "variantPhotoUrl": null
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "retailIncludingTaxes": 2990,
+     "currency": "CZK",
+     "vatSource": "https://furiosa.cz/policies/terms-of-service",
+     "vatEvidence": "Ceny zboží jsou uvedeny včetně daně z přidané hodnoty a všech souvisejících poplatků."
+    },
+    "packEvidence": {
+     "pack": "50 ml",
+     "exactOfferUrl": "https://furiosa.cz/products/furiosa-candy-as-fck?variant=56186255540609"
+    },
+    "variantSelectionRequired": false,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "suitabilityEvidence": {},
+    "skinTypesListed": [],
+    "photoUrl": "https://cdn.shopify.com/s/files/1/0873/3674/7286/files/V1_d0872f72-d9be-4ef3-95ec-0856ecc10646.png?v=1789636666",
+    "photoEvidence": {
+     "url": "https://cdn.shopify.com/s/files/1/0873/3674/7286/files/V1_d0872f72-d9be-4ef3-95ec-0856ecc10646.png?v=1789636666",
+     "localPath": "/assets/s5/furiosa/furiosa-candy-as-fck.webp",
+     "sha256": "0b9ab6806bdaf7c6165d6718fc17dab52eb601007b327e57d672052d9de27296",
+     "width": 510,
+     "height": 680,
+     "downloadedAt": "2026-11-11T06:31:07.860625+00:00"
+    },
+    "scent": "Cukrová vata a marshmallow.",
+    "selectionTraits": {
+     "fragranceDirection": "cherrySweet",
+     "fragranceProfile": "furiosa-candy-as-fck"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://furiosa.cz/products/furiosa-candy-as-fck",
+     "notePyramid": {
+      "top": "tattoo akord, cukrová vata, marshmallow, smrk, elemi",
+      "heart": "vanilka, veganská kůže, benzoin Siam, malina, labdanum",
+      "base": "mošus, ambroxan, cedr, dubový mech"
+     },
+     "facts": {
+      "description": "Cukrová vata a marshmallow."
+     }
+    },
+    "variants": [
+     {
+      "label": "10 ml",
+      "price": 990,
+      "available": true,
+      "url": "https://furiosa.cz/products/furiosa%C2%AE-candy-as-f%C2%AEck-10-ml?variant=56402315116929",
+      "evidence": {
+       "shopifyVariantId": 56402315116929,
+       "sku": "SP-CANDYASFCK-10",
+       "checkedAt": "2026-11-11T06:32:20.210001+00:00",
+       "schemaAvailability": "https://schema.org/InStock",
+       "currency": "CZK",
+       "variantPhotoUrl": null
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "furiosa-old-money",
+   "name": "FURIOSA® OLD MONEY",
+   "brand": "FURIOSA®",
+   "url": "https://furiosa.cz/products/furiosa%C2%AE-old-money",
+   "photo": "/assets/s5/furiosa/furiosa-old-money.webp",
+   "priceAmount": 2490,
+   "price": "2490 Kč",
+   "currency": "CZK",
+   "volume": "50 ml",
+   "category": "fragrance",
+   "kind": "Parfém",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Zázvor, pepř a oud.",
+   "reason": "Zázvor, pepř a oud.",
+   "source": {
+    "series": "s5",
+    "url": "https://furiosa.cz/products/furiosa%C2%AE-old-money",
+    "verifiedAt": "2026-11-11T06:32:20.210001+00:00",
+    "stock": "InStock",
+    "stockEvidence": {
+     "shopifyVariantId": 54706923831681,
+     "sku": "SP-OLDMONEY-50",
+     "checkedAt": "2026-11-11T06:32:20.210001+00:00",
+     "schemaAvailability": "https://schema.org/InStock",
+     "currency": "CZK",
+     "variantPhotoUrl": null
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "retailIncludingTaxes": 2490,
+     "currency": "CZK",
+     "vatSource": "https://furiosa.cz/policies/terms-of-service",
+     "vatEvidence": "Ceny zboží jsou uvedeny včetně daně z přidané hodnoty a všech souvisejících poplatků."
+    },
+    "packEvidence": {
+     "pack": "50 ml",
+     "exactOfferUrl": "https://furiosa.cz/products/furiosa%C2%AE-old-money?variant=54706923831681"
+    },
+    "variantSelectionRequired": false,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "suitabilityEvidence": {},
+    "skinTypesListed": [],
+    "photoUrl": "https://cdn.shopify.com/s/files/1/0873/3674/7286/files/250912_FURIOSA_PARFUMES_OLD_MONEY_V1.jpg?v=1757676967",
+    "photoEvidence": {
+     "url": "https://cdn.shopify.com/s/files/1/0873/3674/7286/files/250912_FURIOSA_PARFUMES_OLD_MONEY_V1.jpg?v=1757676967",
+     "localPath": "/assets/s5/furiosa/furiosa-old-money.webp",
+     "sha256": "3d3f5b5b3d439eb6e45a5e6a8809407bad1e4cb0092b801026a5dc2652fe292b",
+     "width": 510,
+     "height": 680,
+     "downloadedAt": "2026-11-11T06:31:07.832625+00:00"
+    },
+    "scent": "Zázvor, pepř a oud.",
+    "selectionTraits": {
+     "fragranceDirection": "wood",
+     "fragranceProfile": "furiosa-old-money"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://furiosa.cz/products/furiosa%C2%AE-old-money",
+     "notePyramid": {
+      "top": "bergamot, mandarinka, citrón, zázvor",
+      "heart": "pepř, jasmín, levandule, geránie",
+      "base": "cedrové dřevo, santalové dřevo, oud, vetiver, tonka, labdanum"
+     },
+     "facts": {
+      "description": "Zázvor, pepř a oud."
+     }
+    },
+    "variants": [
+     {
+      "label": "10 ml",
+      "price": 890,
+      "available": true,
+      "url": "https://furiosa.cz/products/furiosa%C2%AE-old-money-10-ml?variant=56402309316993",
+      "evidence": {
+       "shopifyVariantId": 56402309316993,
+       "sku": "SP-OLDMONEY-10",
+       "checkedAt": "2026-11-11T06:32:20.210001+00:00",
+       "schemaAvailability": "https://schema.org/InStock",
+       "currency": "CZK",
+       "variantPhotoUrl": null
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "furiosa-burlesque",
+   "name": "FURIOSA® BURLESQUE",
+   "brand": "FURIOSA®",
+   "url": "https://furiosa.cz/products/furiosa%C2%AE-burlesque",
+   "photo": "/assets/s5/furiosa/furiosa-burlesque.webp",
+   "priceAmount": 2490,
+   "price": "2490 Kč",
+   "currency": "CZK",
+   "volume": "50 ml",
+   "category": "fragrance",
+   "kind": "Parfém",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Ylang, růže a meruňka.",
+   "reason": "Ylang, růže a meruňka.",
+   "source": {
+    "series": "s5",
+    "url": "https://furiosa.cz/products/furiosa%C2%AE-burlesque",
+    "verifiedAt": "2026-11-11T06:32:20.210001+00:00",
+    "stock": "InStock",
+    "stockEvidence": {
+     "shopifyVariantId": 54706922815873,
+     "sku": "SP-BURLESQUE-50",
+     "checkedAt": "2026-11-11T06:32:20.210001+00:00",
+     "schemaAvailability": "https://schema.org/InStock",
+     "currency": "CZK",
+     "variantPhotoUrl": null
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "retailIncludingTaxes": 2490,
+     "currency": "CZK",
+     "vatSource": "https://furiosa.cz/policies/terms-of-service",
+     "vatEvidence": "Ceny zboží jsou uvedeny včetně daně z přidané hodnoty a všech souvisejících poplatků."
+    },
+    "packEvidence": {
+     "pack": "50 ml",
+     "exactOfferUrl": "https://furiosa.cz/products/furiosa%C2%AE-burlesque?variant=54706922815873"
+    },
+    "variantSelectionRequired": false,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "suitabilityEvidence": {},
+    "skinTypesListed": [],
+    "photoUrl": "https://cdn.shopify.com/s/files/1/0873/3674/7286/files/250912_FURIOSA_PARFUMES_BURLESQUE_V1.jpg?v=1757677819",
+    "photoEvidence": {
+     "url": "https://cdn.shopify.com/s/files/1/0873/3674/7286/files/250912_FURIOSA_PARFUMES_BURLESQUE_V1.jpg?v=1757677819",
+     "localPath": "/assets/s5/furiosa/furiosa-burlesque.webp",
+     "sha256": "1b05b047e7aaa2fc02c605d89f0cd02b423930bd30735bb3aac74ed56d689df1",
+     "width": 510,
+     "height": 680,
+     "downloadedAt": "2026-11-11T06:31:07.820625+00:00"
+    },
+    "scent": "Ylang, růže a meruňka.",
+    "selectionTraits": {
+     "fragranceDirection": "floral",
+     "fragranceProfile": "furiosa-burlesque"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://furiosa.cz/products/furiosa%C2%AE-burlesque",
+     "notePyramid": {
+      "top": "ylang, růžový pepř, kardamom",
+      "heart": "růže, jasmín, meruňka, fialka",
+      "base": "mošus, ambra, pačuli, cedr, vetiver"
+     },
+     "facts": {
+      "description": "Ylang, růže a meruňka."
+     }
+    },
+    "variants": []
+   }
+  },
+  {
+   "id": "furiosa-blush",
+   "name": "FURIOSA® BLUSH",
+   "brand": "FURIOSA®",
+   "url": "https://furiosa.cz/products/furiosa%C2%AE-blush",
+   "photo": "/assets/s5/furiosa/furiosa-blush.webp",
+   "priceAmount": 2490,
+   "price": "2490 Kč",
+   "currency": "CZK",
+   "volume": "50 ml",
+   "category": "fragrance",
+   "kind": "Parfém",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Růže, magnólie a grapefruit.",
+   "reason": "Růže, magnólie a grapefruit.",
+   "source": {
+    "series": "s5",
+    "url": "https://furiosa.cz/products/furiosa%C2%AE-blush",
+    "verifiedAt": "2026-11-11T06:32:20.210001+00:00",
+    "stock": "InStock",
+    "stockEvidence": {
+     "shopifyVariantId": 54706925339009,
+     "sku": "SP-BLUSH-50",
+     "checkedAt": "2026-11-11T06:32:20.210001+00:00",
+     "schemaAvailability": "https://schema.org/InStock",
+     "currency": "CZK",
+     "variantPhotoUrl": null
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "retailIncludingTaxes": 2490,
+     "currency": "CZK",
+     "vatSource": "https://furiosa.cz/policies/terms-of-service",
+     "vatEvidence": "Ceny zboží jsou uvedeny včetně daně z přidané hodnoty a všech souvisejících poplatků."
+    },
+    "packEvidence": {
+     "pack": "50 ml",
+     "exactOfferUrl": "https://furiosa.cz/products/furiosa%C2%AE-blush?variant=54706925339009"
+    },
+    "variantSelectionRequired": false,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "suitabilityEvidence": {},
+    "skinTypesListed": [],
+    "photoUrl": "https://cdn.shopify.com/s/files/1/0873/3674/7286/files/250912_FURIOSA_PARFUMES_BLUSH_V1.jpg?v=1757675732",
+    "photoEvidence": {
+     "url": "https://cdn.shopify.com/s/files/1/0873/3674/7286/files/250912_FURIOSA_PARFUMES_BLUSH_V1.jpg?v=1757675732",
+     "localPath": "/assets/s5/furiosa/furiosa-blush.webp",
+     "sha256": "ceef8b9f1793a0c363d0b1146ce77faf6005fee8fad4518c8e9fb5d0f7f993f7",
+     "width": 510,
+     "height": 680,
+     "downloadedAt": "2026-11-11T06:31:58.492799+00:00"
+    },
+    "scent": "Růže, magnólie a grapefruit.",
+    "selectionTraits": {
+     "fragranceDirection": "floral",
+     "fragranceProfile": "furiosa-blush"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://furiosa.cz/products/furiosa%C2%AE-blush",
+     "notePyramid": {
+      "top": "mandarinka, grapefruit, hořký pomeranč",
+      "heart": "růže, růžové lístky, geránie, magnolie",
+      "base": "mošus, cedr, vanilka, ambra"
+     },
+     "facts": {
+      "description": "Růže, magnólie a grapefruit."
+     }
+    },
+    "variants": [
+     {
+      "label": "10 ml",
+      "price": 890,
+      "available": true,
+      "url": "https://furiosa.cz/products/furiosa%C2%AE-blush-kopie?variant=56402303418753",
+      "evidence": {
+       "shopifyVariantId": 56402303418753,
+       "sku": "SP-BLUSH-10",
+       "checkedAt": "2026-11-11T06:32:20.210001+00:00",
+       "schemaAvailability": "https://schema.org/InStock",
+       "currency": "CZK",
+       "variantPhotoUrl": null
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "furiosa-fizz",
+   "name": "FURIOSA® FIZZ",
+   "brand": "FURIOSA®",
+   "url": "https://furiosa.cz/products/furiosa%C2%AE-fizz",
+   "photo": "/assets/s5/furiosa/furiosa-fizz.webp",
+   "priceAmount": 1990,
+   "price": "1990 Kč",
+   "currency": "CZK",
+   "volume": "50 ml",
+   "category": "fragrance",
+   "kind": "Parfém",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Hruška, meloun a frézie.",
+   "reason": "Hruška, meloun a frézie.",
+   "source": {
+    "series": "s5",
+    "url": "https://furiosa.cz/products/furiosa%C2%AE-fizz",
+    "verifiedAt": "2026-11-11T06:32:20.210001+00:00",
+    "stock": "InStock",
+    "stockEvidence": {
+     "shopifyVariantId": 54706923635073,
+     "sku": "SP-FIZZ-50",
+     "checkedAt": "2026-11-11T06:32:20.210001+00:00",
+     "schemaAvailability": "https://schema.org/InStock",
+     "currency": "CZK",
+     "variantPhotoUrl": null
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "retailIncludingTaxes": 1990,
+     "currency": "CZK",
+     "vatSource": "https://furiosa.cz/policies/terms-of-service",
+     "vatEvidence": "Ceny zboží jsou uvedeny včetně daně z přidané hodnoty a všech souvisejících poplatků."
+    },
+    "packEvidence": {
+     "pack": "50 ml",
+     "exactOfferUrl": "https://furiosa.cz/products/furiosa%C2%AE-fizz?variant=54706923635073"
+    },
+    "variantSelectionRequired": false,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "suitabilityEvidence": {},
+    "skinTypesListed": [],
+    "photoUrl": "https://cdn.shopify.com/s/files/1/0873/3674/7286/files/250912_FURIOSA_PARFUMES_FIZZ_V1.jpg?v=1757677165",
+    "photoEvidence": {
+     "url": "https://cdn.shopify.com/s/files/1/0873/3674/7286/files/250912_FURIOSA_PARFUMES_FIZZ_V1.jpg?v=1757677165",
+     "localPath": "/assets/s5/furiosa/furiosa-fizz.webp",
+     "sha256": "49e5fc73378faa179ab47da2a3d5a6b8526091a62195bbc09e58a02d801e172b",
+     "width": 510,
+     "height": 680,
+     "downloadedAt": "2026-11-11T06:31:58.448799+00:00"
+    },
+    "scent": "Hruška, meloun a frézie.",
+    "selectionTraits": {
+     "fragranceDirection": "green",
+     "fragranceProfile": "furiosa-fizz"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://furiosa.cz/products/furiosa%C2%AE-fizz",
+     "notePyramid": {
+      "top": "hruška, meloun",
+      "heart": "frézie, růže",
+      "base": "pačuli, ambra, mošus"
+     },
+     "facts": {
+      "description": "Hruška, meloun a frézie."
+     }
+    },
+    "variants": []
+   }
+  },
+  {
+   "id": "furiosa-kashmir",
+   "name": "FURIOSA® KASHMIR",
+   "brand": "FURIOSA®",
+   "url": "https://furiosa.cz/products/furiosa%C2%AE-kashmir",
+   "photo": "/assets/s5/furiosa/furiosa-kashmir.webp",
+   "priceAmount": 2490,
+   "price": "2490 Kč",
+   "currency": "CZK",
+   "volume": "50 ml",
+   "category": "fragrance",
+   "kind": "Parfém",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Kadidlo, santal a vanilka.",
+   "reason": "Kadidlo, santal a vanilka.",
+   "source": {
+    "series": "s5",
+    "url": "https://furiosa.cz/products/furiosa%C2%AE-kashmir",
+    "verifiedAt": "2026-11-11T06:32:20.210001+00:00",
+    "stock": "InStock",
+    "stockEvidence": {
+     "shopifyVariantId": 54706923340161,
+     "sku": "SP-KASHMIR-50",
+     "checkedAt": "2026-11-11T06:32:20.210001+00:00",
+     "schemaAvailability": "https://schema.org/InStock",
+     "currency": "CZK",
+     "variantPhotoUrl": null
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "retailIncludingTaxes": 2490,
+     "currency": "CZK",
+     "vatSource": "https://furiosa.cz/policies/terms-of-service",
+     "vatEvidence": "Ceny zboží jsou uvedeny včetně daně z přidané hodnoty a všech souvisejících poplatků."
+    },
+    "packEvidence": {
+     "pack": "50 ml",
+     "exactOfferUrl": "https://furiosa.cz/products/furiosa%C2%AE-kashmir?variant=54706923340161"
+    },
+    "variantSelectionRequired": false,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "suitabilityEvidence": {},
+    "skinTypesListed": [],
+    "photoUrl": "https://cdn.shopify.com/s/files/1/0873/3674/7286/files/250912_FURIOSA_PARFUMES_KASHMIR_V1.jpg?v=1757677491",
+    "photoEvidence": {
+     "url": "https://cdn.shopify.com/s/files/1/0873/3674/7286/files/250912_FURIOSA_PARFUMES_KASHMIR_V1.jpg?v=1757677491",
+     "localPath": "/assets/s5/furiosa/furiosa-kashmir.webp",
+     "sha256": "488c7e40f578b233891c6178b60af59d180cba93d48391d4c660d6cb107463c1",
+     "width": 510,
+     "height": 680,
+     "downloadedAt": "2026-11-11T06:31:58.480799+00:00"
+    },
+    "scent": "Kadidlo, santal a vanilka.",
+    "selectionTraits": {
+     "fragranceDirection": "wood",
+     "fragranceProfile": "furiosa-kashmir"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://furiosa.cz/products/furiosa%C2%AE-kashmir",
+     "notePyramid": {
+      "top": "bergamot, mandarinka (tangerine), limetka",
+      "heart": "pelargónie, růže, jasmín, fialka, tonka",
+      "base": "ambra, kadidlo, santalové dřevo, vanilka, pižmo"
+     },
+     "facts": {
+      "description": "Kadidlo, santal a vanilka."
+     }
+    },
+    "variants": [
+     {
+      "label": "10 ml",
+      "price": 890,
+      "available": true,
+      "url": "https://furiosa.cz/products/furiosa%C2%AE-kashmir-10-ml?variant=56402278646145",
+      "evidence": {
+       "shopifyVariantId": 56402278646145,
+       "sku": "SP-KASHMIR-10",
+       "checkedAt": "2026-11-11T06:32:20.210001+00:00",
+       "schemaAvailability": "https://schema.org/InStock",
+       "currency": "CZK",
+       "variantPhotoUrl": null
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "furiosa-nude",
+   "name": "FURIOSA® NUDE",
+   "brand": "FURIOSA®",
+   "url": "https://furiosa.cz/products/furiosa%C2%AE-nude",
+   "photo": "/assets/s5/furiosa/furiosa-nude.webp",
+   "priceAmount": 1990,
+   "price": "1990 Kč",
+   "currency": "CZK",
+   "volume": "50 ml",
+   "category": "fragrance",
+   "kind": "Parfém",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Fík, kosatec a květ máku.",
+   "reason": "Fík, kosatec a květ máku.",
+   "source": {
+    "series": "s5",
+    "url": "https://furiosa.cz/products/furiosa%C2%AE-nude",
+    "verifiedAt": "2026-11-11T06:32:20.210001+00:00",
+    "stock": "InStock",
+    "stockEvidence": {
+     "shopifyVariantId": 54706921341313,
+     "sku": "SP-NUDE-50",
+     "checkedAt": "2026-11-11T06:32:20.210001+00:00",
+     "schemaAvailability": "https://schema.org/InStock",
+     "currency": "CZK",
+     "variantPhotoUrl": null
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "retailIncludingTaxes": 1990,
+     "currency": "CZK",
+     "vatSource": "https://furiosa.cz/policies/terms-of-service",
+     "vatEvidence": "Ceny zboží jsou uvedeny včetně daně z přidané hodnoty a všech souvisejících poplatků."
+    },
+    "packEvidence": {
+     "pack": "50 ml",
+     "exactOfferUrl": "https://furiosa.cz/products/furiosa%C2%AE-nude?variant=54706921341313"
+    },
+    "variantSelectionRequired": false,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "suitabilityEvidence": {},
+    "skinTypesListed": [],
+    "photoUrl": "https://cdn.shopify.com/s/files/1/0873/3674/7286/files/250912_FURIOSA_PARFUMES_NUDE_V1.jpg?v=1757680327",
+    "photoEvidence": {
+     "url": "https://cdn.shopify.com/s/files/1/0873/3674/7286/files/250912_FURIOSA_PARFUMES_NUDE_V1.jpg?v=1757680327",
+     "localPath": "/assets/s5/furiosa/furiosa-nude.webp",
+     "sha256": "9f4edd0bc57807bb41d2320e7501ef6b46a1f4563104a7192492cdac3e874165",
+     "width": 510,
+     "height": 680,
+     "downloadedAt": "2026-11-11T06:31:13.076642+00:00"
+    },
+    "scent": "Fík, kosatec a květ máku.",
+    "selectionTraits": {
+     "fragranceDirection": "green",
+     "fragranceProfile": "furiosa-nude"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://furiosa.cz/products/furiosa%C2%AE-nude",
+     "notePyramid": {
+      "top": "fík, mandarinka, broskev",
+      "heart": "kosatec, květ máku, ambrette (semena), černý rybíz",
+      "base": "tonka, otočník peruánský (heliotrop), santalové dřevo, cedrové dřevo"
+     },
+     "facts": {
+      "description": "Fík, kosatec a květ máku."
+     }
+    },
+    "variants": [
+     {
+      "label": "10 ml",
+      "price": 790,
+      "available": true,
+      "url": "https://furiosa.cz/products/furiosa%C2%AE-nude-10-ml?variant=56401733583233",
+      "evidence": {
+       "shopifyVariantId": 56401733583233,
+       "sku": "SP-NUDE-10",
+       "checkedAt": "2026-11-11T06:32:20.210001+00:00",
+       "schemaAvailability": "https://schema.org/InStock",
+       "currency": "CZK",
+       "variantPhotoUrl": null
+      }
+     }
+    ]
+   }
+  }
+ ]
+};
