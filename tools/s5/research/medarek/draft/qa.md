@@ -1,0 +1,1 @@
+Local Chromium QA passed all 36 result paths (12 products at 320, 390 and 1280 px), including loaded official photograph, price, pack, merchant link and horizontal overflow. Live Preview and eligibility are pending.

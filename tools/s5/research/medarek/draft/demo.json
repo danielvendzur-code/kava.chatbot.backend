@@ -1,0 +1,152 @@
+{
+  "series": "s5",
+  "type": "cosmetics",
+  "name": "Medarek",
+  "country": "CZ",
+  "logos": {
+    "landing": "/assets/s5/medarek/logo.jpg",
+    "header": "/assets/s5/medarek/logo.jpg",
+    "avatar": "/assets/s5/medarek/logo.jpg"
+  },
+  "brand": {
+    "name": "Medarek",
+    "domain": "medarek.cz",
+    "website": "https://www.medarek.cz/",
+    "fullName": "Medarek",
+    "lang": "cs",
+    "hero": "/assets/s5/medarek/bublinovy-sampuk.webp",
+    "logo": "/assets/s5/medarek/logo.jpg",
+    "mark": "/assets/s5/medarek/logo.jpg",
+    "theme": {
+      "brand": "#573b29",
+      "accent": "#714c32",
+      "soft": "#f8eee2",
+      "paper": "#ffffff",
+      "ink": "#351f14",
+      "line": "#dfcbb8"
+    }
+  },
+  "segmentText": {
+    "heading": "Najděte si péči od Medareku.",
+    "lead": "Vyberte si šampuk, mýdlo nebo balzám na rty. U doporučeného produktu uvidíte velikost, cenu a odkaz do e-shopu.",
+    "entryNote": "Vlasy, tělo a rty · složení a vůně"
+  },
+  "stepCopy": {
+    "careVariant": [
+      "Co vás láká?",
+      "Vyberte podle složení nebo vůně."
+    ]
+  },
+  "traitCopy": {
+    "bublinovy-sampuk": [
+      "Máta",
+      "Tuhý šampon · Máta.",
+      "Máta",
+      "Tuhý šampon · Máta."
+    ],
+    "liskovy-sampuk": [
+      "Lískový olej",
+      "Tuhý šampon · Lískový olej.",
+      "Lískový olej",
+      "Tuhý šampon · Lískový olej."
+    ],
+    "arganovy-sampuk": [
+      "Argan a pomeranč",
+      "Tuhý šampon · Argan a pomeranč.",
+      "Argan a pomeranč",
+      "Tuhý šampon · Argan a pomeranč."
+    ],
+    "hajanek-sampuk": [
+      "Levandule",
+      "Tuhý šampon · Levandule.",
+      "Levandule",
+      "Tuhý šampon · Levandule."
+    ],
+    "monoi-de-tahiti-mydlo": [
+      "Monoi",
+      "Tuhé mýdlo · Monoi.",
+      "Monoi",
+      "Tuhé mýdlo · Monoi."
+    ],
+    "bambucke-mydlo": [
+      "Bambucké máslo",
+      "Tuhé mýdlo · Bambucké máslo.",
+      "Bambucké máslo",
+      "Tuhé mýdlo · Bambucké máslo."
+    ],
+    "levandulove-mydlo": [
+      "Levandule",
+      "Tuhé mýdlo · Levandule.",
+      "Levandule",
+      "Tuhé mýdlo · Levandule."
+    ],
+    "bananove-mydlo": [
+      "Banán",
+      "Tuhé mýdlo · Banán.",
+      "Banán",
+      "Tuhé mýdlo · Banán."
+    ],
+    "balzam-na-rty-mango": [
+      "Mango",
+      "Balzám na rty · Mango.",
+      "Mango",
+      "Balzám na rty · Mango."
+    ],
+    "balzam-na-rty-vanilka": [
+      "Vanilka",
+      "Balzám na rty · Vanilka.",
+      "Vanilka",
+      "Balzám na rty · Vanilka."
+    ],
+    "balzam-na-rty-mata": [
+      "Máta",
+      "Balzám na rty · Máta.",
+      "Máta",
+      "Balzám na rty · Máta."
+    ],
+    "balzam-na-rty-svestka": [
+      "Švestka",
+      "Balzám na rty · Švestka.",
+      "Švestka",
+      "Balzám na rty · Švestka."
+    ]
+  },
+  "choicePhotos": {
+    "bublinovy-sampuk": [
+      "/assets/s5/medarek/bublinovy-sampuk.webp"
+    ],
+    "liskovy-sampuk": [
+      "/assets/s5/medarek/liskovy-sampuk.webp"
+    ],
+    "arganovy-sampuk": [
+      "/assets/s5/medarek/arganovy-sampuk.webp"
+    ],
+    "hajanek-sampuk": [
+      "/assets/s5/medarek/hajanek-sampuk.webp"
+    ],
+    "monoi-de-tahiti-mydlo": [
+      "/assets/s5/medarek/monoi-de-tahiti-mydlo.webp"
+    ],
+    "bambucke-mydlo": [
+      "/assets/s5/medarek/bambucke-mydlo.webp"
+    ],
+    "levandulove-mydlo": [
+      "/assets/s5/medarek/levandulove-mydlo.webp"
+    ],
+    "bananove-mydlo": [
+      "/assets/s5/medarek/bananove-mydlo.webp"
+    ],
+    "balzam-na-rty-mango": [
+      "/assets/s5/medarek/balzam-na-rty-mango.webp"
+    ],
+    "balzam-na-rty-vanilka": [
+      "/assets/s5/medarek/balzam-na-rty-vanilka.webp"
+    ],
+    "balzam-na-rty-mata": [
+      "/assets/s5/medarek/balzam-na-rty-mata.webp"
+    ],
+    "balzam-na-rty-svestka": [
+      "/assets/s5/medarek/balzam-na-rty-svestka.webp"
+    ]
+  }
+}
