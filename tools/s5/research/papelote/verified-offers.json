@@ -1,0 +1,150 @@
+{
+  "checkedAt": "2026-11-16",
+  "business": "Papelote s.r.o.",
+  "ico": "28944895",
+  "domain": "papelote.cz",
+  "terms": "https://www.papelote.cz/obchodni-podminky/",
+  "catalogue": "https://www.papelote.cz/zapisniky/",
+  "status": "PREFLIGHT_ONLY",
+  "duplicateCheck": "Current claims text and commit search only. Complete registry and reservation checks before booking.",
+  "merchantUI": "Observed email and phone contact; no visible product-advice widget in inspected home and product sessions.",
+  "remaining": [
+    "Recover or download official product photos and brand mark",
+    "Complete duplicate and reservation checks",
+    "Integrate catalog, test all paths and verify exact Vercel Preview"
+  ],
+  "products": [
+    {
+      "id": "softblok-a5-2-0",
+      "group": "notes",
+      "format": "A5",
+      "priceCZK": 249,
+      "ruling": "tečky",
+      "pages": 120,
+      "paperGsm": 80,
+      "availability": "InStock at source review",
+      "url": "https://www.papelote.cz/softblok-a5-2-0/"
+    },
+    {
+      "id": "spiral-a5-tec",
+      "group": "notes",
+      "format": "A5",
+      "priceCZK": 259,
+      "ruling": "tečky",
+      "pages": 120,
+      "paperGsm": 80,
+      "availability": "InStock at source review",
+      "url": "https://www.papelote.cz/spiral-a5-tec/"
+    },
+    {
+      "id": "professio-2-0",
+      "group": "notes",
+      "format": "B5",
+      "priceCZK": 299,
+      "ruling": "tečky",
+      "pages": 112,
+      "paperGsm": 90,
+      "availability": "InStock at source review",
+      "url": "https://www.papelote.cz/professio-2-0/"
+    },
+    {
+      "id": "vegablok-a5-lite",
+      "group": "notes",
+      "format": "A5",
+      "priceCZK": 499,
+      "ruling": "tečky",
+      "pages": 128,
+      "paperGsm": 90,
+      "availability": "InStock at source review",
+      "url": "https://www.papelote.cz/vegablok-a5-lite/"
+    },
+    {
+      "id": "spiral-a5-cis",
+      "group": "draw",
+      "format": "A5",
+      "priceCZK": 259,
+      "ruling": "čisté",
+      "pages": 120,
+      "paperGsm": 80,
+      "availability": "InStock at source review",
+      "url": "https://www.papelote.cz/spiral-a5-cis/"
+    },
+    {
+      "id": "spiral-a5-posterlad-m020-cis",
+      "group": "draw",
+      "format": "A5",
+      "priceCZK": 399,
+      "ruling": "čisté",
+      "sheets": 60,
+      "paperGsm": 80,
+      "availability": "InStock at source review",
+      "url": "https://www.papelote.cz/spiral-a5-posterlad-m020-cis/"
+    },
+    {
+      "id": "journal-zapisnik",
+      "group": "draw",
+      "format": "12 × 16 cm",
+      "priceCZK": 349,
+      "ruling": "čisté",
+      "pages": 80,
+      "paperGsm": 90,
+      "availability": "InStock at source review",
+      "url": "https://www.papelote.cz/journal-zapisnik/"
+    },
+    {
+      "id": "softblok-a6-2-0",
+      "group": "compact",
+      "format": "A6",
+      "priceCZK": 189,
+      "ruling": "tečky",
+      "pages": 120,
+      "paperGsm": 80,
+      "availability": "InStock at source review",
+      "url": "https://www.papelote.cz/softblok-a6-2-0/"
+    },
+    {
+      "id": "kapesni-sesit-klasika-s-gumickou",
+      "group": "compact",
+      "format": "9 × 14 cm",
+      "priceCZK": 119,
+      "ruling": "tečky",
+      "pages": 52,
+      "paperGsm": 80,
+      "availability": "InStock at source review",
+      "url": "https://www.papelote.cz/kapesni-sesit-klasika-s-gumickou/"
+    },
+    {
+      "id": "journal-denik",
+      "group": "compact",
+      "format": "12 × 16 cm",
+      "priceCZK": 349,
+      "ruling": "tečky",
+      "pages": 80,
+      "paperGsm": 90,
+      "availability": "InStock at source review",
+      "url": "https://www.papelote.cz/journal-denik/"
+    },
+    {
+      "id": "journal-checklist",
+      "group": "plan",
+      "format": "12 × 16 cm",
+      "priceCZK": 219,
+      "ruling": "tečky s odrážkami",
+      "pages": 64,
+      "paperGsm": 90,
+      "availability": "InStock at source review",
+      "url": "https://www.papelote.cz/journal-checklist/"
+    },
+    {
+      "id": "journal-planovac",
+      "group": "plan",
+      "format": "12 × 16 cm",
+      "priceCZK": 219,
+      "ruling": "mřížka",
+      "pages": 64,
+      "paperGsm": 90,
+      "availability": "InStock at source review",
+      "url": "https://www.papelote.cz/journal-planovac/"
+    }
+  ]
+}
