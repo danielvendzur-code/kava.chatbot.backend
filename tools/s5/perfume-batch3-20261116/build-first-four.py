@@ -50,6 +50,10 @@ for slug,s in SPECS.items():
   source=h.source(r,'Vonná svíčka',pack,price,stock,notes,'\n'.join(x[1] for x in pairs),photos[pid],extra);ne=source['fragrance']['notesEvidence'];ne.update(sourceText='Vonné tóny: '+', '.join(notes)+'\nDoslovné zdrojové fragmenty:\n'+'\n'.join(x[1] for x in pairs),noteFormMapping=[{'display':n,'sourceFragments':[form]} for n,form in pairs],qualification='Literal product-description sensory fragments extracted from official primary page; separate quoted fragments, not a fabricated continuous paragraph. Czech inflections normalized faithfully. No title-only ingredient inference, no numericstrengths/health/safety/burnguarantees.')
   if slug=='svetlonosky' and pid in ['vanilla','chocolate']:
    pyramid={'head':['anýz','broskev','mandle'],'heart':['karamel','kokos'],'base':['vanilka']} if pid=='vanilla' else {'head':['čokoláda','kakao'],'heart':['káva','mléko'],'base':['karamel','vanilka']};source['fragrance'].update(pyramid=pyramid,pyramidEvidence={'url':r['url'],'sourceText':r['description'].split('Každá')[0],'scope':'Literal official Hlava/Srdce/Základ labels, not inferred volatile-note stages'})
+  if slug=='essencebliss' and pid=='amber':
+   source['fragrance']['pyramid']={'head':['jablko','bergamot'],'heart':['růže','karamel','jasmín'],'base':['ambra','pižmo','vanilka','balzamické tóny']};source['fragrance']['pyramidEvidence']={'url':r['url'],'sourceText':r['description'],'scope':'Literal Hlava/Srdce/Základ in official primaryproductdescription'}
+  if source['fragrance'].get('pyramid'):
+   py=source['fragrance']['pyramid'];ne['sourceText']+='\nHlava: '+', '.join(py['head'])+'; Srdce: '+', '.join(py['heart'])+'; Základ: '+', '.join(py['base'])
   p=h.record(pid,name,r['url'],pack,price,'CZK','Vonná svíčka',profile,f'/assets/s5/{slug}/'+photos[pid]['file'],source)
   if variants:p['reason']+=' '+extra['variantSelectionNotice'];p['description']=p['reason']
   products.append(p);profiles[pid]=profile

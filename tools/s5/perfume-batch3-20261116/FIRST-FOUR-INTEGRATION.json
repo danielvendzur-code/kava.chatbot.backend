@@ -1,0 +1,445 @@
+{
+  "at": "2026-11-16T11:21:39.413749+00:00",
+  "companies": [
+    {
+      "slug": "essencebliss",
+      "brand": "ESSENCE BLISS",
+      "domain": "essencebliss.cz",
+      "operator": {
+        "name": "Jana Schmidtová",
+        "ico": "08279080",
+        "country": "CZ",
+        "activeNoEnd": true,
+        "officialRegistry": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/08279080"
+      },
+      "primaryFormulas": 6,
+      "uniqueLocalResultViews": 18,
+      "config": "n447/s5/perfume-fragments/essencebliss.config.json",
+      "integrationReview": "tools/s5/perfume-batch3-20261116/candidate-packages/essencebliss/integration-review.json",
+      "companyCss": {
+        "source": "tools/s5/perfume-batch3-20261116/candidate-packages/essencebliss/ui-review.css",
+        "destination": "n447/s5/brands/essencebliss.css",
+        "registryField": {
+          "companyCss": "/n447/s5/brands/essencebliss.css"
+        }
+      },
+      "catalogueImport": "/catalogues/essencebliss.js",
+      "backendBrand": "essencebliss",
+      "requiredBackendInstruction": "Only interior scented candles, not perfume on skin or laundry. No health/infant/pet/pregnancy/aromatherapy/fire-safety/nontoxic/smokefree/longevity guarantees; no magic or attraction promises. Literal sourced fragrance notes and exact pack, selectedvariant price and stock timestamp only. No invented paid accessory or automatic cart. No inferred percent/1-10 strength.",
+      "revenue": {
+        "year": null,
+        "value": "UNKNOWN",
+        "source": null,
+        "qualification": "No supported exact turnover source; sole proprietor size not inferred from appearance or ARES active status.",
+        "latestExact2025": "UNKNOWN"
+      },
+      "commercialReview": "REVENUE_UNKNOWN_COMMERCIAL_REVIEW",
+      "files": [
+        {
+          "path": "catalogues/essencebliss.js",
+          "sha256": "4da07fddae7e052bf427aaaf92abf45daabc35e9a0ea37abfc012f7d9913ee8b"
+        },
+        {
+          "path": "n447/s5/sources/essencebliss/verified-products.json",
+          "sha256": "6b23b2f3296a0cf475bb97a80e496edbc3f2be0618629206547ab19dfb72c916"
+        },
+        {
+          "path": "n447/s5/sources/essencebliss/selection-model.json",
+          "sha256": "d71035659bdc179033f922d62e088ec472ed4d3a55e0252a6f2cc7826525cb2f"
+        },
+        {
+          "path": "n447/s5/perfume-fragments/essencebliss.config.json",
+          "sha256": "774148a957f77040fe76bf6e0712491c4edd5bc422e6f29f583e2982041cad02"
+        },
+        {
+          "path": "n447/s5/perfume-fragments/essencebliss.selection-model.json",
+          "sha256": "d71035659bdc179033f922d62e088ec472ed4d3a55e0252a6f2cc7826525cb2f"
+        },
+        {
+          "path": "assets/s5/essencebliss/amber.png",
+          "sha256": "241ce0cd3e35dbf043763f25e831a572feff688b90767e36ff97fa27626d69ef"
+        },
+        {
+          "path": "assets/s5/essencebliss/avatar.svg",
+          "sha256": "cab05343e3316c92496cf301fb2de665241b6ad21b82cce6e27f15f4f1e56453"
+        },
+        {
+          "path": "assets/s5/essencebliss/logo.png",
+          "sha256": "fd8d43166b52c8748d56dcfaf8ab1cfcb615cf42cbb4565bc1371e6b1118c6a9"
+        },
+        {
+          "path": "assets/s5/essencebliss/mango.jpg",
+          "sha256": "dc16c7fb6e88aca6f728019c965206adf4637419df88991caee83c35c4bfdaae"
+        },
+        {
+          "path": "assets/s5/essencebliss/orange.jpg",
+          "sha256": "3f484b3c5e7cdb34c4bdd29ed5da8bc44fa78412622ae6273af91f204a199262"
+        },
+        {
+          "path": "assets/s5/essencebliss/pear.png",
+          "sha256": "1ba9fb847a1703c1dcea75380e4798d27afc803840a4b3af4ee4c3d68d0c0c2a"
+        },
+        {
+          "path": "assets/s5/essencebliss/tea.jpg",
+          "sha256": "e8893a6b691a8435ebdbbf8eb9222050cca5288116086220068bcc1cc8a7748e"
+        },
+        {
+          "path": "assets/s5/essencebliss/verbena.jpg",
+          "sha256": "31724668b8df7f1f1843032287d5a8a2ca2324ec0e095109d3766910c76823ce"
+        }
+      ],
+      "status": "SOURCE_LOCAL_COMPLETE_PENDING_MAIN_INTEGRATION",
+      "demoLiveUrl": null,
+      "outreachStatus": "NOT_READY"
+    },
+    {
+      "slug": "svetlonosky",
+      "brand": "SVĚTLONOŠKY",
+      "domain": "svetlonosky.cz",
+      "operator": {
+        "name": "Barbora Jahodová",
+        "ico": "14032911",
+        "country": "CZ",
+        "activeNoEnd": true,
+        "officialRegistry": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/14032911"
+      },
+      "primaryFormulas": 5,
+      "uniqueLocalResultViews": 15,
+      "config": "n447/s5/perfume-fragments/svetlonosky.config.json",
+      "integrationReview": "tools/s5/perfume-batch3-20261116/candidate-packages/svetlonosky/integration-review.json",
+      "companyCss": {
+        "source": "tools/s5/perfume-batch3-20261116/candidate-packages/svetlonosky/ui-review.css",
+        "destination": "n447/s5/brands/svetlonosky.css",
+        "registryField": {
+          "companyCss": "/n447/s5/brands/svetlonosky.css"
+        }
+      },
+      "catalogueImport": "/catalogues/svetlonosky.js",
+      "backendBrand": "svetlonosky",
+      "requiredBackendInstruction": "Only interior scented candles, not perfume on skin or laundry. No health/infant/pet/pregnancy/aromatherapy/fire-safety/nontoxic/smokefree/longevity guarantees; no magic or attraction promises. Literal sourced fragrance notes and exact pack, selectedvariant price and stock timestamp only. No invented paid accessory or automatic cart. No inferred percent/1-10 strength.",
+      "revenue": {
+        "year": null,
+        "value": "UNKNOWN",
+        "source": null,
+        "qualification": "No supported exact turnover source; sole proprietor size not inferred from appearance or ARES active status.",
+        "latestExact2025": "UNKNOWN"
+      },
+      "commercialReview": "REVENUE_UNKNOWN_COMMERCIAL_REVIEW",
+      "files": [
+        {
+          "path": "catalogues/svetlonosky.js",
+          "sha256": "75eedd674b6a136c4bcc7b82f6d76a2c0eec30ec91d1082dc15a9735d616f658"
+        },
+        {
+          "path": "n447/s5/sources/svetlonosky/verified-products.json",
+          "sha256": "40d14808567d6beb539730748a51e0527d9996bacb26beed044da795c66d0305"
+        },
+        {
+          "path": "n447/s5/sources/svetlonosky/selection-model.json",
+          "sha256": "018e07049bceebc13963997a5f2aa26f0feed8e4ba845639de29e73089210d4f"
+        },
+        {
+          "path": "n447/s5/perfume-fragments/svetlonosky.config.json",
+          "sha256": "f7d45557f406f3ce18ccc7f091b8c6aa8c9e3048ea41d8a89a17ffa9ddedd65b"
+        },
+        {
+          "path": "n447/s5/perfume-fragments/svetlonosky.selection-model.json",
+          "sha256": "018e07049bceebc13963997a5f2aa26f0feed8e4ba845639de29e73089210d4f"
+        },
+        {
+          "path": "assets/s5/svetlonosky/avatar.svg",
+          "sha256": "ebab172614deaedcf72bef7ea963840f509143a1d9e0c21333627fee90746b8e"
+        },
+        {
+          "path": "assets/s5/svetlonosky/cashmere.jpg",
+          "sha256": "5fb8fde4a626f9b0a652e46b9f0bd9c48fa7bf5a86efe6de9e67ac19ac55ceb4"
+        },
+        {
+          "path": "assets/s5/svetlonosky/chocolate.jpg",
+          "sha256": "0edad7e62e35ad4cf782cf23c57e48ce260a8f3979d30b6203ca85c318d281e4"
+        },
+        {
+          "path": "assets/s5/svetlonosky/gingerbread.jpg",
+          "sha256": "8a4d1e7e6ddaad26a3b17b6d883b94fa0e5202623cc56cc3fcd0369d8e8047e4"
+        },
+        {
+          "path": "assets/s5/svetlonosky/logo.png",
+          "sha256": "ad562ff02e667a4a6cbf4880243db9ab3f9d68d218869d186d7a2727b0172227"
+        },
+        {
+          "path": "assets/s5/svetlonosky/vanilla.jpg",
+          "sha256": "8125f0d9496df6432a649e1e7e65418469ea9834bd24fa95fe371559ab142aa8"
+        },
+        {
+          "path": "assets/s5/svetlonosky/woods.jpg",
+          "sha256": "72342fae37b37a2cff8e87c6c3ee13f41432755d52827a7bf367538497bb8bda"
+        }
+      ],
+      "status": "SOURCE_LOCAL_COMPLETE_PENDING_MAIN_INTEGRATION",
+      "demoLiveUrl": null,
+      "outreachStatus": "NOT_READY"
+    },
+    {
+      "slug": "nabetondesign",
+      "brand": "NABETONdesign",
+      "domain": "nabetondesign.cz",
+      "operator": {
+        "name": "Nikola Janková",
+        "ico": "05699169",
+        "country": "CZ",
+        "activeNoEnd": true,
+        "officialRegistry": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/05699169"
+      },
+      "primaryFormulas": 6,
+      "uniqueLocalResultViews": 18,
+      "config": "n447/s5/perfume-fragments/nabetondesign.config.json",
+      "integrationReview": "tools/s5/perfume-batch3-20261116/candidate-packages/nabetondesign/integration-review.json",
+      "companyCss": {
+        "source": "tools/s5/perfume-batch3-20261116/candidate-packages/nabetondesign/ui-review.css",
+        "destination": "n447/s5/brands/nabetondesign.css",
+        "registryField": {
+          "companyCss": "/n447/s5/brands/nabetondesign.css"
+        }
+      },
+      "catalogueImport": "/catalogues/nabetondesign.js",
+      "backendBrand": "nabetondesign",
+      "requiredBackendInstruction": "Only interior scented candles, not perfume on skin or laundry. No health/infant/pet/pregnancy/aromatherapy/fire-safety/nontoxic/smokefree/longevity guarantees; no magic or attraction promises. Literal sourced fragrance notes and exact pack, selectedvariant price and stock timestamp only. No invented paid accessory or automatic cart. No inferred percent/1-10 strength.",
+      "revenue": {
+        "year": null,
+        "value": "UNKNOWN",
+        "source": null,
+        "qualification": "No supported exact turnover source; sole proprietor size not inferred from appearance or ARES active status.",
+        "latestExact2025": "UNKNOWN"
+      },
+      "commercialReview": "REVENUE_UNKNOWN_COMMERCIAL_REVIEW",
+      "files": [
+        {
+          "path": "catalogues/nabetondesign.js",
+          "sha256": "fc070a3fa61ee9d5d68adf208d074d5752f4eeaef547c7556965abf81c38e40f"
+        },
+        {
+          "path": "n447/s5/sources/nabetondesign/verified-products.json",
+          "sha256": "552fb1a451caa7477c92edba104901e56366ad251b7d44fbe24e43138d33d62b"
+        },
+        {
+          "path": "n447/s5/sources/nabetondesign/selection-model.json",
+          "sha256": "03ec027c6579e8ab8464ff856720949560c6066d6ca66d3925dbc716a366c091"
+        },
+        {
+          "path": "n447/s5/perfume-fragments/nabetondesign.config.json",
+          "sha256": "c639c97583155580ae1d4c6cb39061cc05ac8b60794baa1b612660ab758dccfc"
+        },
+        {
+          "path": "n447/s5/perfume-fragments/nabetondesign.selection-model.json",
+          "sha256": "03ec027c6579e8ab8464ff856720949560c6066d6ca66d3925dbc716a366c091"
+        },
+        {
+          "path": "assets/s5/nabetondesign/avatar.svg",
+          "sha256": "d5e01d009b8d995aa3c447bb3e67042e378e2d4b75f7c1dfbfcbf89548a2a325"
+        },
+        {
+          "path": "assets/s5/nabetondesign/cedar.png",
+          "sha256": "41dd707aaa8303b38c5af8045f4c25b6d6155e77d1ab66b90f3d4af9d03f8752"
+        },
+        {
+          "path": "assets/s5/nabetondesign/christmas.jpg",
+          "sha256": "c0d8bb6e9b75e181238dac2c727e826832e1ad3845f99150ba79c9c92219d95c"
+        },
+        {
+          "path": "assets/s5/nabetondesign/cotton.png",
+          "sha256": "f2018057488a50fc0fd773fdf3f070591c7df17e00732d4cb9b403a501cdf72d"
+        },
+        {
+          "path": "assets/s5/nabetondesign/grapefruit.png",
+          "sha256": "c05ffafbb4a5c1ca7aba5c4962cf8aef5a1800e3d84385428b2de5cfd79a37af"
+        },
+        {
+          "path": "assets/s5/nabetondesign/logo.svg",
+          "sha256": "143ab89e3f6e42a253167a514b9d6dfd22b9ff9e231a1fce2b5bb7daa5069380"
+        },
+        {
+          "path": "assets/s5/nabetondesign/pink.jpg",
+          "sha256": "8a3032c701624147288ede82220b3f7001c0491c2eec1142bb54bd84d19dfa5a"
+        },
+        {
+          "path": "assets/s5/nabetondesign/tropical.png",
+          "sha256": "28cd163fa0096f4dc4030855b35532cfa1f674455cefe0e4fff2d8d6f45a72c8"
+        }
+      ],
+      "status": "SOURCE_LOCAL_COMPLETE_PENDING_MAIN_INTEGRATION",
+      "demoLiveUrl": null,
+      "outreachStatus": "NOT_READY"
+    },
+    {
+      "slug": "sojka",
+      "brand": "SOJKA",
+      "domain": "nasesojka.cz",
+      "operator": {
+        "name": "SHOW & SELL s.r.o.",
+        "ico": "09580174",
+        "country": "CZ",
+        "activeNoEnd": true,
+        "officialRegistry": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/09580174"
+      },
+      "primaryFormulas": 6,
+      "uniqueLocalResultViews": 18,
+      "config": "n447/s5/perfume-fragments/sojka.config.json",
+      "integrationReview": "tools/s5/perfume-batch3-20261116/candidate-packages/sojka/integration-review.json",
+      "companyCss": {
+        "source": "tools/s5/perfume-batch3-20261116/candidate-packages/sojka/ui-review.css",
+        "destination": "n447/s5/brands/sojka.css",
+        "registryField": {
+          "companyCss": "/n447/s5/brands/sojka.css"
+        }
+      },
+      "catalogueImport": "/catalogues/sojka.js",
+      "backendBrand": "sojka",
+      "requiredBackendInstruction": "Only interior scented candles, not perfume on skin or laundry. No health/infant/pet/pregnancy/aromatherapy/fire-safety/nontoxic/smokefree/longevity guarantees; no magic or attraction promises. Literal sourced fragrance notes and exact pack, selectedvariant price and stock timestamp only. No invented paid accessory or automatic cart. No inferred percent/1-10 strength.",
+      "revenue": {
+        "year": 2024,
+        "publishedBand": "1–3 mil. Kč",
+        "currency": "CZK",
+        "source": "https://www.chytryrejstrik.cz/ico-09580174/show-sell-s-r-o",
+        "sourceType": "Secondary historical band",
+        "latestExact2025": "UNKNOWN"
+      },
+      "commercialReview": "PREFERRED_HISTORICAL_BAND_LATEST_EXACT_UNKNOWN",
+      "files": [
+        {
+          "path": "catalogues/sojka.js",
+          "sha256": "7b25388ca08b8cb6bbc0d351759a2f059493e5d0184159f3baeceae4b2b8541b"
+        },
+        {
+          "path": "n447/s5/sources/sojka/verified-products.json",
+          "sha256": "0e751b9a5e94c5e2cc9dd63763d0662ed4c5a657be2590d16419e28a925afa80"
+        },
+        {
+          "path": "n447/s5/sources/sojka/selection-model.json",
+          "sha256": "164b1b108c67bc6cfc4d2db0184e38d477a7ba487525228d29080a27604e8f3c"
+        },
+        {
+          "path": "n447/s5/perfume-fragments/sojka.config.json",
+          "sha256": "776daa8d6a7bc857b58a509391ce3c1796fab9aa2b2a98f3c0bc3f5a3cfe9eda"
+        },
+        {
+          "path": "n447/s5/perfume-fragments/sojka.selection-model.json",
+          "sha256": "164b1b108c67bc6cfc4d2db0184e38d477a7ba487525228d29080a27604e8f3c"
+        },
+        {
+          "path": "assets/s5/sojka/avatar.svg",
+          "sha256": "ab87a52749a68bde7986834a3adf4f45f207f3266a54a733cda303ee8eb6dffd"
+        },
+        {
+          "path": "assets/s5/sojka/gingerbread.jpg",
+          "sha256": "8f5b3aaedfef9d600ba777d09950f872801c932505db4d7435c131200040b83e"
+        },
+        {
+          "path": "assets/s5/sojka/logo.svg",
+          "sha256": "6112ba6c16ec8f02d30948e49498c5c95e74ed20ea9eee70adca2b096d38ed20"
+        },
+        {
+          "path": "assets/s5/sojka/orient.jpg",
+          "sha256": "830572bb37e2fcc1aaef18ffaaa4360c7d14d70a6255070ff2bb52da115c3220"
+        },
+        {
+          "path": "assets/s5/sojka/rose.jpg",
+          "sha256": "998becba16a60c91cf8b4af1d63e47022ee3320325cd2bd7a56ef98eb134861d"
+        },
+        {
+          "path": "assets/s5/sojka/sage.jpg",
+          "sha256": "dfa690b6a0a4632d46edfa7b3f7cae98cb4215e4026923eea1273d08f103e4ad"
+        },
+        {
+          "path": "assets/s5/sojka/tea.jpg",
+          "sha256": "5e8a2950a4934583638901fff1dbf657b741078e1cabf4a32e178b671810d126"
+        },
+        {
+          "path": "assets/s5/sojka/wine.jpg",
+          "sha256": "ad5da0e6a32fa2588368a98f208b88fe7e96a3432942a290a3d9a5e5d8c82822"
+        }
+      ],
+      "status": "SOURCE_LOCAL_COMPLETE_PENDING_MAIN_INTEGRATION",
+      "demoLiveUrl": null,
+      "outreachStatus": "NOT_READY"
+    }
+  ],
+  "copyAllowlist": [
+    "catalogues/essencebliss.js",
+    "n447/s5/sources/essencebliss/verified-products.json",
+    "n447/s5/sources/essencebliss/selection-model.json",
+    "n447/s5/perfume-fragments/essencebliss.config.json",
+    "n447/s5/perfume-fragments/essencebliss.selection-model.json",
+    "assets/s5/essencebliss/amber.png",
+    "assets/s5/essencebliss/avatar.svg",
+    "assets/s5/essencebliss/logo.png",
+    "assets/s5/essencebliss/mango.jpg",
+    "assets/s5/essencebliss/orange.jpg",
+    "assets/s5/essencebliss/pear.png",
+    "assets/s5/essencebliss/tea.jpg",
+    "assets/s5/essencebliss/verbena.jpg",
+    "catalogues/svetlonosky.js",
+    "n447/s5/sources/svetlonosky/verified-products.json",
+    "n447/s5/sources/svetlonosky/selection-model.json",
+    "n447/s5/perfume-fragments/svetlonosky.config.json",
+    "n447/s5/perfume-fragments/svetlonosky.selection-model.json",
+    "assets/s5/svetlonosky/avatar.svg",
+    "assets/s5/svetlonosky/cashmere.jpg",
+    "assets/s5/svetlonosky/chocolate.jpg",
+    "assets/s5/svetlonosky/gingerbread.jpg",
+    "assets/s5/svetlonosky/logo.png",
+    "assets/s5/svetlonosky/vanilla.jpg",
+    "assets/s5/svetlonosky/woods.jpg",
+    "catalogues/nabetondesign.js",
+    "n447/s5/sources/nabetondesign/verified-products.json",
+    "n447/s5/sources/nabetondesign/selection-model.json",
+    "n447/s5/perfume-fragments/nabetondesign.config.json",
+    "n447/s5/perfume-fragments/nabetondesign.selection-model.json",
+    "assets/s5/nabetondesign/avatar.svg",
+    "assets/s5/nabetondesign/cedar.png",
+    "assets/s5/nabetondesign/christmas.jpg",
+    "assets/s5/nabetondesign/cotton.png",
+    "assets/s5/nabetondesign/grapefruit.png",
+    "assets/s5/nabetondesign/logo.svg",
+    "assets/s5/nabetondesign/pink.jpg",
+    "assets/s5/nabetondesign/tropical.png",
+    "catalogues/sojka.js",
+    "n447/s5/sources/sojka/verified-products.json",
+    "n447/s5/sources/sojka/selection-model.json",
+    "n447/s5/perfume-fragments/sojka.config.json",
+    "n447/s5/perfume-fragments/sojka.selection-model.json",
+    "assets/s5/sojka/avatar.svg",
+    "assets/s5/sojka/gingerbread.jpg",
+    "assets/s5/sojka/logo.svg",
+    "assets/s5/sojka/orient.jpg",
+    "assets/s5/sojka/rose.jpg",
+    "assets/s5/sojka/sage.jpg",
+    "assets/s5/sojka/tea.jpg",
+    "assets/s5/sojka/wine.jpg"
+  ],
+  "uniquePrimaryFormulas": 23,
+  "uniqueLocalResultViewportViews": 69,
+  "additionalEntryChecks": 12,
+  "pyramidReplacementViews": 9,
+  "paidCalls": 0,
+  "sharedRuntimeModified": false,
+  "integrationOwner": "MAIN",
+  "sourceClaim": "07e7b4fdc2d57bfd6151fb0d8eeaf8587e313471",
+  "fixture": {
+    "snapshot": "68dbfbebc5e55c6655af0f8e6bdaf7129ea8f110",
+    "core": "c9e4da04e19339492a4ffe91428e8ac960b866b6",
+    "injections": [
+      "candidate registry only in servedfixture",
+      "companyCSS",
+      "visual-v1 datasetopt-in",
+      "existing fragrance-result-extras.js",
+      "existing perfume-ui-polish-20261113.css/.js"
+    ],
+    "notCompletedSharedRuntimeIntegration": true
+  },
+  "excludedFromVercel": [
+    "/tools/",
+    "/n447/s5/sources/",
+    "/n447/s5/perfume-fragments/"
+  ],
+  "liveReady": false
+}

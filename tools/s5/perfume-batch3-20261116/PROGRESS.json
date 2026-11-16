@@ -1,5 +1,5 @@
 {
-  "at": "2026-11-16T11:12:04.784525+00:00",
+  "at": "2026-11-16T11:21:39.413749+00:00",
   "branch": "codex/s5-perfume-batch3-20261116",
   "base": "6f653c1807544b43089399563fc799d34dd90474",
   "mainRemoteHead": "de34f7759118e20d3a476f0fe1537ddb02fd161f",
@@ -11,8 +11,13 @@
     "sojka"
   ],
   "primaryFormulas": 23,
-  "localQa": "IN_PROGRESS_NOT_COUNTED_COMPLETE",
-  "completedLocal": [],
+  "localQa": "FIRST_FOUR_COMPLETE",
+  "completedLocal": [
+    "essencebliss",
+    "svetlonosky",
+    "nabetondesign",
+    "sojka"
+  ],
   "livePreview": "NOT_INTEGRATED_NOT_TESTED",
   "integrationOwner": "MAIN",
   "sharedRuntimeModified": false,
@@ -33,5 +38,7 @@
       "slug": "ncn",
       "reason": "Insufficient scentdescriptors for current wardrobe wax and customshape candles; no package/claim."
     }
-  ]
+  ],
+  "uniqueFinalLocalResultViews": 69,
+  "additionalEntryChecks": 12
 }

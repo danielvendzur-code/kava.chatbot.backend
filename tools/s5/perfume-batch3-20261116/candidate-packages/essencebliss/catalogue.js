@@ -92,7 +92,7 @@ globalThis.CX_CATALOGUES.essencebliss = {
      "concentrationDisplay": "Vonná svíčka",
      "notesEvidence": {
       "url": "https://www.essencebliss.cz/vonna-sojova-svicka-ambra-a-vanilka-200-g/",
-      "sourceText": "Vonné tóny: jablko, bergamot, růže, karamel, jasmín, ambra, pižmo, vanilka, balzamické tóny\nDoslovné zdrojové fragmenty:\njablko\nbergamot\nrůže\nkaramel\njasmín\nambra\npižmo\nvanilka\nbalzamické tóny",
+      "sourceText": "Vonné tóny: jablko, bergamot, růže, karamel, jasmín, ambra, pižmo, vanilka, balzamické tóny\nDoslovné zdrojové fragmenty:\njablko\nbergamot\nrůže\nkaramel\njasmín\nambra\npižmo\nvanilka\nbalzamické tóny\nHlava: jablko, bergamot; Srdce: růže, karamel, jasmín; Základ: ambra, pižmo, vanilka, balzamické tóny",
       "originalSourceText": "jablko\nbergamot\nrůže\nkaramel\njasmín\nambra\npižmo\nvanilka\nbalzamické tóny",
       "sourceLanguage": "cs",
       "scope": "Published product sensory descriptors only, not INCI or inferred ingredient percentages.",
@@ -153,6 +153,28 @@ globalThis.CX_CATALOGUES.essencebliss = {
        }
       ],
       "qualification": "Literal product-description sensory fragments extracted from official primary page; separate quoted fragments, not a fabricated continuous paragraph. Czech inflections normalized faithfully. No title-only ingredient inference, no numericstrengths/health/safety/burnguarantees."
+     },
+     "pyramid": {
+      "head": [
+       "jablko",
+       "bergamot"
+      ],
+      "heart": [
+       "růže",
+       "karamel",
+       "jasmín"
+      ],
+      "base": [
+       "ambra",
+       "pižmo",
+       "vanilka",
+       "balzamické tóny"
+      ]
+     },
+     "pyramidEvidence": {
+      "url": "https://www.essencebliss.cz/vonna-sojova-svicka-ambra-a-vanilka-200-g/",
+      "sourceText": "Detailní popis produktu Vonné tóny: Hlava: jablko, bergamot Srdce: růže, karamel, jasmín Základ: ambra, pižmo, vanilka, balzamické tóny",
+      "scope": "Literal Hlava/Srdce/Základ primaryproductlabels"
      }
     },
     "complementForProductUrls": [],

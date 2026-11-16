@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-16T11:01:56.831100+00:00",
+  "checkedAt": "2026-11-16T11:21:00.820102+00:00",
   "scope": "All locally fetched remote branch heads; official domains, aliases, operators and ICO, not slug-only. No reservation made.",
   "remoteHeads": {
     "refs/remotes/origin/agent/coffee-advisor-full-quality-pass": "c5cfe9727f5cb5a60bf643a960b3191e1a08c91f",
@@ -70,6 +70,7 @@
     "refs/remotes/origin/codex/s5-kintsugi-logo-20261112": "15886e24df19e9d937a22c4ca4a92d93d777b8d2",
     "refs/remotes/origin/codex/s5-perfume-20261110": "081ab100893cdf122ea2f51c322ea6020a078c47",
     "refs/remotes/origin/codex/s5-perfume-batch2-20261115": "6f653c1807544b43089399563fc799d34dd90474",
+    "refs/remotes/origin/codex/s5-perfume-batch3-20261116": "11b06e689941005f9c24e8b9a47cdc085b9acace",
     "refs/remotes/origin/codex/s5-perfume-integration-20261112": "42b47d93861d22ea8a143e120d8a6a3c102975a1",
     "refs/remotes/origin/codex/s5-perfume-next-20261112": "fcb2567e036e8522b4348e0024cc48f1a67d881c",
     "refs/remotes/origin/codex/s5-perfume-preview-20261113": "ebf1cc8e72d5d24b79c4839d4e76486610c0dbd4",
@@ -81,7 +82,7 @@
     "refs/remotes/origin/codex/s5-perfume-wave8-20261114": "6ec622ab51079ed0a261b1ef58199733f4feb7f0",
     "refs/remotes/origin/codex/s5-perfume-wave9-20261114": "c89c39dab76672b5350ed0e7b5cc0e27173e90cb",
     "refs/remotes/origin/codex/s5-solo-20261109": "de34f7759118e20d3a476f0fe1537ddb02fd161f",
-    "refs/remotes/origin/coord/s5-claims": "344ca14356554975264be51c150ce7c93d6ac0be",
+    "refs/remotes/origin/coord/s5-claims": "07e7b4fdc2d57bfd6151fb0d8eeaf8587e313471",
     "refs/remotes/origin/design/five-layout-proposals-20260912": "773af687f547c4d705a3cec8a3f5312dbd880f77",
     "refs/remotes/origin/fix/all-white-surfaces-20261004": "d824b3d00f35ca271797e64edb95a4757c85f976",
     "refs/remotes/origin/fix/chat-user-history-20261006": "b93f04f9759f2bbbbd5b1ab832eec3475ca2f590",
@@ -107,10 +108,10 @@
     "refs/remotes/origin/tmp/cosmetics-polish-2026-09-02": "5f305f0619b8d505c6668ea8c179ab8a6cb62e59",
     "refs/remotes/origin/work/coffee-jolka-standardization": "a1b327a4f56a67be7cc49fa26e937cc58a154f87"
   },
-  "remoteCount": 104,
-  "uniqueTextBlobs": 4250,
+  "remoteCount": 105,
+  "uniqueTextBlobs": 4429,
   "missingBlobs": [],
-  "positiveControlBlobs": 45,
+  "positiveControlBlobs": 46,
   "terms": {
     "essencebliss": [
       "essencebliss.cz",
@@ -148,6 +149,42 @@
       "05442371",
       "Chau Nhi Nguyen",
       "Châu Nhi Nguyen"
+    ],
+    "vontree": [
+      "vontreecandle.cz",
+      "21298645",
+      "VONTREE CANDLE",
+      "Eva Vontrobová"
+    ],
+    "bylinkokraska": [
+      "bylinkokraska.cz",
+      "09561633",
+      "Monika Mužíková"
+    ],
+    "kimmy": [
+      "kimmycandles.cz",
+      "07904851",
+      "PARTYZON"
+    ],
+    "lumela": [
+      "lumela.cz",
+      "10877703",
+      "Lumela Candles"
+    ],
+    "mojesoja": [
+      "mojesoja.cz",
+      "69444048",
+      "Lenka Mašatová"
+    ],
+    "svickuj": [
+      "svickuj.cz",
+      "19951108",
+      "SVÍČKUJ s.r.o."
+    ],
+    "mojehygge": [
+      "mojehygge.cz",
+      "24216976",
+      "SoftDrone"
     ]
   },
   "hits": {
@@ -161,6 +198,10 @@
           {
             "ref": "refs/remotes/origin/codex/s5-perfume-batch2-20261115",
             "path": "tools/s5/perfume-batch2-20261115/discover.py"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch2-20261115/discover.py"
           }
         ]
       },
@@ -173,6 +214,10 @@
           {
             "ref": "refs/remotes/origin/codex/s5-perfume-batch2-20261115",
             "path": "tools/s5/perfume-batch2-20261115/finance-discovery.py"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch2-20261115/finance-discovery.py"
           }
         ]
       },
@@ -184,6 +229,10 @@
         "locations": [
           {
             "ref": "refs/remotes/origin/codex/s5-perfume-batch2-20261115",
+            "path": "tools/s5/perfume-batch2-20261115/research/discovery.json"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
             "path": "tools/s5/perfume-batch2-20261115/research/discovery.json"
           }
         ]
@@ -199,6 +248,10 @@
           {
             "ref": "refs/remotes/origin/codex/s5-perfume-batch2-20261115",
             "path": "tools/s5/perfume-batch2-20261115/research/duplicate-terms.json"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch2-20261115/research/duplicate-terms.json"
           }
         ]
       },
@@ -212,6 +265,10 @@
         "locations": [
           {
             "ref": "refs/remotes/origin/codex/s5-perfume-batch2-20261115",
+            "path": "tools/s5/perfume-batch2-20261115/research/fresh-duplicates.json"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
             "path": "tools/s5/perfume-batch2-20261115/research/fresh-duplicates.json"
           }
         ]
@@ -227,6 +284,10 @@
           {
             "ref": "refs/remotes/origin/codex/s5-perfume-batch2-20261115",
             "path": "tools/s5/perfume-batch2-20261115/research/legal-discovery.json"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch2-20261115/research/legal-discovery.json"
           }
         ]
       },
@@ -240,6 +301,10 @@
           {
             "ref": "refs/remotes/origin/codex/s5-perfume-batch2-20261115",
             "path": "tools/s5/perfume-batch2-20261115/research/otuleni-ares.json"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch2-20261115/research/otuleni-ares.json"
           }
         ]
       },
@@ -251,6 +316,10 @@
         "locations": [
           {
             "ref": "refs/remotes/origin/codex/s5-perfume-batch2-20261115",
+            "path": "tools/s5/perfume-batch2-20261115/research/otuleni-discovery.json"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
             "path": "tools/s5/perfume-batch2-20261115/research/otuleni-discovery.json"
           }
         ]
@@ -265,6 +334,10 @@
           {
             "ref": "refs/remotes/origin/codex/s5-perfume-batch2-20261115",
             "path": "tools/s5/perfume-batch2-20261115/research/otuleni-finance-summary.json"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch2-20261115/research/otuleni-finance-summary.json"
           }
         ]
       },
@@ -277,6 +350,10 @@
         "locations": [
           {
             "ref": "refs/remotes/origin/codex/s5-perfume-batch2-20261115",
+            "path": "tools/s5/perfume-batch2-20261115/research/otuleni-home.html"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
             "path": "tools/s5/perfume-batch2-20261115/research/otuleni-home.html"
           }
         ]
@@ -292,6 +369,10 @@
           {
             "ref": "refs/remotes/origin/codex/s5-perfume-batch2-20261115",
             "path": "tools/s5/perfume-batch2-20261115/research/otuleni-legal.html"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch2-20261115/research/otuleni-legal.html"
           }
         ]
       },
@@ -306,6 +387,10 @@
           {
             "ref": "refs/remotes/origin/codex/s5-perfume-batch2-20261115",
             "path": "tools/s5/perfume-batch2-20261115/research/otuleni-legal.json"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch2-20261115/research/otuleni-legal.json"
           }
         ]
       },
@@ -319,6 +404,151 @@
           {
             "ref": "refs/remotes/origin/codex/s5-perfume-batch2-20261115",
             "path": "tools/s5/perfume-batch2-20261115/research/otuleni-size.html"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch2-20261115/research/otuleni-size.html"
+          }
+        ]
+      },
+      {
+        "blob": "d465858c8739a27a025b7a488380aa82975505f4",
+        "terms": [
+          "otuleni.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/discover.py"
+          }
+        ]
+      },
+      {
+        "blob": "f95cb7a4633c684a5af6c339850769c1104140f6",
+        "terms": [
+          "otuleni.cz",
+          "01000071",
+          "Andrea Prohl Huczková"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/duplicate-terms.json"
+          }
+        ]
+      },
+      {
+        "blob": "131d33c4a720e79af1d2608c18b01a8cbc2053b5",
+        "terms": [
+          "otuleni.cz",
+          "01000071",
+          "Andrea Prohl Huczková"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/fresh-duplicates.json"
+          }
+        ]
+      },
+      {
+        "blob": "cc5ca3f0c1317c6d882a5d32183f3792c7ebda37",
+        "terms": [
+          "otuleni.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/otuleni-discovery.json"
+          }
+        ]
+      },
+      {
+        "blob": "1919c26ffc3c1ab21290a6dfa54d1a6c2d9186ee",
+        "terms": [
+          "otuleni.cz",
+          "01000071"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/otuleni-home.html"
+          }
+        ]
+      },
+      {
+        "blob": "c7e162eb4bebb2db52e602eb01b1a8bb052b211d",
+        "terms": [
+          "otuleni.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/otuleni/category.html"
+          }
+        ]
+      },
+      {
+        "blob": "fbe0518d56e08610f907c66af63b971b05cfdab7",
+        "terms": [
+          "otuleni.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/otuleni/category.json"
+          }
+        ]
+      },
+      {
+        "blob": "1979d5345a8b89afe558195e5a73e709512fa617",
+        "terms": [
+          "otuleni.cz",
+          "01000071",
+          "Andrea Prohl Huczková"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/otuleni/legal.html"
+          }
+        ]
+      },
+      {
+        "blob": "7758cd8fd57ffee79089f0fa04e0d18668023b3d",
+        "terms": [
+          "otuleni.cz",
+          "01000071",
+          "Andrea Prohl Huczková"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/otuleni/legal.json"
+          }
+        ]
+      },
+      {
+        "blob": "787f4e6251360a7d5b91916353b4de3c3bf5ac69",
+        "terms": [
+          "otuleni.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/tasks-discovery.json"
+          }
+        ]
+      },
+      {
+        "blob": "e7970a345c017db7d8d6795278fa1f259747f988",
+        "terms": [
+          "otuleni.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/tasks-legal.json"
           }
         ]
       }
@@ -333,6 +563,10 @@
           {
             "ref": "refs/remotes/origin/codex/s5-perfume-batch2-20261115",
             "path": "tools/s5/perfume-batch2-20261115/discover.py"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch2-20261115/discover.py"
           }
         ]
       },
@@ -346,6 +580,10 @@
           {
             "ref": "refs/remotes/origin/codex/s5-perfume-batch2-20261115",
             "path": "tools/s5/perfume-batch2-20261115/finance-more.py"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch2-20261115/finance-more.py"
           }
         ]
       },
@@ -357,6 +595,10 @@
         "locations": [
           {
             "ref": "refs/remotes/origin/codex/s5-perfume-batch2-20261115",
+            "path": "tools/s5/perfume-batch2-20261115/research/discovery.json"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
             "path": "tools/s5/perfume-batch2-20261115/research/discovery.json"
           }
         ]
@@ -372,6 +614,10 @@
           {
             "ref": "refs/remotes/origin/codex/s5-perfume-batch2-20261115",
             "path": "tools/s5/perfume-batch2-20261115/research/duplicate-terms.json"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch2-20261115/research/duplicate-terms.json"
           }
         ]
       },
@@ -385,6 +631,10 @@
         "locations": [
           {
             "ref": "refs/remotes/origin/codex/s5-perfume-batch2-20261115",
+            "path": "tools/s5/perfume-batch2-20261115/research/fresh-duplicates.json"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
             "path": "tools/s5/perfume-batch2-20261115/research/fresh-duplicates.json"
           }
         ]
@@ -400,6 +650,10 @@
           {
             "ref": "refs/remotes/origin/codex/s5-perfume-batch2-20261115",
             "path": "tools/s5/perfume-batch2-20261115/research/legal-discovery.json"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch2-20261115/research/legal-discovery.json"
           }
         ]
       },
@@ -413,6 +667,10 @@
           {
             "ref": "refs/remotes/origin/codex/s5-perfume-batch2-20261115",
             "path": "tools/s5/perfume-batch2-20261115/research/ncn-ares.json"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch2-20261115/research/ncn-ares.json"
           }
         ]
       },
@@ -424,6 +682,10 @@
         "locations": [
           {
             "ref": "refs/remotes/origin/codex/s5-perfume-batch2-20261115",
+            "path": "tools/s5/perfume-batch2-20261115/research/ncn-discovery.json"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
             "path": "tools/s5/perfume-batch2-20261115/research/ncn-discovery.json"
           }
         ]
@@ -438,6 +700,10 @@
           {
             "ref": "refs/remotes/origin/codex/s5-perfume-batch2-20261115",
             "path": "tools/s5/perfume-batch2-20261115/research/ncn-finance-summary.json"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch2-20261115/research/ncn-finance-summary.json"
           }
         ]
       },
@@ -449,6 +715,10 @@
         "locations": [
           {
             "ref": "refs/remotes/origin/codex/s5-perfume-batch2-20261115",
+            "path": "tools/s5/perfume-batch2-20261115/research/ncn-home.html"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
             "path": "tools/s5/perfume-batch2-20261115/research/ncn-home.html"
           }
         ]
@@ -464,6 +734,14 @@
           {
             "ref": "refs/remotes/origin/codex/s5-perfume-batch2-20261115",
             "path": "tools/s5/perfume-batch2-20261115/research/ncn-legal.html"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch2-20261115/research/ncn-legal.html"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/ncn/legal.html"
           }
         ]
       },
@@ -478,6 +756,10 @@
           {
             "ref": "refs/remotes/origin/codex/s5-perfume-batch2-20261115",
             "path": "tools/s5/perfume-batch2-20261115/research/ncn-legal.json"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch2-20261115/research/ncn-legal.json"
           }
         ]
       },
@@ -491,6 +773,2625 @@
           {
             "ref": "refs/remotes/origin/codex/s5-perfume-batch2-20261115",
             "path": "tools/s5/perfume-batch2-20261115/research/ncn-size.html"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch2-20261115/research/ncn-size.html"
+          }
+        ]
+      },
+      {
+        "blob": "d465858c8739a27a025b7a488380aa82975505f4",
+        "terms": [
+          "ncncandlefactory.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/discover.py"
+          }
+        ]
+      },
+      {
+        "blob": "f95cb7a4633c684a5af6c339850769c1104140f6",
+        "terms": [
+          "ncncandlefactory.cz",
+          "05442371",
+          "Chau Nhi Nguyen",
+          "Châu Nhi Nguyen"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/duplicate-terms.json"
+          }
+        ]
+      },
+      {
+        "blob": "131d33c4a720e79af1d2608c18b01a8cbc2053b5",
+        "terms": [
+          "ncncandlefactory.cz",
+          "05442371",
+          "Chau Nhi Nguyen",
+          "Châu Nhi Nguyen"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/fresh-duplicates.json"
+          }
+        ]
+      },
+      {
+        "blob": "effefb268e5d3cfcf1b688e5ddb3555f4d5dc777",
+        "terms": [
+          "ncncandlefactory.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/ncn-discovery.json"
+          }
+        ]
+      },
+      {
+        "blob": "527a8ddb6ad7992f58afff77b3174573e4ae0e34",
+        "terms": [
+          "ncncandlefactory.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/ncn-home.html"
+          }
+        ]
+      },
+      {
+        "blob": "0764549e2873cf5dbf173236cb68e025e67cd8d6",
+        "terms": [
+          "ncncandlefactory.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/ncn/1.html"
+          }
+        ]
+      },
+      {
+        "blob": "8cb382ec90c4328f18e667ae27ef06b9a8e9332d",
+        "terms": [
+          "ncncandlefactory.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/ncn/1.json"
+          }
+        ]
+      },
+      {
+        "blob": "6a13d0e17a852e2c277f36a00bc24d077cd4d901",
+        "terms": [
+          "ncncandlefactory.cz",
+          "05442371",
+          "Chau Nhi Nguyen"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/ncn/legal.json"
+          }
+        ]
+      },
+      {
+        "blob": "787f4e6251360a7d5b91916353b4de3c3bf5ac69",
+        "terms": [
+          "ncncandlefactory.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/tasks-discovery.json"
+          }
+        ]
+      }
+    ],
+    "essencebliss": [
+      {
+        "blob": "2395f5f41092a749212d2415ba244d7ecf202f70",
+        "terms": [
+          "essencebliss.cz",
+          "08279080",
+          "Jana Schmidtová"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "catalogues/essencebliss.js"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/candidate-packages/essencebliss/catalogue.js"
+          }
+        ]
+      },
+      {
+        "blob": "2cc9d892295a2cd7bb90921494fbce67357daa12",
+        "terms": [
+          "essencebliss.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "n447/s5/perfume-fragments/essencebliss.config.json"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/candidate-packages/essencebliss/config.json"
+          }
+        ]
+      },
+      {
+        "blob": "d6bcc4883b8cc16f07fcd743416a7bd20d67af7d",
+        "terms": [
+          "essencebliss.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "n447/s5/perfume-fragments/essencebliss.selection-model.json"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "n447/s5/sources/essencebliss/selection-model.json"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/candidate-packages/essencebliss/selection-model.json"
+          }
+        ]
+      },
+      {
+        "blob": "4961148f2b656503d46ef80137ad46952eb16613",
+        "terms": [
+          "essencebliss.cz",
+          "08279080",
+          "Jana Schmidtová"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "n447/s5/sources/essencebliss/verified-products.json"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/candidate-packages/essencebliss/verified-products.json"
+          }
+        ]
+      },
+      {
+        "blob": "fecf60bd1b66b2be8bb970979b2f76cbd2284651",
+        "terms": [
+          "essencebliss.cz",
+          "08279080",
+          "Jana Schmidtová"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/build-first-four.py"
+          }
+        ]
+      },
+      {
+        "blob": "e203846ee3f167e675cf584aed4c87efa0f36174",
+        "terms": [
+          "essencebliss.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/candidate-packages/essencebliss/integration-review.json"
+          }
+        ]
+      },
+      {
+        "blob": "9aea67517d3b593cbdfbc54a86215c92f839f161",
+        "terms": [
+          "essencebliss.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/engine-qa.json"
+          }
+        ]
+      },
+      {
+        "blob": "e895c81672be3a7c72ea2042266a049f002ecfa5",
+        "terms": [
+          "essencebliss.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/live-cookie.py"
+          }
+        ]
+      },
+      {
+        "blob": "70fd42174aac9131504493ba6aa952835de870d4",
+        "terms": [
+          "essencebliss.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/live-first-four.py"
+          }
+        ]
+      },
+      {
+        "blob": "f95cb7a4633c684a5af6c339850769c1104140f6",
+        "terms": [
+          "essencebliss.cz",
+          "08279080",
+          "Jana Schmidtová"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/duplicate-terms.json"
+          }
+        ]
+      },
+      {
+        "blob": "5be45fc6f00ffd3ac9959b1571667b41a099e051",
+        "terms": [
+          "essencebliss.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/essencebliss/1.html"
+          }
+        ]
+      },
+      {
+        "blob": "1db0cde4affe6be6bc7c257e1b24da1bbc988436",
+        "terms": [
+          "essencebliss.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/essencebliss/1.json"
+          }
+        ]
+      },
+      {
+        "blob": "c3c53b879ef84f2272f7e832539e6a9c15a063e8",
+        "terms": [
+          "essencebliss.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/essencebliss/2.html"
+          }
+        ]
+      },
+      {
+        "blob": "00447c8a980cea828edceb6e04434e24a8c774fc",
+        "terms": [
+          "essencebliss.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/essencebliss/2.json"
+          }
+        ]
+      },
+      {
+        "blob": "cbed303640b834d492af1818e9122e007dfc6d43",
+        "terms": [
+          "essencebliss.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/essencebliss/3.html"
+          }
+        ]
+      },
+      {
+        "blob": "685be64c89a89c68e93f640b517793e1cc3d2e23",
+        "terms": [
+          "essencebliss.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/essencebliss/3.json"
+          }
+        ]
+      },
+      {
+        "blob": "ceca32ad065696a4572d777b15203503798ffaec",
+        "terms": [
+          "essencebliss.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/essencebliss/4.html"
+          }
+        ]
+      },
+      {
+        "blob": "43ecb4d1818b2452d20484cd9eb23950c7a7aec7",
+        "terms": [
+          "essencebliss.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/essencebliss/4.json"
+          }
+        ]
+      },
+      {
+        "blob": "63642c865ca890875098a3a5670345415c63edf2",
+        "terms": [
+          "essencebliss.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/essencebliss/5.html"
+          }
+        ]
+      },
+      {
+        "blob": "767da1cc5a0ee31f4980998937676c3cc2ff7afb",
+        "terms": [
+          "essencebliss.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/essencebliss/5.json"
+          }
+        ]
+      },
+      {
+        "blob": "6799110b374b566043c8df3ba7741670f5a4c4f1",
+        "terms": [
+          "essencebliss.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/essencebliss/6.html"
+          }
+        ]
+      },
+      {
+        "blob": "5367c37603847f01c64440ccd36794d0f67e1b9a",
+        "terms": [
+          "essencebliss.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/essencebliss/6.json"
+          }
+        ]
+      },
+      {
+        "blob": "64301605f046b9c33866fb9c4d453b79a14a2a8c",
+        "terms": [
+          "essencebliss.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/essencebliss/7.html"
+          }
+        ]
+      },
+      {
+        "blob": "97ae65216d633573f5577606d85aec84fe0f437c",
+        "terms": [
+          "essencebliss.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/essencebliss/7.json"
+          }
+        ]
+      },
+      {
+        "blob": "2b819fca9910edf560f5882d16f8f8aa9f44c787",
+        "terms": [
+          "essencebliss.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/essencebliss/8.html"
+          }
+        ]
+      },
+      {
+        "blob": "b8f81fef6e762ddb17649d7da307c5cb11937558",
+        "terms": [
+          "essencebliss.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/essencebliss/8.json"
+          }
+        ]
+      },
+      {
+        "blob": "9e379f33612d8aa246f9b094c8e547f4ddc37119",
+        "terms": [
+          "essencebliss.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/essencebliss/9.html"
+          }
+        ]
+      },
+      {
+        "blob": "a2331221e3333473731ed2a9507c8b8f7648d596",
+        "terms": [
+          "essencebliss.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/essencebliss/9.json"
+          }
+        ]
+      },
+      {
+        "blob": "fef58651747cba3c1dc6904900361c5865d08dea",
+        "terms": [
+          "essencebliss.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/essencebliss/category.html"
+          }
+        ]
+      },
+      {
+        "blob": "371a97e1fcd4d9ca6e29edc2e5417b8ecfd9f4b5",
+        "terms": [
+          "essencebliss.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/essencebliss/category.json"
+          }
+        ]
+      },
+      {
+        "blob": "d6afbc6094f8d767f8cc4b0c407d44e6028e1203",
+        "terms": [
+          "08279080",
+          "Jana Schmidtová"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/essencebliss/finance-summary.json"
+          }
+        ]
+      },
+      {
+        "blob": "a3dd4871d9f77962b0d8202de58fdee24eca640a",
+        "terms": [
+          "essencebliss.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/essencebliss/home.html"
+          }
+        ]
+      },
+      {
+        "blob": "e1324de8bb582c6096505683de2f20845212f2c6",
+        "terms": [
+          "essencebliss.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/essencebliss/home.json"
+          }
+        ]
+      },
+      {
+        "blob": "33e57d1a05249085950f4fb012b44395f5ee3547",
+        "terms": [
+          "essencebliss.cz",
+          "08279080",
+          "Jana Schmidtová"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/essencebliss/legal.html"
+          }
+        ]
+      },
+      {
+        "blob": "95c834b67df4073f0fd1e4b5a92b8053bfd69d9e",
+        "terms": [
+          "essencebliss.cz",
+          "08279080",
+          "Jana Schmidtová"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/essencebliss/legal.json"
+          }
+        ]
+      },
+      {
+        "blob": "5952a92ff4dfcb5cdc3aaa3178503d8b444ed2ee",
+        "terms": [
+          "08279080",
+          "Jana Schmidtová"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/essencebliss/official.json"
+          }
+        ]
+      },
+      {
+        "blob": "39b664fa2258b4cb4756abf861b2ce160db00d99",
+        "terms": [
+          "essencebliss.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/essencebliss/photos.json"
+          }
+        ]
+      },
+      {
+        "blob": "4fef3ffa107d576de226ece014d65a399e054feb",
+        "terms": [
+          "essencebliss.cz",
+          "08279080",
+          "Jana Schmidtová"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/essencebliss/size.html"
+          }
+        ]
+      },
+      {
+        "blob": "131d33c4a720e79af1d2608c18b01a8cbc2053b5",
+        "terms": [
+          "essencebliss.cz",
+          "08279080",
+          "Jana Schmidtová"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/fresh-duplicates.json"
+          }
+        ]
+      },
+      {
+        "blob": "787f4e6251360a7d5b91916353b4de3c3bf5ac69",
+        "terms": [
+          "essencebliss.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/tasks-discovery.json"
+          }
+        ]
+      },
+      {
+        "blob": "673c1dfa88288376ea2570d3077bd3e27b48e06d",
+        "terms": [
+          "essencebliss.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/tasks-extra.json"
+          }
+        ]
+      },
+      {
+        "blob": "e7970a345c017db7d8d6795278fa1f259747f988",
+        "terms": [
+          "essencebliss.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/tasks-legal.json"
+          }
+        ]
+      },
+      {
+        "blob": "01d4f07edc8117d8a0ad4b1a7c1993163259de36",
+        "terms": [
+          "essencebliss.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/tasks-products.json"
+          }
+        ]
+      },
+      {
+        "blob": "d2688f8e513b07a27565ced4b7d649fbc3a62e5f",
+        "terms": [
+          "essencebliss.cz",
+          "08279080"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/coord/s5-claims",
+            "path": "claims.md"
+          }
+        ]
+      }
+    ],
+    "nabetondesign": [
+      {
+        "blob": "7581351b4e4269444846555bfdb29294cdc5e673",
+        "terms": [
+          "nabetondesign.cz",
+          "05699169",
+          "Nikola Janková"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "catalogues/nabetondesign.js"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/candidate-packages/nabetondesign/catalogue.js"
+          }
+        ]
+      },
+      {
+        "blob": "4b902ca676fd15f6466d86390eb193f88a91f591",
+        "terms": [
+          "nabetondesign.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "n447/s5/perfume-fragments/nabetondesign.config.json"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/candidate-packages/nabetondesign/config.json"
+          }
+        ]
+      },
+      {
+        "blob": "1e896cd56fbc5d2ae65c26f30b800ba31a665761",
+        "terms": [
+          "nabetondesign.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "n447/s5/perfume-fragments/nabetondesign.selection-model.json"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "n447/s5/sources/nabetondesign/selection-model.json"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/candidate-packages/nabetondesign/selection-model.json"
+          }
+        ]
+      },
+      {
+        "blob": "791b2282c8ddc628ce6c13b37c152f4f2fbd509c",
+        "terms": [
+          "nabetondesign.cz",
+          "05699169",
+          "Nikola Janková"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "n447/s5/sources/nabetondesign/verified-products.json"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/candidate-packages/nabetondesign/verified-products.json"
+          }
+        ]
+      },
+      {
+        "blob": "fecf60bd1b66b2be8bb970979b2f76cbd2284651",
+        "terms": [
+          "nabetondesign.cz",
+          "05699169",
+          "Nikola Janková"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/build-first-four.py"
+          }
+        ]
+      },
+      {
+        "blob": "1aff884077ada79c26aacef5bf9fb1115e90b46a",
+        "terms": [
+          "nabetondesign.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/candidate-packages/nabetondesign/integration-review.json"
+          }
+        ]
+      },
+      {
+        "blob": "9aea67517d3b593cbdfbc54a86215c92f839f161",
+        "terms": [
+          "nabetondesign.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/engine-qa.json"
+          }
+        ]
+      },
+      {
+        "blob": "e895c81672be3a7c72ea2042266a049f002ecfa5",
+        "terms": [
+          "nabetondesign.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/live-cookie.py"
+          }
+        ]
+      },
+      {
+        "blob": "70fd42174aac9131504493ba6aa952835de870d4",
+        "terms": [
+          "nabetondesign.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/live-first-four.py"
+          }
+        ]
+      },
+      {
+        "blob": "f95cb7a4633c684a5af6c339850769c1104140f6",
+        "terms": [
+          "nabetondesign.cz",
+          "05699169",
+          "Nikola Janková"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/duplicate-terms.json"
+          }
+        ]
+      },
+      {
+        "blob": "131d33c4a720e79af1d2608c18b01a8cbc2053b5",
+        "terms": [
+          "nabetondesign.cz",
+          "05699169",
+          "Nikola Janková"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/fresh-duplicates.json"
+          }
+        ]
+      },
+      {
+        "blob": "24b8831af8a5c3eb3eccd936c6c1d560cbe85aa0",
+        "terms": [
+          "nabetondesign.cz",
+          "Nikola Janková"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/nabetondesign/1.html"
+          }
+        ]
+      },
+      {
+        "blob": "b8053d65e3b6dbdd44850f421f5a29328bcbae9c",
+        "terms": [
+          "nabetondesign.cz",
+          "Nikola Janková"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/nabetondesign/1.json"
+          }
+        ]
+      },
+      {
+        "blob": "2e4adf197e5bdf281b03f5c8563c6e9580c04b89",
+        "terms": [
+          "nabetondesign.cz",
+          "Nikola Janková"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/nabetondesign/2.html"
+          }
+        ]
+      },
+      {
+        "blob": "738626a997ade83408e5659f38ce24060c61c1f6",
+        "terms": [
+          "nabetondesign.cz",
+          "Nikola Janková"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/nabetondesign/2.json"
+          }
+        ]
+      },
+      {
+        "blob": "5c19da0483902761782a622a09adf240bb525da2",
+        "terms": [
+          "nabetondesign.cz",
+          "Nikola Janková"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/nabetondesign/3.html"
+          }
+        ]
+      },
+      {
+        "blob": "290223e2603f998a2b2ac8c1ee716b69dc17e90c",
+        "terms": [
+          "nabetondesign.cz",
+          "Nikola Janková"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/nabetondesign/3.json"
+          }
+        ]
+      },
+      {
+        "blob": "63de547979f64561d45c8d0bd3db4bab226ece8c",
+        "terms": [
+          "nabetondesign.cz",
+          "Nikola Janková"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/nabetondesign/4.html"
+          }
+        ]
+      },
+      {
+        "blob": "fb83525713dea112a0e232083ba4ed895bb41f8e",
+        "terms": [
+          "nabetondesign.cz",
+          "Nikola Janková"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/nabetondesign/4.json"
+          }
+        ]
+      },
+      {
+        "blob": "7489619a5e388f7b87597f6c3cb1b18ed4d4d96f",
+        "terms": [
+          "nabetondesign.cz",
+          "Nikola Janková"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/nabetondesign/5.html"
+          }
+        ]
+      },
+      {
+        "blob": "7efa1edbdf0981c690def5c9a873af1a4bdaf7e9",
+        "terms": [
+          "nabetondesign.cz",
+          "Nikola Janková"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/nabetondesign/5.json"
+          }
+        ]
+      },
+      {
+        "blob": "faad1dbe8fa3f40dad95ffee781c63078e998ca0",
+        "terms": [
+          "nabetondesign.cz",
+          "Nikola Janková"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/nabetondesign/6.html"
+          }
+        ]
+      },
+      {
+        "blob": "c1a1996d2cc6c4fdbc48dc04092e2868b2e9533a",
+        "terms": [
+          "nabetondesign.cz",
+          "Nikola Janková"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/nabetondesign/6.json"
+          }
+        ]
+      },
+      {
+        "blob": "0e8cccbfa1a5622b08fa13d51497b7a2b074ee35",
+        "terms": [
+          "nabetondesign.cz",
+          "Nikola Janková"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/nabetondesign/7.html"
+          }
+        ]
+      },
+      {
+        "blob": "05c3a2c2cdb7b4cf5246089cde598a81ea322384",
+        "terms": [
+          "nabetondesign.cz",
+          "Nikola Janková"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/nabetondesign/7.json"
+          }
+        ]
+      },
+      {
+        "blob": "1884d6d0ec5cd8f387a5eef5c06ab0631cf54e6f",
+        "terms": [
+          "nabetondesign.cz",
+          "Nikola Janková"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/nabetondesign/8.html"
+          }
+        ]
+      },
+      {
+        "blob": "e922ef01fc6edaa5378554e193c25f779a92e49b",
+        "terms": [
+          "nabetondesign.cz",
+          "Nikola Janková"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/nabetondesign/8.json"
+          }
+        ]
+      },
+      {
+        "blob": "600fcc46413ef4cb33c2a542b27129f8ed8b0f7c",
+        "terms": [
+          "nabetondesign.cz",
+          "Nikola Janková"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/nabetondesign/category.html"
+          }
+        ]
+      },
+      {
+        "blob": "3528a70d4d1c2cb4a090fea64a179981c2a27910",
+        "terms": [
+          "nabetondesign.cz",
+          "Nikola Janková"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/nabetondesign/category.json"
+          }
+        ]
+      },
+      {
+        "blob": "ba1894d1327bd829b4e1db29ce0a59fd6ffc8823",
+        "terms": [
+          "05699169",
+          "Nikola Janková"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/nabetondesign/finance-summary.json"
+          }
+        ]
+      },
+      {
+        "blob": "b30ac742eb13abc0cbccb3ca55d4c4ee5b9193cd",
+        "terms": [
+          "nabetondesign.cz",
+          "Nikola Janková"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/nabetondesign/home.html"
+          }
+        ]
+      },
+      {
+        "blob": "31e515ba2e95939dc493df2a3eadc4f2db6e53a1",
+        "terms": [
+          "nabetondesign.cz",
+          "Nikola Janková"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/nabetondesign/home.json"
+          }
+        ]
+      },
+      {
+        "blob": "27fd7d50608be95180889576e240f6285c23e0ea",
+        "terms": [
+          "nabetondesign.cz",
+          "05699169",
+          "Nikola Janková"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/nabetondesign/legal.html"
+          }
+        ]
+      },
+      {
+        "blob": "df95a3bc5883d72be050feaee44940a71c77eb6f",
+        "terms": [
+          "nabetondesign.cz",
+          "05699169",
+          "Nikola Janková"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/nabetondesign/legal.json"
+          }
+        ]
+      },
+      {
+        "blob": "40908a6c2a2cc37fce064dbdcceffde8166e4737",
+        "terms": [
+          "05699169",
+          "Nikola Janková"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/nabetondesign/official.json"
+          }
+        ]
+      },
+      {
+        "blob": "56e603d8c36f353ec94b46cbe55dff1b149e4d18",
+        "terms": [
+          "nabetondesign.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/nabetondesign/photos.json"
+          }
+        ]
+      },
+      {
+        "blob": "a7d0eb9ad6981f821b8dea53093fc548e612ebd4",
+        "terms": [
+          "05699169",
+          "Nikola Janková"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/nabetondesign/size.html"
+          }
+        ]
+      },
+      {
+        "blob": "787f4e6251360a7d5b91916353b4de3c3bf5ac69",
+        "terms": [
+          "nabetondesign.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/tasks-discovery.json"
+          }
+        ]
+      },
+      {
+        "blob": "e7970a345c017db7d8d6795278fa1f259747f988",
+        "terms": [
+          "nabetondesign.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/tasks-legal.json"
+          }
+        ]
+      },
+      {
+        "blob": "bb52785544fe33c66d867d34fd8871a6e841c2fb",
+        "terms": [
+          "nabetondesign.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/tasks-nabeton-extra.json"
+          }
+        ]
+      },
+      {
+        "blob": "01d4f07edc8117d8a0ad4b1a7c1993163259de36",
+        "terms": [
+          "nabetondesign.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/tasks-products.json"
+          }
+        ]
+      },
+      {
+        "blob": "d2688f8e513b07a27565ced4b7d649fbc3a62e5f",
+        "terms": [
+          "nabetondesign.cz",
+          "05699169"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/coord/s5-claims",
+            "path": "claims.md"
+          }
+        ]
+      }
+    ],
+    "sojka": [
+      {
+        "blob": "5553defd9322674e627b1546e53590129e33d552",
+        "terms": [
+          "nasesojka.cz",
+          "09580174",
+          "SHOW & SELL"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "catalogues/sojka.js"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/candidate-packages/sojka/catalogue.js"
+          }
+        ]
+      },
+      {
+        "blob": "0346a563432bbfece3c2ea3fc002ca7308614490",
+        "terms": [
+          "nasesojka.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "n447/s5/perfume-fragments/sojka.config.json"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/candidate-packages/sojka/config.json"
+          }
+        ]
+      },
+      {
+        "blob": "d2c5527d06bce56232fb7a5cda51b1c070399c6c",
+        "terms": [
+          "nasesojka.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "n447/s5/perfume-fragments/sojka.selection-model.json"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "n447/s5/sources/sojka/selection-model.json"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/candidate-packages/sojka/selection-model.json"
+          }
+        ]
+      },
+      {
+        "blob": "4762cee107d025bdb0cc7f5a8348738e45cf8310",
+        "terms": [
+          "nasesojka.cz",
+          "09580174",
+          "SHOW & SELL"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "n447/s5/sources/sojka/verified-products.json"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/candidate-packages/sojka/verified-products.json"
+          }
+        ]
+      },
+      {
+        "blob": "fecf60bd1b66b2be8bb970979b2f76cbd2284651",
+        "terms": [
+          "nasesojka.cz",
+          "09580174",
+          "SHOW & SELL"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/build-first-four.py"
+          }
+        ]
+      },
+      {
+        "blob": "bf55fb298a68198f7d19783eeb8dccaa7ea1ad46",
+        "terms": [
+          "nasesojka.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/candidate-packages/sojka/integration-review.json"
+          }
+        ]
+      },
+      {
+        "blob": "9aea67517d3b593cbdfbc54a86215c92f839f161",
+        "terms": [
+          "nasesojka.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/engine-qa.json"
+          }
+        ]
+      },
+      {
+        "blob": "e895c81672be3a7c72ea2042266a049f002ecfa5",
+        "terms": [
+          "nasesojka.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/live-cookie.py"
+          }
+        ]
+      },
+      {
+        "blob": "70fd42174aac9131504493ba6aa952835de870d4",
+        "terms": [
+          "nasesojka.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/live-first-four.py"
+          }
+        ]
+      },
+      {
+        "blob": "f95cb7a4633c684a5af6c339850769c1104140f6",
+        "terms": [
+          "nasesojka.cz",
+          "09580174",
+          "SHOW & SELL",
+          "SHOW&SELL"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/duplicate-terms.json"
+          }
+        ]
+      },
+      {
+        "blob": "131d33c4a720e79af1d2608c18b01a8cbc2053b5",
+        "terms": [
+          "nasesojka.cz",
+          "09580174",
+          "SHOW & SELL",
+          "SHOW&SELL"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/fresh-duplicates.json"
+          }
+        ]
+      },
+      {
+        "blob": "c6a10257cb9384a3622fabb53f87500fc4a20e6e",
+        "terms": [
+          "nasesojka.cz",
+          "09580174",
+          "SHOW & SELL",
+          "SHOW&SELL"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/sojka/1.html"
+          }
+        ]
+      },
+      {
+        "blob": "9c24729846fdac56d16c82b1729811d8361a39ee",
+        "terms": [
+          "nasesojka.cz",
+          "SHOW&SELL"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/sojka/1.json"
+          }
+        ]
+      },
+      {
+        "blob": "0ec9075d54dd3ad7f51ad633a007c0e2b24e180f",
+        "terms": [
+          "nasesojka.cz",
+          "09580174",
+          "SHOW & SELL",
+          "SHOW&SELL"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/sojka/2.html"
+          }
+        ]
+      },
+      {
+        "blob": "cf0c6c5e0654a65027e58474a4a23b909a32160a",
+        "terms": [
+          "nasesojka.cz",
+          "SHOW&SELL"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/sojka/2.json"
+          }
+        ]
+      },
+      {
+        "blob": "4e7db9f8a71f34deafac051a59a19cdb897038ca",
+        "terms": [
+          "nasesojka.cz",
+          "09580174",
+          "SHOW & SELL",
+          "SHOW&SELL"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/sojka/3.html"
+          }
+        ]
+      },
+      {
+        "blob": "df99cbae42b2ba60d3411ce33b6e83e1ee0bb559",
+        "terms": [
+          "nasesojka.cz",
+          "SHOW&SELL"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/sojka/3.json"
+          }
+        ]
+      },
+      {
+        "blob": "02301e80a5889a46599687d48ed949ba8cd8f7de",
+        "terms": [
+          "nasesojka.cz",
+          "09580174",
+          "SHOW & SELL",
+          "SHOW&SELL"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/sojka/4.html"
+          }
+        ]
+      },
+      {
+        "blob": "3e1d30b206887b64c526db3e893b4c762709bd17",
+        "terms": [
+          "nasesojka.cz",
+          "SHOW&SELL"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/sojka/4.json"
+          }
+        ]
+      },
+      {
+        "blob": "34dab1bf2a82e0906420aa983bc903328b051ed0",
+        "terms": [
+          "nasesojka.cz",
+          "09580174",
+          "SHOW & SELL",
+          "SHOW&SELL"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/sojka/5.html"
+          }
+        ]
+      },
+      {
+        "blob": "73f515426c03c8e3019aaa8b30d10a5d73b019bd",
+        "terms": [
+          "nasesojka.cz",
+          "SHOW&SELL"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/sojka/5.json"
+          }
+        ]
+      },
+      {
+        "blob": "423fe2ab4b8dafad7edcb4829b5c358633a4ee33",
+        "terms": [
+          "nasesojka.cz",
+          "09580174",
+          "SHOW & SELL",
+          "SHOW&SELL"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/sojka/6.html"
+          }
+        ]
+      },
+      {
+        "blob": "89af2370d41cf95fbf2de362ac36ac1705c3e135",
+        "terms": [
+          "nasesojka.cz",
+          "SHOW&SELL"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/sojka/6.json"
+          }
+        ]
+      },
+      {
+        "blob": "15b642c390348ab5012dd5e60e9eea921943af0a",
+        "terms": [
+          "nasesojka.cz",
+          "09580174",
+          "SHOW & SELL",
+          "SHOW&SELL"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/sojka/7.html"
+          }
+        ]
+      },
+      {
+        "blob": "012306524d951c1227368d36a22328b9519d7f47",
+        "terms": [
+          "nasesojka.cz",
+          "SHOW&SELL"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/sojka/7.json"
+          }
+        ]
+      },
+      {
+        "blob": "a627b6de3e43f2b871c3cc420f22654ef0531eb6",
+        "terms": [
+          "nasesojka.cz",
+          "09580174",
+          "SHOW & SELL",
+          "SHOW&SELL"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/sojka/category.html"
+          }
+        ]
+      },
+      {
+        "blob": "bd2a2c1990bcb0fa088abff43c36b906d0dc105a",
+        "terms": [
+          "nasesojka.cz",
+          "SHOW&SELL"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/sojka/category.json"
+          }
+        ]
+      },
+      {
+        "blob": "cff73eee49fe44fbdf9fe8ce123e3e1233f077ec",
+        "terms": [
+          "09580174",
+          "SHOW & SELL"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/sojka/finance-summary.json"
+          }
+        ]
+      },
+      {
+        "blob": "4430abe965feae63d2e69e068272e4690b8dc590",
+        "terms": [
+          "nasesojka.cz",
+          "09580174",
+          "SHOW & SELL",
+          "SHOW&SELL"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/sojka/home.html"
+          }
+        ]
+      },
+      {
+        "blob": "74cd890431d0669e713565a5c0512440ca52d90c",
+        "terms": [
+          "nasesojka.cz",
+          "SHOW&SELL"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/sojka/home.json"
+          }
+        ]
+      },
+      {
+        "blob": "a89050fe62dffb3917310c0fd84551084b3ad7af",
+        "terms": [
+          "nasesojka.cz",
+          "09580174",
+          "SHOW & SELL",
+          "SHOW&SELL"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/sojka/legal.html"
+          }
+        ]
+      },
+      {
+        "blob": "6dc9fe3ba08732a5a59d76f78f135efac40284c2",
+        "terms": [
+          "nasesojka.cz",
+          "09580174",
+          "SHOW & SELL",
+          "SHOW&SELL"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/sojka/legal.json"
+          }
+        ]
+      },
+      {
+        "blob": "4e3572fe3b03afcb6ad4a829f908a537286c7618",
+        "terms": [
+          "09580174",
+          "SHOW & SELL"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/sojka/official.json"
+          }
+        ]
+      },
+      {
+        "blob": "b3e63166f6c721c6b235ff1b44c4dde2a6f4be14",
+        "terms": [
+          "nasesojka.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/sojka/photos.json"
+          }
+        ]
+      },
+      {
+        "blob": "67e93e6ec6eacaba3fda776eec9fb19ae8c3c615",
+        "terms": [
+          "09580174",
+          "SHOW & SELL"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/sojka/size.html"
+          }
+        ]
+      },
+      {
+        "blob": "787f4e6251360a7d5b91916353b4de3c3bf5ac69",
+        "terms": [
+          "nasesojka.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/tasks-discovery.json"
+          }
+        ]
+      },
+      {
+        "blob": "673c1dfa88288376ea2570d3077bd3e27b48e06d",
+        "terms": [
+          "nasesojka.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/tasks-extra.json"
+          }
+        ]
+      },
+      {
+        "blob": "e7970a345c017db7d8d6795278fa1f259747f988",
+        "terms": [
+          "nasesojka.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/tasks-legal.json"
+          }
+        ]
+      },
+      {
+        "blob": "01d4f07edc8117d8a0ad4b1a7c1993163259de36",
+        "terms": [
+          "nasesojka.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/tasks-products.json"
+          }
+        ]
+      },
+      {
+        "blob": "d2688f8e513b07a27565ced4b7d649fbc3a62e5f",
+        "terms": [
+          "nasesojka.cz",
+          "09580174",
+          "SHOW&SELL"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/coord/s5-claims",
+            "path": "claims.md"
+          }
+        ]
+      }
+    ],
+    "svetlonosky": [
+      {
+        "blob": "2981f47b78da7d0d68f12e415ba65bc7d3ccd67b",
+        "terms": [
+          "svetlonosky.cz",
+          "14032911",
+          "Barbora Jahodová"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "catalogues/svetlonosky.js"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/candidate-packages/svetlonosky/catalogue.js"
+          }
+        ]
+      },
+      {
+        "blob": "536e5ff13c3f60e3ad60d46e8315ade9dfd81987",
+        "terms": [
+          "svetlonosky.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "n447/s5/perfume-fragments/svetlonosky.config.json"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/candidate-packages/svetlonosky/config.json"
+          }
+        ]
+      },
+      {
+        "blob": "d424f31e195312e72d6e4a9ad13b5a167c3ba334",
+        "terms": [
+          "svetlonosky.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "n447/s5/perfume-fragments/svetlonosky.selection-model.json"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "n447/s5/sources/svetlonosky/selection-model.json"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/candidate-packages/svetlonosky/selection-model.json"
+          }
+        ]
+      },
+      {
+        "blob": "43c1345cd8caf160b9a305a486187d07b8c17c63",
+        "terms": [
+          "svetlonosky.cz",
+          "14032911",
+          "Barbora Jahodová"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "n447/s5/sources/svetlonosky/verified-products.json"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/candidate-packages/svetlonosky/verified-products.json"
+          }
+        ]
+      },
+      {
+        "blob": "fecf60bd1b66b2be8bb970979b2f76cbd2284651",
+        "terms": [
+          "svetlonosky.cz",
+          "14032911",
+          "Barbora Jahodová"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/build-first-four.py"
+          }
+        ]
+      },
+      {
+        "blob": "b105fc084e9d912a9309901834f8f1b4da555744",
+        "terms": [
+          "svetlonosky.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/candidate-packages/svetlonosky/integration-review.json"
+          }
+        ]
+      },
+      {
+        "blob": "9aea67517d3b593cbdfbc54a86215c92f839f161",
+        "terms": [
+          "svetlonosky.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/engine-qa.json"
+          }
+        ]
+      },
+      {
+        "blob": "70fd42174aac9131504493ba6aa952835de870d4",
+        "terms": [
+          "svetlonosky.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/live-first-four.py"
+          }
+        ]
+      },
+      {
+        "blob": "f95cb7a4633c684a5af6c339850769c1104140f6",
+        "terms": [
+          "svetlonosky.cz",
+          "14032911",
+          "Barbora Jahodová"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/duplicate-terms.json"
+          }
+        ]
+      },
+      {
+        "blob": "131d33c4a720e79af1d2608c18b01a8cbc2053b5",
+        "terms": [
+          "svetlonosky.cz",
+          "14032911",
+          "Barbora Jahodová"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/fresh-duplicates.json"
+          }
+        ]
+      },
+      {
+        "blob": "d5eb94eac8c087f612371d187597020cabcd43b1",
+        "terms": [
+          "svetlonosky.cz",
+          "Barbora Jahodová"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/svetlonosky/1.html"
+          }
+        ]
+      },
+      {
+        "blob": "b9cc6d0417c7026b78b1104626ba1374a34820ce",
+        "terms": [
+          "svetlonosky.cz",
+          "Barbora Jahodová"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/svetlonosky/1.json"
+          }
+        ]
+      },
+      {
+        "blob": "575f60eaf3f463294af03a6b537787bea3d83d35",
+        "terms": [
+          "svetlonosky.cz",
+          "Barbora Jahodová"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/svetlonosky/2.html"
+          }
+        ]
+      },
+      {
+        "blob": "4973e945dcab93588a4fe62abe8c1e666275abb1",
+        "terms": [
+          "svetlonosky.cz",
+          "Barbora Jahodová"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/svetlonosky/2.json"
+          }
+        ]
+      },
+      {
+        "blob": "db2676ff6047865947b68b88a2340e1170fb59a1",
+        "terms": [
+          "svetlonosky.cz",
+          "Barbora Jahodová"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/svetlonosky/3.html"
+          }
+        ]
+      },
+      {
+        "blob": "82373ba2b82b7d13711dc8d1576e7b864b14f645",
+        "terms": [
+          "svetlonosky.cz",
+          "Barbora Jahodová"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/svetlonosky/3.json"
+          }
+        ]
+      },
+      {
+        "blob": "db16b8fd3e26a6aaea252f7ff3d7cbab48dc8867",
+        "terms": [
+          "svetlonosky.cz",
+          "Barbora Jahodová"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/svetlonosky/4.html"
+          }
+        ]
+      },
+      {
+        "blob": "e2ecb6d9a9d39e91a1fa2764870f62d6cb43e1ad",
+        "terms": [
+          "svetlonosky.cz",
+          "Barbora Jahodová"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/svetlonosky/4.json"
+          }
+        ]
+      },
+      {
+        "blob": "c9db239154b5b848af289baa2b1a0789ed9e84cd",
+        "terms": [
+          "svetlonosky.cz",
+          "Barbora Jahodová"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/svetlonosky/5.html"
+          }
+        ]
+      },
+      {
+        "blob": "78be136df5638b9c65230c0f59a10bd9e8fc7117",
+        "terms": [
+          "svetlonosky.cz",
+          "Barbora Jahodová"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/svetlonosky/5.json"
+          }
+        ]
+      },
+      {
+        "blob": "972152d40cb9be95335553c458ad254524fa8188",
+        "terms": [
+          "svetlonosky.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/svetlonosky/6.json"
+          }
+        ]
+      },
+      {
+        "blob": "892b112a5cc5766d7047f2ea1954eda62e474add",
+        "terms": [
+          "svetlonosky.cz",
+          "Barbora Jahodová"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/svetlonosky/category.html"
+          }
+        ]
+      },
+      {
+        "blob": "03556025ceb917d043038a38e5b633a736892fde",
+        "terms": [
+          "svetlonosky.cz",
+          "Barbora Jahodová"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/svetlonosky/category.json"
+          }
+        ]
+      },
+      {
+        "blob": "b13c1dbc49f08fdcd508cd6be274fd66f3d12c18",
+        "terms": [
+          "14032911",
+          "Barbora Jahodová"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/svetlonosky/finance-summary.json"
+          }
+        ]
+      },
+      {
+        "blob": "1f92952011305866b98b1848a646934434e165a0",
+        "terms": [
+          "svetlonosky.cz",
+          "Barbora Jahodová"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/svetlonosky/home.html"
+          }
+        ]
+      },
+      {
+        "blob": "c44cb2f2b7475e1c42a7329689a9d4cc15e226ca",
+        "terms": [
+          "svetlonosky.cz",
+          "Barbora Jahodová"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/svetlonosky/home.json"
+          }
+        ]
+      },
+      {
+        "blob": "153857b68fc0c719f8a3c40f90869c7948387201",
+        "terms": [
+          "svetlonosky.cz",
+          "14032911",
+          "Barbora Jahodová"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/svetlonosky/legal.html"
+          }
+        ]
+      },
+      {
+        "blob": "66601d1d746486a626f8a1aabf5ae015ada86932",
+        "terms": [
+          "svetlonosky.cz",
+          "14032911",
+          "Barbora Jahodová"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/svetlonosky/legal.json"
+          }
+        ]
+      },
+      {
+        "blob": "562fe4543139898e4e97e9dedb86a14f0478ba99",
+        "terms": [
+          "14032911",
+          "Barbora Jahodová"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/svetlonosky/official.json"
+          }
+        ]
+      },
+      {
+        "blob": "35130f369d559d37560d7444d1c04705bac41629",
+        "terms": [
+          "svetlonosky.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/svetlonosky/photos.json"
+          }
+        ]
+      },
+      {
+        "blob": "00e2ecdd9dbdba2e49d003a1afab9ae6c85114f4",
+        "terms": [
+          "14032911",
+          "Barbora Jahodová"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/svetlonosky/size.html"
+          }
+        ]
+      },
+      {
+        "blob": "787f4e6251360a7d5b91916353b4de3c3bf5ac69",
+        "terms": [
+          "svetlonosky.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/tasks-discovery.json"
+          }
+        ]
+      },
+      {
+        "blob": "e7970a345c017db7d8d6795278fa1f259747f988",
+        "terms": [
+          "svetlonosky.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/tasks-legal.json"
+          }
+        ]
+      },
+      {
+        "blob": "01d4f07edc8117d8a0ad4b1a7c1993163259de36",
+        "terms": [
+          "svetlonosky.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/tasks-products.json"
+          }
+        ]
+      },
+      {
+        "blob": "d2688f8e513b07a27565ced4b7d649fbc3a62e5f",
+        "terms": [
+          "svetlonosky.cz",
+          "14032911"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/coord/s5-claims",
+            "path": "claims.md"
+          }
+        ]
+      }
+    ],
+    "lunarium": [
+      {
+        "blob": "d465858c8739a27a025b7a488380aa82975505f4",
+        "terms": [
+          "lunarium.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/discover.py"
+          }
+        ]
+      },
+      {
+        "blob": "f95cb7a4633c684a5af6c339850769c1104140f6",
+        "terms": [
+          "lunarium.cz",
+          "14025957",
+          "Lunarium s.r.o."
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/duplicate-terms.json"
+          }
+        ]
+      },
+      {
+        "blob": "131d33c4a720e79af1d2608c18b01a8cbc2053b5",
+        "terms": [
+          "lunarium.cz",
+          "14025957",
+          "Lunarium s.r.o."
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/fresh-duplicates.json"
+          }
+        ]
+      },
+      {
+        "blob": "7ed105eb1e64e3f5dde435b7148e3049006e964c",
+        "terms": [
+          "lunarium.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/lunarium-discovery.json"
+          }
+        ]
+      },
+      {
+        "blob": "bfbebe771847e5e5830649526ba8e31c069ee248",
+        "terms": [
+          "lunarium.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/lunarium-home.html"
+          }
+        ]
+      },
+      {
+        "blob": "be624fc8be4d871f8a2aeb35f2462177acad14ec",
+        "terms": [
+          "lunarium.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/lunarium/1.html"
+          }
+        ]
+      },
+      {
+        "blob": "f77360875e1aba6ae98e11b36047ff8f3d5d9bbb",
+        "terms": [
+          "lunarium.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/lunarium/1.json"
+          }
+        ]
+      },
+      {
+        "blob": "ce1ea1e85b358aaaf982c6ce5579060dbe3f4cf1",
+        "terms": [
+          "lunarium.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/lunarium/category.html"
+          }
+        ]
+      },
+      {
+        "blob": "49d11f5c7746b666467cb3748d3046da14c8c064",
+        "terms": [
+          "lunarium.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/lunarium/category.json"
+          }
+        ]
+      },
+      {
+        "blob": "4b55bd8fe42918412322fe1a8654ff96b27a9b9b",
+        "terms": [
+          "14025957",
+          "Lunarium s.r.o."
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/lunarium/finance-summary.json"
+          }
+        ]
+      },
+      {
+        "blob": "d4b7abfb912c1927413dbfc992544171b4638ab0",
+        "terms": [
+          "lunarium.cz",
+          "14025957",
+          "Lunarium s.r.o."
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/lunarium/legal.html"
+          }
+        ]
+      },
+      {
+        "blob": "cfca7b655bace852c7f6b479e4e23ced85ba5820",
+        "terms": [
+          "lunarium.cz",
+          "14025957",
+          "Lunarium s.r.o."
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/lunarium/legal.json"
+          }
+        ]
+      },
+      {
+        "blob": "8f3f3238858e162956c033176091af61e84967d5",
+        "terms": [
+          "14025957",
+          "Lunarium s.r.o."
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/lunarium/official.json"
+          }
+        ]
+      },
+      {
+        "blob": "39e33ae0ef5c932aae61483b65a5d34836163c70",
+        "terms": [
+          "14025957",
+          "Lunarium s.r.o."
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/lunarium/size.html"
+          }
+        ]
+      },
+      {
+        "blob": "787f4e6251360a7d5b91916353b4de3c3bf5ac69",
+        "terms": [
+          "lunarium.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/tasks-discovery.json"
+          }
+        ]
+      },
+      {
+        "blob": "e7970a345c017db7d8d6795278fa1f259747f988",
+        "terms": [
+          "lunarium.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/tasks-legal.json"
+          }
+        ]
+      }
+    ],
+    "bylinkokraska": [
+      {
+        "blob": "17cc23583686766584d2cfc6c39506dd801b90c7",
+        "terms": [
+          "bylinkokraska.cz",
+          "09561633",
+          "Monika Mužíková"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/bylinkokraska/home.html"
+          }
+        ]
+      },
+      {
+        "blob": "b90f8a44f83714db1b6a34a859fd888f9fd255fa",
+        "terms": [
+          "bylinkokraska.cz",
+          "09561633",
+          "Monika Mužíková"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/bylinkokraska/home.json"
+          }
+        ]
+      },
+      {
+        "blob": "5878ccc108ae5596f3e638a5eedc918c4682ccb8",
+        "terms": [
+          "bylinkokraska.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/bylinkokraska/legal.json"
+          }
+        ]
+      },
+      {
+        "blob": "4ae3af997e68124d74823d07df519eb626a5bec0",
+        "terms": [
+          "bylinkokraska.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/tasks-next-two.json"
+          }
+        ]
+      }
+    ],
+    "vontree": [
+      {
+        "blob": "4ae3af997e68124d74823d07df519eb626a5bec0",
+        "terms": [
+          "vontreecandle.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/tasks-next-two.json"
+          }
+        ]
+      },
+      {
+        "blob": "f4c46574250855a9aa400574b33e7f49d089103a",
+        "terms": [
+          "vontreecandle.cz",
+          "VONTREE CANDLE",
+          "Eva Vontrobová"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/vontree/home.html"
+          }
+        ]
+      },
+      {
+        "blob": "6901e4e02050a6562f6372ad0a1de21d549d1a23",
+        "terms": [
+          "vontreecandle.cz",
+          "VONTREE CANDLE",
+          "Eva Vontrobová"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/vontree/home.json"
+          }
+        ]
+      },
+      {
+        "blob": "9baa3ab75be37c7870767e96242a96280e59bc6e",
+        "terms": [
+          "vontreecandle.cz",
+          "21298645",
+          "VONTREE CANDLE",
+          "Eva Vontrobová"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/vontree/legal.html"
+          }
+        ]
+      },
+      {
+        "blob": "91d2f3a3087424899c308749350d00f4f1adfafe",
+        "terms": [
+          "vontreecandle.cz",
+          "21298645",
+          "VONTREE CANDLE",
+          "Eva Vontrobová"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-batch3-20261116",
+            "path": "tools/s5/perfume-batch3-20261116/research/vontree/legal.json"
           }
         ]
       }
@@ -503,6 +3404,13 @@
     "sojka": "NOT_CHANGED_BY_THIS_AUDIT",
     "lunarium": "NOT_CHANGED_BY_THIS_AUDIT",
     "otuleni": "NOT_CHANGED_BY_THIS_AUDIT",
-    "ncn": "NOT_CHANGED_BY_THIS_AUDIT"
+    "ncn": "NOT_CHANGED_BY_THIS_AUDIT",
+    "vontree": "NOT_CHANGED_BY_THIS_AUDIT",
+    "bylinkokraska": "NOT_CHANGED_BY_THIS_AUDIT",
+    "kimmy": "NOT_CHANGED_BY_THIS_AUDIT",
+    "lumela": "NOT_CHANGED_BY_THIS_AUDIT",
+    "mojesoja": "NOT_CHANGED_BY_THIS_AUDIT",
+    "svickuj": "NOT_CHANGED_BY_THIS_AUDIT",
+    "mojehygge": "NOT_CHANGED_BY_THIS_AUDIT"
   }
 }

@@ -1,0 +1,506 @@
+{
+  "slug": "vontree",
+  "label": "4",
+  "url": "https://www.vontreecandle.cz/sojova-svicka-vanilka-sandalwood-citrus-500-ml/",
+  "checkedAt": "2026-11-16T11:13:02.369720+00:00",
+  "tlsVerified": true,
+  "scope": "Read-only officialHTML; notlivewidgetQA",
+  "status": 200,
+  "finalUrl": "https://www.vontreecandle.cz/sojova-svicka-vanilka-sandalwood-citrus-500-ml/",
+  "sourceSha256": "20a5d6df50a2691a12b5d55a0b28bcf516d4325a70b77f51237ba4c04925d3f9",
+  "name": "Vanilka & Santal & Citrus | Přírodní sójová svíčka | 500 ml",
+  "jsonld": [
+    "\n{\n  \"@context\":\"https://schema.org/\",\n  \"@type\":\"Product\",\n  \"name\":\"VONTREE CANDLE\",\n  \"aggregateRating\":{\n    \"@type\":\"AggregateRating\",\n    \"ratingValue\":\"5.0\",\n    \"ratingCount\":\"672\",\n    \"reviewCount\":\"672\"\n  }\n}\n",
+    "\n    {\n        \"@context\" : \"https://schema.org\",\n        \"@type\" : \"Organization\",\n        \"name\" : \"VONTREE CANDLE\",\n        \"url\" : \"https://www.vontreecandle.cz\",\n                \"employee\" : \"Eva Vontrobová\",\n                    \"email\" : \"info@vontreecandle.cz\",\n                            \"telephone\" : \"+420778502851 (SMS)\",\n                                \n                                                                                \"sameAs\" : [\"https://www.facebook.com/vontreecandle\", \"https://www.instagram.com/vontreecandle/\"]\n    }\n"
+  ],
+  "offers": [
+    {
+      "availability": "https://schema.org/InStock",
+      "url": "https://www.vontreecandle.cz/sojova-svicka-vanilka-sandalwood-citrus-500-ml/",
+      "price": "669.00",
+      "priceCurrency": "CZK",
+      "itemCondition": "https://schema.org/NewCondition"
+    }
+  ],
+  "photos": [
+    "https://cdn.myshoptet.com/usr/www.vontreecandle.cz/user/shop/big/1040-1_prirodni-sojova-svicka-vanilka.jpg?ff=1&x=1024&y=1024&q=95&ts=68da2e8c&sg=be5d3501"
+  ],
+  "links": [
+    {
+      "text": "zde",
+      "url": "https://www.vontreecandle.cz/podminky-ochrany-osobnich-udaju/"
+    },
+    {
+      "text": "Nová registrace",
+      "url": "https://www.vontreecandle.cz/registrace/"
+    },
+    {
+      "text": "Zapomenuté heslo",
+      "url": "https://www.vontreecandle.cz/klient/zapomenute-heslo/"
+    },
+    {
+      "text": "Přihlásit se přes Facebook",
+      "url": "https://www.vontreecandle.cz/action/Social/login/?provider=Facebook"
+    },
+    {
+      "text": "Přihlásit se přes Google",
+      "url": "https://www.vontreecandle.cz/action/Social/login/?provider=Google"
+    },
+    {
+      "text": "Přihlásit se přes Seznam",
+      "url": "https://www.vontreecandle.cz/action/Social/login/?provider=Seznam"
+    },
+    {
+      "text": "Pokračovat do košíku",
+      "url": "https://www.vontreecandle.cz/kosik/"
+    },
+    {
+      "text": "info@vontreecandle.cz",
+      "url": "mailto:info@vontreecandle.cz"
+    },
+    {
+      "text": "Doprava a platba",
+      "url": "https://www.vontreecandle.cz/doprava-a-platba/"
+    },
+    {
+      "text": "Kontakt",
+      "url": "https://www.vontreecandle.cz/kontakt/"
+    },
+    {
+      "text": "Obchodní podmínky",
+      "url": "https://www.vontreecandle.cz/obchodni-podminky/"
+    },
+    {
+      "text": "Podmínky ochrany osobních údajů",
+      "url": "https://www.vontreecandle.cz/podminky-ochrany-osobnich-udaju/"
+    },
+    {
+      "text": "Moje objednávka",
+      "url": "https://www.vontreecandle.cz/moje-objednavka/"
+    },
+    {
+      "text": "Zákonná záruka",
+      "url": "https://www.vontreecandle.cz/zakonna-zaruka/"
+    },
+    {
+      "text": "CZK",
+      "url": "https://www.vontreecandle.cz/action/Currency/changeCurrency/?currencyCode=CZK"
+    },
+    {
+      "text": "EUR",
+      "url": "https://www.vontreecandle.cz/action/Currency/changeCurrency/?currencyCode=EUR"
+    },
+    {
+      "text": "",
+      "url": "https://www.vontreecandle.cz/"
+    },
+    {
+      "text": "Nákupní košík Prázdný košík",
+      "url": "https://www.vontreecandle.cz/kosik/"
+    },
+    {
+      "text": "Sójové svíčky",
+      "url": "https://www.vontreecandle.cz/sojove-svicky/"
+    },
+    {
+      "text": "",
+      "url": "https://www.vontreecandle.cz/vonne-svicky/"
+    },
+    {
+      "text": "Vonné svíčky",
+      "url": "https://www.vontreecandle.cz/vonne-svicky/"
+    },
+    {
+      "text": "Svíčky COLORFUL",
+      "url": "https://www.vontreecandle.cz/sojove-svicky-s-bavlnenym-knotem/"
+    },
+    {
+      "text": "Svíčky LUXURY",
+      "url": "https://www.vontreecandle.cz/sojove-vonne-svicky-ve-skle-400-ml/"
+    },
+    {
+      "text": "Svíčky MINIMALIST",
+      "url": "https://www.vontreecandle.cz/sojove-svicky-minimalisticke/"
+    },
+    {
+      "text": "Svíčky NĚHA",
+      "url": "https://www.vontreecandle.cz/sojove-svicky-s-autorskou-kresbou/"
+    },
+    {
+      "text": "",
+      "url": "https://www.vontreecandle.cz/prirodni-svicky/"
+    },
+    {
+      "text": "Přírodní svíčky",
+      "url": "https://www.vontreecandle.cz/prirodni-svicky/"
+    },
+    {
+      "text": "Přírodní svíčky 60 ml",
+      "url": "https://www.vontreecandle.cz/svicky-sojovy-vosk-60-ml/"
+    },
+    {
+      "text": "Přírodní svíčky 120 ml",
+      "url": "https://www.vontreecandle.cz/prirodni-svicky-120-ml/"
+    },
+    {
+      "text": "Přírodní svíčky 180 ml",
+      "url": "https://www.vontreecandle.cz/sojova-svicka-180-ml/"
+    },
+    {
+      "text": "Přírodní svíčky 500 ml",
+      "url": "https://www.vontreecandle.cz/500-ml-prirodni-sojove-svicky/"
+    },
+    {
+      "text": "",
+      "url": "https://www.vontreecandle.cz/sezonni-svicky/"
+    },
+    {
+      "text": "Sezónní svíčky",
+      "url": "https://www.vontreecandle.cz/sezonni-svicky/"
+    },
+    {
+      "text": "Podzim a Vánoce",
+      "url": "https://www.vontreecandle.cz/podzimni-a-vanocni-svicky/"
+    },
+    {
+      "text": "Jaro a Léto",
+      "url": "https://www.vontreecandle.cz/jarni-a-letni-svicky/"
+    },
+    {
+      "text": "Keramika",
+      "url": "https://www.vontreecandle.cz/keramika/"
+    },
+    {
+      "text": "",
+      "url": "https://www.vontreecandle.cz/keramicti-ptacci/"
+    },
+    {
+      "text": "Keramičtí ptáčci",
+      "url": "https://www.vontreecandle.cz/keramicti-ptacci/"
+    },
+    {
+      "text": "",
+      "url": "https://www.vontreecandle.cz/svicky-v-keramice/"
+    },
+    {
+      "text": "Svíčky v keramice",
+      "url": "https://www.vontreecandle.cz/svicky-v-keramice/"
+    },
+    {
+      "text": "Čajové svíčky",
+      "url": "https://www.vontreecandle.cz/cajove-svicky/"
+    },
+    {
+      "text": "",
+      "url": "https://www.vontreecandle.cz/bezobalove-cajove-svicky/"
+    },
+    {
+      "text": "Čajové svíčky bezobalové",
+      "url": "https://www.vontreecandle.cz/bezobalove-cajove-svicky/"
+    },
+    {
+      "text": "",
+      "url": "https://www.vontreecandle.cz/v-kalisku-cajove-svicky/"
+    },
+    {
+      "text": "Čajové svíčky v kalíšku",
+      "url": "https://www.vontreecandle.cz/v-kalisku-cajove-svicky/"
+    },
+    {
+      "text": "",
+      "url": "https://www.vontreecandle.cz/svicny-na-cajove-svicky/"
+    },
+    {
+      "text": "Svícny na čajové svíčky",
+      "url": "https://www.vontreecandle.cz/svicny-na-cajove-svicky/"
+    },
+    {
+      "text": "Bytové vůně",
+      "url": "https://www.vontreecandle.cz/interierove-parfemy-difuzery/"
+    },
+    {
+      "text": "",
+      "url": "https://www.vontreecandle.cz/tycinkove-difuzery/"
+    },
+    {
+      "text": "Bytové difuzéry",
+      "url": "https://www.vontreecandle.cz/tycinkove-difuzery/"
+    },
+    {
+      "text": "",
+      "url": "https://www.vontreecandle.cz/vykurovadla/"
+    },
+    {
+      "text": "Vykuřovadla",
+      "url": "https://www.vontreecandle.cz/vykurovadla/"
+    },
+    {
+      "text": "",
+      "url": "https://www.vontreecandle.cz/bytove-spreje/"
+    },
+    {
+      "text": "Bytové spreje",
+      "url": "https://www.vontreecandle.cz/bytove-spreje/"
+    },
+    {
+      "text": "Dárkové balení",
+      "url": "https://www.vontreecandle.cz/darkova-baleni/"
+    },
+    {
+      "text": "NÁHRADNÍ PLNĚNÍ PRO FIRMY",
+      "url": "https://www.vontreecandle.cz/nahradni-plneni-chranena-dilna/"
+    },
+    {
+      "text": "Můj příběh",
+      "url": "https://www.vontreecandle.cz/o-mne/"
+    },
+    {
+      "text": "Velkoobchodní prodej",
+      "url": "https://www.vontreecandle.cz/velkoobchod-svicky-b2b/"
+    },
+    {
+      "text": "Blog",
+      "url": "https://www.vontreecandle.cz/blog/"
+    },
+    {
+      "text": "Kontakt",
+      "url": "https://www.vontreecandle.cz/kontakt/"
+    },
+    {
+      "text": "Doprava a platba",
+      "url": "https://www.vontreecandle.cz/doprava-a-platba/"
+    },
+    {
+      "text": "Bezpečnostní upozornění",
+      "url": "https://www.vontreecandle.cz/bezpecnostni-upozorneni/"
+    },
+    {
+      "text": "Obchodní podmínky",
+      "url": "https://www.vontreecandle.cz/obchodni-podminky/"
+    },
+    {
+      "text": "Prodejní místa",
+      "url": "https://www.vontreecandle.cz/prodejni-mista/"
+    },
+    {
+      "text": "Hodnocení obchodu",
+      "url": "https://www.vontreecandle.cz/hodnoceni-obchodu/"
+    },
+    {
+      "text": "Moje objednávka",
+      "url": "https://www.vontreecandle.cz/moje-objednavka/"
+    },
+    {
+      "text": "CZK",
+      "url": "https://www.vontreecandle.cz/action/Currency/changeCurrency/?currencyCode=CZK"
+    },
+    {
+      "text": "EUR",
+      "url": "https://www.vontreecandle.cz/action/Currency/changeCurrency/?currencyCode=EUR"
+    },
+    {
+      "text": "Přihlášení",
+      "url": "https://www.vontreecandle.cz/login/?backTo=%2Fsojova-svicka-vanilka-sandalwood-citrus-500-ml%2F"
+    },
+    {
+      "text": "Domů",
+      "url": "https://www.vontreecandle.cz/"
+    },
+    {
+      "text": "Sójové svíčky",
+      "url": "https://www.vontreecandle.cz/sojove-svicky/"
+    },
+    {
+      "text": "Přírodní svíčky",
+      "url": "https://www.vontreecandle.cz/prirodni-svicky/"
+    },
+    {
+      "text": "Přírodní svíčky 500 ml",
+      "url": "https://www.vontreecandle.cz/500-ml-prirodni-sojove-svicky/"
+    },
+    {
+      "text": "",
+      "url": "https://cdn.myshoptet.com/usr/www.vontreecandle.cz/user/shop/big/1040-1_prirodni-sojova-svicka-vanilka.jpg?ff=1&x=1024&y=1024&q=95&ts=68da2e8c&sg=be5d3501"
+    },
+    {
+      "text": "",
+      "url": "https://cdn.myshoptet.com/usr/www.vontreecandle.cz/user/shop/big/1040-1_prirodni-sojova-svicka-vanilka.jpg?ff=1&x=1024&y=1024&q=95&ts=68da2e8c&sg=be5d3501"
+    },
+    {
+      "text": "",
+      "url": "https://cdn.myshoptet.com/usr/www.vontreecandle.cz/user/shop/big/1040-1_prirodni-sojova-svicka-vanilka.jpg?ff=1&x=1024&y=1024&q=95&ts=68da2e8c&sg=be5d3501"
+    },
+    {
+      "text": "",
+      "url": "https://cdn.myshoptet.com/usr/www.vontreecandle.cz/user/shop/big/1040-3_svicka-vanilka-velka-vontree-candle.jpg?ff=1&x=1024&y=1024&q=95&ts=664342e7&sg=be5d3501"
+    },
+    {
+      "text": "",
+      "url": "https://cdn.myshoptet.com/usr/www.vontreecandle.cz/user/shop/big/1040-3_svicka-vanilka-velka-vontree-candle.jpg?ff=1&x=1024&y=1024&q=95&ts=664342e7&sg=be5d3501"
+    },
+    {
+      "text": "",
+      "url": "https://cdn.myshoptet.com/usr/www.vontreecandle.cz/user/shop/big/1040_smyslna-svicka-geranium-ylang-ylang-prirodni.jpg?ff=1&x=1024&y=1024&q=95&ts=66434318&sg=be5d3501"
+    },
+    {
+      "text": "",
+      "url": "https://cdn.myshoptet.com/usr/www.vontreecandle.cz/user/shop/big/1040_smyslna-svicka-geranium-ylang-ylang-prirodni.jpg?ff=1&x=1024&y=1024&q=95&ts=66434318&sg=be5d3501"
+    },
+    {
+      "text": "Možnosti doručení",
+      "url": "https://www.vontreecandle.cz/sojova-svicka-vanilka-sandalwood-citrus-500-ml:moznosti-dopravy/"
+    },
+    {
+      "text": "vanilky",
+      "url": "https://www.vontreecandle.cz/slovnik-pojmu/jak-voni-vanilka/"
+    },
+    {
+      "text": "santalovým dřevem",
+      "url": "https://www.vontreecandle.cz/slovnik-pojmu/jak-voni-santalove-drevo/"
+    },
+    {
+      "text": "citrusů",
+      "url": "https://www.vontreecandle.cz/slovnik-pojmu/citrusy/"
+    },
+    {
+      "text": "sójový vosk",
+      "url": "https://www.vontreecandle.cz/blog/sojovy-vosk-kral-mezi-vosky/"
+    },
+    {
+      "text": "esenciální oleje",
+      "url": "https://www.vontreecandle.cz/slovnik-pojmu/co-je-esencialni-olej-do-svicek/"
+    },
+    {
+      "text": "Zeptat se",
+      "url": "https://www.vontreecandle.cz/sojova-svicka-vanilka-sandalwood-citrus-500-ml:dotaz/"
+    },
+    {
+      "text": "vanilkou",
+      "url": "https://www.vontreecandle.cz/slovnik-pojmu/jak-voni-vanilka/"
+    },
+    {
+      "text": "santalovým dřevem",
+      "url": "https://www.vontreecandle.cz/slovnik-pojmu/jak-voni-santalove-drevo/"
+    },
+    {
+      "text": "citrusy",
+      "url": "https://www.vontreecandle.cz/slovnik-pojmu/citrusy/"
+    },
+    {
+      "text": "sójový vosk",
+      "url": "https://www.vontreecandle.cz/blog/sojovy-vosk-kral-mezi-vosky/"
+    },
+    {
+      "text": "esenciální oleje",
+      "url": "https://www.vontreecandle.cz/slovnik-pojmu/co-je-esencialni-olej-do-svicek/"
+    },
+    {
+      "text": "BEZPEČNOSTNÍ UPOZORNĚNÍ UVEDENÁ ZDE",
+      "url": "https://www.vontreecandle.cz/bezpecnostni-upozorneni/"
+    },
+    {
+      "text": "Přírodní svíčky 500 ml",
+      "url": "https://www.vontreecandle.cz/500-ml-prirodni-sojove-svicky/"
+    },
+    {
+      "text": "podmínkami ochrany osobních údajů",
+      "url": "https://www.vontreecandle.cz/podminky-ochrany-osobnich-udaju/"
+    },
+    {
+      "text": "podmínkami ochrany osobních údajů",
+      "url": "https://www.vontreecandle.cz/podminky-ochrany-osobnich-udaju/"
+    },
+    {
+      "text": "",
+      "url": "https://www.vontreecandle.cz/"
+    },
+    {
+      "text": "info@vontreecandle.cz",
+      "url": "mailto:info@vontreecandle.cz"
+    },
+    {
+      "text": "Facebook",
+      "url": "https://www.facebook.com/vontreecandle"
+    },
+    {
+      "text": "vontreecandle",
+      "url": "https://www.instagram.com/vontreecandle/"
+    },
+    {
+      "text": "Doprava a platba",
+      "url": "https://www.vontreecandle.cz/doprava-a-platba/"
+    },
+    {
+      "text": "Kontakt",
+      "url": "https://www.vontreecandle.cz/kontakt/"
+    },
+    {
+      "text": "Obchodní podmínky",
+      "url": "https://www.vontreecandle.cz/obchodni-podminky/"
+    },
+    {
+      "text": "Podmínky ochrany osobních údajů",
+      "url": "https://www.vontreecandle.cz/podminky-ochrany-osobnich-udaju/"
+    },
+    {
+      "text": "Moje objednávka",
+      "url": "https://www.vontreecandle.cz/moje-objednavka/"
+    },
+    {
+      "text": "Zákonná záruka",
+      "url": "https://www.vontreecandle.cz/zakonna-zaruka/"
+    },
+    {
+      "text": "",
+      "url": "https://obchody.heureka.cz/vontreecandle-cz/recenze/"
+    },
+    {
+      "text": "",
+      "url": "https://www.udrzitelnyeshop.cz/"
+    },
+    {
+      "text": "",
+      "url": "https://www.spolecenskaodpovednost.cz/clen/vontree-candle/"
+    },
+    {
+      "text": "",
+      "url": "https://www.shoptet.cz/?utm_source=footer&utm_medium=link&utm_campaign=create_by_shoptet"
+    },
+    {
+      "text": "Vytvořil Shoptet",
+      "url": "https://www.shoptet.cz/?utm_source=footer&utm_medium=link&utm_campaign=create_by_shoptet"
+    },
+    {
+      "text": "Shoptet",
+      "url": "https://shoptet.cz"
+    },
+    {
+      "text": "Shoptak.cz",
+      "url": "https://www.shoptak.cz"
+    }
+  ],
+  "publicProduct": {
+    "id": 1040,
+    "guid": "e17bb1d6-da91-11ed-90f3-82bc9b172827",
+    "hasVariants": false,
+    "codes": [
+      {
+        "code": "EC50-003",
+        "weight": 0.7
+      }
+    ],
+    "code": "EC50-003",
+    "name": "Vanilka & Santal & Citrus | Přírodní sójová svíčka | 500 ml",
+    "appendix": "",
+    "weight": 0.7,
+    "currentCategory": "Sójové svíčky | Přírodní svíčky | Přírodní svíčky 500 ml",
+    "currentCategoryGuid": "41949df9-5901-11ed-88b4-ac1f6b0076ec",
+    "defaultCategory": "Sójové svíčky | Přírodní svíčky | Přírodní svíčky 500 ml",
+    "defaultCategoryGuid": "41949df9-5901-11ed-88b4-ac1f6b0076ec",
+    "currency": "CZK",
+    "priceWithVat": 669
+  },
+  "description": "Detailní popis produktu Tato sójová přírodní svíčka je symbolem dokonalé rovnováhy mezi sladkou vanilkou, hřejivým santalovým dřevem a osvěžujícími citrusy. Bohatá a intenzivní kompozice zahalí Váš domov do vůně luxusu. Přírodní vanilka dodává svíčce hřejivou, smyslnou a uklidňující atmosféru, zatímco citrusové tóny vytvářejí svěží a revitalizující pocit. Třešničkou na dortu jsou dřevité tóny santalového dřeva, které podtrhují vonnou kompozici svým exotickým a tajemným nádechem. Proč sáhnout po sójové svíčce VONTREE CANDLE®? ♥ 100% přírodní složení, sójový vosk a esenciální oleje pocházející z rostlin ♥ Každá sójová svíčka VONTREE CANDLE® je vyrobena ručně a stává se tak jedinečným originálem ♥ Pomoc lidem se sluchovým handicapem Sójová svíčka Dokonalý požitek je vyrobena ze 100% přírodního, ekologického a vysoce kvalitního sójového vosku, který neobsahuje žádné škodlivé chemikálie. Objem 500 ml a tři knoty zajišťují vysokou intenzitu a rychlé rozptýlení vůně do okolí. Aroma přírodní svíčky je složeno ze smyslné kombinace vanilky, teplého santalového dřeva a osvěžujících citrusů. ID produktu: EC50-003 UFI: WU20-H09G-300A-N1MXVýrobce: VONTREE CANDLE s.r.o., Hlavní 83, 664 91 Neslovice Nutné dodržet BEZPEČNOSTNÍ UPOZORNĚNÍ UVEDENÁ ZDE.",
+  "shortDescription": "Hledáte dokonalý požitek ze světa vůni? Zapalte si sójovou svíčku s bohatým aroma smyslné přírodní vanilky, orientálním santalovým dřevem a kapkou svěžích citrusů. Kombinace sladkých, dřevitých a svěžích tónů vytváří dechberoucí kompozici, která Vás světa požitků a harmonie. cca 70 h 400 g vosku 500 ml Rozměry svíčky: 109 × 84 mm Složení svíčky: sójový vosk, esenciální oleje a bavlněný knot",
+  "bodyText": "Vanilka & Santal & Citrus | Přírodní sójová svíčka | 500 ml - Přírodní svíčky 500 ml 💚| VONTREECANDLE.cz Cookie consent Tento web používá soubory cookie. Dalším procházením tohoto webu vyjadřujete souhlas s jejich používáním. Více informací zde. Nastavení Souhlasím Přejít na obsah Přihlášení k vašemu účtu E-mailHesloNevyplňujte toto poleSurname Přihlásit seNová registraceZapomenuté hesloneboPřihlásit se přes FacebookPřihlásit se přes GooglePřihlásit se přes Seznam Pokračovat do košíku Zákaznická podpora:+420778502851 (SMS)info@vontreecandle.cz Doprava a platba Kontakt Obchodní podmínky Podmínky ochrany osobních údajů Moje objednávka Zákonná záruka Ceny v: CZK CZKEUR Přihlášení Hledat Nákupní košík Prázdný košík Sójové svíčkyVonné svíčky Svíčky COLORFUL, Svíčky LUXURY, Svíčky MINIMALIST, Svíčky NĚHA Přírodní svíčky Přírodní svíčky 60 ml, Přírodní svíčky 120 ml, Přírodní svíčky 180 ml, Přírodní svíčky 500 ml Sezónní svíčky Podzim a Vánoce, Jaro a Léto KeramikaKeramičtí ptáčci Svíčky v keramice Čajové svíčkyČajové svíčky bezobalové Čajové svíčky v kalíšku Svícny na čajové svíčky Bytové vůněBytové difuzéry Vykuřovadla Bytové spreje Dárkové balení NÁHRADNÍ PLNĚNÍ PRO FIRMY Můj příběh Velkoobchodní prodej Blog Kontakt Doprava a platba Bezpečnostní upozornění Obchodní podmínky Prodejní místa Hodnocení obchodu Moje objednávka Měna (CZK) CZK EUR Přihlášení Více Domů / Sójové svíčky / Přírodní svíčky / Přírodní svíčky 500 ml / Vanilka & Santal & Citrus | Přírodní sójová svíčka | 500 ml Vanilka & Santal & Citrus | Přírodní sójová svíčka | 500 ml Průměrné hodnocení produktu je 5,0 z 5 hvězdiček. 2 hodnocení Podrobnosti hodnocení 669 Kč Měrná cena: Skladem Dárkové balení ? Vyberte příplatekKraftová krabička +59 Kč Možnosti doručení Množství + − Přidat do košíku Hledáte dokonalý požitek ze světa vůni? Zapalte si sójovou svíčku s bohatým aroma smyslné přírodní vanilky, orientálním santalovým dřevem a kapkou svěžích citrusů. Kombinace sladkých, dřevitých a svěžích tónů vytváří dechberoucí kompozici, která Vás světa požitků a harmonie. cca 70 h 400 g vosku 500 ml Rozměry svíčky: 109 × 84 mm Složení svíčky: sójový vosk, esenciální oleje a bavlněný knot Detailní informace Tisk Zeptat se Popis Hodnocení (2) Diskuze Detailní popis produktu Tato sójová přírodní svíčka je symbolem dokonalé rovnováhy mezi sladkou vanilkou, hřejivým santalovým dřevem a osvěžujícími citrusy. Bohatá a intenzivní kompozice zahalí Váš domov do vůně luxusu. Přírodní vanilka dodává svíčce hřejivou, smyslnou a uklidňující atmosféru, zatímco citrusové tóny vytvářejí svěží a revitalizující pocit. Třešničkou na dortu jsou dřevité tóny santalového dřeva, které podtrhují vonnou kompozici svým exotickým a tajemným nádechem. Proč sáhnout po sójové svíčce VONTREE CANDLE®? ♥ 100% přírodní složení, sójový vosk a esenciální oleje pocházející z rostlin ♥ Každá sójová svíčka VONTREE CANDLE® je vyrobena ručně a stává se tak jedinečným originálem ♥ Pomoc lidem se sluchovým handicapem Sójová svíčka Dokonalý požitek je vyrobena ze 100% přírodního, ekologického a vysoce kvalitního sójového vosku, který neobsahuje žádné škodlivé chemikálie. Objem 500 ml a tři knoty zajišťují vysokou intenzitu a rychlé rozptýlení vůně do okolí. Aroma přírodní svíčky je složeno ze smyslné kombinace vanilky, teplého santalového dřeva a osvěžujících citrusů. ID produktu: EC50-003 UFI: WU20-H09G-300A-N1MXVýrobce: VONTREE CANDLE s.r.o., Hlavní 83, 664 91 Neslovice Nutné dodržet BEZPEČNOSTNÍ UPOZORNĚNÍ UVEDENÁ ZDE. Doplňkové parametry Kategorie: Přírodní svíčky 500 ml Vůně: Sladká, Gurmánská, Kořenitá Intenzita: Střední Charakter vůně: Přírodní (esenciální oleje) Typ nádoby: Sklo (hnědá sklenice) Hodnocení produktu 5,0 Průměrné hodnocení produktu je 5,0 z 5 hvězdiček. 2 hodnocení 5 2x 4 0x 3 0x 2 0x 1 0x Přidat hodnocení Zanechte hodnocení Povinná pole Jméno Nevyplňujte toto poleSurname E-mail Komentář Jak byste ohodnotili tento produkt? Vyberte od 1 do 5 hvězdiček, kde 1 je nejhorší a 5 nejlepší hodnocení. Odpovídá velmi negativnímu hodnocení. Odpovídá spíše negativnímu hodnocení. Odpovídá průměrnému hodnocení. Odpovídá pozitivnímu hodnocení. Odpovídá výbornému hodnocení. Bezpečnostní kontrola Opište text z obrázku Vložením hodnocení souhlasíte s podmínkami ochrany osobních údajů Odeslat hodnocení Výpis hodnocení 5 DK Daniela Shea Kotačková Hodnocení produktu je 5 z 5 hvězdiček. 23.5.2026 Nádherná vůně, krásné balení, rychlé dodání, milý dárek. Děkuji. 5 J Jana Hodnocení produktu je 5 z 5 hvězdiček. 17.4.2026 Nádherná sladká vůně, moc hezké Diskuze Buďte první, kdo napíše příspěvek k této položce. Přidat komentář Povinná pole Jméno Nevyplňujte toto poleSurname E-mail Název Komentář Bezpečnostní kontrola Opište text z obrázku Vložením komentáře souhlasíte s podmínkami ochrany osobních údajů Odeslat komentář Zápatí Kontakt info@vontreecandle.cz +420778502851 (SMS) Facebook vontreecandle Informace pro vás Doprava a platba Kontakt Obchodní podmínky Podmínky ochrany osobních údajů Moje objednávka Zákonná záruka Vytvořil Shoptet Copyright 2026 VONTREE CANDLE. Všechna práva vyhrazena. Vytvořil Shoptet | Design Shoptak.cz"
+}
