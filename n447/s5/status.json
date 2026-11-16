@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-11-16T12:55:07.294Z",
+  "updatedAt": "2026-11-16T13:01:52.532Z",
   "branch": "codex/s5-solo-20261109",
-  "codeSha": "50d5de977ed83b31337f88dd15da893a27ec64f7",
+  "codeSha": "6e17a86f3ddce949143dd444969dd6748a695914",
   "firmsByDomain": {
     "musiprirodne.sk": {
       "domain": "musiprirodne.sk",
@@ -1102,37 +1102,65 @@
       "domain": "mydlarnaudvoukocek.cz",
       "operator": "Mydlárna U Dvou koček s.r.o.",
       "ico": "08239843",
-      "status": "LOCAL_QA_COMPLETE_PREVIEW_PENDING",
+      "status": "PREVIEW_QA_COMPLETE",
       "products": 8,
       "localResults": 24,
       "claim": "7b9fec567f8c53e057593ab7695cbeb688b930d2",
       "paidCalls": 0,
       "emailStatus": "NOT_READY",
-      "evidence": "tools/s5/research/dvoukocek/local-browser-qa.json"
+      "evidence": "tools/s5/research/dvoukocek/qa/live-preview.json",
+      "previewResults": 8,
+      "liveViewportResults": 24,
+      "previewUrl": "https://kava-chatbot-backend-41q1eg26g-danielvendzur-codes-projects.vercel.app/s5.html?demo=dvoukocek",
+      "previewSha": "6e17a86f3ddce949143dd444969dd6748a695914",
+      "deploymentId": "dpl_DHw8qUZK4ij4sJhtBeFcNf9K3UfW"
     },
     "mydlarnaerde.cz": {
       "domain": "mydlarnaerde.cz",
       "operator": "Mýdlárna ERDÉ s.r.o.",
       "ico": "04928229",
-      "status": "LOCAL_QA_COMPLETE_PREVIEW_PENDING",
+      "status": "PREVIEW_QA_COMPLETE",
       "products": 7,
       "localResults": 21,
       "claim": "7b9fec567f8c53e057593ab7695cbeb688b930d2",
       "paidCalls": 0,
       "emailStatus": "NOT_READY",
-      "evidence": "tools/s5/research/mydlarnaerde/local-browser-qa.json"
+      "evidence": "tools/s5/research/mydlarnaerde/qa/live-preview.json",
+      "previewResults": 7,
+      "liveViewportResults": 21,
+      "previewUrl": "https://kava-chatbot-backend-41q1eg26g-danielvendzur-codes-projects.vercel.app/s5.html?demo=mydlarnaerde",
+      "previewSha": "6e17a86f3ddce949143dd444969dd6748a695914",
+      "deploymentId": "dpl_DHw8qUZK4ij4sJhtBeFcNf9K3UfW"
     },
     "store.meetea.cz": {
       "domain": "store.meetea.cz",
       "operator": "Vintage Teas s.r.o.",
       "ico": "09692754",
-      "status": "LOCAL_QA_COMPLETE_PREVIEW_PENDING",
+      "status": "PREVIEW_QA_COMPLETE",
       "products": 12,
       "localResults": 36,
       "claim": "7b9fec567f8c53e057593ab7695cbeb688b930d2",
       "paidCalls": 0,
       "emailStatus": "NOT_READY",
-      "evidence": "tools/s5/research/meetea/local-browser-qa.json"
+      "evidence": "tools/s5/research/meetea/qa/live-preview.json",
+      "previewResults": 12,
+      "liveViewportResults": 36,
+      "previewUrl": "https://kava-chatbot-backend-41q1eg26g-danielvendzur-codes-projects.vercel.app/s5.html?demo=meetea",
+      "previewSha": "6e17a86f3ddce949143dd444969dd6748a695914",
+      "deploymentId": "dpl_DHw8qUZK4ij4sJhtBeFcNf9K3UfW"
+    },
+    "zahradananiti.cz": {
+      "domain": "zahradananiti.cz",
+      "operator": "koke no koke s.r.o.",
+      "ico": "06096221",
+      "status": "LOCAL_QA_COMPLETE_PREVIEW_PENDING",
+      "products": 12,
+      "localResults": 36,
+      "backendDeterministicReplies": 4,
+      "paidCalls": 0,
+      "claim": "fa8eca119e050e73a430348f6bf5ec6b37dae8d8",
+      "emailStatus": "NOT_READY",
+      "evidence": "tools/s5/research/zahradananiti/local-browser-qa.json"
     }
   },
   "localGit": {
@@ -1164,8 +1192,8 @@
     "productionForbidden": true,
     "coordination": "Owner authorized existing browser Codex colleague; isolated branches, shared engine owner main worker. No internal subagents."
   },
-  "previewVerifiedCount": 20,
-  "nextAction": "Run live browser QA for Dvou koček, Erdé and Meetea on the next exact Preview build. Check branch coordination for Zahrada na niti.",
+  "previewVerifiedCount": 23,
+  "nextAction": "Live Preview QA for Zahrada na niti; confirm the Erdé header and Meetea offline helper on the new Preview. Continue independent Verti Ceramics and Papelote candidates.",
   "evidenceUpload": {
     "state": "OWNER_AUTHORIZED_COMPLETED_BLOBS_PENDING_TREE_CHECKPOINT",
     "archives": 38,

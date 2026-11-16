@@ -4,7 +4,8 @@
  if(document.body.dataset.series!=='s5')return;
  const slug=document.body.dataset.cosmeticsDemo,reg=window.S3_REG.demos[slug];
  const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
- window.CX_LOCAL_REPLY=(text,history)=>window.S5CatalogueReply?.reply(slug,window.CX_CATALOGUES[slug],text,history)||null;
+ const priorReply=window.CX_LOCAL_REPLY;
+ window.CX_LOCAL_REPLY=(text,history)=>window.S5CatalogueReply?.reply(slug,window.CX_CATALOGUES[slug],text,history)||priorReply?.(text,history)||null;
  const cs=reg.brand.lang==='cs',t=(a,b)=>cs?b:a,money=(n,c='EUR')=>new Intl.NumberFormat(cs?'cs-CZ':'sk-SK',{style:'currency',currency:c,minimumFractionDigits:c==='CZK'?0:2,maximumFractionDigits:2}).format(n);
  const choice=v=>reg.traitCopy?.[v]?.[cs?2:0]||({face:t('Pleť','Pleť'),eyes:t('Očné okolie','Oční okolí'),body:t('Telo','Tělo'),hair:'Vlasy',lips:t('Pery','Rty'),dry:t('Suchá','Suchá'),oily:t('Mastná alebo zmiešaná','Mastná nebo smíšená'),sensitive:t('Citlivá','Citlivá'),balanced:t('Normálna','Normální')})[v]||v;
  function profile(p){return [[p.category==='hair'?t('Typ vlasov','Typ vlasů'):t('Typ pokožky','Typ pokožky'),[...new Set(p.source?.skinTypesListed||[])].join(', ')],[t('Vôňa','Vůně'),p.source?.scent],[t('Vzhľad','Vzhled'),p.source?.finish]].filter(x=>x[1]).slice(0,4).map(([k,v])=>`<div><dt>${esc(k)}</dt><dd>${esc(v)}</dd></div>`).join('');}
