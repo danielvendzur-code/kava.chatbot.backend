@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-11-11T06:28:30.939786+00:00",
+  "updatedAt": "2026-11-16T12:55:07.294Z",
   "branch": "codex/s5-solo-20261109",
-  "codeSha": "7926f09c7ec8cca3e3792456916b911626190753",
+  "codeSha": "50d5de977ed83b31337f88dd15da893a27ec64f7",
   "firmsByDomain": {
     "musiprirodne.sk": {
       "domain": "musiprirodne.sk",
@@ -993,7 +993,7 @@
       "domain": "kintsugiperfumes.com",
       "operator": "KINTSUGI Labs s.r.o.",
       "ico": "11879653",
-      "status": "LOCAL_QA_COMPLETE_PREVIEW_PENDING",
+      "status": "PREVIEW_QA_COMPLETE",
       "products": 12,
       "localResults": 36,
       "questionScreens": 15,
@@ -1001,15 +1001,19 @@
       "paidCalls": 0,
       "emailStatus": "NOT_READY",
       "sources": "n447/s5/sources/kintsugi/",
-      "evidence": "n447/s5/dokazy/kintsugi/",
+      "evidence": "n447/s5/dokazy/kintsugi/preview-qa.json",
       "eligibility": "n447/s5/dokazy/kintsugi-live-eligibility-20261110.json",
-      "claim": "97bab0bcdca7ca1bf3944a109d69ab259f75c92b"
+      "claim": "97bab0bcdca7ca1bf3944a109d69ab259f75c92b",
+      "previewResults": 12,
+      "previewUrl": "https://kava-chatbot-backend-h45wv6v20-danielvendzur-codes-projects.vercel.app/s5.html?demo=kintsugi",
+      "previewSha": "dbc488457a8715b95dd3bce2c16893a53b42515f",
+      "deploymentId": "dpl_FGvdnSXTepVjsZ5d94SBc61q5VJv"
     },
     "oraculum.store": {
       "domain": "oraculum.store",
       "operator": "ORACULUM Company s.r.o.",
       "ico": "10905081",
-      "status": "LOCAL_QA_COMPLETE_PREVIEW_PENDING",
+      "status": "PREVIEW_QA_COMPLETE",
       "products": 6,
       "localResults": 18,
       "questionScreens": 9,
@@ -1017,9 +1021,118 @@
       "paidCalls": 0,
       "emailStatus": "NOT_READY",
       "sources": "n447/s5/sources/oraculum/",
-      "evidence": "n447/s5/dokazy/oraculum/",
+      "evidence": "n447/s5/dokazy/oraculum/preview-qa.json",
       "eligibility": "n447/s5/dokazy/oraculum-live-eligibility-20261110.json",
-      "claim": "97bab0bcdca7ca1bf3944a109d69ab259f75c92b"
+      "claim": "97bab0bcdca7ca1bf3944a109d69ab259f75c92b",
+      "previewResults": 6,
+      "previewUrl": "https://kava-chatbot-backend-h45wv6v20-danielvendzur-codes-projects.vercel.app/s5.html?demo=oraculum",
+      "previewSha": "dbc488457a8715b95dd3bce2c16893a53b42515f",
+      "deploymentId": "dpl_FGvdnSXTepVjsZ5d94SBc61q5VJv"
+    },
+    "myskino.cz": {
+      "domain": "myskino.cz",
+      "status": "PREVIEW_QA_COMPLETE",
+      "products": 7,
+      "previewResults": 7,
+      "previewUrl": "https://kava-chatbot-backend-ozhickavv-danielvendzur-codes-projects.vercel.app/s5.html?demo=myskino",
+      "previewSha": "90b11e80a073a77ffad10c151422d3e136df1d88",
+      "deploymentId": "dpl_FirWJDaSaxP83M239Wo4LrP2pnms",
+      "evidence": "n447/s5/dokazy/myskino/preview-qa.json",
+      "paidCalls": 0,
+      "emailStatus": "NOT_READY"
+    },
+    "furiosa.cz": {
+      "domain": "furiosa.cz",
+      "status": "PREVIEW_QA_COMPLETE",
+      "products": 10,
+      "previewResults": 10,
+      "previewUrl": "https://kava-chatbot-backend-es3zi8itl-danielvendzur-codes-projects.vercel.app/s5.html?demo=furiosa",
+      "previewSha": "2c745eb9a1c37afa783b7e5b946e8510dfda35c1",
+      "deploymentId": "dpl_21v18sU8t7MwZWwuZPhad2YN2PTH",
+      "evidence": "tools/s5/perfume/20261111-furiosa-scentium/live-qa-20261116.json",
+      "paidCalls": 0,
+      "emailStatus": "NOT_READY"
+    },
+    "scentium.cz": {
+      "domain": "scentium.cz",
+      "status": "PREVIEW_QA_COMPLETE",
+      "products": 12,
+      "previewResults": 12,
+      "previewUrl": "https://kava-chatbot-backend-es3zi8itl-danielvendzur-codes-projects.vercel.app/s5.html?demo=scentium",
+      "previewSha": "2c745eb9a1c37afa783b7e5b946e8510dfda35c1",
+      "deploymentId": "dpl_21v18sU8t7MwZWwuZPhad2YN2PTH",
+      "evidence": "tools/s5/perfume/20261111-furiosa-scentium/live-qa-20261116.json",
+      "paidCalls": 0,
+      "emailStatus": "NOT_READY"
+    },
+    "medarek.cz": {
+      "domain": "medarek.cz",
+      "operator": "Lucie Horáková",
+      "ico": "06283110",
+      "status": "PREVIEW_QA_COMPLETE",
+      "products": 12,
+      "localResults": 36,
+      "previewResults": 12,
+      "liveViewportResults": 36,
+      "viewportWidths": [
+        320,
+        390,
+        1280
+      ],
+      "previewUrl": "https://kava-chatbot-backend-byjy3c6nz-danielvendzur-codes-projects.vercel.app/s5.html?demo=medarek",
+      "previewSha": "50d5de977ed83b31337f88dd15da893a27ec64f7",
+      "deploymentId": "dpl_7vYCzGtocGqHC57ncbQ4DAASqhv9",
+      "claim": "f6b99bc8f93302d11e6b5d7ef3014a28eb70156f",
+      "evidence": "tools/s5/research/medarek/qa/",
+      "checks": [
+        "available product image decoded",
+        "pack",
+        "price",
+        "product detail CTA",
+        "question photo",
+        "compare",
+        "four 40 px chips",
+        "restart"
+      ],
+      "backendMockCalls": 3,
+      "paidCalls": 0,
+      "emailStatus": "NOT_READY"
+    },
+    "mydlarnaudvoukocek.cz": {
+      "domain": "mydlarnaudvoukocek.cz",
+      "operator": "Mydlárna U Dvou koček s.r.o.",
+      "ico": "08239843",
+      "status": "LOCAL_QA_COMPLETE_PREVIEW_PENDING",
+      "products": 8,
+      "localResults": 24,
+      "claim": "7b9fec567f8c53e057593ab7695cbeb688b930d2",
+      "paidCalls": 0,
+      "emailStatus": "NOT_READY",
+      "evidence": "tools/s5/research/dvoukocek/local-browser-qa.json"
+    },
+    "mydlarnaerde.cz": {
+      "domain": "mydlarnaerde.cz",
+      "operator": "Mýdlárna ERDÉ s.r.o.",
+      "ico": "04928229",
+      "status": "LOCAL_QA_COMPLETE_PREVIEW_PENDING",
+      "products": 7,
+      "localResults": 21,
+      "claim": "7b9fec567f8c53e057593ab7695cbeb688b930d2",
+      "paidCalls": 0,
+      "emailStatus": "NOT_READY",
+      "evidence": "tools/s5/research/mydlarnaerde/local-browser-qa.json"
+    },
+    "store.meetea.cz": {
+      "domain": "store.meetea.cz",
+      "operator": "Vintage Teas s.r.o.",
+      "ico": "09692754",
+      "status": "LOCAL_QA_COMPLETE_PREVIEW_PENDING",
+      "products": 12,
+      "localResults": 36,
+      "claim": "7b9fec567f8c53e057593ab7695cbeb688b930d2",
+      "paidCalls": 0,
+      "emailStatus": "NOT_READY",
+      "evidence": "tools/s5/research/meetea/local-browser-qa.json"
     }
   },
   "localGit": {
@@ -1051,8 +1164,8 @@
     "productionForbidden": true,
     "coordination": "Owner authorized existing browser Codex colleague; isolated branches, shared engine owner main worker. No internal subagents."
   },
-  "previewVerifiedCount": 14,
-  "nextAction": "Complete live Preview QA for Kintsugi and ORACULUM. Furiosa and Scentium source and eligibility checks in progress.",
+  "previewVerifiedCount": 20,
+  "nextAction": "Run live browser QA for Dvou koček, Erdé and Meetea on the next exact Preview build. Check branch coordination for Zahrada na niti.",
   "evidenceUpload": {
     "state": "OWNER_AUTHORIZED_COMPLETED_BLOBS_PENDING_TREE_CHECKPOINT",
     "archives": 38,

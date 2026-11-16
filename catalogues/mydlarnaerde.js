@@ -1,0 +1,235 @@
+globalThis.CX_CATALOGUES ||= {};
+globalThis.CX_CATALOGUES.mydlarnaerde = {
+  "brand": "Mýdlárna Erdé",
+  "domain": "mydlarnaerde.cz",
+  "series": "s5",
+  "country": "CZ",
+  "lang": "cs",
+  "currency": "CZK",
+  "products": [
+    {
+      "id": "amla-oves-keratin-sampuk-95-g",
+      "name": "Amla + oves + keratin 95 g přírodní šampuk tuhý šampon",
+      "url": "https://www.mydlarnaerde.cz/amla-oves-keratin-sampuk-95-g/",
+      "priceAmount": 345,
+      "price": "345 Kč",
+      "currency": "CZK",
+      "volume": "95 g",
+      "category": "hair",
+      "kind": "Tuhý šampon",
+      "description": "Tuhý šampon · Amla, oves a keratin.",
+      "reason": "Tuhý šampon · Amla, oves a keratin.",
+      "available": true,
+      "isSample": false,
+      "photo": "/assets/s5/mydlarnaerde/amla-oves-keratin-sampuk-95-g.webp",
+      "source": {
+        "series": "s5",
+        "selectionTraits": {
+          "careVariant": "amla-oves-keratin-sampuk-95-g"
+        },
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.mydlarnaerde.cz/user/shop/big/415_amla95.png?ff=1&x=1024&y=768&q=85&ts=6a1812cb&sg=161563f2",
+        "selectionTraitsEvidence": {
+          "url": "https://www.mydlarnaerde.cz/amla-oves-keratin-sampuk-95-g/",
+          "display": "Amla, oves a keratin"
+        },
+        "variantLabel": "95 g",
+        "priceFrom": false,
+        "availabilityEvidence": "https://schema.org/InStock"
+      }
+    },
+    {
+      "id": "merunka-a-hedvabi-sampuk-s-kondicionerem-90-g",
+      "name": "Meruňka a hedvábí šampuk s kondicionérem 90 g",
+      "url": "https://www.mydlarnaerde.cz/merunka-a-hedvabi-sampuk-s-kondicionerem-90-g/",
+      "priceAmount": 345,
+      "price": "345 Kč",
+      "currency": "CZK",
+      "volume": "90 g",
+      "category": "hair",
+      "kind": "Tuhý šampon",
+      "description": "Tuhý šampon · Meruňka a hedvábí.",
+      "reason": "Tuhý šampon · Meruňka a hedvábí.",
+      "available": true,
+      "isSample": false,
+      "photo": "/assets/s5/mydlarnaerde/merunka-a-hedvabi-sampuk-s-kondicionerem-90-g.webp",
+      "source": {
+        "series": "s5",
+        "selectionTraits": {
+          "careVariant": "merunka-a-hedvabi-sampuk-s-kondicionerem-90-g"
+        },
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.mydlarnaerde.cz/user/shop/big/1296_chatgpt-image-27--5--2026-22-06-28.png?ff=1&x=1024&y=768&q=85&ts=6a174f16&sg=161563f2",
+        "selectionTraitsEvidence": {
+          "url": "https://www.mydlarnaerde.cz/merunka-a-hedvabi-sampuk-s-kondicionerem-90-g/",
+          "display": "Meruňka a hedvábí"
+        },
+        "variantLabel": "90 g",
+        "priceFrom": false,
+        "availabilityEvidence": "https://schema.org/InStock"
+      }
+    },
+    {
+      "id": "jojoba-lneny-olej-modry-jil-80-g-kudrnate-vlasy-prirodni-sampuk",
+      "name": "Jojoba Linnen 80 g přírodní šampuk",
+      "url": "https://www.mydlarnaerde.cz/jojoba-lneny-olej-modry-jil-80-g-kudrnate-vlasy-prirodni-sampuk/",
+      "priceAmount": 345,
+      "price": "345 Kč",
+      "currency": "CZK",
+      "volume": "80 g",
+      "category": "hair",
+      "kind": "Tuhý šampon",
+      "description": "Tuhý šampon · Jojoba a lněný olej.",
+      "reason": "Tuhý šampon · Jojoba a lněný olej.",
+      "available": true,
+      "isSample": false,
+      "photo": "/assets/s5/mydlarnaerde/jojoba-lneny-olej-modry-jil-80-g-kudrnate-vlasy-prirodni-sampuk.webp",
+      "source": {
+        "series": "s5",
+        "selectionTraits": {
+          "careVariant": "jojoba-lneny-olej-modry-jil-80-g-kudrnate-vlasy-prirodni-sampuk"
+        },
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.mydlarnaerde.cz/user/shop/big/1542_jojoba-linen80g.png?ff=1&x=1024&y=768&q=85&ts=6a1734fe&sg=161563f2",
+        "selectionTraitsEvidence": {
+          "url": "https://www.mydlarnaerde.cz/jojoba-lneny-olej-modry-jil-80-g-kudrnate-vlasy-prirodni-sampuk/",
+          "display": "Jojoba a lněný olej"
+        },
+        "variantLabel": "80 g",
+        "priceFrom": false,
+        "availabilityEvidence": "https://schema.org/InStock"
+      }
+    },
+    {
+      "id": "sampuk--henna",
+      "name": "Henna 95 g přírodní šampuk",
+      "url": "https://www.mydlarnaerde.cz/sampuk--henna/",
+      "priceAmount": 345,
+      "price": "345 Kč",
+      "currency": "CZK",
+      "volume": "95 g",
+      "category": "hair",
+      "kind": "Tuhý šampon",
+      "description": "Tuhý šampon · Henna.",
+      "reason": "Tuhý šampon · Henna.",
+      "available": true,
+      "isSample": false,
+      "photo": "/assets/s5/mydlarnaerde/sampuk--henna.webp",
+      "source": {
+        "series": "s5",
+        "selectionTraits": {
+          "careVariant": "sampuk--henna"
+        },
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.mydlarnaerde.cz/user/shop/big/451-1_henna-80-vetsi.png?ff=1&x=1024&y=768&q=85&ts=6a180375&sg=161563f2",
+        "selectionTraitsEvidence": {
+          "url": "https://www.mydlarnaerde.cz/sampuk--henna/",
+          "display": "Henna"
+        },
+        "variantLabel": "95 g",
+        "priceFrom": false,
+        "availabilityEvidence": "https://schema.org/InStock"
+      }
+    },
+    {
+      "id": "citrusovy-rakytnik-prirodni-mydlo",
+      "name": "Citrusový rakytník přírodní mýdlo100g",
+      "url": "https://www.mydlarnaerde.cz/citrusovy-rakytnik-prirodni-mydlo/",
+      "priceAmount": 145,
+      "price": "145 Kč",
+      "currency": "CZK",
+      "volume": "100 g",
+      "category": "body",
+      "kind": "Tuhé mýdlo",
+      "description": "Tuhé mýdlo · Citrusy a rakytník.",
+      "reason": "Tuhé mýdlo · Citrusy a rakytník.",
+      "available": true,
+      "isSample": false,
+      "photo": "/assets/s5/mydlarnaerde/citrusovy-rakytnik-prirodni-mydlo.webp",
+      "source": {
+        "series": "s5",
+        "selectionTraits": {
+          "careVariant": "citrusovy-rakytnik-prirodni-mydlo"
+        },
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.mydlarnaerde.cz/user/shop/big/784-1_chatgpt-image-13--5--2026-21-41-19.png?ff=1&x=1024&y=768&q=85&ts=6a04d417&sg=161563f2",
+        "selectionTraitsEvidence": {
+          "url": "https://www.mydlarnaerde.cz/citrusovy-rakytnik-prirodni-mydlo/",
+          "display": "Citrusy a rakytník"
+        },
+        "variantLabel": "100 g",
+        "priceFrom": false,
+        "availabilityEvidence": "https://schema.org/InStock"
+      }
+    },
+    {
+      "id": "prirodni-horcikove-solne-mydlo-magnesium-soap-100-g",
+      "name": "Solné hořčíkové Magnesium soap přírodní mýdlo 100g",
+      "url": "https://www.mydlarnaerde.cz/prirodni-horcikove-solne-mydlo-magnesium-soap-100-g/",
+      "priceAmount": 150,
+      "price": "150 Kč",
+      "currency": "CZK",
+      "volume": "100 g",
+      "category": "body",
+      "kind": "Tuhé mýdlo",
+      "description": "Tuhé mýdlo · Sůl a hořčík.",
+      "reason": "Tuhé mýdlo · Sůl a hořčík.",
+      "available": true,
+      "isSample": false,
+      "photo": "/assets/s5/mydlarnaerde/prirodni-horcikove-solne-mydlo-magnesium-soap-100-g.webp",
+      "source": {
+        "series": "s5",
+        "selectionTraits": {
+          "careVariant": "prirodni-horcikove-solne-mydlo-magnesium-soap-100-g"
+        },
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.mydlarnaerde.cz/user/shop/big/490_chatgpt-image-14--5--2026-11-55-24.png?ff=1&x=1024&y=768&q=85&ts=6a059c4e&sg=161563f2",
+        "selectionTraitsEvidence": {
+          "url": "https://www.mydlarnaerde.cz/prirodni-horcikove-solne-mydlo-magnesium-soap-100-g/",
+          "display": "Sůl a hořčík"
+        },
+        "variantLabel": "100 g",
+        "priceFrom": false,
+        "availabilityEvidence": "https://schema.org/InStock"
+      }
+    },
+    {
+      "id": "prirodni-intimni-mydlo-s-esencalnimi-oleji-100-g",
+      "name": "Intimní přírodní mýdlo s esenciálními oleji 100 g",
+      "url": "https://www.mydlarnaerde.cz/prirodni-intimni-mydlo-s-esencalnimi-oleji-100-g/",
+      "priceAmount": 145,
+      "price": "145 Kč",
+      "currency": "CZK",
+      "volume": "100 g",
+      "category": "body",
+      "kind": "Tuhé mýdlo",
+      "description": "Tuhé mýdlo · Intimní mytí.",
+      "reason": "Tuhé mýdlo · Intimní mytí.",
+      "available": true,
+      "isSample": false,
+      "photo": "/assets/s5/mydlarnaerde/prirodni-intimni-mydlo-s-esencalnimi-oleji-100-g.webp",
+      "source": {
+        "series": "s5",
+        "selectionTraits": {
+          "careVariant": "prirodni-intimni-mydlo-s-esencalnimi-oleji-100-g"
+        },
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.mydlarnaerde.cz/user/shop/big/1575_chatgpt-image-13--5--2026-17-44-55.png?ff=1&x=1024&y=768&q=85&ts=6a049c9e&sg=161563f2",
+        "selectionTraitsEvidence": {
+          "url": "https://www.mydlarnaerde.cz/prirodni-intimni-mydlo-s-esencalnimi-oleji-100-g/",
+          "display": "Intimní mytí"
+        },
+        "variantLabel": "100 g",
+        "priceFrom": false,
+        "availabilityEvidence": "https://schema.org/InStock"
+      }
+    }
+  ]
+};

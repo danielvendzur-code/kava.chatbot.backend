@@ -8,8 +8,38 @@
   const FOCUS = [[/mene povzbud|vecer|bez kofein|malo kofein|nepovzbud/, 's3LowCaf', 'méně povzbudivé'], [/pecen|prazen/, 's3Roasted', 'pečené'], [/tmav|silnejs|plnejs/, 's3Dark', 'tmavé'],
     [/svetl|jemn/, 's3Light', 'světlé'], [/jarn|first flush|prvni sber/, 's3Spring', 'jarní sběr'], [/letni|second flush/, 's3Summer', 'letní sběr'], [/podzim|autumn/, 's3Autumn', 'podzimní sběr'],
     [/vysokohor|hory|horsk/, 's3High', 'vysokohorské'], [/divok/, 's3Wild', 'z divokých čajovníků'], [/star[ey] cajovn/, 's3Old', 'ze starých čajovníků']];
+  const MEETEA_TYPES = [
+    [/oolong|polozelen/, 'meeteaOolong'],
+    [/cern|black/, 'meeteaBlack'],
+    [/sheng|pu-?erh|puer/, 'meeteaSheng'],
+    [/tmav|hei\s?cha|liu\s?bao/, 'meeteaDark'],
+  ];
+  const MEETEA_NOTES = [
+    [/kvetin|jasmin/, /jasmin|kvet|louka/],
+    [/kakao|kakaem/, /kakao/],
+    [/kav[yaou]/, /kava/],
+  ];
+  function meeteaReply(all, latest, history) {
+    const prompts = [latest, ...(history || []).filter((m) => m.role === 'user').map((m) => m.content).reverse()].map(norm);
+    const findPreference = (options) => prompts.map((q) => options.find(([rx]) => rx.test(q))).find(Boolean)?.[1];
+    if (prompts.some((q) => /\bbez\s+(?:kofein|kaka|kav|jasmin)|alerg|nechci/.test(q))) {
+      return 'U těchto čajů nemám podklady pro bezpečné ověření takového vyloučení. Napište, jaký druh nebo chuť máte rádi, případně si složení ověřte na stránce produktu.';
+    }
+    const type = findPreference(MEETEA_TYPES);
+    const note = findPreference(MEETEA_NOTES);
+    const limit = prompts.map((q) => q.match(/\bdo\s*(\d{2,5})\b/)?.[1]).find(Boolean);
+    if (!type && !note && !limit) return 'V ukázce Meetea najdete oolong, černý čaj, sheng puer a tmavý čaj. Napište druh nebo chuť, kterou hledáte, třeba květinový oolong nebo černý čaj s kakaem.';
+    const matches = all.filter((p) => (
+      (!type || p.source?.selectionTraits?.careUse === type) &&
+      (!note || note.test(norm(p.description))) &&
+      (!limit || p.priceAmount <= Number(limit))
+    )).sort((a, b) => a.priceAmount - b.priceAmount).slice(0, 3);
+    if (!matches.length) return 'V tomto výběru Meetea jsem nenašel čaj, který splňuje všechny vaše požadavky. Můžete zkusit jiný druh čaje, chuť nebo rozpočet.';
+    return matches.map((p) => `${p.name} (${p.kind}, ${p.volume}) — ${p.price}. ${p.description}\n${p.url}`).join('\n\n');
+  }
   function teaReply(catalogue, text, history) {
     const all = (catalogue && catalogue.products || []).filter((p) => p.available !== false);
+    if (catalogue?.domain === 'store.meetea.cz') return meeteaReply(all, text, history);
     const q = norm([...(history || []).filter((m) => m.role === 'user').map((m) => m.content), text].slice(-3).join(' '));
     const t = TYPE.find(([rx]) => rx.test(q)), f = FOCUS.find(([rx]) => rx.test(q));
     const lim = (q.match(/do\s*(\d{2,5})\s*(kc|korun|czk)?/) || [])[1];

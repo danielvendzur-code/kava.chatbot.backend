@@ -1,0 +1,10 @@
+[
+  {
+    "url": "https://store.meetea.cz/",
+    "error": "Page.goto: net::ERR_EMPTY_RESPONSE at https://store.meetea.cz/\nCall log:\n  - navigating to \"https://store.meetea.cz/\", waiting until \"domcontentloaded\"\n"
+  },
+  {
+    "url": "https://store.meetea.cz/polozeleny-caj/gaba-oolong-sijichun-taiwan/",
+    "error": "Page.goto: net::ERR_EMPTY_RESPONSE at https://store.meetea.cz/polozeleny-caj/gaba-oolong-sijichun-taiwan/\nCall log:\n  - navigating to \"https://store.meetea.cz/polozeleny-caj/gaba-oolong-sijichun-taiwan/\", waiting until \"domcontentloaded\"\n"
+  }
+]

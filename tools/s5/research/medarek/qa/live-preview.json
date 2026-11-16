@@ -1,0 +1,39 @@
+{
+  "domain": "medarek.cz",
+  "operator": "Lucie Horáková",
+  "ico": "06283110",
+  "status": "PREVIEW_QA_COMPLETE",
+  "products": 12,
+  "localResults": 36,
+  "previewResults": 12,
+  "liveViewportResults": 36,
+  "viewportWidths": [
+    320,
+    390,
+    1280
+  ],
+  "previewUrl": "https://kava-chatbot-backend-byjy3c6nz-danielvendzur-codes-projects.vercel.app/s5.html?demo=medarek",
+  "previewSha": "50d5de977ed83b31337f88dd15da893a27ec64f7",
+  "deploymentId": "dpl_7vYCzGtocGqHC57ncbQ4DAASqhv9",
+  "claim": "f6b99bc8f93302d11e6b5d7ef3014a28eb70156f",
+  "evidence": "tools/s5/research/medarek/qa/",
+  "checks": [
+    "available product image decoded",
+    "pack",
+    "price",
+    "product detail CTA",
+    "question photo",
+    "compare",
+    "four 40 px chips",
+    "restart"
+  ],
+  "backendMockCalls": 3,
+  "paidCalls": 0,
+  "emailStatus": "NOT_READY",
+  "screenshots": 51,
+  "screenshotArchives": [
+    "medarek-preview-320.zip",
+    "medarek-preview-390.zip",
+    "medarek-preview-1280.zip"
+  ]
+}
