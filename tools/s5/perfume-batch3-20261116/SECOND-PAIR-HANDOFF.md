@@ -1,0 +1,11 @@
+# VonTree + BylinkoKráska – source/local COMPLETE
+
+12 odlišných kompozícií,36jedinečných výsledkov320/390/1280 a6vstupných kontrol. Všetky konečné výsledkové snímky a obe390px vstup/prváotázka dvojice vizuálne prezreté. Presné súbory,importy,config,CSS,backendguard a SHA256: SECOND-PAIR-INTEGRATION.json; súhrn prvých6firiem: SIX-INTEGRATION.json (35kompozícií/105výsledkov/18vstupných kontrol). MAIN vlastní začlenenie a živé Preview QA. Nie je nasadené ani READY na oslovenie.
+
+Archív evidence/second-pair-local-qa.zip uchováva základné36testy aj náhradné18Bylinko a3vstupy. Bylinko skupina apple kolidovala s produktovým ID; opravena na spiced-fruit a celý jej strom znovu otestovaný. Efektívne18VonTree+18Bylinko=36, staréBylinko snímky sú SUPERSEDED. Všetkých12originálnych produktových fotografií má rôzne SHA256 a zachované bytes. Porovnanie dvoch odlišných výrobkov, presný pack/cena/foto/CTA, reset/progress/hover/reduced-motion/chips a offline mock chat overené; platené0.
+
+VonTree:190g korkovévíčko389Kč, nie369bezvíčka. SantalAmbra300g+drevenévíčko559Kč;529bezvíčka je OutOfStock. Rozpor názov400ml/parameter425ml sa neprenáša: len300gwax. CedrBoroviceJedle180ml má v short40gwax; neprepisujem na140g. Gravírovanie je voliteľná doplnková služba na zdroji, ale aktuálny runtime ju neimplementuje a cenu zaň neponúkam ako súčasť sviečky. Konkrétny native výber viečka uvedený pri CTA. Historické2024tržbovépásmo1–3mil.Kč sekundárne, latestexact2025UNKNOWN.
+
+BylinkoKráska:5×120ml249Kč, PivoňkaBotanical cca70g499Kč; oficiálne neplatiteľDPH, nepridávať daň. Prvá citrusová vôňa má rozpor prose/pyramid v rozdelení tónov, preto iba spoločné ploché tóny; ďalších5má doslovnú publikovanú pyramídu. Žiadne terapeutické/bezpečnostné/číslené-intenzitné záruky. TržbyUNKNOWN.
+
+Skutočné home+produkt merchant pozorovanie TLS-onWPEWebKit je odlišné od demoPreview. Initial cookie/coupon režimy, bez tvrdenia o odmietnutí ktoré neprebehlo. Bežný kontakt nie je AI; na prezretých stránkach nepozorovaný produktovýAIlauncher, iné režimyUNKNOWN. Žiadne formuláre,košík,správy,produkcia,DNS,mail či platené volania.447€+10€/mesiac bez trialtextu. Spoločné súbory nemením. Vercel-ignore už vylučuje tools/sources/fragments/evidence.

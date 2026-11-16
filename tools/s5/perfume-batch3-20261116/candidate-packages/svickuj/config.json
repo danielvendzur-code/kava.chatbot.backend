@@ -1,0 +1,210 @@
+{
+  "slug": "svickuj",
+  "owner": "PERFUME_WORKER",
+  "claimCommit": "882f952df25a721abf1481624dba25ec24f46fe0",
+  "series": "s5",
+  "segment": "fragrance",
+  "status": "SOURCE_PACKAGE_VERIFIED",
+  "catalogue": "/catalogues/svickuj.js",
+  "requiredEngineContract": "s5-fragrance-direction-profile-v1",
+  "quickChips": [
+    "Rybíz, badyán a ambra",
+    "Skořice a kardamom",
+    "Osmanthus a vanilka",
+    "Porovnat dvě vůně"
+  ],
+  "offlineReplyRequirements": [
+    {
+      "chip": "Rybíz, badyán a ambra",
+      "match": "rybiz|badyan|ambra",
+      "productIds": [
+        "cake"
+      ]
+    },
+    {
+      "chip": "Skořice a kardamom",
+      "match": "kardamom|tonka",
+      "productIds": [
+        "hygge"
+      ]
+    },
+    {
+      "chip": "Osmanthus a vanilka",
+      "match": "osmanthus|ylang",
+      "productIds": [
+        "fortune"
+      ]
+    }
+  ],
+  "compareProductIds": [
+    "cake",
+    "fortune"
+  ],
+  "addon": {
+    "enabled": false,
+    "reason": "Distinctalternative+compare only; no verifiedimplemented paidcandleaccessory or mini contract."
+  },
+  "budgetQuestion": false,
+  "enableRuntime": false,
+  "sharedCoreVerifiedAt": "c9e4da04e19339492a4ffe91428e8ac960b866b6",
+  "resultExtrasScript": "/n447/s5/fragrance-result-extras.js",
+  "registryObject": {
+    "series": "s5",
+    "type": "cosmetics",
+    "segment": "fragrance",
+    "name": "SVÍČKUJ",
+    "country": "CZ",
+    "logos": {
+      "landing": "/assets/s5/svickuj/logo.jpg",
+      "header": "/assets/s5/svickuj/logo.jpg",
+      "avatar": "/assets/s5/svickuj/avatar.svg"
+    },
+    "brand": {
+      "name": "SVÍČKUJ",
+      "domain": "svickuj.cz",
+      "website": "https://www.svickuj.cz/",
+      "lang": "cs",
+      "fullName": "SVÍČKUJ",
+      "url": "https://www.svickuj.cz/",
+      "logo": "/assets/s5/svickuj/logo.jpg",
+      "mark": "/assets/s5/svickuj/avatar.svg",
+      "greeting": "Dobrý den. Pomohu vám porovnat vybrané vůně svíček, jejich balení a ceny.",
+      "quickChips": [
+        "Rybíz, badyán a ambra",
+        "Skořice a kardamom",
+        "Osmanthus a vanilka",
+        "Porovnat dvě vůně"
+      ],
+      "theme": {
+        "brand": "#64503a",
+        "accent": "#c4aa7d",
+        "soft": "#f7f3ee",
+        "paper": "#fff",
+        "ink": "#302b27",
+        "line": "#e5dbce"
+      }
+    },
+    "traitCopy": {
+      "g-fruit-flower": [
+        "Květiny nebo ovocný akcent",
+        "",
+        "Květiny nebo ovocný akcent",
+        ""
+      ],
+      "cake": [
+        "Černý rybíz, badyán a ambra",
+        "",
+        "Černý rybíz, badyán a ambra",
+        ""
+      ],
+      "fortune": [
+        "Osmanthus, ylang ylang a vanilka",
+        "",
+        "Osmanthus, ylang ylang a vanilka",
+        ""
+      ],
+      "joy": [
+        "Čerstvé růže a pomeranč",
+        "",
+        "Čerstvé růže a pomeranč",
+        ""
+      ],
+      "g-warm": [
+        "Sladké kořeněné vůně",
+        "",
+        "Sladké kořeněné vůně",
+        ""
+      ],
+      "hygge": [
+        "Skořice, kardamom a tonka",
+        "",
+        "Skořice, kardamom a tonka",
+        ""
+      ],
+      "vanilla": [
+        "Sladká vanilka a hřebíček",
+        "",
+        "Sladká vanilka a hřebíček",
+        ""
+      ]
+    },
+    "stepCopy": {
+      "fragranceDirection": [
+        "Jaká vůně je vám blízká?",
+        "",
+        "Vonné tóny"
+      ],
+      "fragranceProfile": [
+        "Která kombinace vás láká?",
+        "",
+        "Vonné tóny"
+      ]
+    },
+    "compareFocus": true,
+    "upsellFocus": {},
+    "choicePhotos": {
+      "g-fruit-flower": [
+        "/assets/s3/scenes-k2/rose.jpg"
+      ],
+      "cake": [
+        "/assets/s5/svickuj/cake.jpg"
+      ],
+      "fortune": [
+        "/assets/s5/svickuj/fortune.jpg"
+      ],
+      "joy": [
+        "/assets/s5/svickuj/joy.jpg"
+      ],
+      "g-warm": [
+        "/assets/s3/scenes-k2/vanilla.jpg"
+      ],
+      "hygge": [
+        "/assets/s5/svickuj/hygge.jpg"
+      ],
+      "vanilla": [
+        "/assets/s5/svickuj/vanilla.jpg"
+      ]
+    },
+    "compareProductIds": [
+      "cake",
+      "fortune"
+    ],
+    "segmentText": {
+      "entryNote": "Vonné svíčky · přesné balení · porovnání",
+      "titleSuffix": "výběr vůně svíčky",
+      "tab": "Výběr vůně",
+      "advisorName": "Průvodce vůněmi svíček",
+      "entrySmall": "VŮNĚ SVÍČEK",
+      "entryTitle": "Najděte vůni své svíčky",
+      "placeholder": "Zeptejte se na charakter vůně, balení nebo cenu…",
+      "heading": "Pomozte zákazníkovi vybrat vůni svíčky podle jeho vkusu.",
+      "lead": "Podle odpovědí zobrazí konkrétní svíčku s fotografií, vonným profilem, balením, cenou a odkazem. Dvě odlišné vůně lze porovnat.",
+      "includedChat": "Vonné tóny, balení a ceny vybraných svíček.",
+      "includedAdvisor": "Výběr vůně svíčky a porovnání dvou kompozic.",
+      "greeting": "Dobrý den. Pomohu vám porovnat vybrané vůně svíček, jejich balení a ceny.",
+      "teaserTitle": "Najděte vůni své svíčky",
+      "teaserNote": "Svíčky, balení a ceny",
+      "teaserAria": "Otevřít výběr vůně svíčky",
+      "source": "svickuj-demo"
+    },
+    "fragranceResultExtras": {
+      "version": 1,
+      "enabled": true,
+      "alternatives": {
+        "cake": "fortune",
+        "fortune": "joy",
+        "joy": "cake",
+        "hygge": "vanilla",
+        "vanilla": "hygge"
+      },
+      "scentProfile": {
+        "version": 1,
+        "mode": "source-notes-no-numeric-strength"
+      }
+    },
+    "fragrancePresentation": {
+      "version": 1,
+      "hideStepEstimate": true
+    }
+  }
+}

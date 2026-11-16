@@ -1,0 +1,581 @@
+{
+  "brand": "SVÍČKUJ",
+  "domain": "svickuj.cz",
+  "operator": {
+    "name": "SVÍČKUJ s.r.o.",
+    "ico": "19951108",
+    "country": "CZ",
+    "activeNoEnd": true,
+    "officialRegistry": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/19951108"
+  },
+  "series": "s5",
+  "segment": "fragrance",
+  "lang": "cs",
+  "country": "CZ",
+  "currency": "CZK",
+  "status": "SOURCE_PACKAGE_VERIFIED",
+  "products": [
+    {
+      "id": "cake",
+      "name": "Babiččin koláč",
+      "url": "https://www.svickuj.cz/sojova-svicka-babiccin-kolac-180ml/",
+      "priceAmount": 419.0,
+      "price": "419 Kč",
+      "currency": "CZK",
+      "volume": "180 ml",
+      "category": "fragrance",
+      "kind": "Vonná svíčka",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Černý rybíz, badyán a ambra.",
+      "reason": "Černý rybíz, badyán a ambra.",
+      "photo": "/assets/s5/svickuj/cake.jpg",
+      "source": {
+        "series": "s5",
+        "url": "https://www.svickuj.cz/sojova-svicka-babiccin-kolac-180ml/",
+        "verifiedAt": "2026-11-16T11:15:33.748813+00:00",
+        "sourceSha256": "321e77d7aecccb07fb2b3065ebb2e458b05025a074edeb71fc465d7e27867645",
+        "stock": "InStock",
+        "stockEvidence": {
+          "scope": "Official fixedSKUOffer + publicpriceWithVat",
+          "currency": "CZK",
+          "sku": "SO180BB",
+          "quantity": "UNKNOWN_NOT_PUBLISHED",
+          "variantSelectionRequired": false
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 419.0,
+          "currency": "CZK",
+          "vatSource": "https://www.svickuj.cz/sojova-svicka-babiccin-kolac-180ml/",
+          "vatEvidence": "Exact public VAT-inclusive selected SKU price, not sample minimum."
+        },
+        "packEvidence": {
+          "pack": "180 ml",
+          "scope": "Explicit published product pack, not shipping weight."
+        },
+        "variantSelectionRequired": false,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.svickuj.cz/user/shop/big/721_navrh-bez-nazvu.jpg?ff=1&x=1024&y=768&q=100&ts=6ae9fea0&sg=15683bd6",
+        "photoEvidence": {
+          "id": "cake",
+          "file": "cake.jpg",
+          "url": "https://cdn.myshoptet.com/usr/www.svickuj.cz/user/shop/big/721_navrh-bez-nazvu.jpg?ff=1&x=1024&y=768&q=100&ts=6ae9fea0&sg=15683bd6",
+          "sha256": "e8be83241be67db9607c5c437c42660c11be82a171821d39e8587e6521b31f6e",
+          "bytes": 213694,
+          "originalBytes": true,
+          "verifiedAt": "2026-11-16T11:48:12.842216+00:00",
+          "width": 1024,
+          "height": 768
+        },
+        "fragrance": {
+          "notes": [
+            "černý rybíz",
+            "badyán",
+            "ambra"
+          ],
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Vonná svíčka",
+          "notesEvidence": {
+            "url": "https://www.svickuj.cz/sojova-svicka-babiccin-kolac-180ml/",
+            "sourceText": "Vonné tóny: černý rybíz, badyán, ambra\nDoslovné zdrojové fragmenty:\nčerný rybíz\nbadyán\nambra",
+            "originalSourceText": "černý rybíz\nbadyán\nambra",
+            "sourceLanguage": "cs",
+            "scope": "Published product sensory descriptors only, not INCI or inferred ingredient percentages.",
+            "noteFormMapping": [
+              {
+                "display": "černý rybíz",
+                "sourceFragments": [
+                  "černý rybíz"
+                ]
+              },
+              {
+                "display": "badyán",
+                "sourceFragments": [
+                  "badyán"
+                ]
+              },
+              {
+                "display": "ambra",
+                "sourceFragments": [
+                  "ambra"
+                ]
+              }
+            ],
+            "qualification": "Literal primary sensory fragments from short/long description, not title-only inference. Czech case forms faithfully normalized. No health/therapy/skincream/99percentlesssoot/fire/safety/burnguarantees/numericnoteweights copied."
+          }
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "No medicinal/skin/allergy/safety/duration guarantees, numerical note strength, invented budget or cart integration."
+        ],
+        "usagePurpose": "scented-candle",
+        "scent": "Černý rybíz, badyán a ambra",
+        "selectionTraits": {
+          "fragranceDirection": "g-fruit-flower",
+          "fragranceProfile": "cake"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.svickuj.cz/sojova-svicka-babiccin-kolac-180ml/",
+          "sourceText": "Vonné tóny: černý rybíz, badyán, ambra\nDoslovné zdrojové fragmenty:\nčerný rybíz\nbadyán\nambra",
+          "navigationLabel": "Černý rybíz, badyán a ambra",
+          "navigationGroupingIsNotOfficialFragranceFamily": true
+        }
+      }
+    },
+    {
+      "id": "hygge",
+      "name": "Hygge",
+      "url": "https://www.svickuj.cz/sojova-svicka-hygge-180ml/",
+      "priceAmount": 399.0,
+      "price": "399 Kč",
+      "currency": "CZK",
+      "volume": "180 ml",
+      "category": "fragrance",
+      "kind": "Vonná svíčka",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Skořice, kardamom a tonka.",
+      "reason": "Skořice, kardamom a tonka.",
+      "photo": "/assets/s5/svickuj/hygge.jpg",
+      "source": {
+        "series": "s5",
+        "url": "https://www.svickuj.cz/sojova-svicka-hygge-180ml/",
+        "verifiedAt": "2026-11-16T11:30:35.216345+00:00",
+        "sourceSha256": "e227dfef3c1019c9d3e12e19c803ab403b0d137edc326ee7b4c71865f9a8f021",
+        "stock": "InStock",
+        "stockEvidence": {
+          "scope": "Official fixedSKUOffer + publicpriceWithVat",
+          "currency": "CZK",
+          "sku": "SO180HG",
+          "quantity": "UNKNOWN_NOT_PUBLISHED",
+          "variantSelectionRequired": false
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 399.0,
+          "currency": "CZK",
+          "vatSource": "https://www.svickuj.cz/sojova-svicka-hygge-180ml/",
+          "vatEvidence": "Exact public VAT-inclusive selected SKU price, not sample minimum."
+        },
+        "packEvidence": {
+          "pack": "180 ml",
+          "scope": "Explicit published product pack, not shipping weight."
+        },
+        "variantSelectionRequired": false,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.svickuj.cz/user/shop/big/461_hygge-sojova-svicka.jpg?ff=1&x=1024&y=768&q=100&ts=6521b5cc&sg=15683bd6",
+        "photoEvidence": {
+          "id": "hygge",
+          "file": "hygge.jpg",
+          "url": "https://cdn.myshoptet.com/usr/www.svickuj.cz/user/shop/big/461_hygge-sojova-svicka.jpg?ff=1&x=1024&y=768&q=100&ts=6521b5cc&sg=15683bd6",
+          "sha256": "40046d12f078c118b01e823d3c8a4c39abe2b16c29592470ae88bbe9d9f67e36",
+          "bytes": 281230,
+          "originalBytes": true,
+          "verifiedAt": "2026-11-16T11:48:13.637571+00:00",
+          "width": 1024,
+          "height": 768
+        },
+        "fragrance": {
+          "notes": [
+            "skořice",
+            "kardamom",
+            "tonka"
+          ],
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Vonná svíčka",
+          "notesEvidence": {
+            "url": "https://www.svickuj.cz/sojova-svicka-hygge-180ml/",
+            "sourceText": "Vonné tóny: skořice, kardamom, tonka\nDoslovné zdrojové fragmenty:\nskořice\nkardamom\ntonka",
+            "originalSourceText": "skořice\nkardamom\ntonka",
+            "sourceLanguage": "cs",
+            "scope": "Published product sensory descriptors only, not INCI or inferred ingredient percentages.",
+            "noteFormMapping": [
+              {
+                "display": "skořice",
+                "sourceFragments": [
+                  "skořice"
+                ]
+              },
+              {
+                "display": "kardamom",
+                "sourceFragments": [
+                  "kardamom"
+                ]
+              },
+              {
+                "display": "tonka",
+                "sourceFragments": [
+                  "tonka"
+                ]
+              }
+            ],
+            "qualification": "Literal primary sensory fragments from short/long description, not title-only inference. Czech case forms faithfully normalized. No health/therapy/skincream/99percentlesssoot/fire/safety/burnguarantees/numericnoteweights copied."
+          }
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "No medicinal/skin/allergy/safety/duration guarantees, numerical note strength, invented budget or cart integration."
+        ],
+        "usagePurpose": "scented-candle",
+        "scent": "Skořice, kardamom a tonka",
+        "selectionTraits": {
+          "fragranceDirection": "g-warm",
+          "fragranceProfile": "hygge"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.svickuj.cz/sojova-svicka-hygge-180ml/",
+          "sourceText": "Vonné tóny: skořice, kardamom, tonka\nDoslovné zdrojové fragmenty:\nskořice\nkardamom\ntonka",
+          "navigationLabel": "Skořice, kardamom a tonka",
+          "navigationGroupingIsNotOfficialFragranceFamily": true
+        }
+      }
+    },
+    {
+      "id": "vanilla",
+      "name": "Vanilka a hřebíček",
+      "url": "https://www.svickuj.cz/sojova-svicka-vanilka-a-hrebicek-180ml/",
+      "priceAmount": 399.0,
+      "price": "399 Kč",
+      "currency": "CZK",
+      "volume": "180 ml",
+      "category": "fragrance",
+      "kind": "Vonná svíčka",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Sladká vanilka a hřebíček.",
+      "reason": "Sladká vanilka a hřebíček.",
+      "photo": "/assets/s5/svickuj/vanilla.jpg",
+      "source": {
+        "series": "s5",
+        "url": "https://www.svickuj.cz/sojova-svicka-vanilka-a-hrebicek-180ml/",
+        "verifiedAt": "2026-11-16T11:30:35.881462+00:00",
+        "sourceSha256": "44226c4b757841c5ef09a54be6cc636faba4a608c5eeea7d1007e3c83902b323",
+        "stock": "InStock",
+        "stockEvidence": {
+          "scope": "Official fixedSKUOffer + publicpriceWithVat",
+          "currency": "CZK",
+          "sku": "SO180VH",
+          "quantity": "UNKNOWN_NOT_PUBLISHED",
+          "variantSelectionRequired": false
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 399.0,
+          "currency": "CZK",
+          "vatSource": "https://www.svickuj.cz/sojova-svicka-vanilka-a-hrebicek-180ml/",
+          "vatEvidence": "Exact public VAT-inclusive selected SKU price, not sample minimum."
+        },
+        "packEvidence": {
+          "pack": "180 ml",
+          "scope": "Explicit published product pack, not shipping weight."
+        },
+        "variantSelectionRequired": false,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.svickuj.cz/user/shop/big/648-1_vanilka-a-hrebicek--2.jpg?ff=1&x=1024&y=768&q=100&ts=68c3c83c&sg=15683bd6",
+        "photoEvidence": {
+          "id": "vanilla",
+          "file": "vanilla.jpg",
+          "url": "https://cdn.myshoptet.com/usr/www.svickuj.cz/user/shop/big/648-1_vanilka-a-hrebicek--2.jpg?ff=1&x=1024&y=768&q=100&ts=68c3c83c&sg=15683bd6",
+          "sha256": "1b560dfc903b14ae2f5947054b9fe7d4646756f523bfe683ce91d0be8e9d03b0",
+          "bytes": 375882,
+          "originalBytes": true,
+          "verifiedAt": "2026-11-16T11:48:14.354543+00:00",
+          "width": 1024,
+          "height": 768
+        },
+        "fragrance": {
+          "notes": [
+            "vanilka",
+            "hřebíček"
+          ],
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Vonná svíčka",
+          "notesEvidence": {
+            "url": "https://www.svickuj.cz/sojova-svicka-vanilka-a-hrebicek-180ml/",
+            "sourceText": "Vonné tóny: vanilka, hřebíček\nDoslovné zdrojové fragmenty:\nvanilky\nhřebíčku",
+            "originalSourceText": "vanilky\nhřebíčku",
+            "sourceLanguage": "cs",
+            "scope": "Published product sensory descriptors only, not INCI or inferred ingredient percentages.",
+            "noteFormMapping": [
+              {
+                "display": "vanilka",
+                "sourceFragments": [
+                  "vanilky"
+                ]
+              },
+              {
+                "display": "hřebíček",
+                "sourceFragments": [
+                  "hřebíčku"
+                ]
+              }
+            ],
+            "qualification": "Literal primary sensory fragments from short/long description, not title-only inference. Czech case forms faithfully normalized. No health/therapy/skincream/99percentlesssoot/fire/safety/burnguarantees/numericnoteweights copied."
+          }
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "No medicinal/skin/allergy/safety/duration guarantees, numerical note strength, invented budget or cart integration."
+        ],
+        "usagePurpose": "scented-candle",
+        "scent": "Sladká vanilka a hřebíček",
+        "selectionTraits": {
+          "fragranceDirection": "g-warm",
+          "fragranceProfile": "vanilla"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.svickuj.cz/sojova-svicka-vanilka-a-hrebicek-180ml/",
+          "sourceText": "Vonné tóny: vanilka, hřebíček\nDoslovné zdrojové fragmenty:\nvanilky\nhřebíčku",
+          "navigationLabel": "Sladká vanilka a hřebíček",
+          "navigationGroupingIsNotOfficialFragranceFamily": true
+        }
+      }
+    },
+    {
+      "id": "fortune",
+      "name": "Štěstí",
+      "url": "https://www.svickuj.cz/sojova-svicka-stesti-120ml/",
+      "priceAmount": 319.0,
+      "price": "319 Kč",
+      "currency": "CZK",
+      "volume": "120 ml",
+      "category": "fragrance",
+      "kind": "Vonná svíčka",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Osmanthus, ylang ylang a vanilka.",
+      "reason": "Osmanthus, ylang ylang a vanilka.",
+      "photo": "/assets/s5/svickuj/fortune.jpg",
+      "source": {
+        "series": "s5",
+        "url": "https://www.svickuj.cz/sojova-svicka-stesti-120ml/",
+        "verifiedAt": "2026-11-16T11:30:36.048127+00:00",
+        "sourceSha256": "201f36175bfaf9961b080bb35dd79fa4b4a6f7083a6535a806deb7899b24694e",
+        "stock": "InStock",
+        "stockEvidence": {
+          "scope": "Official fixedSKUOffer + publicpriceWithVat",
+          "currency": "CZK",
+          "sku": "S120ST",
+          "quantity": "UNKNOWN_NOT_PUBLISHED",
+          "variantSelectionRequired": false
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 319.0,
+          "currency": "CZK",
+          "vatSource": "https://www.svickuj.cz/sojova-svicka-stesti-120ml/",
+          "vatEvidence": "Exact public VAT-inclusive selected SKU price, not sample minimum."
+        },
+        "packEvidence": {
+          "pack": "120 ml",
+          "scope": "Explicit published product pack, not shipping weight."
+        },
+        "variantSelectionRequired": false,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.svickuj.cz/user/shop/big/621_prirodni-svicka-stesti--2.jpg?ff=1&x=1024&y=768&q=100&ts=6818cfb6&sg=15683bd6",
+        "photoEvidence": {
+          "id": "fortune",
+          "file": "fortune.jpg",
+          "url": "https://cdn.myshoptet.com/usr/www.svickuj.cz/user/shop/big/621_prirodni-svicka-stesti--2.jpg?ff=1&x=1024&y=768&q=100&ts=6818cfb6&sg=15683bd6",
+          "sha256": "7771b7f1bc87f5da5e397079f16f198250dabc1dd51757732b15552a59e4970e",
+          "bytes": 274490,
+          "originalBytes": true,
+          "verifiedAt": "2026-11-16T11:48:15.381610+00:00",
+          "width": 1024,
+          "height": 768
+        },
+        "fragrance": {
+          "notes": [
+            "osmanthus",
+            "ylang ylang",
+            "vanilka"
+          ],
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Vonná svíčka",
+          "notesEvidence": {
+            "url": "https://www.svickuj.cz/sojova-svicka-stesti-120ml/",
+            "sourceText": "Vonné tóny: osmanthus, ylang ylang, vanilka\nDoslovné zdrojové fragmenty:\nosmanthusu\nylang ylangu\nvanilky",
+            "originalSourceText": "osmanthusu\nylang ylangu\nvanilky",
+            "sourceLanguage": "cs",
+            "scope": "Published product sensory descriptors only, not INCI or inferred ingredient percentages.",
+            "noteFormMapping": [
+              {
+                "display": "osmanthus",
+                "sourceFragments": [
+                  "osmanthusu"
+                ]
+              },
+              {
+                "display": "ylang ylang",
+                "sourceFragments": [
+                  "ylang ylangu"
+                ]
+              },
+              {
+                "display": "vanilka",
+                "sourceFragments": [
+                  "vanilky"
+                ]
+              }
+            ],
+            "qualification": "Literal primary sensory fragments from short/long description, not title-only inference. Czech case forms faithfully normalized. No health/therapy/skincream/99percentlesssoot/fire/safety/burnguarantees/numericnoteweights copied."
+          }
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "No medicinal/skin/allergy/safety/duration guarantees, numerical note strength, invented budget or cart integration."
+        ],
+        "usagePurpose": "scented-candle",
+        "scent": "Osmanthus, ylang ylang a vanilka",
+        "selectionTraits": {
+          "fragranceDirection": "g-fruit-flower",
+          "fragranceProfile": "fortune"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.svickuj.cz/sojova-svicka-stesti-120ml/",
+          "sourceText": "Vonné tóny: osmanthus, ylang ylang, vanilka\nDoslovné zdrojové fragmenty:\nosmanthusu\nylang ylangu\nvanilky",
+          "navigationLabel": "Osmanthus, ylang ylang a vanilka",
+          "navigationGroupingIsNotOfficialFragranceFamily": true
+        }
+      }
+    },
+    {
+      "id": "joy",
+      "name": "Radost",
+      "url": "https://www.svickuj.cz/sojova-svicka-radost-500ml/",
+      "priceAmount": 699.0,
+      "price": "699 Kč",
+      "currency": "CZK",
+      "volume": "500 ml",
+      "category": "fragrance",
+      "kind": "Vonná svíčka",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Čerstvé růže a pomeranč.",
+      "reason": "Čerstvé růže a pomeranč.",
+      "photo": "/assets/s5/svickuj/joy.jpg",
+      "source": {
+        "series": "s5",
+        "url": "https://www.svickuj.cz/sojova-svicka-radost-500ml/",
+        "verifiedAt": "2026-11-16T11:30:36.071667+00:00",
+        "sourceSha256": "e3c188128cb966c38c644276544f8286bad72c392511d1bfc97b91b0cfe97102",
+        "stock": "InStock",
+        "stockEvidence": {
+          "scope": "Official fixedSKUOffer + publicpriceWithVat",
+          "currency": "CZK",
+          "sku": "SO50RA",
+          "quantity": "UNKNOWN_NOT_PUBLISHED",
+          "variantSelectionRequired": false
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 699.0,
+          "currency": "CZK",
+          "vatSource": "https://www.svickuj.cz/sojova-svicka-radost-500ml/",
+          "vatEvidence": "Exact public VAT-inclusive selected SKU price, not sample minimum."
+        },
+        "packEvidence": {
+          "pack": "500 ml",
+          "scope": "Explicit published product pack, not shipping weight."
+        },
+        "variantSelectionRequired": false,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.svickuj.cz/user/shop/big/618-4_svicka-radost-500ml.jpg?ff=1&x=1024&y=768&q=100&ts=680a1fcb&sg=15683bd6",
+        "photoEvidence": {
+          "id": "joy",
+          "file": "joy.jpg",
+          "url": "https://cdn.myshoptet.com/usr/www.svickuj.cz/user/shop/big/618-4_svicka-radost-500ml.jpg?ff=1&x=1024&y=768&q=100&ts=680a1fcb&sg=15683bd6",
+          "sha256": "e32e025868b5854d234a93dd77f3951800698d0afa3d70645bcceda8037c3852",
+          "bytes": 364126,
+          "originalBytes": true,
+          "verifiedAt": "2026-11-16T11:48:15.917845+00:00",
+          "width": 1024,
+          "height": 768
+        },
+        "fragrance": {
+          "notes": [
+            "růže",
+            "pomeranč"
+          ],
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Vonná svíčka",
+          "notesEvidence": {
+            "url": "https://www.svickuj.cz/sojova-svicka-radost-500ml/",
+            "sourceText": "Vonné tóny: růže, pomeranč\nDoslovné zdrojové fragmenty:\nrůží\npomerančů",
+            "originalSourceText": "růží\npomerančů",
+            "sourceLanguage": "cs",
+            "scope": "Published product sensory descriptors only, not INCI or inferred ingredient percentages.",
+            "noteFormMapping": [
+              {
+                "display": "růže",
+                "sourceFragments": [
+                  "růží"
+                ]
+              },
+              {
+                "display": "pomeranč",
+                "sourceFragments": [
+                  "pomerančů"
+                ]
+              }
+            ],
+            "qualification": "Literal primary sensory fragments from short/long description, not title-only inference. Czech case forms faithfully normalized. No health/therapy/skincream/99percentlesssoot/fire/safety/burnguarantees/numericnoteweights copied."
+          }
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "No medicinal/skin/allergy/safety/duration guarantees, numerical note strength, invented budget or cart integration."
+        ],
+        "usagePurpose": "scented-candle",
+        "scent": "Čerstvé růže a pomeranč",
+        "selectionTraits": {
+          "fragranceDirection": "g-fruit-flower",
+          "fragranceProfile": "joy"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.svickuj.cz/sojova-svicka-radost-500ml/",
+          "sourceText": "Vonné tóny: růže, pomeranč\nDoslovné zdrojové fragmenty:\nrůží\npomerančů",
+          "navigationLabel": "Čerstvé růže a pomeranč",
+          "navigationGroupingIsNotOfficialFragranceFamily": true
+        }
+      }
+    }
+  ],
+  "revenue": {
+    "year": 2024,
+    "publishedBand": "5–10 mil. Kč",
+    "currency": "CZK",
+    "source": "https://www.chytryrejstrik.cz/ico-19951108/svickuj-s-r-o",
+    "sourceType": "Secondarywholecompanyhistoricalband, not candle-onlysales",
+    "latestExact2025": "UNKNOWN"
+  },
+  "size": "PREFERRED_HISTORICAL_BAND_LATEST_EXACT_UNKNOWN",
+  "interest": "NOT_ESTABLISHED",
+  "notes": [
+    "Only literal sourced different candlefragranceformulas, no size/jar/labelinflation. Consumerretail fullsize candles, not perfume minis.",
+    "No publisherhealth/therapy/afrodisiac/mentalhealth/sleep/stress/pregnancy/pet/nontoxic/soot/burnguarantees, no candlewax promoted as handcream or use onskin.",
+    "No budgetquestion/guarantee, no inventedpaidaccessory. Actual sourceprice/stock snapshots, not inventorysync. MAIN owns sharedruntime/backend/integration/Preview.",
+    "BabiccinKolac sourcedblackcurrant/badyan/ambra, no apple inferred from cake name. Therapeutic/afrodisiac sourceprose stripped to literalnotes. No promo-code application or couponintegration claimed."
+  ]
+}

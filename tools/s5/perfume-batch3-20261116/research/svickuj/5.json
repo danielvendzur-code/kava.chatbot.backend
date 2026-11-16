@@ -1,0 +1,516 @@
+{
+  "slug": "svickuj",
+  "label": "5",
+  "url": "https://www.svickuj.cz/sojova-svicka-radost-500ml/",
+  "checkedAt": "2026-11-16T11:30:36.071667+00:00",
+  "tlsVerified": true,
+  "scope": "Read-only officialHTML; notlivewidgetQA",
+  "status": 200,
+  "finalUrl": "https://www.svickuj.cz/sojova-svicka-radost-500ml/",
+  "sourceSha256": "e3c188128cb966c38c644276544f8286bad72c392511d1bfc97b91b0cfe97102",
+  "name": "Sójová svíčka Radost | 500ml",
+  "jsonld": [
+    "\n    {\n        \"@context\" : \"https://schema.org\",\n        \"@type\" : \"Organization\",\n        \"name\" : \"SVÍČKUJ\",\n        \"url\" : \"https://www.svickuj.cz\",\n                \"employee\" : \"SVÍČKUJ\",\n                    \"email\" : \"svickuj@email.cz\",\n                            \"telephone\" : \"605331364\",\n                                \n                                                                                \"sameAs\" : [\"https://www.facebook.com/svickuj\", \"https://www.instagram.com/svickuj/\"]\n    }\n"
+  ],
+  "offers": [
+    {
+      "availability": "https://schema.org/InStock",
+      "url": "https://www.svickuj.cz/sojova-svicka-radost-500ml/",
+      "price": "699.00",
+      "priceCurrency": "CZK",
+      "itemCondition": "https://schema.org/NewCondition"
+    }
+  ],
+  "photos": [
+    "https://cdn.myshoptet.com/usr/www.svickuj.cz/user/shop/big/618-4_svicka-radost-500ml.jpg?ff=1&x=1024&y=768&q=100&ts=680a1fcb&sg=15683bd6"
+  ],
+  "links": [
+    {
+      "text": "zde",
+      "url": "http://www.svickuj.cz/podminky-ochrany-osobnich-udaju/"
+    },
+    {
+      "text": "Nová registrace",
+      "url": "https://www.svickuj.cz/registrace/"
+    },
+    {
+      "text": "Zapomenuté heslo",
+      "url": "https://www.svickuj.cz/klient/zapomenute-heslo/"
+    },
+    {
+      "text": "Pokračovat do košíku",
+      "url": "https://www.svickuj.cz/kosik/"
+    },
+    {
+      "text": "605331364",
+      "url": "tel:605331364"
+    },
+    {
+      "text": "svickuj@email.cz",
+      "url": "mailto:svickuj@email.cz"
+    },
+    {
+      "text": "Prodejní místa",
+      "url": "https://www.svickuj.cz/prodejni-mista/"
+    },
+    {
+      "text": "Věrnostní program",
+      "url": "https://www.svickuj.cz/vernostni-program/"
+    },
+    {
+      "text": "Náš příběh",
+      "url": "https://www.svickuj.cz/nas-pribeh/"
+    },
+    {
+      "text": "Doprava a platby",
+      "url": "https://www.svickuj.cz/doprava-a-platby/"
+    },
+    {
+      "text": "Reklamace a vracení zboží",
+      "url": "https://www.svickuj.cz/reklamace-a-vraceni-zbozi/"
+    },
+    {
+      "text": "Hodnocení obchodu",
+      "url": "https://www.svickuj.cz/hodnoceni-obchodu/"
+    },
+    {
+      "text": "Obchodní podmínky",
+      "url": "https://www.svickuj.cz/obchodni-podminky/"
+    },
+    {
+      "text": "Podmínky ochrany osobních údajů",
+      "url": "https://www.svickuj.cz/podminky-ochrany-osobnich-udaju/"
+    },
+    {
+      "text": "CZK",
+      "url": "https://www.svickuj.cz/action/Currency/changeCurrency/?currencyCode=CZK"
+    },
+    {
+      "text": "EUR",
+      "url": "https://www.svickuj.cz/action/Currency/changeCurrency/?currencyCode=EUR"
+    },
+    {
+      "text": "",
+      "url": "https://www.svickuj.cz/"
+    },
+    {
+      "text": "Nákupní košík Prázdný košík",
+      "url": "https://www.svickuj.cz/kosik/"
+    },
+    {
+      "text": "E-shop",
+      "url": "https://www.svickuj.cz/e-shop/"
+    },
+    {
+      "text": "",
+      "url": "https://www.svickuj.cz/http-www-svickuj-cz/"
+    },
+    {
+      "text": "VÁNOCE",
+      "url": "https://www.svickuj.cz/http-www-svickuj-cz/"
+    },
+    {
+      "text": "",
+      "url": "https://www.svickuj.cz/http-www-svickuj-cz-4/"
+    },
+    {
+      "text": "PODZIM",
+      "url": "https://www.svickuj.cz/http-www-svickuj-cz-4/"
+    },
+    {
+      "text": "",
+      "url": "https://www.svickuj.cz/novinky/"
+    },
+    {
+      "text": "NOVINKY",
+      "url": "https://www.svickuj.cz/novinky/"
+    },
+    {
+      "text": "",
+      "url": "https://www.svickuj.cz/sojove_svicky_120-ml-2/"
+    },
+    {
+      "text": "Sójové svíčky 120 ml",
+      "url": "https://www.svickuj.cz/sojove_svicky_120-ml-2/"
+    },
+    {
+      "text": "",
+      "url": "https://www.svickuj.cz/sojove_svicky-180-ml/"
+    },
+    {
+      "text": "Sójové svíčky 180 ml",
+      "url": "https://www.svickuj.cz/sojove_svicky-180-ml/"
+    },
+    {
+      "text": "",
+      "url": "https://www.svickuj.cz/sojove_svicky-500-ml-2/"
+    },
+    {
+      "text": "Sójové svíčky 500 ml",
+      "url": "https://www.svickuj.cz/sojove_svicky-500-ml-2/"
+    },
+    {
+      "text": "",
+      "url": "https://www.svickuj.cz/http-www-svickuj-cz-3/"
+    },
+    {
+      "text": "Svíčky v plechovce 50 ml",
+      "url": "https://www.svickuj.cz/http-www-svickuj-cz-3/"
+    },
+    {
+      "text": "",
+      "url": "https://www.svickuj.cz/interierove-parfemy-a-difuzery/"
+    },
+    {
+      "text": "Interiérové parfémy a difuzéry",
+      "url": "https://www.svickuj.cz/interierove-parfemy-a-difuzery/"
+    },
+    {
+      "text": "",
+      "url": "https://www.svickuj.cz/svicky-ze-vceliho-vosku/"
+    },
+    {
+      "text": "Svíčky ze včelího vosku",
+      "url": "https://www.svickuj.cz/svicky-ze-vceliho-vosku/"
+    },
+    {
+      "text": "",
+      "url": "https://www.svickuj.cz/darkove-sady-a-poukazy/"
+    },
+    {
+      "text": "Dárkové sady a poukazy",
+      "url": "https://www.svickuj.cz/darkove-sady-a-poukazy/"
+    },
+    {
+      "text": "",
+      "url": "https://www.svickuj.cz/keramika/"
+    },
+    {
+      "text": "Keramika",
+      "url": "https://www.svickuj.cz/keramika/"
+    },
+    {
+      "text": "",
+      "url": "https://www.svickuj.cz/doplnky/"
+    },
+    {
+      "text": "Doplňky",
+      "url": "https://www.svickuj.cz/doplnky/"
+    },
+    {
+      "text": "",
+      "url": "https://www.svickuj.cz/papirnictvi/"
+    },
+    {
+      "text": "Papírnictví",
+      "url": "https://www.svickuj.cz/papirnictvi/"
+    },
+    {
+      "text": "",
+      "url": "https://www.svickuj.cz/http-www-svickuj-cz-2/"
+    },
+    {
+      "text": "Slevy",
+      "url": "https://www.svickuj.cz/http-www-svickuj-cz-2/"
+    },
+    {
+      "text": "Náš příběh",
+      "url": "https://www.svickuj.cz/nas-pribeh/"
+    },
+    {
+      "text": "Prodejní místa",
+      "url": "https://www.svickuj.cz/prodejni-mista/"
+    },
+    {
+      "text": "Péče o svíčku",
+      "url": "https://www.svickuj.cz/pece-o-svicku/"
+    },
+    {
+      "text": "Kontakt",
+      "url": "https://www.svickuj.cz/kontakt/"
+    },
+    {
+      "text": "Blog",
+      "url": "https://www.svickuj.cz/blog-3/"
+    },
+    {
+      "text": "Věrnostní program",
+      "url": "https://www.svickuj.cz/vernostni-program/"
+    },
+    {
+      "text": "CZK",
+      "url": "https://www.svickuj.cz/action/Currency/changeCurrency/?currencyCode=CZK"
+    },
+    {
+      "text": "EUR",
+      "url": "https://www.svickuj.cz/action/Currency/changeCurrency/?currencyCode=EUR"
+    },
+    {
+      "text": "Přihlášení",
+      "url": "https://www.svickuj.cz/login/?backTo=%2Fsojova-svicka-radost-500ml%2F"
+    },
+    {
+      "text": "Domů",
+      "url": "https://www.svickuj.cz/"
+    },
+    {
+      "text": "E-shop",
+      "url": "https://www.svickuj.cz/e-shop/"
+    },
+    {
+      "text": "Sójové svíčky 500 ml",
+      "url": "https://www.svickuj.cz/sojove_svicky-500-ml-2/"
+    },
+    {
+      "text": "",
+      "url": "https://cdn.myshoptet.com/usr/www.svickuj.cz/user/shop/big/618-4_svicka-radost-500ml.jpg?ff=1&x=1024&y=768&q=100&ts=680a1fcb&sg=15683bd6"
+    },
+    {
+      "text": "",
+      "url": "https://cdn.myshoptet.com/usr/www.svickuj.cz/user/shop/big/618-4_svicka-radost-500ml.jpg?ff=1&x=1024&y=768&q=100&ts=680a1fcb&sg=15683bd6"
+    },
+    {
+      "text": "",
+      "url": "https://cdn.myshoptet.com/usr/www.svickuj.cz/user/shop/big/618-4_svicka-radost-500ml.jpg?ff=1&x=1024&y=768&q=100&ts=680a1fcb&sg=15683bd6"
+    },
+    {
+      "text": "",
+      "url": "https://cdn.myshoptet.com/usr/www.svickuj.cz/user/shop/big/618-1_sojova-svicka-radost-500ml.jpg?ff=1&x=1024&y=768&q=100&ts=680a1fc2&sg=15683bd6"
+    },
+    {
+      "text": "",
+      "url": "https://cdn.myshoptet.com/usr/www.svickuj.cz/user/shop/big/618-1_sojova-svicka-radost-500ml.jpg?ff=1&x=1024&y=768&q=100&ts=680a1fc2&sg=15683bd6"
+    },
+    {
+      "text": "",
+      "url": "https://cdn.myshoptet.com/usr/www.svickuj.cz/user/shop/big/618-3_sojova-svicka-radost-500ml.jpg?ff=1&x=1024&y=768&q=100&ts=680a1fc9&sg=15683bd6"
+    },
+    {
+      "text": "",
+      "url": "https://cdn.myshoptet.com/usr/www.svickuj.cz/user/shop/big/618-3_sojova-svicka-radost-500ml.jpg?ff=1&x=1024&y=768&q=100&ts=680a1fc9&sg=15683bd6"
+    },
+    {
+      "text": "",
+      "url": "https://cdn.myshoptet.com/usr/www.svickuj.cz/user/shop/big/618_sojova-svicka-radost-500ml.jpg?ff=1&x=1024&y=768&q=100&ts=680a1fbe&sg=15683bd6"
+    },
+    {
+      "text": "",
+      "url": "https://cdn.myshoptet.com/usr/www.svickuj.cz/user/shop/big/618_sojova-svicka-radost-500ml.jpg?ff=1&x=1024&y=768&q=100&ts=680a1fbe&sg=15683bd6"
+    },
+    {
+      "text": "Zeptat se",
+      "url": "https://www.svickuj.cz/sojova-svicka-radost-500ml:dotaz/"
+    },
+    {
+      "text": "Hlídat",
+      "url": "https://www.svickuj.cz/sojova-svicka-radost-500ml:hlidat-cenu/"
+    },
+    {
+      "text": "Tweet",
+      "url": "https://twitter.com/share"
+    },
+    {
+      "text": "",
+      "url": "https://www.svickuj.cz/vernostni-program"
+    },
+    {
+      "text": "Oblíbené",
+      "url": "https://www.svickuj.cz/radost-180ml/"
+    },
+    {
+      "text": "Sójová svíčka Radost | 180ml",
+      "url": "https://www.svickuj.cz/radost-180ml/"
+    },
+    {
+      "text": "Novinka",
+      "url": "https://www.svickuj.cz/sojova-svicka-radost-120ml/"
+    },
+    {
+      "text": "Sójová svíčka Radost | 120ml",
+      "url": "https://www.svickuj.cz/sojova-svicka-radost-120ml/"
+    },
+    {
+      "text": "Novinka",
+      "url": "https://www.svickuj.cz/interierovy-parfem-radost-100ml/"
+    },
+    {
+      "text": "Interiérový parfém Radost | 100ml",
+      "url": "https://www.svickuj.cz/interierovy-parfem-radost-100ml/"
+    },
+    {
+      "text": "svíčky Radost",
+      "url": "https://www.svickuj.cz/radost-180ml/"
+    },
+    {
+      "text": "Novinka",
+      "url": "https://www.svickuj.cz/keramicky-talirek-pod-velke-svicky/"
+    },
+    {
+      "text": "Keramický talířek pod velké svíčky",
+      "url": "https://www.svickuj.cz/keramicky-talirek-pod-velke-svicky/"
+    },
+    {
+      "text": "menší keramické talířky,",
+      "url": "https://www.svickuj.cz/keramicke-talirky-na-vyber-ruzne-tvary/"
+    },
+    {
+      "text": "",
+      "url": "https://www.svickuj.cz/narozeninove-svicky-ze-vceliho-vosku-10ks/"
+    },
+    {
+      "text": "Narozeninové svíčky ze včelího vosku - 10ks",
+      "url": "https://www.svickuj.cz/narozeninove-svicky-ze-vceliho-vosku-10ks/"
+    },
+    {
+      "text": "Sójové svíčky 500 ml",
+      "url": "https://www.svickuj.cz/sojove_svicky-500-ml-2/"
+    },
+    {
+      "text": "Oblíbené",
+      "url": "https://www.svickuj.cz/medunka-a-citronela-500ml/"
+    },
+    {
+      "text": "Sójová svíčka Meduňka a citronela | 500ml",
+      "url": "https://www.svickuj.cz/medunka-a-citronela-500ml/"
+    },
+    {
+      "text": "",
+      "url": "https://www.svickuj.cz/pomeranc/"
+    },
+    {
+      "text": "Sójová svíčka Pomeranč | 500ml",
+      "url": "https://www.svickuj.cz/pomeranc/"
+    },
+    {
+      "text": "",
+      "url": "https://www.svickuj.cz/hermanek-500ml/"
+    },
+    {
+      "text": "Sójová svíčka Heřmánek | 500ml",
+      "url": "https://www.svickuj.cz/hermanek-500ml/"
+    },
+    {
+      "text": "",
+      "url": "https://www.svickuj.cz/cista-bila-500ml/"
+    },
+    {
+      "text": "Sójová svíčka Čistá bílá | 500ml",
+      "url": "https://www.svickuj.cz/cista-bila-500ml/"
+    },
+    {
+      "text": "Novinka Bestseller",
+      "url": "https://www.svickuj.cz/sojova-svicka-hygge-500ml/"
+    },
+    {
+      "text": "Sójová svíčka Hygge | 500ml",
+      "url": "https://www.svickuj.cz/sojova-svicka-hygge-500ml/"
+    },
+    {
+      "text": "podmínkami ochrany osobních údajů",
+      "url": "https://www.svickuj.cz/podminky-ochrany-osobnich-udaju/"
+    },
+    {
+      "text": "podmínkami ochrany osobních údajů",
+      "url": "https://www.svickuj.cz/podminky-ochrany-osobnich-udaju/"
+    },
+    {
+      "text": "",
+      "url": "https://www.svickuj.cz/"
+    },
+    {
+      "text": "Prodejní místa",
+      "url": "https://www.svickuj.cz/prodejni-mista/"
+    },
+    {
+      "text": "Věrnostní program",
+      "url": "https://www.svickuj.cz/vernostni-program/"
+    },
+    {
+      "text": "Náš příběh",
+      "url": "https://www.svickuj.cz/nas-pribeh/"
+    },
+    {
+      "text": "Doprava a platby",
+      "url": "https://www.svickuj.cz/doprava-a-platby/"
+    },
+    {
+      "text": "Reklamace a vracení zboží",
+      "url": "https://www.svickuj.cz/reklamace-a-vraceni-zbozi/"
+    },
+    {
+      "text": "Hodnocení obchodu",
+      "url": "https://www.svickuj.cz/hodnoceni-obchodu/"
+    },
+    {
+      "text": "Obchodní podmínky",
+      "url": "https://www.svickuj.cz/obchodni-podminky/"
+    },
+    {
+      "text": "Podmínky ochrany osobních údajů",
+      "url": "https://www.svickuj.cz/podminky-ochrany-osobnich-udaju/"
+    },
+    {
+      "text": "svickuj@email.cz",
+      "url": "mailto:svickuj@email.cz"
+    },
+    {
+      "text": "605331364",
+      "url": "tel:605331364"
+    },
+    {
+      "text": "https://www.facebook.com/svickuj",
+      "url": "https://www.facebook.com/svickuj"
+    },
+    {
+      "text": "svickuj",
+      "url": "https://www.instagram.com/svickuj/"
+    },
+    {
+      "text": "",
+      "url": "https://www.shoptet.cz/?utm_source=footer&utm_medium=link&utm_campaign=create_by_shoptet"
+    },
+    {
+      "text": "Vytvořil Shoptet",
+      "url": "https://www.shoptet.cz/?utm_source=footer&utm_medium=link&utm_campaign=create_by_shoptet"
+    },
+    {
+      "text": "Shoptet",
+      "url": "https://shoptet.cz"
+    },
+    {
+      "text": "Shoptak.cz",
+      "url": "https://www.shoptak.cz"
+    }
+  ],
+  "publicProduct": {
+    "id": 618,
+    "guid": "a858e0bc-20fe-11f0-b513-86d7f9a89279",
+    "hasVariants": false,
+    "codes": [
+      {
+        "code": "SO50RA",
+        "weight": 0.83,
+        "quantity": "> 5",
+        "stocks": [
+          {
+            "id": "ext",
+            "quantity": "> 5"
+          }
+        ]
+      }
+    ],
+    "code": "SO50RA",
+    "name": "Sójová svíčka Radost | 500ml",
+    "appendix": "",
+    "weight": 0,
+    "currentCategory": "E-shop | Sójové svíčky 500 ml",
+    "currentCategoryGuid": "53ee65dc-8c71-11ea-ac23-ac1f6b0076ec",
+    "defaultCategory": "E-shop | Sójové svíčky 500 ml",
+    "defaultCategoryGuid": "53ee65dc-8c71-11ea-ac23-ac1f6b0076ec",
+    "currency": "CZK",
+    "priceWithVat": 699
+  },
+  "description": "Detailní popis produktu Každý aspekt našich výrobků vytváříme samy. Vše provádíme s velkou péčí a zaměřujeme se na detail. Výsledkem je poctivá ručně vyrobená svíčka s naší originální kresbou a s použitím kvalitních přírodních ingrediencí. - 100% přírodní sójový vosk, neobsahuje žádné pesticidy, herbicidy, biologicky odbouratelný- 100% přírodní rostlinný vonný olej, který je tvořen esenciálními oleji, bez syntetických přísad a chemie.- bavlněný knot- bez použití barviv a syntetických látek- hoří mnohem déle a čistěji než parafínový vosk- dodáváno pouze v papírových obalech s ohledem na přírodu- vyrobeno ručně v České republicePéče o svíčkuO bavlněný knot je potřeba pečovat. Pro ideální hoření udržujte knot o délce 4–5mm, doporučujeme zastřihnout před každým zapálením. Po zhasnutí se svíčkou nemanipulujte a nechte ji vychladnout.",
+  "shortDescription": "Sójová svíčka Radost, která probudí vaše smysly něžnou symfonií přírodních esencí a přinese do vašeho domova atmosféru plnou optimismu a životní energie v každém ročním období. Představte si okamžik dokonalé pohody - den, kdy se vše daří, vzduch voní svěžestí a vaše mysl je naplněna klidem a spokojeností. Právě takovou atmosféru jsme zachytili v naší svíčce Radost - jemnou, povznášející vůni, která vás obejme jako teplý paprsek slunce. Základem této jedinečné vůně jsou esence čerstvých růží, které dodávají kompozici něžnost a eleganci. Doplňují je nasládlé tóny šťavnatých pomerančů, jež celou vůni prozáří a dodají jí svěžest a energii. Tato harmonická kombinace květinových a ovocných esencí vytváří dokonalou rovnováhu - není ani příliš těžká, ani přehnaně sladká. Svíčka Radost je ideálním společníkem pro chvíle, kdy potřebujete pozvednout náladu, dodat si energii nebo si jen užít klidný večer s knihou či v příjemné společnosti. Její jemná, ale přesto znatelná vůně postupně naplní prostor a vytvoří atmosféru plnou pozitivní energie a vnitřního klidu. V zimě vám připomene, že i v chladných dnech lze najít teplo a radost, v létě osvěží vaši mysl a na podzim i na jaře bude dokonalým doplňkem měnící se přírody. Dopřejte si rituál zapalování svíčky jako každodenní připomínku, že radost lze nalézt i v těch nejmenších okamžicích, nezávisle na ročním období. Nechte se unášet vůní, která vám připomene, že každý den přináší důvod k radosti. Svíčka je vyrobena z čistého sójového vosku s přírodními esencemi, bez přidaných chemických látek. Doba hoření je 50 hod.",
+  "bodyText": "Sójová svíčka Radost | 500ml - SVÍČKUJ Cookie consent Tento web používá soubory cookie. Dalším procházením tohoto webu vyjadřujete souhlas s jejich používáním.. Více informací zde. Nastavení Souhlasím Přejít na obsah Přihlášení k vašemu účtu E-mailHesloNevyplňujte toto poleSurname Přihlásit seNová registraceZapomenuté heslo Pokračovat do košíku Zákaznická podpora:605331364svickuj@email.cz Prodejní místa Věrnostní program Náš příběh Doprava a platby Reklamace a vracení zboží Hodnocení obchodu Obchodní podmínky Podmínky ochrany osobních údajů Ceny v: CZK CZKEUR Přihlášení Hledat Nákupní košík Prázdný košík E-shopVÁNOCE PODZIM NOVINKY Sójové svíčky 120 ml Sójové svíčky 180 ml Sójové svíčky 500 ml Svíčky v plechovce 50 ml Interiérové parfémy a difuzéry Svíčky ze včelího vosku Dárkové sady a poukazy Keramika Doplňky Papírnictví Slevy Náš příběh Prodejní místa Péče o svíčku Kontakt Blog Věrnostní program Měna (CZK) CZK EUR Přihlášení Více Domů / E-shop / Sójové svíčky 500 ml / Sójová svíčka Radost | 500ml Sójová svíčka Radost | 500ml Novinka Průměrné hodnocení produktu je 5,0 z 5 hvězdiček. 2 hodnocení Podrobnosti hodnocení 699 Kč Měrná cena: Skladem (>5 ks) Můžeme doručit do: 20.11.2026 Množství + − Přidat do košíku Sójová svíčka Radost, která probudí vaše smysly něžnou symfonií přírodních esencí a přinese do vašeho domova atmosféru plnou optimismu a životní energie v každém ročním období. Představte si okamžik dokonalé pohody - den, kdy se vše daří, vzduch voní svěžestí a vaše mysl je naplněna klidem a spokojeností. Právě takovou atmosféru jsme zachytili v naší svíčce Radost - jemnou, povznášející vůni, která vás obejme jako teplý paprsek slunce. Základem této jedinečné vůně jsou esence čerstvých růží, které dodávají kompozici něžnost a eleganci. Doplňují je nasládlé tóny šťavnatých pomerančů, jež celou vůni prozáří a dodají jí svěžest a energii. Tato harmonická kombinace květinových a ovocných esencí vytváří dokonalou rovnováhu - není ani příliš těžká, ani přehnaně sladká. Svíčka Radost je ideálním společníkem pro chvíle, kdy potřebujete pozvednout náladu, dodat si energii nebo si jen užít klidný večer s knihou či v příjemné společnosti. Její jemná, ale přesto znatelná vůně postupně naplní prostor a vytvoří atmosféru plnou pozitivní energie a vnitřního klidu. V zimě vám připomene, že i v chladných dnech lze najít teplo a radost, v létě osvěží vaši mysl a na podzim i na jaře bude dokonalým doplňkem měnící se přírody. Dopřejte si rituál zapalování svíčky jako každodenní připomínku, že radost lze nalézt i v těch nejmenších okamžicích, nezávisle na ročním období. Nechte se unášet vůní, která vám připomene, že každý den přináší důvod k radosti. Svíčka je vyrobena z čistého sójového vosku s přírodními esencemi, bez přidaných chemických látek. Doba hoření je 50 hod. Detailní informace Tisk Zeptat se Hlídat Sdílet Tweet Zavřít Související produkty Oblíbené Sójová svíčka Radost | 180ml Průměrné hodnocení produktu je 5,0 z 5 hvězdiček. Skladem (>5 ks) 399 Kč Do košíku Sójová svíčka Radost, která probudí vaše smysly něžnou symfonií přírodních esencí a přinese do vašeho domova atmosféru plnou optimismu a životní energie v každém ročním období. Představte si okamžik dokonalé pohody - den, kdy se vše daří, vzduch voní svěžestí a vaše mysl je naplněna klidem a spokojeností. Právě takovou atmosféru jsme zachytili v naší svíčce Radost - jemnou, povznášející vůni, která vás obejme jako teplý paprsek slunce. Základem této jedinečné vůně jsou esence čerstvých růží, které dodávají kompozici něžnost a eleganci. Doplňují je nasládlé tóny šťavnatých pomerančů, jež celou vůni prozáří a dodají jí svěžest a energii. Tato harmonická kombinace květinových a ovocných esencí vytváří dokonalou rovnováhu - není ani příliš těžká, ani přehnaně sladká. Svíčka Radost je ideálním společníkem pro chvíle, kdy potřebujete pozvednout náladu, dodat si energii nebo si jen užít klidný večer s knihou či v příjemné společnosti. Její jemná, ale přesto znatelná vůně postupně naplní prostor a vytvoří atmosféru plnou pozitivní energie a vnitřního klidu. V zimě vám připomene, že i v chladných dnech lze najít teplo a radost, v létě osvěží vaši mysl a na podzim i na jaře bude dokonalým doplňkem měnící se přírody. Dopřejte si rituál zapalování svíčky jako každodenní připomínku, že radost lze nalézt i v těch nejmenších okamžicích, nezávisle na ročním období. Nechte se unášet vůní, která vám připomene, že každý den přináší důvod k radosti. Svíčka je vyrobena z čistého sójového vosku s přírodními esencemi, bez přidaných chemických látek. Doba hoření je 30 hod. Kód: SO180RA Novinka Sójová svíčka Radost | 120ml Průměrné hodnocení produktu je 5,0 z 5 hvězdiček. Skladem (>5 ks) 299 Kč Do košíku Sójová svíčka Radost, která probudí vaše smysly něžnou symfonií přírodních esencí a přinese do vašeho domova atmosféru plnou optimismu a životní energie v každém ročním období. Představte si okamžik dokonalé pohody - den, kdy se vše daří, vzduch voní svěžestí a vaše mysl je naplněna klidem a spokojeností. Právě takovou atmosféru jsme zachytili v naší svíčce Radost - jemnou, povznášející vůni, která vás obejme jako teplý paprsek slunce. Základem této jedinečné vůně jsou esence čerstvých růží, které dodávají kompozici něžnost a eleganci. Doplňují je nasládlé tóny šťavnatých pomerančů, jež celou vůni prozáří a dodají jí svěžest a energii. Tato harmonická kombinace květinových a ovocných esencí vytváří dokonalou rovnováhu - není ani příliš těžká, ani přehnaně sladká. Svíčka Radost je ideálním společníkem pro chvíle, kdy potřebujete pozvednout náladu, dodat si energii nebo si jen užít klidný večer s knihou či v příjemné společnosti. Její jemná, ale přesto znatelná vůně postupně naplní prostor a vytvoří atmosféru plnou pozitivní energie a vnitřního klidu. V zimě vám připomene, že i v chladných dnech lze najít teplo a radost, v létě osvěží vaši mysl a na podzim i na jaře bude dokonalým doplňkem měnící se přírody. Dopřejte si rituál zapalování svíčky jako každodenní připomínku, že radost lze nalézt i v těch nejmenších okamžicích, nezávisle na ročním období. Nechte se unášet vůní, která vám připomene, že každý den přináší důvod k radosti. Svíčka je vyrobena z čistého sójového vosku s přírodními esencemi, bez přidaných chemických látek. Doba hoření je 20 hod. Kód: SO120RA Novinka Interiérový parfém Radost | 100ml Průměrné hodnocení produktu je 5,0 z 5 hvězdiček. Skladem (>5 ks) 359 Kč Do košíku Interiérový parfém Radost vychází z naší oblíbené svíčky Radost — jemné, povznášející vůně, která vás obejme jako teplý paprsek slunce. Nyní si ji můžete vychutnat v podobě interiérového parfému a provonět svůj domov během pár sekund. Představte si okamžik dokonalé pohody — den, kdy se vše daří, vzduch voní svěžestí a vaše mysl je naplněna klidem a spokojeností. Právě takovou atmosféru jsme zachytili ve vůni Radost.Základem této jedinečné vůně jsou esence čerstvých růží, které dodávají kompozici něžnost a eleganci. Doplňují je nasládlé tóny šťavnatých pomerančů, jež celou vůni prozáří a dodají jí svěžest a energii. Tato harmonická kombinace květinových a ovocných esencí vytváří dokonalou rovnováhu — není ani příliš těžká, ani přehnaně sladká. Interiérový parfém Radost je ideálním společníkem pro chvíle, kdy potřebujete pozvednout náladu, dodat si energii nebo si jednoduše osvěžit prostor. V zimě vám připomene, že i v chladných dnech lze najít teplo a radost, v létě osvěží vaši mysl a na podzim i na jaře bude dokonalým doplňkem měnící se přírody. Kromě úžasné vůně lze parfém použít nejen k osvěžení vzduchu, ale také na provonění textilií jako je ložní prádlo, záclony nebo ručníky. Jemně pohlcuje pachy a zanechá váš domov provoněný pozitivní energií. Dopřejte si každodenní připomínku, že radost lze nalézt i v těch nejmenších okamžicích. Nechte se unášet vůní, která vám připomene, že každý den přináší důvod k radosti. Kód: IP100R Novinka Keramický talířek pod velké svíčky Skladem (>5 ks) 419 Kč Do košíku Ručně tvořené keramické talířky navržené speciálně pod naše svíčky 500 ml, které ochrání povrch vašeho nábytku a zároveň krásně doplní celkový dojem z vaší oblíbené svíčky. Talířky jsou vyrobeny ve stejném dekoru jako naše menší keramické talířky, které si získaly vaše srdce. Elegantní glazura a jemné přírodní tóny krásně ladí s designem našich svíček a podtrhnou atmosféru vašeho interiéru. Každý kousek je originálem — ručně tvarovaný a glazovaný českou keramičkou ze značky Engoba, která do své práce vkládá stejnou lásku k řemeslu, jakou vkládáme my do našich svíček. Díky ručnímu zpracování se jednotlivé talířky mohou jemně lišit, což z každého dělá unikátní kousek. Vytvoříte si tak originální dekoraci, která zkrášlí váš domov i bez zapálené svíčky. Tip: Skvěle poslouží i jako podtácek pod šálek kávy, čaje nebo jako dekorativní talířek na drobnosti. Kód: 707 Narozeninové svíčky ze včelího vosku - 10ks Průměrné hodnocení produktu je 5,0 z 5 hvězdiček. Skladem (>5 ks) 189 Kč Do košíku Narozeninové svíčky ze včelího vosku se skvěle hodí na každou oslavu. Bonusem přírodních svíček ze včelího vosku je příjemná medová vůně, svíčky je možné umístit přímo do dortu, neboť jsou zcela netoxické, hoří pomalu a přirozeně čistí vzduch. Kód: VC00DO Zobrazit všechny související produkty Předchozí produkt Další produkt Popis Podobné (5) Hodnocení (2) Diskuze Detailní popis produktu Každý aspekt našich výrobků vytváříme samy. Vše provádíme s velkou péčí a zaměřujeme se na detail. Výsledkem je poctivá ručně vyrobená svíčka s naší originální kresbou a s použitím kvalitních přírodních ingrediencí. - 100% přírodní sójový vosk, neobsahuje žádné pesticidy, herbicidy, biologicky odbouratelný- 100% přírodní rostlinný vonný olej, který je tvořen esenciálními oleji, bez syntetických přísad a chemie.- bavlněný knot- bez použití barviv a syntetických látek- hoří mnohem déle a čistěji než parafínový vosk- dodáváno pouze v papírových obalech s ohledem na přírodu- vyrobeno ručně v České republicePéče o svíčkuO bavlněný knot je potřeba pečovat. Pro ideální hoření udržujte knot o délce 4–5mm, doporučujeme zastřihnout před každým zapálením. Po zhasnutí se svíčkou nemanipulujte a nechte ji vychladnout. Doplňkové parametry Kategorie: Sójové svíčky 500 ml EAN: 8594231060404 Oblíbené Sójová svíčka Meduňka a citronela | 500ml Průměrné hodnocení produktu je 5,0 z 5 hvězdiček. Skladem (>5 ks) 699 Kč Do košíku Osvěžující citrusovo květinová, teplá a intenzivní bylinková vůně meduňky a citronely. Tato kombinace dvou esenciálních olejů se perfektně doplňuje svými účinky. Svíčka se skvěle hodí do všech prostor, neutralizuje pachy a svou intenzitou provoní místnost na delší dobu. Meduňka vyniká při zklidnění, pomáhá zpomalit dýchání, uvolňuje napětí a nervozitu. Citronela pomáhá zvyšovat koncentraci a je to vynikající odpuzovač hmyzu. Doba hoření je 50 hod. Kód: SO500ME Sójová svíčka Pomeranč | 500ml Průměrné hodnocení produktu je 5,0 z 5 hvězdiček. Skladem (>5 ks) 699 Kč Do košíku Osvěžující, mírně sladká, povznášející vůně pomeranče s kapkou zázvoru, kterou si zamilujete. Pomůže vytvořit uklidňující atmosféru kdykoliv budete potřebovat utéct před ruchem všedních dnů. Tato svíčka je náš oblíbenec. Uklidňuje psychiku a podporuje klidný spánek. Skvěle se hodí na provonění všech prostor, včetně kanceláře či dětského pokoje. Kresbu na víčku pro vás ilustrovala Kamča. Doba hoření je 50 hod. Kód: SO500PO Sójová svíčka Heřmánek | 500ml Průměrné hodnocení produktu je 4,5 z 5 hvězdiček. Skladem (>5 ks) 699 Kč Do košíku Dopřejte si jedinečnou vůní čerstvých květů heřmánku. Příjemná a zároveň intenzivní, bylinná, květinová vůně s lehkými ovocnými tóny. Doba hoření je 50 hod. Kód: SO500HE Sójová svíčka Čistá bílá | 500ml Průměrné hodnocení produktu je 5,0 z 5 hvězdiček. Skladem (>5 ks) 549 Kč Do košíku Čistá bílá, nevoňavá a neutrální svíčka, kterou jsme vytvořily pro všechny citlivé nosánky. Nebo pro ty, kteří si rádi zapalují více svíček najednou a vůně už by bylo v prostoru moc.Kresbu na víčku pro vás ilustrovala Kamča. Doba hoření je 50 hod. Kód: SO50000 Novinka Bestseller Sójová svíčka Hygge | 500ml Průměrné hodnocení produktu je 5,0 z 5 hvězdiček. Skladem (>5 ks) 699 Kč Do košíku Svíčka Hygge je symbolem domova a ztělesněním pocitu pohodlí, tepla a spokojenosti. Kouzelně hřejivá kompozice sladkých a kořeněných tónů s luxusním nádechem ingrediencí používaných ve vysokém parfémářství vás ohromí. Vůně skořice, která je jedním z hlavních prvků, má schopnost uklidnit mysl a povzbudit tělo. Vzácný kardamom, se svými luxusními a dřevitými tóny, podporuje relaxaci a tonka s jejími balzámové tóny dodává vůni hloubku a jedinečnost. Design navrhla a nakreslila Kamča. Navržen je tak, aby se Hygge stala nejen svíčkou, ale také uměleckým dílem. Víčko je zdobeno ilustrací stromů, lesa a vnáší do interiéru kousek přírody, který zkrášlí každý interiér. Doporučujeme vyzkoušet všem romantickým duším, které milují vůni koření, perníčků, dýňového latté a hledají nejen svíčku, ale také designový doplněk do interiéru, který je tvořen s láskou a smyslem pro detail. Doba hoření je 50 hod. Kód: SO500HG Zobrazit všechny podobné produkty Předchozí produkt Další produkt Hodnocení produktu 5,0 Průměrné hodnocení produktu je 5,0 z 5 hvězdiček. 2 hodnocení 5 2x 4 0x 3 0x 2 0x 1 0x Přidat hodnocení Zanechte hodnocení Povinná pole Jméno Nevyplňujte toto poleSurname E-mail Komentář Jak byste ohodnotili tento produkt? Vyberte od 1 do 5 hvězdiček, kde 1 je nejhorší a 5 nejlepší hodnocení. Odpovídá velmi negativnímu hodnocení. Odpovídá spíše negativnímu hodnocení. Odpovídá průměrnému hodnocení. Odpovídá pozitivnímu hodnocení. Odpovídá výbornému hodnocení. Bezpečnostní kontrola Opište text z obrázku Vložením hodnocení souhlasíte s podmínkami ochrany osobních údajů Odeslat hodnocení Výpis hodnocení 5 KK Katarína Kopyčárová Hodnocení produktu je 5 z 5 hvězdiček. 15.12.2025 Dievčatká,ste šikovné,asi vyhlásim bankrot. Vaše sviečky sú skvelé. 5 NM Nicola Majdičová Hodnocení produktu je 5 z 5 hvězdiček. 18.9.2025 Vždy mě vůně potěší, bude patřit mezi mé stálice :-) Diskuze Buďte první, kdo napíše příspěvek k této položce. Přidat komentář Povinná pole Jméno Nevyplňujte toto poleSurname E-mail Název Komentář Bezpečnostní kontrola Opište text z obrázku Vložením komentáře souhlasíte s podmínkami ochrany osobních údajů Odeslat komentář Zápatí Vyhledávání Hledat Informace pro vás Prodejní místa Věrnostní program Náš příběh Doprava a platby Reklamace a vracení zboží Hodnocení obchodu Obchodní podmínky Podmínky ochrany osobních údajů Kontakt svickuj@email.cz 605331364 https://www.facebook.com/svickuj svickuj Přijímáme online platby"
+}

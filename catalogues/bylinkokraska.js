@@ -1,0 +1,1023 @@
+globalThis.CX_CATALOGUES ||= {};
+globalThis.CX_CATALOGUES.bylinkokraska = {
+ "brand": "BylinkoKráska",
+ "domain": "bylinkokraska.cz",
+ "operator": {
+  "name": "Bc. Monika Mužíková",
+  "ico": "09561633",
+  "country": "CZ",
+  "activeNoEnd": true,
+  "officialRegistry": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/09561633"
+ },
+ "series": "s5",
+ "segment": "fragrance",
+ "lang": "cs",
+ "country": "CZ",
+ "currency": "CZK",
+ "status": "SOURCE_PACKAGE_VERIFIED",
+ "products": [
+  {
+   "id": "citrus",
+   "name": "Citronová tráva a zázvor",
+   "url": "https://www.bylinkokraska.cz/sojova-vonna-svicka-citronova-trava-a-zazvor",
+   "priceAmount": 249.0,
+   "price": "249 Kč",
+   "currency": "CZK",
+   "volume": "120 ml",
+   "category": "fragrance",
+   "kind": "Vonná svíčka",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Citronová tráva, limetka a zázvor.",
+   "reason": "Citronová tráva, limetka a zázvor.",
+   "photo": "/assets/s5/bylinkokraska/citrus.webp",
+   "source": {
+    "series": "s5",
+    "url": "https://www.bylinkokraska.cz/sojova-vonna-svicka-citronova-trava-a-zazvor",
+    "verifiedAt": "2026-11-16T11:13:04.172747+00:00",
+    "sourceSha256": "7476c29693949fe9baed7e0dea166ada6fdd7206b33ca3308b4f72bc803840ce",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "Official visible primary availability, not fabricated schema Offer",
+     "currency": "CZK",
+     "sku": "HS12CTZ",
+     "quantity": ">5 ks",
+     "publisherAvailability": "Dostupnost Skladem > 5 ks",
+     "variantSelectionRequired": false
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 249.0,
+     "currency": "CZK",
+     "vatSource": "https://www.bylinkokraska.cz/sojova-vonna-svicka-citronova-trava-a-zazvor",
+     "vatEvidence": "Official visible finalretail price and explicit Nejsme plátci DPH; no addedtax or inventedVATrate."
+    },
+    "packEvidence": {
+     "pack": "120 ml",
+     "scope": "Explicit published product pack, not shipping weight."
+    },
+    "variantSelectionRequired": false,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://www.bylinkokraska.cz/fotky10620/fotos/_vyr_231_citronova-trava-a-zazvor--1.webp",
+    "photoEvidence": {
+     "id": "citrus",
+     "file": "citrus.webp",
+     "url": "https://www.bylinkokraska.cz/fotky10620/fotos/_vyr_231_citronova-trava-a-zazvor--1.webp",
+     "sha256": "01f15085200521ffae10f6a827b1858f370f95af120356e333cd5f24d2f6ba3f",
+     "bytes": 224014,
+     "originalBytes": true,
+     "verifiedAt": "2026-11-16T11:28:00.682623+00:00",
+     "width": 1000,
+     "height": 1000
+    },
+    "fragrance": {
+     "notes": [
+      "citronová tráva",
+      "limetka",
+      "citron",
+      "zázvor",
+      "muškátový oříšek",
+      "patchouli",
+      "cedrové dřevo"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Vonná svíčka",
+     "notesEvidence": {
+      "url": "https://www.bylinkokraska.cz/sojova-vonna-svicka-citronova-trava-a-zazvor",
+      "sourceText": "Vonné tóny: citronová tráva, limetka, citron, zázvor, muškátový oříšek, patchouli, cedrové dřevo\nDoslovné zdrojové fragmenty:\ncitronové trávy\nlimetek\ncitronů\nzázvor\nmuškátový oříšek\npatchouli\ncedrového dřeva",
+      "originalSourceText": "citronové trávy\nlimetek\ncitronů\nzázvor\nmuškátový oříšek\npatchouli\ncedrového dřeva",
+      "sourceLanguage": "cs",
+      "scope": "Published product sensory descriptors only, not INCI or inferred ingredient percentages.",
+      "noteFormMapping": [
+       {
+        "display": "citronová tráva",
+        "sourceFragments": [
+         "citronové trávy"
+        ]
+       },
+       {
+        "display": "limetka",
+        "sourceFragments": [
+         "limetek"
+        ]
+       },
+       {
+        "display": "citron",
+        "sourceFragments": [
+         "citronů"
+        ]
+       },
+       {
+        "display": "zázvor",
+        "sourceFragments": [
+         "zázvor"
+        ]
+       },
+       {
+        "display": "muškátový oříšek",
+        "sourceFragments": [
+         "muškátový oříšek"
+        ]
+       },
+       {
+        "display": "patchouli",
+        "sourceFragments": [
+         "patchouli"
+        ]
+       },
+       {
+        "display": "cedrové dřevo",
+        "sourceFragments": [
+         "cedrového dřeva"
+        ]
+       }
+      ],
+      "qualification": "Literal primary-product sensoryfragments, not continuousquote; Czech caseinflections faithfully normalized. No medical, mood/sleep/stress, pregnancy/pet safety, smokefree/burn guarantee, magic or numericstrength claims. Source prose and pyramid placement differ; onlysharedliteraltones served flat, no fabricatedstageplacement."
+     }
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "No medicinal/skin/allergy/safety/duration guarantees, numerical note strength, invented budget or cart integration."
+    ],
+    "usagePurpose": "scented-candle",
+    "scent": "Citronová tráva, limetka a zázvor",
+    "selectionTraits": {
+     "fragranceDirection": "bright",
+     "fragranceProfile": "citrus"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.bylinkokraska.cz/sojova-vonna-svicka-citronova-trava-a-zazvor",
+     "sourceText": "Vonné tóny: citronová tráva, limetka, citron, zázvor, muškátový oříšek, patchouli, cedrové dřevo\nDoslovné zdrojové fragmenty:\ncitronové trávy\nlimetek\ncitronů\nzázvor\nmuškátový oříšek\npatchouli\ncedrového dřeva",
+     "navigationLabel": "Citronová tráva, limetka a zázvor",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    }
+   }
+  },
+  {
+   "id": "apple",
+   "name": "Jablko a skořice",
+   "url": "https://www.bylinkokraska.cz/sojova-vonna-svicka-jablko-a-skorice",
+   "priceAmount": 249.0,
+   "price": "249 Kč",
+   "currency": "CZK",
+   "volume": "120 ml",
+   "category": "fragrance",
+   "kind": "Vonná svíčka",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Jablko, skořice a pomeranč.",
+   "reason": "Jablko, skořice a pomeranč.",
+   "photo": "/assets/s5/bylinkokraska/apple.webp",
+   "source": {
+    "series": "s5",
+    "url": "https://www.bylinkokraska.cz/sojova-vonna-svicka-jablko-a-skorice",
+    "verifiedAt": "2026-11-16T11:24:23.733364+00:00",
+    "sourceSha256": "bcfb81f387696b17e0dfd541d5fa23249faa0bfb76d92a64e327ae4aef966a1f",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "Official visible primary availability, not fabricated schema Offer",
+     "currency": "CZK",
+     "sku": "HS12JAS",
+     "quantity": ">5 ks",
+     "publisherAvailability": "Dostupnost Skladem > 5 ks",
+     "variantSelectionRequired": false
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 249.0,
+     "currency": "CZK",
+     "vatSource": "https://www.bylinkokraska.cz/sojova-vonna-svicka-jablko-a-skorice",
+     "vatEvidence": "Official visible finalretail price and explicit Nejsme plátci DPH; no addedtax or inventedVATrate."
+    },
+    "packEvidence": {
+     "pack": "120 ml",
+     "scope": "Explicit published product pack, not shipping weight."
+    },
+    "variantSelectionRequired": false,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://www.bylinkokraska.cz/fotky10620/fotos/_vyr_269_jablko-a-skorice-ctverec.webp",
+    "photoEvidence": {
+     "id": "apple",
+     "file": "apple.webp",
+     "url": "https://www.bylinkokraska.cz/fotky10620/fotos/_vyr_269_jablko-a-skorice-ctverec.webp",
+     "sha256": "5b9c64597098313d5aa3813065cdda0beec29871b1ec5674dd818a5a706e3322",
+     "bytes": 247200,
+     "originalBytes": true,
+     "verifiedAt": "2026-11-16T11:28:02.070876+00:00",
+     "width": 1000,
+     "height": 1000
+    },
+    "fragrance": {
+     "notes": [
+      "skořice",
+      "jablko",
+      "pomeranč",
+      "kumarin"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Vonná svíčka",
+     "notesEvidence": {
+      "url": "https://www.bylinkokraska.cz/sojova-vonna-svicka-jablko-a-skorice",
+      "sourceText": "Vonné tóny: skořice, jablko, pomeranč, kumarin\nDoslovné zdrojové fragmenty:\nskořice\njablko\npomeranč\nkumarin\nHlava: skořice, jablko, pomeranč; Srdce: jablko, skořice; Základ: kumarin",
+      "originalSourceText": "skořice\njablko\npomeranč\nkumarin",
+      "sourceLanguage": "cs",
+      "scope": "Published product sensory descriptors only, not INCI or inferred ingredient percentages.",
+      "noteFormMapping": [
+       {
+        "display": "skořice",
+        "sourceFragments": [
+         "skořice"
+        ]
+       },
+       {
+        "display": "jablko",
+        "sourceFragments": [
+         "jablko"
+        ]
+       },
+       {
+        "display": "pomeranč",
+        "sourceFragments": [
+         "pomeranč"
+        ]
+       },
+       {
+        "display": "kumarin",
+        "sourceFragments": [
+         "kumarin"
+        ]
+       }
+      ],
+      "qualification": "Literal primary-product sensoryfragments, not continuousquote; Czech caseinflections faithfully normalized. No medical, mood/sleep/stress, pregnancy/pet safety, smokefree/burn guarantee, magic or numericstrength claims."
+     },
+     "pyramid": {
+      "head": [
+       "skořice",
+       "jablko",
+       "pomeranč"
+      ],
+      "heart": [
+       "jablko",
+       "skořice"
+      ],
+      "base": [
+       "kumarin"
+      ]
+     },
+     "pyramidEvidence": {
+      "url": "https://www.bylinkokraska.cz/sojova-vonna-svicka-jablko-a-skorice",
+      "sourceText": "Hlava: skořice, jablko, pomerančSrdce: jablko, skořiceZáklad: kumarinObjem:",
+      "scope": "Literal declared product Hlava/Srdce/Základ, not inferred chemicalanalysis"
+     }
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "No medicinal/skin/allergy/safety/duration guarantees, numerical note strength, invented budget or cart integration."
+    ],
+    "usagePurpose": "scented-candle",
+    "scent": "Jablko, skořice a pomeranč",
+    "selectionTraits": {
+     "fragranceDirection": "spiced-fruit",
+     "fragranceProfile": "apple"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.bylinkokraska.cz/sojova-vonna-svicka-jablko-a-skorice",
+     "sourceText": "Vonné tóny: skořice, jablko, pomeranč, kumarin\nDoslovné zdrojové fragmenty:\nskořice\njablko\npomeranč\nkumarin\nHlava: skořice, jablko, pomeranč; Srdce: jablko, skořice; Základ: kumarin",
+     "navigationLabel": "Jablko, skořice a pomeranč",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    }
+   }
+  },
+  {
+   "id": "mulled",
+   "name": "Svařák",
+   "url": "https://www.bylinkokraska.cz/sojova-vonna-svicka-svarak",
+   "priceAmount": 249.0,
+   "price": "249 Kč",
+   "currency": "CZK",
+   "volume": "120 ml",
+   "category": "fragrance",
+   "kind": "Vonná svíčka",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Pomerančová kůra, skořice a hnědý cukr.",
+   "reason": "Pomerančová kůra, skořice a hnědý cukr.",
+   "photo": "/assets/s5/bylinkokraska/mulled.webp",
+   "source": {
+    "series": "s5",
+    "url": "https://www.bylinkokraska.cz/sojova-vonna-svicka-svarak",
+    "verifiedAt": "2026-11-16T11:24:23.736617+00:00",
+    "sourceSha256": "b53a15c3cd6f406d6a8c4647f818e59094ed23c8c91e6b7288a9f4f694eb6f35",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "Official visible primary availability, not fabricated schema Offer",
+     "currency": "CZK",
+     "sku": "HS12SVŘ",
+     "quantity": ">5 ks",
+     "publisherAvailability": "Dostupnost Skladem > 5 ks",
+     "variantSelectionRequired": false
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 249.0,
+     "currency": "CZK",
+     "vatSource": "https://www.bylinkokraska.cz/sojova-vonna-svicka-svarak",
+     "vatEvidence": "Official visible finalretail price and explicit Nejsme plátci DPH; no addedtax or inventedVATrate."
+    },
+    "packEvidence": {
+     "pack": "120 ml",
+     "scope": "Explicit published product pack, not shipping weight."
+    },
+    "variantSelectionRequired": false,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://www.bylinkokraska.cz/fotky10620/fotos/_vyr_272_svarak-1.webp",
+    "photoEvidence": {
+     "id": "mulled",
+     "file": "mulled.webp",
+     "url": "https://www.bylinkokraska.cz/fotky10620/fotos/_vyr_272_svarak-1.webp",
+     "sha256": "dfdd0c781e723c4b1bd2b924a9983c1d1785997a0d04ba97b5a78996a36b03d4",
+     "bytes": 204862,
+     "originalBytes": true,
+     "verifiedAt": "2026-11-16T11:28:02.697856+00:00",
+     "width": 1000,
+     "height": 1000
+    },
+    "fragrance": {
+     "notes": [
+      "pomerančová kůra",
+      "skořicové lístky",
+      "jablko",
+      "skořice",
+      "hnědý cukr",
+      "kumarin"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Vonná svíčka",
+     "notesEvidence": {
+      "url": "https://www.bylinkokraska.cz/sojova-vonna-svicka-svarak",
+      "sourceText": "Vonné tóny: pomerančová kůra, skořicové lístky, jablko, skořice, hnědý cukr, kumarin\nDoslovné zdrojové fragmenty:\npomerančová kůra\nskořicové lístky\njablko\nskořice\nhnědý cukr\nkumarin\nHlava: pomerančová kůra, skořicové lístky; Srdce: jablko, skořice; Základ: hnědý cukr, kumarin",
+      "originalSourceText": "pomerančová kůra\nskořicové lístky\njablko\nskořice\nhnědý cukr\nkumarin",
+      "sourceLanguage": "cs",
+      "scope": "Published product sensory descriptors only, not INCI or inferred ingredient percentages.",
+      "noteFormMapping": [
+       {
+        "display": "pomerančová kůra",
+        "sourceFragments": [
+         "pomerančová kůra"
+        ]
+       },
+       {
+        "display": "skořicové lístky",
+        "sourceFragments": [
+         "skořicové lístky"
+        ]
+       },
+       {
+        "display": "jablko",
+        "sourceFragments": [
+         "jablko"
+        ]
+       },
+       {
+        "display": "skořice",
+        "sourceFragments": [
+         "skořice"
+        ]
+       },
+       {
+        "display": "hnědý cukr",
+        "sourceFragments": [
+         "hnědý cukr"
+        ]
+       },
+       {
+        "display": "kumarin",
+        "sourceFragments": [
+         "kumarin"
+        ]
+       }
+      ],
+      "qualification": "Literal primary-product sensoryfragments, not continuousquote; Czech caseinflections faithfully normalized. No medical, mood/sleep/stress, pregnancy/pet safety, smokefree/burn guarantee, magic or numericstrength claims."
+     },
+     "pyramid": {
+      "head": [
+       "pomerančová kůra",
+       "skořicové lístky"
+      ],
+      "heart": [
+       "jablko",
+       "skořice"
+      ],
+      "base": [
+       "hnědý cukr",
+       "kumarin"
+      ]
+     },
+     "pyramidEvidence": {
+      "url": "https://www.bylinkokraska.cz/sojova-vonna-svicka-svarak",
+      "sourceText": "Hlava: pomerančová kůra, skořicové lístkySrdce: jablko, skořiceZáklad: hnědý cukr, kumarin Objem:",
+      "scope": "Literal declared product Hlava/Srdce/Základ, not inferred chemicalanalysis"
+     }
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "No medicinal/skin/allergy/safety/duration guarantees, numerical note strength, invented budget or cart integration."
+    ],
+    "usagePurpose": "scented-candle",
+    "scent": "Pomerančová kůra, skořice a hnědý cukr",
+    "selectionTraits": {
+     "fragranceDirection": "spiced-fruit",
+     "fragranceProfile": "mulled"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.bylinkokraska.cz/sojova-vonna-svicka-svarak",
+     "sourceText": "Vonné tóny: pomerančová kůra, skořicové lístky, jablko, skořice, hnědý cukr, kumarin\nDoslovné zdrojové fragmenty:\npomerančová kůra\nskořicové lístky\njablko\nskořice\nhnědý cukr\nkumarin\nHlava: pomerančová kůra, skořicové lístky; Srdce: jablko, skořice; Základ: hnědý cukr, kumarin",
+     "navigationLabel": "Pomerančová kůra, skořice a hnědý cukr",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    }
+   }
+  },
+  {
+   "id": "nuts",
+   "name": "Louskáček",
+   "url": "https://www.bylinkokraska.cz/sojova-vonna-svicka-louskacek",
+   "priceAmount": 249.0,
+   "price": "249 Kč",
+   "currency": "CZK",
+   "volume": "120 ml",
+   "category": "fragrance",
+   "kind": "Vonná svíčka",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Lískový oříšek, káva a vanilka.",
+   "reason": "Lískový oříšek, káva a vanilka.",
+   "photo": "/assets/s5/bylinkokraska/nuts.webp",
+   "source": {
+    "series": "s5",
+    "url": "https://www.bylinkokraska.cz/sojova-vonna-svicka-louskacek",
+    "verifiedAt": "2026-11-16T11:24:23.735222+00:00",
+    "sourceSha256": "396f2e02fdfd99f4a941e47dd684eeca4c305265aa8878fbd51a24fa2809ed3e",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "Official visible primary availability, not fabricated schema Offer",
+     "currency": "CZK",
+     "sku": "HS120LOU",
+     "quantity": ">5 ks",
+     "publisherAvailability": "Dostupnost Skladem > 5 ks",
+     "variantSelectionRequired": false
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 249.0,
+     "currency": "CZK",
+     "vatSource": "https://www.bylinkokraska.cz/sojova-vonna-svicka-louskacek",
+     "vatEvidence": "Official visible finalretail price and explicit Nejsme plátci DPH; no addedtax or inventedVATrate."
+    },
+    "packEvidence": {
+     "pack": "120 ml",
+     "scope": "Explicit published product pack, not shipping weight."
+    },
+    "variantSelectionRequired": false,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://www.bylinkokraska.cz/fotky10620/fotos/_vyr_271_louskacek-ctverec.webp",
+    "photoEvidence": {
+     "id": "nuts",
+     "file": "nuts.webp",
+     "url": "https://www.bylinkokraska.cz/fotky10620/fotos/_vyr_271_louskacek-ctverec.webp",
+     "sha256": "d6e14fe7b6a6fd2c93ea737a258cfe73be9799604b934f779205470490a2292d",
+     "bytes": 274948,
+     "originalBytes": true,
+     "verifiedAt": "2026-11-16T11:28:03.405723+00:00",
+     "width": 1000,
+     "height": 1000
+    },
+    "fragrance": {
+     "notes": [
+      "pomeranč",
+      "kokos",
+      "ovoce",
+      "oříšek",
+      "lískový oříšek",
+      "vlašský ořech",
+      "bílý zázvor",
+      "hřebíček",
+      "káva",
+      "vanilka",
+      "cukr",
+      "pižmo"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Vonná svíčka",
+     "notesEvidence": {
+      "url": "https://www.bylinkokraska.cz/sojova-vonna-svicka-louskacek",
+      "sourceText": "Vonné tóny: pomeranč, kokos, ovoce, oříšek, lískový oříšek, vlašský ořech, bílý zázvor, hřebíček, káva, vanilka, cukr, pižmo\nDoslovné zdrojové fragmenty:\npomeranč\nkokos\novoce\noříšek\nlískový oříšek\nvlašský ořech\nbílý zázvor\nhřebíček\nkáva\nvanilka\ncukr\npižmo\nHlava: pomeranč, kokos, ovoce, oříšek; Srdce: lískový oříšek, vlašský ořech, bílý zázvor, hřebíček; Základ: káva, vanilka, cukr, pižmo",
+      "originalSourceText": "pomeranč\nkokos\novoce\noříšek\nlískový oříšek\nvlašský ořech\nbílý zázvor\nhřebíček\nkáva\nvanilka\ncukr\npižmo",
+      "sourceLanguage": "cs",
+      "scope": "Published product sensory descriptors only, not INCI or inferred ingredient percentages.",
+      "noteFormMapping": [
+       {
+        "display": "pomeranč",
+        "sourceFragments": [
+         "pomeranč"
+        ]
+       },
+       {
+        "display": "kokos",
+        "sourceFragments": [
+         "kokos"
+        ]
+       },
+       {
+        "display": "ovoce",
+        "sourceFragments": [
+         "ovoce"
+        ]
+       },
+       {
+        "display": "oříšek",
+        "sourceFragments": [
+         "oříšek"
+        ]
+       },
+       {
+        "display": "lískový oříšek",
+        "sourceFragments": [
+         "lískový oříšek"
+        ]
+       },
+       {
+        "display": "vlašský ořech",
+        "sourceFragments": [
+         "vlašský ořech"
+        ]
+       },
+       {
+        "display": "bílý zázvor",
+        "sourceFragments": [
+         "bílý zázvor"
+        ]
+       },
+       {
+        "display": "hřebíček",
+        "sourceFragments": [
+         "hřebíček"
+        ]
+       },
+       {
+        "display": "káva",
+        "sourceFragments": [
+         "káva"
+        ]
+       },
+       {
+        "display": "vanilka",
+        "sourceFragments": [
+         "vanilka"
+        ]
+       },
+       {
+        "display": "cukr",
+        "sourceFragments": [
+         "cukr"
+        ]
+       },
+       {
+        "display": "pižmo",
+        "sourceFragments": [
+         "pižmo"
+        ]
+       }
+      ],
+      "qualification": "Literal primary-product sensoryfragments, not continuousquote; Czech caseinflections faithfully normalized. No medical, mood/sleep/stress, pregnancy/pet safety, smokefree/burn guarantee, magic or numericstrength claims."
+     },
+     "pyramid": {
+      "head": [
+       "pomeranč",
+       "kokos",
+       "ovoce",
+       "oříšek"
+      ],
+      "heart": [
+       "lískový oříšek",
+       "vlašský ořech",
+       "bílý zázvor",
+       "hřebíček"
+      ],
+      "base": [
+       "káva",
+       "vanilka",
+       "cukr",
+       "pižmo"
+      ]
+     },
+     "pyramidEvidence": {
+      "url": "https://www.bylinkokraska.cz/sojova-vonna-svicka-louskacek",
+      "sourceText": "Hlava: pomeranč, kokos, ovoce, oříšekSrdce: lískový oříšek, vlašský ořech, bílý zázvor, hřebíčekZáklad: káva, vanilka, cukr, pižmo Objem:",
+      "scope": "Literal declared product Hlava/Srdce/Základ, not inferred chemicalanalysis"
+     }
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "No medicinal/skin/allergy/safety/duration guarantees, numerical note strength, invented budget or cart integration."
+    ],
+    "usagePurpose": "scented-candle",
+    "scent": "Lískový oříšek, káva a vanilka",
+    "selectionTraits": {
+     "fragranceDirection": "gourmand",
+     "fragranceProfile": "nuts"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.bylinkokraska.cz/sojova-vonna-svicka-louskacek",
+     "sourceText": "Vonné tóny: pomeranč, kokos, ovoce, oříšek, lískový oříšek, vlašský ořech, bílý zázvor, hřebíček, káva, vanilka, cukr, pižmo\nDoslovné zdrojové fragmenty:\npomeranč\nkokos\novoce\noříšek\nlískový oříšek\nvlašský ořech\nbílý zázvor\nhřebíček\nkáva\nvanilka\ncukr\npižmo\nHlava: pomeranč, kokos, ovoce, oříšek; Srdce: lískový oříšek, vlašský ořech, bílý zázvor, hřebíček; Základ: káva, vanilka, cukr, pižmo",
+     "navigationLabel": "Lískový oříšek, káva a vanilka",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    }
+   }
+  },
+  {
+   "id": "pumpkin",
+   "name": "Dýňové koření",
+   "url": "https://www.bylinkokraska.cz/sojova-vonna-svicka-dynove-koreni",
+   "priceAmount": 249.0,
+   "price": "249 Kč",
+   "currency": "CZK",
+   "volume": "120 ml",
+   "category": "fragrance",
+   "kind": "Vonná svíčka",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Muškátový oříšek, zázvor a karamel.",
+   "reason": "Muškátový oříšek, zázvor a karamel.",
+   "photo": "/assets/s5/bylinkokraska/pumpkin.webp",
+   "source": {
+    "series": "s5",
+    "url": "https://www.bylinkokraska.cz/sojova-vonna-svicka-dynove-koreni",
+    "verifiedAt": "2026-11-16T11:24:23.735811+00:00",
+    "sourceSha256": "6f9699a48b2bf464d1c018f156dad7f56472cb7fef65e3f30b0e11eb0ffcb633",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "Official visible primary availability, not fabricated schema Offer",
+     "currency": "CZK",
+     "sku": "HS12DKO",
+     "quantity": "3 ks",
+     "publisherAvailability": "Dostupnost Skladem 3 ks",
+     "variantSelectionRequired": false
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 249.0,
+     "currency": "CZK",
+     "vatSource": "https://www.bylinkokraska.cz/sojova-vonna-svicka-dynove-koreni",
+     "vatEvidence": "Official visible finalretail price and explicit Nejsme plátci DPH; no addedtax or inventedVATrate."
+    },
+    "packEvidence": {
+     "pack": "120 ml",
+     "scope": "Explicit published product pack, not shipping weight."
+    },
+    "variantSelectionRequired": false,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://www.bylinkokraska.cz/fotky10620/fotos/_vyr_268_dynove-koreni-ctverec.webp",
+    "photoEvidence": {
+     "id": "pumpkin",
+     "file": "pumpkin.webp",
+     "url": "https://www.bylinkokraska.cz/fotky10620/fotos/_vyr_268_dynove-koreni-ctverec.webp",
+     "sha256": "430aef27077098309e9bfe072167d62725f6bc22e1a98f1f49767c79a055cb99",
+     "bytes": 202336,
+     "originalBytes": true,
+     "verifiedAt": "2026-11-16T11:28:04.078622+00:00",
+     "width": 1000,
+     "height": 1000
+    },
+    "fragrance": {
+     "notes": [
+      "muškátový oříšek",
+      "pomeranč",
+      "citron",
+      "ovoce",
+      "zázvor",
+      "hřebíček",
+      "karamel",
+      "tonka",
+      "vanilka"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Vonná svíčka",
+     "notesEvidence": {
+      "url": "https://www.bylinkokraska.cz/sojova-vonna-svicka-dynove-koreni",
+      "sourceText": "Vonné tóny: muškátový oříšek, pomeranč, citron, ovoce, zázvor, hřebíček, karamel, tonka, vanilka\nDoslovné zdrojové fragmenty:\nmuškátový oříšek\npomeranč\ncitron\novoce\nzázvor\nhřebíček\nkaramel\ntonka\nvanilka\nHlava: muškátový oříšek, pomeranč, citron, ovoce; Srdce: zázvor, hřebíček; Základ: karamel, tonka, vanilka",
+      "originalSourceText": "muškátový oříšek\npomeranč\ncitron\novoce\nzázvor\nhřebíček\nkaramel\ntonka\nvanilka",
+      "sourceLanguage": "cs",
+      "scope": "Published product sensory descriptors only, not INCI or inferred ingredient percentages.",
+      "noteFormMapping": [
+       {
+        "display": "muškátový oříšek",
+        "sourceFragments": [
+         "muškátový oříšek"
+        ]
+       },
+       {
+        "display": "pomeranč",
+        "sourceFragments": [
+         "pomeranč"
+        ]
+       },
+       {
+        "display": "citron",
+        "sourceFragments": [
+         "citron"
+        ]
+       },
+       {
+        "display": "ovoce",
+        "sourceFragments": [
+         "ovoce"
+        ]
+       },
+       {
+        "display": "zázvor",
+        "sourceFragments": [
+         "zázvor"
+        ]
+       },
+       {
+        "display": "hřebíček",
+        "sourceFragments": [
+         "hřebíček"
+        ]
+       },
+       {
+        "display": "karamel",
+        "sourceFragments": [
+         "karamel"
+        ]
+       },
+       {
+        "display": "tonka",
+        "sourceFragments": [
+         "tonka"
+        ]
+       },
+       {
+        "display": "vanilka",
+        "sourceFragments": [
+         "vanilka"
+        ]
+       }
+      ],
+      "qualification": "Literal primary-product sensoryfragments, not continuousquote; Czech caseinflections faithfully normalized. No medical, mood/sleep/stress, pregnancy/pet safety, smokefree/burn guarantee, magic or numericstrength claims."
+     },
+     "pyramid": {
+      "head": [
+       "muškátový oříšek",
+       "pomeranč",
+       "citron",
+       "ovoce"
+      ],
+      "heart": [
+       "zázvor",
+       "hřebíček"
+      ],
+      "base": [
+       "karamel",
+       "tonka",
+       "vanilka"
+      ]
+     },
+     "pyramidEvidence": {
+      "url": "https://www.bylinkokraska.cz/sojova-vonna-svicka-dynove-koreni",
+      "sourceText": "Hlava: muškátový oříšek, pomeranč, citron, ovoceSrdce: zázvor, hřebíčekZáklad: karamel, tonka, vanilkaObjem:",
+      "scope": "Literal declared product Hlava/Srdce/Základ, not inferred chemicalanalysis"
+     }
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "No medicinal/skin/allergy/safety/duration guarantees, numerical note strength, invented budget or cart integration."
+    ],
+    "usagePurpose": "scented-candle",
+    "scent": "Muškátový oříšek, zázvor a karamel",
+    "selectionTraits": {
+     "fragranceDirection": "gourmand",
+     "fragranceProfile": "pumpkin"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.bylinkokraska.cz/sojova-vonna-svicka-dynove-koreni",
+     "sourceText": "Vonné tóny: muškátový oříšek, pomeranč, citron, ovoce, zázvor, hřebíček, karamel, tonka, vanilka\nDoslovné zdrojové fragmenty:\nmuškátový oříšek\npomeranč\ncitron\novoce\nzázvor\nhřebíček\nkaramel\ntonka\nvanilka\nHlava: muškátový oříšek, pomeranč, citron, ovoce; Srdce: zázvor, hřebíček; Základ: karamel, tonka, vanilka",
+     "navigationLabel": "Muškátový oříšek, zázvor a karamel",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    }
+   }
+  },
+  {
+   "id": "peony",
+   "name": "Pivoňka – Botanical",
+   "url": "https://www.bylinkokraska.cz/pivonka-botanical-sojova-vonna-svicka-s-kvety",
+   "priceAmount": 499.0,
+   "price": "499 Kč",
+   "currency": "CZK",
+   "volume": "cca 70 g",
+   "category": "fragrance",
+   "kind": "Vonná svíčka",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Růže Taif, pivoňka a pralinky.",
+   "reason": "Růže Taif, pivoňka a pralinky.",
+   "photo": "/assets/s5/bylinkokraska/peony.webp",
+   "source": {
+    "series": "s5",
+    "url": "https://www.bylinkokraska.cz/pivonka-botanical-sojova-vonna-svicka-s-kvety",
+    "verifiedAt": "2026-11-16T11:24:23.737109+00:00",
+    "sourceSha256": "c2ef1834bf7c64c0eadd97f313437b4257e53debd29017ffa290742078ccccf2",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "Official visible primary availability, not fabricated schema Offer",
+     "currency": "CZK",
+     "sku": "BO60PIV",
+     "quantity": ">5 ks",
+     "publisherAvailability": "Dostupnost Skladem > 5 ks",
+     "variantSelectionRequired": false
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 499.0,
+     "currency": "CZK",
+     "vatSource": "https://www.bylinkokraska.cz/pivonka-botanical-sojova-vonna-svicka-s-kvety",
+     "vatEvidence": "Official visible finalretail price and explicit Nejsme plátci DPH; no addedtax or inventedVATrate."
+    },
+    "packEvidence": {
+     "pack": "cca 70 g",
+     "scope": "Explicit published product pack, not shipping weight."
+    },
+    "variantSelectionRequired": false,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://www.bylinkokraska.cz/fotky10620/fotos/_vyr_247_pivonka-2.webp",
+    "photoEvidence": {
+     "id": "peony",
+     "file": "peony.webp",
+     "url": "https://www.bylinkokraska.cz/fotky10620/fotos/_vyr_247_pivonka-2.webp",
+     "sha256": "09b6890a419998469c0ba787b3d369e8e4731db651e1998115df339974439c3a",
+     "bytes": 254292,
+     "originalBytes": true,
+     "verifiedAt": "2026-11-16T11:28:05.012592+00:00",
+     "width": 1000,
+     "height": 1000
+    },
+    "fragrance": {
+     "notes": [
+      "růže Taif",
+      "pivoňka",
+      "hřebíček",
+      "jantar",
+      "ořechy",
+      "mléko",
+      "vanilka",
+      "pralinky",
+      "agarové dřevo"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Vonná svíčka",
+     "notesEvidence": {
+      "url": "https://www.bylinkokraska.cz/pivonka-botanical-sojova-vonna-svicka-s-kvety",
+      "sourceText": "Vonné tóny: růže Taif, pivoňka, hřebíček, jantar, ořechy, mléko, vanilka, pralinky, agarové dřevo\nDoslovné zdrojové fragmenty:\nrůže Taif\npivoňka\nhřebíček\njantar\nořechy\nmléko\nvanilka\npralinky\nagarové dřevo\nHlava: růže Taif, pivoňka; Srdce: hřebíček, jantar, ořechy, mléko; Základ: vanilka, pralinky, agarové dřevo",
+      "originalSourceText": "růže Taif\npivoňka\nhřebíček\njantar\nořechy\nmléko\nvanilka\npralinky\nagarové dřevo",
+      "sourceLanguage": "cs",
+      "scope": "Published product sensory descriptors only, not INCI or inferred ingredient percentages.",
+      "noteFormMapping": [
+       {
+        "display": "růže Taif",
+        "sourceFragments": [
+         "růže Taif"
+        ]
+       },
+       {
+        "display": "pivoňka",
+        "sourceFragments": [
+         "pivoňka"
+        ]
+       },
+       {
+        "display": "hřebíček",
+        "sourceFragments": [
+         "hřebíček"
+        ]
+       },
+       {
+        "display": "jantar",
+        "sourceFragments": [
+         "jantar"
+        ]
+       },
+       {
+        "display": "ořechy",
+        "sourceFragments": [
+         "ořechy"
+        ]
+       },
+       {
+        "display": "mléko",
+        "sourceFragments": [
+         "mléko"
+        ]
+       },
+       {
+        "display": "vanilka",
+        "sourceFragments": [
+         "vanilka"
+        ]
+       },
+       {
+        "display": "pralinky",
+        "sourceFragments": [
+         "pralinky"
+        ]
+       },
+       {
+        "display": "agarové dřevo",
+        "sourceFragments": [
+         "agarové dřevo"
+        ]
+       }
+      ],
+      "qualification": "Literal primary-product sensoryfragments, not continuousquote; Czech caseinflections faithfully normalized. No medical, mood/sleep/stress, pregnancy/pet safety, smokefree/burn guarantee, magic or numericstrength claims."
+     },
+     "pyramid": {
+      "head": [
+       "růže Taif",
+       "pivoňka"
+      ],
+      "heart": [
+       "hřebíček",
+       "jantar",
+       "ořechy",
+       "mléko"
+      ],
+      "base": [
+       "vanilka",
+       "pralinky",
+       "agarové dřevo"
+      ]
+     },
+     "pyramidEvidence": {
+      "url": "https://www.bylinkokraska.cz/pivonka-botanical-sojova-vonna-svicka-s-kvety",
+      "sourceText": "Hlava: růže Taif, pivoňkaSrdce: hřebíček, jantar, ořechy, mlékoZáklad: vanilka, pralinky, agarové dřevo Parametry svíčky:",
+      "scope": "Literal declared product Hlava/Srdce/Základ, not inferred chemicalanalysis"
+     }
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "No medicinal/skin/allergy/safety/duration guarantees, numerical note strength, invented budget or cart integration."
+    ],
+    "usagePurpose": "scented-candle",
+    "scent": "Růže Taif, pivoňka a pralinky",
+    "selectionTraits": {
+     "fragranceDirection": "bright",
+     "fragranceProfile": "peony"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.bylinkokraska.cz/pivonka-botanical-sojova-vonna-svicka-s-kvety",
+     "sourceText": "Vonné tóny: růže Taif, pivoňka, hřebíček, jantar, ořechy, mléko, vanilka, pralinky, agarové dřevo\nDoslovné zdrojové fragmenty:\nrůže Taif\npivoňka\nhřebíček\njantar\nořechy\nmléko\nvanilka\npralinky\nagarové dřevo\nHlava: růže Taif, pivoňka; Srdce: hřebíček, jantar, ořechy, mléko; Základ: vanilka, pralinky, agarové dřevo",
+     "navigationLabel": "Růže Taif, pivoňka a pralinky",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    }
+   }
+  }
+ ],
+ "revenue": {
+  "year": null,
+  "value": "UNKNOWN",
+  "source": null,
+  "qualification": "No turnover figureverified; ARES active status doesnot prove revenue.",
+  "latestExact2025": "UNKNOWN"
+ },
+ "size": "REVENUE_UNKNOWN_COMMERCIAL_REVIEW",
+ "interest": "NOT_ESTABLISHED",
+ "notes": [
+  "Six distinct source fragranceformulas; no sameformula container/size inflation. Fullretail candles, not samples.",
+  "Interiorcandleuse only, no source medical/mentalhealth/sleep/pet/pregnancy/IFRA/nontoxic/smokefree/burn/magic guarantees copied.",
+  "Exactsource snapshots, notliveinventory; no budgetquestion; no fake compatiblepaidaccessorycontract. MAIN owns sharedruntime/backend/integration/livePreviewQA.",
+  "Official nonVATpayer; final249retail/120ml, PeonyBotanical499/cca70gwax. Publisherpyramid/prose CitronovaTravaGinger placementconflict, servesharedflattones only. Other5literalpyramids available, no healthguarantees."
+ ]
+};

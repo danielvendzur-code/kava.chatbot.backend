@@ -1,0 +1,46 @@
+{
+  "key": "fragranceDirection",
+  "question": "Jaká vůně je vám blízká?",
+  "options": [
+    {
+      "value": "g-fresh",
+      "label": "Květinové nebo lesní tóny",
+      "key": "fragranceProfile",
+      "question": "Která kombinace vás láká?",
+      "options": [
+        {
+          "value": "jasmine",
+          "label": "Jasmín a růže",
+          "productId": "jasmine",
+          "sourceUrl": "https://www.mojehygge.cz/sojove-svicky/sojova-svicka-120ml-180ml-jasmin-a-cajova-ruze/"
+        },
+        {
+          "value": "forest",
+          "label": "Jehličí, dřevo a smůla",
+          "productId": "forest",
+          "sourceUrl": "https://www.mojehygge.cz/sojove-svicky/sojova-svicka-180ml-les/"
+        }
+      ]
+    },
+    {
+      "value": "g-warm",
+      "label": "Sladké koření",
+      "key": "fragranceProfile",
+      "question": "Která kombinace vás láká?",
+      "options": [
+        {
+          "value": "vanilla",
+          "label": "Hřejivá skořice a vanilka",
+          "productId": "vanilla",
+          "sourceUrl": "https://www.mojehygge.cz/sojove-svicky/sojova-svicka-180ml-vanilka-a-skorice/"
+        },
+        {
+          "value": "gingerbread",
+          "label": "Skořice, červený pomeranč a badyán",
+          "productId": "gingerbread",
+          "sourceUrl": "https://www.mojehygge.cz/sojove-svicky/sojova-svicka-180ml-pernik/"
+        }
+      ]
+    }
+  ]
+}

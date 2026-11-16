@@ -1,0 +1,224 @@
+{
+  "at": "2026-11-16T11:58:10.709667+00:00",
+  "companies": [
+    {
+      "slug": "vontree",
+      "brand": "VONTREE CANDLE",
+      "domain": "vontreecandle.cz",
+      "operator": {
+        "name": "VONTREE CANDLE s.r.o.",
+        "ico": "21298645",
+        "country": "CZ",
+        "activeNoEnd": true,
+        "officialRegistry": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/21298645"
+      },
+      "primaryFormulas": 6,
+      "uniqueLocalResultViews": 18,
+      "config": "n447/s5/perfume-fragments/vontree.config.json",
+      "integrationReview": "tools/s5/perfume-batch3-20261116/candidate-packages/vontree/integration-review.json",
+      "companyCss": {
+        "source": "tools/s5/perfume-batch3-20261116/candidate-packages/vontree/ui-review.css",
+        "destination": "n447/s5/brands/vontree.css",
+        "registryField": {
+          "companyCss": "/n447/s5/brands/vontree.css"
+        }
+      },
+      "catalogueImport": "/catalogues/vontree.js",
+      "backendBrand": "vontree",
+      "requiredBackendInstruction": "Only interior scentedcandles, not skinperfume/laundry. Exact literal sourcednotes/fullretailpacks/selectedvariantretailprices/stocktimestamps. No health/mood/sleep/therapy/pregnancy/pet/fire/IFRA/nontoxic/smokefree/longevity guarantees, magic/attraction promises or numericnoteintensity. Vontreeengraving unimplemented, optional surcharge not included in shown candleprice. Sourcevolume conflicts notsilentlyresolved.",
+      "revenue": {
+        "year": 2024,
+        "publishedBand": "1–3 mil. Kč",
+        "currency": "CZK",
+        "source": "https://www.chytryrejstrik.cz/ico-21298645/vontree-candle-s-r-o",
+        "sourceType": "Secondary historical band only",
+        "latestExact2025": "UNKNOWN"
+      },
+      "commercialReview": "PREFERRED_HISTORICAL_BAND_LATEST_EXACT_UNKNOWN",
+      "files": [
+        {
+          "path": "catalogues/vontree.js",
+          "sha256": "dc3a4903b33f7a13182670ccfff636c0b24193e8f41d2d5eb9a5101cb8da0ba4"
+        },
+        {
+          "path": "n447/s5/sources/vontree/verified-products.json",
+          "sha256": "40e4bba807cd51915c2f5e2c0a30f08604b405192ce13a04e40cf6561ac7c747"
+        },
+        {
+          "path": "n447/s5/sources/vontree/selection-model.json",
+          "sha256": "7a9e64153fe30b4b7a1844f0b340309ae6a4fc71791a874b71040e6a0863602c"
+        },
+        {
+          "path": "n447/s5/perfume-fragments/vontree.config.json",
+          "sha256": "8cf4c7343394dc706145b8dd2feb0731fb9c4462332a1a3d1d7eb27a3b80eb2c"
+        },
+        {
+          "path": "n447/s5/perfume-fragments/vontree.selection-model.json",
+          "sha256": "7a9e64153fe30b4b7a1844f0b340309ae6a4fc71791a874b71040e6a0863602c"
+        },
+        {
+          "path": "assets/s5/vontree/avatar.svg",
+          "sha256": "c6a1f9396c0b1f1d61e25ba6345b111ed61126b9eba1b2cf3e4cc584b04d6a95"
+        },
+        {
+          "path": "assets/s5/vontree/forest.jpg",
+          "sha256": "fa09b0b7547ccd3126746b6bbda72266fd815fa2e89b4bca834eb415b0bd2b66"
+        },
+        {
+          "path": "assets/s5/vontree/gingerbread.jpg",
+          "sha256": "75800d4b6861a8645b8f4124f09bdf572648ff5c60126235ee3c02d8ca14300b"
+        },
+        {
+          "path": "assets/s5/vontree/lavender.jpg",
+          "sha256": "40514a543b2bf9c213bb635c0d293fd44c84a48bf335bf7d40d276b1af1ef4e2"
+        },
+        {
+          "path": "assets/s5/vontree/lemon.jpg",
+          "sha256": "45bd0f912ee65abc709af9447905d48f03807bc53e84bb6b87c9112c084bf22b"
+        },
+        {
+          "path": "assets/s5/vontree/logo.svg",
+          "sha256": "60d03532286933af9cd4427bac16bfc60beb9030af26bef52b4be38a43a10d57"
+        },
+        {
+          "path": "assets/s5/vontree/vanilla.jpg",
+          "sha256": "97e2652719f12157e524cf2d029d949d85d5d3f5ecea9d6f81bfd6cc8137a3d0"
+        },
+        {
+          "path": "assets/s5/vontree/wood.jpg",
+          "sha256": "8a3ba2fff838cb364378a9a66bc793dd47ef13cfda327eba6f9b05fbadcac9eb"
+        }
+      ],
+      "status": "SOURCE_LOCAL_COMPLETE_PENDING_MAIN_INTEGRATION",
+      "demoLiveUrl": null,
+      "outreachStatus": "NOT_READY"
+    },
+    {
+      "slug": "bylinkokraska",
+      "brand": "BylinkoKráska",
+      "domain": "bylinkokraska.cz",
+      "operator": {
+        "name": "Bc. Monika Mužíková",
+        "ico": "09561633",
+        "country": "CZ",
+        "activeNoEnd": true,
+        "officialRegistry": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/09561633"
+      },
+      "primaryFormulas": 6,
+      "uniqueLocalResultViews": 18,
+      "config": "n447/s5/perfume-fragments/bylinkokraska.config.json",
+      "integrationReview": "tools/s5/perfume-batch3-20261116/candidate-packages/bylinkokraska/integration-review.json",
+      "companyCss": {
+        "source": "tools/s5/perfume-batch3-20261116/candidate-packages/bylinkokraska/ui-review.css",
+        "destination": "n447/s5/brands/bylinkokraska.css",
+        "registryField": {
+          "companyCss": "/n447/s5/brands/bylinkokraska.css"
+        }
+      },
+      "catalogueImport": "/catalogues/bylinkokraska.js",
+      "backendBrand": "bylinkokraska",
+      "requiredBackendInstruction": "Only interior scentedcandles, not skinperfume/laundry. Exact literal sourcednotes/fullretailpacks/selectedvariantretailprices/stocktimestamps. No health/mood/sleep/therapy/pregnancy/pet/fire/IFRA/nontoxic/smokefree/longevity guarantees, magic/attraction promises or numericnoteintensity. Vontreeengraving unimplemented, optional surcharge not included in shown candleprice. Sourcevolume conflicts notsilentlyresolved.",
+      "revenue": {
+        "year": null,
+        "value": "UNKNOWN",
+        "source": null,
+        "qualification": "No turnover figureverified; ARES active status doesnot prove revenue.",
+        "latestExact2025": "UNKNOWN"
+      },
+      "commercialReview": "REVENUE_UNKNOWN_COMMERCIAL_REVIEW",
+      "files": [
+        {
+          "path": "catalogues/bylinkokraska.js",
+          "sha256": "66d9c4c5fb55e20c0fcb4ac595d07c6a2e903828b55b024ed6acc31ce00b7220"
+        },
+        {
+          "path": "n447/s5/sources/bylinkokraska/verified-products.json",
+          "sha256": "b8477b96acfa98c917c35f96b4eee34d8e9bcb0d35490955914b08ecdc5b1442"
+        },
+        {
+          "path": "n447/s5/sources/bylinkokraska/selection-model.json",
+          "sha256": "903b0d2c9aa72db3d0de66d4e288410729070b23907ea361665a775b1948ddaf"
+        },
+        {
+          "path": "n447/s5/perfume-fragments/bylinkokraska.config.json",
+          "sha256": "b8095e0ac13b0f0f8b4f4a9256918f30c5ea348df8e248ad1a8cf56ce4e47e72"
+        },
+        {
+          "path": "n447/s5/perfume-fragments/bylinkokraska.selection-model.json",
+          "sha256": "903b0d2c9aa72db3d0de66d4e288410729070b23907ea361665a775b1948ddaf"
+        },
+        {
+          "path": "assets/s5/bylinkokraska/apple.webp",
+          "sha256": "5b9c64597098313d5aa3813065cdda0beec29871b1ec5674dd818a5a706e3322"
+        },
+        {
+          "path": "assets/s5/bylinkokraska/avatar.svg",
+          "sha256": "2bf9f0630d634ae4d47a47d74ecd62fecc1538e403884370085bbf10a598cc20"
+        },
+        {
+          "path": "assets/s5/bylinkokraska/citrus.webp",
+          "sha256": "01f15085200521ffae10f6a827b1858f370f95af120356e333cd5f24d2f6ba3f"
+        },
+        {
+          "path": "assets/s5/bylinkokraska/logo.jpg",
+          "sha256": "f7a00914ed615172e95a8f47566572250eaf8c84c3f6d8fb989e3a8128fd7a68"
+        },
+        {
+          "path": "assets/s5/bylinkokraska/mulled.webp",
+          "sha256": "dfdd0c781e723c4b1bd2b924a9983c1d1785997a0d04ba97b5a78996a36b03d4"
+        },
+        {
+          "path": "assets/s5/bylinkokraska/nuts.webp",
+          "sha256": "d6e14fe7b6a6fd2c93ea737a258cfe73be9799604b934f779205470490a2292d"
+        },
+        {
+          "path": "assets/s5/bylinkokraska/peony.webp",
+          "sha256": "09b6890a419998469c0ba787b3d369e8e4731db651e1998115df339974439c3a"
+        },
+        {
+          "path": "assets/s5/bylinkokraska/pumpkin.webp",
+          "sha256": "430aef27077098309e9bfe072167d62725f6bc22e1a98f1f49767c79a055cb99"
+        }
+      ],
+      "status": "SOURCE_LOCAL_COMPLETE_PENDING_MAIN_INTEGRATION",
+      "demoLiveUrl": null,
+      "outreachStatus": "NOT_READY"
+    }
+  ],
+  "copyAllowlist": [
+    "catalogues/vontree.js",
+    "n447/s5/sources/vontree/verified-products.json",
+    "n447/s5/sources/vontree/selection-model.json",
+    "n447/s5/perfume-fragments/vontree.config.json",
+    "n447/s5/perfume-fragments/vontree.selection-model.json",
+    "assets/s5/vontree/avatar.svg",
+    "assets/s5/vontree/forest.jpg",
+    "assets/s5/vontree/gingerbread.jpg",
+    "assets/s5/vontree/lavender.jpg",
+    "assets/s5/vontree/lemon.jpg",
+    "assets/s5/vontree/logo.svg",
+    "assets/s5/vontree/vanilla.jpg",
+    "assets/s5/vontree/wood.jpg",
+    "catalogues/bylinkokraska.js",
+    "n447/s5/sources/bylinkokraska/verified-products.json",
+    "n447/s5/sources/bylinkokraska/selection-model.json",
+    "n447/s5/perfume-fragments/bylinkokraska.config.json",
+    "n447/s5/perfume-fragments/bylinkokraska.selection-model.json",
+    "assets/s5/bylinkokraska/apple.webp",
+    "assets/s5/bylinkokraska/avatar.svg",
+    "assets/s5/bylinkokraska/citrus.webp",
+    "assets/s5/bylinkokraska/logo.jpg",
+    "assets/s5/bylinkokraska/mulled.webp",
+    "assets/s5/bylinkokraska/nuts.webp",
+    "assets/s5/bylinkokraska/peony.webp",
+    "assets/s5/bylinkokraska/pumpkin.webp"
+  ],
+  "uniquePrimaryFormulas": 12,
+  "uniqueLocalResultViewportViews": 36,
+  "additionalEntryChecks": 6,
+  "paidCalls": 0,
+  "sharedRuntimeModified": false,
+  "integrationOwner": "MAIN",
+  "sourceClaim": "5beb42f9105dc29b3d7fca192aa420e0db939786",
+  "liveReady": false
+}

@@ -1,0 +1,52 @@
+{
+  "key": "fragranceDirection",
+  "question": "Jaká vůně je vám blízká?",
+  "options": [
+    {
+      "value": "g-fruit-flower",
+      "label": "Květiny nebo ovocný akcent",
+      "key": "fragranceProfile",
+      "question": "Která kombinace vás láká?",
+      "options": [
+        {
+          "value": "cake",
+          "label": "Černý rybíz, badyán a ambra",
+          "productId": "cake",
+          "sourceUrl": "https://www.svickuj.cz/sojova-svicka-babiccin-kolac-180ml/"
+        },
+        {
+          "value": "fortune",
+          "label": "Osmanthus, ylang ylang a vanilka",
+          "productId": "fortune",
+          "sourceUrl": "https://www.svickuj.cz/sojova-svicka-stesti-120ml/"
+        },
+        {
+          "value": "joy",
+          "label": "Čerstvé růže a pomeranč",
+          "productId": "joy",
+          "sourceUrl": "https://www.svickuj.cz/sojova-svicka-radost-500ml/"
+        }
+      ]
+    },
+    {
+      "value": "g-warm",
+      "label": "Sladké kořeněné vůně",
+      "key": "fragranceProfile",
+      "question": "Která kombinace vás láká?",
+      "options": [
+        {
+          "value": "hygge",
+          "label": "Skořice, kardamom a tonka",
+          "productId": "hygge",
+          "sourceUrl": "https://www.svickuj.cz/sojova-svicka-hygge-180ml/"
+        },
+        {
+          "value": "vanilla",
+          "label": "Sladká vanilka a hřebíček",
+          "productId": "vanilla",
+          "sourceUrl": "https://www.svickuj.cz/sojova-svicka-vanilka-a-hrebicek-180ml/"
+        }
+      ]
+    }
+  ]
+}

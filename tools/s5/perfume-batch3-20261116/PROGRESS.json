@@ -1,22 +1,29 @@
 {
-  "at": "2026-11-16T11:21:39.413749+00:00",
+  "at": "2026-11-16T11:58:10.709667+00:00",
   "branch": "codex/s5-perfume-batch3-20261116",
   "base": "6f653c1807544b43089399563fc799d34dd90474",
   "mainRemoteHead": "de34f7759118e20d3a476f0fe1537ddb02fd161f",
   "claimCommit": "07e7b4fdc2d57bfd6151fb0d8eeaf8587e313471",
   "sourcePackagesBuilt": [
+    "bylinkokraska",
     "essencebliss",
-    "svetlonosky",
+    "mojehygge",
+    "mojesoja",
     "nabetondesign",
-    "sojka"
+    "sojka",
+    "svetlonosky",
+    "svickuj",
+    "vontree"
   ],
-  "primaryFormulas": 23,
-  "localQa": "FIRST_FOUR_COMPLETE",
+  "primaryFormulas": 49,
+  "localQa": "SIX_COMPLETE_THREE_IN_QA",
   "completedLocal": [
     "essencebliss",
     "svetlonosky",
     "nabetondesign",
-    "sojka"
+    "sojka",
+    "vontree",
+    "bylinkokraska"
   ],
   "livePreview": "NOT_INTEGRATED_NOT_TESTED",
   "integrationOwner": "MAIN",
@@ -25,9 +32,11 @@
   "paidCalls": 0,
   "emailAppOperations": 0,
   "newUnreservedReview": [
+    "lumela",
+    "maja",
+    "tvojesvicka",
     "lunarium",
-    "vontree",
-    "bylinkokraska"
+    "kimmy"
   ],
   "heldUnreserved": [
     {
@@ -37,8 +46,12 @@
     {
       "slug": "ncn",
       "reason": "Insufficient scentdescriptors for current wardrobe wax and customshape candles; no package/claim."
+    },
+    {
+      "slug": "sviicka",
+      "reason": "Official terms conflict: Matched Betting s.r.o.07083891 vs Jan Šrubař01830805; operator not resolved. Not reserved; raw unnecessary personal details excluded from committed research."
     }
   ],
-  "uniqueFinalLocalResultViews": 69,
-  "additionalEntryChecks": 12
+  "uniqueFinalLocalResultViews": 105,
+  "additionalEntryChecks": 18
 }

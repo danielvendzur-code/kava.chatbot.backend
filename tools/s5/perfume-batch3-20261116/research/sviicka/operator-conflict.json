@@ -1,0 +1,17 @@
+{
+  "at": "2026-11-16T11:58:46.804957+00:00",
+  "status": "HOLD_OPERATOR_AMBIGUOUS_UNRESERVED",
+  "url": "https://e-shop.sviicka.cz/obchodni-podminky/",
+  "sourceSha256": "5646762addc88e40a5e088346ee5ce0aa664ccd6a0b3267a000454f8c56aa5c6",
+  "businessIdentities": [
+    {
+      "name": "Matched Betting s.r.o.",
+      "ico": "07083891"
+    },
+    {
+      "name": "Jan Šrubař",
+      "ico": "01830805"
+    }
+  ],
+  "reason": "Official terms identify two different seller/operator entities; unresolved. Raw legal captures with unrelated personal details remain local and are excluded from commit."
+}

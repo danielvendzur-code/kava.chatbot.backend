@@ -1,0 +1,66 @@
+{
+  "key": "fragranceDirection",
+  "question": "Jaká vůně je vám blízká?",
+  "options": [
+    {
+      "value": "fresh",
+      "label": "Bylinné a citrusové vůně",
+      "key": "fragranceProfile",
+      "question": "Která kombinace vás láká?",
+      "options": [
+        {
+          "value": "lemon",
+          "label": "Citronová tráva, bergamot a heřmánek",
+          "productId": "lemon",
+          "sourceUrl": "https://www.vontreecandle.cz/citronova-trava/"
+        },
+        {
+          "value": "lavender",
+          "label": "Bylinkově květinová levandule",
+          "productId": "lavender",
+          "sourceUrl": "https://www.vontreecandle.cz/levandule-120-ml/"
+        }
+      ]
+    },
+    {
+      "value": "warm",
+      "label": "Vanilka a hřejivé koření",
+      "key": "fragranceProfile",
+      "question": "Která kombinace vás láká?",
+      "options": [
+        {
+          "value": "gingerbread",
+          "label": "Perníkové koření, vanilka a karamel",
+          "productId": "gingerbread",
+          "sourceUrl": "https://www.vontreecandle.cz/pernicek/"
+        },
+        {
+          "value": "vanilla",
+          "label": "Vanilka, santalové dřevo a citrusy",
+          "productId": "vanilla",
+          "sourceUrl": "https://www.vontreecandle.cz/sojova-svicka-vanilka-sandalwood-citrus-500-ml/"
+        }
+      ]
+    },
+    {
+      "value": "woods",
+      "label": "Les nebo dřevitý základ",
+      "key": "fragranceProfile",
+      "question": "Která kombinace vás láká?",
+      "options": [
+        {
+          "value": "wood",
+          "label": "Santal, cedrové dřevo a ambra",
+          "productId": "wood",
+          "sourceUrl": "https://www.vontreecandle.cz/ambra-labdanum-vonna-sojova-svicka/"
+        },
+        {
+          "value": "forest",
+          "label": "Cedr, jedle a borovice",
+          "productId": "forest",
+          "sourceUrl": "https://www.vontreecandle.cz/lesni-pohadka-180-ml/"
+        }
+      ]
+    }
+  ]
+}

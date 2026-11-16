@@ -5,6 +5,7 @@ B=Path(__file__).resolve().parent;R=B.parents[2]
 def save(p,d):p.parent.mkdir(parents=True,exist_ok=True);p.write_text(json.dumps(d,ensure_ascii=False,indent=2)+'\n')
 def build(spec,products,photos):
  slug=spec['slug'];O=B/'candidate-packages'/slug;A='/assets/s5/'+slug+'/';traits={};choices={};alternatives={};cs=spec['lang']=='cs';q1='Jaká vůně je vám blízká?' if cs else 'Aká vôňa je vám blízka?';q2='Která kombinace vás láká?' if cs else 'Ktorá kombinácia vás láka?';model={'key':'fragranceDirection','question':q1,'options':[]};factsById={p['id']:p for p in products}
+ assert not ({g[0] for g in spec['groups']} & set(factsById)), 'Group IDs must be distinct from product IDs to preserve scene/label mapping'
  for gid,label,scene,items in spec['groups']:
   traits[gid]=[label,'',label,''];choices[gid]=['/assets/s3/scenes-k2/'+scene+'.jpg'];branch={'value':gid,'label':label,'key':'fragranceProfile','question':q2,'options':[]}
   for i,(pid,profile) in enumerate(items):

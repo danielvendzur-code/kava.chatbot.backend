@@ -5,7 +5,7 @@ import json,urllib.request,hashlib,datetime,importlib.util
 B=Path(__file__).resolve().parent
 imp=importlib.util.spec_from_file_location('factory',B/'package-factory.py');factory=importlib.util.module_from_spec(imp);imp.loader.exec_module(factory)
 def photo(slug,pid,url):
- out=B/'candidate-packages'/slug/'assets';out.mkdir(parents=True,exist_ok=True);raw=urllib.request.urlopen(url,timeout=40).read();ext='.svg' if b'<svg' in raw[:400] else '.png' if raw.startswith(b'\x89PNG') else '.jpg';file=pid+ext;(out/file).write_bytes(raw);d={'id':pid,'file':file,'url':url,'sha256':hashlib.sha256(raw).hexdigest(),'bytes':len(raw),'originalBytes':True,'verifiedAt':datetime.datetime.now(datetime.timezone.utc).isoformat()}
+ out=B/'candidate-packages'/slug/'assets';out.mkdir(parents=True,exist_ok=True);raw=urllib.request.urlopen(url,timeout=40).read();ext='.svg' if b'<svg' in raw[:400] else '.png' if raw.startswith(b'\x89PNG') else '.webp' if raw[:4]==b'RIFF' and raw[8:12]==b'WEBP' else '.jpg';file=pid+ext;(out/file).write_bytes(raw);d={'id':pid,'file':file,'url':url,'sha256':hashlib.sha256(raw).hexdigest(),'bytes':len(raw),'originalBytes':True,'verifiedAt':datetime.datetime.now(datetime.timezone.utc).isoformat()}
  if ext!='.svg':
   with Image.open(out/file) as im:d.update(width=im.width,height=im.height)
  return d

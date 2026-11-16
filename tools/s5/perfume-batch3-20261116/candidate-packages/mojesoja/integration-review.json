@@ -1,0 +1,211 @@
+{
+  "runtimeEnabled": false,
+  "owner": "PERFUME_WORKER",
+  "integrationOwner": "MAIN",
+  "registryObject": {
+    "series": "s5",
+    "type": "cosmetics",
+    "segment": "fragrance",
+    "name": "Můj voňavý krámek / MojeSója",
+    "country": "CZ",
+    "logos": {
+      "landing": "/assets/s5/mojesoja/logo.jpg",
+      "header": "/assets/s5/mojesoja/logo.jpg",
+      "avatar": "/assets/s5/mojesoja/avatar.svg"
+    },
+    "brand": {
+      "name": "Můj voňavý krámek / MojeSója",
+      "domain": "mojesoja.cz",
+      "website": "https://www.mojesoja.cz/",
+      "lang": "cs",
+      "fullName": "Můj voňavý krámek / MojeSója",
+      "url": "https://www.mojesoja.cz/",
+      "logo": "/assets/s5/mojesoja/logo.jpg",
+      "mark": "/assets/s5/mojesoja/avatar.svg",
+      "greeting": "Dobrý den. Pomohu vám porovnat vybrané vůně svíček, jejich balení a ceny.",
+      "quickChips": [
+        "Pomeranč a vanilka",
+        "Jehličí a cedr",
+        "Maliny a kokos",
+        "Porovnat dvě vůně"
+      ],
+      "theme": {
+        "brand": "#85623e",
+        "accent": "#d1b481",
+        "soft": "#f7f3ee",
+        "paper": "#fff",
+        "ink": "#302b27",
+        "line": "#e5dbce"
+      }
+    },
+    "traitCopy": {
+      "g-fruit": [
+        "Ovocné kombinace",
+        "",
+        "Ovocné kombinace",
+        ""
+      ],
+      "orange": [
+        "Pomeranč, vanilka a skořice",
+        "",
+        "Pomeranč, vanilka a skořice",
+        ""
+      ],
+      "mango": [
+        "Mango, vanilka, pomeranč a hřebíček",
+        "",
+        "Mango, vanilka, pomeranč a hřebíček",
+        ""
+      ],
+      "raspberry": [
+        "Čerstvé maliny a kokos",
+        "",
+        "Čerstvé maliny a kokos",
+        ""
+      ],
+      "g-green": [
+        "Jehličí nebo zázvor",
+        "",
+        "Jehličí nebo zázvor",
+        ""
+      ],
+      "tree": [
+        "Jehličí, cedr, máta a eukalyptus",
+        "",
+        "Jehličí, cedr, máta a eukalyptus",
+        ""
+      ],
+      "ginger": [
+        "Zázvorová vůně",
+        "",
+        "Zázvorová vůně",
+        ""
+      ]
+    },
+    "stepCopy": {
+      "fragranceDirection": [
+        "Jaká vůně je vám blízká?",
+        "",
+        "Vonné tóny"
+      ],
+      "fragranceProfile": [
+        "Která kombinace vás láká?",
+        "",
+        "Vonné tóny"
+      ]
+    },
+    "compareFocus": true,
+    "upsellFocus": {},
+    "choicePhotos": {
+      "g-fruit": [
+        "/assets/s3/scenes-k2/citrus.jpg"
+      ],
+      "orange": [
+        "/assets/s5/mojesoja/orange.jpg"
+      ],
+      "mango": [
+        "/assets/s5/mojesoja/mango.jpg"
+      ],
+      "raspberry": [
+        "/assets/s5/mojesoja/raspberry.jpg"
+      ],
+      "g-green": [
+        "/assets/s3/scenes-k2/pine.jpg"
+      ],
+      "tree": [
+        "/assets/s5/mojesoja/tree.jpg"
+      ],
+      "ginger": [
+        "/assets/s5/mojesoja/ginger.jpg"
+      ]
+    },
+    "compareProductIds": [
+      "orange",
+      "tree"
+    ],
+    "segmentText": {
+      "entryNote": "Vonné svíčky · přesné balení · porovnání",
+      "titleSuffix": "výběr vůně svíčky",
+      "tab": "Výběr vůně",
+      "advisorName": "Průvodce vůněmi svíček",
+      "entrySmall": "VŮNĚ SVÍČEK",
+      "entryTitle": "Najděte vůni své svíčky",
+      "placeholder": "Zeptejte se na charakter vůně, balení nebo cenu…",
+      "heading": "Pomozte zákazníkovi vybrat vůni svíčky podle jeho vkusu.",
+      "lead": "Podle odpovědí zobrazí konkrétní svíčku s fotografií, vonným profilem, balením, cenou a odkazem. Dvě odlišné vůně lze porovnat.",
+      "includedChat": "Vonné tóny, balení a ceny vybraných svíček.",
+      "includedAdvisor": "Výběr vůně svíčky a porovnání dvou kompozic.",
+      "greeting": "Dobrý den. Pomohu vám porovnat vybrané vůně svíček, jejich balení a ceny.",
+      "teaserTitle": "Najděte vůni své svíčky",
+      "teaserNote": "Svíčky, balení a ceny",
+      "teaserAria": "Otevřít výběr vůně svíčky",
+      "source": "mojesoja-demo"
+    },
+    "fragranceResultExtras": {
+      "version": 1,
+      "enabled": true,
+      "alternatives": {
+        "orange": "mango",
+        "mango": "raspberry",
+        "raspberry": "orange",
+        "tree": "ginger",
+        "ginger": "tree"
+      },
+      "scentProfile": {
+        "version": 1,
+        "mode": "source-notes-no-numeric-strength"
+      }
+    },
+    "fragrancePresentation": {
+      "version": 1,
+      "hideStepEstimate": true
+    }
+  },
+  "catalogueImport": "/catalogues/mojesoja.js",
+  "backendBrand": "mojesoja",
+  "offlineRules": [
+    {
+      "chip": "Pomeranč a vanilka",
+      "match": "pomeranc|skoric",
+      "productIds": [
+        "orange"
+      ]
+    },
+    {
+      "chip": "Jehličí a cedr",
+      "match": "jehlic|cedr",
+      "productIds": [
+        "tree"
+      ]
+    },
+    {
+      "chip": "Maliny a kokos",
+      "match": "malin|kokos",
+      "productIds": [
+        "raspberry"
+      ]
+    }
+  ],
+  "noCoreLogicChangeRequired": true,
+  "commonFilesModified": [],
+  "companyCss": {
+    "source": "tools/s5/perfume-batch3-20261116/candidate-packages/mojesoja/ui-review.css",
+    "destination": "n447/s5/brands/mojesoja.css",
+    "registryField": {
+      "companyCss": "/n447/s5/brands/mojesoja.css"
+    }
+  },
+  "presentationRequirement": "Existinga918profile+preset and explicit newslug body.dataset.fragranceProfile=visual-v1. Owner standalonepolish separate includes.",
+  "price": "447 EUR +10 EUR/month",
+  "commercialReview": "REVENUE_UNKNOWN_COMMERCIAL_REVIEW",
+  "emailStatus": "NOT_READY",
+  "production": "NOT_DEPLOYED",
+  "paidCalls": 0,
+  "scopeReview": {
+    "productPurpose": "scented-candle",
+    "recommendationCoreChangeRequired": false,
+    "backendReviewRequired": true,
+    "requiredBackendInstruction": "Only interior candles, not perfume/laundry/skincare. Never repeat source medical/afrodisiac/sleep/anxiety/stress/pregnancy/pet/nontoxic/fire/burn/99percentlesssoot/halfslowerburn guarantees or promote meltedcandlewax as handcream. Literal sensednotes and exact fullretailpack/variantprice/stocktimestamp only. No budgetguarantee, inventednumericweights, automaticcart, couponintegration, unimplementedpaidaccessory. MojeHygge180ml299 versus120ml249 is explicit and mustnot mix.",
+    "workerTouchedSharedBackend": false
+  }
+}

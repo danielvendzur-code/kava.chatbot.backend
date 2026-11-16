@@ -1,0 +1,66 @@
+{
+  "key": "fragranceDirection",
+  "question": "Jaká vůně je vám blízká?",
+  "options": [
+    {
+      "value": "bright",
+      "label": "Citrusová nebo květinová vůně",
+      "key": "fragranceProfile",
+      "question": "Která kombinace vás láká?",
+      "options": [
+        {
+          "value": "citrus",
+          "label": "Citronová tráva, limetka a zázvor",
+          "productId": "citrus",
+          "sourceUrl": "https://www.bylinkokraska.cz/sojova-vonna-svicka-citronova-trava-a-zazvor"
+        },
+        {
+          "value": "peony",
+          "label": "Růže Taif, pivoňka a pralinky",
+          "productId": "peony",
+          "sourceUrl": "https://www.bylinkokraska.cz/pivonka-botanical-sojova-vonna-svicka-s-kvety"
+        }
+      ]
+    },
+    {
+      "value": "spiced-fruit",
+      "label": "Jablko a hřejivé koření",
+      "key": "fragranceProfile",
+      "question": "Která kombinace vás láká?",
+      "options": [
+        {
+          "value": "apple",
+          "label": "Jablko, skořice a pomeranč",
+          "productId": "apple",
+          "sourceUrl": "https://www.bylinkokraska.cz/sojova-vonna-svicka-jablko-a-skorice"
+        },
+        {
+          "value": "mulled",
+          "label": "Pomerančová kůra, skořice a hnědý cukr",
+          "productId": "mulled",
+          "sourceUrl": "https://www.bylinkokraska.cz/sojova-vonna-svicka-svarak"
+        }
+      ]
+    },
+    {
+      "value": "gourmand",
+      "label": "Oříšky nebo karamelový základ",
+      "key": "fragranceProfile",
+      "question": "Která kombinace vás láká?",
+      "options": [
+        {
+          "value": "nuts",
+          "label": "Lískový oříšek, káva a vanilka",
+          "productId": "nuts",
+          "sourceUrl": "https://www.bylinkokraska.cz/sojova-vonna-svicka-louskacek"
+        },
+        {
+          "value": "pumpkin",
+          "label": "Muškátový oříšek, zázvor a karamel",
+          "productId": "pumpkin",
+          "sourceUrl": "https://www.bylinkokraska.cz/sojova-vonna-svicka-dynove-koreni"
+        }
+      ]
+    }
+  ]
+}

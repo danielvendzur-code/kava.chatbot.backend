@@ -1,7 +1,7 @@
-import asyncio,json,datetime
+import asyncio,json,datetime,os,sys
 from pathlib import Path
 from playwright.async_api import async_playwright
-B=Path(__file__).resolve().parent;O=Path('/workspace/work/perfume-audit/batch3-20261116/entry-local-qa');O.mkdir(exist_ok=True);rows=[];packages=sorted((B/'candidate-packages').glob('*/config.json'))
+B=Path(__file__).resolve().parent;O=Path(os.environ.get('PERFUME_ENTRY_QA_OUTPUT','/workspace/work/perfume-audit/batch3-20261116/entry-local-qa'));O.mkdir(exist_ok=True);rows=[];packages=[p for p in sorted((B/'candidate-packages').glob('*/config.json')) if not sys.argv[1:] or p.parent.name in sys.argv[1:]]
 async def run():
  async with async_playwright() as pw:
   browser=await pw.webkit.launch(executable_path='/workspace/work/perfume-worker/tools/s5/perfume-independent/webkit-user-libs.sh',headless=True)

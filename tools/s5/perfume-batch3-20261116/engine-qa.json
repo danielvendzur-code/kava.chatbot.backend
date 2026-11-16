@@ -384,6 +384,452 @@
       ],
       "formulaCount": 6,
       "status": "PASS"
+    },
+    "vontree": {
+      "leaves": [
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "lemon"
+          },
+          "id": "lemon",
+          "url": "https://www.vontreecandle.cz/citronova-trava/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "lavender"
+          },
+          "id": "lavender",
+          "url": "https://www.vontreecandle.cz/levandule-120-ml/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "warm",
+            "fragranceProfile": "gingerbread"
+          },
+          "id": "gingerbread",
+          "url": "https://www.vontreecandle.cz/pernicek/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "warm",
+            "fragranceProfile": "vanilla"
+          },
+          "id": "vanilla",
+          "url": "https://www.vontreecandle.cz/sojova-svicka-vanilka-sandalwood-citrus-500-ml/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "woods",
+            "fragranceProfile": "wood"
+          },
+          "id": "wood",
+          "url": "https://www.vontreecandle.cz/ambra-labdanum-vonna-sojova-svicka/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "woods",
+            "fragranceProfile": "forest"
+          },
+          "id": "forest",
+          "url": "https://www.vontreecandle.cz/lesni-pohadka-180-ml/"
+        }
+      ],
+      "questions": [
+        {
+          "answers": {},
+          "step": {
+            "key": "fragranceDirection",
+            "options": [
+              "fresh",
+              "warm",
+              "woods"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "lemon",
+              "lavender"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "warm"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "gingerbread",
+              "vanilla"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "woods"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "wood",
+              "forest"
+            ]
+          }
+        }
+      ],
+      "formulaCount": 6,
+      "status": "PASS"
+    },
+    "bylinkokraska": {
+      "leaves": [
+        {
+          "answers": {
+            "fragranceDirection": "bright",
+            "fragranceProfile": "citrus"
+          },
+          "id": "citrus",
+          "url": "https://www.bylinkokraska.cz/sojova-vonna-svicka-citronova-trava-a-zazvor"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "bright",
+            "fragranceProfile": "peony"
+          },
+          "id": "peony",
+          "url": "https://www.bylinkokraska.cz/pivonka-botanical-sojova-vonna-svicka-s-kvety"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "spiced-fruit",
+            "fragranceProfile": "apple"
+          },
+          "id": "apple",
+          "url": "https://www.bylinkokraska.cz/sojova-vonna-svicka-jablko-a-skorice"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "spiced-fruit",
+            "fragranceProfile": "mulled"
+          },
+          "id": "mulled",
+          "url": "https://www.bylinkokraska.cz/sojova-vonna-svicka-svarak"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand",
+            "fragranceProfile": "nuts"
+          },
+          "id": "nuts",
+          "url": "https://www.bylinkokraska.cz/sojova-vonna-svicka-louskacek"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand",
+            "fragranceProfile": "pumpkin"
+          },
+          "id": "pumpkin",
+          "url": "https://www.bylinkokraska.cz/sojova-vonna-svicka-dynove-koreni"
+        }
+      ],
+      "questions": [
+        {
+          "answers": {},
+          "step": {
+            "key": "fragranceDirection",
+            "options": [
+              "bright",
+              "spiced-fruit",
+              "gourmand"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "bright"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "citrus",
+              "peony"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "spiced-fruit"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "apple",
+              "mulled"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "nuts",
+              "pumpkin"
+            ]
+          }
+        }
+      ],
+      "formulaCount": 6,
+      "status": "PASS"
+    },
+    "mojesoja": {
+      "leaves": [
+        {
+          "answers": {
+            "fragranceDirection": "g-fruit",
+            "fragranceProfile": "orange"
+          },
+          "id": "orange",
+          "url": "https://www.mojesoja.cz/sojova-svicka-pomeranc-s-vanilkou-350g/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "g-fruit",
+            "fragranceProfile": "mango"
+          },
+          "id": "mango",
+          "url": "https://www.mojesoja.cz/sojova-svicka-mango-s-vanilkou/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "g-fruit",
+            "fragranceProfile": "raspberry"
+          },
+          "id": "raspberry",
+          "url": "https://www.mojesoja.cz/sojova-svicka-malina-s-kokosem/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "g-green",
+            "fragranceProfile": "tree"
+          },
+          "id": "tree",
+          "url": "https://www.mojesoja.cz/sojova-svicka-vanocni-stromecek350g/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "g-green",
+            "fragranceProfile": "ginger"
+          },
+          "id": "ginger",
+          "url": "https://www.mojesoja.cz/sojova-svicka-horky-zazvor-350g/"
+        }
+      ],
+      "questions": [
+        {
+          "answers": {},
+          "step": {
+            "key": "fragranceDirection",
+            "options": [
+              "g-fruit",
+              "g-green"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "g-fruit"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "orange",
+              "mango",
+              "raspberry"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "g-green"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "tree",
+              "ginger"
+            ]
+          }
+        }
+      ],
+      "formulaCount": 5,
+      "status": "PASS"
+    },
+    "svickuj": {
+      "leaves": [
+        {
+          "answers": {
+            "fragranceDirection": "g-fruit-flower",
+            "fragranceProfile": "cake"
+          },
+          "id": "cake",
+          "url": "https://www.svickuj.cz/sojova-svicka-babiccin-kolac-180ml/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "g-fruit-flower",
+            "fragranceProfile": "fortune"
+          },
+          "id": "fortune",
+          "url": "https://www.svickuj.cz/sojova-svicka-stesti-120ml/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "g-fruit-flower",
+            "fragranceProfile": "joy"
+          },
+          "id": "joy",
+          "url": "https://www.svickuj.cz/sojova-svicka-radost-500ml/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "g-warm",
+            "fragranceProfile": "hygge"
+          },
+          "id": "hygge",
+          "url": "https://www.svickuj.cz/sojova-svicka-hygge-180ml/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "g-warm",
+            "fragranceProfile": "vanilla"
+          },
+          "id": "vanilla",
+          "url": "https://www.svickuj.cz/sojova-svicka-vanilka-a-hrebicek-180ml/"
+        }
+      ],
+      "questions": [
+        {
+          "answers": {},
+          "step": {
+            "key": "fragranceDirection",
+            "options": [
+              "g-fruit-flower",
+              "g-warm"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "g-fruit-flower"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "cake",
+              "fortune",
+              "joy"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "g-warm"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "hygge",
+              "vanilla"
+            ]
+          }
+        }
+      ],
+      "formulaCount": 5,
+      "status": "PASS"
+    },
+    "mojehygge": {
+      "leaves": [
+        {
+          "answers": {
+            "fragranceDirection": "g-fresh",
+            "fragranceProfile": "jasmine"
+          },
+          "id": "jasmine",
+          "url": "https://www.mojehygge.cz/sojove-svicky/sojova-svicka-120ml-180ml-jasmin-a-cajova-ruze/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "g-fresh",
+            "fragranceProfile": "forest"
+          },
+          "id": "forest",
+          "url": "https://www.mojehygge.cz/sojove-svicky/sojova-svicka-180ml-les/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "g-warm",
+            "fragranceProfile": "vanilla"
+          },
+          "id": "vanilla",
+          "url": "https://www.mojehygge.cz/sojove-svicky/sojova-svicka-180ml-vanilka-a-skorice/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "g-warm",
+            "fragranceProfile": "gingerbread"
+          },
+          "id": "gingerbread",
+          "url": "https://www.mojehygge.cz/sojove-svicky/sojova-svicka-180ml-pernik/"
+        }
+      ],
+      "questions": [
+        {
+          "answers": {},
+          "step": {
+            "key": "fragranceDirection",
+            "options": [
+              "g-fresh",
+              "g-warm"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "g-fresh"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "jasmine",
+              "forest"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "g-warm"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "vanilla",
+              "gingerbread"
+            ]
+          }
+        }
+      ],
+      "formulaCount": 4,
+      "status": "PASS"
     }
   }
 }

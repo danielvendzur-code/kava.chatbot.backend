@@ -1,0 +1,230 @@
+{
+  "runtimeEnabled": false,
+  "owner": "PERFUME_WORKER",
+  "integrationOwner": "MAIN",
+  "registryObject": {
+    "series": "s5",
+    "type": "cosmetics",
+    "segment": "fragrance",
+    "name": "VONTREE CANDLE",
+    "country": "CZ",
+    "logos": {
+      "landing": "/assets/s5/vontree/logo.svg",
+      "header": "/assets/s5/vontree/logo.svg",
+      "avatar": "/assets/s5/vontree/avatar.svg"
+    },
+    "brand": {
+      "name": "VONTREE CANDLE",
+      "domain": "vontreecandle.cz",
+      "website": "https://www.vontreecandle.cz/",
+      "lang": "cs",
+      "fullName": "VONTREE CANDLE",
+      "url": "https://www.vontreecandle.cz/",
+      "logo": "/assets/s5/vontree/logo.svg",
+      "mark": "/assets/s5/vontree/avatar.svg",
+      "greeting": "Dobrý den. Pomohu vám porovnat vybrané vůně svíček, jejich balení a ceny.",
+      "quickChips": [
+        "Citronová tráva",
+        "Perník a karamel",
+        "Lesní vůně",
+        "Porovnat dvě vůně"
+      ],
+      "theme": {
+        "brand": "#28594f",
+        "accent": "#c8ad73",
+        "soft": "#f6f3ee",
+        "paper": "#fff",
+        "ink": "#302d28",
+        "line": "#e5ddd0"
+      }
+    },
+    "traitCopy": {
+      "fresh": [
+        "Bylinné a citrusové vůně",
+        "",
+        "Bylinné a citrusové vůně",
+        ""
+      ],
+      "lemon": [
+        "Citronová tráva, bergamot a heřmánek",
+        "",
+        "Citronová tráva, bergamot a heřmánek",
+        ""
+      ],
+      "lavender": [
+        "Bylinkově květinová levandule",
+        "",
+        "Bylinkově květinová levandule",
+        ""
+      ],
+      "warm": [
+        "Vanilka a hřejivé koření",
+        "",
+        "Vanilka a hřejivé koření",
+        ""
+      ],
+      "gingerbread": [
+        "Perníkové koření, vanilka a karamel",
+        "",
+        "Perníkové koření, vanilka a karamel",
+        ""
+      ],
+      "vanilla": [
+        "Vanilka, santalové dřevo a citrusy",
+        "",
+        "Vanilka, santalové dřevo a citrusy",
+        ""
+      ],
+      "woods": [
+        "Les nebo dřevitý základ",
+        "",
+        "Les nebo dřevitý základ",
+        ""
+      ],
+      "wood": [
+        "Santal, cedrové dřevo a ambra",
+        "",
+        "Santal, cedrové dřevo a ambra",
+        ""
+      ],
+      "forest": [
+        "Cedr, jedle a borovice",
+        "",
+        "Cedr, jedle a borovice",
+        ""
+      ]
+    },
+    "stepCopy": {
+      "fragranceDirection": [
+        "Jaká vůně je vám blízká?",
+        "",
+        "Vonné tóny"
+      ],
+      "fragranceProfile": [
+        "Která kombinace vás láká?",
+        "",
+        "Vonné tóny"
+      ]
+    },
+    "compareFocus": true,
+    "upsellFocus": {},
+    "choicePhotos": {
+      "fresh": [
+        "/assets/s3/scenes-k2/citrus.jpg"
+      ],
+      "lemon": [
+        "/assets/s5/vontree/lemon.jpg"
+      ],
+      "lavender": [
+        "/assets/s5/vontree/lavender.jpg"
+      ],
+      "warm": [
+        "/assets/s3/scenes-k2/vanilla.jpg"
+      ],
+      "gingerbread": [
+        "/assets/s5/vontree/gingerbread.jpg"
+      ],
+      "vanilla": [
+        "/assets/s5/vontree/vanilla.jpg"
+      ],
+      "woods": [
+        "/assets/s3/scenes-k2/pine.jpg"
+      ],
+      "wood": [
+        "/assets/s5/vontree/wood.jpg"
+      ],
+      "forest": [
+        "/assets/s5/vontree/forest.jpg"
+      ]
+    },
+    "compareProductIds": [
+      "lemon",
+      "wood"
+    ],
+    "segmentText": {
+      "entryNote": "Vonné svíčky · přesné balení · porovnání",
+      "titleSuffix": "výběr vůně svíčky",
+      "tab": "Výběr vůně",
+      "advisorName": "Průvodce vůněmi svíček",
+      "entrySmall": "VŮNĚ SVÍČEK",
+      "entryTitle": "Najděte vůni své svíčky",
+      "placeholder": "Zeptejte se na charakter vůně, balení nebo cenu…",
+      "heading": "Pomozte zákazníkovi vybrat vůni svíčky podle jeho vkusu.",
+      "lead": "Podle odpovědí zobrazí konkrétní svíčku s fotografií, vonným profilem, balením, cenou a odkazem. Dvě odlišné vůně lze porovnat.",
+      "includedChat": "Vonné tóny, balení a ceny vybraných svíček.",
+      "includedAdvisor": "Výběr vůně svíčky a porovnání dvou kompozic.",
+      "greeting": "Dobrý den. Pomohu vám porovnat vybrané vůně svíček, jejich balení a ceny.",
+      "teaserTitle": "Najděte vůni své svíčky",
+      "teaserNote": "Svíčky, balení a ceny",
+      "teaserAria": "Otevřít výběr vůně svíčky",
+      "source": "vontree-demo"
+    },
+    "fragranceResultExtras": {
+      "version": 1,
+      "enabled": true,
+      "alternatives": {
+        "lemon": "lavender",
+        "lavender": "lemon",
+        "gingerbread": "vanilla",
+        "vanilla": "gingerbread",
+        "wood": "forest",
+        "forest": "wood"
+      },
+      "scentProfile": {
+        "version": 1,
+        "mode": "source-notes-no-numeric-strength"
+      }
+    },
+    "fragrancePresentation": {
+      "version": 1,
+      "hideStepEstimate": true
+    }
+  },
+  "catalogueImport": "/catalogues/vontree.js",
+  "backendBrand": "vontree",
+  "offlineRules": [
+    {
+      "chip": "Citronová tráva",
+      "match": "citronov|bergamot",
+      "productIds": [
+        "lemon"
+      ]
+    },
+    {
+      "chip": "Perník a karamel",
+      "match": "pernik|karamel",
+      "productIds": [
+        "gingerbread"
+      ]
+    },
+    {
+      "chip": "Lesní vůně",
+      "match": "les|jedle|borovic",
+      "productIds": [
+        "forest"
+      ]
+    }
+  ],
+  "noCoreLogicChangeRequired": true,
+  "commonFilesModified": [],
+  "companyCss": {
+    "source": "tools/s5/perfume-batch3-20261116/candidate-packages/vontree/ui-review.css",
+    "destination": "n447/s5/brands/vontree.css",
+    "registryField": {
+      "companyCss": "/n447/s5/brands/vontree.css"
+    }
+  },
+  "presentationRequirement": "Existinga918profile+preset and explicit newslug body.dataset.fragranceProfile=visual-v1. Owner standalonepolish separate includes.",
+  "price": "447 EUR +10 EUR/month",
+  "commercialReview": "PREFERRED_HISTORICAL_BAND_LATEST_EXACT_UNKNOWN",
+  "emailStatus": "NOT_READY",
+  "production": "NOT_DEPLOYED",
+  "paidCalls": 0,
+  "scopeReview": {
+    "productPurpose": "scented-candle",
+    "recommendationCoreChangeRequired": false,
+    "backendReviewRequired": true,
+    "requiredBackendInstruction": "Only interior scentedcandles, not skinperfume/laundry. Exact literal sourcednotes/fullretailpacks/selectedvariantretailprices/stocktimestamps. No health/mood/sleep/therapy/pregnancy/pet/fire/IFRA/nontoxic/smokefree/longevity guarantees, magic/attraction promises or numericnoteintensity. Vontreeengraving unimplemented, optional surcharge not included in shown candleprice. Sourcevolume conflicts notsilentlyresolved.",
+    "workerTouchedSharedBackend": false
+  }
+}

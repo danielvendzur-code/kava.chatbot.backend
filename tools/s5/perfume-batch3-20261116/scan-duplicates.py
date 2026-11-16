@@ -1,10 +1,12 @@
 """Read every available remote branch text blob for exact domain/operator/alias evidence."""
-import pathlib,subprocess,json,re,collections,datetime,sys
+import pathlib,subprocess,json,re,collections,datetime,sys,argparse
 ROOT=pathlib.Path(__file__).resolve().parents[3];OUT=ROOT/'tools/s5/perfume-independent/reports/candidate-packages-20261111/duplicates.json'
 def git(*args):return subprocess.check_output(['git','-C',str(ROOT),*args])
 refs=git('for-each-ref','--format=%(refname) %(objectname)','refs/remotes/origin').decode().splitlines();objects=collections.defaultdict(list)
+parser=argparse.ArgumentParser();parser.add_argument('--slugs',nargs='+');parser.add_argument('--output',default='fresh-duplicates.json');args=parser.parse_args()
 terms=json.loads((ROOT/'tools/s5/perfume-batch3-20261116/research/duplicate-terms.json').read_text())
-OUT=ROOT/'tools/s5/perfume-batch3-20261116/research/fresh-duplicates.json'
+if args.slugs:terms={k:v for k,v in terms.items() if k in args.slugs}
+OUT=ROOT/'tools/s5/perfume-batch3-20261116/research'/args.output
 for row in refs:
  ref,sha=row.split()
  for line in git('ls-tree','-r',ref).decode().splitlines():

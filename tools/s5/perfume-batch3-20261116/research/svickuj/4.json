@@ -1,0 +1,556 @@
+{
+  "slug": "svickuj",
+  "label": "4",
+  "url": "https://www.svickuj.cz/sojova-svicka-stesti-120ml/",
+  "checkedAt": "2026-11-16T11:30:36.048127+00:00",
+  "tlsVerified": true,
+  "scope": "Read-only officialHTML; notlivewidgetQA",
+  "status": 200,
+  "finalUrl": "https://www.svickuj.cz/sojova-svicka-stesti-120ml/",
+  "sourceSha256": "201f36175bfaf9961b080bb35dd79fa4b4a6f7083a6535a806deb7899b24694e",
+  "name": "Sójová svíčka Štěstí | 120ml",
+  "jsonld": [
+    "\n    {\n        \"@context\" : \"https://schema.org\",\n        \"@type\" : \"Organization\",\n        \"name\" : \"SVÍČKUJ\",\n        \"url\" : \"https://www.svickuj.cz\",\n                \"employee\" : \"SVÍČKUJ\",\n                    \"email\" : \"svickuj@email.cz\",\n                            \"telephone\" : \"605331364\",\n                                \n                                                                                \"sameAs\" : [\"https://www.facebook.com/svickuj\", \"https://www.instagram.com/svickuj/\"]\n    }\n"
+  ],
+  "offers": [
+    {
+      "availability": "https://schema.org/InStock",
+      "url": "https://www.svickuj.cz/sojova-svicka-stesti-120ml/",
+      "price": "319.00",
+      "priceCurrency": "CZK",
+      "itemCondition": "https://schema.org/NewCondition"
+    }
+  ],
+  "photos": [
+    "https://cdn.myshoptet.com/usr/www.svickuj.cz/user/shop/big/621_prirodni-svicka-stesti--2.jpg?ff=1&x=1024&y=768&q=100&ts=6818cfb6&sg=15683bd6"
+  ],
+  "links": [
+    {
+      "text": "zde",
+      "url": "http://www.svickuj.cz/podminky-ochrany-osobnich-udaju/"
+    },
+    {
+      "text": "Nová registrace",
+      "url": "https://www.svickuj.cz/registrace/"
+    },
+    {
+      "text": "Zapomenuté heslo",
+      "url": "https://www.svickuj.cz/klient/zapomenute-heslo/"
+    },
+    {
+      "text": "Pokračovat do košíku",
+      "url": "https://www.svickuj.cz/kosik/"
+    },
+    {
+      "text": "605331364",
+      "url": "tel:605331364"
+    },
+    {
+      "text": "svickuj@email.cz",
+      "url": "mailto:svickuj@email.cz"
+    },
+    {
+      "text": "Prodejní místa",
+      "url": "https://www.svickuj.cz/prodejni-mista/"
+    },
+    {
+      "text": "Věrnostní program",
+      "url": "https://www.svickuj.cz/vernostni-program/"
+    },
+    {
+      "text": "Náš příběh",
+      "url": "https://www.svickuj.cz/nas-pribeh/"
+    },
+    {
+      "text": "Doprava a platby",
+      "url": "https://www.svickuj.cz/doprava-a-platby/"
+    },
+    {
+      "text": "Reklamace a vracení zboží",
+      "url": "https://www.svickuj.cz/reklamace-a-vraceni-zbozi/"
+    },
+    {
+      "text": "Hodnocení obchodu",
+      "url": "https://www.svickuj.cz/hodnoceni-obchodu/"
+    },
+    {
+      "text": "Obchodní podmínky",
+      "url": "https://www.svickuj.cz/obchodni-podminky/"
+    },
+    {
+      "text": "Podmínky ochrany osobních údajů",
+      "url": "https://www.svickuj.cz/podminky-ochrany-osobnich-udaju/"
+    },
+    {
+      "text": "CZK",
+      "url": "https://www.svickuj.cz/action/Currency/changeCurrency/?currencyCode=CZK"
+    },
+    {
+      "text": "EUR",
+      "url": "https://www.svickuj.cz/action/Currency/changeCurrency/?currencyCode=EUR"
+    },
+    {
+      "text": "",
+      "url": "https://www.svickuj.cz/"
+    },
+    {
+      "text": "Nákupní košík Prázdný košík",
+      "url": "https://www.svickuj.cz/kosik/"
+    },
+    {
+      "text": "E-shop",
+      "url": "https://www.svickuj.cz/e-shop/"
+    },
+    {
+      "text": "",
+      "url": "https://www.svickuj.cz/http-www-svickuj-cz/"
+    },
+    {
+      "text": "VÁNOCE",
+      "url": "https://www.svickuj.cz/http-www-svickuj-cz/"
+    },
+    {
+      "text": "",
+      "url": "https://www.svickuj.cz/http-www-svickuj-cz-4/"
+    },
+    {
+      "text": "PODZIM",
+      "url": "https://www.svickuj.cz/http-www-svickuj-cz-4/"
+    },
+    {
+      "text": "",
+      "url": "https://www.svickuj.cz/novinky/"
+    },
+    {
+      "text": "NOVINKY",
+      "url": "https://www.svickuj.cz/novinky/"
+    },
+    {
+      "text": "",
+      "url": "https://www.svickuj.cz/sojove_svicky_120-ml-2/"
+    },
+    {
+      "text": "Sójové svíčky 120 ml",
+      "url": "https://www.svickuj.cz/sojove_svicky_120-ml-2/"
+    },
+    {
+      "text": "",
+      "url": "https://www.svickuj.cz/sojove_svicky-180-ml/"
+    },
+    {
+      "text": "Sójové svíčky 180 ml",
+      "url": "https://www.svickuj.cz/sojove_svicky-180-ml/"
+    },
+    {
+      "text": "",
+      "url": "https://www.svickuj.cz/sojove_svicky-500-ml-2/"
+    },
+    {
+      "text": "Sójové svíčky 500 ml",
+      "url": "https://www.svickuj.cz/sojove_svicky-500-ml-2/"
+    },
+    {
+      "text": "",
+      "url": "https://www.svickuj.cz/http-www-svickuj-cz-3/"
+    },
+    {
+      "text": "Svíčky v plechovce 50 ml",
+      "url": "https://www.svickuj.cz/http-www-svickuj-cz-3/"
+    },
+    {
+      "text": "",
+      "url": "https://www.svickuj.cz/interierove-parfemy-a-difuzery/"
+    },
+    {
+      "text": "Interiérové parfémy a difuzéry",
+      "url": "https://www.svickuj.cz/interierove-parfemy-a-difuzery/"
+    },
+    {
+      "text": "",
+      "url": "https://www.svickuj.cz/svicky-ze-vceliho-vosku/"
+    },
+    {
+      "text": "Svíčky ze včelího vosku",
+      "url": "https://www.svickuj.cz/svicky-ze-vceliho-vosku/"
+    },
+    {
+      "text": "",
+      "url": "https://www.svickuj.cz/darkove-sady-a-poukazy/"
+    },
+    {
+      "text": "Dárkové sady a poukazy",
+      "url": "https://www.svickuj.cz/darkove-sady-a-poukazy/"
+    },
+    {
+      "text": "",
+      "url": "https://www.svickuj.cz/keramika/"
+    },
+    {
+      "text": "Keramika",
+      "url": "https://www.svickuj.cz/keramika/"
+    },
+    {
+      "text": "",
+      "url": "https://www.svickuj.cz/doplnky/"
+    },
+    {
+      "text": "Doplňky",
+      "url": "https://www.svickuj.cz/doplnky/"
+    },
+    {
+      "text": "",
+      "url": "https://www.svickuj.cz/papirnictvi/"
+    },
+    {
+      "text": "Papírnictví",
+      "url": "https://www.svickuj.cz/papirnictvi/"
+    },
+    {
+      "text": "",
+      "url": "https://www.svickuj.cz/http-www-svickuj-cz-2/"
+    },
+    {
+      "text": "Slevy",
+      "url": "https://www.svickuj.cz/http-www-svickuj-cz-2/"
+    },
+    {
+      "text": "Náš příběh",
+      "url": "https://www.svickuj.cz/nas-pribeh/"
+    },
+    {
+      "text": "Prodejní místa",
+      "url": "https://www.svickuj.cz/prodejni-mista/"
+    },
+    {
+      "text": "Péče o svíčku",
+      "url": "https://www.svickuj.cz/pece-o-svicku/"
+    },
+    {
+      "text": "Kontakt",
+      "url": "https://www.svickuj.cz/kontakt/"
+    },
+    {
+      "text": "Blog",
+      "url": "https://www.svickuj.cz/blog-3/"
+    },
+    {
+      "text": "Věrnostní program",
+      "url": "https://www.svickuj.cz/vernostni-program/"
+    },
+    {
+      "text": "CZK",
+      "url": "https://www.svickuj.cz/action/Currency/changeCurrency/?currencyCode=CZK"
+    },
+    {
+      "text": "EUR",
+      "url": "https://www.svickuj.cz/action/Currency/changeCurrency/?currencyCode=EUR"
+    },
+    {
+      "text": "Přihlášení",
+      "url": "https://www.svickuj.cz/login/?backTo=%2Fsojova-svicka-stesti-120ml%2F"
+    },
+    {
+      "text": "Domů",
+      "url": "https://www.svickuj.cz/"
+    },
+    {
+      "text": "E-shop",
+      "url": "https://www.svickuj.cz/e-shop/"
+    },
+    {
+      "text": "Sójové svíčky 120 ml",
+      "url": "https://www.svickuj.cz/sojove_svicky_120-ml-2/"
+    },
+    {
+      "text": "",
+      "url": "https://cdn.myshoptet.com/usr/www.svickuj.cz/user/shop/big/621_prirodni-svicka-stesti--2.jpg?ff=1&x=1024&y=768&q=100&ts=6818cfb6&sg=15683bd6"
+    },
+    {
+      "text": "",
+      "url": "https://cdn.myshoptet.com/usr/www.svickuj.cz/user/shop/big/621_prirodni-svicka-stesti--2.jpg?ff=1&x=1024&y=768&q=100&ts=6818cfb6&sg=15683bd6"
+    },
+    {
+      "text": "",
+      "url": "https://cdn.myshoptet.com/usr/www.svickuj.cz/user/shop/big/621_prirodni-svicka-stesti--2.jpg?ff=1&x=1024&y=768&q=100&ts=6818cfb6&sg=15683bd6"
+    },
+    {
+      "text": "",
+      "url": "https://cdn.myshoptet.com/usr/www.svickuj.cz/user/shop/big/621-1_sojova-svicka-stesti--1.jpg?ff=1&x=1024&y=768&q=100&ts=6818cfb9&sg=15683bd6"
+    },
+    {
+      "text": "",
+      "url": "https://cdn.myshoptet.com/usr/www.svickuj.cz/user/shop/big/621-1_sojova-svicka-stesti--1.jpg?ff=1&x=1024&y=768&q=100&ts=6818cfb9&sg=15683bd6"
+    },
+    {
+      "text": "",
+      "url": "https://cdn.myshoptet.com/usr/www.svickuj.cz/user/shop/big/621-2_sojova-svicka-stesti--2.jpg?ff=1&x=1024&y=768&q=100&ts=6818cfbb&sg=15683bd6"
+    },
+    {
+      "text": "",
+      "url": "https://cdn.myshoptet.com/usr/www.svickuj.cz/user/shop/big/621-2_sojova-svicka-stesti--2.jpg?ff=1&x=1024&y=768&q=100&ts=6818cfbb&sg=15683bd6"
+    },
+    {
+      "text": "",
+      "url": "https://cdn.myshoptet.com/usr/www.svickuj.cz/user/shop/big/621-3_sojova-svicka-stesti--7.jpg?ff=1&x=1024&y=768&q=100&ts=6818cfbb&sg=15683bd6"
+    },
+    {
+      "text": "",
+      "url": "https://cdn.myshoptet.com/usr/www.svickuj.cz/user/shop/big/621-3_sojova-svicka-stesti--7.jpg?ff=1&x=1024&y=768&q=100&ts=6818cfbb&sg=15683bd6"
+    },
+    {
+      "text": "Zeptat se",
+      "url": "https://www.svickuj.cz/sojova-svicka-stesti-120ml:dotaz/"
+    },
+    {
+      "text": "Hlídat",
+      "url": "https://www.svickuj.cz/sojova-svicka-stesti-120ml:hlidat-cenu/"
+    },
+    {
+      "text": "Tweet",
+      "url": "https://twitter.com/share"
+    },
+    {
+      "text": "",
+      "url": "https://www.svickuj.cz/vernostni-program"
+    },
+    {
+      "text": "Novinka",
+      "url": "https://www.svickuj.cz/sojova-svicka-stesti-180ml/"
+    },
+    {
+      "text": "Sójová svíčka Štěstí | 180ml",
+      "url": "https://www.svickuj.cz/sojova-svicka-stesti-180ml/"
+    },
+    {
+      "text": "Oblíbené",
+      "url": "https://www.svickuj.cz/sladke-sny-180ml/"
+    },
+    {
+      "text": "Sójová svíčka Sladké sny | 180ml",
+      "url": "https://www.svickuj.cz/sladke-sny-180ml/"
+    },
+    {
+      "text": "",
+      "url": "https://www.svickuj.cz/cista-bila-180ml/"
+    },
+    {
+      "text": "Sójová svíčka Čistá bílá | 180ml",
+      "url": "https://www.svickuj.cz/cista-bila-180ml/"
+    },
+    {
+      "text": "",
+      "url": "https://www.svickuj.cz/sojova-svicka-santal-180ml/"
+    },
+    {
+      "text": "Sójová svíčka Santal | 180ml",
+      "url": "https://www.svickuj.cz/sojova-svicka-santal-180ml/"
+    },
+    {
+      "text": "Novinka",
+      "url": "https://www.svickuj.cz/sojova-svicka-cokolada-180ml/"
+    },
+    {
+      "text": "Sójová svíčka Čokoláda | 180ml",
+      "url": "https://www.svickuj.cz/sojova-svicka-cokolada-180ml/"
+    },
+    {
+      "text": "Oblíbené",
+      "url": "https://www.svickuj.cz/zen-180ml/"
+    },
+    {
+      "text": "Sójová svíčka Zen | 180ml",
+      "url": "https://www.svickuj.cz/zen-180ml/"
+    },
+    {
+      "text": "Oblíbené",
+      "url": "https://www.svickuj.cz/medunka-a-citronela-180ml/"
+    },
+    {
+      "text": "Sójová svíčka Meduňka a citronela | 180ml",
+      "url": "https://www.svickuj.cz/medunka-a-citronela-180ml/"
+    },
+    {
+      "text": "Oblíbené",
+      "url": "https://www.svickuj.cz/radost-180ml/"
+    },
+    {
+      "text": "Sójová svíčka Radost | 180ml",
+      "url": "https://www.svickuj.cz/radost-180ml/"
+    },
+    {
+      "text": "Sójové svíčky 120 ml",
+      "url": "https://www.svickuj.cz/sojove_svicky_120-ml-2/"
+    },
+    {
+      "text": "",
+      "url": "https://www.svickuj.cz/sojova-svicka-santal-120ml/"
+    },
+    {
+      "text": "Sójová svíčka Santal | 120ml",
+      "url": "https://www.svickuj.cz/sojova-svicka-santal-120ml/"
+    },
+    {
+      "text": "Novinka",
+      "url": "https://www.svickuj.cz/sojova-svicka-radost-120ml/"
+    },
+    {
+      "text": "Sójová svíčka Radost | 120ml",
+      "url": "https://www.svickuj.cz/sojova-svicka-radost-120ml/"
+    },
+    {
+      "text": "Oblíbené",
+      "url": "https://www.svickuj.cz/zen-120ml/"
+    },
+    {
+      "text": "Sójová svíčka Zen | 120ml",
+      "url": "https://www.svickuj.cz/zen-120ml/"
+    },
+    {
+      "text": "",
+      "url": "https://www.svickuj.cz/cista-bila-120ml/"
+    },
+    {
+      "text": "Sójová svíčka Čistá bílá | 120ml",
+      "url": "https://www.svickuj.cz/cista-bila-120ml/"
+    },
+    {
+      "text": "",
+      "url": "https://www.svickuj.cz/pomeranc--120-ml/"
+    },
+    {
+      "text": "Sójová svíčka Pomeranč | 120ml",
+      "url": "https://www.svickuj.cz/pomeranc--120-ml/"
+    },
+    {
+      "text": "",
+      "url": "https://www.svickuj.cz/vanilka--120-ml/"
+    },
+    {
+      "text": "Sójová svíčka Vanilka | 120ml",
+      "url": "https://www.svickuj.cz/vanilka--120-ml/"
+    },
+    {
+      "text": "Bestseller",
+      "url": "https://www.svickuj.cz/sojova-svicka-hygge-120ml/"
+    },
+    {
+      "text": "Sójová svíčka Hygge | 120ml",
+      "url": "https://www.svickuj.cz/sojova-svicka-hygge-120ml/"
+    },
+    {
+      "text": "",
+      "url": "https://www.svickuj.cz/hermanek-120ml/"
+    },
+    {
+      "text": "Sójová svíčka Heřmánek | 120ml",
+      "url": "https://www.svickuj.cz/hermanek-120ml/"
+    },
+    {
+      "text": "podmínkami ochrany osobních údajů",
+      "url": "https://www.svickuj.cz/podminky-ochrany-osobnich-udaju/"
+    },
+    {
+      "text": "podmínkami ochrany osobních údajů",
+      "url": "https://www.svickuj.cz/podminky-ochrany-osobnich-udaju/"
+    },
+    {
+      "text": "",
+      "url": "https://www.svickuj.cz/"
+    },
+    {
+      "text": "Prodejní místa",
+      "url": "https://www.svickuj.cz/prodejni-mista/"
+    },
+    {
+      "text": "Věrnostní program",
+      "url": "https://www.svickuj.cz/vernostni-program/"
+    },
+    {
+      "text": "Náš příběh",
+      "url": "https://www.svickuj.cz/nas-pribeh/"
+    },
+    {
+      "text": "Doprava a platby",
+      "url": "https://www.svickuj.cz/doprava-a-platby/"
+    },
+    {
+      "text": "Reklamace a vracení zboží",
+      "url": "https://www.svickuj.cz/reklamace-a-vraceni-zbozi/"
+    },
+    {
+      "text": "Hodnocení obchodu",
+      "url": "https://www.svickuj.cz/hodnoceni-obchodu/"
+    },
+    {
+      "text": "Obchodní podmínky",
+      "url": "https://www.svickuj.cz/obchodni-podminky/"
+    },
+    {
+      "text": "Podmínky ochrany osobních údajů",
+      "url": "https://www.svickuj.cz/podminky-ochrany-osobnich-udaju/"
+    },
+    {
+      "text": "svickuj@email.cz",
+      "url": "mailto:svickuj@email.cz"
+    },
+    {
+      "text": "605331364",
+      "url": "tel:605331364"
+    },
+    {
+      "text": "https://www.facebook.com/svickuj",
+      "url": "https://www.facebook.com/svickuj"
+    },
+    {
+      "text": "svickuj",
+      "url": "https://www.instagram.com/svickuj/"
+    },
+    {
+      "text": "",
+      "url": "https://www.shoptet.cz/?utm_source=footer&utm_medium=link&utm_campaign=create_by_shoptet"
+    },
+    {
+      "text": "Vytvořil Shoptet",
+      "url": "https://www.shoptet.cz/?utm_source=footer&utm_medium=link&utm_campaign=create_by_shoptet"
+    },
+    {
+      "text": "Shoptet",
+      "url": "https://shoptet.cz"
+    },
+    {
+      "text": "Shoptak.cz",
+      "url": "https://www.shoptak.cz"
+    }
+  ],
+  "publicProduct": {
+    "id": 621,
+    "guid": "0b65f852-29bf-11f0-97ef-6e1a37fc60bc",
+    "hasVariants": false,
+    "codes": [
+      {
+        "code": "S120ST",
+        "weight": 0.23,
+        "quantity": "> 5",
+        "stocks": [
+          {
+            "id": "ext",
+            "quantity": "> 5"
+          }
+        ]
+      }
+    ],
+    "code": "S120ST",
+    "name": "Sójová svíčka Štěstí | 120ml",
+    "appendix": "",
+    "weight": 0,
+    "currentCategory": "E-shop | Sójové svíčky 120 ml",
+    "currentCategoryGuid": "48650b16-8c71-11ea-ac23-ac1f6b0076ec",
+    "defaultCategory": "E-shop | Sójové svíčky 120 ml",
+    "defaultCategoryGuid": "48650b16-8c71-11ea-ac23-ac1f6b0076ec",
+    "currency": "CZK",
+    "priceWithVat": 319
+  },
+  "description": "Detailní popis produktu Každý aspekt našich výrobků vytváříme samy. Vše provádíme s velkou péčí a zaměřujeme se na detail. Výsledkem je poctivá ručně vyrobená svíčka s naší originální kresbou a s použitím kvalitních přírodních ingrediencí.- 100% přírodní sójový vosk, neobsahuje žádné pesticidy, herbicidy, biologicky odbouratelný- 100% přírodní rostlinný vonný olej, který je tvořen esenciálními oleji, bez syntetických přísad a chemie.- bavlněný knot- bez použití barviv a syntetických látek- hoří mnohem déle a čistěji než parafínový vosk- dodáváno pouze v papírových obalech s ohledem na přírodu- vyrobeno ručně v České republicePéče o svíčkuO bavlněný knot je potřeba pečovat. Pro ideální hoření udržujte knot o délce 4–5mm, doporučujeme zastřihnout před každým zapálením. Po zhasnutí se svíčkou nemanipulujte a nechte ji vychladnout.",
+  "shortDescription": "Sójová svíčka Štěstí je harmonickou symfonií vzácného osmanthusu, povznášejícího ylang ylangu a uklidňující vanilky. Tato jedinečná kombinace vytváří vůni, která promění váš domov v oázu pohody a radosti. Osmanthus, v tradiční čínské kultuře symbol štěstí a lásky, přináší sladké ovocně-meruňkové až broskvové tóny s jemným pudrovým nádechem, Ylang ylang povzbuzuje duši a působí proti únavě, zatímco vanilka harmonizuje celou kompozici a přináší pocit klidu a vyrovnanosti. Zapálením této svíčky si darujete víc než jen krásnou vůni. Darujete si moment, kdy se zastavíte, nadechnete a možná objevíte, že štěstí není něco, co hledáme někde v dálce, ale co najdeme uvnitř sebe – jeden vědomý okamžik za druhým. Pro všechny, kdo touží po malých okamžicích radosti v každodenním shonu života. Svíčka Štěstí je ideálním společníkem pro chvíle, kdy potřebujete povzbudit náladu, najít vnitřní rovnováhu nebo si jednoduše dopřát zasloužený odpočinek po náročném dni. Doba hoření je 20 hod.",
+  "bodyText": "Sójová svíčka Štěstí | 120ml - SVÍČKUJ Cookie consent Tento web používá soubory cookie. Dalším procházením tohoto webu vyjadřujete souhlas s jejich používáním.. Více informací zde. Nastavení Souhlasím Přejít na obsah Přihlášení k vašemu účtu E-mailHesloNevyplňujte toto poleSurname Přihlásit seNová registraceZapomenuté heslo Pokračovat do košíku Zákaznická podpora:605331364svickuj@email.cz Prodejní místa Věrnostní program Náš příběh Doprava a platby Reklamace a vracení zboží Hodnocení obchodu Obchodní podmínky Podmínky ochrany osobních údajů Ceny v: CZK CZKEUR Přihlášení Hledat Nákupní košík Prázdný košík E-shopVÁNOCE PODZIM NOVINKY Sójové svíčky 120 ml Sójové svíčky 180 ml Sójové svíčky 500 ml Svíčky v plechovce 50 ml Interiérové parfémy a difuzéry Svíčky ze včelího vosku Dárkové sady a poukazy Keramika Doplňky Papírnictví Slevy Náš příběh Prodejní místa Péče o svíčku Kontakt Blog Věrnostní program Měna (CZK) CZK EUR Přihlášení Více Domů / E-shop / Sójové svíčky 120 ml / Sójová svíčka Štěstí | 120ml Sójová svíčka Štěstí | 120ml Novinka Průměrné hodnocení produktu je 5,0 z 5 hvězdiček. 4 hodnocení Podrobnosti hodnocení 319 Kč Měrná cena: Skladem (>5 ks) Můžeme doručit do: 20.11.2026 Množství + − Přidat do košíku Sójová svíčka Štěstí je harmonickou symfonií vzácného osmanthusu, povznášejícího ylang ylangu a uklidňující vanilky. Tato jedinečná kombinace vytváří vůni, která promění váš domov v oázu pohody a radosti. Osmanthus, v tradiční čínské kultuře symbol štěstí a lásky, přináší sladké ovocně-meruňkové až broskvové tóny s jemným pudrovým nádechem, Ylang ylang povzbuzuje duši a působí proti únavě, zatímco vanilka harmonizuje celou kompozici a přináší pocit klidu a vyrovnanosti. Zapálením této svíčky si darujete víc než jen krásnou vůni. Darujete si moment, kdy se zastavíte, nadechnete a možná objevíte, že štěstí není něco, co hledáme někde v dálce, ale co najdeme uvnitř sebe – jeden vědomý okamžik za druhým. Pro všechny, kdo touží po malých okamžicích radosti v každodenním shonu života. Svíčka Štěstí je ideálním společníkem pro chvíle, kdy potřebujete povzbudit náladu, najít vnitřní rovnováhu nebo si jednoduše dopřát zasloužený odpočinek po náročném dni. Doba hoření je 20 hod. Detailní informace Tisk Zeptat se Hlídat Sdílet Tweet Zavřít Související produkty Novinka Sójová svíčka Štěstí | 180ml Průměrné hodnocení produktu je 5,0 z 5 hvězdiček. Skladem (>5 ks) 419 Kč Do košíku Sójová svíčka Štěstí je harmonickou symfonií vzácného osmanthusu, povznášejícího ylang ylangu a uklidňující vanilky. Tato jedinečná kombinace vytváří vůni, která promění váš domov v oázu pohody a radosti. Osmanthus, v tradiční čínské kultuře symbol štěstí a lásky, přináší sladké ovocně-meruňkové až broskvové tóny s jemným pudrovým nádechem, Ylang ylang povzbuzuje duši a působí proti únavě, zatímco vanilka harmonizuje celou kompozici a přináší pocit klidu a vyrovnanosti. Zapálením této svíčky si darujete víc než jen krásnou vůni. Darujete si moment, kdy se zastavíte, nadechnete a možná objevíte, že štěstí není něco, co hledáme někde v dálce, ale co najdeme uvnitř sebe – jeden vědomý okamžik za druhým. Pro všechny, kdo touží po malých okamžicích radosti v každodenním shonu života. Svíčka Štěstí je ideálním společníkem pro chvíle, kdy potřebujete povzbudit náladu, najít vnitřní rovnováhu nebo si jednoduše dopřát zasloužený odpočinek po náročném dni. Doba hoření je 30 hod. Kód: SO180ST Oblíbené Sójová svíčka Sladké sny | 180ml Průměrné hodnocení produktu je 5,0 z 5 hvězdiček. Skladem (>5 ks) 399 Kč Do košíku Sójová svíčka Sladké sny je kombinací klidu, jemnosti, sladkých tónu, které harmonizují mysl a dodávají pocit uvolnění a odpočinku. Svíčka Sladké sny je kombinací levandule, která je známá svými zklidňujícími účinky a bylinkovými tóny a pravé vanilka, která taktéž uklidňuje a zlepšuje spánek. Tato vůně je překvapivou kombinací, kterou si zamilujete. Voní intenzivněji. Doba hoření je 30 hod. Kód: SO180SS Sójová svíčka Čistá bílá | 180ml Skladem (>5 ks) 319 Kč Do košíku Čistá bílá, nevoňavá a neutrální svíčka, kterou jsme vytvořily pro všechny citlivé nosánky. Nebo pro ty, kteří si rádi zapalují více svíček najednou a vůně už by bylo v prostoru moc.Kresbu na víčku pro vás ilustrovala Kamča. Doba hoření je 30 hod. Kód: SO18000 Sójová svíčka Santal | 180ml Průměrné hodnocení produktu je 2,0 z 5 hvězdiček. Skladem (>5 ks) 399 Kč Do košíku Sójová svíčka Santal - dokonalý společník pro chladné večery. Santal v sobě ukrývá kombinaci esenciálních olejů santalového dřeva a pravé vanilky, které dohromady vytvářejí teplou, těžší a nádherně plnou vůni.Představte si příjemně těžkou a bohatou vůni santalového dřeva, které je známé svým hlubokým, dřevitým a mírně sladkým tónem. K tomu přidejte něžnou, bohatou a krémovou vůni pravé vanilky. Tato magická kombinace vás obklopí teplým, útulným a relaxačním aroma, které navodí pocit pohodlí a klidu během chladných večerů. Víčko je zdobené ilustrací s motivem dřeva, svíčka Santal se tak stane dokonalým doplňkem vašeho interiéru, do kterého vnese kousek přírody. Doba hoření je 20 hod. Kód: SO180SA Novinka Sójová svíčka Čokoláda | 180ml Průměrné hodnocení produktu je 5,0 z 5 hvězdiček. Skladem (>5 ks) 419 Kč Do košíku Sójová svíčka s podmanivou vůní té nejjemnější čokolády pro vytvoření útulné atmosféry, která uchvátí vaše smysly dokonalou harmonií čistě přírodních esencí kakaa a jemným tónem mandlí. Hřejivá gurmánská vůně pravé čokolády je inspirována pralinkami, které jsou symbolem požitku, relaxace a životní radosti. Čokoládová vůně ztělesňuje pozvání k dopřání si chvilky pro sebe bez jediné kalorie. Tato vůně je vhodná pro všechny milovníky sladkých vůní nejen pro své uklidňující účinky, ale hlavně pro svou autentickou čokoládovou vůni. Přinese do vašeho života hřejivý pocit útulného domova, ale také harmonii a klid. Je perfektním řešením pro vytvoření relaxačního prostoru v chladných dnech nebo kdykoliv zatoužíte po sladkém potěšení. Vhodná je také pro navození romantické atmosféry nebo při relaxační koupeli. Díky kombinaci s červeným pomerančem získává vůně jedinečnou hloubku. Doba hoření je až 30 hodin. Každá svíčka je vyrobena ručně s láskou. Kód: SO180CO Oblíbené Sójová svíčka Zen | 180ml Průměrné hodnocení produktu je 5,0 z 5 hvězdiček. Skladem (>5 ks) 399 Kč Do košíku Sójová svíčka Zen je vůně plná klidu a rovnováhy. Kombinace santalu, jasmínu, citronu a vanilky. Tato vůně vám pomůže najít vnitřní klid a rovnováhu. Oceníte ji při odpočinku, meditaci nebo kdykoliv budete mít náladu na příjemnou svěží vůni s dřevitými tóny. Doba hoření je 30 hod. Kód: SO180ZN Oblíbené Sójová svíčka Meduňka a citronela | 180ml Průměrné hodnocení produktu je 5,0 z 5 hvězdiček. Skladem (>5 ks) 399 Kč Do košíku Osvěžující citrusovo květinová, teplá a intenzivní bylinková vůně meduňky a citronely. Tato kombinace dvou esenciálních olejů se perfektně doplňuje svými účinky. Svíčka se skvěle hodí do všech prostor, neutralizuje pachy a svou intenzitou provoní místnost na delší dobu. Meduňka vyniká při zklidnění, pomáhá zpomalit dýchání, uvolňuje napětí a nervozitu. Citronela pomáhá zvyšovat koncentraci a je to vynikající odpuzovač hmyzu. Doba hoření je 30 hod. Kód: SO180MC Oblíbené Sójová svíčka Radost | 180ml Průměrné hodnocení produktu je 5,0 z 5 hvězdiček. Skladem (>5 ks) 399 Kč Do košíku Sójová svíčka Radost, která probudí vaše smysly něžnou symfonií přírodních esencí a přinese do vašeho domova atmosféru plnou optimismu a životní energie v každém ročním období. Představte si okamžik dokonalé pohody - den, kdy se vše daří, vzduch voní svěžestí a vaše mysl je naplněna klidem a spokojeností. Právě takovou atmosféru jsme zachytili v naší svíčce Radost - jemnou, povznášející vůni, která vás obejme jako teplý paprsek slunce. Základem této jedinečné vůně jsou esence čerstvých růží, které dodávají kompozici něžnost a eleganci. Doplňují je nasládlé tóny šťavnatých pomerančů, jež celou vůni prozáří a dodají jí svěžest a energii. Tato harmonická kombinace květinových a ovocných esencí vytváří dokonalou rovnováhu - není ani příliš těžká, ani přehnaně sladká. Svíčka Radost je ideálním společníkem pro chvíle, kdy potřebujete pozvednout náladu, dodat si energii nebo si jen užít klidný večer s knihou či v příjemné společnosti. Její jemná, ale přesto znatelná vůně postupně naplní prostor a vytvoří atmosféru plnou pozitivní energie a vnitřního klidu. V zimě vám připomene, že i v chladných dnech lze najít teplo a radost, v létě osvěží vaši mysl a na podzim i na jaře bude dokonalým doplňkem měnící se přírody. Dopřejte si rituál zapalování svíčky jako každodenní připomínku, že radost lze nalézt i v těch nejmenších okamžicích, nezávisle na ročním období. Nechte se unášet vůní, která vám připomene, že každý den přináší důvod k radosti. Svíčka je vyrobena z čistého sójového vosku s přírodními esencemi, bez přidaných chemických látek. Doba hoření je 30 hod. Kód: SO180RA Zobrazit všechny související produkty Předchozí produkt Další produkt Popis Podobné (8) Hodnocení (4) Diskuze Detailní popis produktu Každý aspekt našich výrobků vytváříme samy. Vše provádíme s velkou péčí a zaměřujeme se na detail. Výsledkem je poctivá ručně vyrobená svíčka s naší originální kresbou a s použitím kvalitních přírodních ingrediencí.- 100% přírodní sójový vosk, neobsahuje žádné pesticidy, herbicidy, biologicky odbouratelný- 100% přírodní rostlinný vonný olej, který je tvořen esenciálními oleji, bez syntetických přísad a chemie.- bavlněný knot- bez použití barviv a syntetických látek- hoří mnohem déle a čistěji než parafínový vosk- dodáváno pouze v papírových obalech s ohledem na přírodu- vyrobeno ručně v České republicePéče o svíčkuO bavlněný knot je potřeba pečovat. Pro ideální hoření udržujte knot o délce 4–5mm, doporučujeme zastřihnout před každým zapálením. Po zhasnutí se svíčkou nemanipulujte a nechte ji vychladnout. Doplňkové parametry Kategorie: Sójové svíčky 120 ml EAN: 8594231060480 Sójová svíčka Santal | 120ml Průměrné hodnocení produktu je 5,0 z 5 hvězdiček. Skladem (>5 ks) 299 Kč Do košíku Sójová svíčka Santal - dokonalý společník pro chladné večery. Santal v sobě ukrývá kombinaci esenciálních olejů santalového dřeva a pravé vanilky, které dohromady vytvářejí teplou, těžší a nádherně plnou vůni.Představte si příjemně těžkou a bohatou vůni santalového dřeva, které je známé svým hlubokým, dřevitým a mírně sladkým tónem. K tomu přidejte něžnou, bohatou a krémovou vůni pravé vanilky. Tato magická kombinace vás obklopí teplým, útulným a relaxačním aroma, které navodí pocit pohodlí a klidu během chladných večerů. Víčko je zdobené ilustrací s motivem dřeva, svíčka Santal se tak stane dokonalým doplňkem vašeho interiéru, do kterého vnese kousek přírody. Doba hoření je 20 hod. Kód: SO120SA Novinka Sójová svíčka Radost | 120ml Průměrné hodnocení produktu je 5,0 z 5 hvězdiček. Skladem (>5 ks) 299 Kč Do košíku Sójová svíčka Radost, která probudí vaše smysly něžnou symfonií přírodních esencí a přinese do vašeho domova atmosféru plnou optimismu a životní energie v každém ročním období. Představte si okamžik dokonalé pohody - den, kdy se vše daří, vzduch voní svěžestí a vaše mysl je naplněna klidem a spokojeností. Právě takovou atmosféru jsme zachytili v naší svíčce Radost - jemnou, povznášející vůni, která vás obejme jako teplý paprsek slunce. Základem této jedinečné vůně jsou esence čerstvých růží, které dodávají kompozici něžnost a eleganci. Doplňují je nasládlé tóny šťavnatých pomerančů, jež celou vůni prozáří a dodají jí svěžest a energii. Tato harmonická kombinace květinových a ovocných esencí vytváří dokonalou rovnováhu - není ani příliš těžká, ani přehnaně sladká. Svíčka Radost je ideálním společníkem pro chvíle, kdy potřebujete pozvednout náladu, dodat si energii nebo si jen užít klidný večer s knihou či v příjemné společnosti. Její jemná, ale přesto znatelná vůně postupně naplní prostor a vytvoří atmosféru plnou pozitivní energie a vnitřního klidu. V zimě vám připomene, že i v chladných dnech lze najít teplo a radost, v létě osvěží vaši mysl a na podzim i na jaře bude dokonalým doplňkem měnící se přírody. Dopřejte si rituál zapalování svíčky jako každodenní připomínku, že radost lze nalézt i v těch nejmenších okamžicích, nezávisle na ročním období. Nechte se unášet vůní, která vám připomene, že každý den přináší důvod k radosti. Svíčka je vyrobena z čistého sójového vosku s přírodními esencemi, bez přidaných chemických látek. Doba hoření je 20 hod. Kód: SO120RA Oblíbené Sójová svíčka Zen | 120ml Průměrné hodnocení produktu je 4,8 z 5 hvězdiček. Skladem (>5 ks) 299 Kč Do košíku Sójová svíčka Zen je vůně plná klidu a rovnováhy. Kombinace santalu, jasmínu, citronu a vanilky. Tato vůně vám pomůže najít vnitřní klid a rovnováhu. Oceníte ji při odpočinku, meditaci nebo kdykoliv budete mít náladu na příjemnou svěží vůni s dřevitými tóny. Doba hoření je 20 hod. Kód: SO120ZN Sójová svíčka Čistá bílá | 120ml Skladem (>5 ks) 239 Kč Do košíku Čistá bílá, nevoňavá a neutrální svíčka, kterou jsme vytvořily pro všechny citlivé nosánky. Nebo pro ty, kteří si rádi zapalují více svíček najednou a vůně už by bylo v prostoru moc. Kresbu na víčku pro vás ilustrovala Kamča. Doba hoření je až 20 hod. Kód: SO12000 Sójová svíčka Pomeranč | 120ml Průměrné hodnocení produktu je 5,0 z 5 hvězdiček. Skladem (>5 ks) 299 Kč Do košíku Osvěžující, mírně sladká, povznášející vůně pomeranče s kapkou zázvoru, kterou si zamilujete. Pomůže vytvořit uklidňující atmosféru kdykoliv budete potřebovat utéct před ruchem všedních dnů. Tato svíčka je náš oblíbenec. Uklidňuje psychiku a podporuje klidný spánek. Skvěle se hodí na provonění všech prostor, včetně kanceláře či dětského pokoje. Kresbu na víčku pro vás ilustrovala Kamča. Doba hoření je 20 hod. Kód: SO120PO Sójová svíčka Vanilka | 120ml Průměrné hodnocení produktu je 5,0 z 5 hvězdiček. Vyprodáno 299 Kč Pravá přírodní vanilka nevoní přehnaně sladce jako její syntetické náhražky, ale z jejich sladkých tónů ucítíte i lehce nahořklé a kořeněné podtóny, což z vanilky dělá naprosto jedinečnou vůni, kterou obě milujeme. Vanilka se vyznačuje příznivými účinky na psychiku, pomáhá proti úzkostem, psychickému napětí, nespavosti, uklidňuje a uvolňuje. Pomáhá navodit dobrou náladu a působí také jako afrodiziakum. Kresbu na víčku pro vás ilustrovala Kamča. Doba hoření je 20 hod. Kód: SO120VA Bestseller Sójová svíčka Hygge | 120ml Průměrné hodnocení produktu je 5,0 z 5 hvězdiček. Skladem (>5 ks) 299 Kč Do košíku Svíčka Hygge je symbolem domova a ztělesněním pocitu pohodlí, tepla a spokojenosti. Kouzelně hřejivá kompozice sladkých a kořeněných tónů s luxusním nádechem ingrediencí používaných ve vysokém parfémářství vás ohromí. Vůně skořice, která je jedním z hlavních prvků, má schopnost uklidnit mysl a povzbudit tělo. Vzácný kardamom, se svými luxusními a dřevitými tóny, podporuje relaxaci a tonka s jejími balzámové tóny dodává vůni hloubku a jedinečnost. Design navrhla a nakreslila Kamča. Navržen je tak, aby se Hygge stala nejen svíčkou, ale také uměleckým dílem. Víčko je zdobeno ilustrací stromů, lesa a vnáší do interiéru kousek přírody, který zkrášlí každý interiér. Doporučujeme vyzkoušet všem romantickým duším, které milují vůni koření, perníčků, dýňového latté a hledají nejen svíčku, ale také designový doplněk do interiéru, který je tvořen s láskou a smyslem pro detail. Doba hoření je 20 hod. Kód: SO120HG Sójová svíčka Heřmánek | 120ml Průměrné hodnocení produktu je 5,0 z 5 hvězdiček. Vyprodáno 299 Kč Dopřejte si jedinečnou vůní čerstvých květů heřmánku. Příjemná a zároveň intenzivní, bylinná, květinová vůně s lehkými ovocnými tóny. doba hoření je 20 hod. Kód: SO120HE Zobrazit všechny podobné produkty Předchozí produkt Další produkt Hodnocení produktu 5,0 Průměrné hodnocení produktu je 5,0 z 5 hvězdiček. 4 hodnocení 5 4x 4 0x 3 0x 2 0x 1 0x Přidat hodnocení Zanechte hodnocení Povinná pole Jméno Nevyplňujte toto poleSurname E-mail Komentář Jak byste ohodnotili tento produkt? Vyberte od 1 do 5 hvězdiček, kde 1 je nejhorší a 5 nejlepší hodnocení. Odpovídá velmi negativnímu hodnocení. Odpovídá spíše negativnímu hodnocení. Odpovídá průměrnému hodnocení. Odpovídá pozitivnímu hodnocení. Odpovídá výbornému hodnocení. Bezpečnostní kontrola Opište text z obrázku Vložením hodnocení souhlasíte s podmínkami ochrany osobních údajů Odeslat hodnocení Výpis hodnocení 5 SK Simona Kozohorská Hodnocení produktu je 5 z 5 hvězdiček. 22.12.2025 Děkuji za dáreček a moc hezké vůně a doporučuji všem! 5 MP Martina Pistkova Hodnocení produktu je 5 z 5 hvězdiček. 2.12.2025 Krásná vůně. 5 NM Nicola Majdičová Hodnocení produktu je 5 z 5 hvězdiček. 18.9.2025 Voní krásně jemně a nenásilně. :-) Diskuze Buďte první, kdo napíše příspěvek k této položce. Přidat komentář Povinná pole Jméno Nevyplňujte toto poleSurname E-mail Název Komentář Bezpečnostní kontrola Opište text z obrázku Vložením komentáře souhlasíte s podmínkami ochrany osobních údajů Odeslat komentář Zápatí Vyhledávání Hledat Informace pro vás Prodejní místa Věrnostní program Náš příběh Doprava a platby Reklamace a vracení zboží Hodnocení obchodu Obchodní podmínky Podmínky ochrany osobních údajů Kontakt svickuj@email.cz 605331364 https://www.facebook.com/svickuj svickuj Přijímáme online platby"
+}

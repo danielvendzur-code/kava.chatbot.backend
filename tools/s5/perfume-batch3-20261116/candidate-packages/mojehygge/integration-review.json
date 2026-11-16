@@ -1,0 +1,201 @@
+{
+  "runtimeEnabled": false,
+  "owner": "PERFUME_WORKER",
+  "integrationOwner": "MAIN",
+  "registryObject": {
+    "series": "s5",
+    "type": "cosmetics",
+    "segment": "fragrance",
+    "name": "Moje Hygge",
+    "country": "CZ",
+    "logos": {
+      "landing": "/assets/s5/mojehygge/logo.png",
+      "header": "/assets/s5/mojehygge/logo.png",
+      "avatar": "/assets/s5/mojehygge/avatar.svg"
+    },
+    "brand": {
+      "name": "Moje Hygge",
+      "domain": "mojehygge.cz",
+      "website": "https://www.mojehygge.cz/",
+      "lang": "cs",
+      "fullName": "Moje Hygge",
+      "url": "https://www.mojehygge.cz/",
+      "logo": "/assets/s5/mojehygge/logo.png",
+      "mark": "/assets/s5/mojehygge/avatar.svg",
+      "greeting": "Dobrý den. Pomohu vám porovnat vybrané vůně svíček, jejich balení a ceny.",
+      "quickChips": [
+        "Jasmín a růže",
+        "Vanilka a skořice",
+        "Lesní vůně",
+        "Porovnat dvě vůně"
+      ],
+      "theme": {
+        "brand": "#302b26",
+        "accent": "#b69a70",
+        "soft": "#f7f3ee",
+        "paper": "#fff",
+        "ink": "#302b27",
+        "line": "#e5dbce"
+      }
+    },
+    "traitCopy": {
+      "g-fresh": [
+        "Květinové nebo lesní tóny",
+        "",
+        "Květinové nebo lesní tóny",
+        ""
+      ],
+      "jasmine": [
+        "Jasmín a růže",
+        "",
+        "Jasmín a růže",
+        ""
+      ],
+      "forest": [
+        "Jehličí, dřevo a smůla",
+        "",
+        "Jehličí, dřevo a smůla",
+        ""
+      ],
+      "g-warm": [
+        "Sladké koření",
+        "",
+        "Sladké koření",
+        ""
+      ],
+      "vanilla": [
+        "Hřejivá skořice a vanilka",
+        "",
+        "Hřejivá skořice a vanilka",
+        ""
+      ],
+      "gingerbread": [
+        "Skořice, červený pomeranč a badyán",
+        "",
+        "Skořice, červený pomeranč a badyán",
+        ""
+      ]
+    },
+    "stepCopy": {
+      "fragranceDirection": [
+        "Jaká vůně je vám blízká?",
+        "",
+        "Vonné tóny"
+      ],
+      "fragranceProfile": [
+        "Která kombinace vás láká?",
+        "",
+        "Vonné tóny"
+      ]
+    },
+    "compareFocus": true,
+    "upsellFocus": {},
+    "choicePhotos": {
+      "g-fresh": [
+        "/assets/s3/scenes-k2/rose.jpg"
+      ],
+      "jasmine": [
+        "/assets/s5/mojehygge/jasmine.jpg"
+      ],
+      "forest": [
+        "/assets/s5/mojehygge/forest.jpg"
+      ],
+      "g-warm": [
+        "/assets/s3/scenes-k2/vanilla.jpg"
+      ],
+      "vanilla": [
+        "/assets/s5/mojehygge/vanilla.jpg"
+      ],
+      "gingerbread": [
+        "/assets/s5/mojehygge/gingerbread.jpg"
+      ]
+    },
+    "compareProductIds": [
+      "jasmine",
+      "gingerbread"
+    ],
+    "segmentText": {
+      "entryNote": "Vonné svíčky · přesné balení · porovnání",
+      "titleSuffix": "výběr vůně svíčky",
+      "tab": "Výběr vůně",
+      "advisorName": "Průvodce vůněmi svíček",
+      "entrySmall": "VŮNĚ SVÍČEK",
+      "entryTitle": "Najděte vůni své svíčky",
+      "placeholder": "Zeptejte se na charakter vůně, balení nebo cenu…",
+      "heading": "Pomozte zákazníkovi vybrat vůni svíčky podle jeho vkusu.",
+      "lead": "Podle odpovědí zobrazí konkrétní svíčku s fotografií, vonným profilem, balením, cenou a odkazem. Dvě odlišné vůně lze porovnat.",
+      "includedChat": "Vonné tóny, balení a ceny vybraných svíček.",
+      "includedAdvisor": "Výběr vůně svíčky a porovnání dvou kompozic.",
+      "greeting": "Dobrý den. Pomohu vám porovnat vybrané vůně svíček, jejich balení a ceny.",
+      "teaserTitle": "Najděte vůni své svíčky",
+      "teaserNote": "Svíčky, balení a ceny",
+      "teaserAria": "Otevřít výběr vůně svíčky",
+      "source": "mojehygge-demo"
+    },
+    "fragranceResultExtras": {
+      "version": 1,
+      "enabled": true,
+      "alternatives": {
+        "jasmine": "forest",
+        "forest": "jasmine",
+        "vanilla": "gingerbread",
+        "gingerbread": "vanilla"
+      },
+      "scentProfile": {
+        "version": 1,
+        "mode": "source-notes-no-numeric-strength"
+      }
+    },
+    "fragrancePresentation": {
+      "version": 1,
+      "hideStepEstimate": true
+    }
+  },
+  "catalogueImport": "/catalogues/mojehygge.js",
+  "backendBrand": "mojehygge",
+  "offlineRules": [
+    {
+      "chip": "Jasmín a růže",
+      "match": "jasmin|ruze",
+      "productIds": [
+        "jasmine"
+      ]
+    },
+    {
+      "chip": "Vanilka a skořice",
+      "match": "vanilk|skoric",
+      "productIds": [
+        "vanilla"
+      ]
+    },
+    {
+      "chip": "Lesní vůně",
+      "match": "les|jehlic|smul",
+      "productIds": [
+        "forest"
+      ]
+    }
+  ],
+  "noCoreLogicChangeRequired": true,
+  "commonFilesModified": [],
+  "companyCss": {
+    "source": "tools/s5/perfume-batch3-20261116/candidate-packages/mojehygge/ui-review.css",
+    "destination": "n447/s5/brands/mojehygge.css",
+    "registryField": {
+      "companyCss": "/n447/s5/brands/mojehygge.css"
+    }
+  },
+  "presentationRequirement": "Existinga918profile+preset and explicit newslug body.dataset.fragranceProfile=visual-v1. Owner standalonepolish separate includes.",
+  "price": "447 EUR +10 EUR/month",
+  "commercialReview": "PREFERRED_HISTORICAL_BAND_LATEST_EXACT_UNKNOWN",
+  "emailStatus": "NOT_READY",
+  "production": "NOT_DEPLOYED",
+  "paidCalls": 0,
+  "scopeReview": {
+    "productPurpose": "scented-candle",
+    "recommendationCoreChangeRequired": false,
+    "backendReviewRequired": true,
+    "requiredBackendInstruction": "Only interior candles, not perfume/laundry/skincare. Never repeat source medical/afrodisiac/sleep/anxiety/stress/pregnancy/pet/nontoxic/fire/burn/99percentlesssoot/halfslowerburn guarantees or promote meltedcandlewax as handcream. Literal sensednotes and exact fullretailpack/variantprice/stocktimestamp only. No budgetguarantee, inventednumericweights, automaticcart, couponintegration, unimplementedpaidaccessory. MojeHygge180ml299 versus120ml249 is explicit and mustnot mix.",
+    "workerTouchedSharedBackend": false
+  }
+}
