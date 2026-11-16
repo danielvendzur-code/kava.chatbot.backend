@@ -1,0 +1,37 @@
+{
+  "at": "2026-11-16T11:12:04.784525+00:00",
+  "branch": "codex/s5-perfume-batch3-20261116",
+  "base": "6f653c1807544b43089399563fc799d34dd90474",
+  "mainRemoteHead": "de34f7759118e20d3a476f0fe1537ddb02fd161f",
+  "claimCommit": "07e7b4fdc2d57bfd6151fb0d8eeaf8587e313471",
+  "sourcePackagesBuilt": [
+    "essencebliss",
+    "svetlonosky",
+    "nabetondesign",
+    "sojka"
+  ],
+  "primaryFormulas": 23,
+  "localQa": "IN_PROGRESS_NOT_COUNTED_COMPLETE",
+  "completedLocal": [],
+  "livePreview": "NOT_INTEGRATED_NOT_TESTED",
+  "integrationOwner": "MAIN",
+  "sharedRuntimeModified": false,
+  "price": "447EUR+10EUR/month",
+  "paidCalls": 0,
+  "emailAppOperations": 0,
+  "newUnreservedReview": [
+    "lunarium",
+    "vontree",
+    "bylinkokraska"
+  ],
+  "heldUnreserved": [
+    {
+      "slug": "lavona",
+      "reason": "Official Testovaci produkt placeholder text, missing authentic productdifferences/pack. No package/claim."
+    },
+    {
+      "slug": "ncn",
+      "reason": "Insufficient scentdescriptors for current wardrobe wax and customshape candles; no package/claim."
+    }
+  ]
+}

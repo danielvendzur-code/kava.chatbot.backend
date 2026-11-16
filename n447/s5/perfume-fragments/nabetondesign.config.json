@@ -1,0 +1,229 @@
+{
+  "slug": "nabetondesign",
+  "owner": "PERFUME_WORKER",
+  "claimCommit": "07e7b4fdc2d57bfd6151fb0d8eeaf8587e313471",
+  "series": "s5",
+  "segment": "fragrance",
+  "status": "SOURCE_PACKAGE_VERIFIED",
+  "catalogue": "/catalogues/nabetondesign.js",
+  "requiredEngineContract": "s5-fragrance-direction-profile-v1",
+  "quickChips": [
+    "Čisté prádlo a bavlna",
+    "Růžový grep",
+    "Himalájský cedr",
+    "Porovnat dvě vůně"
+  ],
+  "offlineReplyRequirements": [
+    {
+      "chip": "Čisté prádlo a bavlna",
+      "match": "ciste pradlo|bavln",
+      "productIds": [
+        "cotton"
+      ]
+    },
+    {
+      "chip": "Růžový grep",
+      "match": "grep",
+      "productIds": [
+        "grapefruit"
+      ]
+    },
+    {
+      "chip": "Himalájský cedr",
+      "match": "cedr",
+      "productIds": [
+        "cedar"
+      ]
+    }
+  ],
+  "compareProductIds": [
+    "cotton",
+    "christmas"
+  ],
+  "addon": {
+    "enabled": false,
+    "reason": "Only sourced distinct alternative and two-product comparison; no invented paid-accessory compatibility or fake mini."
+  },
+  "budgetQuestion": false,
+  "enableRuntime": false,
+  "sharedCoreVerifiedAt": "c9e4da04e19339492a4ffe91428e8ac960b866b6",
+  "resultExtrasScript": "/n447/s5/fragrance-result-extras.js",
+  "registryObject": {
+    "series": "s5",
+    "type": "cosmetics",
+    "segment": "fragrance",
+    "name": "NABETONdesign",
+    "country": "CZ",
+    "logos": {
+      "landing": "/assets/s5/nabetondesign/logo.svg",
+      "header": "/assets/s5/nabetondesign/logo.svg",
+      "avatar": "/assets/s5/nabetondesign/avatar.svg"
+    },
+    "brand": {
+      "name": "NABETONdesign",
+      "domain": "nabetondesign.cz",
+      "website": "https://www.nabetondesign.cz/",
+      "lang": "cs",
+      "fullName": "NABETONdesign",
+      "url": "https://www.nabetondesign.cz/",
+      "logo": "/assets/s5/nabetondesign/logo.svg",
+      "mark": "/assets/s5/nabetondesign/avatar.svg",
+      "greeting": "Dobrý den. Pomohu vám porovnat vybrané vůně svíček, jejich balení a ceny.",
+      "quickChips": [
+        "Čisté prádlo a bavlna",
+        "Růžový grep",
+        "Himalájský cedr",
+        "Porovnat dvě vůně"
+      ],
+      "theme": {
+        "brand": "#4e5c46",
+        "accent": "#bdab80",
+        "soft": "#f7f2ee",
+        "paper": "#fff",
+        "ink": "#332d29",
+        "line": "#e7ded5"
+      }
+    },
+    "traitCopy": {
+      "fresh": [
+        "Čistota nebo květinové tóny",
+        "",
+        "Čistota nebo květinové tóny",
+        ""
+      ],
+      "cotton": [
+        "Čisté prádlo, bavlna a musk",
+        "",
+        "Čisté prádlo, bavlna a musk",
+        ""
+      ],
+      "pink": [
+        "Růže, růžový pepř a cedr",
+        "",
+        "Růže, růžový pepř a cedr",
+        ""
+      ],
+      "fruit": [
+        "Ovocná svěžest",
+        "",
+        "Ovocná svěžest",
+        ""
+      ],
+      "tropical": [
+        "Ananas, kokos a vanilka",
+        "",
+        "Ananas, kokos a vanilka",
+        ""
+      ],
+      "grapefruit": [
+        "Růžový grep, jasmín a vanilka",
+        "",
+        "Růžový grep, jasmín a vanilka",
+        ""
+      ],
+      "warm": [
+        "Koření nebo dřevitý charakter",
+        "",
+        "Koření nebo dřevitý charakter",
+        ""
+      ],
+      "christmas": [
+        "Pomeranč, mandarinka a koření",
+        "",
+        "Pomeranč, mandarinka a koření",
+        ""
+      ],
+      "cedar": [
+        "Himalájský cedr, jasmín a ambra",
+        "",
+        "Himalájský cedr, jasmín a ambra",
+        ""
+      ]
+    },
+    "stepCopy": {
+      "fragranceDirection": [
+        "Jaká vůně je vám blízká?",
+        "",
+        "Vonné tóny"
+      ],
+      "fragranceProfile": [
+        "Která kombinace vás láká?",
+        "",
+        "Vonné tóny"
+      ]
+    },
+    "compareFocus": true,
+    "upsellFocus": {},
+    "choicePhotos": {
+      "fresh": [
+        "/assets/s3/scenes-k2/rose.jpg"
+      ],
+      "cotton": [
+        "/assets/s5/nabetondesign/cotton.png"
+      ],
+      "pink": [
+        "/assets/s5/nabetondesign/pink.jpg"
+      ],
+      "fruit": [
+        "/assets/s3/scenes-k2/citrus.jpg"
+      ],
+      "tropical": [
+        "/assets/s5/nabetondesign/tropical.png"
+      ],
+      "grapefruit": [
+        "/assets/s5/nabetondesign/grapefruit.png"
+      ],
+      "warm": [
+        "/assets/s3/scenes-k2/pine.jpg"
+      ],
+      "christmas": [
+        "/assets/s5/nabetondesign/christmas.jpg"
+      ],
+      "cedar": [
+        "/assets/s5/nabetondesign/cedar.png"
+      ]
+    },
+    "compareProductIds": [
+      "cotton",
+      "christmas"
+    ],
+    "segmentText": {
+      "entryNote": "Vonné svíčky · balení a cena · porovnání",
+      "titleSuffix": "výběr vůně svíčky",
+      "tab": "Výběr vůně",
+      "advisorName": "Průvodce vůněmi svíček",
+      "entrySmall": "VŮNĚ SVÍČEK",
+      "entryTitle": "Najděte vůni své svíčky",
+      "placeholder": "Zeptejte se na charakter vůně, balení nebo cenu…",
+      "heading": "Pomozte zákazníkovi vybrat vůni svíčky podle jeho vkusu.",
+      "lead": "Podle odpovědí zobrazí konkrétní svíčku s fotografií, vonným profilem, balením, cenou a odkazem. Dvě odlišné vůně lze porovnat.",
+      "includedChat": "Vonné tóny, balení a ceny vybraných svíček.",
+      "includedAdvisor": "Výběr vůně svíčky a porovnání dvou kompozic.",
+      "greeting": "Dobrý den. Pomohu vám porovnat vybrané vůně svíček, jejich balení a ceny.",
+      "teaserTitle": "Najděte vůni své svíčky",
+      "teaserNote": "Svíčky, balení a ceny",
+      "teaserAria": "Otevřít výběr vůně svíčky",
+      "source": "nabetondesign-demo"
+    },
+    "fragranceResultExtras": {
+      "version": 1,
+      "enabled": true,
+      "alternatives": {
+        "cotton": "pink",
+        "pink": "cotton",
+        "tropical": "grapefruit",
+        "grapefruit": "tropical",
+        "christmas": "cedar",
+        "cedar": "christmas"
+      },
+      "scentProfile": {
+        "version": 1,
+        "mode": "source-notes-no-numeric-strength"
+      }
+    },
+    "fragrancePresentation": {
+      "version": 1,
+      "hideStepEstimate": true
+    }
+  }
+}

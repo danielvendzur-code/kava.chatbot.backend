@@ -1,0 +1,954 @@
+{
+  "slug": "lavona",
+  "label": "1",
+  "url": "https://lavona.sk/produkt/testovaci-produkt-c-1/",
+  "checkedAt": "2026-11-16T10:58:45.412974+00:00",
+  "tlsVerified": true,
+  "scope": "Read-only officialHTML; notlivewidgetQA",
+  "status": 200,
+  "finalUrl": "https://lavona.sk/produkt/testovaci-produkt-c-1/",
+  "sourceSha256": "0f1421d0d77c8d8048c368023bc5f6651a0705f8e9ba2400fab3f761c7550c97",
+  "name": "Testovací produkt č. 1",
+  "jsonld": [
+    "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://lavona.sk/#organization\",\"name\":\"La v\\u00f4\\u0148a\",\"url\":\"https://lavona.sk\",\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https://lavona.sk/#logo\",\"url\":\"https://lavona.sk/wp-content/uploads/2024/11/pre-logo_la_vona-removebg-preview.png\",\"contentUrl\":\"https://lavona.sk/wp-content/uploads/2024/11/pre-logo_la_vona-removebg-preview.png\",\"caption\":\"La v\\u00f4\\u0148a\",\"inLanguage\":\"sk-SK\",\"width\":\"453\",\"height\":\"220\"}},{\"@type\":\"WebSite\",\"@id\":\"https://lavona.sk/#website\",\"url\":\"https://lavona.sk\",\"name\":\"La v\\u00f4\\u0148a\",\"publisher\":{\"@id\":\"https://lavona.sk/#organization\"},\"inLanguage\":\"sk-SK\"},{\"@type\":\"ImageObject\",\"@id\":\"https://lavona.sk/wp-content/uploads/2023/05/uiux_2-scaled.jpg\",\"url\":\"https://lavona.sk/wp-content/uploads/2023/05/uiux_2-scaled.jpg\",\"width\":\"2560\",\"height\":\"2474\",\"inLanguage\":\"sk-SK\"},{\"@type\":\"ItemPage\",\"@id\":\"https://lavona.sk/produkt/testovaci-produkt-c-1/#webpage\",\"url\":\"https://lavona.sk/produkt/testovaci-produkt-c-1/\",\"name\":\"Testovac\\u00ed produkt \\u010d. 1 - La v\\u00f4\\u0148a\",\"datePublished\":\"2023-05-10T00:19:00+02:00\",\"dateModified\":\"2024-11-23T19:07:44+01:00\",\"isPartOf\":{\"@id\":\"https://lavona.sk/#website\"},\"primaryImageOfPage\":{\"@id\":\"https://lavona.sk/wp-content/uploads/2023/05/uiux_2-scaled.jpg\"},\"inLanguage\":\"sk-SK\"},{\"@type\":\"Product\",\"name\":\"Testovac\\u00ed produkt \\u010d. 1 - La v\\u00f4\\u0148a\",\"description\":\"Pri jeho n\\u00e1vrhu sa sna\\u017ete vypichn\\u00fa\\u0165 odli\\u0161nosti medzi jednotliv\\u00fdmi produktmi, preto\\u017ee text sl\\u00fa\\u017ei hlavne na u\\u013eah\\u010denie v\\u00fdberu v ponuke\\u00a0kateg\\u00f3rie\\u00a0.\\u00a0Je to tie\\u017e d\\u00f4le\\u017eit\\u00fd\\u00a0SEO\\u00a0prvok.\\u00a0Odpor\\u00fa\\u010dame ho doplni\\u0165 o k\\u013e\\u00fa\\u010dov\\u00e9 slov\\u00e1 produktu. Kr\\u00e1tky popis sa zobrazuje aj v niektor\\u00fdch zobrazen\\u00ed polo\\u017eiek v zozname produktov.\\u00a0Je potrebn\\u00e9 si vybra\\u0165 konkr\\u00e9tne rozlo\\u017eenie\\u00a0polo\\u017eky produktu v nastaveniach t\\u00e9my.\",\"sku\":\"01-001\",\"category\":\"Dar\\u010dekov\\u00e9 balenie\",\"mainEntityOfPage\":{\"@id\":\"https://lavona.sk/produkt/testovaci-produkt-c-1/#webpage\"},\"image\":[{\"@type\":\"ImageObject\",\"url\":\"https://lavona.sk/wp-content/uploads/2023/05/uiux_2-scaled.jpg\",\"height\":\"2474\",\"width\":\"2560\"},{\"@type\":\"ImageObject\",\"url\":\"https://lavona.sk/wp-content/uploads/2023/05/4212150.jpg\",\"height\":\"2000\",\"width\":\"2000\"},{\"@type\":\"ImageObject\",\"url\":\"https://lavona.sk/wp-content/uploads/2023/05/website-usability-testing.width-750.png\",\"height\":\"419\",\"width\":\"750\"}],\"offers\":{\"@type\":\"Offer\",\"price\":\"10.50\",\"priceCurrency\":\"EUR\",\"priceValidUntil\":\"2027-12-31\",\"availability\":\"http://schema.org/InStock\",\"itemCondition\":\"NewCondition\",\"url\":\"https://lavona.sk/produkt/testovaci-produkt-c-1/\",\"seller\":{\"@type\":\"Organization\",\"@id\":\"https://lavona.sk/\",\"name\":\"La v\\u00f4\\u0148a\",\"url\":\"https://lavona.sk\",\"logo\":\"https://lavona.sk/wp-content/uploads/2024/11/pre-logo_la_vona-removebg-preview.png\"}},\"@id\":\"https://lavona.sk/produkt/testovaci-produkt-c-1/#richSnippet\"}]}"
+  ],
+  "offers": [],
+  "photos": [],
+  "links": [
+    {
+      "text": "",
+      "url": "tel:+421 944 426 927"
+    },
+    {
+      "text": "",
+      "url": "mailto:info@lavona.sk"
+    },
+    {
+      "text": "Domov",
+      "url": "https://lavona.sk/"
+    },
+    {
+      "text": "O nás",
+      "url": "https://lavona.sk/o-nas/"
+    },
+    {
+      "text": "Blog",
+      "url": "https://lavona.sk/blog/"
+    },
+    {
+      "text": "Časté otázky",
+      "url": "https://lavona.sk/caste-otazky/"
+    },
+    {
+      "text": "Veľkoobchod",
+      "url": "https://lavona.sk/velkoobchod/"
+    },
+    {
+      "text": "Výskum a vývoj",
+      "url": "https://lavona.sk/vyskum-a-vyvoj/"
+    },
+    {
+      "text": "Vernostný systém",
+      "url": "https://lavona.sk/vernostny-system/"
+    },
+    {
+      "text": "Recyklačný program",
+      "url": "https://lavona.sk/recyklacny-program/"
+    },
+    {
+      "text": "Kontakt",
+      "url": "https://lavona.sk/kontakt/"
+    },
+    {
+      "text": "",
+      "url": "https://www.facebook.com/sharer/sharer.php?u=https://lavona.sk/produkt/testovaci-produkt-c-1/"
+    },
+    {
+      "text": "",
+      "url": "https://x.com/share?url=https://lavona.sk/produkt/testovaci-produkt-c-1/"
+    },
+    {
+      "text": "",
+      "url": "https://pinterest.com/pin/create/button/?url=https://lavona.sk/produkt/testovaci-produkt-c-1/&media=https://lavona.sk/wp-content/uploads/2023/05/uiux_2-scaled.jpg&description=Testovac%C3%AD+produkt+%C4%8D.+1"
+    },
+    {
+      "text": "",
+      "url": "https://www.linkedin.com/shareArticle?mini=true&url=https://lavona.sk/produkt/testovaci-produkt-c-1/"
+    },
+    {
+      "text": "",
+      "url": "https://telegram.me/share/url?url=https://lavona.sk/produkt/testovaci-produkt-c-1/"
+    },
+    {
+      "text": "",
+      "url": "https://lavona.sk/"
+    },
+    {
+      "text": "Prihlásenie / Registrácia",
+      "url": "https://lavona.sk/moj-ucet/"
+    },
+    {
+      "text": "Vytvoriť účet",
+      "url": "https://lavona.sk/moj-ucet/?action=register"
+    },
+    {
+      "text": "Stratili ste heslo?",
+      "url": "https://lavona.sk/moj-ucet/lost-password/"
+    },
+    {
+      "text": "0 Obľúbené produkty",
+      "url": "https://lavona.sk/oblubene-produkty/"
+    },
+    {
+      "text": "0 Porovnaj",
+      "url": "https://lavona.sk/porovnavac/"
+    },
+    {
+      "text": "0 items 0.00€",
+      "url": "https://lavona.sk/kosik/"
+    },
+    {
+      "text": "",
+      "url": "https://lavona.sk/"
+    },
+    {
+      "text": "0 items 0.00€",
+      "url": "https://lavona.sk/kosik/"
+    },
+    {
+      "text": "Vzorky",
+      "url": "https://lavona.sk/kategoria-produktu/vzorky/"
+    },
+    {
+      "text": "Doplnky",
+      "url": "https://lavona.sk/kategoria-produktu/doplnky/"
+    },
+    {
+      "text": "Parfumy na pranie",
+      "url": "https://lavona.sk/kategoria-produktu/parfumy-na-pranie/"
+    },
+    {
+      "text": "Vône do Auta",
+      "url": "https://lavona.sk/kategoria-produktu/vone-do-auta/"
+    },
+    {
+      "text": "Vône do domácnosti",
+      "url": "https://lavona.sk/kategoria-produktu/vone-do-domacnosti/"
+    },
+    {
+      "text": "Darčekové balenie",
+      "url": "https://lavona.sk/obchod"
+    },
+    {
+      "text": "Domov",
+      "url": "https://lavona.sk"
+    },
+    {
+      "text": "Doplnky",
+      "url": "https://lavona.sk/kategoria-produktu/doplnky/"
+    },
+    {
+      "text": "",
+      "url": "https://lavona.sk/wp-content/uploads/2023/05/uiux_2-scaled.jpg"
+    },
+    {
+      "text": "",
+      "url": "https://lavona.sk/wp-content/uploads/2023/05/4212150.jpg"
+    },
+    {
+      "text": "",
+      "url": "https://lavona.sk/wp-content/uploads/2023/05/website-usability-testing.width-750.png"
+    },
+    {
+      "text": "Darčekové balenie",
+      "url": "https://lavona.sk/kategoria-produktu/darcekove-balenie/"
+    },
+    {
+      "text": "Doplnky",
+      "url": "https://lavona.sk/kategoria-produktu/doplnky/"
+    },
+    {
+      "text": "Novinka",
+      "url": "https://lavona.sk/kategoria-produktu/novinka/"
+    },
+    {
+      "text": "Parfumy na pranie",
+      "url": "https://lavona.sk/kategoria-produktu/parfumy-na-pranie/"
+    },
+    {
+      "text": "Vône do Auta",
+      "url": "https://lavona.sk/kategoria-produktu/vone-do-auta/"
+    },
+    {
+      "text": "Vône do domácnosti",
+      "url": "https://lavona.sk/kategoria-produktu/vone-do-domacnosti/"
+    },
+    {
+      "text": "Vzorky",
+      "url": "https://lavona.sk/kategoria-produktu/vzorky/"
+    },
+    {
+      "text": "Zrušiť odpoveď",
+      "url": "https://lavona.sk/produkt/testovaci-produkt-c-1/#respond"
+    },
+    {
+      "text": "prihlásený",
+      "url": "https://lavona.sk/moj-ucet/"
+    },
+    {
+      "text": "",
+      "url": "https://lavona.sk/produkt/testovaci-produkt-c-10/"
+    },
+    {
+      "text": "Porovnaj",
+      "url": "https://lavona.sk/porovnavac/"
+    },
+    {
+      "text": "Rýchly náhľad",
+      "url": "https://lavona.sk/produkt/testovaci-produkt-c-10/"
+    },
+    {
+      "text": "Pridať medzi obľúbené",
+      "url": "https://lavona.sk/oblubene-produkty/"
+    },
+    {
+      "text": "Testovací produkt č. 10",
+      "url": "https://lavona.sk/produkt/testovaci-produkt-c-10/"
+    },
+    {
+      "text": "Darčekové balenie",
+      "url": "https://lavona.sk/kategoria-produktu/darcekove-balenie/"
+    },
+    {
+      "text": "Doplnky",
+      "url": "https://lavona.sk/kategoria-produktu/doplnky/"
+    },
+    {
+      "text": "Novinka",
+      "url": "https://lavona.sk/kategoria-produktu/novinka/"
+    },
+    {
+      "text": "Parfumy na pranie",
+      "url": "https://lavona.sk/kategoria-produktu/parfumy-na-pranie/"
+    },
+    {
+      "text": "Vône do Auta",
+      "url": "https://lavona.sk/kategoria-produktu/vone-do-auta/"
+    },
+    {
+      "text": "Vône do domácnosti",
+      "url": "https://lavona.sk/kategoria-produktu/vone-do-domacnosti/"
+    },
+    {
+      "text": "Vzorky",
+      "url": "https://lavona.sk/kategoria-produktu/vzorky/"
+    },
+    {
+      "text": "Pridať do košíka",
+      "url": "https://lavona.sk/produkt/testovaci-produkt-c-1/?add-to-cart=7548"
+    },
+    {
+      "text": "",
+      "url": "https://lavona.sk/produkt/testovaci-produkt-c-11/"
+    },
+    {
+      "text": "Porovnaj",
+      "url": "https://lavona.sk/porovnavac/"
+    },
+    {
+      "text": "Rýchly náhľad",
+      "url": "https://lavona.sk/produkt/testovaci-produkt-c-11/"
+    },
+    {
+      "text": "Pridať medzi obľúbené",
+      "url": "https://lavona.sk/oblubene-produkty/"
+    },
+    {
+      "text": "Testovací produkt č. 11",
+      "url": "https://lavona.sk/produkt/testovaci-produkt-c-11/"
+    },
+    {
+      "text": "Darčekové balenie",
+      "url": "https://lavona.sk/kategoria-produktu/darcekove-balenie/"
+    },
+    {
+      "text": "Doplnky",
+      "url": "https://lavona.sk/kategoria-produktu/doplnky/"
+    },
+    {
+      "text": "Novinka",
+      "url": "https://lavona.sk/kategoria-produktu/novinka/"
+    },
+    {
+      "text": "Parfumy na pranie",
+      "url": "https://lavona.sk/kategoria-produktu/parfumy-na-pranie/"
+    },
+    {
+      "text": "Vône do Auta",
+      "url": "https://lavona.sk/kategoria-produktu/vone-do-auta/"
+    },
+    {
+      "text": "Vône do domácnosti",
+      "url": "https://lavona.sk/kategoria-produktu/vone-do-domacnosti/"
+    },
+    {
+      "text": "Vzorky",
+      "url": "https://lavona.sk/kategoria-produktu/vzorky/"
+    },
+    {
+      "text": "Pridať do košíka",
+      "url": "https://lavona.sk/produkt/testovaci-produkt-c-1/?add-to-cart=7549"
+    },
+    {
+      "text": "Vypredané",
+      "url": "https://lavona.sk/produkt/testovaci-produkt-c-12/"
+    },
+    {
+      "text": "Porovnaj",
+      "url": "https://lavona.sk/porovnavac/"
+    },
+    {
+      "text": "Rýchly náhľad",
+      "url": "https://lavona.sk/produkt/testovaci-produkt-c-12/"
+    },
+    {
+      "text": "Pridať medzi obľúbené",
+      "url": "https://lavona.sk/oblubene-produkty/"
+    },
+    {
+      "text": "Testovací produkt č. 12",
+      "url": "https://lavona.sk/produkt/testovaci-produkt-c-12/"
+    },
+    {
+      "text": "Darčekové balenie",
+      "url": "https://lavona.sk/kategoria-produktu/darcekove-balenie/"
+    },
+    {
+      "text": "Doplnky",
+      "url": "https://lavona.sk/kategoria-produktu/doplnky/"
+    },
+    {
+      "text": "Novinka",
+      "url": "https://lavona.sk/kategoria-produktu/novinka/"
+    },
+    {
+      "text": "Parfumy na pranie",
+      "url": "https://lavona.sk/kategoria-produktu/parfumy-na-pranie/"
+    },
+    {
+      "text": "Vône do Auta",
+      "url": "https://lavona.sk/kategoria-produktu/vone-do-auta/"
+    },
+    {
+      "text": "Vône do domácnosti",
+      "url": "https://lavona.sk/kategoria-produktu/vone-do-domacnosti/"
+    },
+    {
+      "text": "Vzorky",
+      "url": "https://lavona.sk/kategoria-produktu/vzorky/"
+    },
+    {
+      "text": "Viac info",
+      "url": "https://lavona.sk/produkt/testovaci-produkt-c-12/"
+    },
+    {
+      "text": "",
+      "url": "https://lavona.sk/produkt/testovaci-produkt-c-2/"
+    },
+    {
+      "text": "Porovnaj",
+      "url": "https://lavona.sk/porovnavac/"
+    },
+    {
+      "text": "Rýchly náhľad",
+      "url": "https://lavona.sk/produkt/testovaci-produkt-c-2/"
+    },
+    {
+      "text": "Pridať medzi obľúbené",
+      "url": "https://lavona.sk/oblubene-produkty/"
+    },
+    {
+      "text": "Testovací produkt č. 2",
+      "url": "https://lavona.sk/produkt/testovaci-produkt-c-2/"
+    },
+    {
+      "text": "Darčekové balenie",
+      "url": "https://lavona.sk/kategoria-produktu/darcekove-balenie/"
+    },
+    {
+      "text": "Doplnky",
+      "url": "https://lavona.sk/kategoria-produktu/doplnky/"
+    },
+    {
+      "text": "Novinka",
+      "url": "https://lavona.sk/kategoria-produktu/novinka/"
+    },
+    {
+      "text": "Parfumy na pranie",
+      "url": "https://lavona.sk/kategoria-produktu/parfumy-na-pranie/"
+    },
+    {
+      "text": "Vône do Auta",
+      "url": "https://lavona.sk/kategoria-produktu/vone-do-auta/"
+    },
+    {
+      "text": "Vône do domácnosti",
+      "url": "https://lavona.sk/kategoria-produktu/vone-do-domacnosti/"
+    },
+    {
+      "text": "Vzorky",
+      "url": "https://lavona.sk/kategoria-produktu/vzorky/"
+    },
+    {
+      "text": "Pridať do košíka",
+      "url": "https://lavona.sk/produkt/testovaci-produkt-c-1/?add-to-cart=7539"
+    },
+    {
+      "text": "",
+      "url": "https://lavona.sk/produkt/testovaci-produkt-c-3/"
+    },
+    {
+      "text": "Porovnaj",
+      "url": "https://lavona.sk/porovnavac/"
+    },
+    {
+      "text": "Rýchly náhľad",
+      "url": "https://lavona.sk/produkt/testovaci-produkt-c-3/"
+    },
+    {
+      "text": "Pridať medzi obľúbené",
+      "url": "https://lavona.sk/oblubene-produkty/"
+    },
+    {
+      "text": "Testovací produkt č. 3",
+      "url": "https://lavona.sk/produkt/testovaci-produkt-c-3/"
+    },
+    {
+      "text": "Darčekové balenie",
+      "url": "https://lavona.sk/kategoria-produktu/darcekove-balenie/"
+    },
+    {
+      "text": "Doplnky",
+      "url": "https://lavona.sk/kategoria-produktu/doplnky/"
+    },
+    {
+      "text": "Novinka",
+      "url": "https://lavona.sk/kategoria-produktu/novinka/"
+    },
+    {
+      "text": "Parfumy na pranie",
+      "url": "https://lavona.sk/kategoria-produktu/parfumy-na-pranie/"
+    },
+    {
+      "text": "Vône do Auta",
+      "url": "https://lavona.sk/kategoria-produktu/vone-do-auta/"
+    },
+    {
+      "text": "Vône do domácnosti",
+      "url": "https://lavona.sk/kategoria-produktu/vone-do-domacnosti/"
+    },
+    {
+      "text": "Vzorky",
+      "url": "https://lavona.sk/kategoria-produktu/vzorky/"
+    },
+    {
+      "text": "Pridať do košíka",
+      "url": "https://lavona.sk/produkt/testovaci-produkt-c-1/?add-to-cart=7540"
+    },
+    {
+      "text": "",
+      "url": "https://lavona.sk/produkt/testovaci-produkt-c-4/"
+    },
+    {
+      "text": "Porovnaj",
+      "url": "https://lavona.sk/porovnavac/"
+    },
+    {
+      "text": "Rýchly náhľad",
+      "url": "https://lavona.sk/produkt/testovaci-produkt-c-4/"
+    },
+    {
+      "text": "Pridať medzi obľúbené",
+      "url": "https://lavona.sk/oblubene-produkty/"
+    },
+    {
+      "text": "Testovací produkt č. 4",
+      "url": "https://lavona.sk/produkt/testovaci-produkt-c-4/"
+    },
+    {
+      "text": "Darčekové balenie",
+      "url": "https://lavona.sk/kategoria-produktu/darcekove-balenie/"
+    },
+    {
+      "text": "Doplnky",
+      "url": "https://lavona.sk/kategoria-produktu/doplnky/"
+    },
+    {
+      "text": "Novinka",
+      "url": "https://lavona.sk/kategoria-produktu/novinka/"
+    },
+    {
+      "text": "Parfumy na pranie",
+      "url": "https://lavona.sk/kategoria-produktu/parfumy-na-pranie/"
+    },
+    {
+      "text": "Vône do Auta",
+      "url": "https://lavona.sk/kategoria-produktu/vone-do-auta/"
+    },
+    {
+      "text": "Vône do domácnosti",
+      "url": "https://lavona.sk/kategoria-produktu/vone-do-domacnosti/"
+    },
+    {
+      "text": "Vzorky",
+      "url": "https://lavona.sk/kategoria-produktu/vzorky/"
+    },
+    {
+      "text": "Pridať do košíka",
+      "url": "https://lavona.sk/produkt/testovaci-produkt-c-1/?add-to-cart=7541"
+    },
+    {
+      "text": "",
+      "url": "https://lavona.sk/produkt/testovaci-produkt-c-5/"
+    },
+    {
+      "text": "Porovnaj",
+      "url": "https://lavona.sk/porovnavac/"
+    },
+    {
+      "text": "Rýchly náhľad",
+      "url": "https://lavona.sk/produkt/testovaci-produkt-c-5/"
+    },
+    {
+      "text": "Pridať medzi obľúbené",
+      "url": "https://lavona.sk/oblubene-produkty/"
+    },
+    {
+      "text": "Testovací produkt č. 5",
+      "url": "https://lavona.sk/produkt/testovaci-produkt-c-5/"
+    },
+    {
+      "text": "Darčekové balenie",
+      "url": "https://lavona.sk/kategoria-produktu/darcekove-balenie/"
+    },
+    {
+      "text": "Doplnky",
+      "url": "https://lavona.sk/kategoria-produktu/doplnky/"
+    },
+    {
+      "text": "Novinka",
+      "url": "https://lavona.sk/kategoria-produktu/novinka/"
+    },
+    {
+      "text": "Parfumy na pranie",
+      "url": "https://lavona.sk/kategoria-produktu/parfumy-na-pranie/"
+    },
+    {
+      "text": "Vône do Auta",
+      "url": "https://lavona.sk/kategoria-produktu/vone-do-auta/"
+    },
+    {
+      "text": "Vône do domácnosti",
+      "url": "https://lavona.sk/kategoria-produktu/vone-do-domacnosti/"
+    },
+    {
+      "text": "Vzorky",
+      "url": "https://lavona.sk/kategoria-produktu/vzorky/"
+    },
+    {
+      "text": "Pridať do košíka",
+      "url": "https://lavona.sk/produkt/testovaci-produkt-c-1/?add-to-cart=7542"
+    },
+    {
+      "text": "",
+      "url": "https://lavona.sk/produkt/testovaci-produkt-c-6/"
+    },
+    {
+      "text": "Porovnaj",
+      "url": "https://lavona.sk/porovnavac/"
+    },
+    {
+      "text": "Rýchly náhľad",
+      "url": "https://lavona.sk/produkt/testovaci-produkt-c-6/"
+    },
+    {
+      "text": "Pridať medzi obľúbené",
+      "url": "https://lavona.sk/oblubene-produkty/"
+    },
+    {
+      "text": "Testovací produkt č. 6",
+      "url": "https://lavona.sk/produkt/testovaci-produkt-c-6/"
+    },
+    {
+      "text": "Darčekové balenie",
+      "url": "https://lavona.sk/kategoria-produktu/darcekove-balenie/"
+    },
+    {
+      "text": "Doplnky",
+      "url": "https://lavona.sk/kategoria-produktu/doplnky/"
+    },
+    {
+      "text": "Novinka",
+      "url": "https://lavona.sk/kategoria-produktu/novinka/"
+    },
+    {
+      "text": "Parfumy na pranie",
+      "url": "https://lavona.sk/kategoria-produktu/parfumy-na-pranie/"
+    },
+    {
+      "text": "Vône do Auta",
+      "url": "https://lavona.sk/kategoria-produktu/vone-do-auta/"
+    },
+    {
+      "text": "Vône do domácnosti",
+      "url": "https://lavona.sk/kategoria-produktu/vone-do-domacnosti/"
+    },
+    {
+      "text": "Vzorky",
+      "url": "https://lavona.sk/kategoria-produktu/vzorky/"
+    },
+    {
+      "text": "Pridať do košíka",
+      "url": "https://lavona.sk/produkt/testovaci-produkt-c-1/?add-to-cart=7543"
+    },
+    {
+      "text": "",
+      "url": "https://lavona.sk/produkt/testovaci-produkt-c-7-2/"
+    },
+    {
+      "text": "Porovnaj",
+      "url": "https://lavona.sk/porovnavac/"
+    },
+    {
+      "text": "Rýchly náhľad",
+      "url": "https://lavona.sk/produkt/testovaci-produkt-c-7-2/"
+    },
+    {
+      "text": "Pridať medzi obľúbené",
+      "url": "https://lavona.sk/oblubene-produkty/"
+    },
+    {
+      "text": "Testovací produkt č. 7",
+      "url": "https://lavona.sk/produkt/testovaci-produkt-c-7-2/"
+    },
+    {
+      "text": "Darčekové balenie",
+      "url": "https://lavona.sk/kategoria-produktu/darcekove-balenie/"
+    },
+    {
+      "text": "Doplnky",
+      "url": "https://lavona.sk/kategoria-produktu/doplnky/"
+    },
+    {
+      "text": "Novinka",
+      "url": "https://lavona.sk/kategoria-produktu/novinka/"
+    },
+    {
+      "text": "Parfumy na pranie",
+      "url": "https://lavona.sk/kategoria-produktu/parfumy-na-pranie/"
+    },
+    {
+      "text": "Vône do Auta",
+      "url": "https://lavona.sk/kategoria-produktu/vone-do-auta/"
+    },
+    {
+      "text": "Vône do domácnosti",
+      "url": "https://lavona.sk/kategoria-produktu/vone-do-domacnosti/"
+    },
+    {
+      "text": "Vzorky",
+      "url": "https://lavona.sk/kategoria-produktu/vzorky/"
+    },
+    {
+      "text": "Pridať do košíka",
+      "url": "https://lavona.sk/produkt/testovaci-produkt-c-1/?add-to-cart=7545"
+    },
+    {
+      "text": "",
+      "url": "https://lavona.sk/produkt/testovaci-produkt-c-8/"
+    },
+    {
+      "text": "Porovnaj",
+      "url": "https://lavona.sk/porovnavac/"
+    },
+    {
+      "text": "Rýchly náhľad",
+      "url": "https://lavona.sk/produkt/testovaci-produkt-c-8/"
+    },
+    {
+      "text": "Pridať medzi obľúbené",
+      "url": "https://lavona.sk/oblubene-produkty/"
+    },
+    {
+      "text": "Testovací produkt č. 8",
+      "url": "https://lavona.sk/produkt/testovaci-produkt-c-8/"
+    },
+    {
+      "text": "Darčekové balenie",
+      "url": "https://lavona.sk/kategoria-produktu/darcekove-balenie/"
+    },
+    {
+      "text": "Doplnky",
+      "url": "https://lavona.sk/kategoria-produktu/doplnky/"
+    },
+    {
+      "text": "Novinka",
+      "url": "https://lavona.sk/kategoria-produktu/novinka/"
+    },
+    {
+      "text": "Parfumy na pranie",
+      "url": "https://lavona.sk/kategoria-produktu/parfumy-na-pranie/"
+    },
+    {
+      "text": "Vône do Auta",
+      "url": "https://lavona.sk/kategoria-produktu/vone-do-auta/"
+    },
+    {
+      "text": "Vône do domácnosti",
+      "url": "https://lavona.sk/kategoria-produktu/vone-do-domacnosti/"
+    },
+    {
+      "text": "Vzorky",
+      "url": "https://lavona.sk/kategoria-produktu/vzorky/"
+    },
+    {
+      "text": "Pridať do košíka",
+      "url": "https://lavona.sk/produkt/testovaci-produkt-c-1/?add-to-cart=7546"
+    },
+    {
+      "text": "",
+      "url": "https://lavona.sk/produkt/testovaci-produkt-c-9/"
+    },
+    {
+      "text": "Porovnaj",
+      "url": "https://lavona.sk/porovnavac/"
+    },
+    {
+      "text": "Rýchly náhľad",
+      "url": "https://lavona.sk/produkt/testovaci-produkt-c-9/"
+    },
+    {
+      "text": "Pridať medzi obľúbené",
+      "url": "https://lavona.sk/oblubene-produkty/"
+    },
+    {
+      "text": "Testovací produkt č. 9",
+      "url": "https://lavona.sk/produkt/testovaci-produkt-c-9/"
+    },
+    {
+      "text": "Darčekové balenie",
+      "url": "https://lavona.sk/kategoria-produktu/darcekove-balenie/"
+    },
+    {
+      "text": "Doplnky",
+      "url": "https://lavona.sk/kategoria-produktu/doplnky/"
+    },
+    {
+      "text": "Novinka",
+      "url": "https://lavona.sk/kategoria-produktu/novinka/"
+    },
+    {
+      "text": "Parfumy na pranie",
+      "url": "https://lavona.sk/kategoria-produktu/parfumy-na-pranie/"
+    },
+    {
+      "text": "Vône do Auta",
+      "url": "https://lavona.sk/kategoria-produktu/vone-do-auta/"
+    },
+    {
+      "text": "Vône do domácnosti",
+      "url": "https://lavona.sk/kategoria-produktu/vone-do-domacnosti/"
+    },
+    {
+      "text": "Vzorky",
+      "url": "https://lavona.sk/kategoria-produktu/vzorky/"
+    },
+    {
+      "text": "Pridať do košíka",
+      "url": "https://lavona.sk/produkt/testovaci-produkt-c-1/?add-to-cart=7547"
+    },
+    {
+      "text": "Domov",
+      "url": "https://lavona.sk/"
+    },
+    {
+      "text": "O nás",
+      "url": "https://lavona.sk/o-nas/"
+    },
+    {
+      "text": "Blog",
+      "url": "https://lavona.sk/blog/"
+    },
+    {
+      "text": "Veľkoobchod",
+      "url": "https://lavona.sk/velkoobchod/"
+    },
+    {
+      "text": "Výskum a vývoj",
+      "url": "https://lavona.sk/vyskum-a-vyvoj/"
+    },
+    {
+      "text": "Vernostný systém",
+      "url": "https://lavona.sk/vernostny-system/"
+    },
+    {
+      "text": "Recyklačný program",
+      "url": "https://lavona.sk/recyklacny-program/"
+    },
+    {
+      "text": "Kontakt",
+      "url": "https://lavona.sk/kontakt/"
+    },
+    {
+      "text": "Vzorky",
+      "url": "https://lavona.sk/kategoria-produktu/vzorky/"
+    },
+    {
+      "text": "Doplnky do prania",
+      "url": "https://lavona.sk/kategoria-produktu/doplnky-do-prania/"
+    },
+    {
+      "text": "Parfumy na pranie",
+      "url": "https://lavona.sk/kategoria-produktu/parfumy-na-pranie/"
+    },
+    {
+      "text": "Vône do Auta",
+      "url": "https://lavona.sk/kategoria-produktu/vone-do-auta/"
+    },
+    {
+      "text": "Vône do domácnosti",
+      "url": "https://lavona.sk/kategoria-produktu/vone-do-domacnosti/"
+    },
+    {
+      "text": "Časté otázky",
+      "url": "https://lavona.sk/caste-otazky/"
+    },
+    {
+      "text": "Spoločenská zodpovednosť",
+      "url": "https://lavona.sk/spolocenska-zodpovednost/"
+    },
+    {
+      "text": "Obchodné podmienky",
+      "url": "https://lavona.sk/obchodne-podmienky/"
+    },
+    {
+      "text": "Ochrana osobných údajov",
+      "url": "https://lavona.sk/ochrana-osobnych-udajov/"
+    },
+    {
+      "text": "Súbory cookies",
+      "url": "https://lavona.sk/subory-cookies/"
+    },
+    {
+      "text": "Súbory na stiahnutie",
+      "url": "https://lavona.sk/subory-na-stiahnutie/"
+    },
+    {
+      "text": "Možnosti dopravy",
+      "url": "https://lavona.sk/moznosti-dopravy/"
+    },
+    {
+      "text": "Možnosti platby",
+      "url": "https://lavona.sk/moznosti-platby/"
+    },
+    {
+      "text": "Reklamácie",
+      "url": "https://lavona.sk/reklamacie/"
+    },
+    {
+      "text": "+421 944 426 927",
+      "url": "tel:+421%20944%20426%20927"
+    },
+    {
+      "text": "info@lavona.sk",
+      "url": "mailto:info@lavona.sk"
+    },
+    {
+      "text": "Lavona.sk",
+      "url": "https://lavona.sk"
+    },
+    {
+      "text": "Alibition.sk",
+      "url": "https://alibition.sk"
+    },
+    {
+      "text": "Vzorky",
+      "url": "https://lavona.sk/kategoria-produktu/vzorky/"
+    },
+    {
+      "text": "Doplnky",
+      "url": "https://lavona.sk/kategoria-produktu/doplnky/"
+    },
+    {
+      "text": "Parfumy na pranie",
+      "url": "https://lavona.sk/kategoria-produktu/parfumy-na-pranie/"
+    },
+    {
+      "text": "Vône do Auta",
+      "url": "https://lavona.sk/kategoria-produktu/vone-do-auta/"
+    },
+    {
+      "text": "Vône do domácnosti",
+      "url": "https://lavona.sk/obchod/"
+    },
+    {
+      "text": "Domov",
+      "url": "https://lavona.sk/"
+    },
+    {
+      "text": "O nás",
+      "url": "https://lavona.sk/o-nas/"
+    },
+    {
+      "text": "Blog",
+      "url": "https://lavona.sk/blog/"
+    },
+    {
+      "text": "Časté otázky",
+      "url": "https://lavona.sk/caste-otazky/"
+    },
+    {
+      "text": "Veľkoobchod",
+      "url": "https://lavona.sk/velkoobchod/"
+    },
+    {
+      "text": "Výskum a vývoj",
+      "url": "https://lavona.sk/vyskum-a-vyvoj/"
+    },
+    {
+      "text": "Vernostný systém",
+      "url": "https://lavona.sk/vernostny-system/"
+    },
+    {
+      "text": "Recyklačný program",
+      "url": "https://lavona.sk/recyklacny-program/"
+    },
+    {
+      "text": "Kontakt",
+      "url": "https://lavona.sk/kontakt/"
+    },
+    {
+      "text": "Obľúbené produkty",
+      "url": "https://lavona.sk/oblubene-produkty/"
+    },
+    {
+      "text": "Porovnaj",
+      "url": "https://lavona.sk/porovnavac/"
+    },
+    {
+      "text": "Prihlásenie / Registrácia",
+      "url": "https://lavona.sk/moj-ucet/"
+    },
+    {
+      "text": "Email",
+      "url": "mailto:?subject=Check%20this%20https://lavona.sk/produkt/testovaci-produkt-c-1/"
+    },
+    {
+      "text": "Prečítajte si viac o týchto účeloch",
+      "url": "https://cookiedatabase.org/tcf/purposes/"
+    }
+  ],
+  "description": "",
+  "shortDescription": "",
+  "bodyText": "Testovací produkt č. 1 - La vôňa +421 944 426 927 info@lavona.sk Domov O nás Blog Časté otázky Veľkoobchod Výskum a vývoj Vernostný systém Recyklačný program Kontakt Search Prihlásenie / Registrácia Prihlásiť saVytvoriť účet Používateľské meno alebo e-mailová adresa * Heslo * Prihlásiť sa Stratili ste heslo? Zapamätať 0 Obľúbené produkty 0 Porovnaj 0 items 0.00€ Menu 0 items 0.00€ Vzorky Doplnky Parfumy na pranie Vône do Auta Vône do domácnosti Darčekové balenie Domov Doplnky Testovací produkt č. 1 Klikni na zväčšenie Testovací produkt č. 1 Pri jeho návrhu sa snažte vypichnúť odlišnosti medzi jednotlivými produktmi, pretože text slúži hlavne na uľahčenie výberu v ponuke kategórie . Je to tiež dôležitý SEO prvok. Odporúčame ho doplniť o kľúčové slová produktu. Krátky popis sa zobrazuje aj v niektorých zobrazení položiek v zozname produktov. Je potrebné si vybrať konkrétne rozloženie položky produktu v nastaveniach témy. Katalógové číslo: 01-001 Kategórií: Darčekové balenie, Doplnky, Novinka, Parfumy na pranie, Vône do Auta, Vône do domácnosti, Vzorky 10.50€ Kúpte si tento produkt teraz a zarobte si 11 Bodov! množstvo Testovací produkt č. 1 Pridať do košíka Svieža vôňa, ktorá vydrží dlhšie Naše parfémy na pranie dodajú vášmu oblečeniu intenzívnu a dlhotrvajúcu vôňu, ktorá zanechá príjemný dojem po celý deň. Užite si sviežosť, ktorá vydrží. Starostlivosť, ktorá vydrží Šetrné k vašim tkaninám, ale silné na vôňu. Naše parfémy neobsahujú škodlivé chemikálie, a tak sa o vaše oblečenie postará bezpečne, pričom mu dodajú dlhodobú sviežosť. Luxus v každom vlákne Získajte luxusnú vôňu, ktorá z vašich každodenných tkanín urobí zážitok. Naše parfumy na pranie sú vyrobené tak, aby zaistili, že vaše oblečenie bude nielen čerstvé, ale aj vyživené a jemné na dotyk. Popis Recenzie (0) Text v dlhom popise urobte ľahko skenovateľný očami. Dizajn by mal povzbudiť zákazníka k prečítaniu celého popisu. Rozdeľte text na menšie odseky. Hneď do úvodu vložte predajný argument. Boldom sa snažte zvýrazniť najdôležitejšie informácie o produkte. Text môžete obohatiť o kvalitné obrázky a prehľadný bodový zoznam. Nezabudnite pridať hyperlinky na ďalšie produkty či kategórie na e-shope. Na konci popisu môžete vložiť krátke predstavenie značky. Text sa snažte zamerať na kľúčové slová. Produktové popisy by nemali byť o metaforách a ozdobných textoch. Svoju kreativitu sa snažte držať na uzde. Dôležitejší je vecný text s relevantnými informáciami. Ak píšete pre masu ľudí, popis sa ľahko stane nevýrazným a nakoniec neosloví nikoho. Produktový popis tiež nepíšete ani pre seba. Pri písaní si predstavte svojho typického zákazníka a jeho potreby. Nikdy nepreberajte produktové popisy od dodávateľa. Ušetríte síce hodiny času vymýšľaním produktových popisov, no Google môže vzniknutú duplicitu penalizovať. Inšpirujte sa dodávateľom a vytvorte si vlastný produktový popis. Technická špecifikácia sa môže opakovať. Skúste ju však odlíšiť aspoň maličkosťami. Podobne postupujte pri produktoch v rámci e-shopu s viacerými variantmi. Vždy sa snažte každý produktový popis diverzifikovať. Unikátne popisy s vášňou ocenia návštevníci e-shopu aj Google algoritmus. Zopár rýchlych tipov na záver: Vyhnite sa superlatívom, pokiaľ ich neviete obhájiť. Nepoužívajte slovnú vatu a otrepané marketingové frázy ako „jednotka na trhu”. Hovorte k zákazníkovi priamo a veľmi osobne. Spravte text prehľadným. Potenciálny zákazník by mal nájsť to, čo potrebuje za pár sekúnd. Sústreďte sa na typického zákazníka. Nepoužívajte odbornú terminológiu, ktorej rozumiete iba vy. Recenzie Nikto zatiaľ nepridal hodnotenie. Pridajte prvú recenziu pre “Testovací produkt č. 1” Zrušiť odpoveďMusíte byť prihlásený pre pridanie hodnotenia. Bezpečnosť a šetrnosť k tkaninám Naše parfémy sú šetrné k vašim tkaninám a zároveň silné na vôňu. Rýchle a pohodlné doručenie Vaše obľúbené vône doručíme rýchlo a pohodlne až k vám domov. Užite si čerstvosť už za pár dní! Široký výber kvalitných parfumov na pranie Starostlivo vybrané vône, ktoré sú ideálne pre všetky typy prádla a každý vkus. Získajte dopravu zdarma pri nákupe nad 50€ Objednajte si naše parfumy na pranie nad 50€ a doprava bude zdarma! Vôňa, ktorá pretrváva - Pridajte ešte viac sviežosti! Porovnaj Rýchly náhľad Pridať medzi obľúbené Testovací produkt č. 10 Darčekové balenie, Doplnky, Novinka, Parfumy na pranie, Vône do Auta, Vône do domácnosti, Vzorky 10.50€ Pridať do košíka Porovnaj Rýchly náhľad Pridať medzi obľúbené Testovací produkt č. 11 Darčekové balenie, Doplnky, Novinka, Parfumy na pranie, Vône do Auta, Vône do domácnosti, Vzorky 10.50€ Pridať do košíka Vypredané Porovnaj Rýchly náhľad Pridať medzi obľúbené Testovací produkt č. 12 Darčekové balenie, Doplnky, Novinka, Parfumy na pranie, Vône do Auta, Vône do domácnosti, Vzorky 10.50€ Viac info Porovnaj Rýchly náhľad Pridať medzi obľúbené Testovací produkt č. 2 Darčekové balenie, Doplnky, Novinka, Parfumy na pranie, Vône do Auta, Vône do domácnosti, Vzorky 10.50€ Pridať do košíka Porovnaj Rýchly náhľad Pridať medzi obľúbené Testovací produkt č. 3 Darčekové balenie, Doplnky, Novinka, Parfumy na pranie, Vône do Auta, Vône do domácnosti, Vzorky 10.50€ Pridať do košíka Porovnaj Rýchly náhľad Pridať medzi obľúbené Testovací produkt č. 4 Darčekové balenie, Doplnky, Novinka, Parfumy na pranie, Vône do Auta, Vône do domácnosti, Vzorky 10.50€ Pridať do košíka Porovnaj Rýchly náhľad Pridať medzi obľúbené Testovací produkt č. 5 Darčekové balenie, Doplnky, Novinka, Parfumy na pranie, Vône do Auta, Vône do domácnosti, Vzorky 10.50€ Pridať do košíka Porovnaj Rýchly náhľad Pridať medzi obľúbené Testovací produkt č. 6 Darčekové balenie, Doplnky, Novinka, Parfumy na pranie, Vône do Auta, Vône do domácnosti, Vzorky 10.50€ Pridať do košíka Porovnaj Rýchly náhľad Pridať medzi obľúbené Testovací produkt č. 7 Darčekové balenie, Doplnky, Novinka, Parfumy na pranie, Vône do Auta, Vône do domácnosti, Vzorky 10.50€ Pridať do košíka Porovnaj Rýchly náhľad Pridať medzi obľúbené Testovací produkt č. 8 Darčekové balenie, Doplnky, Novinka, Parfumy na pranie, Vône do Auta, Vône do domácnosti, Vzorky 10.50€ Pridať do košíka Porovnaj Rýchly náhľad Pridať medzi obľúbené Testovací produkt č. 9 Darčekové balenie, Doplnky, Novinka, Parfumy na pranie, Vône do Auta, Vône do domácnosti, Vzorky 10.50€ Pridať do košíka Prevoňajte si pranie! Získajte tipy a inšpirácie s naším newsletterom. MAPA STRÁNKY Domov O nás Blog Veľkoobchod Výskum a vývoj Vernostný systém Recyklačný program Kontakt KATEGÓRIA PRODUKTOV Vzorky Doplnky do prania Parfumy na pranie Vône do Auta Vône do domácnosti UŽITOČNÉ ODKAZY Časté otázky Spoločenská zodpovednosť Obchodné podmienky Ochrana osobných údajov Súbory cookies Súbory na stiahnutie Možnosti dopravy Možnosti platby Reklamácie KONTAKTNÉ INFORMÁCIE SNP 21, 066 01 Humenné +421 944 426 927 info@lavona.sk SME AJ NA SIEŤACH Facebook Instagram Whatsapp Lavona.sk – ©2026 Vytvorila spoločnosť Alibition.sk. Prémiové weby a eshopy. Search Menu Kategórie Vzorky Doplnky Parfumy na pranie Vône do Auta Vône do domácnosti Domov O nás Blog Časté otázky Veľkoobchod Výskum a vývoj Vernostný systém Recyklačný program Kontakt Obľúbené produkty PorovnajPrihlásenie / Registrácia Nákupný košík Zatvoriť Facebook Email Instagram WhatsApp WhatsApp Súhlas so súbormi cookie Na poskytovanie tých najlepších skúseností používame technológie, ako sú súbory cookie na ukladanie a/alebo prístup k informáciám o zariadení. Súhlas s týmito technológiami nám umožní spracovávať údaje, ako je správanie pri prehliadaní alebo jedinečné ID na tejto stránke. Nesúhlas alebo odvolanie súhlasu môže nepriaznivo ovplyvniť určité vlastnosti a funkcie. Funkčné Funkčné Vždy aktívny Technické uloženie alebo prístup sú nevyhnutne potrebné na legitímny účel umožnenia použitia konkrétnej služby, ktorú si účastník alebo používateľ výslovne vyžiadal, alebo na jediný účel vykonania prenosu komunikácie cez elektronickú komunikačnú sieť. Predvoľby Predvoľby Technické uloženie alebo prístup je potrebný na legitímny účel ukladania preferencií, ktoré si účastník alebo používateľ nepožaduje. Štatistiky Štatistiky Technické úložisko alebo prístup, ktorý sa používa výlučne na štatistické účely. Technické úložisko alebo prístup, ktorý sa používa výlučne na anonymné štatistické účely. Bez predvolania, dobrovoľného plnenia zo strany vášho poskytovateľa internetových služieb alebo dodatočných záznamov od tretej strany, informácie uložené alebo získané len na tento účel sa zvyčajne nedajú použiť na vašu identifikáciu. Marketing Marketing Technické úložisko alebo prístup sú potrebné na vytvorenie používateľských profilov na odosielanie reklamy alebo sledovanie používateľa na webovej stránke alebo na viacerých webových stránkach na podobné marketingové účely. Spravovať možnosti Správa služieb Spravovať {vendor_count} dodávateľov Prečítajte si viac o týchto účeloch Prijať Odmietnuť Zobraziť predvoľby Uložiť predvoľby Zobraziť predvoľby {title} {title} {title} Spravovať súhlas"
+}

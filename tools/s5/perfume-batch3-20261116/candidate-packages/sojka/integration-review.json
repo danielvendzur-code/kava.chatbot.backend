@@ -1,0 +1,230 @@
+{
+  "runtimeEnabled": false,
+  "owner": "PERFUME_WORKER",
+  "integrationOwner": "MAIN",
+  "registryObject": {
+    "series": "s5",
+    "type": "cosmetics",
+    "segment": "fragrance",
+    "name": "SOJKA",
+    "country": "CZ",
+    "logos": {
+      "landing": "/assets/s5/sojka/logo.svg",
+      "header": "/assets/s5/sojka/logo.svg",
+      "avatar": "/assets/s5/sojka/avatar.svg"
+    },
+    "brand": {
+      "name": "SOJKA",
+      "domain": "nasesojka.cz",
+      "website": "https://www.nasesojka.cz/",
+      "lang": "cs",
+      "fullName": "SOJKA",
+      "url": "https://www.nasesojka.cz/",
+      "logo": "/assets/s5/sojka/logo.svg",
+      "mark": "/assets/s5/sojka/avatar.svg",
+      "greeting": "Dobrý den. Pomohu vám porovnat vybrané vůně svíček, jejich balení a ceny.",
+      "quickChips": [
+        "Vinný charakter",
+        "Šalvějová vůně",
+        "Med a koření",
+        "Porovnat dvě vůně"
+      ],
+      "theme": {
+        "brand": "#6c3548",
+        "accent": "#cbb16d",
+        "soft": "#f7f2ee",
+        "paper": "#fff",
+        "ink": "#332d29",
+        "line": "#e7ded5"
+      }
+    },
+    "traitCopy": {
+      "fresh": [
+        "Květiny nebo ovoce",
+        "",
+        "Květiny nebo ovoce",
+        ""
+      ],
+      "wine": [
+        "Vyzrálé hrozny a vinný charakter",
+        "",
+        "Vyzrálé hrozny a vinný charakter",
+        ""
+      ],
+      "rose": [
+        "Květ růže a zelené stonky",
+        "",
+        "Květ růže a zelené stonky",
+        ""
+      ],
+      "herbs": [
+        "Bylinná a čajová svěžest",
+        "",
+        "Bylinná a čajová svěžest",
+        ""
+      ],
+      "sage": [
+        "Šalvěj a jemný dřevitý základ",
+        "",
+        "Šalvěj a jemný dřevitý základ",
+        ""
+      ],
+      "tea": [
+        "Zelený čaj a čerstvý zázvor",
+        "",
+        "Zelený čaj a čerstvý zázvor",
+        ""
+      ],
+      "warm": [
+        "Hřejivé koření",
+        "",
+        "Hřejivé koření",
+        ""
+      ],
+      "orient": [
+        "Zázvor, hřebíček a muškátový oříšek",
+        "",
+        "Zázvor, hřebíček a muškátový oříšek",
+        ""
+      ],
+      "gingerbread": [
+        "Med, koření a vanilka",
+        "",
+        "Med, koření a vanilka",
+        ""
+      ]
+    },
+    "stepCopy": {
+      "fragranceDirection": [
+        "Jaká vůně je vám blízká?",
+        "",
+        "Vonné tóny"
+      ],
+      "fragranceProfile": [
+        "Která kombinace vás láká?",
+        "",
+        "Vonné tóny"
+      ]
+    },
+    "compareFocus": true,
+    "upsellFocus": {},
+    "choicePhotos": {
+      "fresh": [
+        "/assets/s3/scenes-k2/rose.jpg"
+      ],
+      "wine": [
+        "/assets/s5/sojka/wine.jpg"
+      ],
+      "rose": [
+        "/assets/s5/sojka/rose.jpg"
+      ],
+      "herbs": [
+        "/assets/s3/scenes-k2/citrus.jpg"
+      ],
+      "sage": [
+        "/assets/s5/sojka/sage.jpg"
+      ],
+      "tea": [
+        "/assets/s5/sojka/tea.jpg"
+      ],
+      "warm": [
+        "/assets/s3/scenes-k2/vanilla.jpg"
+      ],
+      "orient": [
+        "/assets/s5/sojka/orient.jpg"
+      ],
+      "gingerbread": [
+        "/assets/s5/sojka/gingerbread.jpg"
+      ]
+    },
+    "compareProductIds": [
+      "wine",
+      "sage"
+    ],
+    "segmentText": {
+      "entryNote": "Vonné svíčky · balení a cena · porovnání",
+      "titleSuffix": "výběr vůně svíčky",
+      "tab": "Výběr vůně",
+      "advisorName": "Průvodce vůněmi svíček",
+      "entrySmall": "VŮNĚ SVÍČEK",
+      "entryTitle": "Najděte vůni své svíčky",
+      "placeholder": "Zeptejte se na charakter vůně, balení nebo cenu…",
+      "heading": "Pomozte zákazníkovi vybrat vůni svíčky podle jeho vkusu.",
+      "lead": "Podle odpovědí zobrazí konkrétní svíčku s fotografií, vonným profilem, balením, cenou a odkazem. Dvě odlišné vůně lze porovnat.",
+      "includedChat": "Vonné tóny, balení a ceny vybraných svíček.",
+      "includedAdvisor": "Výběr vůně svíčky a porovnání dvou kompozic.",
+      "greeting": "Dobrý den. Pomohu vám porovnat vybrané vůně svíček, jejich balení a ceny.",
+      "teaserTitle": "Najděte vůni své svíčky",
+      "teaserNote": "Svíčky, balení a ceny",
+      "teaserAria": "Otevřít výběr vůně svíčky",
+      "source": "sojka-demo"
+    },
+    "fragranceResultExtras": {
+      "version": 1,
+      "enabled": true,
+      "alternatives": {
+        "wine": "rose",
+        "rose": "wine",
+        "sage": "tea",
+        "tea": "sage",
+        "orient": "gingerbread",
+        "gingerbread": "orient"
+      },
+      "scentProfile": {
+        "version": 1,
+        "mode": "source-notes-no-numeric-strength"
+      }
+    },
+    "fragrancePresentation": {
+      "version": 1,
+      "hideStepEstimate": true
+    }
+  },
+  "catalogueImport": "/catalogues/sojka.js",
+  "backendBrand": "sojka",
+  "offlineRules": [
+    {
+      "chip": "Vinný charakter",
+      "match": "vinn|hrozn",
+      "productIds": [
+        "wine"
+      ]
+    },
+    {
+      "chip": "Šalvějová vůně",
+      "match": "salvej",
+      "productIds": [
+        "sage"
+      ]
+    },
+    {
+      "chip": "Med a koření",
+      "match": "med|pernic",
+      "productIds": [
+        "gingerbread"
+      ]
+    }
+  ],
+  "noCoreLogicChangeRequired": true,
+  "commonFilesModified": [],
+  "companyCss": {
+    "source": "tools/s5/perfume-batch3-20261116/candidate-packages/sojka/ui-review.css",
+    "destination": "n447/s5/brands/sojka.css",
+    "registryField": {
+      "companyCss": "/n447/s5/brands/sojka.css"
+    }
+  },
+  "presentationRequirement": "Existinga918profile+preset and explicit newslug body.dataset.fragranceProfile=visual-v1. Owner standalonepolish separate includes.",
+  "price": "447 EUR +10 EUR/month",
+  "commercialReview": "PREFERRED_HISTORICAL_BAND_LATEST_EXACT_UNKNOWN",
+  "emailStatus": "NOT_READY",
+  "production": "NOT_DEPLOYED",
+  "paidCalls": 0,
+  "scopeReview": {
+    "productPurpose": "scented-candle",
+    "recommendationCoreChangeRequired": false,
+    "backendReviewRequired": true,
+    "requiredBackendInstruction": "Only interior scented candles, not perfume on skin or laundry. No health/infant/pet/pregnancy/aromatherapy/fire-safety/nontoxic/smokefree/longevity guarantees; no magic or attraction promises. Literal sourced fragrance notes and exact pack, selectedvariant price and stock timestamp only. No invented paid accessory or automatic cart. No inferred percent/1-10 strength.",
+    "workerTouchedSharedBackend": false
+  }
+}

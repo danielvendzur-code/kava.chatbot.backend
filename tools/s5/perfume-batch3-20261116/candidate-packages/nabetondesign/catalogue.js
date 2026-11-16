@@ -1,0 +1,868 @@
+globalThis.CX_CATALOGUES ||= {};
+globalThis.CX_CATALOGUES.nabetondesign = {
+ "brand": "NABETONdesign",
+ "domain": "nabetondesign.cz",
+ "operator": {
+  "name": "Nikola Janková",
+  "ico": "05699169",
+  "country": "CZ",
+  "activeNoEnd": true,
+  "officialRegistry": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/05699169"
+ },
+ "series": "s5",
+ "segment": "fragrance",
+ "lang": "cs",
+ "country": "CZ",
+ "currency": "CZK",
+ "status": "SOURCE_PACKAGE_VERIFIED",
+ "products": [
+  {
+   "id": "pink",
+   "name": "Pink Elegance",
+   "url": "https://www.nabetondesign.cz/pink-elegance-100--sojova-svicka-220ml/",
+   "priceAmount": 490.0,
+   "price": "490 Kč",
+   "currency": "CZK",
+   "volume": "220 ml",
+   "category": "fragrance",
+   "kind": "Vonná svíčka",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Růže, růžový pepř a cedr.",
+   "reason": "Růže, růžový pepř a cedr.",
+   "photo": "/assets/s5/nabetondesign/pink.jpg",
+   "source": {
+    "series": "s5",
+    "url": "https://www.nabetondesign.cz/pink-elegance-100--sojova-svicka-220ml/",
+    "verifiedAt": "2026-11-16T11:00:42.928449+00:00",
+    "sourceSha256": "148a74e60164afe47f7bcf7d29d36990202f175627738d7154f083b1a8c0cde6",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "Official fixed SKU Offer + public priceWithVat",
+     "currency": "CZK",
+     "sku": "245",
+     "quantity": "UNKNOWN_NOT_PUBLISHED",
+     "publisherAvailability": "InStock",
+     "variantSelectionRequired": false
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 490.0,
+     "currency": "CZK",
+     "vatSource": "https://www.nabetondesign.cz/pink-elegance-100--sojova-svicka-220ml/",
+     "vatEvidence": "Exact public VAT-inclusive selected SKU price, not sample minimum."
+    },
+    "packEvidence": {
+     "pack": "220 ml",
+     "scope": "Explicit published product pack, not shipping weight."
+    },
+    "variantSelectionRequired": false,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://cdn.myshoptet.com/usr/www.nabetondesign.cz/user/shop/big/253_photoroom-20240323-135250-2.jpg?ff=1&x=1024&y=1024&q=85&ts=65fed748&sg=38cb01fe",
+    "photoEvidence": {
+     "id": "pink",
+     "file": "pink.jpg",
+     "url": "https://cdn.myshoptet.com/usr/www.nabetondesign.cz/user/shop/big/253_photoroom-20240323-135250-2.jpg?ff=1&x=1024&y=1024&q=85&ts=65fed748&sg=38cb01fe",
+     "sha256": "8a3032c701624147288ede82220b3f7001c0491c2eec1142bb54bd84d19dfa5a",
+     "bytes": 155700,
+     "originalBytes": true,
+     "verifiedAt": "2026-11-16T11:09:43.980211+00:00",
+     "width": 1024,
+     "height": 1024
+    },
+    "fragrance": {
+     "notes": [
+      "růže",
+      "černý rybíz",
+      "růžový pepř",
+      "trnka",
+      "karafiát",
+      "lilie",
+      "pelargonie",
+      "jantar",
+      "santal",
+      "cedrové dřevo"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Vonná svíčka",
+     "notesEvidence": {
+      "url": "https://www.nabetondesign.cz/pink-elegance-100--sojova-svicka-220ml/",
+      "sourceText": "Vonné tóny: růže, černý rybíz, růžový pepř, trnka, karafiát, lilie, pelargonie, jantar, santal, cedrové dřevo\nDoslovné zdrojové fragmenty:\nřůže\nčerný rybíz\nrůžový pepř\ntrnka\nkarafiát\nlilie\npelargonie\njantar\nsantal\ncedrové dřevo",
+      "originalSourceText": "řůže\nčerný rybíz\nrůžový pepř\ntrnka\nkarafiát\nlilie\npelargonie\njantar\nsantal\ncedrové dřevo",
+      "sourceLanguage": "cs",
+      "scope": "Published product sensory descriptors only, not INCI or inferred ingredient percentages.",
+      "noteFormMapping": [
+       {
+        "display": "růže",
+        "sourceFragments": [
+         "řůže"
+        ]
+       },
+       {
+        "display": "černý rybíz",
+        "sourceFragments": [
+         "černý rybíz"
+        ]
+       },
+       {
+        "display": "růžový pepř",
+        "sourceFragments": [
+         "růžový pepř"
+        ]
+       },
+       {
+        "display": "trnka",
+        "sourceFragments": [
+         "trnka"
+        ]
+       },
+       {
+        "display": "karafiát",
+        "sourceFragments": [
+         "karafiát"
+        ]
+       },
+       {
+        "display": "lilie",
+        "sourceFragments": [
+         "lilie"
+        ]
+       },
+       {
+        "display": "pelargonie",
+        "sourceFragments": [
+         "pelargonie"
+        ]
+       },
+       {
+        "display": "jantar",
+        "sourceFragments": [
+         "jantar"
+        ]
+       },
+       {
+        "display": "santal",
+        "sourceFragments": [
+         "santal"
+        ]
+       },
+       {
+        "display": "cedrové dřevo",
+        "sourceFragments": [
+         "cedrové dřevo"
+        ]
+       }
+      ],
+      "qualification": "Literal product-description sensory fragments extracted from official primary page; separate quoted fragments, not a fabricated continuous paragraph. Czech inflections normalized faithfully. No title-only ingredient inference, no numericstrengths/health/safety/burnguarantees."
+     }
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "No medicinal/skin/allergy/safety/duration guarantees, numerical note strength, invented budget or cart integration."
+    ],
+    "usagePurpose": "scented-candle",
+    "scent": "Růže, růžový pepř a cedr",
+    "selectionTraits": {
+     "fragranceDirection": "fresh",
+     "fragranceProfile": "pink"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.nabetondesign.cz/pink-elegance-100--sojova-svicka-220ml/",
+     "sourceText": "Vonné tóny: růže, černý rybíz, růžový pepř, trnka, karafiát, lilie, pelargonie, jantar, santal, cedrové dřevo\nDoslovné zdrojové fragmenty:\nřůže\nčerný rybíz\nrůžový pepř\ntrnka\nkarafiát\nlilie\npelargonie\njantar\nsantal\ncedrové dřevo",
+     "navigationLabel": "Růže, růžový pepř a cedr",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    }
+   }
+  },
+  {
+   "id": "christmas",
+   "name": "Vánoční pohoda",
+   "url": "https://www.nabetondesign.cz/christmas-time-vanocni-svicka-2/",
+   "priceAmount": 490.0,
+   "price": "490 Kč",
+   "currency": "CZK",
+   "volume": "200 g",
+   "category": "fragrance",
+   "kind": "Vonná svíčka",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Pomeranč, mandarinka a koření.",
+   "reason": "Pomeranč, mandarinka a koření.",
+   "photo": "/assets/s5/nabetondesign/christmas.jpg",
+   "source": {
+    "series": "s5",
+    "url": "https://www.nabetondesign.cz/christmas-time-vanocni-svicka-2/",
+    "verifiedAt": "2026-11-16T11:00:43.127163+00:00",
+    "sourceSha256": "7033452ccff19e2a33e19524df08a948b089dac7528bdc7771601ed31367ff68",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "Official fixed SKU Offer + public priceWithVat",
+     "currency": "CZK",
+     "sku": "291",
+     "quantity": "UNKNOWN_NOT_PUBLISHED",
+     "publisherAvailability": "InStock",
+     "variantSelectionRequired": false
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 490.0,
+     "currency": "CZK",
+     "vatSource": "https://www.nabetondesign.cz/christmas-time-vanocni-svicka-2/",
+     "vatEvidence": "Exact public VAT-inclusive selected SKU price, not sample minimum."
+    },
+    "packEvidence": {
+     "pack": "200 g",
+     "scope": "Explicit published product pack, not shipping weight."
+    },
+    "variantSelectionRequired": false,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://cdn.myshoptet.com/usr/www.nabetondesign.cz/user/shop/big/295_photoroom-20251117-082349.jpg?ff=1&x=1024&y=1024&q=85&ts=691acda5&sg=38cb01fe",
+    "photoEvidence": {
+     "id": "christmas",
+     "file": "christmas.jpg",
+     "url": "https://cdn.myshoptet.com/usr/www.nabetondesign.cz/user/shop/big/295_photoroom-20251117-082349.jpg?ff=1&x=1024&y=1024&q=85&ts=691acda5&sg=38cb01fe",
+     "sha256": "c0d8bb6e9b75e181238dac2c727e826832e1ad3845f99150ba79c9c92219d95c",
+     "bytes": 111835,
+     "originalBytes": true,
+     "verifiedAt": "2026-11-16T11:09:44.458244+00:00",
+     "width": 1024,
+     "height": 1024
+    },
+    "fragrance": {
+     "notes": [
+      "pomeranč",
+      "mandarinka",
+      "hřebíček",
+      "muškátový oříšek",
+      "skořice",
+      "růže",
+      "pačuli"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Vonná svíčka",
+     "notesEvidence": {
+      "url": "https://www.nabetondesign.cz/christmas-time-vanocni-svicka-2/",
+      "sourceText": "Vonné tóny: pomeranč, mandarinka, hřebíček, muškátový oříšek, skořice, růže, pačuli\nDoslovné zdrojové fragmenty:\nPomeranč\nmandarinka\nhřebíček\nmuškátový oříšek\nskořice\nrůže\npačuli",
+      "originalSourceText": "Pomeranč\nmandarinka\nhřebíček\nmuškátový oříšek\nskořice\nrůže\npačuli",
+      "sourceLanguage": "cs",
+      "scope": "Published product sensory descriptors only, not INCI or inferred ingredient percentages.",
+      "noteFormMapping": [
+       {
+        "display": "pomeranč",
+        "sourceFragments": [
+         "Pomeranč"
+        ]
+       },
+       {
+        "display": "mandarinka",
+        "sourceFragments": [
+         "mandarinka"
+        ]
+       },
+       {
+        "display": "hřebíček",
+        "sourceFragments": [
+         "hřebíček"
+        ]
+       },
+       {
+        "display": "muškátový oříšek",
+        "sourceFragments": [
+         "muškátový oříšek"
+        ]
+       },
+       {
+        "display": "skořice",
+        "sourceFragments": [
+         "skořice"
+        ]
+       },
+       {
+        "display": "růže",
+        "sourceFragments": [
+         "růže"
+        ]
+       },
+       {
+        "display": "pačuli",
+        "sourceFragments": [
+         "pačuli"
+        ]
+       }
+      ],
+      "qualification": "Literal product-description sensory fragments extracted from official primary page; separate quoted fragments, not a fabricated continuous paragraph. Czech inflections normalized faithfully. No title-only ingredient inference, no numericstrengths/health/safety/burnguarantees."
+     }
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "No medicinal/skin/allergy/safety/duration guarantees, numerical note strength, invented budget or cart integration."
+    ],
+    "usagePurpose": "scented-candle",
+    "scent": "Pomeranč, mandarinka a koření",
+    "selectionTraits": {
+     "fragranceDirection": "warm",
+     "fragranceProfile": "christmas"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.nabetondesign.cz/christmas-time-vanocni-svicka-2/",
+     "sourceText": "Vonné tóny: pomeranč, mandarinka, hřebíček, muškátový oříšek, skořice, růže, pačuli\nDoslovné zdrojové fragmenty:\nPomeranč\nmandarinka\nhřebíček\nmuškátový oříšek\nskořice\nrůže\npačuli",
+     "navigationLabel": "Pomeranč, mandarinka a koření",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    }
+   }
+  },
+  {
+   "id": "cotton",
+   "name": "No. 1 Cotton Clouds",
+   "url": "https://www.nabetondesign.cz/no-1-cotton-clouds/",
+   "priceAmount": 420.0,
+   "price": "420 Kč",
+   "currency": "CZK",
+   "volume": "200 g",
+   "category": "fragrance",
+   "kind": "Vonná svíčka",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Čisté prádlo, bavlna a musk.",
+   "reason": "Čisté prádlo, bavlna a musk.",
+   "photo": "/assets/s5/nabetondesign/cotton.png",
+   "source": {
+    "series": "s5",
+    "url": "https://www.nabetondesign.cz/no-1-cotton-clouds/",
+    "verifiedAt": "2026-11-16T11:06:51.870190+00:00",
+    "sourceSha256": "4239f4ad99a97e59c8ca9a5e44364839ae2988d1c4b0b43ef8ab51ac20ff395e",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "Official fixed SKU Offer + public priceWithVat",
+     "currency": "CZK",
+     "sku": "144",
+     "quantity": "UNKNOWN_NOT_PUBLISHED",
+     "publisherAvailability": "InStock",
+     "variantSelectionRequired": false
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 420.0,
+     "currency": "CZK",
+     "vatSource": "https://www.nabetondesign.cz/no-1-cotton-clouds/",
+     "vatEvidence": "Exact public VAT-inclusive selected SKU price, not sample minimum."
+    },
+    "packEvidence": {
+     "pack": "200 g",
+     "scope": "Explicit published product pack, not shipping weight."
+    },
+    "variantSelectionRequired": false,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://cdn.myshoptet.com/usr/www.nabetondesign.cz/user/shop/big/144_no-1-cotton-clouds.png?ff=1&x=1024&y=1024&q=85&ts=65f99d3f&sg=38cb01fe",
+    "photoEvidence": {
+     "id": "cotton",
+     "file": "cotton.png",
+     "url": "https://cdn.myshoptet.com/usr/www.nabetondesign.cz/user/shop/big/144_no-1-cotton-clouds.png?ff=1&x=1024&y=1024&q=85&ts=65f99d3f&sg=38cb01fe",
+     "sha256": "f2018057488a50fc0fd773fdf3f070591c7df17e00732d4cb9b403a501cdf72d",
+     "bytes": 1087350,
+     "originalBytes": true,
+     "verifiedAt": "2026-11-16T11:09:45.817648+00:00",
+     "width": 1024,
+     "height": 1024
+    },
+    "fragrance": {
+     "notes": [
+      "čisté prádlo",
+      "bavlna",
+      "musk"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Vonná svíčka",
+     "notesEvidence": {
+      "url": "https://www.nabetondesign.cz/no-1-cotton-clouds/",
+      "sourceText": "Vonné tóny: čisté prádlo, bavlna, musk\nDoslovné zdrojové fragmenty:\nčistého prádla\nbavlny\nmusku",
+      "originalSourceText": "čistého prádla\nbavlny\nmusku",
+      "sourceLanguage": "cs",
+      "scope": "Published product sensory descriptors only, not INCI or inferred ingredient percentages.",
+      "noteFormMapping": [
+       {
+        "display": "čisté prádlo",
+        "sourceFragments": [
+         "čistého prádla"
+        ]
+       },
+       {
+        "display": "bavlna",
+        "sourceFragments": [
+         "bavlny"
+        ]
+       },
+       {
+        "display": "musk",
+        "sourceFragments": [
+         "musku"
+        ]
+       }
+      ],
+      "qualification": "Literal product-description sensory fragments extracted from official primary page; separate quoted fragments, not a fabricated continuous paragraph. Czech inflections normalized faithfully. No title-only ingredient inference, no numericstrengths/health/safety/burnguarantees."
+     }
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "No medicinal/skin/allergy/safety/duration guarantees, numerical note strength, invented budget or cart integration."
+    ],
+    "usagePurpose": "scented-candle",
+    "scent": "Čisté prádlo, bavlna a musk",
+    "selectionTraits": {
+     "fragranceDirection": "fresh",
+     "fragranceProfile": "cotton"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.nabetondesign.cz/no-1-cotton-clouds/",
+     "sourceText": "Vonné tóny: čisté prádlo, bavlna, musk\nDoslovné zdrojové fragmenty:\nčistého prádla\nbavlny\nmusku",
+     "navigationLabel": "Čisté prádlo, bavlna a musk",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    }
+   }
+  },
+  {
+   "id": "tropical",
+   "name": "No. 4 Fresh Fusion",
+   "url": "https://www.nabetondesign.cz/no--4-fresh-fusion/",
+   "priceAmount": 420.0,
+   "price": "420 Kč",
+   "currency": "CZK",
+   "volume": "200 g",
+   "category": "fragrance",
+   "kind": "Vonná svíčka",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Ananas, kokos a vanilka.",
+   "reason": "Ananas, kokos a vanilka.",
+   "photo": "/assets/s5/nabetondesign/tropical.png",
+   "source": {
+    "series": "s5",
+    "url": "https://www.nabetondesign.cz/no--4-fresh-fusion/",
+    "verifiedAt": "2026-11-16T11:06:51.870715+00:00",
+    "sourceSha256": "691607acb22c9dcb6825ff419526788b18ff516f145e848693517b1e5fc44010",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "Official fixed SKU Offer + public priceWithVat",
+     "currency": "CZK",
+     "sku": "156",
+     "quantity": "UNKNOWN_NOT_PUBLISHED",
+     "publisherAvailability": "InStock",
+     "variantSelectionRequired": false
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 420.0,
+     "currency": "CZK",
+     "vatSource": "https://www.nabetondesign.cz/no--4-fresh-fusion/",
+     "vatEvidence": "Exact public VAT-inclusive selected SKU price, not sample minimum."
+    },
+    "packEvidence": {
+     "pack": "200 g",
+     "scope": "Explicit published product pack, not shipping weight."
+    },
+    "variantSelectionRequired": false,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://cdn.myshoptet.com/usr/www.nabetondesign.cz/user/shop/big/156_no--4-fresh-fusion.png?ff=1&x=1024&y=1024&q=85&ts=65f99d7a&sg=38cb01fe",
+    "photoEvidence": {
+     "id": "tropical",
+     "file": "tropical.png",
+     "url": "https://cdn.myshoptet.com/usr/www.nabetondesign.cz/user/shop/big/156_no--4-fresh-fusion.png?ff=1&x=1024&y=1024&q=85&ts=65f99d7a&sg=38cb01fe",
+     "sha256": "28cd163fa0096f4dc4030855b35532cfa1f674455cefe0e4fff2d8d6f45a72c8",
+     "bytes": 808520,
+     "originalBytes": true,
+     "verifiedAt": "2026-11-16T11:09:46.643646+00:00",
+     "width": 1024,
+     "height": 1024
+    },
+    "fragrance": {
+     "notes": [
+      "ananas",
+      "pomeranč",
+      "kokos",
+      "mandle",
+      "broskev",
+      "karamel",
+      "vanilka"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Vonná svíčka",
+     "notesEvidence": {
+      "url": "https://www.nabetondesign.cz/no--4-fresh-fusion/",
+      "sourceText": "Vonné tóny: ananas, pomeranč, kokos, mandle, broskev, karamel, vanilka\nDoslovné zdrojové fragmenty:\nananas\npomeranč\nkokos\nmandle\nbroskev\nkaramel\nvanilka",
+      "originalSourceText": "ananas\npomeranč\nkokos\nmandle\nbroskev\nkaramel\nvanilka",
+      "sourceLanguage": "cs",
+      "scope": "Published product sensory descriptors only, not INCI or inferred ingredient percentages.",
+      "noteFormMapping": [
+       {
+        "display": "ananas",
+        "sourceFragments": [
+         "ananas"
+        ]
+       },
+       {
+        "display": "pomeranč",
+        "sourceFragments": [
+         "pomeranč"
+        ]
+       },
+       {
+        "display": "kokos",
+        "sourceFragments": [
+         "kokos"
+        ]
+       },
+       {
+        "display": "mandle",
+        "sourceFragments": [
+         "mandle"
+        ]
+       },
+       {
+        "display": "broskev",
+        "sourceFragments": [
+         "broskev"
+        ]
+       },
+       {
+        "display": "karamel",
+        "sourceFragments": [
+         "karamel"
+        ]
+       },
+       {
+        "display": "vanilka",
+        "sourceFragments": [
+         "vanilka"
+        ]
+       }
+      ],
+      "qualification": "Literal product-description sensory fragments extracted from official primary page; separate quoted fragments, not a fabricated continuous paragraph. Czech inflections normalized faithfully. No title-only ingredient inference, no numericstrengths/health/safety/burnguarantees."
+     }
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "No medicinal/skin/allergy/safety/duration guarantees, numerical note strength, invented budget or cart integration."
+    ],
+    "usagePurpose": "scented-candle",
+    "scent": "Ananas, kokos a vanilka",
+    "selectionTraits": {
+     "fragranceDirection": "fruit",
+     "fragranceProfile": "tropical"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.nabetondesign.cz/no--4-fresh-fusion/",
+     "sourceText": "Vonné tóny: ananas, pomeranč, kokos, mandle, broskev, karamel, vanilka\nDoslovné zdrojové fragmenty:\nananas\npomeranč\nkokos\nmandle\nbroskev\nkaramel\nvanilka",
+     "navigationLabel": "Ananas, kokos a vanilka",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    }
+   }
+  },
+  {
+   "id": "grapefruit",
+   "name": "No. 5 Morning Awakening",
+   "url": "https://www.nabetondesign.cz/no--5-morning-awakening/",
+   "priceAmount": 420.0,
+   "price": "420 Kč",
+   "currency": "CZK",
+   "volume": "200 g",
+   "category": "fragrance",
+   "kind": "Vonná svíčka",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Růžový grep, jasmín a vanilka.",
+   "reason": "Růžový grep, jasmín a vanilka.",
+   "photo": "/assets/s5/nabetondesign/grapefruit.png",
+   "source": {
+    "series": "s5",
+    "url": "https://www.nabetondesign.cz/no--5-morning-awakening/",
+    "verifiedAt": "2026-11-16T11:06:51.872111+00:00",
+    "sourceSha256": "f8e8b89cbe3b74f48040e5f98b3c7bd638b696ecea925cabb81a5c8f7945dc4a",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "Official fixed SKU Offer + public priceWithVat",
+     "currency": "CZK",
+     "sku": "162",
+     "quantity": "UNKNOWN_NOT_PUBLISHED",
+     "publisherAvailability": "InStock",
+     "variantSelectionRequired": false
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 420.0,
+     "currency": "CZK",
+     "vatSource": "https://www.nabetondesign.cz/no--5-morning-awakening/",
+     "vatEvidence": "Exact public VAT-inclusive selected SKU price, not sample minimum."
+    },
+    "packEvidence": {
+     "pack": "200 g",
+     "scope": "Explicit published product pack, not shipping weight."
+    },
+    "variantSelectionRequired": false,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://cdn.myshoptet.com/usr/www.nabetondesign.cz/user/shop/big/162_no--5-morning-awakening.png?ff=1&x=1024&y=1024&q=85&ts=65f99d8a&sg=38cb01fe",
+    "photoEvidence": {
+     "id": "grapefruit",
+     "file": "grapefruit.png",
+     "url": "https://cdn.myshoptet.com/usr/www.nabetondesign.cz/user/shop/big/162_no--5-morning-awakening.png?ff=1&x=1024&y=1024&q=85&ts=65f99d8a&sg=38cb01fe",
+     "sha256": "c05ffafbb4a5c1ca7aba5c4962cf8aef5a1800e3d84385428b2de5cfd79a37af",
+     "bytes": 688642,
+     "originalBytes": true,
+     "verifiedAt": "2026-11-16T11:09:47.879339+00:00",
+     "width": 1024,
+     "height": 1024
+    },
+    "fragrance": {
+     "notes": [
+      "růžový grep",
+      "jasmín",
+      "lilie",
+      "vanilka"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Vonná svíčka",
+     "notesEvidence": {
+      "url": "https://www.nabetondesign.cz/no--5-morning-awakening/",
+      "sourceText": "Vonné tóny: růžový grep, jasmín, lilie, vanilka\nDoslovné zdrojové fragmenty:\nrůžový grep\njasmín\nlilie\nvanilka",
+      "originalSourceText": "růžový grep\njasmín\nlilie\nvanilka",
+      "sourceLanguage": "cs",
+      "scope": "Published product sensory descriptors only, not INCI or inferred ingredient percentages.",
+      "noteFormMapping": [
+       {
+        "display": "růžový grep",
+        "sourceFragments": [
+         "růžový grep"
+        ]
+       },
+       {
+        "display": "jasmín",
+        "sourceFragments": [
+         "jasmín"
+        ]
+       },
+       {
+        "display": "lilie",
+        "sourceFragments": [
+         "lilie"
+        ]
+       },
+       {
+        "display": "vanilka",
+        "sourceFragments": [
+         "vanilka"
+        ]
+       }
+      ],
+      "qualification": "Literal product-description sensory fragments extracted from official primary page; separate quoted fragments, not a fabricated continuous paragraph. Czech inflections normalized faithfully. No title-only ingredient inference, no numericstrengths/health/safety/burnguarantees."
+     }
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "No medicinal/skin/allergy/safety/duration guarantees, numerical note strength, invented budget or cart integration."
+    ],
+    "usagePurpose": "scented-candle",
+    "scent": "Růžový grep, jasmín a vanilka",
+    "selectionTraits": {
+     "fragranceDirection": "fruit",
+     "fragranceProfile": "grapefruit"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.nabetondesign.cz/no--5-morning-awakening/",
+     "sourceText": "Vonné tóny: růžový grep, jasmín, lilie, vanilka\nDoslovné zdrojové fragmenty:\nrůžový grep\njasmín\nlilie\nvanilka",
+     "navigationLabel": "Růžový grep, jasmín a vanilka",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    }
+   }
+  },
+  {
+   "id": "cedar",
+   "name": "No. 8 Lasting Happiness",
+   "url": "https://www.nabetondesign.cz/no--8-lasting-happiness/",
+   "priceAmount": 420.0,
+   "price": "420 Kč",
+   "currency": "CZK",
+   "volume": "200 g",
+   "category": "fragrance",
+   "kind": "Vonná svíčka",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Himalájský cedr, jasmín a ambra.",
+   "reason": "Himalájský cedr, jasmín a ambra.",
+   "photo": "/assets/s5/nabetondesign/cedar.png",
+   "source": {
+    "series": "s5",
+    "url": "https://www.nabetondesign.cz/no--8-lasting-happiness/",
+    "verifiedAt": "2026-11-16T11:06:51.875542+00:00",
+    "sourceSha256": "9f844e5f6c2af0f065819fdba81a82c52a095addd7b0be56b51f92ffc1164416",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "Official fixed SKU Offer + public priceWithVat",
+     "currency": "CZK",
+     "sku": "171",
+     "quantity": "UNKNOWN_NOT_PUBLISHED",
+     "publisherAvailability": "InStock",
+     "variantSelectionRequired": false
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 420.0,
+     "currency": "CZK",
+     "vatSource": "https://www.nabetondesign.cz/no--8-lasting-happiness/",
+     "vatEvidence": "Exact public VAT-inclusive selected SKU price, not sample minimum."
+    },
+    "packEvidence": {
+     "pack": "200 g",
+     "scope": "Explicit published product pack, not shipping weight."
+    },
+    "variantSelectionRequired": false,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://cdn.myshoptet.com/usr/www.nabetondesign.cz/user/shop/big/171_no--8-lasting-happiness.png?ff=1&x=1024&y=1024&q=85&ts=65f99db3&sg=38cb01fe",
+    "photoEvidence": {
+     "id": "cedar",
+     "file": "cedar.png",
+     "url": "https://cdn.myshoptet.com/usr/www.nabetondesign.cz/user/shop/big/171_no--8-lasting-happiness.png?ff=1&x=1024&y=1024&q=85&ts=65f99db3&sg=38cb01fe",
+     "sha256": "41dd707aaa8303b38c5af8045f4c25b6d6155e77d1ab66b90f3d4af9d03f8752",
+     "bytes": 758364,
+     "originalBytes": true,
+     "verifiedAt": "2026-11-16T11:09:48.693960+00:00",
+     "width": 1024,
+     "height": 1024
+    },
+    "fragrance": {
+     "notes": [
+      "bergamot",
+      "eukalyptus",
+      "jasmín",
+      "himalájský cedr",
+      "kosatec",
+      "kakao",
+      "ambra",
+      "dubový mech",
+      "musk"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Vonná svíčka",
+     "notesEvidence": {
+      "url": "https://www.nabetondesign.cz/no--8-lasting-happiness/",
+      "sourceText": "Vonné tóny: bergamot, eukalyptus, jasmín, himalájský cedr, kosatec, kakao, ambra, dubový mech, musk\nDoslovné zdrojové fragmenty:\nbergamot\neukalyptus\njasmín\nhimalájský cedr\nkosatec\nkakao\nambra\ndubový mech\nmusk",
+      "originalSourceText": "bergamot\neukalyptus\njasmín\nhimalájský cedr\nkosatec\nkakao\nambra\ndubový mech\nmusk",
+      "sourceLanguage": "cs",
+      "scope": "Published product sensory descriptors only, not INCI or inferred ingredient percentages.",
+      "noteFormMapping": [
+       {
+        "display": "bergamot",
+        "sourceFragments": [
+         "bergamot"
+        ]
+       },
+       {
+        "display": "eukalyptus",
+        "sourceFragments": [
+         "eukalyptus"
+        ]
+       },
+       {
+        "display": "jasmín",
+        "sourceFragments": [
+         "jasmín"
+        ]
+       },
+       {
+        "display": "himalájský cedr",
+        "sourceFragments": [
+         "himalájský cedr"
+        ]
+       },
+       {
+        "display": "kosatec",
+        "sourceFragments": [
+         "kosatec"
+        ]
+       },
+       {
+        "display": "kakao",
+        "sourceFragments": [
+         "kakao"
+        ]
+       },
+       {
+        "display": "ambra",
+        "sourceFragments": [
+         "ambra"
+        ]
+       },
+       {
+        "display": "dubový mech",
+        "sourceFragments": [
+         "dubový mech"
+        ]
+       },
+       {
+        "display": "musk",
+        "sourceFragments": [
+         "musk"
+        ]
+       }
+      ],
+      "qualification": "Literal product-description sensory fragments extracted from official primary page; separate quoted fragments, not a fabricated continuous paragraph. Czech inflections normalized faithfully. No title-only ingredient inference, no numericstrengths/health/safety/burnguarantees."
+     }
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "No medicinal/skin/allergy/safety/duration guarantees, numerical note strength, invented budget or cart integration."
+    ],
+    "usagePurpose": "scented-candle",
+    "scent": "Himalájský cedr, jasmín a ambra",
+    "selectionTraits": {
+     "fragranceDirection": "warm",
+     "fragranceProfile": "cedar"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.nabetondesign.cz/no--8-lasting-happiness/",
+     "sourceText": "Vonné tóny: bergamot, eukalyptus, jasmín, himalájský cedr, kosatec, kakao, ambra, dubový mech, musk\nDoslovné zdrojové fragmenty:\nbergamot\neukalyptus\njasmín\nhimalájský cedr\nkosatec\nkakao\nambra\ndubový mech\nmusk",
+     "navigationLabel": "Himalájský cedr, jasmín a ambra",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    }
+   }
+  }
+ ],
+ "revenue": {
+  "year": null,
+  "value": "UNKNOWN",
+  "source": null,
+  "qualification": "No supported exact turnover source; sole proprietor size not inferred from appearance or ARES active status.",
+  "latestExact2025": "UNKNOWN"
+ },
+ "size": "REVENUE_UNKNOWN_COMMERCIAL_REVIEW",
+ "interest": "NOT_ESTABLISHED",
+ "notes": [
+  "Only independently sourced distinct available fragrance formulas. No jar/colour/size duplication.",
+  "Candles for interiors only, no medical, infant/pet/pregnancy safety, nontoxic/smoke-free, magic, guaranteed attraction or burn duration promises.",
+  "Retail pack fullsize, not samples. No budget question, no guaranteedbudget. No verified independent compatible paid accessory integration: distinctalternative and comparison only.",
+  "Source price/stock are timestamped snapshots, not liveinventory. MAIN backendguard/sharedruntime integration and livePreviewQA required.",
+  "Christmas source short/long prose disagree on pure soy vs coconut/soy; waxcomposition not served as a verified fact. Pink220ml volume, others200g wax; do not infer grams fromvolume."
+ ]
+};

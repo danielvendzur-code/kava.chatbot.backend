@@ -1,0 +1,58 @@
+{
+  "key": "fragranceDirection",
+  "question": "Jaká vůně je vám blízká?",
+  "options": [
+    {
+      "value": "fresh",
+      "label": "Bylinná nebo citrusová svěžest",
+      "key": "fragranceProfile",
+      "question": "Která kombinace vás láká?",
+      "options": [
+        {
+          "value": "tea",
+          "label": "Bílý čaj a šalvěj",
+          "productId": "tea",
+          "sourceUrl": "https://www.essencebliss.cz/vonna-sojova-svicka-white-tea-and-sage-200-g/"
+        },
+        {
+          "value": "verbena",
+          "label": "Verbena, citron a pomeranč",
+          "productId": "verbena",
+          "sourceUrl": "https://www.essencebliss.cz/vonna-sojova-svicka-lemon-verbena/"
+        },
+        {
+          "value": "orange",
+          "label": "Pomeranč, grapefruit a limetka",
+          "productId": "orange",
+          "sourceUrl": "https://www.essencebliss.cz/intense-moments-collection-sojova-svicka-sevillsky-pomeranc/"
+        }
+      ]
+    },
+    {
+      "value": "sweet",
+      "label": "Ovoce a sladší základ",
+      "key": "fragranceProfile",
+      "question": "Která kombinace vás láká?",
+      "options": [
+        {
+          "value": "amber",
+          "label": "Jablko, růže a vanilka",
+          "productId": "amber",
+          "sourceUrl": "https://www.essencebliss.cz/vonna-sojova-svicka-ambra-a-vanilka-200-g/"
+        },
+        {
+          "value": "pear",
+          "label": "Hruška, jasmín a pralinka",
+          "productId": "pear",
+          "sourceUrl": "https://www.essencebliss.cz/clarte-de-joi-vonna-svicka-200-g-2/"
+        },
+        {
+          "value": "mango",
+          "label": "Mango, grapefruit a guava",
+          "productId": "mango",
+          "sourceUrl": "https://www.essencebliss.cz/vonna-sojova-svicka-mango-koktejl-bila-200-g/"
+        }
+      ]
+    }
+  ]
+}

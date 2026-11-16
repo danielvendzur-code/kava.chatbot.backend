@@ -1,0 +1,468 @@
+{
+  "slug": "essencebliss",
+  "label": "3",
+  "url": "https://www.essencebliss.cz/clarte-de-joi-vonna-svicka-200-g-2/",
+  "checkedAt": "2026-11-16T11:00:38.789655+00:00",
+  "tlsVerified": true,
+  "scope": "Read-only officialHTML; notlivewidgetQA",
+  "status": 200,
+  "finalUrl": "https://www.essencebliss.cz/clarte-de-joi-vonna-svicka-200-g-2/",
+  "sourceSha256": "f2b9181eba2aa8e3db7b0921b342e5d36beb80f40da43b7f63e2c29d8bc7b45b",
+  "name": "Vonná sójová svíčka | Clarté de Joi 200 g",
+  "jsonld": [
+    "\n    {\n        \"@context\" : \"https://schema.org\",\n        \"@type\" : \"Organization\",\n        \"name\" : \"Essence Bliss\",\n        \"url\" : \"https://www.essencebliss.cz\",\n                \"employee\" : \"Jana\",\n                    \"email\" : \"info@essencebliss.cz\",\n                            \"telephone\" : \"+420 777 294 554\",\n                                \n                                                                                \"sameAs\" : [\"https://www.facebook.com/search/top/?q=essence%20bliss\", \"https://www.instagram.com/essenceblisscandle/\"]\n    }\n"
+  ],
+  "offers": [
+    {
+      "availability": "https://schema.org/InStock",
+      "url": "https://www.essencebliss.cz/clarte-de-joi-vonna-svicka-200-g-2/",
+      "price": "449.00",
+      "priceCurrency": "CZK",
+      "itemCondition": "https://schema.org/NewCondition"
+    }
+  ],
+  "photos": [
+    "https://cdn.myshoptet.com/usr/www.essencebliss.cz/user/shop/big/1114_balance-do-roku-2026-at-je-pro-vas-plny-rovnovahy--klidu-a-dobre-energie-17.png?ff=1&x=1024&y=768&q=85&ts=69f177e0&sg=161563f2"
+  ],
+  "links": [
+    {
+      "text": "Jak povolit JavaScript ve vašem prohlížeči",
+      "url": "https://www.google.com/support/bin/answer.py?answer=23852"
+    },
+    {
+      "text": "zde",
+      "url": "https://www.essencebliss.cz/podminky-ochrany-osobnich-udaju/"
+    },
+    {
+      "text": "",
+      "url": "https://www.essencebliss.cz/"
+    },
+    {
+      "text": "Nákupní košík",
+      "url": "https://www.essencebliss.cz/kosik/"
+    },
+    {
+      "text": "Nová registrace",
+      "url": "https://www.essencebliss.cz/registrace/"
+    },
+    {
+      "text": "Zapomenuté heslo",
+      "url": "https://www.essencebliss.cz/klient/zapomenute-heslo/"
+    },
+    {
+      "text": "PODZIM A VÁNOCE",
+      "url": "https://www.essencebliss.cz/vyprodej/"
+    },
+    {
+      "text": "AROMATHERAPY",
+      "url": "https://www.essencebliss.cz/aromatherapy/"
+    },
+    {
+      "text": "",
+      "url": "https://www.essencebliss.cz/aromaterapeuticke-smesy-esencialnich-oleju/"
+    },
+    {
+      "text": "Aromaterapeutické směsy esenciálních olejů",
+      "url": "https://www.essencebliss.cz/aromaterapeuticke-smesy-esencialnich-oleju/"
+    },
+    {
+      "text": "",
+      "url": "https://www.essencebliss.cz/jednodruhove-esencialni-oleje/"
+    },
+    {
+      "text": "Jednodruhové esenciální oleje",
+      "url": "https://www.essencebliss.cz/jednodruhove-esencialni-oleje/"
+    },
+    {
+      "text": "",
+      "url": "https://www.essencebliss.cz/aromaterapeuticke-interierove-spreje/"
+    },
+    {
+      "text": "Aromaterapeutické interiérové spreje",
+      "url": "https://www.essencebliss.cz/aromaterapeuticke-interierove-spreje/"
+    },
+    {
+      "text": "Svíčky",
+      "url": "https://www.essencebliss.cz/vonne-sojove-svicky/"
+    },
+    {
+      "text": "",
+      "url": "https://www.essencebliss.cz/svicky-200-g/"
+    },
+    {
+      "text": "Svíčky 200 g",
+      "url": "https://www.essencebliss.cz/svicky-200-g/"
+    },
+    {
+      "text": "",
+      "url": "https://www.essencebliss.cz/svicky-140-g/"
+    },
+    {
+      "text": "Svíčky 140g",
+      "url": "https://www.essencebliss.cz/svicky-140-g/"
+    },
+    {
+      "text": "",
+      "url": "https://www.essencebliss.cz/naplne-do-svicek/"
+    },
+    {
+      "text": "Eco Náplně",
+      "url": "https://www.essencebliss.cz/naplne-do-svicek/"
+    },
+    {
+      "text": "",
+      "url": "https://www.essencebliss.cz/svicky-s-poselstvim/"
+    },
+    {
+      "text": "Svíčky s textem ♥",
+      "url": "https://www.essencebliss.cz/svicky-s-poselstvim/"
+    },
+    {
+      "text": "Výběr dle vůně",
+      "url": "https://www.essencebliss.cz/vyber-dle-vune/"
+    },
+    {
+      "text": "",
+      "url": "https://www.essencebliss.cz/kvetinove-vune/"
+    },
+    {
+      "text": "Květinové vůně",
+      "url": "https://www.essencebliss.cz/kvetinove-vune/"
+    },
+    {
+      "text": "",
+      "url": "https://www.essencebliss.cz/citrusove-vune/"
+    },
+    {
+      "text": "Citrusové a ovocné vůně",
+      "url": "https://www.essencebliss.cz/citrusove-vune/"
+    },
+    {
+      "text": "",
+      "url": "https://www.essencebliss.cz/sladke-vune/"
+    },
+    {
+      "text": "Sladké a gurmánské vůně",
+      "url": "https://www.essencebliss.cz/sladke-vune/"
+    },
+    {
+      "text": "",
+      "url": "https://www.essencebliss.cz/bylinne-vune/"
+    },
+    {
+      "text": "Bylinné vůně",
+      "url": "https://www.essencebliss.cz/bylinne-vune/"
+    },
+    {
+      "text": "",
+      "url": "https://www.essencebliss.cz/svezi-vune/"
+    },
+    {
+      "text": "Svěží vůně",
+      "url": "https://www.essencebliss.cz/svezi-vune/"
+    },
+    {
+      "text": "",
+      "url": "https://www.essencebliss.cz/orientalni-vune/"
+    },
+    {
+      "text": "Orientální vůně",
+      "url": "https://www.essencebliss.cz/orientalni-vune/"
+    },
+    {
+      "text": "",
+      "url": "https://www.essencebliss.cz/drevite-vune/"
+    },
+    {
+      "text": "Dřevité vůně",
+      "url": "https://www.essencebliss.cz/drevite-vune/"
+    },
+    {
+      "text": "",
+      "url": "https://www.essencebliss.cz/sezonni-vune/"
+    },
+    {
+      "text": "Sezónní vůně",
+      "url": "https://www.essencebliss.cz/sezonni-vune/"
+    },
+    {
+      "text": "Aroma difuzéry",
+      "url": "https://www.essencebliss.cz/aroma-difuzery/"
+    },
+    {
+      "text": "",
+      "url": "https://www.essencebliss.cz/aroma-difuzery-2/"
+    },
+    {
+      "text": "Aroma difuzéry",
+      "url": "https://www.essencebliss.cz/aroma-difuzery-2/"
+    },
+    {
+      "text": "",
+      "url": "https://www.essencebliss.cz/naplne-do-difuzeru/"
+    },
+    {
+      "text": "Náplně do difuzéru",
+      "url": "https://www.essencebliss.cz/naplne-do-difuzeru/"
+    },
+    {
+      "text": "",
+      "url": "https://www.essencebliss.cz/napln-do-aromadifuzeru-100-ml/"
+    },
+    {
+      "text": "Náplň do aromadifuzéru 100 ml",
+      "url": "https://www.essencebliss.cz/napln-do-aromadifuzeru-100-ml/"
+    },
+    {
+      "text": "Interiérové spreje",
+      "url": "https://www.essencebliss.cz/interierove-spreje/"
+    },
+    {
+      "text": "",
+      "url": "https://www.essencebliss.cz/kolekce-aromatherapy/"
+    },
+    {
+      "text": "Kolekce AROMATHERAPY",
+      "url": "https://www.essencebliss.cz/kolekce-aromatherapy/"
+    },
+    {
+      "text": "",
+      "url": "https://www.essencebliss.cz/kolekce-intense/"
+    },
+    {
+      "text": "Kolekce INTENSE Moments",
+      "url": "https://www.essencebliss.cz/kolekce-intense/"
+    },
+    {
+      "text": "VÝPRODEJ",
+      "url": "https://www.essencebliss.cz/vyprodej-2/"
+    },
+    {
+      "text": "Doplňky, dárky a dekorace",
+      "url": "https://www.essencebliss.cz/doplnky--darky-a-dekorace/"
+    },
+    {
+      "text": "Můj příběh",
+      "url": "https://www.essencebliss.cz/nas-pribeh/"
+    },
+    {
+      "text": "Kde nás najdete",
+      "url": "https://www.essencebliss.cz/kde-nas-najdete/"
+    },
+    {
+      "text": "Moje objednávka",
+      "url": "https://www.essencebliss.cz/moje-objednavka/"
+    },
+    {
+      "text": "Přihlášení",
+      "url": "https://www.essencebliss.cz/login/?backTo=%2Fclarte-de-joi-vonna-svicka-200-g-2%2F"
+    },
+    {
+      "text": "Domů",
+      "url": "https://www.essencebliss.cz/"
+    },
+    {
+      "text": "Svíčky",
+      "url": "https://www.essencebliss.cz/vonne-sojove-svicky/"
+    },
+    {
+      "text": "Svíčky 200 g",
+      "url": "https://www.essencebliss.cz/svicky-200-g/"
+    },
+    {
+      "text": "sójový vosk",
+      "url": "https://www.essencebliss.cz/sojovy-vosk"
+    },
+    {
+      "text": "certifikované vonné oleje",
+      "url": "https://www.essencebliss.cz/vonne-oleje/"
+    },
+    {
+      "text": "vhodné jako dárek",
+      "url": "https://www.essencebliss.cz/baleni-270-ml-200-g/"
+    },
+    {
+      "text": "náplněmi",
+      "url": "https://www.essencebliss.cz/napln-do-svicky-200-g/"
+    },
+    {
+      "text": "Možnosti doručení",
+      "url": "https://www.essencebliss.cz/clarte-de-joi-vonna-svicka-200-g-2:moznosti-dopravy/"
+    },
+    {
+      "text": "Zeptat se",
+      "url": "https://www.essencebliss.cz/clarte-de-joi-vonna-svicka-200-g-2:dotaz/"
+    },
+    {
+      "text": "Tweet",
+      "url": "https://twitter.com/share"
+    },
+    {
+      "text": "",
+      "url": "https://cdn.myshoptet.com/usr/www.essencebliss.cz/user/shop/big/1114_balance-do-roku-2026-at-je-pro-vas-plny-rovnovahy--klidu-a-dobre-energie-17.png?ff=1&x=1024&y=768&q=85&ts=69f177e0&sg=161563f2"
+    },
+    {
+      "text": "",
+      "url": "https://cdn.myshoptet.com/usr/www.essencebliss.cz/user/shop/big/1114_balance-do-roku-2026-at-je-pro-vas-plny-rovnovahy--klidu-a-dobre-energie-17.png?ff=1&x=1024&y=768&q=85&ts=69f177e0&sg=161563f2"
+    },
+    {
+      "text": "",
+      "url": "https://cdn.myshoptet.com/usr/www.essencebliss.cz/user/shop/big/1114_balance-do-roku-2026-at-je-pro-vas-plny-rovnovahy--klidu-a-dobre-energie-17.png?ff=1&x=1024&y=768&q=85&ts=69f177e0&sg=161563f2"
+    },
+    {
+      "text": "",
+      "url": "https://cdn.myshoptet.com/usr/www.essencebliss.cz/user/shop/big/1114-3_image--15.png?ff=1&x=1024&y=768&q=85&ts=69f17784&sg=161563f2"
+    },
+    {
+      "text": "",
+      "url": "https://cdn.myshoptet.com/usr/www.essencebliss.cz/user/shop/big/1114-3_image--15.png?ff=1&x=1024&y=768&q=85&ts=69f17784&sg=161563f2"
+    },
+    {
+      "text": "",
+      "url": "https://cdn.myshoptet.com/usr/www.essencebliss.cz/user/shop/big/1114-1_image--13.png?ff=1&x=1024&y=768&q=85&ts=69f174a7&sg=161563f2"
+    },
+    {
+      "text": "",
+      "url": "https://cdn.myshoptet.com/usr/www.essencebliss.cz/user/shop/big/1114-1_image--13.png?ff=1&x=1024&y=768&q=85&ts=69f174a7&sg=161563f2"
+    },
+    {
+      "text": "podmínkami ochrany osobních údajů",
+      "url": "https://www.essencebliss.cz/podminky-ochrany-osobnich-udaju/"
+    },
+    {
+      "text": "podmínkami ochrany osobních údajů",
+      "url": "https://www.essencebliss.cz/podminky-ochrany-osobnich-udaju/"
+    },
+    {
+      "text": "Novinka Tip",
+      "url": "https://www.essencebliss.cz/parfemovy-aroma-difuzer-clarte-de-joie/"
+    },
+    {
+      "text": "Clarté de Joi - parfémový difuzér s tyčinkami 100 ml – bílé sklo, dlouhotrvající bytová vůně",
+      "url": "https://www.essencebliss.cz/parfemovy-aroma-difuzer-clarte-de-joie/"
+    },
+    {
+      "text": "",
+      "url": "https://www.essencebliss.cz/nuzky-na-knot/"
+    },
+    {
+      "text": "Nůžky na knot",
+      "url": "https://www.essencebliss.cz/nuzky-na-knot/"
+    },
+    {
+      "text": "Novinka",
+      "url": "https://www.essencebliss.cz/vonna-sojova-svicka-white-tea-and-sage-200-g/"
+    },
+    {
+      "text": "Vonná sójová svíčka White tea and Sage 200 g",
+      "url": "https://www.essencebliss.cz/vonna-sojova-svicka-white-tea-and-sage-200-g/"
+    },
+    {
+      "text": "Novinka",
+      "url": "https://www.essencebliss.cz/vonna-sojova-svicka-granatove-jablko-200-g/"
+    },
+    {
+      "text": "Vonná sójová svíčka | Granátové jablko 200 g",
+      "url": "https://www.essencebliss.cz/vonna-sojova-svicka-granatove-jablko-200-g/"
+    },
+    {
+      "text": "info@essencebliss.cz",
+      "url": "mailto:info@essencebliss.cz"
+    },
+    {
+      "text": "+420 777 294 554",
+      "url": "tel:+420777294554"
+    },
+    {
+      "text": "",
+      "url": "https://www.facebook.com/search/top/?q=essence%20bliss"
+    },
+    {
+      "text": "",
+      "url": "https://www.instagram.com/essenceblisscandle/"
+    },
+    {
+      "text": "Obchodní podmínky",
+      "url": "https://www.essencebliss.cz/obchodni-podminky/"
+    },
+    {
+      "text": "Doprava a platba",
+      "url": "https://www.essencebliss.cz/doprava-a-platba/"
+    },
+    {
+      "text": "Bezpečnostní informace",
+      "url": "https://www.essencebliss.cz/bezpecnostni-informace/"
+    },
+    {
+      "text": "Podmínky ochrany osobních údajů",
+      "url": "https://www.essencebliss.cz/podminky-ochrany-osobnich-udaju/"
+    },
+    {
+      "text": "Napište nám",
+      "url": "https://www.essencebliss.cz/kontakty/"
+    },
+    {
+      "text": "Záruky na zboží zakoupené v EU",
+      "url": "https://www.essencebliss.cz/zaruky-na-zbozi-zakoupene-v-eu/"
+    },
+    {
+      "text": "",
+      "url": "https://www.instagram.com/p/DbYJk6uDES_/"
+    },
+    {
+      "text": "",
+      "url": "https://www.instagram.com/p/DXCeyf4jNvX/"
+    },
+    {
+      "text": "",
+      "url": "https://www.instagram.com/p/DWdm5lxDMlN/"
+    },
+    {
+      "text": "Sledovat na Instagramu",
+      "url": "https://www.instagram.com/essenceblisscandle/"
+    },
+    {
+      "text": "Essence Bliss",
+      "url": "https://www.facebook.com/61557929638146"
+    },
+    {
+      "text": "",
+      "url": "https://www.shoptet.cz/?utm_source=footer&utm_medium=link&utm_campaign=create_by_shoptet"
+    },
+    {
+      "text": "Vytvořil Shoptet",
+      "url": "https://www.shoptet.cz/?utm_source=footer&utm_medium=link&utm_campaign=create_by_shoptet"
+    }
+  ],
+  "publicProduct": {
+    "id": 1114,
+    "guid": "bf2ca5ca-4377-11f1-9e8d-bc24112d90c2",
+    "hasVariants": false,
+    "codes": [
+      {
+        "code": 1114,
+        "weight": 0,
+        "quantity": "> 5",
+        "stocks": [
+          {
+            "id": "ext",
+            "quantity": "> 5"
+          }
+        ]
+      }
+    ],
+    "code": "1114",
+    "name": "Vonná sójová svíčka | Clarté de Joi 200 g",
+    "appendix": "",
+    "weight": 0,
+    "currentCategory": "Svíčky | Svíčky 200 g",
+    "currentCategoryGuid": "bced5811-f2c0-11ef-a244-0ebfb91bf821",
+    "defaultCategory": "Svíčky | Svíčky 200 g",
+    "defaultCategoryGuid": "bced5811-f2c0-11ef-a244-0ebfb91bf821",
+    "currency": "CZK",
+    "priceWithVat": 449
+  },
+  "description": "Detailní popis produktu Popis produktu není dostupný",
+  "shortDescription": "Sladká, luxusní parfémovaná vůně s tóny hrušky a černého rybízu, jemně rozvinutá do květinového srdce jasmínu a pomerančového květu. Závěr tvoří hřejivá vanilka, pralinka a pačuli, které dodávají intenzivní a elegantní charakter. Vůně ovocná sladká Čistě přírodní sójový vosk Prémiové certifikované vonné oleje Vyrobeno ručně v České republice Parametry: ~45 hodin hoření Sklenice 310 ml, plnění: 200 g, bílá lesklá Přírodní bavlněný knot Vhodné pro Vegany Vyrobeno bez: Parabenů, Ftalátů, Sulfátů, Pesticidů a GMO Zabaleno v krabičce, vhodné jako dárek Víčko z bukového dřeva s těsněním Znovu použitelná sklenice z evropských skláren Vdechněte nový život Vaší vyhořelé svíčce s našimi náplněmi",
+  "bodyText": "Luxusní sladká svíčka – ovocná parfémovaná vůně | Essence Bliss Musíte změnit nastavení vašeho prohlížeče Podívejte se na: Jak povolit JavaScript ve vašem prohlížeči. Pokud používáte software na blokování reklam, může být nutné povolit JavaScript z této stránky. Děkujeme. Cookie consent Tento web používá soubory cookie. Dalším procházením tohoto webu vyjadřujete souhlas s jejich používáním.. Více informací zde. Nastavení Souhlasím Přejít na obsahDoručení na výdejní místa DPD za 45 Kč. Naskladnění vánočních svíček 2.11. Hledat Přihlášení Nákupní košík Přihlášení k vašemu účtu E-mailHesloNevyplňujte toto poleSurname Přihlásit seNová registraceZapomenuté heslo Hledat PODZIM A VÁNOCE AROMATHERAPYAromaterapeutické směsy esenciálních olejů Jednodruhové esenciální oleje Aromaterapeutické interiérové spreje SvíčkySvíčky 200 g Svíčky 140g Eco Náplně Svíčky s textem ♥ Výběr dle vůněKvětinové vůně Citrusové a ovocné vůně Sladké a gurmánské vůně Bylinné vůně Svěží vůně Orientální vůně Dřevité vůně Sezónní vůně Aroma difuzéryAroma difuzéry Náplně do difuzéru Náplň do aromadifuzéru 100 ml Interiérové sprejeKolekce AROMATHERAPY Kolekce INTENSE Moments VÝPRODEJ Doplňky, dárky a dekorace Můj příběh Kde nás najdete Moje objednávka Přihlášení Více Domů / Svíčky / Svíčky 200 g / Vonná sójová svíčka | Clarté de Joi 200 g Vonná sójová svíčka | Clarté de Joi 200 g Průměrné hodnocení produktu je 0,0 z 5 hvězdiček. Neohodnoceno Podrobnosti hodnocení Sladká, luxusní parfémovaná vůně s tóny hrušky a černého rybízu, jemně rozvinutá do květinového srdce jasmínu a pomerančového květu. Závěr tvoří hřejivá vanilka, pralinka a pačuli, které dodávají intenzivní a elegantní charakter. Vůně ovocná sladká Čistě přírodní sójový vosk Prémiové certifikované vonné oleje Vyrobeno ručně v České republice Parametry: ~45 hodin hoření Sklenice 310 ml, plnění: 200 g, bílá lesklá Přírodní bavlněný knot Vhodné pro Vegany Vyrobeno bez: Parabenů, Ftalátů, Sulfátů, Pesticidů a GMO Zabaleno v krabičce, vhodné jako dárek Víčko z bukového dřeva s těsněním Znovu použitelná sklenice z evropských skláren Vdechněte nový život Vaší vyhořelé svíčce s našimi náplněmi 449 Kč Měrná cena: Dostupnost: Skladem (>5 ks) Možnosti doručení Kód: 1114 Množství + − Do košíku Tisk Zeptat se Sdílet Tweet Zavřít Vonná sójová svíčka | Clarté de Joi 200 g Průměrné hodnocení produktu je 0,0 z 5 hvězdiček. Neohodnoceno Podrobnosti hodnocení Novinka Tip RUČNĚ VYROBENOv České republice ČISTÉ HOŘENÍ100% přírodní sójový vosk NĚŽNÉ SLOŽENÍBEZ Parabenů, Ftalátů a Pesticidů ŠETRNÉ K PŘÍRODĚvyrobeno ze surovin z obnovitelných zdrojů Popis Hodnocení Diskuze Detailní popis produktu Popis produktu není dostupný Hodnocení produktu Buďte první, kdo napíše příspěvek k této položce. Přidat hodnocení Povinná pole Jméno Nevyplňujte toto poleSurname E-mail Komentář Jak byste ohodnotili tento produkt? Vyberte od 1 do 5 hvězdiček, kde 1 je nejhorší a 5 nejlepší hodnocení. Odpovídá velmi negativnímu hodnocení. Odpovídá spíše negativnímu hodnocení. Odpovídá průměrnému hodnocení. Odpovídá pozitivnímu hodnocení. Odpovídá výbornému hodnocení. Bezpečnostní kontrola Opište text z obrázku Vložením hodnocení souhlasíte s podmínkami ochrany osobních údajů Odeslat hodnocení Diskuze Buďte první, kdo napíše příspěvek k této položce. Přidat komentář Povinná pole Jméno Nevyplňujte toto poleSurname E-mail Název Komentář Bezpečnostní kontrola Opište text z obrázku Vložením komentáře souhlasíte s podmínkami ochrany osobních údajů Odeslat komentář Související produkty Novinka Tip Clarté de Joi - parfémový difuzér s tyčinkami 100 ml – bílé sklo, dlouhotrvající bytová vůně 449 Kč Skladem (>5 ks) Množství + − Do košíku Vneste do svého domova eleganci, lehkost a radost z vůní. Tento parfémový difuzér s tyčinkami (100 ml) v lesklém bílém skle je navržen jako stylový doplněk... Kód: 1090 Nůžky na knot 179 Kč Skladem (4 ks) Průměrné hodnocení produktu je 5,0 z 5 hvězdiček. Množství + − Do košíku Díky jejich specifickému tvaru a snadnému použití jsou ideální pomůckou pro zastřihávání knotů svíček zejména v nádobách. Umožní jednoduše, přesně a čistě bez nežádoucího... Kód: 106 Podobné produkty Novinka Vonná sójová svíčka White tea and Sage 200 g 449 Kč Skladem (>5 ks) Množství + − Do košíku Jemná bylinná vůně bílého čaje a šalvěje promění běžný večer v malý rituál klidu. Svíčka je vyrobená ze sojového vosku a hoří až 40 hodin, takže si... Kód: 1126 Novinka Vonná sójová svíčka | Granátové jablko 200 g 449 Kč Skladem (>5 ks) Množství + − Do košíku Jiskřivá a elegantní vůně. Ovocná, lehce hřejivá a přitom svěží kompozice, která vytváří příjemnou a sofistikovanou atmosféru. Parametry: ~45 hodin hoření Sklenice... Kód: 1002 Zápatí Kontakt info@essencebliss.cz +420 777 294 554 Informace pro vás Obchodní podmínky Doprava a platba Bezpečnostní informace Podmínky ochrany osobních údajů Napište nám Záruky na zboží zakoupené v EU Instagram Sledovat na Instagramu Facebook Essence Bliss Copyright 2026 Essence Bliss. Všechna práva vyhrazena. Upravit nastavení cookies Vytvořil Shoptet"
+}

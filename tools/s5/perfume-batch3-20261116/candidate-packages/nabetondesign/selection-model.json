@@ -1,0 +1,66 @@
+{
+  "key": "fragranceDirection",
+  "question": "Jaká vůně je vám blízká?",
+  "options": [
+    {
+      "value": "fresh",
+      "label": "Čistota nebo květinové tóny",
+      "key": "fragranceProfile",
+      "question": "Která kombinace vás láká?",
+      "options": [
+        {
+          "value": "cotton",
+          "label": "Čisté prádlo, bavlna a musk",
+          "productId": "cotton",
+          "sourceUrl": "https://www.nabetondesign.cz/no-1-cotton-clouds/"
+        },
+        {
+          "value": "pink",
+          "label": "Růže, růžový pepř a cedr",
+          "productId": "pink",
+          "sourceUrl": "https://www.nabetondesign.cz/pink-elegance-100--sojova-svicka-220ml/"
+        }
+      ]
+    },
+    {
+      "value": "fruit",
+      "label": "Ovocná svěžest",
+      "key": "fragranceProfile",
+      "question": "Která kombinace vás láká?",
+      "options": [
+        {
+          "value": "tropical",
+          "label": "Ananas, kokos a vanilka",
+          "productId": "tropical",
+          "sourceUrl": "https://www.nabetondesign.cz/no--4-fresh-fusion/"
+        },
+        {
+          "value": "grapefruit",
+          "label": "Růžový grep, jasmín a vanilka",
+          "productId": "grapefruit",
+          "sourceUrl": "https://www.nabetondesign.cz/no--5-morning-awakening/"
+        }
+      ]
+    },
+    {
+      "value": "warm",
+      "label": "Koření nebo dřevitý charakter",
+      "key": "fragranceProfile",
+      "question": "Která kombinace vás láká?",
+      "options": [
+        {
+          "value": "christmas",
+          "label": "Pomeranč, mandarinka a koření",
+          "productId": "christmas",
+          "sourceUrl": "https://www.nabetondesign.cz/christmas-time-vanocni-svicka-2/"
+        },
+        {
+          "value": "cedar",
+          "label": "Himalájský cedr, jasmín a ambra",
+          "productId": "cedar",
+          "sourceUrl": "https://www.nabetondesign.cz/no--8-lasting-happiness/"
+        }
+      ]
+    }
+  ]
+}

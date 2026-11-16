@@ -1,0 +1,66 @@
+{
+  "key": "fragranceDirection",
+  "question": "Jaká vůně je vám blízká?",
+  "options": [
+    {
+      "value": "fresh",
+      "label": "Květiny nebo ovoce",
+      "key": "fragranceProfile",
+      "question": "Která kombinace vás láká?",
+      "options": [
+        {
+          "value": "wine",
+          "label": "Vyzrálé hrozny a vinný charakter",
+          "productId": "wine",
+          "sourceUrl": "https://www.nasesojka.cz/sojova-vonna-svicka-ve-vinne-lahvi-sauvignon-200-g-/"
+        },
+        {
+          "value": "rose",
+          "label": "Květ růže a zelené stonky",
+          "productId": "rose",
+          "sourceUrl": "https://www.nasesojka.cz/sojova-vonna-svicka-ve-whisky-sklenici-kvet-ruze--170-g-/"
+        }
+      ]
+    },
+    {
+      "value": "herbs",
+      "label": "Bylinná a čajová svěžest",
+      "key": "fragranceProfile",
+      "question": "Která kombinace vás láká?",
+      "options": [
+        {
+          "value": "sage",
+          "label": "Šalvěj a jemný dřevitý základ",
+          "productId": "sage",
+          "sourceUrl": "https://www.nasesojka.cz/salvejova-naruc-sojova-vonna-svicka-s-korkem-530g/"
+        },
+        {
+          "value": "tea",
+          "label": "Zelený čaj a čerstvý zázvor",
+          "productId": "tea",
+          "sourceUrl": "https://www.nasesojka.cz/cajova-oaza-sojova-vonna-svice-ve-vaze-aura-800g/"
+        }
+      ]
+    },
+    {
+      "value": "warm",
+      "label": "Hřejivé koření",
+      "key": "fragranceProfile",
+      "question": "Která kombinace vás láká?",
+      "options": [
+        {
+          "value": "orient",
+          "label": "Zázvor, hřebíček a muškátový oříšek",
+          "productId": "orient",
+          "sourceUrl": "https://www.nasesojka.cz/sojova-svice-ve-vinne-lahvi-s-vuni-koreni-orientu--200-g/"
+        },
+        {
+          "value": "gingerbread",
+          "label": "Med, koření a vanilka",
+          "productId": "gingerbread",
+          "sourceUrl": "https://www.nasesojka.cz/sojova-svicka-s-bavlnenym-knotem-medovy-pernicek-140g/"
+        }
+      ]
+    }
+  ]
+}

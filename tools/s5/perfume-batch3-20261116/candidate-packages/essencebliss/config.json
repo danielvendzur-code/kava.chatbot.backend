@@ -1,0 +1,220 @@
+{
+  "slug": "essencebliss",
+  "owner": "PERFUME_WORKER",
+  "claimCommit": "07e7b4fdc2d57bfd6151fb0d8eeaf8587e313471",
+  "series": "s5",
+  "segment": "fragrance",
+  "status": "SOURCE_PACKAGE_VERIFIED",
+  "catalogue": "/catalogues/essencebliss.js",
+  "requiredEngineContract": "s5-fragrance-direction-profile-v1",
+  "quickChips": [
+    "Bílý čaj a šalvěj",
+    "Mango a grapefruit",
+    "Jablko a vanilka",
+    "Porovnat dvě vůně"
+  ],
+  "offlineReplyRequirements": [
+    {
+      "chip": "Bílý čaj a šalvěj",
+      "match": "bily caj|salvej",
+      "productIds": [
+        "tea"
+      ]
+    },
+    {
+      "chip": "Mango a grapefruit",
+      "match": "mango|grapefruit",
+      "productIds": [
+        "mango"
+      ]
+    },
+    {
+      "chip": "Jablko a vanilka",
+      "match": "jablk|vanilk",
+      "productIds": [
+        "amber"
+      ]
+    }
+  ],
+  "compareProductIds": [
+    "tea",
+    "pear"
+  ],
+  "addon": {
+    "enabled": false,
+    "reason": "Only sourced distinct alternative and two-product comparison; no invented paid-accessory compatibility or fake mini."
+  },
+  "budgetQuestion": false,
+  "enableRuntime": false,
+  "sharedCoreVerifiedAt": "c9e4da04e19339492a4ffe91428e8ac960b866b6",
+  "resultExtrasScript": "/n447/s5/fragrance-result-extras.js",
+  "registryObject": {
+    "series": "s5",
+    "type": "cosmetics",
+    "segment": "fragrance",
+    "name": "ESSENCE BLISS",
+    "country": "CZ",
+    "logos": {
+      "landing": "/assets/s5/essencebliss/logo.png",
+      "header": "/assets/s5/essencebliss/logo.png",
+      "avatar": "/assets/s5/essencebliss/avatar.svg"
+    },
+    "brand": {
+      "name": "ESSENCE BLISS",
+      "domain": "essencebliss.cz",
+      "website": "https://www.essencebliss.cz/",
+      "lang": "cs",
+      "fullName": "ESSENCE BLISS",
+      "url": "https://www.essencebliss.cz/",
+      "logo": "/assets/s5/essencebliss/logo.png",
+      "mark": "/assets/s5/essencebliss/avatar.svg",
+      "greeting": "Dobrý den. Pomohu vám porovnat vybrané vůně svíček, jejich balení a ceny.",
+      "quickChips": [
+        "Bílý čaj a šalvěj",
+        "Mango a grapefruit",
+        "Jablko a vanilka",
+        "Porovnat dvě vůně"
+      ],
+      "theme": {
+        "brand": "#51433b",
+        "accent": "#c9aa78",
+        "soft": "#f7f2ee",
+        "paper": "#fff",
+        "ink": "#332d29",
+        "line": "#e7ded5"
+      }
+    },
+    "traitCopy": {
+      "fresh": [
+        "Bylinná nebo citrusová svěžest",
+        "",
+        "Bylinná nebo citrusová svěžest",
+        ""
+      ],
+      "tea": [
+        "Bílý čaj a šalvěj",
+        "",
+        "Bílý čaj a šalvěj",
+        ""
+      ],
+      "verbena": [
+        "Verbena, citron a pomeranč",
+        "",
+        "Verbena, citron a pomeranč",
+        ""
+      ],
+      "orange": [
+        "Pomeranč, grapefruit a limetka",
+        "",
+        "Pomeranč, grapefruit a limetka",
+        ""
+      ],
+      "sweet": [
+        "Ovoce a sladší základ",
+        "",
+        "Ovoce a sladší základ",
+        ""
+      ],
+      "amber": [
+        "Jablko, růže a vanilka",
+        "",
+        "Jablko, růže a vanilka",
+        ""
+      ],
+      "pear": [
+        "Hruška, jasmín a pralinka",
+        "",
+        "Hruška, jasmín a pralinka",
+        ""
+      ],
+      "mango": [
+        "Mango, grapefruit a guava",
+        "",
+        "Mango, grapefruit a guava",
+        ""
+      ]
+    },
+    "stepCopy": {
+      "fragranceDirection": [
+        "Jaká vůně je vám blízká?",
+        "",
+        "Vonné tóny"
+      ],
+      "fragranceProfile": [
+        "Která kombinace vás láká?",
+        "",
+        "Vonné tóny"
+      ]
+    },
+    "compareFocus": true,
+    "upsellFocus": {},
+    "choicePhotos": {
+      "fresh": [
+        "/assets/s3/scenes-k2/citrus.jpg"
+      ],
+      "tea": [
+        "/assets/s5/essencebliss/tea.jpg"
+      ],
+      "verbena": [
+        "/assets/s5/essencebliss/verbena.jpg"
+      ],
+      "orange": [
+        "/assets/s5/essencebliss/orange.jpg"
+      ],
+      "sweet": [
+        "/assets/s3/scenes-k2/vanilla.jpg"
+      ],
+      "amber": [
+        "/assets/s5/essencebliss/amber.png"
+      ],
+      "pear": [
+        "/assets/s5/essencebliss/pear.png"
+      ],
+      "mango": [
+        "/assets/s5/essencebliss/mango.jpg"
+      ]
+    },
+    "compareProductIds": [
+      "tea",
+      "pear"
+    ],
+    "segmentText": {
+      "entryNote": "Vonné svíčky · balení a cena · porovnání",
+      "titleSuffix": "výběr vůně svíčky",
+      "tab": "Výběr vůně",
+      "advisorName": "Průvodce vůněmi svíček",
+      "entrySmall": "VŮNĚ SVÍČEK",
+      "entryTitle": "Najděte vůni své svíčky",
+      "placeholder": "Zeptejte se na charakter vůně, balení nebo cenu…",
+      "heading": "Pomozte zákazníkovi vybrat vůni svíčky podle jeho vkusu.",
+      "lead": "Podle odpovědí zobrazí konkrétní svíčku s fotografií, vonným profilem, balením, cenou a odkazem. Dvě odlišné vůně lze porovnat.",
+      "includedChat": "Vonné tóny, balení a ceny vybraných svíček.",
+      "includedAdvisor": "Výběr vůně svíčky a porovnání dvou kompozic.",
+      "greeting": "Dobrý den. Pomohu vám porovnat vybrané vůně svíček, jejich balení a ceny.",
+      "teaserTitle": "Najděte vůni své svíčky",
+      "teaserNote": "Svíčky, balení a ceny",
+      "teaserAria": "Otevřít výběr vůně svíčky",
+      "source": "essencebliss-demo"
+    },
+    "fragranceResultExtras": {
+      "version": 1,
+      "enabled": true,
+      "alternatives": {
+        "tea": "verbena",
+        "verbena": "orange",
+        "orange": "tea",
+        "amber": "pear",
+        "pear": "mango",
+        "mango": "amber"
+      },
+      "scentProfile": {
+        "version": 1,
+        "mode": "source-notes-no-numeric-strength"
+      }
+    },
+    "fragrancePresentation": {
+      "version": 1,
+      "hideStepEstimate": true
+    }
+  }
+}

@@ -1,0 +1,211 @@
+{
+  "runtimeEnabled": false,
+  "owner": "PERFUME_WORKER",
+  "integrationOwner": "MAIN",
+  "registryObject": {
+    "series": "s5",
+    "type": "cosmetics",
+    "segment": "fragrance",
+    "name": "SVĚTLONOŠKY",
+    "country": "CZ",
+    "logos": {
+      "landing": "/assets/s5/svetlonosky/logo.png",
+      "header": "/assets/s5/svetlonosky/logo.png",
+      "avatar": "/assets/s5/svetlonosky/avatar.svg"
+    },
+    "brand": {
+      "name": "SVĚTLONOŠKY",
+      "domain": "svetlonosky.cz",
+      "website": "https://www.svetlonosky.cz/",
+      "lang": "cs",
+      "fullName": "SVĚTLONOŠKY",
+      "url": "https://www.svetlonosky.cz/",
+      "logo": "/assets/s5/svetlonosky/logo.png",
+      "mark": "/assets/s5/svetlonosky/avatar.svg",
+      "greeting": "Dobrý den. Pomohu vám porovnat vybrané vůně svíček, jejich balení a ceny.",
+      "quickChips": [
+        "Vanilka a kokos",
+        "Sladký perníček",
+        "Benzoin a cedr",
+        "Porovnat dvě vůně"
+      ],
+      "theme": {
+        "brand": "#663d4c",
+        "accent": "#c69b7b",
+        "soft": "#f7f2ee",
+        "paper": "#fff",
+        "ink": "#332d29",
+        "line": "#e7ded5"
+      }
+    },
+    "traitCopy": {
+      "bakery": [
+        "Sladké gurmánské vůně",
+        "",
+        "Sladké gurmánské vůně",
+        ""
+      ],
+      "vanilla": [
+        "Vanilka, kokos a karamel",
+        "",
+        "Vanilka, kokos a karamel",
+        ""
+      ],
+      "gingerbread": [
+        "Sladký perníček",
+        "",
+        "Sladký perníček",
+        ""
+      ],
+      "chocolate": [
+        "Čokoláda, káva a vanilka",
+        "",
+        "Čokoláda, káva a vanilka",
+        ""
+      ],
+      "soft": [
+        "Kašmír nebo dřevité tóny",
+        "",
+        "Kašmír nebo dřevité tóny",
+        ""
+      ],
+      "cashmere": [
+        "Hebký teplý kašmír",
+        "",
+        "Hebký teplý kašmír",
+        ""
+      ],
+      "woods": [
+        "Benzoin, bílý javor a cedr",
+        "",
+        "Benzoin, bílý javor a cedr",
+        ""
+      ]
+    },
+    "stepCopy": {
+      "fragranceDirection": [
+        "Jaká vůně je vám blízká?",
+        "",
+        "Vonné tóny"
+      ],
+      "fragranceProfile": [
+        "Která kombinace vás láká?",
+        "",
+        "Vonné tóny"
+      ]
+    },
+    "compareFocus": true,
+    "upsellFocus": {},
+    "choicePhotos": {
+      "bakery": [
+        "/assets/s3/scenes-k2/vanilla.jpg"
+      ],
+      "vanilla": [
+        "/assets/s5/svetlonosky/vanilla.jpg"
+      ],
+      "gingerbread": [
+        "/assets/s5/svetlonosky/gingerbread.jpg"
+      ],
+      "chocolate": [
+        "/assets/s5/svetlonosky/chocolate.jpg"
+      ],
+      "soft": [
+        "/assets/s3/scenes-k2/pine.jpg"
+      ],
+      "cashmere": [
+        "/assets/s5/svetlonosky/cashmere.jpg"
+      ],
+      "woods": [
+        "/assets/s5/svetlonosky/woods.jpg"
+      ]
+    },
+    "compareProductIds": [
+      "chocolate",
+      "woods"
+    ],
+    "segmentText": {
+      "entryNote": "Vonné svíčky · balení a cena · porovnání",
+      "titleSuffix": "výběr vůně svíčky",
+      "tab": "Výběr vůně",
+      "advisorName": "Průvodce vůněmi svíček",
+      "entrySmall": "VŮNĚ SVÍČEK",
+      "entryTitle": "Najděte vůni své svíčky",
+      "placeholder": "Zeptejte se na charakter vůně, balení nebo cenu…",
+      "heading": "Pomozte zákazníkovi vybrat vůni svíčky podle jeho vkusu.",
+      "lead": "Podle odpovědí zobrazí konkrétní svíčku s fotografií, vonným profilem, balením, cenou a odkazem. Dvě odlišné vůně lze porovnat.",
+      "includedChat": "Vonné tóny, balení a ceny vybraných svíček.",
+      "includedAdvisor": "Výběr vůně svíčky a porovnání dvou kompozic.",
+      "greeting": "Dobrý den. Pomohu vám porovnat vybrané vůně svíček, jejich balení a ceny.",
+      "teaserTitle": "Najděte vůni své svíčky",
+      "teaserNote": "Svíčky, balení a ceny",
+      "teaserAria": "Otevřít výběr vůně svíčky",
+      "source": "svetlonosky-demo"
+    },
+    "fragranceResultExtras": {
+      "version": 1,
+      "enabled": true,
+      "alternatives": {
+        "vanilla": "gingerbread",
+        "gingerbread": "chocolate",
+        "chocolate": "vanilla",
+        "cashmere": "woods",
+        "woods": "cashmere"
+      },
+      "scentProfile": {
+        "version": 1,
+        "mode": "source-notes-no-numeric-strength"
+      }
+    },
+    "fragrancePresentation": {
+      "version": 1,
+      "hideStepEstimate": true
+    }
+  },
+  "catalogueImport": "/catalogues/svetlonosky.js",
+  "backendBrand": "svetlonosky",
+  "offlineRules": [
+    {
+      "chip": "Vanilka a kokos",
+      "match": "vanilk|kokos",
+      "productIds": [
+        "vanilla"
+      ]
+    },
+    {
+      "chip": "Sladký perníček",
+      "match": "pernic",
+      "productIds": [
+        "gingerbread"
+      ]
+    },
+    {
+      "chip": "Benzoin a cedr",
+      "match": "benzoin|cedr",
+      "productIds": [
+        "woods"
+      ]
+    }
+  ],
+  "noCoreLogicChangeRequired": true,
+  "commonFilesModified": [],
+  "companyCss": {
+    "source": "tools/s5/perfume-batch3-20261116/candidate-packages/svetlonosky/ui-review.css",
+    "destination": "n447/s5/brands/svetlonosky.css",
+    "registryField": {
+      "companyCss": "/n447/s5/brands/svetlonosky.css"
+    }
+  },
+  "presentationRequirement": "Existinga918profile+preset and explicit newslug body.dataset.fragranceProfile=visual-v1. Owner standalonepolish separate includes.",
+  "price": "447 EUR +10 EUR/month",
+  "commercialReview": "REVENUE_UNKNOWN_COMMERCIAL_REVIEW",
+  "emailStatus": "NOT_READY",
+  "production": "NOT_DEPLOYED",
+  "paidCalls": 0,
+  "scopeReview": {
+    "productPurpose": "scented-candle",
+    "recommendationCoreChangeRequired": false,
+    "backendReviewRequired": true,
+    "requiredBackendInstruction": "Only interior scented candles, not perfume on skin or laundry. No health/infant/pet/pregnancy/aromatherapy/fire-safety/nontoxic/smokefree/longevity guarantees; no magic or attraction promises. Literal sourced fragrance notes and exact pack, selectedvariant price and stock timestamp only. No invented paid accessory or automatic cart. No inferred percent/1-10 strength.",
+    "workerTouchedSharedBackend": false
+  }
+}

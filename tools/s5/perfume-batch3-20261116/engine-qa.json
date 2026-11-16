@@ -1,0 +1,389 @@
+{
+  "commit": "6f653c1807544b43089399563fc799d34dd90474",
+  "scope": "Reserved isolated company packages; unchanged c9core; sourceIDmock only, not integrated/Preview",
+  "coreUnchanged": true,
+  "paidCalls": 0,
+  "companies": {
+    "essencebliss": {
+      "leaves": [
+        {
+          "answers": {
+            "fragranceDirection": "sweet",
+            "fragranceProfile": "amber"
+          },
+          "id": "amber",
+          "url": "https://www.essencebliss.cz/vonna-sojova-svicka-ambra-a-vanilka-200-g/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "sweet",
+            "fragranceProfile": "pear"
+          },
+          "id": "pear",
+          "url": "https://www.essencebliss.cz/clarte-de-joi-vonna-svicka-200-g-2/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "sweet",
+            "fragranceProfile": "mango"
+          },
+          "id": "mango",
+          "url": "https://www.essencebliss.cz/vonna-sojova-svicka-mango-koktejl-bila-200-g/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "tea"
+          },
+          "id": "tea",
+          "url": "https://www.essencebliss.cz/vonna-sojova-svicka-white-tea-and-sage-200-g/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "verbena"
+          },
+          "id": "verbena",
+          "url": "https://www.essencebliss.cz/vonna-sojova-svicka-lemon-verbena/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "orange"
+          },
+          "id": "orange",
+          "url": "https://www.essencebliss.cz/intense-moments-collection-sojova-svicka-sevillsky-pomeranc/"
+        }
+      ],
+      "questions": [
+        {
+          "answers": {},
+          "step": {
+            "key": "fragranceDirection",
+            "options": [
+              "sweet",
+              "fresh"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "sweet"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "amber",
+              "pear",
+              "mango"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "tea",
+              "verbena",
+              "orange"
+            ]
+          }
+        }
+      ],
+      "formulaCount": 6,
+      "status": "PASS"
+    },
+    "svetlonosky": {
+      "leaves": [
+        {
+          "answers": {
+            "fragranceDirection": "bakery",
+            "fragranceProfile": "vanilla"
+          },
+          "id": "vanilla",
+          "url": "https://www.svetlonosky.cz/sojova-svicka-proste-vanilka-/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "bakery",
+            "fragranceProfile": "gingerbread"
+          },
+          "id": "gingerbread",
+          "url": "https://www.svetlonosky.cz/sojova-svicka--nic/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "bakery",
+            "fragranceProfile": "chocolate"
+          },
+          "id": "chocolate",
+          "url": "https://www.svetlonosky.cz/sojova-svicka-hrnek-horke-cokolady-/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "soft",
+            "fragranceProfile": "cashmere"
+          },
+          "id": "cashmere",
+          "url": "https://www.svetlonosky.cz/sojova-svicka--nevim/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "soft",
+            "fragranceProfile": "woods"
+          },
+          "id": "woods",
+          "url": "https://www.svetlonosky.cz/sojova-svicka--svaty-klid/"
+        }
+      ],
+      "questions": [
+        {
+          "answers": {},
+          "step": {
+            "key": "fragranceDirection",
+            "options": [
+              "bakery",
+              "soft"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "bakery"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "vanilla",
+              "gingerbread",
+              "chocolate"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "soft"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "cashmere",
+              "woods"
+            ]
+          }
+        }
+      ],
+      "formulaCount": 5,
+      "status": "PASS"
+    },
+    "nabetondesign": {
+      "leaves": [
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "pink"
+          },
+          "id": "pink",
+          "url": "https://www.nabetondesign.cz/pink-elegance-100--sojova-svicka-220ml/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "cotton"
+          },
+          "id": "cotton",
+          "url": "https://www.nabetondesign.cz/no-1-cotton-clouds/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "warm",
+            "fragranceProfile": "christmas"
+          },
+          "id": "christmas",
+          "url": "https://www.nabetondesign.cz/christmas-time-vanocni-svicka-2/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "warm",
+            "fragranceProfile": "cedar"
+          },
+          "id": "cedar",
+          "url": "https://www.nabetondesign.cz/no--8-lasting-happiness/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fruit",
+            "fragranceProfile": "tropical"
+          },
+          "id": "tropical",
+          "url": "https://www.nabetondesign.cz/no--4-fresh-fusion/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fruit",
+            "fragranceProfile": "grapefruit"
+          },
+          "id": "grapefruit",
+          "url": "https://www.nabetondesign.cz/no--5-morning-awakening/"
+        }
+      ],
+      "questions": [
+        {
+          "answers": {},
+          "step": {
+            "key": "fragranceDirection",
+            "options": [
+              "fresh",
+              "warm",
+              "fruit"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "pink",
+              "cotton"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "warm"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "christmas",
+              "cedar"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fruit"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "tropical",
+              "grapefruit"
+            ]
+          }
+        }
+      ],
+      "formulaCount": 6,
+      "status": "PASS"
+    },
+    "sojka": {
+      "leaves": [
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "wine"
+          },
+          "id": "wine",
+          "url": "https://www.nasesojka.cz/sojova-vonna-svicka-ve-vinne-lahvi-sauvignon-200-g-/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "rose"
+          },
+          "id": "rose",
+          "url": "https://www.nasesojka.cz/sojova-vonna-svicka-ve-whisky-sklenici-kvet-ruze--170-g-/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "warm",
+            "fragranceProfile": "orient"
+          },
+          "id": "orient",
+          "url": "https://www.nasesojka.cz/sojova-svice-ve-vinne-lahvi-s-vuni-koreni-orientu--200-g/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "warm",
+            "fragranceProfile": "gingerbread"
+          },
+          "id": "gingerbread",
+          "url": "https://www.nasesojka.cz/sojova-svicka-s-bavlnenym-knotem-medovy-pernicek-140g/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "herbs",
+            "fragranceProfile": "sage"
+          },
+          "id": "sage",
+          "url": "https://www.nasesojka.cz/salvejova-naruc-sojova-vonna-svicka-s-korkem-530g/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "herbs",
+            "fragranceProfile": "tea"
+          },
+          "id": "tea",
+          "url": "https://www.nasesojka.cz/cajova-oaza-sojova-vonna-svice-ve-vaze-aura-800g/"
+        }
+      ],
+      "questions": [
+        {
+          "answers": {},
+          "step": {
+            "key": "fragranceDirection",
+            "options": [
+              "fresh",
+              "warm",
+              "herbs"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "wine",
+              "rose"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "warm"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "orient",
+              "gingerbread"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "herbs"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "sage",
+              "tea"
+            ]
+          }
+        }
+      ],
+      "formulaCount": 6,
+      "status": "PASS"
+    }
+  }
+}

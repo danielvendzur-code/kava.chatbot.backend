@@ -1,0 +1,691 @@
+{
+  "slug": "bylinkokraska",
+  "label": "home",
+  "url": "https://www.bylinkokraska.cz/",
+  "checkedAt": "2026-11-16T11:11:07.872859+00:00",
+  "tlsVerified": true,
+  "scope": "Read-only officialHTML; notlivewidgetQA",
+  "status": 200,
+  "finalUrl": "https://www.bylinkokraska.cz/",
+  "sourceSha256": "a183165a07254ab8d21bbd2d34ed2ba2c0f9112f30b6cb870a9ee5023cfb2f5f",
+  "name": "",
+  "jsonld": [
+    "\n  {\n    \"user\": {\n      \"isCustomerLoggedIn\": \"0\",\n      \"customerEmail\": \"\"\n    },\n    \"cart\": {\n            \"items\": [],\n            \"totalQuantity\": \"0\",\n      \"totalPrice\": \"0\"\n    }\n  }\n",
+    "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"OnlineStore\",\"name\":\"BylinkoKráska\",\"url\":\"https://www.bylinkokraska.cz/\",\"@id\":\"https://www.bylinkokraska.cz/#organization\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://www.bylinkokraska.cz/fotky10620/design_setup/template/v4.0/geneva/prod/logoImage.jpg\"},\"sameAs\":[\"https://www.facebook.com/BylinkoKraska/\",\"https://www.instagram.com/bylinkokraska/\"],\"telephone\":\"+420 739 203 434\",\"email\":\"info@bylinkokraska.cz\",\"contactPoint\":{\"@type\":\"ContactPoint\",\"contactType\":\"customer service\",\"telephone\":\"+420 739 203 434\",\"email\":\"info@bylinkokraska.cz\"},\"legalName\":\"Bc. Monika Mužíková\",\"taxID\":\"09561633\",\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"U Svahu 208/17\",\"addressLocality\":\"Plzeň 3, Nová Hospoda\",\"postalCode\":\"31800\",\"addressCountry\":\"CZ\"},\"hasMerchantReturnPolicy\":{\"@type\":\"MerchantReturnPolicy\",\"applicableCountry\":\"CZ\",\"returnPolicyCategory\":\"https://schema.org/MerchantReturnFiniteReturnWindow\",\"merchantReturnDays\":14,\"returnFees\":\"https://schema.org/ReturnFeesCustomerResponsibility\",\"returnMethod\":[\"https://schema.org/ReturnByMail\"],\"itemDefectReturnFees\":\"https://schema.org/FreeReturn\",\"refundType\":\"https://schema.org/FullRefund\"}},{\"@type\":\"WebSite\",\"name\":\"BylinkoKráska\",\"url\":\"https://www.bylinkokraska.cz/\",\"publisher\":{\"@id\":\"https://www.bylinkokraska.cz/#organization\"},\"potentialAction\":{\"@type\":\"SearchAction\",\"target\":\"https://www.bylinkokraska.cz/980156692/e-search?q={search_term_string}\",\"query-input\":\"required name=search_term_string\"},\"@id\":\"https://www.bylinkokraska.cz/#website\"}]}"
+  ],
+  "offers": [],
+  "photos": [],
+  "links": [
+    {
+      "text": "Blog",
+      "url": "https://www.bylinkokraska.cz/blog"
+    },
+    {
+      "text": "O mně",
+      "url": "https://www.bylinkokraska.cz/O-mne-a1_0.htm"
+    },
+    {
+      "text": "Kontakty",
+      "url": "https://www.bylinkokraska.cz/Kontakty-a2_0.htm"
+    },
+    {
+      "text": "Doprava a platba",
+      "url": "https://www.bylinkokraska.cz/Doprava-a-platba-a7_0.htm"
+    },
+    {
+      "text": "Obchodní podmínky",
+      "url": "https://www.bylinkokraska.cz/Obchodni-podminky-a3_0.htm"
+    },
+    {
+      "text": "Bezpečnostní informace",
+      "url": "https://www.bylinkokraska.cz/bezpecnostni-informace"
+    },
+    {
+      "text": "VELKOOBCHOD",
+      "url": "https://www.bylinkokraska.cz/VELKOOBCHOD-a8_0.htm"
+    },
+    {
+      "text": "Ochrana soukromí",
+      "url": "https://www.bylinkokraska.cz/osobni-udaje-informacni-povinnost"
+    },
+    {
+      "text": "Přihlášení",
+      "url": "https://www.bylinkokraska.cz/980156692/e-login"
+    },
+    {
+      "text": "Zaslat zapomenuté heslo",
+      "url": "https://www.bylinkokraska.cz/980156692/e-login-psw"
+    },
+    {
+      "text": "Registrovat",
+      "url": "https://www.bylinkokraska.cz/980156692/e-register"
+    },
+    {
+      "text": "Přihlásit přes mojeID",
+      "url": "https://www.bylinkokraska.cz/980156692/e-login-social?provider=MojeId"
+    },
+    {
+      "text": "",
+      "url": "https://www.bylinkokraska.cz/"
+    },
+    {
+      "text": "+420 739 203 434",
+      "url": "tel:+420739203434"
+    },
+    {
+      "text": "0 ksza 0 Kč",
+      "url": "https://www.bylinkokraska.cz/980156692/e-basket"
+    },
+    {
+      "text": "ZIMA / VÁNOCE",
+      "url": "https://www.bylinkokraska.cz/zima-/-vanoce"
+    },
+    {
+      "text": "Sojové vonné svíčky",
+      "url": "https://www.bylinkokraska.cz/vonne-sojove-svicky"
+    },
+    {
+      "text": "",
+      "url": "https://www.bylinkokraska.cz/personalizovane-svicky2"
+    },
+    {
+      "text": "Personalizované svíčky",
+      "url": "https://www.bylinkokraska.cz/personalizovane-svicky2"
+    },
+    {
+      "text": "",
+      "url": "https://www.bylinkokraska.cz/sojove-vonne-svicky"
+    },
+    {
+      "text": "Sojové vonné svíčky",
+      "url": "https://www.bylinkokraska.cz/sojove-vonne-svicky"
+    },
+    {
+      "text": "Sojové svíčky s esenciálními oleji",
+      "url": "https://www.bylinkokraska.cz/prirodni-sojove-svicky-s-esencialnimi-oleji"
+    },
+    {
+      "text": "",
+      "url": "https://www.bylinkokraska.cz/svicky-znameni-zverokruhu-s-mineralnim-krystalem"
+    },
+    {
+      "text": "Svíčky - Znamení zvěrokruhu s minerálním krystalem",
+      "url": "https://www.bylinkokraska.cz/svicky-znameni-zverokruhu-s-mineralnim-krystalem"
+    },
+    {
+      "text": "",
+      "url": "https://www.bylinkokraska.cz/svicky-s-mineralnimi-kameny"
+    },
+    {
+      "text": "Svíčky s minerálními kameny",
+      "url": "https://www.bylinkokraska.cz/svicky-s-mineralnimi-kameny"
+    },
+    {
+      "text": "",
+      "url": "https://www.bylinkokraska.cz/personalizovane-svicky"
+    },
+    {
+      "text": "Personalizované svíčky",
+      "url": "https://www.bylinkokraska.cz/personalizovane-svicky"
+    },
+    {
+      "text": "",
+      "url": "https://www.bylinkokraska.cz/svetylko-za-duhovy-most"
+    },
+    {
+      "text": "Sojové svíčky BOTANICAL",
+      "url": "https://www.bylinkokraska.cz/sojove-svicky-botanical"
+    },
+    {
+      "text": "",
+      "url": "https://www.bylinkokraska.cz/botanical-krystal"
+    },
+    {
+      "text": "Botanical - Krystal",
+      "url": "https://www.bylinkokraska.cz/botanical-krystal"
+    },
+    {
+      "text": "",
+      "url": "https://www.bylinkokraska.cz/botanical-botanical"
+    },
+    {
+      "text": "Botanical - Botanical",
+      "url": "https://www.bylinkokraska.cz/botanical-botanical"
+    },
+    {
+      "text": "Vonné vosky",
+      "url": "https://www.bylinkokraska.cz/vonne-vosky-do-aromalampy-dekoracni"
+    },
+    {
+      "text": "Palmové svíčky",
+      "url": "https://www.bylinkokraska.cz/prirodni-svicky-z-palmoveho-vosku3"
+    },
+    {
+      "text": "Doplňky ke svíčkám",
+      "url": "https://www.bylinkokraska.cz/doplnky-ke-svickam"
+    },
+    {
+      "text": "Čajové a plovoucí svíčky",
+      "url": "https://www.bylinkokraska.cz/cajove-a-plovouci-svicky"
+    },
+    {
+      "text": "",
+      "url": "https://www.bylinkokraska.cz/plovouci-vanocni-svicky"
+    },
+    {
+      "text": "Plovoucí vánoční svíčky",
+      "url": "https://www.bylinkokraska.cz/plovouci-vanocni-svicky"
+    },
+    {
+      "text": "Detail",
+      "url": "https://www.bylinkokraska.cz/plovouci-vanocni-svicky"
+    },
+    {
+      "text": "",
+      "url": "https://www.bylinkokraska.cz/vonny-vosk-do-aromalampy-zimni-pohoda"
+    },
+    {
+      "text": "Vonný vosk do aromalampy ZIMNÍ POHODA",
+      "url": "https://www.bylinkokraska.cz/vonny-vosk-do-aromalampy-zimni-pohoda"
+    },
+    {
+      "text": "Detail",
+      "url": "https://www.bylinkokraska.cz/vonny-vosk-do-aromalampy-zimni-pohoda"
+    },
+    {
+      "text": "",
+      "url": "https://www.bylinkokraska.cz/vonny-vosk-do-aromalampy-ticha-noc"
+    },
+    {
+      "text": "Vonný vosk do aromalampy TICHÁ NOC",
+      "url": "https://www.bylinkokraska.cz/vonny-vosk-do-aromalampy-ticha-noc"
+    },
+    {
+      "text": "",
+      "url": "https://www.bylinkokraska.cz/vonny-vosk-do-aromalampy-vodnar"
+    },
+    {
+      "text": "Vonný vosk do aromalampy VODNÁŘ",
+      "url": "https://www.bylinkokraska.cz/vonny-vosk-do-aromalampy-vodnar"
+    },
+    {
+      "text": "",
+      "url": "https://www.bylinkokraska.cz/vonny-vosk-do-aromalampy-vahy"
+    },
+    {
+      "text": "Vonný vosk do aromalampy VÁHY",
+      "url": "https://www.bylinkokraska.cz/vonny-vosk-do-aromalampy-vahy"
+    },
+    {
+      "text": "",
+      "url": "https://www.bylinkokraska.cz/vonny-vosk-do-aromalampy-stir"
+    },
+    {
+      "text": "Vonný vosk do aromalampy ŠTÍR",
+      "url": "https://www.bylinkokraska.cz/vonny-vosk-do-aromalampy-stir"
+    },
+    {
+      "text": "",
+      "url": "https://www.bylinkokraska.cz/vonny-vosk-do-aromalampy-strelec"
+    },
+    {
+      "text": "Vonný vosk do aromalampy STŘELEC",
+      "url": "https://www.bylinkokraska.cz/vonny-vosk-do-aromalampy-strelec"
+    },
+    {
+      "text": "",
+      "url": "https://www.bylinkokraska.cz/vonny-vosk-do-aromalampy-ryby"
+    },
+    {
+      "text": "Vonný vosk do aromalampy RYBY",
+      "url": "https://www.bylinkokraska.cz/vonny-vosk-do-aromalampy-ryby"
+    },
+    {
+      "text": "",
+      "url": "https://www.bylinkokraska.cz/vonny-vosk-do-aromalampy-rak"
+    },
+    {
+      "text": "Vonný vosk do aromalampy RAK",
+      "url": "https://www.bylinkokraska.cz/vonny-vosk-do-aromalampy-rak"
+    },
+    {
+      "text": "",
+      "url": "https://www.bylinkokraska.cz/vonny-vosk-do-aromalampy-panna"
+    },
+    {
+      "text": "Vonný vosk do aromalampy PANNA",
+      "url": "https://www.bylinkokraska.cz/vonny-vosk-do-aromalampy-panna"
+    },
+    {
+      "text": "",
+      "url": "https://www.bylinkokraska.cz/vonny-vosk-do-aromalampy-lev"
+    },
+    {
+      "text": "Vonný vosk do aromalampy LEV",
+      "url": "https://www.bylinkokraska.cz/vonny-vosk-do-aromalampy-lev"
+    },
+    {
+      "text": "",
+      "url": "https://www.bylinkokraska.cz/vonny-vosk-do-aromalampy-kozoroh"
+    },
+    {
+      "text": "Vonný vosk do aromalampy KOZOROH",
+      "url": "https://www.bylinkokraska.cz/vonny-vosk-do-aromalampy-kozoroh"
+    },
+    {
+      "text": "",
+      "url": "https://www.bylinkokraska.cz/vonny-vosk-do-aromalampy-byk"
+    },
+    {
+      "text": "Vonný vosk do aromalampy BÝK",
+      "url": "https://www.bylinkokraska.cz/vonny-vosk-do-aromalampy-byk"
+    },
+    {
+      "text": "",
+      "url": "https://www.bylinkokraska.cz/vonny-vosk-do-aromalampy-blizenci"
+    },
+    {
+      "text": "Vonný vosk do aromalampy BLÍŽENCI",
+      "url": "https://www.bylinkokraska.cz/vonny-vosk-do-aromalampy-blizenci"
+    },
+    {
+      "text": "",
+      "url": "https://www.bylinkokraska.cz/vonny-vosk-do-aromalampy-beran"
+    },
+    {
+      "text": "Vonný vosk do aromalampy BERAN",
+      "url": "https://www.bylinkokraska.cz/vonny-vosk-do-aromalampy-beran"
+    },
+    {
+      "text": "",
+      "url": "https://www.bylinkokraska.cz/sojova-vonna-svicka-brusinky-a-zazvor"
+    },
+    {
+      "text": "Sojová vonná svíčka BRUSINKY A ZÁZVOR",
+      "url": "https://www.bylinkokraska.cz/sojova-vonna-svicka-brusinky-a-zazvor"
+    },
+    {
+      "text": "",
+      "url": "https://www.bylinkokraska.cz/sojova-vonna-svicka-lesni-plody"
+    },
+    {
+      "text": "Sojová vonná svíčka LESNÍ PLODY",
+      "url": "https://www.bylinkokraska.cz/sojova-vonna-svicka-lesni-plody"
+    },
+    {
+      "text": "",
+      "url": "https://www.bylinkokraska.cz/sojova-vonna-svicka-pivonka"
+    },
+    {
+      "text": "Sojová vonná svíčka PIVOŇKA",
+      "url": "https://www.bylinkokraska.cz/sojova-vonna-svicka-pivonka"
+    },
+    {
+      "text": "",
+      "url": "https://www.bylinkokraska.cz/sojova-svicka-ticha-noc-s-mineralnim-kamenem-a-bambusovym-vickem"
+    },
+    {
+      "text": "Sojová svíčka TICHÁ NOC s minerálním kamenem a bambusovým víčkem",
+      "url": "https://www.bylinkokraska.cz/sojova-svicka-ticha-noc-s-mineralnim-kamenem-a-bambusovym-vickem"
+    },
+    {
+      "text": "Detail",
+      "url": "https://www.bylinkokraska.cz/sojova-svicka-ticha-noc-s-mineralnim-kamenem-a-bambusovym-vickem"
+    },
+    {
+      "text": "",
+      "url": "https://www.bylinkokraska.cz/sojova-svicka-bile-vanoce"
+    },
+    {
+      "text": "Sojová vonná svíčka BÍLÉ VÁNOCE",
+      "url": "https://www.bylinkokraska.cz/sojova-svicka-bile-vanoce"
+    },
+    {
+      "text": "",
+      "url": "https://www.bylinkokraska.cz/sojova-svicka-polibek-pod-jmelim"
+    },
+    {
+      "text": "Sojová vonná svíčka JMELÍ",
+      "url": "https://www.bylinkokraska.cz/sojova-svicka-polibek-pod-jmelim"
+    },
+    {
+      "text": "",
+      "url": "https://www.bylinkokraska.cz/sojova-vonna-svicka-pernicek"
+    },
+    {
+      "text": "Sojová vonná svíčka PERNÍČEK",
+      "url": "https://www.bylinkokraska.cz/sojova-vonna-svicka-pernicek"
+    },
+    {
+      "text": "",
+      "url": "https://www.bylinkokraska.cz/sojova-vonna-svicka-balticky-jantar"
+    },
+    {
+      "text": "Sojová vonná svíčka BALTICKÝ JANTAR",
+      "url": "https://www.bylinkokraska.cz/sojova-vonna-svicka-balticky-jantar"
+    },
+    {
+      "text": "",
+      "url": "https://www.bylinkokraska.cz/sojova-svicka-zimni-pohoda-s-mineralnim-krystalem"
+    },
+    {
+      "text": "Sojová svíčka ZIMNÍ POHODA s minerálním kamenem a bambusovým víčkem",
+      "url": "https://www.bylinkokraska.cz/sojova-svicka-zimni-pohoda-s-mineralnim-krystalem"
+    },
+    {
+      "text": "",
+      "url": "https://www.bylinkokraska.cz/sojova-svicka-strelec-s-mineralnim-krystalem"
+    },
+    {
+      "text": "Sojová svíčka STŘELEC s minerálním krystalem",
+      "url": "https://www.bylinkokraska.cz/sojova-svicka-strelec-s-mineralnim-krystalem"
+    },
+    {
+      "text": "",
+      "url": "https://www.bylinkokraska.cz/sojova-svicka-levandule-citron-s-mineralnim-kamenem-a-bambusovym-vickem"
+    },
+    {
+      "text": "Sojová svíčka LEVANDULE CITRON s minerálním kamenem a bambusovým víčkem",
+      "url": "https://www.bylinkokraska.cz/sojova-svicka-levandule-citron-s-mineralnim-kamenem-a-bambusovym-vickem"
+    },
+    {
+      "text": "",
+      "url": "https://www.bylinkokraska.cz/sojova-svicky-mamince"
+    },
+    {
+      "text": "Sojová vonná svíčka MAMINCE",
+      "url": "https://www.bylinkokraska.cz/sojova-svicky-mamince"
+    },
+    {
+      "text": "",
+      "url": "https://www.bylinkokraska.cz/vonny-vosk-do-aromalampy-korenena-vanilka"
+    },
+    {
+      "text": "Vonný vosk do aromalampy KOŘENĚNÁ VANILKA",
+      "url": "https://www.bylinkokraska.cz/vonny-vosk-do-aromalampy-korenena-vanilka"
+    },
+    {
+      "text": "Detail",
+      "url": "https://www.bylinkokraska.cz/vonny-vosk-do-aromalampy-korenena-vanilka"
+    },
+    {
+      "text": "",
+      "url": "https://www.bylinkokraska.cz/vonny-vosk-do-aromalampy-eukalyptus-mix"
+    },
+    {
+      "text": "Vonný vosk do aromalampy EUKALYPTUS MIX",
+      "url": "https://www.bylinkokraska.cz/vonny-vosk-do-aromalampy-eukalyptus-mix"
+    },
+    {
+      "text": "Detail",
+      "url": "https://www.bylinkokraska.cz/vonny-vosk-do-aromalampy-eukalyptus-mix"
+    },
+    {
+      "text": "",
+      "url": "https://www.bylinkokraska.cz/sojova-vonna-svicka-hruska-a-frezie"
+    },
+    {
+      "text": "Sojová vonná svíčka HRUŠKA A FRÉZIE",
+      "url": "https://www.bylinkokraska.cz/sojova-vonna-svicka-hruska-a-frezie"
+    },
+    {
+      "text": "",
+      "url": "https://www.bylinkokraska.cz/sojova-vonna-svicka-citronova-trava-a-zazvor"
+    },
+    {
+      "text": "Sojová vonná svíčka CITRONOVÁ TRÁVA A ZÁZVOR",
+      "url": "https://www.bylinkokraska.cz/sojova-vonna-svicka-citronova-trava-a-zazvor"
+    },
+    {
+      "text": "",
+      "url": "https://www.bylinkokraska.cz/sojova-svicka-lesni-pohadka"
+    },
+    {
+      "text": "Sojová vonná svíčka LESNÍ POHÁDKA",
+      "url": "https://www.bylinkokraska.cz/sojova-svicka-lesni-pohadka"
+    },
+    {
+      "text": "",
+      "url": "https://www.bylinkokraska.cz/sojova-svicka-eukalyptus-mix-s-mineralnim-kamenem-a-bambusovym-vickem"
+    },
+    {
+      "text": "Sojová svíčka EUKALYPTUS MIX s minerálním kamenem a bambusovým víčkem",
+      "url": "https://www.bylinkokraska.cz/sojova-svicka-eukalyptus-mix-s-mineralnim-kamenem-a-bambusovym-vickem"
+    },
+    {
+      "text": "",
+      "url": "https://www.bylinkokraska.cz/sojova-svicka-panna-s-mineralnim-krystalem"
+    },
+    {
+      "text": "Sojová svíčka PANNA s minerálním krystalem",
+      "url": "https://www.bylinkokraska.cz/sojova-svicka-panna-s-mineralnim-krystalem"
+    },
+    {
+      "text": "",
+      "url": "https://www.bylinkokraska.cz/sojova-svicka-lemongass-s-mineralnim-kamenem-a-bambusovym-vickem"
+    },
+    {
+      "text": "Sojová svíčka LEMONGRASS s minerálním kamenem a bambusovým víčkem",
+      "url": "https://www.bylinkokraska.cz/sojova-svicka-lemongass-s-mineralnim-kamenem-a-bambusovym-vickem"
+    },
+    {
+      "text": "",
+      "url": "https://www.bylinkokraska.cz/sojova-svicka-medunka-cirtonela-s-mineralnim-kamenem-a-bambusovym-vickem"
+    },
+    {
+      "text": "Sojová svíčka MEDUŇKA CITRONELA s minerálním kamenem a bambusovým víčkem",
+      "url": "https://www.bylinkokraska.cz/sojova-svicka-medunka-cirtonela-s-mineralnim-kamenem-a-bambusovym-vickem"
+    },
+    {
+      "text": "",
+      "url": "https://www.bylinkokraska.cz/Sojova-svicka-POHODA-s-mineralnim-kamenem-a-bambusovym-vickem-d107.htm"
+    },
+    {
+      "text": "Sojová svíčka POHODA s minerálním kamenem a bambusovým víčkem",
+      "url": "https://www.bylinkokraska.cz/Sojova-svicka-POHODA-s-mineralnim-kamenem-a-bambusovym-vickem-d107.htm"
+    },
+    {
+      "text": "",
+      "url": "https://www.bylinkokraska.cz/dynove-koreni-botanical-krystal-sojova-vonna-svicka-s-kvety"
+    },
+    {
+      "text": "DÝŇOVÉ KOŘENÍ – BOTANICAL sojová vonná svíčka s květy",
+      "url": "https://www.bylinkokraska.cz/dynove-koreni-botanical-krystal-sojova-vonna-svicka-s-kvety"
+    },
+    {
+      "text": "",
+      "url": "https://www.bylinkokraska.cz/sojova-svicka-eukalyptus-mix-s-mineralnim-kamenem-a-bambusovym-vickem"
+    },
+    {
+      "text": "Sojová svíčka EUKALYPTUS MIX s minerálním kamenem a bambusovým víčkem",
+      "url": "https://www.bylinkokraska.cz/sojova-svicka-eukalyptus-mix-s-mineralnim-kamenem-a-bambusovym-vickem"
+    },
+    {
+      "text": "",
+      "url": "https://www.bylinkokraska.cz/sojova-vonna-svicka-svarak"
+    },
+    {
+      "text": "Sojová vonná svíčka SVAŘÁK",
+      "url": "https://www.bylinkokraska.cz/sojova-vonna-svicka-svarak"
+    },
+    {
+      "text": "",
+      "url": "https://www.bylinkokraska.cz/sojova-vonna-svicka-louskacek"
+    },
+    {
+      "text": "Sojová vonná svíčka LOUSKÁČEK",
+      "url": "https://www.bylinkokraska.cz/sojova-vonna-svicka-louskacek"
+    },
+    {
+      "text": "",
+      "url": "https://www.bylinkokraska.cz/dynove-koreni-botanical-krystal-sojova-vonna-svicka-s-kvety"
+    },
+    {
+      "text": "DÝŇOVÉ KOŘENÍ – BOTANICAL sojová vonná svíčka s květy",
+      "url": "https://www.bylinkokraska.cz/dynove-koreni-botanical-krystal-sojova-vonna-svicka-s-kvety"
+    },
+    {
+      "text": "",
+      "url": "https://www.bylinkokraska.cz/sojova-vonna-svicka-jablko-a-skorice"
+    },
+    {
+      "text": "Sojová vonná svíčka JABLKO A SKOŘICE",
+      "url": "https://www.bylinkokraska.cz/sojova-vonna-svicka-jablko-a-skorice"
+    },
+    {
+      "text": "",
+      "url": "https://www.bylinkokraska.cz/sojova-vonna-svicka-dynove-koreni"
+    },
+    {
+      "text": "Sojová vonná svíčka DÝŇOVÉ KOŘENÍ",
+      "url": "https://www.bylinkokraska.cz/sojova-vonna-svicka-dynove-koreni"
+    },
+    {
+      "text": "",
+      "url": "https://www.bylinkokraska.cz/ruzenin-botanical-krystal-sojova-vonna-svicka-s-kvety"
+    },
+    {
+      "text": "RŮŽENÍN – BOTANICAL KRYSTAL sojová vonná svíčka s květy",
+      "url": "https://www.bylinkokraska.cz/ruzenin-botanical-krystal-sojova-vonna-svicka-s-kvety"
+    },
+    {
+      "text": "",
+      "url": "https://www.bylinkokraska.cz/jantar-botanical-krystal-sojova-vonna-svicka-s-kvety"
+    },
+    {
+      "text": "JANTAR – BOTANICAL KRYSTAL sojová vonná svíčka s květy",
+      "url": "https://www.bylinkokraska.cz/jantar-botanical-krystal-sojova-vonna-svicka-s-kvety"
+    },
+    {
+      "text": "",
+      "url": "https://www.bylinkokraska.cz/ametyst-botanical-krystal-sojova-vonna-svicka-s-kvety"
+    },
+    {
+      "text": "AMETYST – BOTANICAL KRYSTAL sojová vonná svíčka s květy",
+      "url": "https://www.bylinkokraska.cz/ametyst-botanical-krystal-sojova-vonna-svicka-s-kvety"
+    },
+    {
+      "text": "",
+      "url": "https://www.bylinkokraska.cz/sojova-svicky-mamince"
+    },
+    {
+      "text": "Sojová vonná svíčka MAMINCE",
+      "url": "https://www.bylinkokraska.cz/sojova-svicky-mamince"
+    },
+    {
+      "text": "",
+      "url": "https://www.bylinkokraska.cz/sojova-vonna-svicka-hruska-a-frezie"
+    },
+    {
+      "text": "Sojová vonná svíčka HRUŠKA A FRÉZIE",
+      "url": "https://www.bylinkokraska.cz/sojova-vonna-svicka-hruska-a-frezie"
+    },
+    {
+      "text": "",
+      "url": "https://www.bylinkokraska.cz/balticky-jantar-botanical-sojova-vonna-svicka-s-kvety"
+    },
+    {
+      "text": "BALTICKÝ JANTAR – BOTANICAL sojová vonná svíčka s květy",
+      "url": "https://www.bylinkokraska.cz/balticky-jantar-botanical-sojova-vonna-svicka-s-kvety"
+    },
+    {
+      "text": "",
+      "url": "https://www.bylinkokraska.cz/pivonka-botanical-sojova-vonna-svicka-s-kvety"
+    },
+    {
+      "text": "PIVOŇKA - BOTANICAL sojová vonná svíčka s květy",
+      "url": "https://www.bylinkokraska.cz/pivonka-botanical-sojova-vonna-svicka-s-kvety"
+    },
+    {
+      "text": "",
+      "url": "https://www.bylinkokraska.cz/lesni-pohadka-botanical-sojova-vonna-svicka-s-kvety"
+    },
+    {
+      "text": "LESNÍ POHÁDKA – BOTANICAL sojová vonná svíčka s květy",
+      "url": "https://www.bylinkokraska.cz/lesni-pohadka-botanical-sojova-vonna-svicka-s-kvety"
+    },
+    {
+      "text": "",
+      "url": "https://www.bylinkokraska.cz/sojova-svicka-svetylko-za-duhovy-most"
+    },
+    {
+      "text": "Sojová svíčka SVĚTÝLKO ZA DUHOVÝ MOST",
+      "url": "https://www.bylinkokraska.cz/sojova-svicka-svetylko-za-duhovy-most"
+    },
+    {
+      "text": "",
+      "url": "https://www.bylinkokraska.cz/sojova-svicka-pomeranc-zazvor-s-mineralnim-kamenem-a-bambusovym-vickem"
+    },
+    {
+      "text": "Sojová svíčka POMERANČ ZÁZVOR s minerálním kamenem a bambusovým víčkem",
+      "url": "https://www.bylinkokraska.cz/sojova-svicka-pomeranc-zazvor-s-mineralnim-kamenem-a-bambusovym-vickem"
+    },
+    {
+      "text": "zpracováním osobních údajů",
+      "url": "https://www.bylinkokraska.cz/osobni-udaje-newsletter"
+    },
+    {
+      "text": "POČÍTAČOVÁ ŠKOLA",
+      "url": "https://www.pocitacovaskola.com/"
+    },
+    {
+      "text": "Mgr. Martin Groulík",
+      "url": "https://www.pocitacovaskola.com/tvorba-www-stranek.html"
+    },
+    {
+      "text": "O nás",
+      "url": "https://www.bylinkokraska.cz/O-nas-a1_0.htm"
+    },
+    {
+      "text": "Obchodní podmínky",
+      "url": "https://www.bylinkokraska.cz/Obchodni-podminky-a3_0.htm"
+    },
+    {
+      "text": "Ochrana soukromí",
+      "url": "https://www.bylinkokraska.cz/osobni-udaje-informacni-povinnost"
+    },
+    {
+      "text": "Kontakty",
+      "url": "https://www.bylinkokraska.cz/Kontakty-a2_0.htm"
+    },
+    {
+      "text": "info@bylinkokraska.cz",
+      "url": "mailto:info@bylinkokraska.cz"
+    },
+    {
+      "text": "+420 739 203 434",
+      "url": "tel:+420739203434"
+    },
+    {
+      "text": "info@bylinkokraska.cz",
+      "url": "mailto:info@bylinkokraska.cz"
+    },
+    {
+      "text": "",
+      "url": "https://www.facebook.com/BylinkoKraska/"
+    },
+    {
+      "text": "",
+      "url": "https://www.instagram.com/bylinkokraska/"
+    },
+    {
+      "text": "Eshop-rychle.cz",
+      "url": "https://www.eshop-rychle.cz/"
+    },
+    {
+      "text": "zpracováním osobních údajů",
+      "url": "https://www.bylinkokraska.cz/osobni-udaje-newsletter"
+    },
+    {
+      "text": "zpracováním osobních údajů",
+      "url": "https://www.bylinkokraska.cz/osobni-udaje-registrace"
+    },
+    {
+      "text": "podmínek zpracování osobních údajů",
+      "url": "https://www.bylinkokraska.cz/osobni-udaje-newsletter"
+    }
+  ],
+  "description": "",
+  "shortDescription": "",
+  "bodyText": "BylinkoKráskaPřeskočit na obsahMenu Blog O mně Kontakty Doprava a platba Obchodní podmínky Bezpečnostní informace VELKOOBCHOD Ochrana soukromí VícePřihlášeníPřihlášení Email * Heslo * Zaslat zapomenuté heslo Přihlásit se Ještě nemám účet, chci se RegistrovatDalší možnosti přihlášení Přihlásit přes mojeID Hledat Nalezeno v produktech () Zobrazit všechny v produktech Nalezeno v kategoriích () Zobrazit všechny v kategoriích Nevíte si rady? Zavolejte. +420 739 203 434 (Po-Pá, 8-16 hod.)0 ksza 0 Kč Nákupní košík je prázdný Potřebujete poradit? Neváhejte nás kontaktovat. Nakupte ještě za 1 200 Kč a máte dopravu ZDARMAOpravdu chcete odebrat zboží z košíku? Ano, odebrat Neodebírat ZIMA / VÁNOCE Sojové vonné svíčky Personalizované svíčky Sojové vonné svíčky Sojové svíčky s esenciálními oleji Svíčky - Znamení zvěrokruhu s minerálním krystalem Svíčky s minerálními kameny Personalizované svíčky Sojové svíčky BOTANICAL Botanical - Krystal Botanical - Botanical Vonné vosky Palmové svíčky Doplňky ke svíčkám Čajové a plovoucí svíčky VíceNačítám… Z naší nabídky Novinky Akce Nejprodávanější Vybrali jsme pro vás 0 hodnocení Plovoucí vánoční svíčky 89 Kč / ks 89 Kč / ks Není skladem Detail 1 hodnocení Vonný vosk do aromalampy ZIMNÍ POHODA 169 Kč / ks 169 Kč / ks Není skladem Detail 1 hodnocení Vonný vosk do aromalampy TICHÁ NOC 169 Kč / ks 169 Kč / ks Skladem 2 ks Přidat do košíku 1 hodnocení Vonný vosk do aromalampy VODNÁŘ 169 Kč / ks 169 Kč / ks Skladem 3 ks Přidat do košíku 0 hodnocení Vonný vosk do aromalampy VÁHY 169 Kč / ks 169 Kč / ks Skladem > 5 ks Přidat do košíku 0 hodnocení Vonný vosk do aromalampy ŠTÍR 169 Kč / ks 169 Kč / ks Skladem > 5 ks Přidat do košíku 0 hodnocení Vonný vosk do aromalampy STŘELEC 169 Kč / ks 169 Kč / ks Skladem 1 ks Přidat do košíku 0 hodnocení Vonný vosk do aromalampy RYBY 169 Kč / ks 169 Kč / ks Skladem 3 ks Přidat do košíku 0 hodnocení Vonný vosk do aromalampy RAK 169 Kč / ks 169 Kč / ks Skladem 4 ks Přidat do košíku 0 hodnocení Vonný vosk do aromalampy PANNA 169 Kč / ks 169 Kč / ks Skladem 2 ks Přidat do košíku 0 hodnocení Vonný vosk do aromalampy LEV 169 Kč / ks 169 Kč / ks Skladem 1 ks Přidat do košíku 1 hodnocení Vonný vosk do aromalampy KOZOROH 169 Kč / ks 169 Kč / ks Skladem 4 ks Přidat do košíku 0 hodnocení Vonný vosk do aromalampy BÝK 169 Kč / ks 169 Kč / ks Skladem 4 ks Přidat do košíku 0 hodnocení Vonný vosk do aromalampy BLÍŽENCI 169 Kč / ks 169 Kč / ks Skladem 5 ks Přidat do košíku 1 hodnocení Vonný vosk do aromalampy BERAN 169 Kč / ks 169 Kč / ks Skladem > 5 ks Přidat do košíku 5 hodnocení Sojová vonná svíčka BRUSINKY A ZÁZVOR 249 Kč / ks 249 Kč / ks Skladem > 5 ks Přidat do košíku 1 hodnocení Sojová vonná svíčka LESNÍ PLODY 249 Kč / ks 249 Kč / ks Skladem > 5 ks Přidat do košíku 4 hodnocení Sojová vonná svíčka PIVOŇKA 249 Kč / ks 249 Kč / ks Skladem > 5 ks Přidat do košíku 4 hodnocení Sojová svíčka TICHÁ NOC s minerálním kamenem a bambusovým víčkem 389 Kč / ks 389 Kč / ks Není skladem Detail 7 hodnocení Sojová vonná svíčka BÍLÉ VÁNOCE 249 Kč / ks 249 Kč / ks Skladem > 5 ks Přidat do košíku 0 hodnocení Sojová vonná svíčka JMELÍ 249 Kč / ks 249 Kč / ks Skladem > 5 ks Přidat do košíku 7 hodnocení Sojová vonná svíčka PERNÍČEK 249 Kč / ks 249 Kč / ks Skladem > 5 ks Přidat do košíku 0 hodnocení Sojová vonná svíčka BALTICKÝ JANTAR 249 Kč / ks 249 Kč / ks Skladem > 5 ks Přidat do košíku 4 hodnocení Sojová svíčka ZIMNÍ POHODA s minerálním kamenem a bambusovým víčkem 389 Kč / ks 389 Kč / ks Skladem 5 ks Přidat do košíku 2 hodnocení Sojová svíčka STŘELEC s minerálním krystalem 389 Kč / ks 389 Kč / ks Skladem 5 ks Přidat do košíku 1 hodnocení Sojová svíčka LEVANDULE CITRON s minerálním kamenem a bambusovým víčkem 389 Kč / ks 389 Kč / ks Skladem > 5 ks Přidat do košíku TOP produktNovinka 2 hodnocení Sojová vonná svíčka MAMINCE 339 Kč / ks 339 Kč / ks Skladem 4 ks Přidat do košíku TOP produkt 0 hodnocení Vonný vosk do aromalampy KOŘENĚNÁ VANILKA 169 Kč / ks 169 Kč / ks Není skladem Detail TOP produkt 0 hodnocení Vonný vosk do aromalampy EUKALYPTUS MIX 169 Kč / ks 169 Kč / ks Není skladem Detail TOP produktNovinka 1 hodnocení Sojová vonná svíčka HRUŠKA A FRÉZIE 249 Kč / ks 249 Kč / ks Skladem > 5 ks Přidat do košíku TOP produkt 2 hodnocení Sojová vonná svíčka CITRONOVÁ TRÁVA A ZÁZVOR 249 Kč / ks 249 Kč / ks Skladem > 5 ks Přidat do košíku TOP produkt 17 hodnocení Sojová vonná svíčka LESNÍ POHÁDKA 249 Kč / ks 249 Kč / ks Skladem > 5 ks Přidat do košíku TOP produktAkce 4 hodnocení Sojová svíčka EUKALYPTUS MIX s minerálním kamenem a bambusovým víčkem Cena před slevou 389 Kč 350 Kč / ks 350 Kč / ks Skladem > 5 ks Sleva končí: dní hod min sek Přidat do košíku TOP produkt 0 hodnocení Sojová svíčka PANNA s minerálním krystalem 389 Kč / ks 389 Kč / ks Skladem 3 ks Přidat do košíku TOP produkt 5 hodnocení Sojová svíčka LEMONGRASS s minerálním kamenem a bambusovým víčkem 389 Kč / ks 389 Kč / ks Skladem > 5 ks Přidat do košíku TOP produkt 4 hodnocení Sojová svíčka MEDUŇKA CITRONELA s minerálním kamenem a bambusovým víčkem 389 Kč / ks 389 Kč / ks Skladem > 5 ks Přidat do košíku TOP produkt 4 hodnocení Sojová svíčka POHODA s minerálním kamenem a bambusovým víčkem 389 Kč / ks 389 Kč / ks Skladem > 5 ks Přidat do košíku AkceNovinka 1 hodnocení DÝŇOVÉ KOŘENÍ – BOTANICAL sojová vonná svíčka s květy Cena před slevou 499 Kč 449 Kč / ks 449 Kč / ks Skladem > 5 ks Sleva končí: dní hod min sek Přidat do košíku TOP produktAkce 4 hodnocení Sojová svíčka EUKALYPTUS MIX s minerálním kamenem a bambusovým víčkem Cena před slevou 389 Kč 350 Kč / ks 350 Kč / ks Skladem > 5 ks Sleva končí: dní hod min sek Přidat do košíku Novinka 0 hodnocení Sojová vonná svíčka SVAŘÁK 249 Kč / ks 249 Kč / ks Skladem > 5 ks Přidat do košíku Novinka 0 hodnocení Sojová vonná svíčka LOUSKÁČEK 249 Kč / ks 249 Kč / ks Skladem > 5 ks Přidat do košíku AkceNovinka 1 hodnocení DÝŇOVÉ KOŘENÍ – BOTANICAL sojová vonná svíčka s květy Cena před slevou 499 Kč 449 Kč / ks 449 Kč / ks Skladem > 5 ks Sleva končí: dní hod min sek Přidat do košíku Novinka 0 hodnocení Sojová vonná svíčka JABLKO A SKOŘICE 249 Kč / ks 249 Kč / ks Skladem > 5 ks Přidat do košíku Novinka 1 hodnocení Sojová vonná svíčka DÝŇOVÉ KOŘENÍ 249 Kč / ks 249 Kč / ks Skladem 3 ks Přidat do košíku Novinka 0 hodnocení RŮŽENÍN – BOTANICAL KRYSTAL sojová vonná svíčka s květy 499 Kč / ks 499 Kč / ks Skladem > 5 ks Přidat do košíku Novinka 1 hodnocení JANTAR – BOTANICAL KRYSTAL sojová vonná svíčka s květy 499 Kč / ks 499 Kč / ks Skladem > 5 ks Přidat do košíku Novinka 1 hodnocení AMETYST – BOTANICAL KRYSTAL sojová vonná svíčka s květy 499 Kč / ks 499 Kč / ks Skladem 2 ks Přidat do košíku TOP produktNovinka 2 hodnocení Sojová vonná svíčka MAMINCE 339 Kč / ks 339 Kč / ks Skladem 4 ks Přidat do košíku TOP produktNovinka 1 hodnocení Sojová vonná svíčka HRUŠKA A FRÉZIE 249 Kč / ks 249 Kč / ks Skladem > 5 ks Přidat do košíku Novinka 2 hodnocení BALTICKÝ JANTAR – BOTANICAL sojová vonná svíčka s květy 499 Kč / ks 499 Kč / ks Skladem > 5 ks Přidat do košíku Novinka 2 hodnocení PIVOŇKA - BOTANICAL sojová vonná svíčka s květy 499 Kč / ks 499 Kč / ks Skladem > 5 ks Přidat do košíku Novinka 2 hodnocení LESNÍ POHÁDKA – BOTANICAL sojová vonná svíčka s květy 499 Kč / ks 499 Kč / ks Skladem > 5 ks Přidat do košíku Novinka 6 hodnocení Sojová svíčka SVĚTÝLKO ZA DUHOVÝ MOST 399 Kč / ks 399 Kč / ks Skladem 2 ks Přidat do košíku Novinka 5 hodnocení Sojová svíčka POMERANČ ZÁZVOR s minerálním kamenem a bambusovým víčkem 389 Kč / ks 389 Kč / ks Skladem 4 ks Přidat do košíku Vítejte v e-shopu BYLINKOKRASKA.czJmenuji se Monča a pod značkou BylinkoKráska pro vás tvořím přírodní svíčky s esenciálními oleji a vonnými oleji s certifikací IFRA, vonné vosky do aromalampy a dekorace z jesmonitu, což je ekologický materiál. Vše pro vás tvořím s láskou a péčí.Přírodní svíčky BylinkoKráska obsahují přírodní sojový nebo palmový vosk100% přírodní esenciální oleje a vonné oleje s certifikací IFRA (některé vůně se destilací získat nedají nebo je destilace tak nákladná záležitost, že mi přijde škoda tyto esenciální oleje do svíček používat a proto používám vonné oleje s certifikací IFRA).Tyto vůně pro vás s láskou vybírám. Přírodní svíčky zdobím bio bylinkami ze své zahrádky, bio citrusy a minerálními kameny.Ráda bych se s vámi podělila o to, proč vznikla Bylinkokráska a co mne vedlo k vyrábění přírodních svíček a vonných vosků do aromalamp.Důvod je jednoduchý. Jsem alergička a astmatička. Postupem času jsem zjistila, že mi čím dál tím víc vadí chemie. A protože se již několik let zajímám o bylinky, které mají úžasné účinky a celá rodina na ně nedáme dopustit, byl jen krůček k tomu, že jsem se začínala zajímat o aromaterapii, protože v aromaterapii jsou opět bylinky jen v trošku jiné formě a začala jsem tvořit přírodní svíčky a vonné vosky do aromalampy s aromaterapeutickým účinkem. Vůně jsou namíchány ve spolupráci s aromaterapeuty a mnohdy název sojové svíčky či vonného vosku napoví, za jakým účelem byla vůně namíchána. Každá vůně vzniká se záměrem. Nyní mám domácnost v podstatě až na malé výjimky netoxickou a již skoro nemám alergie ani ekzémy a když si můžu zapálit přírodní svíčku, aniž by mne rozbolela hlava nebo se mi stáhly průdušky, tak jsem za to moc ráda. Vím, že přírodními svíčkami a přírodními vonnými vosky nezatěžuji životní prostředí a mohu přírodě pomoci. Za to jsem vděčná a děkuji vám, že i vy svým nákupem přírodě pomáháte.Sojový vosk jsem si pro svoji tvorbu vybrala, protože sojový vosk je 100% rostlinný, vyrobený z kvalitních vypěstovaných 100 % čistých sojových bobů v USA s certifikátem kvality. Neobsahuje žádné ropné, parafínové ani včelí produkty. Neobsahuje žádné živočišné produkty ani žádné pesticidy, herbicidy a toxické materiály. Je biologicky odbouratelný a není testován na zvířatech. Při hoření nevylučuje žádné škodlivé látky a doba hoření je delší až o 50 %.Děkuji za váš nákup a podporu české tvorby.Vaše BylinkoKráskaNepropásněte novinky, akce a slevy! Můžete se kdykoli odhlásit. Zasíláme jednou za 14 dní. Přihlásit se Souhlasím se zpracováním osobních údajů za účelem rozesílky newsletteru. Můžete se kdykoli odhlásit. Zasíláme jednou za 14 dní. Tvorba e-shopu: POČÍTAČOVÁ ŠKOLA - Mgr. Martin GroulíkInformace pro zákazníkyO násObchodní podmínkyOchrana soukromíKontaktyKde nás najdeteBc. Monika MužíkováU Svahu 208/17,Plzeň 3 - Nová Hospoda318 00tel: +420 739 203 434e-mail: info@bylinkokraska.czKontakty Bc. Monika Mužíková +420 739 203 434 (Po-Pá, 8-16 hod.) info@bylinkokraska.cz Vytvořeno na Eshop-rychle.cz Potvrďte, prosím, že nejste robot Opište text z obrázku: jiný obrázek Potvrdit Souhlasím se zpracováním osobních údajů za účelem rozesílky newsletteru. Získejte slevuZískejte 50 Kč slevu na první objednávku Stačí zadat váš emailOdeslat Souhlasím se zpracováním osobních údajů pro účely registrace. Přeji si odebírat novinky e-mailem dle podmínek zpracování osobních údajů. Potvrďte, prosím, že nejste robot Opište text z obrázku: jiný obrázek Potvrdit Zavřít Nastavení Souhlasím Souhlas můžete odmítnout zde. Cookies - NastaveníZde máte možnost přizpůsobit soubory cookies dle kategorií, jak vyhovují nejlépe Vašim preferencím. Technické cookies Technické cookies jsou nezbytné pro správné fungování webové stránky a všech funkcí, které nabízí a nemohou být vypnuty bez zablokování funkcí stránky. Jsou odpovědné mj. za uchovávání produktů v košíku, přihlášení k zákaznickému účtu, fungování filtrů, nákupní proces nebo ukládání nastavení soukromí. Z tohoto důvodu technické cookies nemohou být individuálně deaktivovány nebo aktivovány a jsou aktivní vždy. číst vícečíst méně Analytické cookies Analytické cookies nám umožňují měření výkonu našeho webu a našich reklamních kampaní. Jejich pomocí určujeme počet návštěv a zdroje návštěv našich internetových stránek. Data získaná pomocí těchto cookies zpracováváme anonymně a souhrnně, bez použití identifikátorů, které ukazují na konkrétní uživatelé našeho webu. Díky těmto cookies můžeme optimalizovat výkon a funkčnost našich stránek. číst vícečíst méně Preferenční cookies Preferenční cookies umožňují, aby si webová stránka zapamatovala informace, které mění, jak se webová stránka chová nebo jak vypadá. Je to například Vámi preferovaný jazyk, měna, oblíbené nebo naposledy prohlížené produkty apod. Díky těmto cookies Vám můžeme doporučit na webu produkty a nabídky, které budou pro Vás co nejzajímavější. číst vícečíst méně Marketingové cookies Marketingové cookies používáme my nebo naši partneři, abychom Vám dokázali zobrazit co nejrelevantnější obsah nebo reklamy jak na našich stránkách, tak na stránkách třetích subjektů. To je možné díky vytváření tzv. pseudonymizovaného profilu dle Vašich zájmů. Ale nebojte, tímto profilováním zpravidla není možná bezprostřední identifikace Vaší osoby, protože jsou používány pouze pseudonymizované údaje. Pokud nevyjádříte souhlas s těmito cookies, neuvidíte v reklamních sděleních obsah ušitý na míru Vašim zájmům. číst vícečíst méně Souhlasím s využitím vybraných souborů cookies Souhlasím s využitím všech souborů cookies Nastavení Souhlasím Souhlas můžete odmítnout zde."
+}
