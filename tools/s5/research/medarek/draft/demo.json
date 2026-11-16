@@ -24,91 +24,108 @@
       "paper": "#ffffff",
       "ink": "#351f14",
       "line": "#dfcbb8"
-    }
+    },
+    "url": "https://www.medarek.cz/",
+    "greeting": "Dobrý den. Pomůžu vám vybrat šampuk, tuhé mýdlo nebo balzám na rty Medarek.",
+    "quickChips": [
+      "Mátový šampuk",
+      "Bambucké mýdlo",
+      "Mangový balzám na rty",
+      "Porovnat dva produkty"
+    ]
   },
   "segmentText": {
-    "heading": "Najděte si péči od Medareku.",
-    "lead": "Vyberte si šampuk, mýdlo nebo balzám na rty. U doporučeného produktu uvidíte velikost, cenu a odkaz do e-shopu.",
-    "entryNote": "Vlasy, tělo a rty · složení a vůně"
+    "heading": "Vyberte si péči od Medareku.",
+    "lead": "Máta, levandule nebo mango? Vyberte šampuk, tuhé mýdlo nebo balzám na rty podle složení a vůně. U výsledku uvidíte balení a cenu.",
+    "entryNote": "Vlasy, tělo a rty · složení a vůně",
+    "titleSuffix": "šampuky, mýdla a balzámy",
+    "includedChat": "Otázky k nabídce a porovnání dvou šampuků.",
+    "includedAdvisor": "Výběr podle oblasti péče, složení a vůně.",
+    "placeholder": "Zeptejte se na složení nebo balení…"
   },
   "stepCopy": {
     "careVariant": [
-      "Co vás láká?",
+      "Jakou vůni nebo složení upřednostňujete?",
       "Vyberte podle složení nebo vůně."
+    ],
+    "category": [
+      "O kterou část těla chcete pečovat?",
+      "Vyberte vlasy, tělo nebo rty.",
+      "Oblast péče"
     ]
   },
   "traitCopy": {
     "bublinovy-sampuk": [
       "Máta",
-      "Tuhý šampon · Máta.",
+      "Tuhý šampon",
       "Máta",
-      "Tuhý šampon · Máta."
+      "Tuhý šampon"
     ],
     "liskovy-sampuk": [
       "Lískový olej",
-      "Tuhý šampon · Lískový olej.",
+      "Tuhý šampon",
       "Lískový olej",
-      "Tuhý šampon · Lískový olej."
+      "Tuhý šampon"
     ],
     "arganovy-sampuk": [
       "Argan a pomeranč",
-      "Tuhý šampon · Argan a pomeranč.",
+      "Tuhý šampon",
       "Argan a pomeranč",
-      "Tuhý šampon · Argan a pomeranč."
+      "Tuhý šampon"
     ],
     "hajanek-sampuk": [
       "Levandule",
-      "Tuhý šampon · Levandule.",
+      "Tuhý šampon",
       "Levandule",
-      "Tuhý šampon · Levandule."
+      "Tuhý šampon"
     ],
     "monoi-de-tahiti-mydlo": [
       "Monoi",
-      "Tuhé mýdlo · Monoi.",
+      "Tuhé mýdlo",
       "Monoi",
-      "Tuhé mýdlo · Monoi."
+      "Tuhé mýdlo"
     ],
     "bambucke-mydlo": [
       "Bambucké máslo",
-      "Tuhé mýdlo · Bambucké máslo.",
+      "Tuhé mýdlo",
       "Bambucké máslo",
-      "Tuhé mýdlo · Bambucké máslo."
+      "Tuhé mýdlo"
     ],
     "levandulove-mydlo": [
       "Levandule",
-      "Tuhé mýdlo · Levandule.",
+      "Tuhé mýdlo",
       "Levandule",
-      "Tuhé mýdlo · Levandule."
+      "Tuhé mýdlo"
     ],
     "bananove-mydlo": [
       "Banán",
-      "Tuhé mýdlo · Banán.",
+      "Tuhé mýdlo",
       "Banán",
-      "Tuhé mýdlo · Banán."
+      "Tuhé mýdlo"
     ],
     "balzam-na-rty-mango": [
       "Mango",
-      "Balzám na rty · Mango.",
+      "Balzám na rty",
       "Mango",
-      "Balzám na rty · Mango."
+      "Balzám na rty"
     ],
     "balzam-na-rty-vanilka": [
       "Vanilka",
-      "Balzám na rty · Vanilka.",
+      "Balzám na rty",
       "Vanilka",
-      "Balzám na rty · Vanilka."
+      "Balzám na rty"
     ],
     "balzam-na-rty-mata": [
       "Máta",
-      "Balzám na rty · Máta.",
+      "Balzám na rty",
       "Máta",
-      "Balzám na rty · Máta."
+      "Balzám na rty"
     ],
     "balzam-na-rty-svestka": [
       "Švestka",
-      "Balzám na rty · Švestka.",
+      "Balzám na rty",
       "Švestka",
-      "Balzám na rty · Švestka."
+      "Balzám na rty"
     ]
   },
   "choicePhotos": {
@@ -147,6 +164,20 @@
     ],
     "balzam-na-rty-svestka": [
       "/assets/s5/medarek/balzam-na-rty-svestka.webp"
+    ],
+    "hair": [
+      "/assets/s3/scenes-k2/hair-shampoo-foam.jpg"
+    ],
+    "body": [
+      "/assets/s3/scenes-k2/body-shower.jpg"
+    ],
+    "lips": [
+      "/assets/s3/scenes-k2/lip-balm.jpg"
     ]
-  }
+  },
+  "compareFocus": true,
+  "compareProductIds": [
+    "bublinovy-sampuk",
+    "liskovy-sampuk"
+  ]
 }
