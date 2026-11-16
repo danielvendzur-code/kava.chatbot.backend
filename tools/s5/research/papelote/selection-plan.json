@@ -1,0 +1,41 @@
+{
+  "status": "SELECTION_PLAN_ONLY",
+  "questions": [
+    "K čemu chcete zápisník používat?",
+    "Jaký formát nebo rozvržení vám vyhovuje?"
+  ],
+  "groups": [
+    {
+      "label": "Poznámky na stůl",
+      "productIds": [
+        "softblok-a5-2-0",
+        "spiral-a5-tec",
+        "professio-2-0",
+        "vegablok-a5-lite"
+      ]
+    },
+    {
+      "label": "Kreslení a koláže",
+      "productIds": [
+        "spiral-a5-cis",
+        "spiral-a5-posterlad-m020-cis",
+        "journal-zapisnik"
+      ]
+    },
+    {
+      "label": "Zápisky na cesty",
+      "productIds": [
+        "softblok-a6-2-0",
+        "kapesni-sesit-klasika-s-gumickou",
+        "journal-denik"
+      ]
+    },
+    {
+      "label": "Úkoly a plánování",
+      "productIds": [
+        "journal-checklist",
+        "journal-planovac"
+      ]
+    }
+  ]
+}
