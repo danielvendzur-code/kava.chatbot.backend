@@ -1,0 +1,26 @@
+/* Brand styling for the Furiosa and Scentium demo pages only. */
+body[data-series=s5][data-cosmetics-demo=furiosa] {
+  --s5-portrait-frame: #f9e3e1;
+  --s5-result-wash: #fff5f3;
+}
+body[data-series=s5][data-cosmetics-demo=scentium] {
+  --s5-portrait-frame: #e9e0d1;
+  --s5-result-wash: #f7f2ea;
+}
+body[data-series=s5]:is([data-cosmetics-demo=furiosa],[data-cosmetics-demo=scentium]) #cosmetics-root .cx-owner-visual {
+  background: var(--s5-portrait-frame);
+  border-radius: 28px;
+}
+body[data-series=s5]:is([data-cosmetics-demo=furiosa],[data-cosmetics-demo=scentium]) #cosmetics-root .cx-owner-visual > img {
+  object-fit: contain;
+  padding: clamp(10px, 3vw, 40px);
+}
+body[data-series=s5][data-cosmetics-demo=scentium] #cosmetics-root .cx-owner-copy h1 {
+  font-family: Georgia, serif;
+  font-weight: 500;
+  letter-spacing: -.045em;
+}
+body[data-series=s5]:is([data-cosmetics-demo=furiosa],[data-cosmetics-demo=scentium]) #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget .s5-product {
+  background: linear-gradient(135deg, var(--s5-result-wash), white 80%) !important;
+  border-color: var(--cx-line) !important;
+}

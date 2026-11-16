@@ -1,0 +1,26 @@
+{
+  "scope": "Local preview of the source drafts. Replace each draft demo config with the adjacent design config and append brand-design.css when integrating the base runtime patch. No registered demos in the working branch were changed by this checkpoint.",
+  "widths": [
+    320,
+    390,
+    1280
+  ],
+  "furiosa": {
+    "results": 30,
+    "alternatePacks": 21
+  },
+  "scentium": {
+    "results": 36,
+    "alternatePacks": 18
+  },
+  "checks": [
+    "brand-specific landing headline and official hero photo",
+    "product price, pack, image and CTA",
+    "no horizontal overflow",
+    "comparison photos and links",
+    "four 40 px chips"
+  ],
+  "localScreenshots": 12,
+  "visuallyReviewed": "Both 390 px landings and representative results",
+  "paidModelCalls": 0
+}
