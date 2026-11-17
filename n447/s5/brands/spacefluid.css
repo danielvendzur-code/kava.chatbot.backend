@@ -43,13 +43,19 @@ body[data-series=s5][data-cosmetics-demo=spacefluid] #cosmetics-root#cosmetics-r
 
 /* The source tile contains part of a second letter. Frame only the official S. */
 body[data-series="s5"][data-cosmetics-demo="spacefluid"] #cosmetics-root#cosmetics-root #cx-widget .cx-message--assistant .cx-message-avatar {
+  position: relative !important;
   overflow: hidden !important;
   background: #15232f !important;
   border-radius: 50% !important;
 }
 body[data-series="s5"][data-cosmetics-demo="spacefluid"] #cosmetics-root#cosmetics-root #cx-widget .cx-message--assistant .cx-message-avatar .cx-company-message-logo {
-  position: relative !important;
-  background: none !important;
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0 !important;
+  border-radius: inherit !important;
+  background: #15232f !important;
 }
 body[data-series="s5"][data-cosmetics-demo="spacefluid"] #cosmetics-root#cosmetics-root #cx-widget .cx-message--assistant .cx-message-avatar .cx-company-message-logo::before {
   content: "";
