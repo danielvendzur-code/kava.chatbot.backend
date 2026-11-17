@@ -1,0 +1,257 @@
+{
+  "brand": "ETANI",
+  "web": "https://www.etani.cz/pletova-kosmetika/",
+  "lang": "cs",
+  "products": [
+    {
+      "id": "pena-panthenol",
+      "name": "ETANI Čisticí pleťová pěna s panthenolem",
+      "url": "https://www.etani.cz/etani-cistici-pletova-pena-s-panthenolem--200ml/",
+      "priceAmount": 299,
+      "volume": "200 ml",
+      "kind": "Pěny",
+      "group": "cleanse",
+      "notes": [
+        "Panthenol",
+        "oplachová čisticí pěna"
+      ],
+      "photo": "/assets/s5/etani/pena-panthenol.webp"
+    },
+    {
+      "id": "kyselina-hyaluronova",
+      "name": "ETANI Kyselina hyaluronová",
+      "url": "https://www.etani.cz/etani-kyselina-hyaluronova--25ml/",
+      "priceAmount": 390,
+      "volume": "25 ml",
+      "kind": "Séra",
+      "group": "serum",
+      "notes": [
+        "Kyselina hyaluronová",
+        "hydratační sérum"
+      ],
+      "photo": "/assets/s5/etani/kyselina-hyaluronova.webp"
+    },
+    {
+      "id": "hyaluronovy-komplex",
+      "name": "ETANI Kyselina hyaluronová – hybridní komplex",
+      "url": "https://www.etani.cz/etani-kyselina-hyaluronova-pure-serum-30-ml-hybridni-komplex-/",
+      "priceAmount": 699,
+      "volume": "30 ml",
+      "kind": "Séra",
+      "group": "serum",
+      "notes": [
+        "Kyselina hyaluronová",
+        "hybridní komplex"
+      ],
+      "photo": "/assets/s5/etani/hyaluronovy-komplex.webp"
+    },
+    {
+      "id": "kolagen",
+      "name": "ETANI Kolagenové sérum",
+      "url": "https://www.etani.cz/etani-kolagen-pure-serum-30-ml-/",
+      "priceAmount": 699,
+      "volume": "30 ml",
+      "kind": "Séra",
+      "group": "serum",
+      "notes": [
+        "Kolagen",
+        "pleťové sérum"
+      ],
+      "photo": "/assets/s5/etani/kolagen.webp"
+    },
+    {
+      "id": "hyaluron-kolagen",
+      "name": "ETANI Sérum 2v1 – kyselina hyaluronová a kolagen",
+      "url": "https://www.etani.cz/etani-serum-2v1-kyselina-hyaluronova-s-kolagenem-30ml-/",
+      "priceAmount": 699,
+      "volume": "30 ml",
+      "kind": "Séra",
+      "group": "serum",
+      "notes": [
+        "Kyselina hyaluronová",
+        "kolagen"
+      ],
+      "photo": "/assets/s5/etani/hyaluron-kolagen.webp"
+    },
+    {
+      "id": "serum-opuncie",
+      "name": "ETANI Pleťové sérum s opuncií",
+      "url": "https://www.etani.cz/etani-omlazujici-pletove-serum-s-extraktem-z-opuncie-30ml-/",
+      "priceAmount": 699,
+      "volume": "30 ml",
+      "kind": "Séra",
+      "group": "serum",
+      "notes": [
+        "Extrakt z opuncie",
+        "pleťové sérum"
+      ],
+      "photo": "/assets/s5/etani/serum-opuncie.webp"
+    },
+    {
+      "id": "arganovy-olej",
+      "name": "ETANI Arganový olej",
+      "url": "https://www.etani.cz/etani-arganovy-olej-100-ml-/",
+      "priceAmount": 226,
+      "volume": "100 ml",
+      "kind": "Oleje",
+      "group": "oil",
+      "notes": [
+        "Arganový olej",
+        "pleťový olej"
+      ],
+      "photo": "/assets/s5/etani/arganovy-olej.webp"
+    },
+    {
+      "id": "svestka-vanilka",
+      "name": "ETANI Švestkový olej s vanilkou",
+      "url": "https://www.etani.cz/etani-svestkovy-olej-s-vanilkou-30ml-/",
+      "priceAmount": 599,
+      "volume": "30 ml",
+      "kind": "Oleje",
+      "group": "oil",
+      "notes": [
+        "Švestkový olej",
+        "vanilka"
+      ],
+      "photo": "/assets/s5/etani/svestka-vanilka.webp"
+    },
+    {
+      "id": "opunciovy-olej",
+      "name": "ETANI Opunciový olej",
+      "url": "https://www.etani.cz/opunciovy-olej-etani-opunciovy-olej-30-ml-/",
+      "priceAmount": 1199,
+      "volume": "30 ml",
+      "kind": "Oleje",
+      "group": "oil",
+      "notes": [
+        "Opunciový olej",
+        "pleťový olej"
+      ],
+      "photo": "/assets/s5/etani/opunciovy-olej.webp"
+    },
+    {
+      "id": "denni-krem-opuncie",
+      "name": "ETANI Denní krém s extraktem z opuncie",
+      "url": "https://www.etani.cz/etani-denni-krem-s-extraktem-z-opuncie-50ml-/",
+      "priceAmount": 599,
+      "volume": "50 ml",
+      "kind": "Krémy",
+      "group": "cream",
+      "notes": [
+        "Extrakt z opuncie",
+        "kyselina hyaluronová"
+      ],
+      "photo": "/assets/s5/etani/denni-krem-opuncie.webp"
+    },
+    {
+      "id": "eshumi-black-snail",
+      "name": "ESHUMI Black Snail Perfect Hydrator Cream",
+      "url": "https://www.etani.cz/eshumi-hydratacni-krem-se-snecim-sekretem-black-snail-perfect-hydrator-cream-55-ml/",
+      "priceAmount": 499,
+      "volume": "55 ml",
+      "kind": "Krémy",
+      "group": "cream",
+      "notes": [
+        "Hlemýždí filtrát",
+        "hydratační krém"
+      ],
+      "photo": "/assets/s5/etani/eshumi-black-snail.webp"
+    },
+    {
+      "id": "glamfox-ryze-niacinamid",
+      "name": "GLAMFOX Rice Niacinamide Cream",
+      "url": "https://www.etani.cz/glamfox-rice-niacinamide-cream-rozjasnujici-pletovy-krem-80-g/",
+      "priceAmount": 590,
+      "volume": "80 g",
+      "kind": "Krémy",
+      "group": "cream",
+      "notes": [
+        "Rýžová voda",
+        "niacinamid"
+      ],
+      "photo": "/assets/s5/etani/glamfox-ryze-niacinamid.webp"
+    },
+    {
+      "id": "3w-vitamin-c",
+      "name": "3W Clinic Vitamin C & Luxury Gold Capsule Cream",
+      "url": "https://www.etani.cz/3w-clinic-vitamin-c-luxury-gold-capsule-cream-luxusni-kapslovy-pletovy-krem-s-vitaminem-c-a-zlatem-56-g/",
+      "priceAmount": 699,
+      "volume": "56 g",
+      "kind": "Krémy",
+      "group": "cream",
+      "notes": [
+        "Vitamín C",
+        "niacinamid",
+        "zlato"
+      ],
+      "photo": "/assets/s5/etani/3w-vitamin-c.webp"
+    }
+  ],
+  "groups": {
+    "cleanse": {
+      "label": "Čištění",
+      "scene": "/assets/s3/scenes-k2/hand-wash.jpg",
+      "keywords": [
+        "cist",
+        "odlic",
+        "pena"
+      ]
+    },
+    "serum": {
+      "label": "Séra",
+      "scene": "/assets/s3/scenes-k2/aloe.jpg",
+      "keywords": [
+        "serum",
+        "sera"
+      ]
+    },
+    "oil": {
+      "label": "Pleťové oleje",
+      "scene": "/assets/s3/scenes-k2/argan-tree.jpg",
+      "keywords": [
+        "olej"
+      ]
+    },
+    "cream": {
+      "label": "Pleťové krémy",
+      "scene": "/assets/s3/scenes-k2/oats.jpg",
+      "keywords": [
+        "krem"
+      ]
+    }
+  },
+  "copy": {
+    "headline": "Vyberte péči podle toho, co hledáte.",
+    "lead": "Najděte čisticí pěnu, sérum, olej nebo krém a porovnejte složky, balení a cenu.",
+    "advisor": "Poradce pro péči o pleť",
+    "questions": [
+      "Který krok péče vybíráte?",
+      "Jaký máte rozpočet?",
+      "Která složka vás zajímá?"
+    ],
+    "greeting": "Pomohu vám porovnat produkty z katalogu podle typu, složky nebo ceny.",
+    "help": "Zkuste sérum do 700 Kč, pleťový krém nebo arganový olej.",
+    "match": "Tady jsou výsledky podle zadání.",
+    "empty": "V tomto výběru nemám shodu. Zkuste jiný rozpočet nebo typ."
+  },
+  "theme": {
+    "brand": "#405a46",
+    "soft": "#e8f0e4",
+    "paper": "#f8faf4"
+  },
+  "currency": "CZK",
+  "budgets": [
+    300,
+    500,
+    700,
+    1000
+  ],
+  "prompts": [
+    "Sérum do 700 Kč",
+    "Pleťový krém",
+    "Porovnat dva produkty"
+  ],
+  "logo": "/assets/s5/etani/logo.webp",
+  "avatar": "/assets/s5/etani/avatar.webp",
+  "hero": "/assets/s5/etani/denni-krem-opuncie.webp"
+}
