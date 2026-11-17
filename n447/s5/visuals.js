@@ -6,6 +6,7 @@
   const tea = '/assets/s3/tea/';
   const plant = '/assets/s5/zahradananiti/scenes/';
   const scene = name => root + name + '.jpg';
+  const ingredient = name => '/assets/s5/scenes/' + name + '.webp';
   const set = (slug, choices) => {
     if (!demos[slug]) return;
     demos[slug].choicePhotos ||= {};
@@ -24,9 +25,9 @@
   const more = 'sparkler';
   set('boemi', {footCare:'leg-massage'});
   set('safran', {'Peelingové mýdlo':'coffee-scrub-leg'});
-  set('adoraniche', {'roasted-tea':tea+'s3Roasted.jpg', nucleus:'incense', nel:'grapes', swim:'black-tea', maamoul:'almonds', wood:'sandalwood'});
-  set('nicheandglow', {mio:'mango', pivoine:'rose', ground:'incense', vetiver:'oak', 'navigation:more':more});
-  set('scentisimo', {'eau-de-la-couronne':'white-rose', 'body-mist-sea-mist':'lemon-tree', 'navigation:more':more});
+  set('adoraniche', {'roasted-tea':tea+'s3Roasted.jpg', nucleus:'incense', nel:ingredient('lychee-rhubarb'), swim:ingredient('fig-green-tea'), maamoul:ingredient('dates-walnuts'), wood:'sandalwood'});
+  set('nicheandglow', {mio:ingredient('passionfruit'), pivoine:ingredient('peony'), ground:'incense', vetiver:ingredient('vetiver'), 'navigation:more':more});
+  set('scentisimo', {'eau-de-la-couronne':ingredient('freesia-iris'), 'body-mist-sea-mist':'lemon-tree', 'navigation:more':more});
   set('kintsugi', {
     'navigation:more':more, 'taom-eau-de-parfum':'grapefruit', 'kaigan-eau-de-parfum':'ocean-wave',
     'hanzo-eau-de-parfum':'pine', 'tempo-eau-de-parfum':'bay-salt', 'muza-eau-de-parfum':'jasmine',
@@ -34,14 +35,14 @@
     'phenix-eau-de-parfum':'coffee-beans', 'santal-eau-de-parfum':'sandalwood', 'deus-eau-de-parfum':'lavender',
     'ambre-oud-extrait-de-parfum':'mango'
   });
-  set('oraculum', {arabesque:'carrots', 'mio-dio':'mango'});
+  set('oraculum', {arabesque:'carrots', 'mio-dio':ingredient('passionfruit')});
   set('myskino', {ambrelatte:'almonds', 'navigation:more':more});
-  set('furiosa', {'furiosa-candy-as-fck':'sugar', 'furiosa-fizz':'grapes', 'furiosa-nude':'poppy'});
-  set('scentium', {salt:'white-rose', 'blanc-sesame-1':'neroli-blossom', 'malkhut-109':'thyme'});
+  set('furiosa', {'furiosa-candy-as-fck':'sugar', 'furiosa-fizz':ingredient('pear-melon'), 'furiosa-nude':'poppy'});
+  set('scentium', {salt:ingredient('magnolia-ylang'), 'blanc-sesame-1':ingredient('sesame-coffee'), 'malkhut-109':'thyme'});
   set('medarek', {
     'bublinovy-sampuk':'mint-herbs', 'liskovy-sampuk':'almonds', 'arganovy-sampuk':'argan-tree',
-    'hajanek-sampuk':'lavender-field', 'monoi-de-tahiti-mydlo':'coconut', 'bambucke-mydlo':'body-shower',
-    'levandulove-mydlo':'lavender-bunch', 'bananove-mydlo':'milk', 'balzam-na-rty-mango':'mango',
+    'hajanek-sampuk':'lavender-field', 'monoi-de-tahiti-mydlo':'coconut', 'bambucke-mydlo':ingredient('shea-butter'),
+    'levandulove-mydlo':'lavender-bunch', 'bananove-mydlo':ingredient('banana'), 'balzam-na-rty-mango':'mango',
     'balzam-na-rty-vanilka':'vanilla', 'balzam-na-rty-mata':'mint-herbs', 'balzam-na-rty-svestka':'plums'
   });
   set('dvoukocek', {
