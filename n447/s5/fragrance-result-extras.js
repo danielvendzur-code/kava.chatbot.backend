@@ -58,12 +58,21 @@
  window.CX_S5.result=function(engine,p,state,steps){
   const result=original.call(this,engine,p,state,steps);
   if(!eligible(p))return result;
-  const addon=extraFor(p,state.answers),alt=engine.products.find(x=>x.id===opt.alternatives?.[p.id]&&x.id!==p.id&&eligible(x)&&x.currency===p.currency&&x.photo!==p.photo);
+  const addon=extraFor(p,state.answers);
+  const different=x=>x.id!==p.id&&eligible(x)&&x.currency===p.currency&&x.photo!==p.photo;
+  const alt=opt.preferQualifiedAlternative
+   ? engine.recommend({...state.answers,fragranceProfile:undefined}).matches.find(different)
+   : engine.products.find(x=>x.id===opt.alternatives?.[p.id]&&different(x));
   current={id:p.id,p,addon};
   const view=document.createElement('template');view.innerHTML=result;
   view.content.querySelectorAll('.s5-profile').forEach(e=>e.remove());
   const primary=view.content.querySelector('.s5-product');primary?.setAttribute('data-fragrance-result','enhanced');
   const description=primary?.querySelector('.s5-description');if(description&&!p.isSample&&!p.source.identityDisclosure&&!/tester/i.test((p.volume||'')+' '+(p.kind||'')))description.textContent=p.reason||p.source.scent||p.description;
+  if (p.isSample && p.source?.fragranceBudgetGuide) {
+   const pack=primary?.querySelector('.s5-product-copy p');
+   if (pack) pack.textContent=t('Vzorka ','Vzorek ')+p.volume;
+   if (description && p.source.variantSelectionRequired) description.textContent+=' '+t('Na e-shope vyberte objem ','V e-shopu vyberte objem ')+p.volume+'.';
+  }
   const total=view.content.querySelector('.s5-total');
   if(!primary||!total)return result;
   total.setAttribute('data-fragrance-selection',p.id);

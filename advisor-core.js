@@ -284,9 +284,28 @@
         if(values.length>1)ask(key,values);
       }
       // Source-reviewed fragrance notes use their own preference questions.
-      // No skin-type, concentration-as-intensity, occasion or budget inference.
+      // Only an opted-in catalogue with exact prices may add a budget question.
       if(remaining.length&&remaining.every(fragranceProduct)){
-        feature('fragranceDirection');feature('fragranceProfile');return result;
+        feature('fragranceDirection');
+        if (answers.fragranceDirection && remaining.every(p => p.source?.fragranceBudgetGuide === true)) {
+          const candidates = remaining[0]?.currency === 'CZK' ? [200, 250, 300, 700, 900, 1100] : [20, 25, 30, 35, 40];
+          const seenSizes = new Set();
+          const limits = candidates.filter(limit => {
+            const count = remaining.filter(p => withinBudget(p, limit)).length;
+            if (count < 2 || count === remaining.length || seenSizes.has(count)) return false;
+            seenSizes.add(count);
+            return true;
+          });
+          if (limits.length) {
+            result.push({key:'budget', options:limits.slice(0, 2)});
+            if (answers.budget !== undefined) {
+              working.budget = answers.budget;
+              remaining = recommend(working).matches;
+            }
+          }
+        }
+        feature('fragranceProfile');
+        return result;
       }
       // Purpose first: distinguish sun care, washing and targeted needs before price.
       feature('careUse');feature('purpose');

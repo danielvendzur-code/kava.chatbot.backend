@@ -15,7 +15,7 @@
   let add=window.CXAdvisorCore.complementFor(engine.products,state.answers,p);
   // Fragrance-free preference is a compatibility constraint even if the core asked it under another feature.
   if(state.answers.careVariant==='withoutFragrance'&&add?.source?.scent!=='Bez vône')add=null;
-  const tags=Object.entries(state.answers).map(([key,v])=>key==='budget'?money(Number(v),p.currency):choice(v)).filter(Boolean);
+  const tags=Object.entries(state.answers).map(([key,v])=>key==='budget'?(v?money(Number(v),p.currency):''):choice(v)).filter(Boolean);
   current={p,add,selected:false};
   const variants=(p.source?.variants||[]).filter(v=>v.available&&v.label!==p.source.variantLabel&&v.label!=='Default Title');
   return `<article class="cx-quality-product is-primary s5-product" style="grid-template-columns:88px minmax(0,1fr)!important" data-product-id="${esc(p.id)}"><div class="cx-quality-product-photo" style="width:88px!important;height:105px!important;min-height:0!important;aspect-ratio:auto!important"><img src="${esc(p.photo)}" alt="${esc(p.name)}"></div><div class="s5-product-copy"><small>${t('Váš výber','Váš výběr')}</small><h2>${esc(p.name)}</h2><p>${esc(p.volume)}${p.variantLabel?' · '+esc(p.variantLabel):''}</p><strong>${esc(p.price)}</strong></div><p class="s5-description">${esc(p.description)}</p><a class="s5-cta" href="${esc(p.url)}">${t('Pozrieť produkt','Zobrazit produkt')}</a></article>
