@@ -257,13 +257,15 @@ window.CXLauncherHover=(primary,candidates=[])=>{
   if (!root || (!brand && !coffee?.brand)) return;
   const name = brand?.name || coffee.brand.name;
   const header = root.querySelector('.cx-widget-brand img.cx-logo');
-  const original = brand?.avatarIcon || header?.getAttribute('src') || coffee?.demo?.logoHeader || brand?.mark || coffee?.demo?.logoAvatar;
+  const s5Avatar = document.body?.dataset?.series === 's5' && window.CX_S3_MARK?.avatar;
+  const original = s5Avatar || brand?.avatarIcon || header?.getAttribute('src') || coffee?.demo?.logoHeader || brand?.mark || coffee?.demo?.logoAvatar;
   if (!original) return;
   const style = document.createElement('style');
   style.dataset.companyMessageLogo = 'black-real-logo-v1';
   style.textContent = `
     body #cosmetics-root#cosmetics-root .cx-message--assistant .cx-message-avatar,
     body #widget#widget .msg__avatar { background:var(--cx-brand, #141414) !important; background-image:none !important; color:#fff !important; border:0 !important; border-radius:50% !important; display:flex !important; align-items:center !important; justify-content:center !important; }
+    body #cosmetics-root#cosmetics-root.cx-s5-avatar-original .cx-message--assistant .cx-message-avatar { background:#fff !important; }
     body #cosmetics-root#cosmetics-root .cx-message-avatar .cx-company-message-logo,
     body #widget#widget .msg__avatar .cx-company-message-logo { display:block !important; width:calc(100% - 8px) !important; height:calc(100% - 8px) !important; min-width:0 !important; max-width:none !important; min-height:0 !important; max-height:none !important; flex:none !important; margin:0 !important; border:0 !important; border-radius:0 !important; background:transparent var(--cx-company-message-art) center / contain no-repeat !important; mask:none !important; -webkit-mask:none !important; filter:none !important; transform:none !important; }
   `;
@@ -329,7 +331,11 @@ window.CXLauncherHover=(primary,candidates=[])=>{
       }
       if(x1<x0 || y1<y0) return;
       /* A filled badge would become a blank blob: keep the original artwork on a white circle instead. */
-      if(solid/((x1-x0+1)*(y1-y0+1))>.72){document.documentElement.classList.add('cx-logo-plain');return;}
+      if(solid/((x1-x0+1)*(y1-y0+1))>.72){
+        if (s5Avatar) root.classList.add('cx-s5-avatar-original');
+        document.documentElement.classList.add('cx-logo-plain');
+        return;
+      }
       ctx.putImageData(pixels,0,0);
       const out=document.createElement('canvas');
       out.width=x1-x0+5;out.height=y1-y0+5;

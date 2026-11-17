@@ -142,3 +142,9 @@ body[data-series=s5]:is([data-cosmetics-demo=furiosa],[data-cosmetics-demo=scent
   background: linear-gradient(135deg, var(--s5-result-wash), white 80%) !important;
   border-color: var(--cx-line) !important;
 }
+
+/* Contextual preview photos fill the existing frame. */
+body[data-series="s5"] #cosmetics-root .cx-owner-visual > img {
+  object-fit: cover !important;
+  object-position: center !important;
+}

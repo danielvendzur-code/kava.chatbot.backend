@@ -3,6 +3,30 @@
   "cleanUrls": false,
   "rewrites": [
     {
+      "source": "/ukazka/papelote",
+      "destination": "/s5-papelote.html"
+    },
+    {
+      "source": "/ukazka/verticeramics",
+      "destination": "/s5-verticeramics.html"
+    },
+    {
+      "source": "/ukazka/pucle",
+      "destination": "/s5-pucle.html"
+    },
+    {
+      "source": "/ukazka/kompot",
+      "destination": "/s5-kompot.html"
+    },
+    {
+      "source": "/ukazka/manufaktura",
+      "destination": "/s5-manufaktura.html"
+    },
+    {
+      "source": "/ukazka/kofio",
+      "destination": "/s5-kofio.html"
+    },
+    {
       "source": "/",
       "has": [
         {
@@ -36,6 +60,128 @@
           "value": "no-referrer"
         }
       ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/ukazka/nutt",
+      "destination": "/s5.html?demo=nutt",
+      "permanent": false
+    },
+    {
+      "source": "/ukazka/pleva",
+      "destination": "/s5.html?demo=pleva",
+      "permanent": false
+    },
+    {
+      "source": "/ukazka/jagaia",
+      "destination": "/s5.html?demo=jagaia",
+      "permanent": false
+    },
+    {
+      "source": "/ukazka/capri",
+      "destination": "/s5.html?demo=capri",
+      "permanent": false
+    },
+    {
+      "source": "/ukazka/botanico",
+      "destination": "/s5.html?demo=botanico",
+      "permanent": false
+    },
+    {
+      "source": "/ukazka/janine",
+      "destination": "/s5.html?demo=janine",
+      "permanent": false
+    },
+    {
+      "source": "/ukazka/eone",
+      "destination": "/s5.html?demo=eone",
+      "permanent": false
+    },
+    {
+      "source": "/ukazka/nafigate",
+      "destination": "/s5.html?demo=nafigate",
+      "permanent": false
+    },
+    {
+      "source": "/ukazka/boemi",
+      "destination": "/s5.html?demo=boemi",
+      "permanent": false
+    },
+    {
+      "source": "/ukazka/rubens",
+      "destination": "/s5.html?demo=rubens",
+      "permanent": false
+    },
+    {
+      "source": "/ukazka/safran",
+      "destination": "/s5.html?demo=safran",
+      "permanent": false
+    },
+    {
+      "source": "/ukazka/adoraniche",
+      "destination": "/s5.html?demo=adoraniche",
+      "permanent": false
+    },
+    {
+      "source": "/ukazka/nicheandglow",
+      "destination": "/s5.html?demo=nicheandglow",
+      "permanent": false
+    },
+    {
+      "source": "/ukazka/scentisimo",
+      "destination": "/s5.html?demo=scentisimo",
+      "permanent": false
+    },
+    {
+      "source": "/ukazka/kintsugi",
+      "destination": "/s5.html?demo=kintsugi",
+      "permanent": false
+    },
+    {
+      "source": "/ukazka/oraculum",
+      "destination": "/s5.html?demo=oraculum",
+      "permanent": false
+    },
+    {
+      "source": "/ukazka/myskino",
+      "destination": "/s5.html?demo=myskino",
+      "permanent": false
+    },
+    {
+      "source": "/ukazka/furiosa",
+      "destination": "/s5.html?demo=furiosa",
+      "permanent": false
+    },
+    {
+      "source": "/ukazka/scentium",
+      "destination": "/s5.html?demo=scentium",
+      "permanent": false
+    },
+    {
+      "source": "/ukazka/medarek",
+      "destination": "/s5.html?demo=medarek",
+      "permanent": false
+    },
+    {
+      "source": "/ukazka/dvoukocek",
+      "destination": "/s5.html?demo=dvoukocek",
+      "permanent": false
+    },
+    {
+      "source": "/ukazka/mydlarnaerde",
+      "destination": "/s5.html?demo=mydlarnaerde",
+      "permanent": false
+    },
+    {
+      "source": "/ukazka/meetea",
+      "destination": "/s5.html?demo=meetea",
+      "permanent": false
+    },
+    {
+      "source": "/ukazka/zahradananiti",
+      "destination": "/s5.html?demo=zahradananiti",
+      "permanent": false
     }
   ]
 }
