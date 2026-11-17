@@ -1,0 +1,235 @@
+{
+  "brand": "Vinařství Čapka",
+  "web": "https://eshop.vinocapka.cz/vsechna-vina/",
+  "lang": "cs",
+  "products": [
+    {
+      "id": "pinot-noir-2023-terroir-nechory",
+      "name": "Pinot Noir 2023 Terroir Nechory",
+      "url": "https://eshop.vinocapka.cz/terroir/pinot-noir-2023-terroir-nechory/",
+      "priceAmount": 350.0,
+      "volume": "0,75 l",
+      "kind": "Červené víno",
+      "group": "red",
+      "notes": [
+        "suché",
+        "maliny",
+        "hořká čokoláda",
+        "marmeládový tón"
+      ],
+      "photo": "/assets/s5/vinocapka/pinot-noir-2023-terroir-nechory.webp"
+    },
+    {
+      "id": "cabernet-sauvignon-2023-terroir-podkovne",
+      "name": "Cabernet Sauvignon 2023 Terroir Podkovné",
+      "url": "https://eshop.vinocapka.cz/terroir/cabernet-sauvignon-2023-terroir-podkovne/",
+      "priceAmount": 350.0,
+      "volume": "0,75 l",
+      "kind": "Červené víno",
+      "group": "red",
+      "notes": [
+        "suché",
+        "černý rybíz",
+        "ostružiny",
+        "kávové boby"
+      ],
+      "photo": "/assets/s5/vinocapka/cabernet-sauvignon-2023-terroir-podkovne.webp"
+    },
+    {
+      "id": "ryzlink-rynsky-2023-terroir-kukvicka-2",
+      "name": "Ryzlink rýnský Noble rot 2023 Terroir Kukvička",
+      "url": "https://eshop.vinocapka.cz/terroir/ryzlink-rynsky-2023-terroir-kukvicka-2/",
+      "priceAmount": 450.0,
+      "volume": "0,5 l",
+      "kind": "Bílé víno",
+      "group": "white",
+      "notes": [
+        "sladké",
+        "lipový květ",
+        "citrusy",
+        "včelí plástve"
+      ],
+      "photo": "/assets/s5/vinocapka/ryzlink-rynsky-2023-terroir-kukvicka-2.webp"
+    },
+    {
+      "id": "pinot-noir-otisk-2020-kukvicka",
+      "name": "Pinot Noir OTISK 2020 Kukvička",
+      "url": "https://eshop.vinocapka.cz/otisk/pinot-noir-otisk-2020-kukvicka/",
+      "priceAmount": 550.0,
+      "volume": "0,75 l",
+      "kind": "Červené víno",
+      "group": "red",
+      "notes": [
+        "suché",
+        "jahody",
+        "maliny",
+        "zemité tóny"
+      ],
+      "photo": "/assets/s5/vinocapka/pinot-noir-otisk-2020-kukvicka.webp"
+    },
+    {
+      "id": "pinot-noir-otisk-2020-nechory",
+      "name": "Pinot Noir OTISK 2020 Nechory",
+      "url": "https://eshop.vinocapka.cz/otisk/pinot-noir-otisk-2020-nechory/",
+      "priceAmount": 550.0,
+      "volume": "0,75 l",
+      "kind": "Červené víno",
+      "group": "red",
+      "notes": [
+        "suché",
+        "maliny",
+        "hořká čokoláda"
+      ],
+      "photo": "/assets/s5/vinocapka/pinot-noir-otisk-2020-nechory.webp"
+    },
+    {
+      "id": "zweigeltrebe-otisk-2021-kukvicka",
+      "name": "Zweigeltrebe OTISK 2021 Kukvička",
+      "url": "https://eshop.vinocapka.cz/otisk/zweigeltrebe-otisk-2021-kukvicka/",
+      "priceAmount": 550.0,
+      "volume": "0,75 l",
+      "kind": "Červené víno",
+      "group": "red",
+      "notes": [
+        "suché",
+        "zralé třešně",
+        "ostružiny",
+        "švestky"
+      ],
+      "photo": "/assets/s5/vinocapka/zweigeltrebe-otisk-2021-kukvicka.webp"
+    },
+    {
+      "id": "chardonnay-otisk-2021-kukvicka",
+      "name": "Chardonnay OTISK 2021 Kukvička",
+      "url": "https://eshop.vinocapka.cz/otisk/chardonnay-otisk-2021-kukvicka/",
+      "priceAmount": 450.0,
+      "volume": "0,75 l",
+      "kind": "Bílé víno",
+      "group": "white",
+      "notes": [
+        "suché",
+        "mandle",
+        "citrusy",
+        "pražené lískové ořechy"
+      ],
+      "photo": "/assets/s5/vinocapka/chardonnay-otisk-2021-kukvicka.webp"
+    },
+    {
+      "id": "tramin-cerveny-2022-terroir-kukvicka",
+      "name": "Tramín červený 2022 Terroir Kukvička",
+      "url": "https://eshop.vinocapka.cz/terroir/tramin-cerveny-2022-terroir-kukvicka/",
+      "priceAmount": 650.0,
+      "volume": "0,375 l",
+      "kind": "Bílé víno",
+      "group": "white",
+      "notes": [
+        "sladké",
+        "včelí plástve",
+        "rozinky",
+        "čajová růže"
+      ],
+      "photo": "/assets/s5/vinocapka/tramin-cerveny-2022-terroir-kukvicka.webp"
+    },
+    {
+      "id": "frankovka-2022-terroir-hastrmany",
+      "name": "Frankovka 2022 Terroir Hastrmany",
+      "url": "https://eshop.vinocapka.cz/terroir/frankovka-2022-terroir-hastrmany/",
+      "priceAmount": 350.0,
+      "volume": "0,75 l",
+      "kind": "Červené víno",
+      "group": "red",
+      "notes": [
+        "suché",
+        "třešně",
+        "višně",
+        "vanilka a káva"
+      ],
+      "photo": "/assets/s5/vinocapka/frankovka-2022-terroir-hastrmany.webp"
+    },
+    {
+      "id": "ryzlink-rynsky-2023-terroir-nechory",
+      "name": "Ryzlink rýnský 2023 Terroir Nechory",
+      "url": "https://eshop.vinocapka.cz/terroir/ryzlink-rynsky-2023-terroir-nechory/",
+      "priceAmount": 350.0,
+      "volume": "0,75 l",
+      "kind": "Bílé víno",
+      "group": "white",
+      "notes": [
+        "suché",
+        "zralé meruňky",
+        "citrusové plody"
+      ],
+      "photo": "/assets/s5/vinocapka/ryzlink-rynsky-2023-terroir-nechory.webp"
+    },
+    {
+      "id": "ryzlink-rynsky-2021-terroir-kukvicka",
+      "name": "Ryzlink rýnský 2021 Terroir Kukvička",
+      "url": "https://eshop.vinocapka.cz/terroir/ryzlink-rynsky-2021-terroir-kukvicka/",
+      "priceAmount": 350.0,
+      "volume": "0,75 l",
+      "kind": "Bílé víno",
+      "group": "white",
+      "notes": [
+        "suché",
+        "sušené meruňky",
+        "bílé broskve",
+        "lipový květ"
+      ],
+      "photo": "/assets/s5/vinocapka/ryzlink-rynsky-2021-terroir-kukvicka.webp"
+    }
+  ],
+  "groups": {
+    "red": {
+      "label": "Červené víno",
+      "scene": "/assets/s3/scenes-k2/grapes.jpg",
+      "keywords": [
+        "cerven"
+      ]
+    },
+    "white": {
+      "label": "Bílé víno",
+      "scene": "/assets/s3/scenes-k2/grapes.jpg",
+      "keywords": [
+        "bile",
+        "biele",
+        "ryzlink",
+        "riesling"
+      ]
+    }
+  },
+  "copy": {
+    "headline": "Najděte víno pro svůj stůl.",
+    "lead": "Projděte výběr vinařství podle stylu, rozpočtu a popsaných tónů. Dvě lahve si můžete porovnat vedle sebe.",
+    "advisor": "Vinný poradce",
+    "questions": [
+      "Jaký styl vína hledáte?",
+      "Jaký máte rozpočet?",
+      "Které tóny vás lákají?"
+    ],
+    "greeting": "Pomohu vám najít víno podle stylu, odrůdy, tónů nebo rozpočtu.",
+    "help": "Zkuste bílé víno do 250 Kč, červené nebo šumivé.",
+    "match": "Tady jsou výsledky podle zadání.",
+    "empty": "V tomto výběru nemám shodu. Zkuste jiný rozpočet nebo typ."
+  },
+  "theme": {
+    "brand": "#67374d",
+    "soft": "#f5e9ee",
+    "paper": "#fbf7f6"
+  },
+  "currency": "CZK",
+  "budgets": [
+    200,
+    250,
+    350,
+    450
+  ],
+  "prompts": [
+    "Červené víno do 350 Kč",
+    "Červené víno",
+    "Porovnat dvě vína"
+  ],
+  "logo": "/assets/s5/vinocapka/logo.webp",
+  "avatar": "/assets/s5/vinocapka/avatar.webp",
+  "hero": "/assets/s5/vinocapka/pinot-noir-2023-terroir-nechory.webp",
+  "ageNotice": "Alkohol pouze pro osoby starší 18 let."
+}
