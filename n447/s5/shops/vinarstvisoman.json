@@ -1,0 +1,307 @@
+{
+  "brand": "Vinařství Šoman",
+  "web": "https://www.vinarstvisoman.cz/vina/",
+  "lang": "cs",
+  "products": [
+    {
+      "id": "rulandske-sede",
+      "name": "Rulandské šedé 2025",
+      "url": "https://www.vinarstvisoman.cz/rulandske-sede-2025/",
+      "priceAmount": 250.0,
+      "volume": "0,75 l",
+      "kind": "Bílé víno",
+      "group": "white",
+      "notes": [
+        "polosuché",
+        "exotické ovoce",
+        "kompotované hrušky",
+        "mírně kořenitá chuť"
+      ],
+      "photo": "/assets/s5/vinarstvisoman/rulandske-sede.webp"
+    },
+    {
+      "id": "palava",
+      "name": "Pálava 2025",
+      "url": "https://www.vinarstvisoman.cz/palava-2025/",
+      "priceAmount": 250.0,
+      "volume": "0,75 l",
+      "kind": "Bílé víno",
+      "group": "white",
+      "notes": [
+        "polosladké",
+        "přezrálé tropické ovoce",
+        "skořice",
+        "kořenitý závěr"
+      ],
+      "photo": "/assets/s5/vinarstvisoman/palava.webp"
+    },
+    {
+      "id": "tramin",
+      "name": "Tramín červený 2025",
+      "url": "https://www.vinarstvisoman.cz/tramin-cerveny-2025/",
+      "priceAmount": 260.0,
+      "volume": "0,75 l",
+      "kind": "Bílé víno",
+      "group": "white",
+      "notes": [
+        "polosuché",
+        "pomeranč",
+        "med",
+        "mandarinková kůra"
+      ],
+      "photo": "/assets/s5/vinarstvisoman/tramin.webp"
+    },
+    {
+      "id": "muskat",
+      "name": "Muškát moravský 2025",
+      "url": "https://www.vinarstvisoman.cz/muskat-moravsky-2025/",
+      "priceAmount": 230.0,
+      "volume": "0,75 l",
+      "kind": "Bílé víno",
+      "group": "white",
+      "notes": [
+        "polosuché",
+        "citronová kůra",
+        "limetka",
+        "máta"
+      ],
+      "photo": "/assets/s5/vinarstvisoman/muskat.webp"
+    },
+    {
+      "id": "muller",
+      "name": "Müller Thurgau 2025",
+      "url": "https://www.vinarstvisoman.cz/muller-thurgau-2025/",
+      "priceAmount": 230.0,
+      "volume": "0,75 l",
+      "kind": "Bílé víno",
+      "group": "white",
+      "notes": [
+        "suché",
+        "limetka",
+        "bílé květy ovocných stromů"
+      ],
+      "photo": "/assets/s5/vinarstvisoman/muller.webp"
+    },
+    {
+      "id": "ryzlink",
+      "name": "Ryzlink rýnský 2025",
+      "url": "https://www.vinarstvisoman.cz/ryzlink-rynsky-2025/",
+      "priceAmount": 250.0,
+      "volume": "0,75 l",
+      "kind": "Bílé víno",
+      "group": "white",
+      "notes": [
+        "suché",
+        "citrusy",
+        "meruňky",
+        "minerální závěr"
+      ],
+      "photo": "/assets/s5/vinarstvisoman/ryzlink.webp"
+    },
+    {
+      "id": "vlasak-bavorska",
+      "name": "Ryzlink vlašský Levá bavorská 2025",
+      "url": "https://www.vinarstvisoman.cz/ryzlink-vlassky-leva-bavorska-2025/",
+      "priceAmount": 270.0,
+      "volume": "0,75 l",
+      "kind": "Bílé víno",
+      "group": "white",
+      "notes": [
+        "suché",
+        "angrešt",
+        "ovocnost",
+        "minerální charakter"
+      ],
+      "photo": "/assets/s5/vinarstvisoman/vlasak-bavorska.webp"
+    },
+    {
+      "id": "vlasak-polosuchy",
+      "name": "Ryzlink vlašský polosuchý 2023",
+      "url": "https://www.vinarstvisoman.cz/ryzlink-vlassky-2023/",
+      "priceAmount": 240.0,
+      "volume": "0,75 l",
+      "kind": "Bílé víno",
+      "group": "white",
+      "notes": [
+        "polosuché",
+        "žlutomasé ovoce",
+        "propolis",
+        "rozinky"
+      ],
+      "photo": "/assets/s5/vinarstvisoman/vlasak-polosuchy.webp"
+    },
+    {
+      "id": "rulandske-cuvee",
+      "name": "Rulandské modré & Zweigeltrebe 2024",
+      "url": "https://www.vinarstvisoman.cz/rulandske-modre-zweigeltrebe-2024/",
+      "priceAmount": 390.0,
+      "volume": "0,75 l",
+      "kind": "Červené víno",
+      "group": "red",
+      "notes": [
+        "suché",
+        "borůvky",
+        "ostružiny",
+        "bílá čokoláda"
+      ],
+      "photo": "/assets/s5/vinarstvisoman/rulandske-cuvee.webp"
+    },
+    {
+      "id": "vlasak-plotny",
+      "name": "Ryzlink vlašský Plotny 2025",
+      "url": "https://www.vinarstvisoman.cz/ryzlink-vlassky-plotny-2025/",
+      "priceAmount": 250.0,
+      "volume": "0,75 l",
+      "kind": "Bílé víno",
+      "group": "white",
+      "notes": [
+        "suché",
+        "žlutomasé ovoce",
+        "propolis",
+        "rozinky"
+      ],
+      "photo": "/assets/s5/vinarstvisoman/vlasak-plotny.webp"
+    },
+    {
+      "id": "caber-magnum",
+      "name": "Cabernet Sauvignon & Merlot 2019 MAGNUM",
+      "url": "https://www.vinarstvisoman.cz/magnum-cabernet-sauvignon-merlot-2019/",
+      "priceAmount": 1000.0,
+      "volume": "1,5 l",
+      "kind": "Červené víno",
+      "group": "red",
+      "notes": [
+        "suché",
+        "třešně",
+        "višně v čokoládě",
+        "káva"
+      ],
+      "photo": "/assets/s5/vinarstvisoman/caber-magnum.webp"
+    },
+    {
+      "id": "caber-merlot",
+      "name": "Cabernet Sauvignon & Merlot 2023",
+      "url": "https://www.vinarstvisoman.cz/cabernet-sauvignon-merlot-2023/",
+      "priceAmount": 450.0,
+      "volume": "0,75 l",
+      "kind": "Červené víno",
+      "group": "red",
+      "notes": [
+        "suché",
+        "třešně",
+        "višně v čokoládě",
+        "káva"
+      ],
+      "photo": "/assets/s5/vinarstvisoman/caber-merlot.webp"
+    },
+    {
+      "id": "svatovavrinecke",
+      "name": "Svatovavřinecké 2023",
+      "url": "https://www.vinarstvisoman.cz/svatovavrinecke-2023/",
+      "priceAmount": 240.0,
+      "volume": "0,75 l",
+      "kind": "Červené víno",
+      "group": "red",
+      "notes": [
+        "suché",
+        "švestka",
+        "ostružina",
+        "pražená káva"
+      ],
+      "photo": "/assets/s5/vinarstvisoman/svatovavrinecke.webp"
+    },
+    {
+      "id": "frizzante",
+      "name": "Frizzante RV + VZ 2025",
+      "url": "https://www.vinarstvisoman.cz/frizzante-rv-vz-2025/",
+      "priceAmount": 220.0,
+      "volume": "0,75 l",
+      "kind": "Perlivé víno",
+      "group": "sparkling",
+      "notes": [
+        "suché",
+        "Ryzlink vlašský",
+        "Veltlínské zelené"
+      ],
+      "photo": "/assets/s5/vinarstvisoman/frizzante.webp"
+    },
+    {
+      "id": "sekt",
+      "name": "Sekt Pinot blanc 2024",
+      "url": "https://www.vinarstvisoman.cz/sekt-pinot-blanc-2024/",
+      "priceAmount": 410.0,
+      "volume": "0,75 l",
+      "kind": "Šumivé víno",
+      "group": "sparkling",
+      "notes": [
+        "extra brut",
+        "čerstvě rozkrojené jablko",
+        "broskev"
+      ],
+      "photo": "/assets/s5/vinarstvisoman/sekt.webp"
+    }
+  ],
+  "groups": {
+    "white": {
+      "label": "Bílé víno",
+      "scene": "/assets/s3/scenes-k2/grapes.jpg",
+      "keywords": [
+        "bile",
+        "biele",
+        "ryzlink",
+        "riesling"
+      ]
+    },
+    "red": {
+      "label": "Červené víno",
+      "scene": "/assets/s3/scenes-k2/grapes.jpg",
+      "keywords": [
+        "cerven"
+      ]
+    },
+    "sparkling": {
+      "label": "Šumivé víno",
+      "scene": "/assets/s3/scenes-k2/sparkler.jpg",
+      "keywords": [
+        "sumiv",
+        "secco",
+        "sekt"
+      ]
+    }
+  },
+  "copy": {
+    "headline": "Najděte víno pro svůj stůl.",
+    "lead": "Projděte výběr vinařství podle stylu, rozpočtu a popsaných tónů. Dvě lahve si můžete porovnat vedle sebe.",
+    "advisor": "Vinný poradce",
+    "questions": [
+      "Jaký styl vína hledáte?",
+      "Jaký máte rozpočet?",
+      "Které tóny vás lákají?"
+    ],
+    "greeting": "Pomohu vám najít víno podle stylu, odrůdy, tónů nebo rozpočtu.",
+    "help": "Zkuste bílé víno do 250 Kč, červené nebo šumivé.",
+    "match": "Tady jsou výsledky podle zadání.",
+    "empty": "V tomto výběru nemám shodu. Zkuste jiný rozpočet nebo typ."
+  },
+  "theme": {
+    "brand": "#67374d",
+    "soft": "#f5e9ee",
+    "paper": "#fbf7f6"
+  },
+  "currency": "CZK",
+  "budgets": [
+    200,
+    250,
+    350,
+    450
+  ],
+  "prompts": [
+    "Bílé víno do 250 Kč",
+    "Červené víno",
+    "Porovnat dvě vína"
+  ],
+  "logo": "/assets/s5/vinarstvisoman/logo.webp",
+  "avatar": "/assets/s5/vinarstvisoman/avatar.webp",
+  "hero": "/assets/s5/vinarstvisoman/rulandske-sede.webp",
+  "ageNotice": "Alkohol pouze pro osoby starší 18 let."
+}

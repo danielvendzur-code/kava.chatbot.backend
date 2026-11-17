@@ -27,7 +27,7 @@ function init(config) {
   const {brand, web, lang, products, groups, copy, theme, currency, budgets, avatar} = config;
   const cs = lang === 'cs';
   const t = (sk, cz) => cs ? cz : sk;
-  const asMoney = new Intl.NumberFormat(lang, {style:'currency',currency,maximumFractionDigits:2}).format;
+  const asMoney = new Intl.NumberFormat(lang, {style:'currency',currency,minimumFractionDigits:0,maximumFractionDigits:2}).format;
   const compare = new Set();
   const prefs = {};
   const conversation = {};
@@ -49,6 +49,7 @@ function init(config) {
   byId('hero').src = config.hero || products[0].photo;
   byId('headline').textContent = copy.headline;
   byId('lead').textContent = copy.lead;
+  if (config.ageNotice) byId('lead').after(make('p',config.ageNotice,'detail'));
   byId('advisor-title').textContent = copy.advisor;
   byId('guide-mode').textContent = t('Sprievodca','Průvodce');
   byId('begin').textContent = t('Spustiť výber','Spustit výběr');
@@ -65,9 +66,10 @@ function init(config) {
     byId('guide-mode').setAttribute('aria-pressed', String(!chat));
     byId('chat-mode').setAttribute('aria-pressed', String(chat));
   }
-  function match({group,budget,keyword} = {}) {
+  function match({group,budget,keyword,method} = {}) {
     return products.filter(p =>
       (!group || p.group === group) &&
+      (!method || p.methods?.includes(method)) &&
       (budget === undefined || p.priceAmount <= budget) &&
       (!keyword || normalize([p.name,p.kind,...p.notes].join(' ')).includes(keyword))
     );
@@ -172,11 +174,13 @@ function init(config) {
       delete conversation.keyword;
     }
     if (price) conversation.budget=Number(price[1].replace(/\s/g,'').replace(',','.'));
+    const method = products.some(p=>p.methods) && (/espresso/.test(q) ? 'espresso' : /filtr|v60/.test(q) ? 'filter' : null);
+    if (method) conversation.method = method;
     const term = products.flatMap(p=>p.notes).filter(n=>n.length>=4).sort((a,b)=>b.length-a.length)
       .find(n=>q.includes(normalize(n)));
     if (term) conversation.keyword=normalize(term);
     const named = products.find(p=>q.includes(normalize(p.name)));
-    const active = price || category || term || named || /odporuc|doporuc|ukaz|porovna|bez limitu|odznova|znovu/.test(q);
+    const active = price || category || method || term || named || /odporuc|doporuc|ukaz|porovna|bez limitu|odznova|znovu/.test(q);
     if (!active) addMessage(copy.help);
     else {
       const rows=named?match(conversation).filter(p=>p===named):match(conversation).slice(0,3);
@@ -195,7 +199,10 @@ function init(config) {
     submit(byId('query').value);
     byId('query').value='';
   };
-  byId('suggestions').append(...config.prompts.map(prompt=>action(prompt,()=>submit(prompt))));
+  byId('suggestions').append(...config.prompts.map(prompt=>action(prompt,()=>{
+    for (const key of Object.keys(conversation)) delete conversation[key];
+    submit(prompt);
+  })));
   addMessage(copy.greeting);
   render();
 }
