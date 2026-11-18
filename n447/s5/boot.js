@@ -12,6 +12,7 @@
   const slug = host || new URLSearchParams(location.search).get('demo') || '';
   const coffee = COFFEE.includes(slug);
   document.body.dataset.series = 's5';
+  if (REG[slug]?.usageFamily) document.body.dataset.s5ReviewedFragrance = '';
   if (REG[slug]?.series !== 's5') throw Error('Not an S5 demo');
   if (!coffee && !COSMETICS[slug]) throw Error('Unknown demo');
   if (['/n447/s5/brands/'+slug+'.css'].includes(REG[slug]?.companyCss)) {
