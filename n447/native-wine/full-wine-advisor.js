@@ -69,37 +69,18 @@
  const descriptions={crisp:'Sviežosť a ľahkosť uvedená v opise vína',fruity:'Ovocný charakter podľa opisu vinárstva',bold:'Výraznejšie telo alebo drevo v opise vína',white:'Biele vína z aktuálnej ponuky',red:'Červené vína z aktuálnej ponuky',rose:'Ružové vína z aktuálnej ponuky',orange:'Víno označené ako oranžové',sparkling:'Sekt, perlivé víno alebo pét-nat',mixed:'Rozhodnú ďalšie odpovede',dry:'Najmenej sladký štýl podľa označenia vinárstva','medium-dry':'Jemný zvyškový cukor','medium-sweet':'Výraznejšie sladký štýl',sweet:'Víno označené ako sladké',any:'Rozhodnú ďalšie odpovede',simple:'Jedno víno podľa vašich odpovedí',basic:'Najviac tri rôzne vhodné vína',full:'Najviac štyri rôzne vhodné vína',target:'Jedna fľaša vybraná podľa vášho vkusu',fish:'Ľahšie jedlá a letná kuchyňa',meat:'Steak, divina a výdatné jedlá',cheese:'Syrová misa alebo sladký dezert',noFood:'Bez požiadavky na párovanie'};
  if(slug==='valka'){labels.simple='Jedno balenie vína';descriptions.simple='Jedno víno podľa vašich odpovedí';descriptions.target='Víno vybrané podľa vášho vkusu';}
  const scene=v=>({dry:'crisp','medium-dry':'fruity','medium-sweet':'sweet',mixed:'any',noFood:'any',orange:'white',any:'any'})[v]||v;
- const photoKey=src=>String(src||'').replace(/^https?:/,'').split('?')[0].split('#')[0];
- /* Use distinct photographs from this winery throughout a question. */
- function quantity(value,used){
-  const count=({simple:1,target:1,basic:3,full:4})[value];
-  const pool=[...engine.matches(state.answers),...catalogue.products.filter(p=>p.kind==='Víno'&&p.available!==false)];
-  const shown=[];
-  for(const p of pool){if(!p.photo||used.has(photoKey(p.photo)))continue;used.add(photoKey(p.photo));shown.push(p);if(shown.length===count)break;}
-  return '<span class="cx-wine-bottles" data-count="'+shown.length+'">'+shown.map(p=>'<img src="'+esc(p.photo)+'" alt="" loading="eager">').join('')+'</span>';
- }
- function answerPhoto(step,value,used){
-  const actual=()=>engine.matches({...state.answers,[step.key]:value}).find(p=>p.photo&&!used.has(photoKey(p.photo)));
-  let photo=(value==='orange'||value==='medium-sweet')?actual()?.photo:null;
-  photo=photo||window.COSMETICS_DEMOS.semanticPhotos[scene(value)]||'/assets/vino/choice-any.jpg';
-  if(used.has(photoKey(photo)))photo=actual()?.photo;
-  if(!photo)return '';
-  used.add(photoKey(photo));
+ function answerPhoto(step,value){
+  if(step.key==='budget'||step.key==='year')return '';
+  const photo=window.COSMETICS_DEMOS.semanticPhotos[scene(value)]||'/assets/vino/choice-any.jpg';
   return '<img src="'+esc(photo)+'" alt="" loading="eager">';
  }
  function options(step){
   const real=step.options.filter(v=>v!=='any'&&v!=='mixed'),list=real.length>3?real:step.options,remaining=list.slice(state.page*3),current=remaining.length>4?remaining.slice(0,3):remaining,next=remaining.length>4;
-  const budget=step.key==='budget',used=new Set();
-  const budgetPhoto=value=>{
-   const pool=engine.matches({...state.answers,budget:value||''}).filter(p=>p.photo).sort((a,b)=>b.priceAmount-a.priceAmount);
-   const p=pool.find(p=>!used.has(photoKey(p.photo)))||pool[0];
-   if(p)used.add(photoKey(p.photo));
-   return p?'<img src="'+esc(p.photo)+'" alt="" loading="eager">':'';
-  };
+  const budget=step.key==='budget', textOnly=budget||step.key==='year';
   const card=v=>{
-   const photo=answerPhoto(step,v,used);
+   const photo=answerPhoto(step,v);
    const title=budget?v?'Do '+v+' '+(engine.matches({...state.answers,budget:''})[0]?.currency==='CZK'?'Kč':'€'):'Bez limitu':step.key==='year'&&v!=='any'?'Ročník '+v:labels[v];
-   return '<button type="button" class="cx-quality-option cx-catalogue-option'+(budget?' is-budget-answer':'')+'" data-choice="'+esc(v)+'"><span class="cx-quality-photo '+(budget?'is-budget-photo':'is-scene')+'">'+photo+'</span><span class="cx-quality-copy"><b>'+esc(title)+'</b><small>'+esc(budget?'Limit na celú odporúčanú zostavu':step.key==='grape'?(v==='any'?'Neuprednostňujem konkrétnu odrodu':'Výber podľa odrody hrozna'):step.key==='year'?(v==='any'?'Ročník nechám na odporúčanie':'Konkrétny ročník vína'):descriptions[v])+'</small></span></button>';
+   return '<button type="button" class="cx-quality-option cx-catalogue-option'+(textOnly?' is-text-answer':'')+'" data-choice="'+esc(v)+'">'+(photo?'<span class="cx-quality-photo is-scene">'+photo+'</span>':'')+'<span class="cx-quality-copy"><b>'+esc(title)+'</b><small>'+esc(budget?'Limit na celú odporúčanú zostavu':step.key==='year'?(v==='any'?'Ročník nechám na odporúčanie':'Konkrétny ročník vína'):descriptions[v])+'</small></span></button>';
   };
   return '<div class="cx-catalogue-options'+(budget?' cx-budget-options':'')+'">'+current.map(card).join('')+(next?'<button class="cx-quality-option cx-catalogue-option" type="button" data-page-next><span class="cx-quality-photo is-scene"><img src="/assets/vino/choice-any.jpg" alt=""></span><span class="cx-quality-copy"><b>Ďalšie možnosti</b><small>Z celej ponuky vinárstva</small></span></button>':'')+'</div>';
  }
@@ -110,7 +91,7 @@
  function settle(){const copies=[...panel.querySelectorAll('.cx-quality-copy')];copies.forEach(e=>e.style.minHeight='');const h=Math.max(0,...copies.map(e=>e.offsetHeight));copies.forEach(e=>e.style.minHeight=h+'px');}
  function render(){const steps=engine.steps(state.answers),step=steps[state.step];let heading,content;
  if(state.other){const other=catalogue.products.filter(p=>p.kind!=='Víno'&&p.available!==false);heading='Ďalšie produkty z ponuky';content=other.slice(0,state.limit).map(p=>product(p)).join('')+(other.length>state.limit?'<button class="cx-quality-more" data-next>Načítať ďalšie</button>':'');}
- else if(step){heading=({grape:'Akú odrodu uprednostníte?',year:'Máte obľúbený ročník?',color:'Aké víno máte najradšej?',style:'Akú sladkosť uprednostníte?',quantity:'Koľko vín hľadáte?',food:'K čomu bude víno?',budget:'Do akej sumy vyberáme?',character:'Aký charakter má víno mať?'})[step.key];content=options(step);if(state.step===0&&catalogue.products.some(p=>p.kind!=='Víno'&&p.available!==false))content+='<button type="button" class="cx-quality-more" data-other>Iné produkty z ponuky</button>';}
+ else if(step){heading=({year:'Máte obľúbený ročník?',color:'Aké víno máte najradšej?',style:'Akú sladkosť uprednostníte?',quantity:'Koľko vín hľadáte?',food:'K čomu bude víno?',budget:'Do akej sumy vyberáme?',character:'Aký charakter má víno mať?'})[step.key];content=options(step);if(state.step===0&&catalogue.products.some(p=>p.kind!=='Víno'&&p.available!==false))content+='<button type="button" class="cx-quality-more" data-other>Iné produkty z ponuky</button>';}
  else {
   const matches=engine.recommend(state.answers),count=({simple:1,target:1,basic:3,full:4})[state.answers.quantity]||1,selected=matches.slice(0,count),g=resultGuide();
   heading=matches.length?'Toto vám odporúčam':'Takúto kombináciu v ponuke nemáme';

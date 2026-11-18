@@ -404,6 +404,298 @@ globalThis.CX_WINE_CATALOGUES["vinocapka"]={
         "style": "dry",
         "year": "2021"
       }
+    },
+    {
+      "id": "veltlinske-zelene-2020-terroir-kukvicka",
+      "name": "Veltlínské zelené 2020 Terroir Kukvička",
+      "url": "https://eshop.vinocapka.cz/terroir/veltlinske-zelene-2020-terroir-kukvicka/",
+      "priceAmount": 350,
+      "volume": "0,75 l",
+      "kind": "Víno",
+      "group": "white",
+      "notes": [
+        "citrusy, bílý pepř a medové plástve"
+      ],
+      "photo": "https://cdn.myshoptet.com/usr/eshop.vinocapka.cz/user/shop/detail/203-1_vz-terr-k-2020.jpg?ff=1&x=423&y=318&q=85&ts=66fa6f3a&sg=2175fb9d",
+      "category": "white",
+      "currency": "CZK",
+      "price": "350 Kč",
+      "available": true,
+      "isSample": false,
+      "tags": [
+        "white",
+        "dry",
+        "bold"
+      ],
+      "reason": "citrusy, bílý pepř a medové plástve.",
+      "description": "Citrusy, bílý pepř a medové plástve.",
+      "source": {
+        "url": "https://eshop.vinocapka.cz/terroir/veltlinske-zelene-2020-terroir-kukvicka/",
+        "stock": "InStock",
+        "priceFrom": false,
+        "photoUrl": "https://cdn.myshoptet.com/usr/eshop.vinocapka.cz/user/shop/detail/203-1_vz-terr-k-2020.jpg?ff=1&x=423&y=318&q=85&ts=66fa6f3a&sg=2175fb9d"
+      },
+      "wineFacts": {
+        "color": "white",
+        "style": "dry",
+        "year": "2020"
+      }
+    },
+    {
+      "id": "ryzlink-rynsky-2020-terroir-nechory",
+      "name": "Ryzlink rýnský 2020 Terroir Nechory",
+      "url": "https://eshop.vinocapka.cz/terroir/ryzlink-rynsky-2020-terroir-nechory/",
+      "priceAmount": 350,
+      "volume": "0,75 l",
+      "kind": "Víno",
+      "group": "white",
+      "notes": [
+        "sušené meruňky, lipový květ a medové tóny"
+      ],
+      "photo": "https://cdn.myshoptet.com/usr/eshop.vinocapka.cz/user/shop/detail/197_rr-terr-n-2020.jpg?ff=1&x=423&y=318&q=85&ts=66fa6f00&sg=2175fb9d",
+      "category": "white",
+      "currency": "CZK",
+      "price": "350 Kč",
+      "available": true,
+      "isSample": false,
+      "tags": [
+        "white",
+        "dry",
+        "bold"
+      ],
+      "reason": "sušené meruňky, lipový květ a medové tóny.",
+      "description": "Sušené meruňky, lipový květ a medové tóny.",
+      "source": {
+        "url": "https://eshop.vinocapka.cz/terroir/ryzlink-rynsky-2020-terroir-nechory/",
+        "stock": "InStock",
+        "priceFrom": false,
+        "photoUrl": "https://cdn.myshoptet.com/usr/eshop.vinocapka.cz/user/shop/detail/197_rr-terr-n-2020.jpg?ff=1&x=423&y=318&q=85&ts=66fa6f00&sg=2175fb9d"
+      },
+      "wineFacts": {
+        "color": "white",
+        "style": "dry",
+        "year": "2020"
+      }
+    },
+    {
+      "id": "ryzlink-rynsky-2020-terroir-podkovne",
+      "name": "Ryzlink rýnský 2020 Terroir Podkovné",
+      "url": "https://eshop.vinocapka.cz/terroir/ryzlink-rynsky-2020-terroir-podkovne/",
+      "priceAmount": 350,
+      "volume": "0,75 l",
+      "kind": "Víno",
+      "group": "white",
+      "notes": [
+        "zralé meruňky, šťavnatá kyselinka a minerální závěr"
+      ],
+      "photo": "https://cdn.myshoptet.com/usr/eshop.vinocapka.cz/user/shop/detail/200_rr-terr-p-2020.jpg?ff=1&x=423&y=318&q=85&ts=66fa6f28&sg=2175fb9d",
+      "category": "white",
+      "currency": "CZK",
+      "price": "350 Kč",
+      "available": true,
+      "isSample": false,
+      "tags": [
+        "white",
+        "dry",
+        "fruity"
+      ],
+      "reason": "zralé meruňky, šťavnatá kyselinka a minerální závěr.",
+      "description": "Zralé meruňky, šťavnatá kyselinka a minerální závěr.",
+      "source": {
+        "url": "https://eshop.vinocapka.cz/terroir/ryzlink-rynsky-2020-terroir-podkovne/",
+        "stock": "InStock",
+        "priceFrom": false,
+        "photoUrl": "https://cdn.myshoptet.com/usr/eshop.vinocapka.cz/user/shop/detail/200_rr-terr-p-2020.jpg?ff=1&x=423&y=318&q=85&ts=66fa6f28&sg=2175fb9d"
+      },
+      "wineFacts": {
+        "color": "white",
+        "style": "dry",
+        "year": "2020"
+      }
+    },
+    {
+      "id": "riesling-2025",
+      "name": "Riesling 2025",
+      "url": "https://eshop.vinocapka.cz/riesling/riesling-2025/",
+      "priceAmount": 220,
+      "volume": "0,75 l",
+      "kind": "Víno",
+      "group": "white",
+      "notes": [
+        "svěží, suchý kabinetní styl z tratě Na Strání"
+      ],
+      "photo": "https://cdn.myshoptet.com/usr/eshop.vinocapka.cz/user/shop/detail/541_rr-kab-2025.jpg?ff=1&x=423&y=318&q=85&ts=6a7ccc86&sg=2175fb9d",
+      "category": "white",
+      "currency": "CZK",
+      "price": "220 Kč",
+      "available": true,
+      "isSample": false,
+      "tags": [
+        "white",
+        "dry",
+        "crisp",
+        "fish"
+      ],
+      "reason": "svěží, suchý kabinetní styl z tratě Na Strání.",
+      "description": "Svěží, suchý kabinetní styl z tratě Na Strání.",
+      "source": {
+        "url": "https://eshop.vinocapka.cz/riesling/riesling-2025/",
+        "stock": "InStock",
+        "priceFrom": false,
+        "photoUrl": "https://cdn.myshoptet.com/usr/eshop.vinocapka.cz/user/shop/detail/541_rr-kab-2025.jpg?ff=1&x=423&y=318&q=85&ts=6a7ccc86&sg=2175fb9d"
+      },
+      "wineFacts": {
+        "color": "white",
+        "style": "dry",
+        "year": "2025"
+      }
+    },
+    {
+      "id": "riesling-feinherb-2025",
+      "name": "Riesling Feinherb 2025",
+      "url": "https://eshop.vinocapka.cz/riesling/riesling-feinherb-2025/",
+      "priceAmount": 220,
+      "volume": "0,75 l",
+      "kind": "Víno",
+      "group": "white",
+      "notes": [
+        "jemný zbytkový cukr, ovocný charakter a svěžest"
+      ],
+      "photo": "https://cdn.myshoptet.com/usr/eshop.vinocapka.cz/user/shop/detail/536_tisk-6975.jpg?ff=1&x=423&y=318&q=85&ts=69e6a961&sg=2175fb9d",
+      "category": "white",
+      "currency": "CZK",
+      "price": "220 Kč",
+      "available": true,
+      "isSample": false,
+      "tags": [
+        "white",
+        "medium-dry",
+        "crisp",
+        "fruity",
+        "cheese"
+      ],
+      "reason": "jemný zbytkový cukr, ovocný charakter a svěžest.",
+      "description": "Jemný zbytkový cukr, ovocný charakter a svěžest.",
+      "source": {
+        "url": "https://eshop.vinocapka.cz/riesling/riesling-feinherb-2025/",
+        "stock": "InStock",
+        "priceFrom": false,
+        "photoUrl": "https://cdn.myshoptet.com/usr/eshop.vinocapka.cz/user/shop/detail/536_tisk-6975.jpg?ff=1&x=423&y=318&q=85&ts=69e6a961&sg=2175fb9d"
+      },
+      "wineFacts": {
+        "color": "white",
+        "style": "medium-dry",
+        "year": "2025"
+      }
+    },
+    {
+      "id": "ryzlink-rynsky-2024-terroir-kukvicka",
+      "name": "Ryzlink rýnský 2024 Terroir Kukvička",
+      "url": "https://eshop.vinocapka.cz/terroir/ryzlink-rynsky-2024-terroir-kukvicka/",
+      "priceAmount": 350,
+      "volume": "0,75 l",
+      "kind": "Víno",
+      "group": "white",
+      "notes": [
+        "sušené meruňky, bílé broskve, lipový květ a minerální dochuť"
+      ],
+      "photo": "https://cdn.myshoptet.com/usr/eshop.vinocapka.cz/user/shop/detail/513_capka-rr-2024-kukvicka.jpg?ff=1&x=423&y=318&q=85&ts=68dbaab6&sg=2175fb9d",
+      "category": "white",
+      "currency": "CZK",
+      "price": "350 Kč",
+      "available": true,
+      "isSample": false,
+      "tags": [
+        "white",
+        "dry",
+        "bold",
+        "fruity"
+      ],
+      "reason": "sušené meruňky, bílé broskve, lipový květ a minerální dochuť.",
+      "description": "Sušené meruňky, bílé broskve, lipový květ a minerální dochuť.",
+      "source": {
+        "url": "https://eshop.vinocapka.cz/terroir/ryzlink-rynsky-2024-terroir-kukvicka/",
+        "stock": "InStock",
+        "priceFrom": false,
+        "photoUrl": "https://cdn.myshoptet.com/usr/eshop.vinocapka.cz/user/shop/detail/513_capka-rr-2024-kukvicka.jpg?ff=1&x=423&y=318&q=85&ts=68dbaab6&sg=2175fb9d"
+      },
+      "wineFacts": {
+        "color": "white",
+        "style": "dry",
+        "year": "2024"
+      }
+    },
+    {
+      "id": "ryzlink-rynsky-2024-terroir-nechory",
+      "name": "Ryzlink rýnský 2024 Terroir Nechory",
+      "url": "https://eshop.vinocapka.cz/terroir/ryzlink-rynsky-2024-terroir-nechory/",
+      "priceAmount": 350,
+      "volume": "0,75 l",
+      "kind": "Víno",
+      "group": "white",
+      "notes": [
+        "zralé meruňky, citrusy, lehký med a svěží kyselinka"
+      ],
+      "photo": "https://cdn.myshoptet.com/usr/eshop.vinocapka.cz/user/shop/detail/516_capka-rr-2024-nechory.jpg?ff=1&x=423&y=318&q=85&ts=68dbaaac&sg=2175fb9d",
+      "category": "white",
+      "currency": "CZK",
+      "price": "350 Kč",
+      "available": true,
+      "isSample": false,
+      "tags": [
+        "white",
+        "dry",
+        "fruity"
+      ],
+      "reason": "zralé meruňky, citrusy, lehký med a svěží kyselinka.",
+      "description": "Zralé meruňky, citrusy, lehký med a svěží kyselinka.",
+      "source": {
+        "url": "https://eshop.vinocapka.cz/terroir/ryzlink-rynsky-2024-terroir-nechory/",
+        "stock": "InStock",
+        "priceFrom": false,
+        "photoUrl": "https://cdn.myshoptet.com/usr/eshop.vinocapka.cz/user/shop/detail/516_capka-rr-2024-nechory.jpg?ff=1&x=423&y=318&q=85&ts=68dbaaac&sg=2175fb9d"
+      },
+      "wineFacts": {
+        "color": "white",
+        "style": "dry",
+        "year": "2024"
+      }
+    },
+    {
+      "id": "sylvanske-zelene-2024-terroir-kukvicka",
+      "name": "Sylvánské zelené 2024 Terroir Kukvička",
+      "url": "https://eshop.vinocapka.cz/terroir/sylvanske-zelene-2024-terroir-kukvicka/",
+      "priceAmount": 350,
+      "volume": "0,75 l",
+      "kind": "Víno",
+      "group": "white",
+      "notes": [
+        "suché víno z tratě Kukvička, vinařství je doporučuje k pečeným bílým masům nebo těstovinám"
+      ],
+      "photo": "https://cdn.myshoptet.com/usr/eshop.vinocapka.cz/user/shop/detail/501_sz-terr-k-2024.jpg?ff=1&x=423&y=318&q=85&ts=6845d061&sg=2175fb9d",
+      "category": "white",
+      "currency": "CZK",
+      "price": "350 Kč",
+      "available": true,
+      "isSample": false,
+      "tags": [
+        "white",
+        "dry",
+        "fish"
+      ],
+      "reason": "suché víno z tratě Kukvička, vinařství je doporučuje k pečeným bílým masům nebo těstovinám.",
+      "description": "Suché víno z tratě Kukvička, vinařství je doporučuje k pečeným bílým masům nebo těstovinám.",
+      "source": {
+        "url": "https://eshop.vinocapka.cz/terroir/sylvanske-zelene-2024-terroir-kukvicka/",
+        "stock": "InStock",
+        "priceFrom": false,
+        "photoUrl": "https://cdn.myshoptet.com/usr/eshop.vinocapka.cz/user/shop/detail/501_sz-terr-k-2024.jpg?ff=1&x=423&y=318&q=85&ts=6845d061&sg=2175fb9d"
+      },
+      "wineFacts": {
+        "color": "white",
+        "style": "dry",
+        "year": "2024"
+      }
     }
   ]
 };
