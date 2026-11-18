@@ -51,7 +51,13 @@ globalThis.CX_CATALOGUES.sumavaforrest = {
             "podkladová báze"
           ]
         },
-        "complementForProductUrls": []
+        "complementForProductUrls": [
+          "https://www.sumavaforrest.cz/products/bejby-nebude-sedet-v-koute-serum-na-plet?variant=54967176233284"
+        ],
+        "complementEvidence": {
+          "sourceUrl": "https://www.sumavaforrest.cz/products/bejby-nebude-sedet-v-koute-serum-na-plet?variant=54967176233284",
+          "note": "Výrobce doporučuje po vstřebání séra nanést svůj oblíbený krém."
+        }
       }
     },
     {
@@ -149,19 +155,23 @@ globalThis.CX_CATALOGUES.sumavaforrest = {
       "kind": "Pleťové sérum",
       "group": "serum",
       "notes": [
-        "Péče o pleť"
+        "Aloe vera",
+        "Jojobový olej",
+        "Arganový olej"
       ],
       "photo": "/assets/s5/sumavaforrest/bejby.webp",
       "price": "655 Kč",
       "currency": "CZK",
       "category": "face",
       "tags": [
-        "Péče o pleť"
+        "Aloe vera",
+        "Jojobový olej",
+        "Arganový olej"
       ],
       "available": true,
       "isSample": false,
-      "description": "Péče o pleť.",
-      "reason": "Péče o pleť.",
+      "description": "Lehké pleťové sérum s aloe vera, jojobovým a arganovým olejem.",
+      "reason": "Lehké pleťové sérum s aloe vera, jojobovým a arganovým olejem.",
       "source": {
         "series": "s5",
         "url": "https://www.sumavaforrest.cz/products/bejby-nebude-sedet-v-koute-serum-na-plet?variant=54967176233284",
@@ -177,7 +187,9 @@ globalThis.CX_CATALOGUES.sumavaforrest = {
         "selectionTraitsEvidence": {
           "url": "https://www.sumavaforrest.cz/products/bejby-nebude-sedet-v-koute-serum-na-plet?variant=54967176233284",
           "facts": [
-            "Péče o pleť"
+            "Aloe vera",
+            "Jojobový olej",
+            "Arganový olej"
           ]
         },
         "complementForProductUrls": []

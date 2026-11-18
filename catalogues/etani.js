@@ -122,8 +122,8 @@ globalThis.CX_CATALOGUES.etani = {
       ],
       "available": true,
       "isSample": false,
-      "description": "Kyselina hyaluronová · hybridní komplex.",
-      "reason": "Kyselina hyaluronová · hybridní komplex.",
+      "description": "Lehké sérum s hybridním komplexem několika velikostí molekul kyseliny hyaluronové a glycerinem.",
+      "reason": "Lehké sérum s hybridním komplexem několika velikostí molekul kyseliny hyaluronové a glycerinem.",
       "source": {
         "series": "s5",
         "url": "https://www.etani.cz/etani-kyselina-hyaluronova-pure-serum-30-ml-hybridni-komplex-/",
