@@ -1,8 +1,21 @@
 Object.assign(window.S3_REG.demos, {
+  "cipollacaffe": {
+    "series": "s5",
+    "type": "coffee",
+    "name": "Cipolla Caffé",
+    "descriptiveChoices": true,
+    "country": "SK",
+    "logos": {
+      "landing": "/assets/s5/cipollacaffe/logo.svg",
+      "header": "/assets/s5/cipollacaffe/logo.svg",
+      "avatar": "/assets/s5/cipollacaffe/logo.svg"
+    }
+  },
   "francin": {
     "series": "s5",
     "type": "coffee",
     "name": "Francin",
+    "descriptiveChoices": true,
     "country": "CZ",
     "logos": {
       "landing": "/assets/s5/francin/logo.webp",

@@ -17,6 +17,7 @@
   const state = {answers: {}, trail: []};
   const key = (src) => String(src || '').replace(/^https?:/, '').split('?')[0].split('#')[0];
   const PHOTO = '/assets/s3/coffee/';
+  const descriptiveChoices = window.S3_REG?.demos?.[slug]?.descriptiveChoices === true;
   /* Ilustrácie jadra c2 nahrádzajú fotky, ktoré ukazujú význam voľby (zdroje: assets/s3/coffee/sources.json). */
   const illustration = (src) => { const m = String(src || '').match(/\/assets\/n447\/ilustracie\/([\w-]+)\.svg$/); return m ? m[1] : null; };
   const NOTES = {
@@ -46,18 +47,23 @@
     else if (name && /^drip-/.test(name)) wanted.push(D.drip && D.drip.photo);
     else if (o.photo) wanted.push(o.photo);
     if (String(o.value).startsWith('more:')) wanted.push('/assets/scenes/coffee-beans.jpg', '/assets/scenes/coffee-explore.jpg');
-    wanted.push(...productPhotos(next), '/assets/scenes/coffee-explore.jpg', '/assets/scenes/coffee-both.jpg', '/assets/scenes/coffee-black.jpg', '/assets/scenes/coffee-beans.jpg');
+    if (!descriptiveChoices) wanted.push(...productPhotos(next));
+    wanted.push('/assets/scenes/coffee-explore.jpg', '/assets/scenes/coffee-both.jpg', '/assets/scenes/coffee-black.jpg', '/assets/scenes/coffee-beans.jpg');
     const pick = wanted.filter(Boolean).find((src) => !used.has(key(src)));
     if (pick) used.add(key(pick));
     return pick || '/assets/quality-product-placeholder.svg';
   }
   function options(q) {
     const used = new Set();
-    const list = q.options.map((o) => ({o, photo: photoFor(q, o, used)}));
     const budget = q.key === 'budget';
-    /* s3a: rozpočet má rovnaké veľké karty ako ostatné kroky (vyplnia priestor); fotka = káva, ktorú za sumu dostanete. */
-    const card = ({o, photo}) => '<button type="button" class="cx-catalogue-option cx-quality-option' + (String(o.value).startsWith('more:') ? ' is-navigation' : '') + '" data-choice="' + esc(o.value) + '"><span class="cx-quality-photo' + (budget ? ' s3-pack-photo' : ' is-scene') + '"><img src="' + esc(photo) + '" alt="" loading="eager" onerror="this.onerror=null;this.src=\'/assets/quality-product-placeholder.svg\'"></span><span class="cx-quality-copy"><b>' + esc(o.title) + '</b><small>' + esc(o.detail || '') + '</small></span></button>';
-    return '<div style="--cx-choice-count:' + list.length + '" class="cx-catalogue-options' + (list.length === 2 ? ' cx-category-pair' : '') + '" data-count="' + list.length + '">' + list.map(card).join('') + '</div>';
+    const textOnly = descriptiveChoices && budget;
+    const card = (o) => {
+      const image = textOnly ? '' : '<span class="cx-quality-photo' + (budget ? ' s3-pack-photo' : ' is-scene') + '"><img src="' + esc(photoFor(q, o, used)) + '" alt="" loading="eager" onerror="this.onerror=null;this.src=\'/assets/quality-product-placeholder.svg\'"></span>';
+      const classes = 'cx-catalogue-option cx-quality-option' + (String(o.value).startsWith('more:') ? ' is-navigation' : '') + (textOnly ? ' is-text-answer' : '');
+      return '<button type="button" class="' + classes + '" data-choice="' + esc(o.value) + '">' + image + '<span class="cx-quality-copy"><b>' + esc(o.title) + '</b><small>' + esc(o.detail || '') + '</small></span></button>';
+    };
+    const count = q.options.length;
+    return '<div style="--cx-choice-count:' + count + '" class="cx-catalogue-options' + (count === 2 ? ' cx-category-pair' : '') + (textOnly ? ' cx-text-options' : '') + '" data-count="' + count + '">' + q.options.map(card).join('') + '</div>';
   }
 
   const shopLink = (u) => '<a href="' + esc(u) + '">' + esc(T('Pozrieť produkt', 'Zobrazit produkt')) + '</a>';

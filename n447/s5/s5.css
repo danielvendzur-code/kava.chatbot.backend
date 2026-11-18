@@ -134,3 +134,9 @@ html body[data-series=s5] #cosmetics-root#cosmetics-root#cosmetics-root #cx-widg
   align-items: stretch !important;
   justify-content: center !important;
 }
+
+body[data-series=s5][data-cosmetics-demo=cipollacaffe] #cosmetics-root#cosmetics-root .cx-owner-brand .cx-wordmark {
+  width: 78px !important;
+  height: 44px !important;
+  object-fit: contain !important;
+}

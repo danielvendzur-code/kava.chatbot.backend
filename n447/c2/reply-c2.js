@@ -104,6 +104,7 @@
     }
     if (/cokol|karamel|orech|oriesk|horka|tmav|klasick|mliek|mlek|capp|latte|automat|pakov|espresso|moka/.test(q)) {
       const recs = byTaste('choco', 'espresso');
+      if (data.espressoChatIntro) return data.espressoChatIntro + '\n' + recs.map(withTones).join('\n');
       /* s3: názov chuťovej skupiny z dát pražiarne, ak ho má (inak pôvodný text) */ return (data.tasteLabels && data.tasteLabels.choco && data.slug !== 'nordbeans' ? T('Chuť „', 'Chuť „') + data.tasteLabels.choco[0].toLowerCase() + T('“ do automatu či kávovaru majú napríklad:\n', '“ do automatu či kávovaru mají například:\n') : T('Čokoládovú a orieškovú chuť do automatu či kávovaru majú napríklad:\n', 'Čokoládovou a oříškovou chuť do automatu či kávovaru mají například:\n')) + recs.map(withTones).join('\n') + (data.beansOnly ? '' : T('\nDo automatu zvoľte zrnkovú.', '\nDo automatu zvolte zrnkovou.'));
     }
     /* s3: „menej kyslá / nízka kyslosť“ = skupina s nízkou kyslosťou, nie svieža */
