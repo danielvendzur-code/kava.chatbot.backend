@@ -115,3 +115,9 @@ body[data-series=s5][data-cosmetics-demo=myskino] #cx-widget .fr-compare-cols b{
 body[data-series=s5][data-cosmetics-demo=myskino] #cx-widget .fr-compare-cols small{display:block;font-size:10px;margin:5px 0}
 body[data-series=s5][data-cosmetics-demo=myskino] #cx-widget .fr-compare-cols p{font-size:10px!important;line-height:1.5!important}
 body[data-series=s5][data-cosmetics-demo=myskino] #cx-widget .fr-compare-cols a{color:var(--cx-brand);font-size:10px;font-weight:650}
+
+/* Product packshots need their full silhouette in the preview frame. */
+body[data-series=s5]:is([data-cosmetics-demo=blackcoffee], [data-cosmetics-demo=francin], [data-cosmetics-demo=etani], [data-cosmetics-demo=sumavaforrest], [data-cosmetics-demo=amoria], [data-cosmetics-demo=inparfemy], [data-cosmetics-demo=czechfragranceclub], [data-cosmetics-demo=spacefluid]) #cosmetics-root .cx-owner-visual > img {
+  object-fit: contain !important;
+  object-position: center !important;
+}
