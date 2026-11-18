@@ -1,0 +1,375 @@
+/* New demos: brand symbol in the launcher and chat avatars (see nove-znacky.js). */
+body[data-cx-new-mark] .cx-launcher-button.cx-launcher-has-new-mark {
+  border: 0 !important;
+  outline: 0 !important;
+  background-image: none !important;
+  background-color: var(--cx-brand) !important;
+}
+@media (hover:hover) and (pointer:fine) {
+  body[data-cx-new-mark] .cx-launcher-button.cx-launcher-has-new-mark:hover {
+    background-color: var(--cx-accent) !important;
+  }
+}
+body[data-cx-new-mark] .cx-new-mark {
+  display: block !important;
+  width: 40px !important;
+  height: 40px !important;
+  margin: auto !important;
+  background-color: #fff !important;
+  -webkit-mask: var(--cx-mark) center / contain no-repeat;
+  mask: var(--cx-mark) center / contain no-repeat;
+}
+body[data-cx-new-mark] .cx-message-avatar .cx-new-mark {
+  width: 22px !important;
+  height: 22px !important;
+}
+/* Multi-colour symbol (Biorythme mandala): own colours on a light launcher,
+   reversed colours on a dark one while hovered. */
+body[data-cx-new-mark-color] #cx-open .cx-new-mark--color {
+  width: 46px !important;
+  height: 46px !important;
+}
+body[data-cx-new-mark-color] .cx-new-mark--color {
+  background: var(--cx-mark) center / contain no-repeat !important;
+  -webkit-mask: none;
+  mask: none;
+}
+/* The id outranks the older per-demo launcher colour rules. */
+body[data-cx-new-mark-color] #cx-open.cx-launcher-button.cx-launcher-has-new-mark {
+  background-color: var(--cx-mark-bg) !important;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, .16), inset 0 0 0 1px rgba(0, 0, 0, .06) !important;
+  transition: background-color .2s ease;
+}
+body[data-cx-new-mark-color] #cosmetics-root .cx-message-avatar {
+  background: var(--cx-mark-bg) !important;
+  box-shadow: inset 0 0 0 1px var(--cx-line);
+}
+@media (hover:hover) and (pointer:fine) {
+  body[data-cx-new-mark-color] #cx-open.cx-launcher-button.cx-launcher-has-new-mark:hover {
+    background-color: var(--cx-mark-bg-hover) !important;
+  }
+  body[data-cx-new-mark-color] #cx-open.cx-launcher-has-new-mark:hover .cx-new-mark--color {
+    background-image: var(--cx-mark-reverse) !important;
+  }
+}
+/* Brands whose logo is a word, not a symbol: the whole word, sized to width. */
+body[data-cx-new-mark] .cx-new-mark--wide {
+  width: 50px !important;
+  height: 26px !important;
+}
+body[data-cx-new-mark] .cx-message-avatar .cx-new-mark--wide {
+  width: 25px !important;
+  height: 14px !important;
+}
+
+
+/* Per-winery logo sizes (square or stacked logos read small at the default). */
+body[data-cosmetics-demo="skoupil"] .cx-owner-brand .cx-logo {
+  max-height: 60px !important;
+}
+body[data-cosmetics-demo="skoupil"] .cx-widget-brand .cx-logo {
+  max-height: 42px !important;
+  filter: none !important;
+}
+body[data-cosmetics-demo="magula"] .cx-owner-brand .cx-logo {
+  max-height: 64px !important;
+}
+body[data-cosmetics-demo="magula"] .cx-widget-brand .cx-logo {
+  max-height: 40px !important;
+}
+body[data-cosmetics-demo="valka"] .cx-owner-brand .cx-logo {
+  max-width: 270px !important;
+}
+body[data-cosmetics-demo="valka"] .cx-widget-brand .cx-logo {
+  max-width: 200px !important;
+}
+@media (max-width: 520px) {
+  body[data-cosmetics-demo="valka"] .cx-owner-brand .cx-logo {
+    max-width: 200px !important;
+  }
+}
+body[data-cosmetics-demo="sabata"] .cx-owner-brand .cx-logo {
+  max-height: 68px !important;
+  max-width: 240px !important;
+}
+body[data-cosmetics-demo="sabata"] .cx-widget-brand .cx-logo {
+  max-height: 46px !important;
+  max-width: 170px !important;
+}
+@media (max-width: 520px) {
+  body[data-cosmetics-demo="sabata"] .cx-owner-brand .cx-logo {
+    max-height: 56px !important;
+  }
+}
+body[data-cosmetics-demo="dubovskygrancic"] .cx-owner-brand .cx-logo {
+  max-width: 250px !important;
+}
+body[data-cosmetics-demo="dubovskygrancic"] .cx-widget-brand .cx-logo {
+  max-width: 190px !important;
+}
+@media (max-width: 520px) {
+  body[data-cosmetics-demo="dubovskygrancic"] .cx-owner-brand .cx-logo {
+    max-width: 190px !important;
+  }
+}
+body[data-cosmetics-demo="mikulica"] .cx-owner-brand .cx-logo {
+  max-height: 56px !important;
+}
+body[data-cosmetics-demo="mikulica"] .cx-widget-brand .cx-logo {
+  max-height: 42px !important;
+}
+body[data-cosmetics-demo="rajnic"] .cx-owner-brand .cx-logo {
+  max-height: 60px !important;
+}
+body[data-cosmetics-demo="rajnic"] .cx-widget-brand .cx-logo {
+  max-height: 44px !important;
+}
+body[data-cosmetics-demo="vajbar"] .cx-owner-brand .cx-logo {
+  max-height: 52px !important;
+}
+body[data-cosmetics-demo="buchtovi"] .cx-owner-brand .cx-logo {
+  max-width: 240px !important;
+}
+body[data-cosmetics-demo="buchtovi"] .cx-widget-brand .cx-logo {
+  max-width: 180px !important;
+}
+@media (max-width: 520px) {
+  body[data-cosmetics-demo="buchtovi"] .cx-owner-brand .cx-logo {
+    max-width: 175px !important;
+  }
+}
+body[data-cosmetics-demo="pristal"] .cx-owner-brand .cx-logo {
+  max-height: 54px !important;
+}
+body[data-cosmetics-demo="pristal"] .cx-widget-brand .cx-logo {
+  max-height: 40px !important;
+  filter: none !important;
+}
+body[data-cosmetics-demo="lipa"] .cx-owner-brand .cx-logo {
+  max-height: 56px !important;
+}
+body[data-cosmetics-demo="placek"] .cx-owner-brand .cx-logo {
+  max-width: 230px !important;
+  max-height: 60px !important;
+}
+body[data-cosmetics-demo="placek"] .cx-widget-brand .cx-logo {
+  max-width: 170px !important;
+}
+@media (max-width: 520px) {
+  body[data-cosmetics-demo="placek"] .cx-owner-brand .cx-logo {
+    max-width: 170px !important;
+  }
+}
+body[data-cosmetics-demo="skovajsa"] .cx-owner-brand .cx-logo {
+  max-height: 54px !important;
+}
+body[data-cosmetics-demo="vinkor"] .cx-widget-brand .cx-logo {
+  filter: none !important;
+}
+body[data-cosmetics-demo="carpatediem"] .cx-owner-brand .cx-logo {
+  max-width: 260px !important;
+  max-height: 64px !important;
+}
+body[data-cosmetics-demo="carpatediem"] .cx-widget-brand .cx-logo {
+  filter: none !important;
+  max-width: 190px !important;
+  max-height: 46px !important;
+}
+@media (max-width: 520px) {
+  body[data-cosmetics-demo="carpatediem"] .cx-owner-brand .cx-logo {
+    max-width: 200px !important;
+  }
+}
+/* balaz */
+body[data-cosmetics-demo="balaz"] .cx-owner-brand .cx-logo {
+  max-height: 72px !important;
+  height: 72px !important;
+  width: auto !important;
+}
+body[data-cosmetics-demo="balaz"] .cx-widget-brand .cx-logo {
+  max-height: 46px !important;
+  height: 46px !important;
+  width: auto !important;
+}
+/* end balaz */
+/* zapletal */
+body[data-cosmetics-demo="zapletal"] .cx-owner-brand .cx-logo {
+  max-width: 300px !important;
+}
+body[data-cosmetics-demo="zapletal"] .cx-widget-brand .cx-logo {
+  max-width: 200px !important;
+}
+@media (max-width: 520px) {
+  body[data-cosmetics-demo="zapletal"] .cx-owner-brand .cx-logo {
+    max-width: 210px !important;
+  }
+}
+/* end zapletal */
+/* malik */
+body[data-cosmetics-demo="malik"] .cx-owner-brand .cx-logo {
+  max-height: 76px !important;
+  height: 76px !important;
+  width: auto !important;
+}
+body[data-cosmetics-demo="malik"] .cx-widget-brand .cx-logo {
+  max-height: 46px !important;
+  height: 46px !important;
+  width: auto !important;
+}
+/* end malik */
+/* herzan */
+body[data-cosmetics-demo="herzan"] .cx-owner-brand .cx-logo {
+  max-width: 300px !important;
+}
+body[data-cosmetics-demo="herzan"] .cx-widget-brand .cx-logo {
+  max-width: 200px !important;
+}
+@media (max-width: 520px) {
+  body[data-cosmetics-demo="herzan"] .cx-owner-brand .cx-logo {
+    width: 220px !important;
+    max-width: 100% !important;
+    height: auto !important;
+  }
+  body[data-cosmetics-demo="herzan"] .cx-owner-brand { flex: 1; }
+  body[data-cosmetics-demo="herzan"] .cx-owner-contact { flex-shrink: 0; }
+}
+/* end herzan */
+/* dvaduby */
+body[data-cosmetics-demo="dvaduby"] .cx-owner-brand .cx-logo {
+  max-height: 62px !important;
+  height: 62px !important;
+  width: auto !important;
+}
+body[data-cosmetics-demo="dvaduby"] .cx-widget-brand .cx-logo {
+  max-height: 40px !important;
+  height: 40px !important;
+  width: auto !important;
+}
+/* end dvaduby */
+/* velkeer */
+body[data-cosmetics-demo="velkeer"] .cx-owner-brand .cx-logo {
+  max-height: 62px !important;
+  height: 62px !important;
+  width: auto !important;
+}
+body[data-cosmetics-demo="velkeer"] .cx-widget-brand .cx-logo {
+  max-height: 40px !important;
+  height: 40px !important;
+  width: auto !important;
+}
+/* end velkeer */
+/* bukovsky */
+body[data-cosmetics-demo="bukovsky"] .cx-owner-brand .cx-logo {
+  max-height: 58px !important;
+  height: 58px !important;
+  width: auto !important;
+}
+body[data-cosmetics-demo="bukovsky"] .cx-widget-brand .cx-logo {
+  max-height: 40px !important;
+  height: 40px !important;
+  width: auto !important;
+}
+@media (max-width: 520px) {
+  body[data-cosmetics-demo="bukovsky"] .cx-owner-brand .cx-logo {
+    max-height: 46px !important;
+    height: 46px !important;
+  }
+}
+/* end bukovsky */
+/* kosek */
+body[data-cosmetics-demo="kosek"] .cx-owner-brand .cx-logo {
+  max-height: 60px !important;
+  height: 60px !important;
+  width: auto !important;
+}
+body[data-cosmetics-demo="kosek"] .cx-widget-brand .cx-logo {
+  max-height: 40px !important;
+  height: 40px !important;
+  width: auto !important;
+}
+/* end kosek */
+
+/* Víno Zeliska: official logo and full photograph collage. */
+body[data-cosmetics-demo="zeliska"] .cx-owner-brand .cx-logo { max-width:260px; max-height:60px; }
+body[data-cosmetics-demo="zeliska"] .cx-head-brand .cx-logo { width:172px; max-height:48px; object-fit:contain; }
+body[data-cosmetics-demo="zeliska"][data-cx-hero-single] .cx-owner-visual img { padding:0 !important; }
+
+
+/* Official silver / bronze crest from silinek.eu. */
+body[data-cosmetics-demo="silinek"] .cx-owner-brand .cx-logo { height:66px !important; max-height:66px !important; width:auto !important; }
+body[data-cosmetics-demo="silinek"] .cx-widget-brand .cx-logo { height:38px !important; max-height:38px !important; width:auto !important; }
+@media(max-width:520px){body[data-cosmetics-demo="silinek"] .cx-owner-brand .cx-logo { height:54px !important; max-height:54px !important; }}
+
+body[data-cosmetics-demo="silinek"] #cosmetics-root .cx-message-avatar { width:36px !important; height:36px !important; flex:0 0 36px !important; }
+
+/* Šilinek: official bottles remain visible over the old thematic-photo layer. */
+body[data-cosmetics-demo="silinek"] #cosmetics-root .cx-message-avatar { min-width:36px !important; max-width:36px !important; min-height:36px !important; max-height:36px !important; }
+body[data-cosmetics-demo="silinek"] #cosmetics-root .cx-option[data-value="white"] .cx-option-photo { background-image:url("/assets/vino/silinek-rv25.jpg") !important; background-size:contain !important; }
+body[data-cosmetics-demo="silinek"] #cosmetics-root .cx-option[data-value="red"] .cx-option-photo { background-image:url("/assets/vino/silinek-df25.jpg") !important; background-size:contain !important; }
+body[data-cosmetics-demo="silinek"] #cosmetics-root .cx-option[data-value="rose"] .cx-option-photo { background-image:url("/assets/vino/silinek-ro25.jpg") !important; background-size:contain !important; }
+body[data-cosmetics-demo="silinek"] #cosmetics-root .cx-option[data-value="sparkling"] .cx-option-photo { background-image:url("/assets/vino/silinek-nb21.jpg") !important; background-size:contain !important; }
+body[data-cosmetics-demo="silinek"] #cosmetics-root .cx-option[data-value="crisp"] .cx-option-photo { background-image:url("/assets/vino/silinek-vz24.jpg") !important; background-size:contain !important; }
+body[data-cosmetics-demo="silinek"] #cosmetics-root .cx-option[data-value="fruity"] .cx-option-photo { background-image:url("/assets/vino/silinek-hi24.jpg") !important; background-size:contain !important; }
+body[data-cosmetics-demo="silinek"] #cosmetics-root .cx-option[data-value="bold"] .cx-option-photo { background-image:url("/assets/vino/silinek-cb23.jpg") !important; background-size:contain !important; }
+body[data-cosmetics-demo="silinek"] #cosmetics-root .cx-option[data-value="sweet"] .cx-option-photo { background-image:url("/assets/vino/silinek-db.jpg") !important; background-size:contain !important; }
+body[data-cosmetics-demo="silinek"] #cosmetics-root .cx-option[data-value="simple"] .cx-option-photo { background-image:url("/assets/vino/silinek-rv24.jpg") !important; background-size:contain !important; }
+body[data-cosmetics-demo="silinek"] #cosmetics-root .cx-option[data-value="basic"] .cx-option-photo { background-image:url("/assets/vino/silinek-mm24.jpg") !important; background-size:contain !important; }
+body[data-cosmetics-demo="silinek"] #cosmetics-root .cx-option[data-value="full"] .cx-option-photo { background-image:url("/assets/vino/silinek-nc20.jpg") !important; background-size:contain !important; }
+body[data-cosmetics-demo="silinek"] #cosmetics-root .cx-option[data-value="target"] .cx-option-photo { background-image:url("/assets/vino/silinek-nb21.jpg") !important; background-size:contain !important; }
+body[data-cosmetics-demo="silinek"] #cosmetics-root .cx-option[data-value="fish"] .cx-option-photo { background-image:url("/assets/vino/silinek-rv25.jpg") !important; background-size:contain !important; }
+body[data-cosmetics-demo="silinek"] #cosmetics-root .cx-option[data-value="meat"] .cx-option-photo { background-image:url("/assets/vino/silinek-zw22.jpg") !important; background-size:contain !important; }
+body[data-cosmetics-demo="silinek"] #cosmetics-root .cx-option[data-value="cheese"] .cx-option-photo { background-image:url("/assets/vino/silinek-rs25.jpg") !important; background-size:contain !important; }
+body[data-cosmetics-demo="silinek"] #cosmetics-root .cx-option[data-value="any"] .cx-option-photo { background-image:url("/assets/vino/silinek-fr24.jpg") !important; background-size:contain !important; }
+
+/* Vinařství Luboš Strapina: official logo and full photograph collage. */
+body[data-cosmetics-demo="strapina"] .cx-owner-brand .cx-logo { max-width:260px; max-height:60px; }
+body[data-cosmetics-demo="strapina"] .cx-head-brand .cx-logo { width:172px; max-height:48px; object-fit:contain; }
+body[data-cosmetics-demo="strapina"][data-cx-hero-single] .cx-owner-visual img { padding:0 !important; }
+
+/* Full four-bottle collages for the new wine demos. */
+body[data-cosmetics-demo="burian"][data-cx-hero-single] .cx-owner-visual img,
+body[data-cosmetics-demo="balaz"][data-cx-hero-single] .cx-owner-visual img,
+body[data-cosmetics-demo="zapletal"][data-cx-hero-single] .cx-owner-visual img,
+body[data-cosmetics-demo="malik"][data-cx-hero-single] .cx-owner-visual img,
+body[data-cosmetics-demo="herzan"][data-cx-hero-single] .cx-owner-visual img,
+body[data-cosmetics-demo="dvaduby"][data-cx-hero-single] .cx-owner-visual img,
+body[data-cosmetics-demo="velkeer"][data-cx-hero-single] .cx-owner-visual img,
+body[data-cosmetics-demo="bukovsky"][data-cx-hero-single] .cx-owner-visual img,
+body[data-cosmetics-demo="kosek"][data-cx-hero-single] .cx-owner-visual img,
+body[data-cosmetics-demo="silinek"][data-cx-hero-single] .cx-owner-visual img { padding:0 !important; }
+
+/* Vinařství Roman Antoš: official logo and full photograph collage. */
+body[data-cosmetics-demo="antos"] .cx-owner-brand .cx-logo { max-width:260px; max-height:60px; }
+body[data-cosmetics-demo="antos"] .cx-head-brand .cx-logo { width:172px; max-height:48px; object-fit:contain; }
+body[data-cosmetics-demo="antos"][data-cx-hero-single] .cx-owner-visual img { padding:0 !important; }
+
+/* Pivnica Brhlovce: official logo and full photograph collage. */
+body[data-cosmetics-demo="brhlovce"] .cx-owner-brand .cx-logo { max-width:260px; max-height:60px; }
+body[data-cosmetics-demo="brhlovce"] .cx-head-brand .cx-logo { width:172px; max-height:48px; object-fit:contain; }
+body[data-cosmetics-demo="brhlovce"][data-cx-hero-single] .cx-owner-visual img { padding:0 !important; }
+
+/* Vinařství Langr: official logo and full photograph collage. */
+body[data-cosmetics-demo="langr"] .cx-owner-brand .cx-logo { max-width:260px; max-height:60px; }
+body[data-cosmetics-demo="langr"] .cx-head-brand .cx-logo { width:172px; max-height:48px; object-fit:contain; }
+body[data-cosmetics-demo="langr"][data-cx-hero-single] .cx-owner-visual img { padding:0 !important; }
+
+/* Langr: actual catalogue bottles in all four photo steps and the official leaf in 36px avatars. */
+body[data-cosmetics-demo="langr"] #cosmetics-root .cx-message-avatar { width:36px !important; height:36px !important; min-width:36px !important; max-width:36px !important; min-height:36px !important; max-height:36px !important; flex:0 0 36px !important; }
+body[data-cosmetics-demo="langr"] .cx-owner-brand .cx-logo { height:56px !important; max-height:56px !important; width:auto !important; }
+body[data-cosmetics-demo="langr"] .cx-widget-brand .cx-logo { height:40px !important; max-height:40px !important; width:auto !important; }
+body[data-cosmetics-demo="langr"] #cosmetics-root .cx-option[data-value="white"] .cx-option-photo { background-image:url("/assets/vino/langr-vz24.jpg") !important; background-size:contain !important; background-color:#fff !important; }
+body[data-cosmetics-demo="langr"] #cosmetics-root .cx-option[data-value="red"] .cx-option-photo { background-image:url("/assets/vino/langr-zw22.jpg") !important; background-size:contain !important; background-color:#fff !important; }
+body[data-cosmetics-demo="langr"] #cosmetics-root .cx-option[data-value="rose"] .cx-option-photo { background-image:url("/assets/vino/langr-ro24.jpg") !important; background-size:contain !important; background-color:#fff !important; }
+body[data-cosmetics-demo="langr"] #cosmetics-root .cx-option[data-value="sparkling"] .cx-option-photo { background-image:url("/assets/vino/langr-fr25.jpg") !important; background-size:contain !important; background-color:#fff !important; }
+body[data-cosmetics-demo="langr"] #cosmetics-root .cx-option[data-value="dry"] .cx-option-photo { background-image:url("/assets/vino/langr-vz24.jpg") !important; background-size:contain !important; background-color:#fff !important; }
+body[data-cosmetics-demo="langr"] #cosmetics-root .cx-option[data-value="medium-dry"] .cx-option-photo { background-image:url("/assets/vino/langr-vz23.jpg") !important; background-size:contain !important; background-color:#fff !important; }
+body[data-cosmetics-demo="langr"] #cosmetics-root .cx-option[data-value="medium-sweet"] .cx-option-photo { background-image:url("/assets/vino/langr-sj23.jpg") !important; background-size:contain !important; background-color:#fff !important; }
+body[data-cosmetics-demo="langr"] #cosmetics-root .cx-option[data-value="sweet"] .cx-option-photo { background-image:url("/assets/vino/langr-pa23.jpg") !important; background-size:contain !important; background-color:#fff !important; }
+body[data-cosmetics-demo="langr"] #cosmetics-root .cx-option[data-value="simple"] .cx-option-photo { background-image:url("/assets/vino/langr-la24.jpg") !important; background-size:contain !important; background-color:#fff !important; }
+body[data-cosmetics-demo="langr"] #cosmetics-root .cx-option[data-value="basic"] .cx-option-photo { background-image:url("/assets/vino/langr-mt23.jpg") !important; background-size:contain !important; background-color:#fff !important; }
+body[data-cosmetics-demo="langr"] #cosmetics-root .cx-option[data-value="full"] .cx-option-photo { background-image:url("/assets/vino/langr-fr25.jpg") !important; background-size:contain !important; background-color:#fff !important; }
+body[data-cosmetics-demo="langr"] #cosmetics-root .cx-option[data-value="target"] .cx-option-photo { background-image:url("/assets/vino/langr-pa23.jpg") !important; background-size:contain !important; background-color:#fff !important; }
+body[data-cosmetics-demo="langr"] #cosmetics-root .cx-option[data-value="fish"] .cx-option-photo { background-image:url("/assets/vino/langr-vz24.jpg") !important; background-size:contain !important; background-color:#fff !important; }
+body[data-cosmetics-demo="langr"] #cosmetics-root .cx-option[data-value="meat"] .cx-option-photo { background-image:url("/assets/vino/langr-zw22.jpg") !important; background-size:contain !important; background-color:#fff !important; }
+body[data-cosmetics-demo="langr"] #cosmetics-root .cx-option[data-value="cheese"] .cx-option-photo { background-image:url("/assets/vino/langr-rs23.jpg") !important; background-size:contain !important; background-color:#fff !important; }
+body[data-cosmetics-demo="langr"] #cosmetics-root .cx-option[data-value="any"] .cx-option-photo { background-image:url("/assets/vino/langr-sj23.jpg") !important; background-size:contain !important; background-color:#fff !important; }

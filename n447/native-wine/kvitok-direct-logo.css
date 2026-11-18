@@ -1,0 +1,92 @@
+/* Kvitok-only final polish. Keep all other skincare demos untouched. */
+body[data-cosmetics-demo="kvitok"] .cx-launcher-button,
+body[data-cosmetics-demo="kvitok"] .cx-launcher-button:hover,
+body[data-cosmetics-demo="kvitok"] .cx-launcher-button:focus-visible,
+body[data-cosmetics-demo="kvitok"] .cx-launcher-button.cx-launcher-has-image-logo,
+body[data-cosmetics-demo="kvitok"] .cx-launcher-button.cx-launcher-has-image-logo:hover {
+  padding: 0 !important;
+  overflow: hidden !important;
+  border: 0 !important;
+  outline: 0 !important;
+  background-image: none !important;
+  background-color: var(--cx-brand) !important;
+  box-shadow: none !important;
+}
+
+/* Closed preview: same green bubble as before, but only the clean white Kvitok
+   lettering inside it. No inner badge, ring, outline or extra coloured disc. */
+body[data-cosmetics-demo="kvitok"] .cx-launcher-button > img,
+body[data-cosmetics-demo="kvitok"] .cx-kvitok-direct-mark,
+body[data-cosmetics-demo="kvitok"] .cx-kvitok-launcher-clean {
+  display: block !important;
+  width: 76% !important;
+  height: auto !important;
+  max-width: 60px !important;
+  max-height: 38px !important;
+  margin: auto !important;
+  padding: 0 !important;
+  border: 0 !important;
+  outline: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  filter: none !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  transform: none !important;
+  mix-blend-mode: normal !important;
+}
+
+/* Open widget header: restore the previously approved clean white wordmark. */
+body[data-cosmetics-demo="kvitok"] .cx-widget-brand > img.cx-kvitok-header-clean {
+  display: block !important;
+  width: 82px !important;
+  height: 32px !important;
+  max-width: 82px !important;
+  max-height: 32px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  outline: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  filter: none !important;
+  object-fit: contain !important;
+  object-position: left center !important;
+}
+
+/* Message avatar: keep it deliberately simple; do not crop or distort the
+   source badge. */
+body[data-cosmetics-demo="kvitok"] .cx-message-avatar {
+  padding: 0 !important;
+  overflow: hidden !important;
+  border-radius: 50% !important;
+  background: var(--cx-brand) !important;
+  color: #fff !important;
+  display: grid !important;
+  place-items: center !important;
+}
+body[data-cosmetics-demo="kvitok"] .cx-kvitok-message-letter {
+  display: block !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  color: #fff !important;
+  -webkit-text-fill-color: #fff !important;
+  font-family: Georgia, "Times New Roman", serif !important;
+  font-size: 19px !important;
+  font-style: italic !important;
+  font-weight: 700 !important;
+  line-height: 1 !important;
+  letter-spacing: -.04em !important;
+  transform: translateY(-1px) !important;
+}
+body[data-cosmetics-demo="kvitok"] .cx-kvitok-message-k {
+  display: none !important;
+}
+
+body[data-cosmetics-demo="kvitok"] .cx-kvitok-fallback-wordmark {
+  display: none !important;
+}

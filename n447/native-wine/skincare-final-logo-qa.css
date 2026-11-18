@@ -1,0 +1,163 @@
+/* Final launcher logo QA.
+   PONIO keeps its approved launcher treatment. Header colours stay untouched.
+   The established launcher colours/geometry stay the same; this layer only
+   removes unwanted outlines, keeps real marks legible and fixes targeted logo
+   contrast issues. */
+
+body[data-cosmetics-demo]:not([data-cosmetics-demo="ponio"]) .cx-owner-kicker::before {
+  content: "" !important;
+  display: block !important;
+  width: 24px !important;
+  min-width: 24px !important;
+  height: 2px !important;
+  border: 0 !important;
+  border-radius: 999px !important;
+  background: var(--cx-accent) !important;
+  box-shadow: none !important;
+}
+
+body[data-cosmetics-demo]:not([data-cosmetics-demo="ponio"]) .cx-launcher-button,
+body[data-cosmetics-demo]:not([data-cosmetics-demo="ponio"]) .cx-launcher-button.cx-launcher-has-image-logo {
+  overflow: hidden !important;
+  border: 0 !important;
+  background-image: none !important;
+  background-color: var(--cx-accent) !important;
+  color: #fff !important;
+  box-shadow: 0 18px 38px -25px color-mix(in srgb, var(--cx-accent) 68%, transparent) !important;
+}
+
+/* Real raster logos sit directly on the launcher colour. No secondary plate,
+   ring or border is introduced around the mark. */
+body[data-cosmetics-demo]:not([data-cosmetics-demo="ponio"]) .cx-launcher-real-logo {
+  display: block !important;
+  width: auto !important;
+  height: auto !important;
+  max-width: 58px !important;
+  max-height: 40px !important;
+  margin: auto !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  filter: none !important;
+  mix-blend-mode: multiply !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  transform: none !important;
+  box-sizing: border-box !important;
+}
+
+/* Wide wordmarks get almost the full usable diameter, while keeping the same
+   button geometry. */
+body[data-cosmetics-demo="syncare"] .cx-launcher-real-logo,
+body[data-cosmetics-demo="modrapupava"] .cx-launcher-real-logo,
+body[data-cosmetics-demo="facederma"] .cx-launcher-real-logo,
+body[data-cosmetics-demo="cyprianus"] .cx-launcher-real-logo,
+body[data-cosmetics-demo="bellmedi"] .cx-launcher-real-logo,
+body[data-cosmetics-demo="lavelin"] .cx-launcher-real-logo,
+body[data-cosmetics-demo="natureal"] .cx-launcher-real-logo {
+  max-width: 64px !important;
+  max-height: 36px !important;
+}
+body[data-cosmetics-demo="panakeia"] .cx-launcher-real-logo,
+body[data-cosmetics-demo="soaphoria"] .cx-launcher-real-logo,
+body[data-cosmetics-demo="fytopharma"] .cx-launcher-real-logo {
+  max-width: 62px !important;
+  max-height: 39px !important;
+}
+body[data-cosmetics-demo="kvitok"] .cx-launcher-real-logo {
+  width: 52px !important;
+  height: 52px !important;
+  max-width: 52px !important;
+  max-height: 52px !important;
+  padding: 0 !important;
+  border-radius: 50% !important;
+  object-fit: contain !important;
+}
+
+body[data-cosmetics-demo]:not([data-cosmetics-demo="ponio"]) .cx-launcher-real-wordmark {
+  max-width: 58px !important;
+  max-height: 42px !important;
+  margin: auto !important;
+  color: #fff !important;
+  -webkit-text-fill-color: #fff !important;
+  transform: none !important;
+}
+body[data-cosmetics-demo]:not([data-cosmetics-demo="ponio"]) .cx-launcher-real-wordmark * {
+  color: inherit !important;
+  -webkit-text-fill-color: inherit !important;
+}
+
+@media (hover:hover) and (pointer:fine) {
+  body[data-cosmetics-demo]:not([data-cosmetics-demo="ponio"]) .cx-launcher-button:hover,
+  body[data-cosmetics-demo]:not([data-cosmetics-demo="ponio"]) .cx-launcher-button.cx-launcher-has-image-logo:hover {
+    border: 0 !important;
+    background-image: none !important;
+    background-color: var(--cx-brand) !important;
+    box-shadow: 0 18px 38px -25px color-mix(in srgb, var(--cx-brand) 68%, transparent) !important;
+    transform: translateY(-2px) !important;
+  }
+}
+
+/* TWO and BIOFY retain their approved treatment. The remaining demos keep the
+   same base/hover colours as before; the unwanted outer ring stays removed. */
+body[data-cosmetics-demo]:not([data-cosmetics-demo="ponio"]):not([data-cosmetics-demo="two"]):not([data-cosmetics-demo="biofy"]) .cx-launcher-button,
+body[data-cosmetics-demo]:not([data-cosmetics-demo="ponio"]):not([data-cosmetics-demo="two"]):not([data-cosmetics-demo="biofy"]) .cx-launcher-button.cx-launcher-has-image-logo {
+  border: 0 !important;
+  background-color: var(--cx-accent) !important;
+  color: var(--cx-brand) !important;
+  box-shadow: 0 18px 38px -25px color-mix(in srgb, var(--cx-brand) 48%, transparent) !important;
+}
+
+body[data-cosmetics-demo]:not([data-cosmetics-demo="ponio"]):not([data-cosmetics-demo="two"]):not([data-cosmetics-demo="biofy"]) .cx-launcher-real-wordmark,
+body[data-cosmetics-demo]:not([data-cosmetics-demo="ponio"]):not([data-cosmetics-demo="two"]):not([data-cosmetics-demo="biofy"]) .cx-launcher-real-wordmark * {
+  color: var(--cx-brand) !important;
+  -webkit-text-fill-color: var(--cx-brand) !important;
+}
+
+/* These two raster marks are cleaned/tinted in JS. Base uses the original
+   brand-colour mark on the existing accent circle; hover keeps the existing
+   darker circle but swaps the mark to white so it never disappears. */
+body[data-cosmetics-demo="fytopharma"] .cx-launcher-real-logo,
+body[data-cosmetics-demo="natureal"] .cx-launcher-real-logo {
+  mix-blend-mode: normal !important;
+  filter: none !important;
+}
+
+@media (hover:hover) and (pointer:fine) {
+  body[data-cosmetics-demo]:not([data-cosmetics-demo="ponio"]):not([data-cosmetics-demo="two"]):not([data-cosmetics-demo="biofy"]) .cx-launcher-button:hover,
+  body[data-cosmetics-demo]:not([data-cosmetics-demo="ponio"]):not([data-cosmetics-demo="two"]):not([data-cosmetics-demo="biofy"]) .cx-launcher-button.cx-launcher-has-image-logo:hover {
+    border: 0 !important;
+    background-color: var(--cx-brand) !important;
+    color: var(--cx-accent) !important;
+    box-shadow: 0 18px 38px -25px color-mix(in srgb, var(--cx-accent) 48%, transparent) !important;
+  }
+
+  body[data-cosmetics-demo]:not([data-cosmetics-demo="ponio"]):not([data-cosmetics-demo="two"]):not([data-cosmetics-demo="biofy"]) .cx-launcher-button:hover .cx-launcher-real-wordmark,
+  body[data-cosmetics-demo]:not([data-cosmetics-demo="ponio"]):not([data-cosmetics-demo="two"]):not([data-cosmetics-demo="biofy"]) .cx-launcher-button:hover .cx-launcher-real-wordmark * {
+    color: var(--cx-accent) !important;
+    -webkit-text-fill-color: var(--cx-accent) !important;
+  }
+}
+
+/* Kvitok open header: one solid green header + the cleaned white mark only.
+   The cropped mark is intentionally larger than before, but still fits the
+   common 68px header without changing its layout. */
+body[data-cosmetics-demo="kvitok"] .cx-widget-head {
+  border: 0 !important;
+  background: var(--cx-brand) !important;
+}
+body[data-cosmetics-demo="kvitok"] .cx-widget-brand > img.cx-logo {
+  width: 64px !important;
+  height: 48px !important;
+  max-width: 64px !important;
+  max-height: 48px !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  object-fit: contain !important;
+  object-position: left center !important;
+}

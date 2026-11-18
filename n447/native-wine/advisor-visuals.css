@@ -1,0 +1,43 @@
+/* Shared compact pill navigation and question-specific illustrations. */
+body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-mode button,
+body #widget#widget #mode .mode__button { border-radius:999px!important; }
+body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-mode,
+body #widget#widget #mode { border-radius:999px!important; overflow:hidden; }
+body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-option-photo--bottles {
+  display:flex!important; align-items:center; justify-content:center; gap:2px;
+  position:relative; padding:12px 9px!important; background:#f7f4ef!important;
+}
+body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-option-photo--bottles img {
+  position:static!important; inset:auto!important; width:calc((100% - 6px)/var(--bottle-count))!important;
+  height:100%!important; min-width:0!important; max-width:none!important;
+  object-fit:contain!important; object-position:center!important; border-radius:0!important;
+  mix-blend-mode:multiply;
+}
+.cx-wine-gift-mark { position:absolute; top:10px; right:10px; width:25px; height:25px; color:var(--cx-accent); }
+body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-catalogue-question-mark { display:flex!important; align-items:center; justify-content:center; width:100%; height:120px; background:var(--cx-soft,#f5f3ef); color:var(--cx-brand); }
+.cx-catalogue-question-mark svg { width:54px; height:54px; fill:none; stroke:currentColor; stroke-width:1.6; stroke-linecap:round; stroke-linejoin:round; }
+@media(max-width:480px) { .cx-catalogue-question-mark {height:105px} }
+
+/* Full-bleed choice images and clean owner footer. */
+.cx-owner-foot > span, .mcb-foot > span { display:none!important; }
+body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-option {padding:0!important;overflow:hidden;height:auto!important;min-height:0!important;grid-template-rows:auto auto!important;}
+body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-option-photo:not(.cx-option-photo--mark) {display:block!important;width:100%!important;height:auto!important;aspect-ratio:3/2;padding:0!important;border-radius:0!important;}
+body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-option-photo:not(.cx-option-photo--mark) img {position:static!important;inset:auto!important;width:100%!important;height:100%!important;object-fit:cover!important;object-position:center!important;transform:none!important;mix-blend-mode:normal!important;padding:0!important;border-radius:0!important;}
+body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-option-copy {padding:10px!important;}
+body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-catalogue-option {padding:0!important;overflow:hidden;}
+body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-catalogue-option > img {width:100%!important;height:auto!important;aspect-ratio:3/2;object-fit:cover!important;}
+body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-catalogue-option > span:not(.cx-catalogue-question-mark) {padding:10px!important;}
+
+body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-options {height:auto!important;min-height:0!important;grid-template-rows:none!important;grid-auto-rows:max-content!important;align-content:start!important;}
+
+/* Quality pass 2026-10-12 */
+body #cosmetics-root #cx-widget .cx-option-photo .cx-wine-quantity{display:block;width:100%;height:100%;}
+body #cosmetics-root #cx-widget .cx-wine-relaxed{margin:6px 0 10px;padding:11px 13px;border:1px solid #d5d7d9;border-radius:14px;background:#faf8f4;font-size:12px;line-height:1.5;}
+body #cosmetics-root #cx-widget .cx-mode{padding:4px!important;gap:4px!important;margin:8px 12px!important;box-sizing:border-box!important;}
+body #cosmetics-root #cx-widget .cx-mode button{height:38px!important;min-height:38px!important;border-radius:999px!important;box-shadow:none!important;}
+body #cosmetics-root #cx-widget .cx-mode button:focus:not(:focus-visible){outline:none!important;}
+body #cosmetics-root #cx-widget .cx-mode button:focus-visible{outline:2px solid var(--cx-accent)!important;outline-offset:-3px!important;}
+body #cosmetics-root #cx-widget .cx-option{border:1px solid #d5d7d9!important;box-shadow:none!important;outline:none!important;}
+body #cosmetics-root #cx-widget .cx-option:focus-visible{outline:2px solid var(--cx-accent)!important;outline-offset:2px!important;}
+body #cosmetics-root #cx-widget .cx-widget-note{border-top:1px solid #d1d4d8!important;}
+body #cosmetics-root #cx-widget .cx-mode button:focus,body #cosmetics-root #cx-widget .cx-mode button:focus-visible{outline:none!important;box-shadow:none!important;}

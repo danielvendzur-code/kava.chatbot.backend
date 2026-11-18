@@ -1,34 +1,26 @@
 <!doctype html>
 <html lang="sk">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="noindex,nofollow,noarchive">
-<title>Produktový poradca</title>
-<link rel="stylesheet" href="/assets/fonts/fonts.css">
-<link rel="stylesheet" href="/n447/s5/shop-advisor.css">
-<script type="module" src="/n447/s5/shop-advisor.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Ukážky poradcov</title>
+  <script>
+    const demo = new URLSearchParams(location.search).get('demo');
+    const cosmetics = ['blackcoffee', 'francin', 'etani', 'sumavaforrest'];
+    const wine = ['vinarstvisoman', 'vinocapka'];
+    const path = cosmetics.includes(demo) ? '/s5.html' : wine.includes(demo) ? '/wine.html' : '';
+    if (path) location.replace(path + '?demo=' + encodeURIComponent(demo));
+  </script>
 </head>
 <body>
-<header class="masthead"><a id="brand"></a><a id="shop"></a></header>
-<main>
-  <section class="hero">
-    <div><h1 id="headline"></h1><p id="lead"></p><button class="solid" id="begin"></button></div>
-    <img id="hero" alt="">
-  </section>
-  <section class="advisor" id="advisor" aria-labelledby="advisor-title">
-    <div class="advisor-head"><h2 id="advisor-title"></h2><div class="modes">
-      <button type="button" id="guide-mode" aria-pressed="true"></button>
-      <button type="button" id="chat-mode" aria-pressed="false">Chat</button>
-    </div></div>
-    <section id="guide"></section>
-    <section id="chat" hidden>
-      <div id="messages" role="log" aria-live="polite"></div>
-      <div id="suggestions" class="modes"></div>
-      <form id="chat-form"><label for="query" id="query-label"></label><div class="input-row"><input id="query" maxlength="220" autocomplete="off" required><button class="solid" id="send"></button></div></form>
-    </section>
-  </section>
-  <section id="compare" class="comparison" hidden aria-live="polite"></section>
-</main>
+  <main><h1>Ukážky poradcov</h1><ul>
+    <li><a href="/s5.html?demo=blackcoffee">black.</a></li>
+    <li><a href="/s5.html?demo=francin">Francin</a></li>
+    <li><a href="/s5.html?demo=etani">ETANI</a></li>
+    <li><a href="/s5.html?demo=sumavaforrest">Šumava FORREST</a></li>
+    <li><a href="/wine.html?demo=vinarstvisoman">Vinařství Šoman</a></li>
+    <li><a href="/wine.html?demo=vinocapka">Vinařství Čapka</a></li>
+  </ul></main>
 </body>
 </html>

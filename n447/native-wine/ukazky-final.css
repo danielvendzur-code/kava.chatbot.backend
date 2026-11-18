@@ -1,0 +1,521 @@
+/* Last layer, shared by the wine, skincare and hair demos (same file in every
+   project). Contrast and state fixes from the October review: nothing here
+   changes products, scoring or links. Loaded after every older layer. */
+
+/* ---------- Owner page ---------- */
+a.cx-owner-contact { text-decoration: none; }
+.cx-owner-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 14px;
+  padding: 4px 2px;
+  border: 0;
+  background: none;
+  color: var(--cx-ink);
+  font: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: -.005em;
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, var(--cx-ink) 30%, transparent);
+  text-underline-offset: 4px;
+  cursor: pointer;
+  transition: text-decoration-color .15s ease, color .15s ease;
+}
+.cx-owner-more svg { width: 14px; height: 14px; transition: transform .15s ease; }
+.cx-owner-more:hover { text-decoration-color: currentColor; }
+.cx-owner-more:hover svg { transform: translateX(2px); }
+.cx-owner-more:focus-visible { outline: 2px solid var(--cx-accent); outline-offset: 3px; border-radius: 4px; }
+
+/* "Viac info" sheet: the old offer shell, a list without the price block. */
+.cx-more .cx-offer-card ul { margin-bottom: 22px; }
+.cx-more .cx-offer-card li b { font-size: 13.5px; }
+.cx-more .cx-offer-card li small { font-size: 12px; line-height: 1.45; }
+.cx-more .cx-offer-card li svg {
+  flex: 0 0 auto;
+  color: #fff;
+  background: var(--cx-accent);
+  border-radius: 50%;
+}
+.cx-more .cx-offer-cta { text-decoration: none; }
+
+/* One readable photograph instead of four thumbnails. */
+body[data-cx-hero-single] .cx-owner-visual {
+  background: var(--cx-hero-bg, #fff) !important;
+}
+body[data-cx-hero-single] .cx-owner-visual img {
+  object-fit: contain !important;
+  object-position: center !important;
+  padding: 3% !important;
+  background: var(--cx-hero-bg, #fff) !important;
+  box-sizing: border-box;
+}
+body[data-cx-hero-single][data-cx-hero-fill] .cx-owner-visual img {
+  object-fit: cover !important;
+  padding: 0 !important;
+}
+
+/* ---------- Launcher ----------
+   Never pale at rest. The hover colour is set per brand by ukazky-final.js
+   (another brand colour, or a deeper shade of the rest colour). */
+body[data-cx-launch] #cx-open#cx-open.cx-launcher-button {
+  background-color: var(--cx-l-bg) !important;
+  background-image: none !important;
+  box-shadow: 0 10px 26px -10px color-mix(in srgb, var(--cx-l-bg) 70%, #000), 0 2px 6px rgba(0, 0, 0, .08) !important;
+}
+body[data-cx-launch] #cx-open#cx-open.cx-launcher-button .cx-new-mark--color {
+  background-image: var(--cx-l-img) !important;
+}
+@media (hover: hover) and (pointer: fine) {
+  body[data-cx-launch] #cx-open#cx-open.cx-launcher-button:hover {
+    background-color: var(--cx-l-hover) !important;
+  }
+  body[data-cx-launch] #cx-open#cx-open.cx-launcher-button:hover .cx-new-mark--color {
+    background-image: var(--cx-l-img-hover, var(--cx-l-img)) !important;
+  }
+}
+/* Brand symbol replaced by a chat bubble or by the full short name. */
+body[data-cx-launch] #cx-open#cx-open .cx-new-mark.cx-mark-swap,
+body[data-cx-launch] .cx-message-avatar .cx-new-mark.cx-mark-swap {
+  background-color: var(--cx-l-fg, #fff) !important;
+  -webkit-mask: var(--cx-mark) center / contain no-repeat !important;
+  mask: var(--cx-mark) center / contain no-repeat !important;
+}
+@media (hover: hover) and (pointer: fine) {
+  body[data-cx-launch] #cx-open#cx-open:hover .cx-new-mark.cx-mark-swap {
+    background-color: var(--cx-l-fg-hover, var(--cx-l-fg, #fff)) !important;
+  }
+}
+body[data-cx-launch] #cx-open#cx-open .cx-new-mark.cx-mark-swap--wide {
+  width: 44px !important;
+  height: 24px !important;
+}
+body[data-cx-launch] .cx-message-avatar .cx-new-mark.cx-mark-swap--wide {
+  width: 22px !important;
+  height: 12px !important;
+}
+body[data-cx-launch][data-cx-mark-swap] #cosmetics-root .cx-message-avatar {
+  background: var(--cx-l-bg) !important;
+}
+
+/* ---------- Chat ----------
+   A quiet single tint per side, so a message never reads as background. */
+#cosmetics-root .cx-message--assistant .cx-bubble {
+  background: color-mix(in srgb, var(--cx-accent) 6%, #fff) !important;
+  border: 1px solid color-mix(in srgb, var(--cx-accent) 17%, var(--cx-line)) !important;
+  color: var(--cx-ink) !important;
+  box-shadow: none !important;
+}
+#cosmetics-root .cx-message--user .cx-bubble {
+  background: color-mix(in srgb, var(--cx-brand) 11%, #fff) !important;
+  border: 1px solid color-mix(in srgb, var(--cx-brand) 22%, transparent) !important;
+  color: var(--cx-ink) !important;
+  box-shadow: none !important;
+}
+
+/* ---------- Advisor options ----------
+   Hover: a clear brand border. Selected: tinted card, brand border drawn
+   inside (no size change, no glow) and a filled check. */
+#cosmetics-root .cx-option {
+  border-color: color-mix(in srgb, var(--cx-ink) 13%, var(--cx-line)) !important;
+  box-shadow: none !important;
+  transition: border-color .15s ease, background-color .15s ease, transform .15s ease !important;
+}
+@media (hover: hover) and (pointer: fine) {
+  #cosmetics-root .cx-option:not(.is-selected):not(:disabled):hover {
+    border-color: color-mix(in srgb, var(--cx-brand) 55%, var(--cx-line)) !important;
+    transform: translateY(-1px);
+  }
+}
+#cosmetics-root .cx-option.is-selected {
+  border-color: var(--cx-accent) !important;
+  background: color-mix(in srgb, var(--cx-accent) 9%, #fff) !important;
+  box-shadow: inset 0 0 0 1px var(--cx-accent) !important;
+  transform: none !important;
+}
+#cosmetics-root .cx-option.is-selected .cx-option-copy {
+  background: transparent !important;
+}
+#cosmetics-root .cx-option.is-selected .cx-option-copy b { color: var(--cx-ink) !important; }
+#cosmetics-root .cx-option.is-selected > i {
+  background: var(--cx-accent) !important;
+  color: #fff !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, .18) !important;
+}
+#cosmetics-root .cx-option:focus-visible {
+  outline: 2px solid var(--cx-accent) !important;
+  outline-offset: 2px;
+}
+/* Same photo height on every card of a step, whatever the caption length. */
+#cosmetics-root .cx-option .cx-option-copy { min-height: var(--cx-copy-h, 0px); box-sizing: border-box; }
+
+/* ---------- Result ---------- */
+#cosmetics-root .cx-product,
+#cosmetics-root .cx-routine-card,
+#cosmetics-root .cx-alt {
+  border: 1px solid color-mix(in srgb, var(--cx-accent) 26%, var(--cx-line)) !important;
+}
+#cosmetics-root .cx-product-price strong {
+  display: inline-flex;
+  align-items: center;
+  min-height: 30px;
+  padding: 0 11px;
+  border: 1px solid color-mix(in srgb, var(--cx-accent) 34%, var(--cx-line));
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--cx-accent) 6%, #fff);
+  color: var(--cx-ink) !important;
+}
+#cosmetics-root .cx-product-tags span {
+  border-color: color-mix(in srgb, var(--cx-ink) 18%, var(--cx-line)) !important;
+}
+#cosmetics-root .cx-alt > a,
+#cosmetics-root .cx-routine-card a {
+  border: 1px solid color-mix(in srgb, var(--cx-ink) 14%, var(--cx-line)) !important;
+}
+#cosmetics-root .cx-restart {
+  border: 1px solid color-mix(in srgb, var(--cx-ink) 14%, var(--cx-line)) !important;
+}
+#cosmetics-root .cx-composer {
+  border-color: color-mix(in srgb, var(--cx-ink) 18%, var(--cx-line)) !important;
+}
+
+/* ---------- Phone owner page ----------
+   The frame and the launcher were hidden below 760px, which left an empty
+   band between the buttons and the price. One product photograph fills it,
+   and the launcher is visible the way it would be on the client's own shop
+   (without the teaser bubble, which would cover the price card). */
+@media (max-width: 760px) {
+  body[data-cx-hero-single] .cx-owner-hero {
+    grid-template-rows: auto minmax(0, 1fr) !important;
+    min-height: 0 !important;
+  }
+  body[data-cx-hero-single] .cx-owner-frame {
+    display: block !important;
+    min-height: 0 !important;
+    height: 100% !important;
+    padding: 0 0 12px !important;
+    box-sizing: border-box !important;
+  }
+  body[data-cx-hero-single] .cx-owner-frame .cx-keeps { display: none !important; }
+  body[data-cx-hero-single] .cx-owner-visual {
+    height: 100% !important;
+    min-height: 120px !important;
+    max-height: 300px !important;
+    border-radius: 20px !important;
+  }
+  body[data-cosmetics-demo] .cx-launcher { display: block !important; }
+  body[data-cosmetics-demo] .cx-launcher .cx-teaser { display: none !important; }
+}
+body.cx-offer-open .cx-launcher { visibility: hidden !important; }
+
+/* Keyboard focus: a visible ring on every control of the page and widget. */
+#cosmetics-root :is(button, a, input):focus-visible {
+  outline: 2px solid var(--cx-accent) !important;
+  outline-offset: 2px !important;
+}
+body[data-cosmetics-demo] #cx-open#cx-open:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--cx-l-bg, var(--cx-accent)) 55%, #fff) !important;
+  outline-offset: 3px !important;
+}
+
+/* Skoupil: the scanned logo turned its subline into a grey smudge at header
+   size. A typographic lockup in the house colours instead: the yellow stripe,
+   the name, the line under it. */
+body .cx-wordmark.cx-lockup-skoupil {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 11px !important;
+  width: auto !important;
+  height: auto !important;
+  color: var(--cx-ink) !important;
+  line-height: 1 !important;
+  white-space: nowrap !important;
+}
+body .cx-lockup-skoupil > i {
+  display: block !important;
+  flex: 0 0 auto;
+  width: 11px !important;
+  height: 36px !important;
+  background: #ffbb00 !important;
+  transform: skewX(-24deg);
+}
+body .cx-lockup-skoupil > span { display: grid !important; gap: 4px !important; }
+body .cx-lockup-skoupil b {
+  font: 800 21px/1 'DM Sans', system-ui, sans-serif !important;
+  letter-spacing: .14em !important;
+  color: inherit !important;
+}
+body .cx-lockup-skoupil small {
+  font: 700 8.5px/1 'DM Sans', system-ui, sans-serif !important;
+  letter-spacing: .26em !important;
+  text-transform: uppercase !important;
+  color: inherit !important;
+  opacity: .7;
+}
+body .cx-widget-brand .cx-lockup-skoupil { color: #fff !important; }
+body .cx-widget-brand .cx-lockup-skoupil > i { height: 28px !important; width: 9px !important; }
+body .cx-widget-brand .cx-lockup-skoupil b { font-size: 17px !important; }
+body .cx-widget-brand .cx-lockup-skoupil small { font-size: 7.5px !important; }
+@media (max-width: 420px) {
+  body .cx-owner-brand .cx-lockup-skoupil b { font-size: 17px !important; }
+  body .cx-owner-brand .cx-lockup-skoupil small { font-size: 7px !important; letter-spacing: .2em !important; }
+  body .cx-owner-brand .cx-lockup-skoupil > i { height: 30px !important; width: 9px !important; }
+}
+
+/* Plenér only: real assortment-specific choices, no unavailable rose/sekt. */
+body[data-cosmetics-demo="plener"] .cx-option[data-value="no-preference"] .cx-option-photo { background-image: url('/assets/vino/choice-simple.jpg') !important; }
+body[data-cosmetics-demo="plener"] .cx-option[data-value="open"] .cx-option-photo { background-image: url('/assets/vino/choice-any.jpg') !important; }
+body[data-cosmetics-demo="plener"][data-cx-hero-single] .cx-owner-visual img {
+  /* The source photograph is upside down; orient only the Plenér hero. */
+  transform: rotate(180deg);
+  object-position: 35% center !important;
+  object-fit: cover !important;
+  padding: 0 !important;
+}
+body[data-cosmetics-demo="plener"] .cx-option[data-value="orange"] .cx-option-photo {
+  background-image: url('/assets/vino/plener-spinonskin.jpg') !important;
+}
+
+/* White surfaces: brand identity stays in the header, primary actions and
+   selected markers. Neutral borders do not carry the brand colour. */
+body[data-cosmetics-demo="plener"] #cosmetics-root{ --cx-ui-line: #e5e7eb; }
+body[data-cosmetics-demo="plener"] #cosmetics-root :is(.cx-widget,.cx-chat,.cx-chat-messages,.cx-chat-bottom,
+  .cx-advisor,.cx-advisor-body,.cx-widget-note,.cx-owner){
+  background: #fff !important;
+  background-image: none !important;
+}
+body[data-cosmetics-demo="plener"] #cosmetics-root :is(.cx-widget,.cx-mode,.cx-advisor-entry,.cx-composer,
+  .cx-product,.cx-routine-card,.cx-alt,.cx-restart,.cx-product-tags span,
+  .cx-owner-visual,.cx-owner-contact,.cx-keeps li){
+  border-color: var(--cx-ui-line) !important;
+}
+body[data-cosmetics-demo="plener"] #cosmetics-root .cx-mode{ background: #f5f5f5 !important; border: 0 !important; }
+body[data-cosmetics-demo="plener"] #cosmetics-root .cx-advisor-entry{
+  background: #fff !important; box-shadow: none !important; border-radius: 16px !important;
+}
+body[data-cosmetics-demo="plener"] #cosmetics-root .cx-message .cx-bubble{
+  border: 0 !important; border-radius: 16px !important;
+  box-shadow: none !important; color: var(--cx-ink) !important;
+  font-size: 14px !important; line-height: 1.55 !important;
+}
+body[data-cosmetics-demo="plener"] #cosmetics-root .cx-message--assistant .cx-bubble{ background: #f6f6f6 !important; }
+body[data-cosmetics-demo="plener"] #cosmetics-root .cx-message--user .cx-bubble{ background: #eeeeef !important; }
+body[data-cosmetics-demo="plener"] #cosmetics-root .cx-chip{
+  box-sizing: border-box !important; min-height: 46px !important;
+  padding: 10px 12px !important; font-size: 13px !important; line-height: 1.35 !important;
+  border: 1px solid var(--cx-ui-line) !important; border-radius: 12px !important;
+  background: #fff !important; box-shadow: none !important;
+}
+body[data-cosmetics-demo="plener"] #cosmetics-root .cx-chip:hover{ background: #f6f6f6 !important; border-color: #b8bdc5 !important; }
+body[data-cosmetics-demo="plener"] #cosmetics-root .cx-composer{ background: #fff !important; box-shadow: none !important; }
+body[data-cosmetics-demo="plener"] #cosmetics-root .cx-option{
+  border-color: var(--cx-ui-line) !important; background: #fff !important; box-shadow: none !important;
+}
+body[data-cosmetics-demo="plener"] #cosmetics-root .cx-option.is-selected{
+  border-color: #757575 !important; background: #f6f6f6 !important;
+  box-shadow: inset 0 0 0 1px #757575 !important;
+}
+body[data-cosmetics-demo="plener"] #cosmetics-root .cx-option:not(.is-selected):not(:disabled):hover{ border-color: #aaa !important; }
+body[data-cosmetics-demo="plener"] #cosmetics-root :is(.cx-product-price strong,.cx-owner-price){
+  background: #fff !important; border-color: var(--cx-ui-line) !important;
+}
+body[data-cosmetics-demo="plener"] #cosmetics-root .cx-teaser{
+  border: 0 !important; background: #fff !important;
+  box-shadow: 0 6px 22px rgba(0,0,0,.08) !important;
+}
+body[data-cosmetics-demo="plener"] #cosmetics-root .cx-owner-visual::after{ display: none !important; }
+body[data-cosmetics-demo="plener"] #cosmetics-root .cx-widget-actions button{ border: 0 !important; }
+
+/* Keep the whole Plener editorial photograph, including glass and bottle.
+   A fixed portrait crop cannot fit this landscape photograph. */
+body[data-cosmetics-demo="plener"][data-cx-hero-single] #cosmetics-root .cx-owner-visual{
+  aspect-ratio: 4 / 3 !important; height: auto !important;
+  min-height: 0 !important; max-height: none !important;
+  background: #fff !important; box-shadow: none !important;
+}
+body[data-cosmetics-demo="plener"][data-cx-hero-single] #cosmetics-root .cx-owner-visual img{
+  object-fit: contain !important; object-position: center !important;
+  padding: 0 !important; background: #fff !important; filter: none !important;
+}
+body[data-cosmetics-demo="plener"] #cosmetics-root .cx-advisor-entry > span{
+  transform: rotate(180deg);
+}
+@media (max-width: 760px) {
+body[data-cosmetics-demo="plener"][data-cx-hero-single] #cosmetics-root .cx-owner-hero{ grid-template-rows: auto auto !important; }
+body[data-cosmetics-demo="plener"][data-cx-hero-single] #cosmetics-root .cx-owner-frame{ height: auto !important; }
+body[data-cosmetics-demo="plener"][data-cx-hero-single] #cosmetics-root .cx-owner-visual img{
+    display: block; width: 100% !important; height: 100% !important;
+  }
+}
+
+/* Final checks: remove stretch/letterboxing and the teaser's outlined tail. */
+body[data-cosmetics-demo="plener"][data-cx-hero-single] #cosmetics-root .cx-owner-visual{
+  align-self: center !important; justify-self: stretch !important;
+}
+body[data-cosmetics-demo="plener"] #cosmetics-root :is(.cx-price,.cx-keeps li){
+  background: #fff !important; background-image: none !important;
+  border-color: var(--cx-ui-line) !important;
+}
+body[data-cosmetics-demo="plener"] #cosmetics-root :is(.cx-widget-note,.cx-price-terms,.cx-owner-head){
+  border-color: var(--cx-ui-line) !important;
+}
+body[data-cosmetics-demo="plener"] #cosmetics-root .cx-teaser::after,
+body[data-cosmetics-demo="plener"] #cosmetics-root .cx-teaser::before{ display: none !important; }
+body[data-cosmetics-demo="plener"] #cosmetics-root .cx-advisor-entry-photo{ background: #fff !important; }
+body[data-cosmetics-demo="plener"] #cosmetics-root .cx-advisor-entry-photo img{ object-fit: contain !important; padding: 0 !important; }
+
+/* Conversation geometry follows Koverta; only the customer bubble uses the
+   current company's brand colour. The assistant remains neutral. */
+body[data-cosmetics-demo="plener"] #cosmetics-root .cx-message .cx-bubble{ border-radius: 18px !important; padding: 10px 14px !important; }
+body[data-cosmetics-demo="plener"] #cosmetics-root .cx-message--assistant .cx-bubble{
+  background: #e2e3e0 !important; color: #16181c !important;
+  border-bottom-left-radius: 7px !important;
+}
+body[data-cosmetics-demo="plener"] #cosmetics-root .cx-message--user .cx-bubble{
+  background: var(--cx-brand) !important; color: var(--cx-user-fg, #fff) !important;
+  border-bottom-right-radius: 7px !important;
+}
+body[data-cosmetics-demo="plener"][data-cx-mark-swap] #cosmetics-root .cx-message-avatar.cx-avatar-company{
+  background: #fff !important; border: 0 !important; box-shadow: none !important;
+  width: 40px !important; height: 40px !important; flex: 0 0 40px !important;
+}
+body[data-cosmetics-demo="plener"] #cosmetics-root .cx-avatar-company .cx-company-avatar{
+  display: block !important; width: 34px !important; height: 28px !important;
+  object-fit: contain !important; object-position: center !important; padding: 0 !important;
+  background: transparent !important; border: 0 !important; border-radius: 0 !important;
+}
+body[data-cosmetics-demo="plener"][data-cx-mark-swap] #cosmetics-root .cx-avatar-company .cx-company-avatar{
+  background: transparent var(--cx-company-mark, none) center / contain no-repeat !important;
+  -webkit-mask: none !important; mask: none !important;
+  color: var(--cx-ink) !important;
+}
+
+/* Plener: white original logo on a black circular message avatar. */
+body[data-cosmetics-demo="plener"][data-cx-mark-swap] #cosmetics-root .cx-message-avatar.cx-avatar-company{
+  background: #141414 !important; border-radius: 50% !important;
+}
+body[data-cosmetics-demo="plener"][data-cx-mark-swap] #cosmetics-root .cx-avatar-company .cx-company-avatar.cx-avatar-white-logo{
+  width: 30px !important; height: 26px !important;
+  background: #fff !important;
+  -webkit-mask: var(--cx-company-mark) center / contain no-repeat !important;
+  mask: var(--cx-company-mark) center / contain no-repeat !important;
+}
+
+/* Plener preview: visible edges on a white host website. */
+body[data-cosmetics-demo="plener"] #cosmetics-root .cx-teaser{
+  border: 1px solid #cfd2d6 !important;
+  background: #fff !important;
+  box-shadow: 0 6px 22px rgba(0,0,0,.08) !important;
+}
+body[data-cosmetics-demo="plener"] #cosmetics-root .cx-mode{
+  border: 1px solid #cfd2d6 !important;
+  background: #f2f3f4 !important;
+}
+body[data-cosmetics-demo="plener"] #cosmetics-root .cx-mode-thumb{
+  background: #141414 !important;
+}
+body[data-cosmetics-demo="plener"] #cosmetics-root .cx-mode button{
+  color: #555 !important;
+}
+body[data-cosmetics-demo="plener"] #cosmetics-root .cx-mode button.is-active{
+  color: #fff !important;
+}
+
+/* Plener: softer compact chat suggestions and a clear advisor entry. */
+body[data-cosmetics-demo="plener"] #cosmetics-root .cx-chip{
+  border:1px solid #cfd2d6 !important; border-radius:999px !important;
+  min-height:40px !important; padding:9px 12px !important; font-size:12px !important;
+}
+body[data-cosmetics-demo="plener"] #cosmetics-root .cx-advisor-entry{
+  border:1px solid #cfd2d6 !important; border-radius:22px !important;
+  padding:10px !important; gap:12px !important; min-height:0 !important;
+}
+body[data-cosmetics-demo="plener"] #cosmetics-root .cx-advisor-entry > span{
+  transform:none !important;
+}
+body[data-cosmetics-demo="plener"] #cosmetics-root .cx-advisor-entry-photo{
+  width:48px !important; height:48px !important; flex:0 0 48px !important;
+  border-radius:14px !important; overflow:hidden !important; background:#f3f3f3 !important;
+}
+body[data-cosmetics-demo="plener"] #cosmetics-root .cx-advisor-entry-photo img{
+  object-fit:cover !important; object-position:50% 60% !important;
+  width:100% !important; height:100% !important;
+}
+body[data-cosmetics-demo="plener"] #cosmetics-root .cx-advisor-entry b{ font-size:14px !important; }
+body[data-cosmetics-demo="plener"] #cosmetics-root .cx-advisor-entry small{ font-size:9px !important; }
+body[data-cosmetics-demo="plener"] #cosmetics-root .cx-advisor-entry em{ font-size:11px !important; }
+
+/* Original owner layout and dimensions, only the pricing palette changes. */
+body[data-cosmetics-demo="plener"] #cosmetics-root .cx-owner-offer{
+  background:#1b1b1b !important; color:#fdfbf7 !important; border-radius:18px;
+}
+body[data-cosmetics-demo="plener"] #cosmetics-root article.cx-price{
+  background:transparent !important; border-color:#3a3734 !important;
+}
+body[data-cosmetics-demo="plener"] #cosmetics-root .cx-price-sum b{
+  color:#fdfbf7 !important;
+}
+body[data-cosmetics-demo="plener"] #cosmetics-root .cx-price-sum :is(span,small),
+body[data-cosmetics-demo="plener"] #cosmetics-root .cx-price-terms p{
+  color:#bdb6ad !important;
+}
+body[data-cosmetics-demo="plener"] #cosmetics-root .cx-price-terms{
+  border-color:#3a3734 !important;
+}
+body[data-cosmetics-demo="plener"] #cosmetics-root .cx-price-terms b{
+  color:#d4af65 !important;
+}
+body[data-cosmetics-demo="plener"] #cosmetics-root .cx-price-terms a{
+  background:#d4af65 !important; color:#1b1b1b !important;
+}
+
+/* Approved Plener surface design, adapted to all branded demos. Layout and pricing dimensions stay unchanged. */
+body[data-cosmetics-demo]:not([data-cosmetics-demo="plener"]) #cosmetics-root#cosmetics-root { --cx-ui-line:#cfd2d6; }
+body[data-cosmetics-demo]:not([data-cosmetics-demo="plener"]) #cosmetics-root#cosmetics-root :is(.cx-widget,.cx-chat,.cx-chat-messages,.cx-chat-bottom,.cx-advisor,.cx-advisor-body,.cx-widget-note,.cx-composer,.cx-advisor-entry,.cx-option,.cx-product,.cx-routine-card,.cx-alt) { background:#fff !important; background-image:none !important; }
+body[data-cosmetics-demo]:not([data-cosmetics-demo="plener"]) #cosmetics-root#cosmetics-root :is(.cx-widget,.cx-mode,.cx-advisor-entry,.cx-composer,.cx-option,.cx-product,.cx-routine-card,.cx-alt,.cx-restart,.cx-product-tags span,.cx-widget-note) { border-color:#cfd2d6 !important; box-shadow:none !important; }
+body[data-cosmetics-demo]:not([data-cosmetics-demo="plener"]) #cosmetics-root#cosmetics-root .cx-mode { background:#f2f3f4 !important; border:1px solid #cfd2d6 !important; }
+body[data-cosmetics-demo]:not([data-cosmetics-demo="plener"]) #cosmetics-root#cosmetics-root .cx-mode-thumb { background:#141414 !important; }
+body[data-cosmetics-demo]:not([data-cosmetics-demo="plener"]) #cosmetics-root#cosmetics-root .cx-mode button { color:#555 !important; }
+body[data-cosmetics-demo]:not([data-cosmetics-demo="plener"]) #cosmetics-root#cosmetics-root .cx-mode button.is-active { color:#fff !important; }
+body[data-cosmetics-demo]:not([data-cosmetics-demo="plener"]) #cosmetics-root#cosmetics-root .cx-message .cx-bubble { border:0 !important; border-radius:18px !important; padding:10px 14px !important; box-shadow:none !important; font-size:14px !important; line-height:1.55 !important; }
+body[data-cosmetics-demo]:not([data-cosmetics-demo="plener"]) #cosmetics-root#cosmetics-root .cx-message--assistant .cx-bubble { background:#e2e3e0 !important; color:#16181c !important; border-bottom-left-radius:7px !important; }
+body[data-cosmetics-demo]:not([data-cosmetics-demo="plener"]) #cosmetics-root#cosmetics-root .cx-message--user .cx-bubble { background:#141414 !important; color:#fff !important; border-bottom-right-radius:7px !important; }
+body[data-cosmetics-demo]:not([data-cosmetics-demo="plener"]) #cosmetics-root#cosmetics-root .cx-chip { background:#fff !important; border:1px solid #cfd2d6 !important; border-radius:999px !important; min-height:40px !important; padding:9px 12px !important; font-size:12px !important; line-height:1.35 !important; box-sizing:border-box !important; box-shadow:none !important; color:#16181c !important; }
+body[data-cosmetics-demo]:not([data-cosmetics-demo="plener"]) #cosmetics-root#cosmetics-root .cx-advisor-entry { border:1px solid #cfd2d6 !important; border-radius:22px !important; padding:10px !important; gap:12px !important; min-height:0 !important; }
+body[data-cosmetics-demo]:not([data-cosmetics-demo="plener"]) #cosmetics-root#cosmetics-root .cx-advisor-entry-photo { width:48px !important; height:48px !important; flex:0 0 48px !important; border-radius:14px !important; overflow:hidden !important; }
+body[data-cosmetics-demo]:not([data-cosmetics-demo="plener"]) #cosmetics-root#cosmetics-root .cx-advisor-entry-photo img { object-fit:cover !important; width:100% !important; height:100% !important; }
+body[data-cosmetics-demo]:not([data-cosmetics-demo="plener"]) #cosmetics-root#cosmetics-root .cx-option.is-selected { border-color:#757575 !important; background:#f6f6f6 !important; box-shadow:inset 0 0 0 1px #757575 !important; }
+body[data-cosmetics-demo]:not([data-cosmetics-demo="plener"]) #cosmetics-root#cosmetics-root .cx-teaser { background:#fff !important; border:1px solid #cfd2d6 !important; box-shadow:0 6px 22px rgba(0,0,0,.08) !important; }
+body[data-cosmetics-demo]:not([data-cosmetics-demo="plener"]) #cosmetics-root#cosmetics-root .cx-teaser::before,
+body[data-cosmetics-demo]:not([data-cosmetics-demo="plener"]) #cosmetics-root#cosmetics-root .cx-teaser::after { display:none !important; }
+body[data-cosmetics-demo]:not([data-cosmetics-demo="plener"]) #cosmetics-root#cosmetics-root .cx-owner-offer { background:#1b1b1b !important; color:#fdfbf7 !important; border-radius:18px; }
+body[data-cosmetics-demo]:not([data-cosmetics-demo="plener"]) #cosmetics-root#cosmetics-root article.cx-price { background:#1b1b1b !important; background-image:none !important; border-color:#3a3734 !important; }
+body[data-cosmetics-demo]:not([data-cosmetics-demo="plener"]) #cosmetics-root#cosmetics-root .cx-price-sum b { color:#fdfbf7 !important; }
+body[data-cosmetics-demo]:not([data-cosmetics-demo="plener"]) #cosmetics-root#cosmetics-root .cx-price-sum :is(span,small),
+body[data-cosmetics-demo]:not([data-cosmetics-demo="plener"]) #cosmetics-root#cosmetics-root .cx-price-terms p { color:#bdb6ad !important; }
+body[data-cosmetics-demo]:not([data-cosmetics-demo="plener"]) #cosmetics-root#cosmetics-root .cx-price-terms { border-color:#3a3734 !important; }
+body[data-cosmetics-demo]:not([data-cosmetics-demo="plener"]) #cosmetics-root#cosmetics-root .cx-price-terms b { color:#d4af65 !important; }
+body[data-cosmetics-demo]:not([data-cosmetics-demo="plener"]) #cosmetics-root#cosmetics-root .cx-price-terms a { background:#d4af65 !important; color:#1b1b1b !important; border-color:#d4af65 !important; }
+
+body[data-cosmetics-demo]:not([data-cosmetics-demo="plener"]) #cosmetics-root#cosmetics-root :is(.cx-product-price strong,.cx-product-tags span,.cx-option-copy) { background:#fff !important; border-color:#cfd2d6 !important; }
+body[data-cosmetics-demo]:not([data-cosmetics-demo="plener"]) #cosmetics-root#cosmetics-root .cx-widget-actions button { border:0 !important; }
+
+/* Neutral detail surfaces; retain the company's header, logo and CTA colour. */
+body[data-cosmetics-demo]:not([data-cosmetics-demo="plener"]) #cosmetics-root#cosmetics-root :is(.cx-result-body,.cx-why,.cx-alt-icon,.cx-alt-arrow) { background:#fff !important; border-color:#cfd2d6 !important; }
+/* Only the colour: the step photographs are background images. */
+body[data-cosmetics-demo]:not([data-cosmetics-demo="plener"]) #cosmetics-root#cosmetics-root .cx-option-photo { background-color:#fff !important; border-color:#cfd2d6 !important; }
+body[data-cosmetics-demo]:not([data-cosmetics-demo="plener"]) #cosmetics-root#cosmetics-root .cx-why { border-left:2px solid #cfd2d6 !important; }
+body[data-cosmetics-demo]:not([data-cosmetics-demo="plener"]) #cosmetics-root#cosmetics-root :is(.cx-kicker,.cx-why b,.cx-product-brand) { color:#64676b !important; }
+body[data-cosmetics-demo]:not([data-cosmetics-demo="plener"]) #cosmetics-root#cosmetics-root .cx-progress>div i.is-on { background:#62656a !important; }
+
+body[data-cosmetics-demo]:not([data-cosmetics-demo="plener"]) #cosmetics-root#cosmetics-root :is(.cx-restart,.cx-alt>div:first-child,.cx-alt>a) { background:#fff !important; border-color:#cfd2d6 !important; }
+body[data-cosmetics-demo]:not([data-cosmetics-demo="plener"]) #cosmetics-root#cosmetics-root .cx-restart { border:1px solid #cfd2d6 !important; }
+
+/* Catalogue-specific options keep four distinct, truthful photographs. */
+body[data-cosmetics-demo] .cx-option[data-value="no-preference"] .cx-option-photo { background-image:url("/assets/vino/choice-simple.jpg") !important; }
+body[data-cosmetics-demo] .cx-option[data-value="mixed"] .cx-option-photo { background-image:url("/assets/vino/choice-full.jpg") !important; }
+body[data-cosmetics-demo] .cx-option[data-value="open"] .cx-option-photo { background-image:url("/assets/vino/choice-any.jpg") !important; }
+body[data-cosmetics-demo] .cx-option[data-value="dry"] .cx-option-photo { background-image:url("/assets/vino/choice-crisp.jpg") !important; }
+body[data-cosmetics-demo] .cx-option[data-value="medium-dry"] .cx-option-photo { background-image:url("/assets/vino/choice-fruity.jpg") !important; }
+body[data-cosmetics-demo] .cx-option[data-value="medium-sweet"] .cx-option-photo { background-image:url("/assets/vino/choice-bold.jpg") !important; }

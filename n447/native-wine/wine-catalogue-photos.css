@@ -1,0 +1,4 @@
+/* Actual winery packshots override the older generic choice backgrounds. */
+body[data-cosmetics-demo] #cosmetics-root#cosmetics-root #cx-widget .cx-option .cx-option-photo{background-image:none!important;background-color:#fff!important;overflow:hidden}
+body[data-cosmetics-demo] #cosmetics-root#cosmetics-root #cx-widget .cx-option .cx-option-photo::before,body[data-cosmetics-demo] #cosmetics-root#cosmetics-root #cx-widget .cx-option .cx-option-photo::after{display:none!important}
+body[data-cosmetics-demo] #cosmetics-root#cosmetics-root #cx-widget .cx-option .cx-option-photo>img{display:block!important;visibility:visible!important;opacity:1!important;position:static!important;width:100%!important;height:100%!important;object-fit:contain!important;object-position:center!important;padding:8px!important;box-sizing:border-box!important;transform:none!important;filter:none!important;background:white}
