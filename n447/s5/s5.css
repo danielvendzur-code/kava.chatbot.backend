@@ -121,3 +121,16 @@ body[data-series=s5]:is([data-cosmetics-demo=blackcoffee], [data-cosmetics-demo=
   object-fit: contain !important;
   object-position: center !important;
 }
+
+/* Text choices only need the height of their copy. */
+html body[data-series=s5] #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget .cx-quality-body.is-question > .cx-catalogue-options.cx-text-options {
+  flex: 0 0 auto !important;
+  grid-template-columns: minmax(0, 1fr) !important;
+  grid-template-rows: none !important;
+  grid-auto-rows: minmax(66px, auto) !important;
+}
+html body[data-series=s5] #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget .cx-quality-body.is-question > .cx-text-options > .is-text-answer {
+  flex-direction: column !important;
+  align-items: stretch !important;
+  justify-content: center !important;
+}

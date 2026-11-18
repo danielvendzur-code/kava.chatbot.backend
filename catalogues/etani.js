@@ -40,7 +40,7 @@ globalThis.CX_CATALOGUES.etani = {
         "stock": "InStock",
         "priceFrom": false,
         "selectionTraits": {
-          "careUse": "etani-cleanse",
+          "careUse": "etani-basic",
           "purpose": "etani-cleanse",
           "careVariant": "etani-pena-panthenol"
         },
@@ -86,9 +86,10 @@ globalThis.CX_CATALOGUES.etani = {
         "stock": "InStock",
         "priceFrom": false,
         "selectionTraits": {
-          "careUse": "etani-serum",
+          "careUse": "etani-extra",
           "purpose": "etani-serum",
-          "careVariant": "etani-kyselina-hyaluronova"
+          "careVariant": "etani-kyselina-hyaluronova",
+          "texture": "etani-hyaluron"
         },
         "selectionTraitsEvidence": {
           "url": "https://www.etani.cz/etani-kyselina-hyaluronova--25ml/",
@@ -132,9 +133,10 @@ globalThis.CX_CATALOGUES.etani = {
         "stock": "InStock",
         "priceFrom": false,
         "selectionTraits": {
-          "careUse": "etani-serum",
+          "careUse": "etani-extra",
           "purpose": "etani-serum",
-          "careVariant": "etani-hyaluronovy-komplex"
+          "careVariant": "etani-hyaluronovy-komplex",
+          "texture": "etani-hyaluron"
         },
         "selectionTraitsEvidence": {
           "url": "https://www.etani.cz/etani-kyselina-hyaluronova-pure-serum-30-ml-hybridni-komplex-/",
@@ -178,9 +180,10 @@ globalThis.CX_CATALOGUES.etani = {
         "stock": "InStock",
         "priceFrom": false,
         "selectionTraits": {
-          "careUse": "etani-serum",
+          "careUse": "etani-extra",
           "purpose": "etani-serum",
-          "careVariant": "etani-kolagen"
+          "careVariant": "etani-kolagen",
+          "texture": "etani-collagen"
         },
         "selectionTraitsEvidence": {
           "url": "https://www.etani.cz/etani-kolagen-pure-serum-30-ml-/",
@@ -224,9 +227,10 @@ globalThis.CX_CATALOGUES.etani = {
         "stock": "InStock",
         "priceFrom": false,
         "selectionTraits": {
-          "careUse": "etani-serum",
+          "careUse": "etani-extra",
           "purpose": "etani-serum",
-          "careVariant": "etani-hyaluron-kolagen"
+          "careVariant": "etani-hyaluron-kolagen",
+          "texture": "etani-collagen"
         },
         "selectionTraitsEvidence": {
           "url": "https://www.etani.cz/etani-serum-2v1-kyselina-hyaluronova-s-kolagenem-30ml-/",
@@ -270,9 +274,10 @@ globalThis.CX_CATALOGUES.etani = {
         "stock": "InStock",
         "priceFrom": false,
         "selectionTraits": {
-          "careUse": "etani-serum",
+          "careUse": "etani-extra",
           "purpose": "etani-serum",
-          "careVariant": "etani-serum-opuncie"
+          "careVariant": "etani-serum-opuncie",
+          "texture": "etani-opuntia"
         },
         "selectionTraitsEvidence": {
           "url": "https://www.etani.cz/etani-omlazujici-pletove-serum-s-extraktem-z-opuncie-30ml-/",
@@ -316,7 +321,7 @@ globalThis.CX_CATALOGUES.etani = {
         "stock": "InStock",
         "priceFrom": false,
         "selectionTraits": {
-          "careUse": "etani-oil",
+          "careUse": "etani-extra",
           "purpose": "etani-oil",
           "careVariant": "etani-arganovy-olej"
         },
@@ -362,7 +367,7 @@ globalThis.CX_CATALOGUES.etani = {
         "stock": "InStock",
         "priceFrom": false,
         "selectionTraits": {
-          "careUse": "etani-oil",
+          "careUse": "etani-extra",
           "purpose": "etani-oil",
           "careVariant": "etani-svestka-vanilka"
         },
@@ -408,7 +413,7 @@ globalThis.CX_CATALOGUES.etani = {
         "stock": "InStock",
         "priceFrom": false,
         "selectionTraits": {
-          "careUse": "etani-oil",
+          "careUse": "etani-extra",
           "purpose": "etani-oil",
           "careVariant": "etani-opunciovy-olej"
         },
@@ -454,9 +459,10 @@ globalThis.CX_CATALOGUES.etani = {
         "stock": "InStock",
         "priceFrom": false,
         "selectionTraits": {
-          "careUse": "etani-cream",
+          "careUse": "etani-basic",
           "purpose": "etani-cream",
-          "careVariant": "etani-denni-krem-opuncie"
+          "careVariant": "etani-denni-krem-opuncie",
+          "texture": "etani-other-cream"
         },
         "selectionTraitsEvidence": {
           "url": "https://www.etani.cz/etani-denni-krem-s-extraktem-z-opuncie-50ml-/",
@@ -500,9 +506,10 @@ globalThis.CX_CATALOGUES.etani = {
         "stock": "InStock",
         "priceFrom": false,
         "selectionTraits": {
-          "careUse": "etani-cream",
+          "careUse": "etani-basic",
           "purpose": "etani-cream",
-          "careVariant": "etani-eshumi-black-snail"
+          "careVariant": "etani-eshumi-black-snail",
+          "texture": "etani-other-cream"
         },
         "selectionTraitsEvidence": {
           "url": "https://www.etani.cz/eshumi-hydratacni-krem-se-snecim-sekretem-black-snail-perfect-hydrator-cream-55-ml/",
@@ -546,9 +553,10 @@ globalThis.CX_CATALOGUES.etani = {
         "stock": "InStock",
         "priceFrom": false,
         "selectionTraits": {
-          "careUse": "etani-cream",
+          "careUse": "etani-basic",
           "purpose": "etani-cream",
-          "careVariant": "etani-glamfox-ryze-niacinamid"
+          "careVariant": "etani-glamfox-ryze-niacinamid",
+          "texture": "etani-niacinamide"
         },
         "selectionTraitsEvidence": {
           "url": "https://www.etani.cz/glamfox-rice-niacinamide-cream-rozjasnujici-pletovy-krem-80-g/",
@@ -594,9 +602,10 @@ globalThis.CX_CATALOGUES.etani = {
         "stock": "InStock",
         "priceFrom": false,
         "selectionTraits": {
-          "careUse": "etani-cream",
+          "careUse": "etani-basic",
           "purpose": "etani-cream",
-          "careVariant": "etani-3w-vitamin-c"
+          "careVariant": "etani-3w-vitamin-c",
+          "texture": "etani-niacinamide"
         },
         "selectionTraitsEvidence": {
           "url": "https://www.etani.cz/3w-clinic-vitamin-c-luxury-gold-capsule-cream-luxusni-kapslovy-pletovy-krem-s-vitaminem-c-a-zlatem-56-g/",

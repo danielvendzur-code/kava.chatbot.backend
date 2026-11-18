@@ -40,9 +40,10 @@ globalThis.CX_CATALOGUES.sumavaforrest = {
         "stock": "InStock",
         "priceFrom": false,
         "selectionTraits": {
-          "careUse": "sumavaforrest-cream",
+          "careUse": "sumava-care",
           "purpose": "sumavaforrest-cream",
-          "careVariant": "sumavaforrest-evergreen"
+          "careVariant": "sumavaforrest-evergreen",
+          "texture": "sumava-daily"
         },
         "selectionTraitsEvidence": {
           "url": "https://www.sumavaforrest.cz/products/evergreen-hydratacni-baze?variant=54855943291204",
@@ -90,7 +91,7 @@ globalThis.CX_CATALOGUES.sumavaforrest = {
         "stock": "InStock",
         "priceFrom": false,
         "selectionTraits": {
-          "careUse": "sumavaforrest-serum",
+          "careUse": "sumava-care",
           "purpose": "sumavaforrest-serum",
           "careVariant": "sumavaforrest-napinavy"
         },
@@ -133,9 +134,10 @@ globalThis.CX_CATALOGUES.sumavaforrest = {
         "stock": "InStock",
         "priceFrom": false,
         "selectionTraits": {
-          "careUse": "sumavaforrest-cream",
+          "careUse": "sumava-care",
           "purpose": "sumavaforrest-cream",
-          "careVariant": "sumavaforrest-cesta-casem"
+          "careVariant": "sumavaforrest-cesta-casem",
+          "texture": "sumava-mature"
         },
         "selectionTraitsEvidence": {
           "url": "https://www.sumavaforrest.cz/products/cesta-casem-krem-na-plet?variant=54967248060740",
@@ -180,7 +182,7 @@ globalThis.CX_CATALOGUES.sumavaforrest = {
         "stock": "InStock",
         "priceFrom": false,
         "selectionTraits": {
-          "careUse": "sumavaforrest-serum",
+          "careUse": "sumava-care",
           "purpose": "sumavaforrest-serum",
           "careVariant": "sumavaforrest-bejby"
         },
@@ -225,7 +227,7 @@ globalThis.CX_CATALOGUES.sumavaforrest = {
         "stock": "InStock",
         "priceFrom": false,
         "selectionTraits": {
-          "careUse": "sumavaforrest-serum",
+          "careUse": "sumava-care",
           "purpose": "sumavaforrest-serum",
           "careVariant": "sumavaforrest-druha-miza"
         },
@@ -270,9 +272,10 @@ globalThis.CX_CATALOGUES.sumavaforrest = {
         "stock": "InStock",
         "priceFrom": false,
         "selectionTraits": {
-          "careUse": "sumavaforrest-cream",
+          "careUse": "sumava-care",
           "purpose": "sumavaforrest-cream",
-          "careVariant": "sumavaforrest-baltazar"
+          "careVariant": "sumavaforrest-baltazar",
+          "texture": "sumava-daily"
         },
         "selectionTraitsEvidence": {
           "url": "https://www.sumavaforrest.cz/products/baltazar-hydratacni-krem-s-jojobou-a-aloe?variant=54966565732676",
@@ -316,7 +319,7 @@ globalThis.CX_CATALOGUES.sumavaforrest = {
         "stock": "InStock",
         "priceFrom": false,
         "selectionTraits": {
-          "careUse": "sumavaforrest-cleanse",
+          "careUse": "sumava-clean",
           "purpose": "sumavaforrest-cleanse",
           "careVariant": "sumavaforrest-nelicena"
         },
@@ -362,7 +365,7 @@ globalThis.CX_CATALOGUES.sumavaforrest = {
         "stock": "InStock",
         "priceFrom": false,
         "selectionTraits": {
-          "careUse": "sumavaforrest-exfoliate",
+          "careUse": "sumava-clean",
           "purpose": "sumavaforrest-exfoliate",
           "careVariant": "sumavaforrest-melichar"
         },
@@ -406,7 +409,7 @@ globalThis.CX_CATALOGUES.sumavaforrest = {
         "stock": "InStock",
         "priceFrom": false,
         "selectionTraits": {
-          "careUse": "sumavaforrest-toner",
+          "careUse": "sumava-care",
           "purpose": "sumavaforrest-toner",
           "careVariant": "sumavaforrest-kaspar"
         },
@@ -449,7 +452,7 @@ globalThis.CX_CATALOGUES.sumavaforrest = {
         "stock": "InStock",
         "priceFrom": false,
         "selectionTraits": {
-          "careUse": "sumavaforrest-cleanse",
+          "careUse": "sumava-clean",
           "purpose": "sumavaforrest-cleanse",
           "careVariant": "sumavaforrest-od-licka"
         },
@@ -494,9 +497,10 @@ globalThis.CX_CATALOGUES.sumavaforrest = {
         "stock": "InStock",
         "priceFrom": false,
         "selectionTraits": {
-          "careUse": "sumavaforrest-exfoliate",
+          "careUse": "sumava-clean",
           "purpose": "sumavaforrest-exfoliate",
-          "careVariant": "sumavaforrest-orient-expres"
+          "careVariant": "sumavaforrest-orient-expres",
+          "texture": "sumava-mineral"
         },
         "selectionTraitsEvidence": {
           "url": "https://www.sumavaforrest.cz/products/orient-expres-marocka-cistici-pasta-na-oblicej?variant=54966649487684",
@@ -540,9 +544,10 @@ globalThis.CX_CATALOGUES.sumavaforrest = {
         "stock": "InStock",
         "priceFrom": false,
         "selectionTraits": {
-          "careUse": "sumavaforrest-exfoliate",
+          "careUse": "sumava-clean",
           "purpose": "sumavaforrest-exfoliate",
-          "careVariant": "sumavaforrest-ryzak"
+          "careVariant": "sumavaforrest-ryzak",
+          "texture": "sumava-rice-cocoa"
         },
         "selectionTraitsEvidence": {
           "url": "https://www.sumavaforrest.cz/products/ryzak-pletovy-peeling-s-ryzi-a-medem?variant=54966591553860",
@@ -586,7 +591,7 @@ globalThis.CX_CATALOGUES.sumavaforrest = {
         "stock": "InStock",
         "priceFrom": false,
         "selectionTraits": {
-          "careUse": "sumavaforrest-toner",
+          "careUse": "sumava-care",
           "purpose": "sumavaforrest-toner",
           "careVariant": "sumavaforrest-saskia"
         },
@@ -632,9 +637,10 @@ globalThis.CX_CATALOGUES.sumavaforrest = {
         "stock": "InStock",
         "priceFrom": false,
         "selectionTraits": {
-          "careUse": "sumavaforrest-exfoliate",
+          "careUse": "sumava-clean",
           "purpose": "sumavaforrest-exfoliate",
-          "careVariant": "sumavaforrest-butterfly"
+          "careVariant": "sumavaforrest-butterfly",
+          "texture": "sumava-rice-cocoa"
         },
         "selectionTraitsEvidence": {
           "url": "https://www.sumavaforrest.cz/products/butterfly-effect-kokosovo-kakaovy-pletovy-peeling?variant=54966640410948",
@@ -676,7 +682,7 @@ globalThis.CX_CATALOGUES.sumavaforrest = {
         "stock": "InStock",
         "priceFrom": false,
         "selectionTraits": {
-          "careUse": "sumavaforrest-toner",
+          "careUse": "sumava-care",
           "purpose": "sumavaforrest-toner",
           "careVariant": "sumavaforrest-kvetova-voda-lipovy"
         },
@@ -719,7 +725,7 @@ globalThis.CX_CATALOGUES.sumavaforrest = {
         "stock": "InStock",
         "priceFrom": false,
         "selectionTraits": {
-          "careUse": "sumavaforrest-toner",
+          "careUse": "sumava-care",
           "purpose": "sumavaforrest-toner",
           "careVariant": "sumavaforrest-bio-kvetova-voda-levandule"
         },
@@ -762,7 +768,7 @@ globalThis.CX_CATALOGUES.sumavaforrest = {
         "stock": "InStock",
         "priceFrom": false,
         "selectionTraits": {
-          "careUse": "sumavaforrest-exfoliate",
+          "careUse": "sumava-clean",
           "purpose": "sumavaforrest-exfoliate",
           "careVariant": "sumavaforrest-rosnicka"
         },
