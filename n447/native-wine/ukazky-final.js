@@ -158,6 +158,9 @@
   /* Only the demos whose hero is the generated 2x2 collage. */
   const heroImg = root.querySelector('.cx-owner-visual img');
   const collage = /\/assets\/(vino|cosmetics)\/[a-z0-9-]+\.jpg$/.test(brand.hero || '') && brand.mark;
+  if (heroImg && brand.heroPhoto) {
+    document.body.dataset.cxHeroSingle = "true";
+  }
   if (heroImg && collage) {
     const pick = brand.heroProduct && brand.products.find((p) => p.id === brand.heroProduct);
     const product = pick || brand.products.find((p) => p.photo);

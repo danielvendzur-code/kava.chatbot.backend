@@ -17,7 +17,7 @@ Object.assign(window.S3_REG.demos, {
     "country": "CZ",
     "logos": {
       "landing": "/assets/s5/francin/logo.webp",
-      "header": "/assets/s5/francin/logo.webp",
+      "header": "/assets/s5/francin/header-mark.webp",
       "avatar": "/assets/s5/francin/avatar.webp"
     }
   }
