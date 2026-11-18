@@ -7,7 +7,7 @@
   <title>Ukážky poradcov</title>
   <script>
     const demo = new URLSearchParams(location.search).get('demo');
-    const cosmetics = ['francin', 'etani', 'sumavaforrest', 'verticeramics', 'cipollacaffe', 'qbcoffee'];
+    const cosmetics = ['francin', 'etani', 'sumavaforrest', 'verticeramics', 'cipollacaffe', 'qbcoffee', 'redfawn', 'avcoffee'];
     const wine = ['vinarstvisoman', 'vinocapka', 'sivko'];
     const path = cosmetics.includes(demo) ? '/s5.html' : wine.includes(demo) ? '/wine.html' : '';
     if (path) location.replace(path + '?demo=' + encodeURIComponent(demo));
@@ -15,6 +15,8 @@
 </head>
 <body>
   <main><h1>Ukážky poradcov</h1><ul>
+    <li><a href="/s5.html?demo=redfawn">Red Fawn Coffee Roasters</a></li>
+    <li><a href="/s5.html?demo=avcoffee">ALTER-NATIV COFFEE</a></li>
     <li><a href="/s5.html?demo=qbcoffee">qb coffee roasters</a></li>
     <li><a href="/s5.html?demo=cipollacaffe">Cipolla Caffé</a></li>
     <li><a href="/s5.html?demo=verticeramics">verti ceramics</a></li>

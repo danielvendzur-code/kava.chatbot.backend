@@ -1,4 +1,29 @@
 Object.assign(window.S3_REG.demos, {
+  "redfawn": {
+    "series": "s5",
+    "type": "coffee",
+    "name": "Red Fawn Coffee Roasters",
+    "country": "SK",
+    "descriptiveChoices": true,
+    "logos": {
+      "landing": "/assets/s5/redfawn/logo.webp",
+      "header": "/assets/s5/redfawn/logo.webp",
+      "avatar": "/assets/s5/redfawn/avatar.webp",
+      "launcher": "/assets/s5/redfawn/avatar.webp"
+    }
+  },
+  "avcoffee": {
+    "series": "s5",
+    "type": "coffee",
+    "name": "ALTER-NATIV COFFEE",
+    "country": "SK",
+    "descriptiveChoices": true,
+    "logos": {
+      "landing": "/assets/s5/avcoffee/logo.svg",
+      "header": "/assets/s5/avcoffee/logo.svg",
+      "avatar": "/assets/s5/avcoffee/logo.svg"
+    }
+  },
   "qbcoffee": {
     "series": "s5",
     "type": "coffee",

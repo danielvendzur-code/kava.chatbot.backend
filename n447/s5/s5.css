@@ -148,3 +148,9 @@ html body[data-series=s5][data-cosmetics-demo=qbcoffee] #cosmetics-root#cosmetic
   object-fit: cover !important;
   object-position: center !important;
 }
+
+body[data-series=s5][data-cosmetics-demo=avcoffee] #cosmetics-root#cosmetics-root .cx-owner-brand .cx-wordmark {
+  width: 48px !important;
+  height: 44px !important;
+  object-fit: contain !important;
+}
