@@ -285,12 +285,12 @@
     const localCatalogue = globalThis.CX_WINE_CATALOGUES?.[slug];
     if (localCatalogue) {
       const normalized = clean.normalize('NFD').replace(/\p{Diacritic}/gu,'').toLowerCase();
-      const requestedColor = /cerven/.test(normalized) ? 'red' : /sumiv|sekt|perliv/.test(normalized) ? 'sparkling' : /bil[eay]|biel/.test(normalized) ? 'white' : /ruzov|rose/.test(normalized) ? 'rose' : '';
+      const requestedColor = /(frizzante|sumiv|sekt|perliv)/.test(normalized) ? 'sparkling' : /cerven/.test(normalized) ? 'red' : /bil[eay]|biel/.test(normalized) ? 'white' : /ruzov|rose/.test(normalized) ? 'rose' : '';
       const requestedStyle = /poloslad/.test(normalized) ? 'medium-sweet' : /polosuch/.test(normalized) ? 'medium-dry' : /slad/.test(normalized) ? 'sweet' : /such/.test(normalized) ? 'dry' : '';
-      const limit = normalized.match(/(?:do|max(?:imalne)?|nejvyse)\s*(\d+(?:\s\d{3})?)/)?.[1];
+      const limit = normalized.match(/(?:do|max(?:imalne)?|nejvyse|najviac)\s*(\d+(?:\s\d{3})?(?:[,.]\d{1,2})?)(?![\d,.])/i)?.[1];
       const compare = /porovn|srovn/.test(normalized);
       const match = localCatalogue.products.filter(p => (!requestedColor || p.category === requestedColor) &&
-        (!requestedStyle || p.wineFacts.style === requestedStyle) && (!limit || p.priceAmount <= Number(limit.replace(/\s/g,''))));
+        (!requestedStyle || p.wineFacts.style === requestedStyle) && (!limit || p.priceAmount <= Number(limit.replace(/\s/g,'').replace(',','.'))));
       const first = match[0];
       const second = compare && first && (
         match.find(p => p.category !== first.category && p.wineFacts.style !== first.wineFacts.style) ||
@@ -301,7 +301,9 @@
       answer.text = chosen.length
         ? chosen.map(p => `${p.name} · ${p.volume} · ${p.price}. ${p.reason}
 ${p.url}`).join('\n\n')
-        : 'V této nabídce nemám víno, které splňuje všechny zadané podmínky. Zkuste upravit sladkost, barvu nebo rozpočet.';
+        : brand.lang==='cs'
+          ? 'V této nabídce nemám víno, které splňuje všechny zadané podmínky. Zkuste upravit sladkost, barvu nebo rozpočet.'
+          : 'V tejto ponuke nemám víno, ktoré spĺňa všetky zadané podmienky. Skúste upraviť sladkosť, farbu alebo rozpočet.';
       state.busy = false;
       renderChat();
       return;

@@ -41,3 +41,7 @@ body #cosmetics-root #cx-widget .cx-option{border:1px solid #d5d7d9!important;bo
 body #cosmetics-root #cx-widget .cx-option:focus-visible{outline:2px solid var(--cx-accent)!important;outline-offset:2px!important;}
 body #cosmetics-root #cx-widget .cx-widget-note{border-top:1px solid #d1d4d8!important;}
 body #cosmetics-root #cx-widget .cx-mode button:focus,body #cosmetics-root #cx-widget .cx-mode button:focus-visible{outline:none!important;box-shadow:none!important;}
+
+html body[data-cosmetics-demo=sivko] #cosmetics-root#cosmetics-root .cx-owner-visual {
+  background: #070506 !important;
+}

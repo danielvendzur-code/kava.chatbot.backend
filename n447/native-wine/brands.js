@@ -1037,3 +1037,38 @@ Object.assign(window.COSMETICS_DEMOS.brands,{
     ]
   }
 });
+
+window.COSMETICS_DEMOS.brands.sivko = {
+  "name": "SIVKO",
+  "fullName": "Vinárstvo SIVKO",
+  "domain": "www.sivko.sk",
+  "website": "https://www.sivko.sk/obchod/",
+  "lang": "sk",
+  "catalogueLabel": "Vinárstvo SIVKO",
+  "catalogueContext": "wine",
+  "theme": {
+    "brand": "#4c323c",
+    "accent": "#653b4c",
+    "soft": "#f5edf0",
+    "paper": "#fff",
+    "ink": "#281e22",
+    "line": "#e7d9de"
+  },
+  "wordmark": "<img class=\"cx-wordmark cx-logo\" src=\"/assets/s5/sivko/logo.webp\" alt=\"Vinárstvo SIVKO\">",
+  "headerLogo": "/assets/s5/sivko/logo.webp",
+  "mark": "/assets/s5/sivko/logo.webp",
+  "messageLogo": "/assets/s5/sivko/logo.webp",
+  "launcherMark": "<img src=\"/assets/s5/sivko/logo.webp\" alt=\"\">",
+  "avatarMark": "<img src=\"/assets/s5/sivko/logo.webp\" alt=\"\">",
+  "hero": "/assets/s5/sivko/dunaj-barrique-2021.webp",
+  "heroPhoto": "/assets/s5/sivko/dunaj-barrique-2021.webp",
+  "heroProduct": "dunaj-barrique-2021",
+  "chips": [
+    "Suché biele víno",
+    "Červené víno do 13 €",
+    "Polosuché frizzante",
+    "Porovnať dve vína"
+  ],
+  "ageNotice": "Alkohol len pre osoby staršie ako 18 rokov.",
+  "products": []
+};

@@ -140,3 +140,11 @@ body[data-series=s5][data-cosmetics-demo=cipollacaffe] #cosmetics-root#cosmetics
   height: 44px !important;
   object-fit: contain !important;
 }
+
+html body[data-series=s5][data-cosmetics-demo=qbcoffee] #cosmetics-root#cosmetics-root .cx-owner-visual > img {
+  width: 100% !important;
+  height: 100% !important;
+  padding: 0 !important;
+  object-fit: cover !important;
+  object-position: center !important;
+}

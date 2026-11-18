@@ -34,10 +34,12 @@
  'use strict';
  const norm=v=>String(v||'').normalize('NFD').replace(/\p{Diacritic}/gu,'').toLowerCase();
  const labels={white:'Biele',red:'Červené',rose:'Ružové',orange:'Oranžové',sparkling:'Šumivé',mixed:'Nechám si poradiť',dry:'Suché','medium-dry':'Polosuché','medium-sweet':'Polosladké',sweet:'Sladké',crisp:'Svieže a ľahké',fruity:'Ovocné',bold:'Plné a výrazné',any:'Nechám si poradiť',simple:'Jednu fľašu',basic:'Trio na ochutnanie',full:'Štyri rôzne vína',target:'Na darček',fish:'Ryba, hydina a šaláty',meat:'Mäso a gril',cheese:'Syry a dezerty',noFood:'Len tak, na posedenie'};
- function create(products){
+ function create(products,{groupByForm=false}={}){
   const wines=products.filter(p=>p.kind==='Víno'),live=p=>p.available!==false;
   const countFor=quantity=>({basic:3,full:4})[quantity]||1;
-  function matches(a={}){return wines.filter(live).filter(p=>(!a.year||a.year==='any'||p.wineFacts.year===a.year)&&(!a.color||a.color==='mixed'||p.tags.includes(a.color))&&(!a.style||a.style==='any'||p.wineFacts.style===a.style)&&(!a.character||a.character==='any'||p.tags.includes(a.character))&&(!a.budget||Number.isFinite(p.priceAmount)&&p.priceAmount<=Number(a.budget)));}
+  const form=p=>p.tags.includes('sparkling')?'bubbly':'still';
+  const matchesForm=(p,a)=>!a.form||a.form==='any'||form(p)===a.form;
+  function matches(a={}){return wines.filter(live).filter(p=>matchesForm(p,a)&&(!a.year||a.year==='any'||p.wineFacts.year===a.year)&&(!a.color||a.color==='mixed'||p.tags.includes(a.color))&&(!a.style||a.style==='any'||p.wineFacts.style===a.style)&&(!a.character||a.character==='any'||p.tags.includes(a.character))&&(!a.budget||Number.isFinite(p.priceAmount)&&p.priceAmount<=Number(a.budget)));}
   function score(p,a){const tags=p.tags||[];if(a.food==='noFood'||!a.food)return 0;if(tags.includes(a.food))return 3;
    // General pairing suggestions; never presented as winery-published facts.
    if(a.food==='meat'&&tags.includes('red'))return 1;if(a.food==='fish'&&(tags.includes('white')||tags.includes('rose')))return 1;if(a.food==='cheese'&&(tags.includes('sweet')||tags.includes('bold')))return 1;return 0;
@@ -49,8 +51,10 @@
    return selected;
   }
   function steps(a={}){
-   const liveWines=wines.filter(live),colors=['white','red','rose','orange','sparkling'].filter(v=>liveWines.some(p=>p.tags.includes(v)));
-   const result=[{key:'color',options:[...colors,'mixed']}];
+   const liveWines=wines.filter(live),poolByForm=liveWines.filter(p=>matchesForm(p,a)),colors=['white','red','rose','orange','sparkling'].filter(v=>poolByForm.some(p=>p.tags.includes(v)));
+   const result=[];
+   if(groupByForm&&new Set(liveWines.map(form)).size>1)result.push({key:'form',options:['still','bubbly']});
+   if(!groupByForm||colors.length>1)result.push({key:'color',options:[...colors,'mixed']});
    const pool=matches({...a,style:'',character:'',budget:''}),styles=['dry','medium-dry','medium-sweet','sweet'].filter(v=>pool.some(p=>p.wineFacts.style===v));
    /* A question needs at least two real answers. */if(styles.length>1)result.push({key:'style',options:[...styles,'any']});
    const selected=matches({...a,budget:''});

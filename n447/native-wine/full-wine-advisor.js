@@ -64,18 +64,18 @@
 })(globalThis);
 
 (()=>{'use strict';const slug=document.body.dataset.cosmeticsDemo,brand=window.COSMETICS_DEMOS?.brands?.[slug],widget=document.querySelector('#cx-widget'),catalogue=globalThis.CX_WINE_CATALOGUES?.[slug];if(!widget||!catalogue)return;
- const core=globalThis.CXWineAdvisorCore,engine=core.create(catalogue.products),labels={...core.labels},esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+ const core=globalThis.CXWineAdvisorCore,engine=core.create(catalogue.products,catalogue),labels={...core.labels,still:'Tiché víno',bubbly:'Perlivé víno',...catalogue.colorLabels},esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
  const state={step:0,page:0,answers:{},expanded:false,limit:24,other:false},nav=widget.querySelector('.cx-mode'),stage=widget.querySelector('#cx-stage'),panel=document.createElement('section');panel.className='cx-quality-stage cx-catalogue-stage';panel.hidden=true;panel.setAttribute('aria-label','Poradca pri výbere vína');stage.after(panel);widget.classList.add('cx-has-catalogue');
- const descriptions={crisp:'Sviežosť a ľahkosť uvedená v opise vína',fruity:'Ovocný charakter podľa opisu vinárstva',bold:'Výraznejšie telo alebo drevo v opise vína',white:'Biele vína z aktuálnej ponuky',red:'Červené vína z aktuálnej ponuky',rose:'Ružové vína z aktuálnej ponuky',orange:'Víno označené ako oranžové',sparkling:'Sekt, perlivé víno alebo pét-nat',mixed:'Rozhodnú ďalšie odpovede',dry:'Najmenej sladký štýl podľa označenia vinárstva','medium-dry':'Jemný zvyškový cukor','medium-sweet':'Výraznejšie sladký štýl',sweet:'Víno označené ako sladké',any:'Rozhodnú ďalšie odpovede',simple:'Jedno víno podľa vašich odpovedí',basic:'Najviac tri rôzne vhodné vína',full:'Najviac štyri rôzne vhodné vína',target:'Jedna fľaša vybraná podľa vášho vkusu',fish:'Ľahšie jedlá a letná kuchyňa',meat:'Steak, divina a výdatné jedlá',cheese:'Syrová misa alebo sladký dezert',noFood:'Bez požiadavky na párovanie'};
+ const descriptions={still:'Biele, ružové alebo červené víno bez bubliniek',bubbly:'Frizzante s jemným perlením',crisp:'Sviežosť a ľahkosť uvedená v opise vína',fruity:'Ovocný charakter podľa opisu vinárstva',bold:'Výraznejšie telo alebo drevo v opise vína',white:'Biele vína z aktuálnej ponuky',red:'Červené vína z aktuálnej ponuky',rose:'Ružové vína z aktuálnej ponuky',orange:'Víno označené ako oranžové',sparkling:'Sekt, perlivé víno alebo pét-nat',mixed:'Rozhodnú ďalšie odpovede',dry:'Najmenej sladký štýl podľa označenia vinárstva','medium-dry':'Jemný zvyškový cukor','medium-sweet':'Výraznejšie sladký štýl',sweet:'Víno označené ako sladké',any:'Rozhodnú ďalšie odpovede',simple:'Jedno víno podľa vašich odpovedí',basic:'Najviac tri rôzne vhodné vína',full:'Najviac štyri rôzne vhodné vína',target:'Jedna fľaša vybraná podľa vášho vkusu',fish:'Ľahšie jedlá a letná kuchyňa',meat:'Steak, divina a výdatné jedlá',cheese:'Syrová misa alebo sladký dezert',noFood:'Bez požiadavky na párovanie'};
  if(slug==='valka'){labels.simple='Jedno balenie vína';descriptions.simple='Jedno víno podľa vašich odpovedí';descriptions.target='Víno vybrané podľa vášho vkusu';}
- const scene=v=>({dry:'crisp','medium-dry':'fruity','medium-sweet':'sweet',mixed:'any',noFood:'any',orange:'white',any:'any'})[v]||v;
+ const scene=v=>({still:'white',bubbly:'sparkling',dry:'crisp','medium-dry':'fruity','medium-sweet':'sweet',mixed:'any',noFood:'any',orange:'white',any:'any'})[v]||v;
  function answerPhoto(step,value){
   if(step.key==='budget'||step.key==='year')return '';
   const photo=window.COSMETICS_DEMOS.semanticPhotos[scene(value)]||'/assets/vino/choice-any.jpg';
   return '<img src="'+esc(photo)+'" alt="" loading="eager">';
  }
  function options(step){
-  const real=step.options.filter(v=>v!=='any'&&v!=='mixed'),list=real.length>3?real:step.options,remaining=list.slice(state.page*3),current=remaining.length>4?remaining.slice(0,3):remaining,next=remaining.length>4;
+  const real=step.options.filter(v=>v!=='any'&&v!=='mixed'),list=!catalogue.groupByForm&&real.length>3?real:step.options,remaining=list.slice(state.page*3),current=remaining.length>4?remaining.slice(0,3):remaining,next=remaining.length>4;
   const budget=step.key==='budget', textOnly=budget||step.key==='year';
   const card=v=>{
    const photo=answerPhoto(step,v);
@@ -91,7 +91,7 @@
  function settle(){const copies=[...panel.querySelectorAll('.cx-quality-copy')];copies.forEach(e=>e.style.minHeight='');const h=Math.max(0,...copies.map(e=>e.offsetHeight));copies.forEach(e=>e.style.minHeight=h+'px');}
  function render(){const steps=engine.steps(state.answers),step=steps[state.step];let heading,content;
  if(state.other){const other=catalogue.products.filter(p=>p.kind!=='Víno'&&p.available!==false);heading='Ďalšie produkty z ponuky';content=other.slice(0,state.limit).map(p=>product(p)).join('')+(other.length>state.limit?'<button class="cx-quality-more" data-next>Načítať ďalšie</button>':'');}
- else if(step){heading=({year:'Máte obľúbený ročník?',color:'Aké víno máte najradšej?',style:'Akú sladkosť uprednostníte?',quantity:'Koľko vín hľadáte?',food:'K čomu bude víno?',budget:'Do akej sumy vyberáme?',character:'Aký charakter má víno mať?'})[step.key];content=options(step);if(state.step===0&&catalogue.products.some(p=>p.kind!=='Víno'&&p.available!==false))content+='<button type="button" class="cx-quality-more" data-other>Iné produkty z ponuky</button>';}
+ else if(step){heading=({form:'Má byť víno tiché alebo perlivé?',year:'Máte obľúbený ročník?',color:'Aké víno máte najradšej?',style:'Akú sladkosť uprednostníte?',quantity:'Koľko vín hľadáte?',food:'K čomu bude víno?',budget:'Do akej sumy vyberáme?',character:'Aký charakter má víno mať?'})[step.key];content=options(step);if(state.step===0&&catalogue.products.some(p=>p.kind!=='Víno'&&p.available!==false))content+='<button type="button" class="cx-quality-more" data-other>Iné produkty z ponuky</button>';}
  else {
   const matches=engine.recommend(state.answers),count=({simple:1,target:1,basic:3,full:4})[state.answers.quantity]||1,selected=matches.slice(0,count),g=resultGuide();
   heading=matches.length?'Toto vám odporúčam':'Takúto kombináciu v ponuke nemáme';

@@ -206,6 +206,11 @@
   /* s3a: e-shop uvádza pri káve „Doporučená příprava: Automatický kávovar“ alebo „Espresso“ – overený rozdiel medzi inak rovnakými kávami. */
   const machineOf = (p) => { const x = String(p.prepText || '') + ' ' + String(p.roastLabel || '');
     if (/automat/i.test(x)) return 'auto'; if (Array.isArray(p.preps) && p.preps.includes('espresso') && /espresso/i.test(String(p.prepText || ''))) return 'lever'; return null; };
+  const machinesOf = (p) => Array.isArray(p.machines) ? p.machines : [machineOf(p)].filter(Boolean);
+  const suitsMachine = (p, machine) => {
+    const verified = machinesOf(p);
+    return !verified.length || verified.includes(machine);
+  };
   /* Významovo rovnaké odpovede: rovnaký text po odstránení diakritiky, veľkosti písmen a interpunkcie. */
   const sameKey = (o) => [o.title, o.detail].map((x) => String(x || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim()).join('|');
   function pool(data, a, except) {
@@ -217,7 +222,7 @@
       .filter((p) => except === 'budget' || !a.budget || a.budget === 'any' || !!packFor(data, p, a))
       .filter((p) => except === 'detailProcess' || !a.detailProcess || detailOf(p, a.detailProcess))
       .filter((p) => except === 'detailMore' || !a.detailMore || detailOf(p, a.detailMore))
-      .filter((p) => except === 'machine' || !a.machine || !machineOf(p) || machineOf(p) === a.machine)
+      .filter((p) => except === 'machine' || !a.machine || suitsMachine(p, a.machine))
       .filter((p) => except === 'pick' || !chosen(a) || p.id === chosen(a));
   }
   /* Káva môže patriť do viacerých chuťových skupín e-shopu (p.tastes). */
@@ -249,7 +254,7 @@
     if (!a.prep) {
       /* s3a: ak e-shop pri espresso kávach uvádza rozdielny kávovar (automat / pákový), je to súčasť prípravy –
          jedna otázka namiesto dvoch podobných krokov („Kávovar alebo automat“ a potom „Aký kávovar“). */
-      const esp = pool(data, {prep: 'espresso'}), ms = new Set(esp.map(machineOf));
+      const esp = pool(data, {prep: 'espresso'}), ms = new Set(esp.flatMap(machinesOf));
       const split = ms.has('auto') && ms.has('lever');
       const mt = t.machine || TXT.sk.machine;
       const options = Object.keys(PREP_ROASTS).filter((k) => pool(data, {prep: k}).length)
@@ -383,11 +388,11 @@
       const dupKeys = options.filter((o, i) => o.product && options.findIndex((x) => sameKey(x) === sameKey(o)) !== i).map(sameKey);
       if (dupKeys.length && !a.machine && idx === 0) {
         const dup = p.filter((x) => dupKeys.includes(sameKey({title: tones(x), detail: sub(x)})));
-        const ms = [...new Set(dup.map(machineOf))];
+        const ms = [...new Set(dup.flatMap(machinesOf))];
         if (ms.includes('auto') && ms.includes('lever')) {
           const mt = t.machine || TXT.sk.machine;
           return {key: 'machine', name: t.machineName, title: t.machineQ, options: ['auto', 'lever'].map((k) => ({value: k, title: mt[k][0],
-            detail: mt[k][1] + ' · ' + t.nCoffees(p.filter((x) => !machineOf(x) || machineOf(x) === k).length), photo: k === 'auto' ? SC('coffee-automatic-brew') : '/assets/s3/coffee/machine-lever.jpg'}))};
+            detail: mt[k][1] + ' · ' + t.nCoffees(p.filter((x) => suitsMachine(x, k)).length), photo: k === 'auto' ? SC('coffee-automatic-brew') : '/assets/s3/coffee/machine-lever.jpg'}))};
         }
       }
       /* Inak sa rovnaké odpovede doplnia o overený rozdiel zo škál pražiarne (napr. hořkost, tělo) – iba časti, ktoré sa medzi nimi líšia. */

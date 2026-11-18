@@ -49,7 +49,7 @@
       wordmark: wordmark(LOGOS[slug]?.landing || b.logo, b.name),
       /* hlavička widgetu je tmavá a logo v nej je biele (filter Andreine) – iba priehľadná kresba bez plnej plochy */
       headerLogo: LOGOS[slug]?.header || b.logo,
-      launcherMark: wordmark(LOGOS[slug]?.header || b.logo, b.name),
+      launcherMark: wordmark(LOGOS[slug]?.launcher || LOGOS[slug]?.header || b.logo, b.name),
       hero: b.hero || (hero && hero.photo) || products[0].photo,
       products: catalogue, catalogue,
       quickChips: (N.chips || []).slice(0, 4),

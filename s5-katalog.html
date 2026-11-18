@@ -7,19 +7,21 @@
   <title>Ukážky poradcov</title>
   <script>
     const demo = new URLSearchParams(location.search).get('demo');
-    const cosmetics = ['francin', 'etani', 'sumavaforrest', 'verticeramics', 'cipollacaffe'];
-    const wine = ['vinarstvisoman', 'vinocapka'];
+    const cosmetics = ['francin', 'etani', 'sumavaforrest', 'verticeramics', 'cipollacaffe', 'qbcoffee'];
+    const wine = ['vinarstvisoman', 'vinocapka', 'sivko'];
     const path = cosmetics.includes(demo) ? '/s5.html' : wine.includes(demo) ? '/wine.html' : '';
     if (path) location.replace(path + '?demo=' + encodeURIComponent(demo));
   </script>
 </head>
 <body>
   <main><h1>Ukážky poradcov</h1><ul>
+    <li><a href="/s5.html?demo=qbcoffee">qb coffee roasters</a></li>
     <li><a href="/s5.html?demo=cipollacaffe">Cipolla Caffé</a></li>
     <li><a href="/s5.html?demo=verticeramics">verti ceramics</a></li>
     <li><a href="/s5.html?demo=francin">Francin</a></li>
     <li><a href="/s5.html?demo=etani">ETANI</a></li>
     <li><a href="/s5.html?demo=sumavaforrest">Šumava FORREST</a></li>
+    <li><a href="/wine.html?demo=sivko">Vinárstvo SIVKO</a></li>
     <li><a href="/wine.html?demo=vinarstvisoman">Vinařství Šoman</a></li>
     <li><a href="/wine.html?demo=vinocapka">Vinařství Čapka</a></li>
   </ul></main>

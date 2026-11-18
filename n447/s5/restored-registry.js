@@ -1,4 +1,17 @@
 Object.assign(window.S3_REG.demos, {
+  "qbcoffee": {
+    "series": "s5",
+    "type": "coffee",
+    "name": "qb coffee roasters",
+    "country": "CZ",
+    "descriptiveChoices": true,
+    "logos": {
+      "landing": "/assets/s5/qbcoffee/logo.webp",
+      "header": "/assets/s5/qbcoffee/logo.webp",
+      "avatar": "/assets/s5/qbcoffee/avatar.webp",
+      "launcher": "/assets/s5/qbcoffee/avatar.webp"
+    }
+  },
   "cipollacaffe": {
     "series": "s5",
     "type": "coffee",
