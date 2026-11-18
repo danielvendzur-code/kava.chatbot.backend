@@ -416,7 +416,7 @@ globalThis.CX_WINE_CATALOGUES["vinocapka"]={
       "notes": [
         "citrusy, bílý pepř a medové plástve"
       ],
-      "photo": "https://cdn.myshoptet.com/usr/eshop.vinocapka.cz/user/shop/detail/203-1_vz-terr-k-2020.jpg?ff=1&x=423&y=318&q=85&ts=66fa6f3a&sg=2175fb9d",
+      "photo": "/assets/s5/vinocapka/veltlinske-zelene-2020-terroir-kukvicka.webp",
       "category": "white",
       "currency": "CZK",
       "price": "350 Kč",
@@ -452,7 +452,7 @@ globalThis.CX_WINE_CATALOGUES["vinocapka"]={
       "notes": [
         "sušené meruňky, lipový květ a medové tóny"
       ],
-      "photo": "https://cdn.myshoptet.com/usr/eshop.vinocapka.cz/user/shop/detail/197_rr-terr-n-2020.jpg?ff=1&x=423&y=318&q=85&ts=66fa6f00&sg=2175fb9d",
+      "photo": "/assets/s5/vinocapka/ryzlink-rynsky-2020-terroir-nechory.webp",
       "category": "white",
       "currency": "CZK",
       "price": "350 Kč",
@@ -488,7 +488,7 @@ globalThis.CX_WINE_CATALOGUES["vinocapka"]={
       "notes": [
         "zralé meruňky, šťavnatá kyselinka a minerální závěr"
       ],
-      "photo": "https://cdn.myshoptet.com/usr/eshop.vinocapka.cz/user/shop/detail/200_rr-terr-p-2020.jpg?ff=1&x=423&y=318&q=85&ts=66fa6f28&sg=2175fb9d",
+      "photo": "/assets/s5/vinocapka/ryzlink-rynsky-2020-terroir-podkovne.webp",
       "category": "white",
       "currency": "CZK",
       "price": "350 Kč",
@@ -524,7 +524,7 @@ globalThis.CX_WINE_CATALOGUES["vinocapka"]={
       "notes": [
         "svěží, suchý kabinetní styl z tratě Na Strání"
       ],
-      "photo": "https://cdn.myshoptet.com/usr/eshop.vinocapka.cz/user/shop/detail/541_rr-kab-2025.jpg?ff=1&x=423&y=318&q=85&ts=6a7ccc86&sg=2175fb9d",
+      "photo": "/assets/s5/vinocapka/riesling-2025.webp",
       "category": "white",
       "currency": "CZK",
       "price": "220 Kč",
@@ -561,7 +561,7 @@ globalThis.CX_WINE_CATALOGUES["vinocapka"]={
       "notes": [
         "jemný zbytkový cukr, ovocný charakter a svěžest"
       ],
-      "photo": "https://cdn.myshoptet.com/usr/eshop.vinocapka.cz/user/shop/detail/536_tisk-6975.jpg?ff=1&x=423&y=318&q=85&ts=69e6a961&sg=2175fb9d",
+      "photo": "/assets/s5/vinocapka/riesling-feinherb-2025.webp",
       "category": "white",
       "currency": "CZK",
       "price": "220 Kč",
@@ -599,7 +599,7 @@ globalThis.CX_WINE_CATALOGUES["vinocapka"]={
       "notes": [
         "sušené meruňky, bílé broskve, lipový květ a minerální dochuť"
       ],
-      "photo": "https://cdn.myshoptet.com/usr/eshop.vinocapka.cz/user/shop/detail/513_capka-rr-2024-kukvicka.jpg?ff=1&x=423&y=318&q=85&ts=68dbaab6&sg=2175fb9d",
+      "photo": "/assets/s5/vinocapka/ryzlink-rynsky-2024-terroir-kukvicka.webp",
       "category": "white",
       "currency": "CZK",
       "price": "350 Kč",
@@ -636,7 +636,7 @@ globalThis.CX_WINE_CATALOGUES["vinocapka"]={
       "notes": [
         "zralé meruňky, citrusy, lehký med a svěží kyselinka"
       ],
-      "photo": "https://cdn.myshoptet.com/usr/eshop.vinocapka.cz/user/shop/detail/516_capka-rr-2024-nechory.jpg?ff=1&x=423&y=318&q=85&ts=68dbaaac&sg=2175fb9d",
+      "photo": "/assets/s5/vinocapka/ryzlink-rynsky-2024-terroir-nechory.webp",
       "category": "white",
       "currency": "CZK",
       "price": "350 Kč",
@@ -672,7 +672,7 @@ globalThis.CX_WINE_CATALOGUES["vinocapka"]={
       "notes": [
         "suché víno z tratě Kukvička, vinařství je doporučuje k pečeným bílým masům nebo těstovinám"
       ],
-      "photo": "https://cdn.myshoptet.com/usr/eshop.vinocapka.cz/user/shop/detail/501_sz-terr-k-2024.jpg?ff=1&x=423&y=318&q=85&ts=6845d061&sg=2175fb9d",
+      "photo": "/assets/s5/vinocapka/sylvanske-zelene-2024-terroir-kukvicka.webp",
       "category": "white",
       "currency": "CZK",
       "price": "350 Kč",
