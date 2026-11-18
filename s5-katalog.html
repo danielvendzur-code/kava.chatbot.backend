@@ -7,7 +7,7 @@
   <title>Ukážky poradcov</title>
   <script>
     const demo = new URLSearchParams(location.search).get('demo');
-    const cosmetics = ['blackcoffee', 'francin', 'etani', 'sumavaforrest'];
+    const cosmetics = ['francin', 'etani', 'sumavaforrest'];
     const wine = ['vinarstvisoman', 'vinocapka'];
     const path = cosmetics.includes(demo) ? '/s5.html' : wine.includes(demo) ? '/wine.html' : '';
     if (path) location.replace(path + '?demo=' + encodeURIComponent(demo));
@@ -15,7 +15,6 @@
 </head>
 <body>
   <main><h1>Ukážky poradcov</h1><ul>
-    <li><a href="/s5.html?demo=blackcoffee">black.</a></li>
     <li><a href="/s5.html?demo=francin">Francin</a></li>
     <li><a href="/s5.html?demo=etani">ETANI</a></li>
     <li><a href="/s5.html?demo=sumavaforrest">Šumava FORREST</a></li>

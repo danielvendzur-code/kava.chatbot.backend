@@ -137,7 +137,7 @@
       if (src && !logos.has(src)) logos.set(src, await readLogo(src));
       const logo = src ? logos.get(src) : null;
       const wide = !!logo && (logo.aspect >= 4 || logo.aspect <= .25);
-      if (wide || UNREADABLE.includes(document.body.dataset.cosmeticsDemo)) mode = 'chat';
+      if (wide || UNREADABLE.includes(document.body.dataset.cosmeticsDemo) || ['vinarstvisoman', 'vinocapka'].includes(document.body.dataset.cosmeticsDemo)) mode = 'chat';
       else if (pale && masked) mode = 'solid';
       /* A cut-out that fills its box is a photo or a round badge, not a mark: it stays as it is. */
       else if ((art && logo && typeof logo.plate === 'number' ? logo.plate > .38 : pale) && logo && logo.mark && logo.cover < .68) { mark = 'url("' + logo.mark + '")'; mode = 'mark'; }

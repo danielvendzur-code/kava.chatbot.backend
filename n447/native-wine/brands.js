@@ -33,6 +33,7 @@ Object.assign(window.COSMETICS_DEMOS.brands,{
     "chips": [
       "Suché bílé víno",
       "Červené víno do 400 Kč",
+      "Polosuché bílé víno",
       "Porovnat dvě vína"
     ],
     "ageNotice": "Alkohol pouze pro osoby starší 18 let.",
@@ -625,6 +626,7 @@ Object.assign(window.COSMETICS_DEMOS.brands,{
     "chips": [
       "Suché bílé víno",
       "Červené víno do 400 Kč",
+      "Sladké bílé víno",
       "Porovnat dvě vína"
     ],
     "ageNotice": "Alkohol pouze pro osoby starší 18 let.",

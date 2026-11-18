@@ -69,10 +69,9 @@
      buys. The coffee pages read the same words. */
   const PRICE = {
     sums: [
-      ['247', 'jednorazovo', 'nastavenie a naplnenie vašimi produktmi'],
+      ['447', 'jednorazovo', 'nastavenie a naplnenie vašimi produktmi'],
       ['10', 'mesačne', 'prevádzka']
     ],
-    trial: 'Prvý mesiac zdarma',
     note: 'Bez viazanosti, vypnete kedykoľvek.',
     addon: 'Preklik na produkt alebo napojenie na košík za príplatok.'
   };
@@ -82,7 +81,6 @@
   /* "Viac info": only what the owner cannot see on the demo itself (no price,
      no "your brand" — both are in plain view). Approved wording. */
   const MORE = [
-    ['Prvý mesiac zdarma', 'Vyskúšate ho naostro na vlastnom webe.'],
     ['Preklik priamo na produkt', 'Po odporúčaní zákazník pokračuje rovno na konkrétny produkt vo vašom e-shope.'],
     ['Vloženie jedným riadkom kódu', 'Pridá sa do existujúceho webu, nič netreba prerábať.'],
     ['Funguje aj mimo pracovného času', 'Zákazník dostane odpoveď a pomoc s výberom aj večer či cez víkend.'],
@@ -152,7 +150,6 @@
           ${PRICE.sums.map(([sum, term, buys]) => `
             <div class="cx-price-sum"><b>${esc(sum)}&nbsp;€</b><span>${esc(term)}</span><small>${esc(buys)}</small></div>`).join('')}
           <div class="cx-price-terms">
-            <b>${esc(PRICE.trial)}</b>
             <p>${esc(PRICE.note)}</p>
             <a href="${esc(contactHref())}" target="_blank" rel="noreferrer">Ozvite sa mi ${icons.arrow}</a>
           </div>
@@ -294,7 +291,13 @@
       const compare = /porovn|srovn/.test(normalized);
       const match = localCatalogue.products.filter(p => (!requestedColor || p.category === requestedColor) &&
         (!requestedStyle || p.wineFacts.style === requestedStyle) && (!limit || p.priceAmount <= Number(limit.replace(/\s/g,''))));
-      const chosen = match.slice(0, compare ? 2 : 1);
+      const first = match[0];
+      const second = compare && first && (
+        match.find(p => p.category !== first.category && p.wineFacts.style !== first.wineFacts.style) ||
+        match.find(p => p.category !== first.category || p.wineFacts.style !== first.wineFacts.style) ||
+        match[1]
+      );
+      const chosen = [first, second].filter(Boolean);
       answer.text = chosen.length
         ? chosen.map(p => `${p.name} · ${p.volume} · ${p.price}. ${p.reason}
 ${p.url}`).join('\n\n')

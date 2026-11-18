@@ -1,15 +1,4 @@
 Object.assign(window.S3_REG.demos, {
-  "blackcoffee": {
-    "series": "s5",
-    "type": "coffee",
-    "name": "black.",
-    "country": "SK",
-    "logos": {
-      "landing": "/assets/s5/blackcoffee/logo.webp",
-      "header": "/assets/s5/blackcoffee/logo.webp",
-      "avatar": "/assets/s5/blackcoffee/avatar.svg"
-    }
-  },
   "francin": {
     "series": "s5",
     "type": "coffee",

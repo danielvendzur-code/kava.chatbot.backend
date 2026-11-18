@@ -104,7 +104,7 @@ body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-catalogue-option.cx
 body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-quality-body.is-question .cx-catalogue-options{grid-auto-rows:minmax(0,1fr)!important;}
 body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-quality-body.is-question .cx-quality-option.is-text-answer{grid-template-rows:1fr!important;align-items:center!important;}
 body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-chips{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:8px!important;}
-body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-chip{width:100%!important;min-width:0!important;min-height:40px!important;box-sizing:border-box!important;}
+body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-chip{width:100%!important;min-width:0!important;height:40px!important;min-height:40px!important;max-height:40px!important;box-sizing:border-box!important;}
 
 /* Give the primary result a full photo pane. Keep the original image proportions. */
 .cx-quality-product.is-primary{grid-template-columns:1fr!important;}
