@@ -246,7 +246,7 @@
       if (answers.profile && answers.profile !== 'any') list = list.filter(p => p.signals.includes(answers.profile)||p.source?.allSkinTypes===true);
       if (answers.product) list = list.filter(p => p.id === answers.product);
       for(const key of ['careUse','purpose','texture','hairNeed','hairUse','area','hairFocus','packType','careVariant','skinFocus','time','ingredient','size'])if(answers[key]&&answers[key]!=='any')list=list.filter(p=>p.features[key]===answers[key]);
-      for(const key of ['fragranceDirection','fragranceProfile'])if(answers[key]&&answers[key]!=='any')list=list.filter(p=>!fragranceProduct(p)||p.features[key]===answers[key]);
+      for(const key of ['fragranceDirection','fragranceFacet','fragranceProfile'])if(answers[key]&&answers[key]!=='any')list=list.filter(p=>!fragranceProduct(p)||p.features[key]===answers[key]);
       const rank = p => (p.signals.includes(answers.profile) ? 8 : 0) + (p.signals.includes(answers.goal) ? 12 : 0);
       list.sort((a, b) => rank(b) - rank(a) || a.catalogueOrder-b.catalogueOrder);
       const winner = list[0] || null;
@@ -304,6 +304,7 @@
             }
           }
         }
+        if (answers.fragranceDirection !== undefined) feature('fragranceFacet');
         feature('fragranceProfile');
         return result;
       }
