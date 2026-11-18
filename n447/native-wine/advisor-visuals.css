@@ -45,3 +45,8 @@ body #cosmetics-root #cx-widget .cx-mode button:focus,body #cosmetics-root #cx-w
 html body[data-cosmetics-demo=sivko] #cosmetics-root#cosmetics-root .cx-owner-visual {
   background: #070506 !important;
 }
+
+/* Keep SIVKO options and quick replies in place as their hover colours change. */
+html body[data-cosmetics-demo=sivko] #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget :is(.cx-quality-option, .cx-chip):is(:hover, :active) {
+  transform: none !important;
+}
