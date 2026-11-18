@@ -14,7 +14,7 @@
     "place": "Brno",
     "web": "https://www.rebelbean.cz/",
     "shopUrl": "https://www.rebelbean.cz/vyberova-kava/",
-    "contact": "https://www.rebelbean.cz/kontakty/",
+    "contact": "shop@rebelbean.cz",
     "logo": "/assets/s5/rebelbean/logo.webp",
     "hero": "/assets/s5/rebelbean/my-daily-mix.webp",
     "theme": {
