@@ -46,7 +46,7 @@ html body[data-cosmetics-demo=sivko] #cosmetics-root#cosmetics-root .cx-owner-vi
   background: #070506 !important;
 }
 
-/* Keep SIVKO options and quick replies in place as their hover colours change. */
-html body[data-cosmetics-demo=sivko] #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget :is(.cx-quality-option, .cx-chip):is(:hover, :active) {
+/* Keep these advisors’ choices and quick replies in place as hover colours change. */
+html body:is([data-cosmetics-demo=sivko],[data-cosmetics-demo=vinokmeto]) #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget :is(.cx-quality-option, .cx-chip):is(:hover, :active) {
   transform: none !important;
 }

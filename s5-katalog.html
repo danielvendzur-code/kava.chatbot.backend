@@ -7,14 +7,16 @@
   <title>Ukážky poradcov</title>
   <script>
     const demo = new URLSearchParams(location.search).get('demo');
-    const cosmetics = ['francin', 'etani', 'sumavaforrest', 'verticeramics', 'cipollacaffe', 'qbcoffee', 'redfawn', 'avcoffee'];
-    const wine = ['vinarstvisoman', 'vinocapka', 'sivko'];
+    const cosmetics = ['francin', 'etani', 'sumavaforrest', 'verticeramics', 'cipollacaffe', 'qbcoffee', 'redfawn', 'avcoffee', 'rebelbean'];
+    const wine = ['vinarstvisoman', 'vinocapka', 'sivko', 'vinokmeto'];
     const path = cosmetics.includes(demo) ? '/s5.html' : wine.includes(demo) ? '/wine.html' : '';
     if (path) location.replace(path + '?demo=' + encodeURIComponent(demo));
   </script>
 </head>
 <body>
   <main><h1>Ukážky poradcov</h1><ul>
+    <li><a href="/s5.html?demo=rebelbean">Rebelbean</a></li>
+    <li><a href="/wine.html?demo=vinokmeto">Víno Kmeťo</a></li>
     <li><a href="/s5.html?demo=redfawn">Red Fawn Coffee Roasters</a></li>
     <li><a href="/s5.html?demo=avcoffee">ALTER-NATIV COFFEE</a></li>
     <li><a href="/s5.html?demo=qbcoffee">qb coffee roasters</a></li>

@@ -1,4 +1,16 @@
 Object.assign(window.S3_REG.demos, {
+  "rebelbean": {
+    "series": "s5",
+    "type": "coffee",
+    "name": "Rebelbean",
+    "country": "CZ",
+    "descriptiveChoices": true,
+    "logos": {
+      "landing": "/assets/s5/rebelbean/logo.webp",
+      "header": "/assets/s5/rebelbean/logo.webp",
+      "avatar": "/assets/s5/rebelbean/logo.webp"
+    }
+  },
   "redfawn": {
     "series": "s5",
     "type": "coffee",

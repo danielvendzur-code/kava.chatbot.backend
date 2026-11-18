@@ -52,9 +52,12 @@
   }
   function steps(a={}){
    const liveWines=wines.filter(live),poolByForm=liveWines.filter(p=>matchesForm(p,a)),colors=['white','red','rose','orange','sparkling'].filter(v=>poolByForm.some(p=>p.tags.includes(v)));
+   const colorChoices=groupByForm&&a.form==='bubbly'&&colors.length>1
+     ? colors.filter(value=>value!=='sparkling')
+     : colors;
    const result=[];
    if(groupByForm&&new Set(liveWines.map(form)).size>1)result.push({key:'form',options:['still','bubbly']});
-   if(!groupByForm||colors.length>1)result.push({key:'color',options:[...colors,'mixed']});
+   if(!groupByForm||colorChoices.length>1)result.push({key:'color',options:[...colorChoices,'mixed']});
    const pool=matches({...a,style:'',character:'',budget:''}),styles=['dry','medium-dry','medium-sweet','sweet'].filter(v=>pool.some(p=>p.wineFacts.style===v));
    /* A question needs at least two real answers. */if(styles.length>1)result.push({key:'style',options:[...styles,'any']});
    const selected=matches({...a,budget:''});

@@ -1072,3 +1072,38 @@ window.COSMETICS_DEMOS.brands.sivko = {
   "ageNotice": "Alkohol len pre osoby staršie ako 18 rokov.",
   "products": []
 };
+
+window.COSMETICS_DEMOS.brands.vinokmeto = {
+  "name": "Víno Kmeťo",
+  "fullName": "Vinárstvo Víno Kmeťo",
+  "domain": "www.vinokmeto.sk",
+  "website": "https://www.vinokmeto.sk/obchod/",
+  "lang": "sk",
+  "catalogueLabel": "Víno Kmeťo",
+  "catalogueContext": "wine",
+  "theme": {
+    "brand": "#552c38",
+    "accent": "#743d4a",
+    "soft": "#f5ebee",
+    "paper": "#fff",
+    "ink": "#2c2023",
+    "line": "#ead9df"
+  },
+  "wordmark": "<img class=\"cx-wordmark cx-logo\" src=\"/assets/s5/vinokmeto/logo.webp\" alt=\"Víno Kmeťo\">",
+  "headerLogo": "/assets/s5/vinokmeto/logo.webp",
+  "mark": "/assets/s5/vinokmeto/logo.webp",
+  "messageLogo": "/assets/s5/vinokmeto/logo.webp",
+  "launcherMark": "<img src=\"/assets/s5/vinokmeto/logo.webp\" alt=\"\">",
+  "avatarMark": "<img src=\"/assets/s5/vinokmeto/logo.webp\" alt=\"\">",
+  "hero": "/assets/s5/vinokmeto/cuvee-jozef-r-2024-cervene.webp",
+  "heroPhoto": "/assets/s5/vinokmeto/cuvee-jozef-r-2024-cervene.webp",
+  "heroProduct": "cuvee-jozef-r-2024-cervene",
+  "chips": [
+    "Suché biele víno",
+    "Červené víno do 13 €",
+    "Polosladké frizzante",
+    "Porovnať dve vína"
+  ],
+  "ageNotice": "Alkohol len pre osoby staršie ako 18 rokov.",
+  "products": []
+};
