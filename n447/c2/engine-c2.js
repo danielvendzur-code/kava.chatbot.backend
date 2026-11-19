@@ -41,7 +41,10 @@
   }
   const CAF_PHOTO = {yes: '/assets/scenes/coffee-beans.jpg', no: '/assets/scenes/coffee-decaf-cup.jpg'};
   /* Jednoduché ilustrácie pre voľby, ktoré nemajú vhodnú fotku (pomôcka, spracovanie, pôvod, praženie, zloženie, rozpočet, drip). */
-  const IL = (n) => '/assets/n447/ilustracie/' + n + '.svg';
+  /* Ilustrácie (assets/n447/ilustracie) v repozitári nie sú – voľby dostanú skutočné fotky z assets/s3/coffee a assets/scenes. */
+  const IL_S3 = ['blend-arabica', 'blend-robusta', 'proc-honey', 'proc-mix', 'proc-natural', 'proc-semi', 'proc-washed', 'region-africa', 'region-americas', 'region-asia', 'region-blend', 'tool-aeropress', 'tool-frenchpress', 'tool-v60'];
+  const IL_SCENE = {'budget-1': 'coffee-black', 'budget-2': 'coffee-both', 'budget-any': 'coffee-explore', 'drip-a': 'coffee-filter', 'drip-b': 'coffee-black', 'drip-5': 'coffee-filter', 'drip-10': 'coffee-black'};
+  const IL = (n) => IL_S3.includes(n) ? '/assets/s3/coffee/' + n + '.jpg' : '/assets/scenes/' + (IL_SCENE[n] || 'coffee-explore') + '.jpg';
   /* Praženie: skutočné fotky zŕn (Pexels, zdroje v assets/n447/foto/sources.json). */
   const FOTO = (n) => '/assets/n447/foto/' + n + '.jpg';
   const roastClass = (label) => { const x = String(label).toLowerCase();
