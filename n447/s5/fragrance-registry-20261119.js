@@ -5601,12 +5601,6 @@ Object.assign(window.S3_REG.demos, {
       }
     },
     "traitCopy": {
-      "g-fresh": [
-        "Květinové nebo lesní tóny",
-        "",
-        "Květinové nebo lesní tóny",
-        ""
-      ],
       "jasmine": [
         "Jasmín a růže",
         "",
@@ -5620,9 +5614,9 @@ Object.assign(window.S3_REG.demos, {
         ""
       ],
       "g-warm": [
-        "Sladké koření",
+        "Vanilka, koření a tabák",
         "",
-        "Sladké koření",
+        "Vanilka, koření a tabák",
         ""
       ],
       "vanilla": [
@@ -5636,6 +5630,72 @@ Object.assign(window.S3_REG.demos, {
         "",
         "Skořice, červený pomeranč a badyán",
         ""
+      ],
+      "g-herbal": [
+        "Květiny a bylinky",
+        "",
+        "Květiny a bylinky",
+        ""
+      ],
+      "g-woods": [
+        "Dřevo a jehličí",
+        "",
+        "Dřevo a jehličí",
+        ""
+      ],
+      "g-citrus": [
+        "Citrusy s rozmarýnem, zázvorem nebo jehličím",
+        "",
+        "Citrusy s rozmarýnem, zázvorem nebo jehličím",
+        ""
+      ],
+      "chamomile": [
+        "Heřmánek, mateřídouška",
+        " ",
+        "Heřmánek, mateřídouška",
+        " "
+      ],
+      "eucalyptus": [
+        "Eukalyptus, máta",
+        " ",
+        "Eukalyptus, máta",
+        " "
+      ],
+      "cedar-pine": [
+        "Cedr, borovice",
+        " ",
+        "Cedr, borovice",
+        " "
+      ],
+      "cedar-sandal": [
+        "Cedr, pomeranč, santalové dřevo",
+        " ",
+        "Cedr, pomeranč, santalové dřevo",
+        " "
+      ],
+      "rosemary": [
+        "Rozmarýn, pomeranč",
+        " ",
+        "Rozmarýn, pomeranč",
+        " "
+      ],
+      "ginger-orange": [
+        "Zázvor, pomeranč",
+        " ",
+        "Zázvor, pomeranč",
+        " "
+      ],
+      "winter": [
+        "Jehličí, citrusy, litsea cubeba",
+        " ",
+        "Jehličí, citrusy, litsea cubeba",
+        " "
+      ],
+      "tobacco": [
+        "Tabák, vanilka",
+        " ",
+        "Tabák, vanilka",
+        " "
       ]
     },
     "stepCopy": {
@@ -5653,9 +5713,6 @@ Object.assign(window.S3_REG.demos, {
     "compareFocus": true,
     "upsellFocus": {},
     "choicePhotos": {
-      "g-fresh": [
-        "/assets/s3/scenes-k2/rose.jpg"
-      ],
       "jasmine": [
         "/assets/s5/mojehygge/jasmine.jpg"
       ],
@@ -5670,6 +5727,39 @@ Object.assign(window.S3_REG.demos, {
       ],
       "gingerbread": [
         "/assets/s5/mojehygge/gingerbread.jpg"
+      ],
+      "g-herbal": [
+        "/assets/s3/scenes-k2/rose.jpg"
+      ],
+      "g-woods": [
+        "/assets/s3/scenes-k2/pine.jpg"
+      ],
+      "g-citrus": [
+        "/assets/s3/scenes-k2/citrus.jpg"
+      ],
+      "chamomile": [
+        "/assets/s5/mojehygge/chamomile.jpg"
+      ],
+      "eucalyptus": [
+        "/assets/s5/mojehygge/eucalyptus.jpg"
+      ],
+      "cedar-pine": [
+        "/assets/s5/mojehygge/cedar-pine.jpg"
+      ],
+      "cedar-sandal": [
+        "/assets/s5/mojehygge/cedar-sandal.jpg"
+      ],
+      "rosemary": [
+        "/assets/s5/mojehygge/rosemary.jpg"
+      ],
+      "ginger-orange": [
+        "/assets/s5/mojehygge/ginger-orange.jpg"
+      ],
+      "winter": [
+        "/assets/s5/mojehygge/winter.jpg"
+      ],
+      "tobacco": [
+        "/assets/s5/mojehygge/tobacco.jpg"
       ]
     },
     "compareProductIds": [
@@ -5698,10 +5788,18 @@ Object.assign(window.S3_REG.demos, {
       "version": 1,
       "enabled": true,
       "alternatives": {
-        "jasmine": "forest",
-        "forest": "jasmine",
+        "jasmine": "chamomile",
+        "forest": "cedar-pine",
         "vanilla": "gingerbread",
-        "gingerbread": "vanilla"
+        "gingerbread": "tobacco",
+        "chamomile": "eucalyptus",
+        "eucalyptus": "jasmine",
+        "cedar-pine": "cedar-sandal",
+        "cedar-sandal": "forest",
+        "rosemary": "ginger-orange",
+        "ginger-orange": "winter",
+        "winter": "rosemary",
+        "tobacco": "vanilla"
       },
       "scentProfile": {
         "version": 1,

@@ -117,7 +117,7 @@ globalThis.CX_CATALOGUES.mojehygge = {
     "scent": "Jasmín a růže",
     "variantSelectionNotice": "Na e-shopu zvolte balení 180 ml.",
     "selectionTraits": {
-     "fragranceDirection": "g-fresh",
+     "fragranceDirection": "g-herbal",
      "fragranceProfile": "jasmine"
     },
     "selectionTraitsEvidence": {
@@ -348,7 +348,7 @@ globalThis.CX_CATALOGUES.mojehygge = {
     "scent": "Jehličí, dřevo a smůla",
     "variantSelectionNotice": "Na e-shopu zvolte balení 180 ml.",
     "selectionTraits": {
-     "fragranceDirection": "g-fresh",
+     "fragranceDirection": "g-woods",
      "fragranceProfile": "forest"
     },
     "selectionTraitsEvidence": {
@@ -489,6 +489,536 @@ globalThis.CX_CATALOGUES.mojehygge = {
      "sourceText": "Vonné tóny: skořice, červený pomeranč, vanilka, badyán, hřebíček\nDoslovné zdrojové fragmenty:\nskořice\nčerveného pomeranče\nvanilky\nbadyánu\nhřebíčku",
      "navigationLabel": "Skořice, červený pomeranč a badyán",
      "navigationGroupingIsNotOfficialFragranceFamily": true
+    }
+   }
+  },
+  {
+   "id": "chamomile",
+   "name": "Heřmánek a mateřídouška",
+   "url": "https://www.mojehygge.cz/sojove-svicky/sojova-svicka-120ml-180ml-hermanek-a-materidouska/",
+   "priceAmount": 299,
+   "price": "299 Kč",
+   "currency": "CZK",
+   "volume": "180 ml",
+   "category": "fragrance",
+   "kind": "Vonná svíčka",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Heřmánek, mateřídouška. Na e-shopu zvolte balení 180 ml.",
+   "reason": "Heřmánek, mateřídouška. Na e-shopu zvolte balení 180 ml.",
+   "photo": "/assets/s5/mojehygge/chamomile.jpg",
+   "source": {
+    "series": "s5",
+    "url": "https://www.mojehygge.cz/sojove-svicky/sojova-svicka-120ml-180ml-hermanek-a-materidouska/",
+    "verifiedAt": "2026-11-19",
+    "sourceSha256": "133304742a533790ff9fd20ee55b727eb98a81651c089bddd695042580aa038a",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "Public shop variant selector",
+     "sku": "693/180",
+     "nativePriceId": "1104",
+     "nativeLabel": "180ml - Skladem  (299 Kč)"
+    },
+    "priceEvidence": {
+     "amount": 299,
+     "currency": "CZK"
+    },
+    "packEvidence": {
+     "pack": "180 ml",
+     "scope": "Public shop variant selector"
+    },
+    "variantSelectionRequired": true,
+    "variantSelectionNotice": "Na e-shopu zvolte balení 180 ml.",
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://cdn.myshoptet.com/usr/www.mojehygge.cz/user/shop/big/693_2l1a6248.jpg?ff=1&x=1024&y=1536&q=85&ts=60a50305&sg=fdee715b",
+    "photoEvidence": {
+     "url": "https://cdn.myshoptet.com/usr/www.mojehygge.cz/user/shop/big/693_2l1a6248.jpg?ff=1&x=1024&y=1536&q=85&ts=60a50305&sg=fdee715b",
+     "sha256": "a6e3f13263454ceb1a478329375c5fcdc8039f1e6e60d9618bed5fc6848b0256",
+     "originalBytes": true
+    },
+    "fragrance": {
+     "notes": [
+      "heřmánek",
+      "mateřídouška"
+     ],
+     "officialFamilies": [],
+     "notesEvidence": {
+      "url": "https://www.mojehygge.cz/sojove-svicky/sojova-svicka-120ml-180ml-hermanek-a-materidouska/",
+      "sourceText": "Sójová svíčka 120ml/180ml - Heřmánek a Mateřídouška",
+      "sourceLanguage": "cs"
+     }
+    },
+    "usagePurpose": "scented-candle",
+    "scent": "heřmánek, mateřídouška",
+    "selectionTraits": {
+     "fragranceDirection": "g-herbal",
+     "fragranceProfile": "chamomile"
+    }
+   }
+  },
+  {
+   "id": "eucalyptus",
+   "name": "Eukalyptus a máta",
+   "url": "https://www.mojehygge.cz/sojove-svicky/sojova-svicka-120ml-180ml-eukalyptus-a-mata/",
+   "priceAmount": 299,
+   "price": "299 Kč",
+   "currency": "CZK",
+   "volume": "180 ml",
+   "category": "fragrance",
+   "kind": "Vonná svíčka",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Eukalyptus, máta. Na e-shopu zvolte balení 180 ml.",
+   "reason": "Eukalyptus, máta. Na e-shopu zvolte balení 180 ml.",
+   "photo": "/assets/s5/mojehygge/eucalyptus.jpg",
+   "source": {
+    "series": "s5",
+    "url": "https://www.mojehygge.cz/sojove-svicky/sojova-svicka-120ml-180ml-eukalyptus-a-mata/",
+    "verifiedAt": "2026-11-19",
+    "sourceSha256": "28760aeac4cd45f44cd4b1f8cfe8edb5d0f48fa82aa18c9bc7085e66979291fc",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "Public shop variant selector",
+     "sku": "687/180",
+     "nativePriceId": "1095",
+     "nativeLabel": "180ml - Skladem  (299 Kč)"
+    },
+    "priceEvidence": {
+     "amount": 299,
+     "currency": "CZK"
+    },
+    "packEvidence": {
+     "pack": "180 ml",
+     "scope": "Public shop variant selector"
+    },
+    "variantSelectionRequired": true,
+    "variantSelectionNotice": "Na e-shopu zvolte balení 180 ml.",
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://cdn.myshoptet.com/usr/www.mojehygge.cz/user/shop/big/687_photo-10-10-2019--09-53-11.jpg?ff=1&x=1024&y=1536&q=85&ts=60a501ac&sg=fdee715b",
+    "photoEvidence": {
+     "url": "https://cdn.myshoptet.com/usr/www.mojehygge.cz/user/shop/big/687_photo-10-10-2019--09-53-11.jpg?ff=1&x=1024&y=1536&q=85&ts=60a501ac&sg=fdee715b",
+     "sha256": "22f6126c9f633260b9da1221afca531d117537638fd85ddf048f027c02eb65cd",
+     "originalBytes": true
+    },
+    "fragrance": {
+     "notes": [
+      "eukalyptus",
+      "máta"
+     ],
+     "officialFamilies": [],
+     "notesEvidence": {
+      "url": "https://www.mojehygge.cz/sojove-svicky/sojova-svicka-120ml-180ml-eukalyptus-a-mata/",
+      "sourceText": "Sójová svíčka 120ml/180ml - Eukalyptus a Máta",
+      "sourceLanguage": "cs"
+     }
+    },
+    "usagePurpose": "scented-candle",
+    "scent": "eukalyptus, máta",
+    "selectionTraits": {
+     "fragranceDirection": "g-herbal",
+     "fragranceProfile": "eucalyptus"
+    }
+   }
+  },
+  {
+   "id": "cedar-pine",
+   "name": "Cedr a borovice",
+   "url": "https://www.mojehygge.cz/sojove-svicky/sojova-svicka-120ml-cedr-a-borovice/",
+   "priceAmount": 299,
+   "price": "299 Kč",
+   "currency": "CZK",
+   "volume": "180 ml",
+   "category": "fragrance",
+   "kind": "Vonná svíčka",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Cedr, borovice. Na e-shopu zvolte balení 180 ml.",
+   "reason": "Cedr, borovice. Na e-shopu zvolte balení 180 ml.",
+   "photo": "/assets/s5/mojehygge/cedar-pine.jpg",
+   "source": {
+    "series": "s5",
+    "url": "https://www.mojehygge.cz/sojove-svicky/sojova-svicka-120ml-cedr-a-borovice/",
+    "verifiedAt": "2026-11-19",
+    "sourceSha256": "048159b284e4c3430998c90717bc7039a22c178aef7185101382a86a5b289d47",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "Public shop variant selector",
+     "sku": "690/180",
+     "nativePriceId": "1409",
+     "nativeLabel": "180ml - Skladem  (299 Kč)"
+    },
+    "priceEvidence": {
+     "amount": 299,
+     "currency": "CZK"
+    },
+    "packEvidence": {
+     "pack": "180 ml",
+     "scope": "Public shop variant selector"
+    },
+    "variantSelectionRequired": true,
+    "variantSelectionNotice": "Na e-shopu zvolte balení 180 ml.",
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://cdn.myshoptet.com/usr/www.mojehygge.cz/user/shop/big/690_photo-10-10-2019--10-06-26.jpg?ff=1&x=1024&y=1536&q=85&ts=60a5024f&sg=fdee715b",
+    "photoEvidence": {
+     "url": "https://cdn.myshoptet.com/usr/www.mojehygge.cz/user/shop/big/690_photo-10-10-2019--10-06-26.jpg?ff=1&x=1024&y=1536&q=85&ts=60a5024f&sg=fdee715b",
+     "sha256": "613cf8bd084a322177ce1acc11af3156cd3b5588a312dc31b32aed247d7d7fae",
+     "originalBytes": true
+    },
+    "fragrance": {
+     "notes": [
+      "cedr",
+      "borovice"
+     ],
+     "officialFamilies": [],
+     "notesEvidence": {
+      "url": "https://www.mojehygge.cz/sojove-svicky/sojova-svicka-120ml-cedr-a-borovice/",
+      "sourceText": "Sójová svíčka 120ml/180ml - Cedr a Borovice",
+      "sourceLanguage": "cs"
+     }
+    },
+    "usagePurpose": "scented-candle",
+    "scent": "cedr, borovice",
+    "selectionTraits": {
+     "fragranceDirection": "g-woods",
+     "fragranceProfile": "cedar-pine"
+    }
+   }
+  },
+  {
+   "id": "cedar-sandal",
+   "name": "Cedr, pomeranč a santalové dřevo",
+   "url": "https://www.mojehygge.cz/sojove-svicky/sojova-svicka-180ml-cedr--pomeranc-a-santalove-drevo/",
+   "priceAmount": 299,
+   "price": "299 Kč",
+   "currency": "CZK",
+   "volume": "180 ml",
+   "category": "fragrance",
+   "kind": "Vonná svíčka",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Cedr, pomeranč, santalové dřevo. Na e-shopu zvolte balení 180 ml.",
+   "reason": "Cedr, pomeranč, santalové dřevo. Na e-shopu zvolte balení 180 ml.",
+   "photo": "/assets/s5/mojehygge/cedar-sandal.jpg",
+   "source": {
+    "series": "s5",
+    "url": "https://www.mojehygge.cz/sojove-svicky/sojova-svicka-180ml-cedr--pomeranc-a-santalove-drevo/",
+    "verifiedAt": "2026-11-19",
+    "sourceSha256": "95e184e843e584ce65da0674b9562c2b98161c5447edc6122bc41794b17d7782",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "Public shop variant selector",
+     "sku": "509/180",
+     "nativePriceId": "1415",
+     "nativeLabel": "180ml - Skladem  (299 Kč)"
+    },
+    "priceEvidence": {
+     "amount": 299,
+     "currency": "CZK"
+    },
+    "packEvidence": {
+     "pack": "180 ml",
+     "scope": "Public shop variant selector"
+    },
+    "variantSelectionRequired": true,
+    "variantSelectionNotice": "Na e-shopu zvolte balení 180 ml.",
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://cdn.myshoptet.com/usr/www.mojehygge.cz/user/shop/big/509_moje-hygge-09-09.jpg?ff=1&x=1024&y=1536&q=85&ts=5f735d7a&sg=fdee715b",
+    "photoEvidence": {
+     "url": "https://cdn.myshoptet.com/usr/www.mojehygge.cz/user/shop/big/509_moje-hygge-09-09.jpg?ff=1&x=1024&y=1536&q=85&ts=5f735d7a&sg=fdee715b",
+     "sha256": "f16a2e97205d7d1949a691d2e3678b2ffa71bcab4f6612fe2c86a2310cbeff73",
+     "originalBytes": true
+    },
+    "fragrance": {
+     "notes": [
+      "cedr",
+      "pomeranč",
+      "santalové dřevo"
+     ],
+     "officialFamilies": [],
+     "notesEvidence": {
+      "url": "https://www.mojehygge.cz/sojove-svicky/sojova-svicka-180ml-cedr--pomeranc-a-santalove-drevo/",
+      "sourceText": "Kořeněné tóny cedru, teplá dřevitá vůně santalového dřeva, doplněná citrusovými akordy pomeranče.",
+      "sourceLanguage": "cs"
+     }
+    },
+    "usagePurpose": "scented-candle",
+    "scent": "cedr, pomeranč, santalové dřevo",
+    "selectionTraits": {
+     "fragranceDirection": "g-woods",
+     "fragranceProfile": "cedar-sandal"
+    }
+   }
+  },
+  {
+   "id": "rosemary",
+   "name": "Rozmarýn a pomeranč",
+   "url": "https://www.mojehygge.cz/sojove-svicky/sojova-svicka-120ml-180ml-rozmaryn-a-pomeranc/",
+   "priceAmount": 299,
+   "price": "299 Kč",
+   "currency": "CZK",
+   "volume": "180 ml",
+   "category": "fragrance",
+   "kind": "Vonná svíčka",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Rozmarýn, pomeranč. Na e-shopu zvolte balení 180 ml.",
+   "reason": "Rozmarýn, pomeranč. Na e-shopu zvolte balení 180 ml.",
+   "photo": "/assets/s5/mojehygge/rosemary.jpg",
+   "source": {
+    "series": "s5",
+    "url": "https://www.mojehygge.cz/sojove-svicky/sojova-svicka-120ml-180ml-rozmaryn-a-pomeranc/",
+    "verifiedAt": "2026-11-19",
+    "sourceSha256": "69d02b8dce50e4a045956f1a4c0fa23a42eaaed8d54e9155570dbde0c119f954",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "Public shop variant selector",
+     "sku": "681/180",
+     "nativePriceId": "1086",
+     "nativeLabel": "180ml - Skladem  (299 Kč)"
+    },
+    "priceEvidence": {
+     "amount": 299,
+     "currency": "CZK"
+    },
+    "packEvidence": {
+     "pack": "180 ml",
+     "scope": "Public shop variant selector"
+    },
+    "variantSelectionRequired": true,
+    "variantSelectionNotice": "Na e-shopu zvolte balení 180 ml.",
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://cdn.myshoptet.com/usr/www.mojehygge.cz/user/shop/big/681-1_sojova-svicka-120ml-180ml-rozmaryn-a-pomeranc.jpg?ff=1&x=1024&y=1536&q=85&ts=6156d9cb&sg=fdee715b",
+    "photoEvidence": {
+     "url": "https://cdn.myshoptet.com/usr/www.mojehygge.cz/user/shop/big/681-1_sojova-svicka-120ml-180ml-rozmaryn-a-pomeranc.jpg?ff=1&x=1024&y=1536&q=85&ts=6156d9cb&sg=fdee715b",
+     "sha256": "54537ba669e34d4fea277c9ec294374bf37c93c49e163d220a9c2593110097d7",
+     "originalBytes": true
+    },
+    "fragrance": {
+     "notes": [
+      "rozmarýn",
+      "pomeranč"
+     ],
+     "officialFamilies": [],
+     "notesEvidence": {
+      "url": "https://www.mojehygge.cz/sojove-svicky/sojova-svicka-120ml-180ml-rozmaryn-a-pomeranc/",
+      "sourceText": "Sójová svíčka 120ml/180ml - Rozmarýn a Pomeranč",
+      "sourceLanguage": "cs"
+     }
+    },
+    "usagePurpose": "scented-candle",
+    "scent": "rozmarýn, pomeranč",
+    "selectionTraits": {
+     "fragranceDirection": "g-citrus",
+     "fragranceProfile": "rosemary"
+    }
+   }
+  },
+  {
+   "id": "ginger-orange",
+   "name": "Zázvor a pomeranč",
+   "url": "https://www.mojehygge.cz/sojove-svicky/sojova-svicka-180ml-zazvor-a-pomeranc/",
+   "priceAmount": 299,
+   "price": "299 Kč",
+   "currency": "CZK",
+   "volume": "180 ml",
+   "category": "fragrance",
+   "kind": "Vonná svíčka",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Zázvor, pomeranč. Na e-shopu zvolte balení 180 ml.",
+   "reason": "Zázvor, pomeranč. Na e-shopu zvolte balení 180 ml.",
+   "photo": "/assets/s5/mojehygge/ginger-orange.jpg",
+   "source": {
+    "series": "s5",
+    "url": "https://www.mojehygge.cz/sojove-svicky/sojova-svicka-180ml-zazvor-a-pomeranc/",
+    "verifiedAt": "2026-11-19",
+    "sourceSha256": "69dfb00087286e87d310d6abfe74466ed4d7a77cedf8e02f97f33bd830d424e3",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "Public shop variant selector",
+     "sku": "287/180",
+     "nativePriceId": "1457",
+     "nativeLabel": "180ml - Skladem  (299 Kč)"
+    },
+    "priceEvidence": {
+     "amount": 299,
+     "currency": "CZK"
+    },
+    "packEvidence": {
+     "pack": "180 ml",
+     "scope": "Public shop variant selector"
+    },
+    "variantSelectionRequired": true,
+    "variantSelectionNotice": "Na e-shopu zvolte balení 180 ml.",
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://cdn.myshoptet.com/usr/www.mojehygge.cz/user/shop/big/287_photo-08-12-2019--16-08-26.jpg?ff=1&x=1024&y=1536&q=85&ts=5e456a5e&sg=fdee715b",
+    "photoEvidence": {
+     "url": "https://cdn.myshoptet.com/usr/www.mojehygge.cz/user/shop/big/287_photo-08-12-2019--16-08-26.jpg?ff=1&x=1024&y=1536&q=85&ts=5e456a5e&sg=fdee715b",
+     "sha256": "469afd678f9e94042e3b134c2fd87d8e8220c9ed1dfb8d410ca52ad233562a1c",
+     "originalBytes": true
+    },
+    "fragrance": {
+     "notes": [
+      "zázvor",
+      "pomeranč"
+     ],
+     "officialFamilies": [],
+     "notesEvidence": {
+      "url": "https://www.mojehygge.cz/sojove-svicky/sojova-svicka-180ml-zazvor-a-pomeranc/",
+      "sourceText": "Sójová svíčka 120ml/180ml - Zázvor a Pomeranč",
+      "sourceLanguage": "cs"
+     }
+    },
+    "usagePurpose": "scented-candle",
+    "scent": "zázvor, pomeranč",
+    "selectionTraits": {
+     "fragranceDirection": "g-citrus",
+     "fragranceProfile": "ginger-orange"
+    }
+   }
+  },
+  {
+   "id": "winter",
+   "name": "Zimní čas",
+   "url": "https://www.mojehygge.cz/sojove-svicky/sojova-svicka-180ml-zimni-cas/",
+   "priceAmount": 299,
+   "price": "299 Kč",
+   "currency": "CZK",
+   "volume": "180 ml",
+   "category": "fragrance",
+   "kind": "Vonná svíčka",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Jehličí, citrusy, litsea cubeba. Na e-shopu zvolte balení 180 ml.",
+   "reason": "Jehličí, citrusy, litsea cubeba. Na e-shopu zvolte balení 180 ml.",
+   "photo": "/assets/s5/mojehygge/winter.jpg",
+   "source": {
+    "series": "s5",
+    "url": "https://www.mojehygge.cz/sojove-svicky/sojova-svicka-180ml-zimni-cas/",
+    "verifiedAt": "2026-11-19",
+    "sourceSha256": "b324be6194689adf8aff574c8a5a42fd9f8ec8b1fd3a8ea5f168efbed1066698",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "Public shop variant selector",
+     "sku": "293/180",
+     "nativePriceId": "1463",
+     "nativeLabel": "180ml - Skladem  (299 Kč)"
+    },
+    "priceEvidence": {
+     "amount": 299,
+     "currency": "CZK"
+    },
+    "packEvidence": {
+     "pack": "180 ml",
+     "scope": "Public shop variant selector"
+    },
+    "variantSelectionRequired": true,
+    "variantSelectionNotice": "Na e-shopu zvolte balení 180 ml.",
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://cdn.myshoptet.com/usr/www.mojehygge.cz/user/shop/big/293-1_photo-20-10-2021--21-48-04.jpg?ff=1&x=1024&y=1536&q=85&ts=6183e647&sg=fdee715b",
+    "photoEvidence": {
+     "url": "https://cdn.myshoptet.com/usr/www.mojehygge.cz/user/shop/big/293-1_photo-20-10-2021--21-48-04.jpg?ff=1&x=1024&y=1536&q=85&ts=6183e647&sg=fdee715b",
+     "sha256": "cc162195ddabf6dfaf7379c07cdee8761c84e58e871b072cd6e07e0f2d4e624d",
+     "originalBytes": true
+    },
+    "fragrance": {
+     "notes": [
+      "jehličí",
+      "citrusy",
+      "litsea cubeba"
+     ],
+     "officialFamilies": [],
+     "notesEvidence": {
+      "url": "https://www.mojehygge.cz/sojove-svicky/sojova-svicka-180ml-zimni-cas/",
+      "sourceText": "Kouzlo zimy je směs, která v sobě snoubí ostřejší vůni jehličí v kombinaci s citrusy a tóny litsea cubeby.",
+      "sourceLanguage": "cs"
+     }
+    },
+    "usagePurpose": "scented-candle",
+    "scent": "jehličí, citrusy, litsea cubeba",
+    "selectionTraits": {
+     "fragranceDirection": "g-citrus",
+     "fragranceProfile": "winter"
+    }
+   }
+  },
+  {
+   "id": "tobacco",
+   "name": "Tabák a vanilka",
+   "url": "https://www.mojehygge.cz/sojove-svicky/sojova-svicka-120ml-tabak-a-vanilka/",
+   "priceAmount": 299,
+   "price": "299 Kč",
+   "currency": "CZK",
+   "volume": "180 ml",
+   "category": "fragrance",
+   "kind": "Vonná svíčka",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Tabák, vanilka. Na e-shopu zvolte balení 180 ml.",
+   "reason": "Tabák, vanilka. Na e-shopu zvolte balení 180 ml.",
+   "photo": "/assets/s5/mojehygge/tobacco.jpg",
+   "source": {
+    "series": "s5",
+    "url": "https://www.mojehygge.cz/sojove-svicky/sojova-svicka-120ml-tabak-a-vanilka/",
+    "verifiedAt": "2026-11-19",
+    "sourceSha256": "84c4bc437b03ab00d0675d82d63d63b87c685b60de3ac720bff2763a3613d659",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "Public shop variant selector",
+     "sku": "479/180",
+     "nativePriceId": "968",
+     "nativeLabel": "180ml - Skladem  (299 Kč)"
+    },
+    "priceEvidence": {
+     "amount": 299,
+     "currency": "CZK"
+    },
+    "packEvidence": {
+     "pack": "180 ml",
+     "scope": "Public shop variant selector"
+    },
+    "variantSelectionRequired": true,
+    "variantSelectionNotice": "Na e-shopu zvolte balení 180 ml.",
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://cdn.myshoptet.com/usr/www.mojehygge.cz/user/shop/big/479-1_5caa5a88-5e5f-4162-81a3-f7c4c78e16ac.jpg?ff=1&x=1024&y=1536&q=85&ts=6183ea50&sg=fdee715b",
+    "photoEvidence": {
+     "url": "https://cdn.myshoptet.com/usr/www.mojehygge.cz/user/shop/big/479-1_5caa5a88-5e5f-4162-81a3-f7c4c78e16ac.jpg?ff=1&x=1024&y=1536&q=85&ts=6183ea50&sg=fdee715b",
+     "sha256": "ea14e2556380b9e241def54d292fd9a24400cfc93bbf4bc00da87a8724e90bee",
+     "originalBytes": true
+    },
+    "fragrance": {
+     "notes": [
+      "tabák",
+      "vanilka"
+     ],
+     "officialFamilies": [],
+     "notesEvidence": {
+      "url": "https://www.mojehygge.cz/sojove-svicky/sojova-svicka-120ml-tabak-a-vanilka/",
+      "sourceText": "Sójová svíčka 120ml/180ml - Tabák a vanilka",
+      "sourceLanguage": "cs"
+     }
+    },
+    "usagePurpose": "scented-candle",
+    "scent": "tabák, vanilka",
+    "selectionTraits": {
+     "fragranceDirection": "g-warm",
+     "fragranceProfile": "tobacco"
     }
    }
   }
