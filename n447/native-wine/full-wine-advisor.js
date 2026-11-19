@@ -70,13 +70,14 @@
  if(slug==='valka'){labels.simple='Jedno balenie vína';descriptions.simple='Jedno víno podľa vašich odpovedí';descriptions.target='Víno vybrané podľa vášho vkusu';}
  const scene=v=>({still:'white',bubbly:'sparkling',dry:'crisp','medium-dry':'fruity','medium-sweet':'sweet',mixed:'any',noFood:'any',orange:'white',any:'any'})[v]||v;
  function answerPhoto(step,value){
-  if(step.key==='budget'||step.key==='year')return '';
+  if(step.key==='budget')return '';
+  if(step.key==='year'){const years=step.options.filter(v=>v!=='any'&&v!=='mixed'),i=years.indexOf(value),src=i<0?'/assets/vino/choice-full.jpg':(i%2?'/assets/vino/year-cellar.jpg':'/assets/vino/year-harvest.jpg');return '<img src="'+esc(src)+'" alt="" loading="eager">';}
   const photo=window.COSMETICS_DEMOS.semanticPhotos[scene(value)]||'/assets/vino/choice-any.jpg';
   return '<img src="'+esc(photo)+'" alt="" loading="eager">';
  }
  function options(step){
   const real=step.options.filter(v=>v!=='any'&&v!=='mixed'),list=!catalogue.groupByForm&&real.length>3?real:step.options,remaining=list.slice(state.page*3),current=remaining.length>4?remaining.slice(0,3):remaining,next=remaining.length>4;
-  const budget=step.key==='budget', textOnly=budget||step.key==='year';
+  const budget=step.key==='budget', textOnly=budget;
   const card=v=>{
    const photo=answerPhoto(step,v);
    const title=budget?v?'Do '+v+' '+(engine.matches({...state.answers,budget:''})[0]?.currency==='CZK'?'Kč':'€'):'Bez limitu':step.key==='year'&&v!=='any'?'Ročník '+v:labels[v];
