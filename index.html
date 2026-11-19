@@ -1,1 +1,10 @@
-<!doctype html><html lang="sk"><meta charset="utf-8"><meta name="robots" content="noindex,nofollow"><title>Online poradca</title><body><p>Online poradcu otvoríte priamym odkazom svojej firmy.</p><script>if(location.hostname.endsWith(".mojchatbot.sk"))location.replace("/cosmetics.html");</script></body></html>
+<!doctype html>
+<html lang="cs"><head><meta charset="utf-8"><meta name="robots" content="noindex,nofollow"><title>Online poradca</title></head><body>
+<script>
+const host = location.hostname;
+const care = ['redfawn', 'avcoffee', 'qbcoffee', 'cipollacaffe', 'francin', 'rebelbean', 'etani', 'sumavaforrest', 'verticeramics'];
+const wine = ['sivko', 'vinarstvisoman', 'vinocapka', 'vinokmeto'];
+if (care.some(slug => host === slug + '.mojchatbot.sk')) location.replace('/s5.html');
+else if (wine.some(slug => host === slug + '.mojchatbot.sk')) location.replace('/wine.html');
+else if (host.endsWith('.mojchatbot.sk')) location.replace('/cosmetics.html');
+</script><p>Online poradcu otvoríte priamym odkazom svojej firmy.</p></body></html>
