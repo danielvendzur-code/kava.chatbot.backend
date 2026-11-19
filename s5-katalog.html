@@ -7,7 +7,7 @@
   <title>Ukážky poradcov</title>
   <script>
     const demo = new URLSearchParams(location.search).get('demo');
-    const cosmetics = ['francin', 'etani', 'sumavaforrest', 'verticeramics', 'cipollacaffe', 'qbcoffee', 'redfawn', 'avcoffee', 'rebelbean', 'vontree', 'bylinkokraska', 'essencebliss', 'svetlonosky', 'nabetondesign', 'sojka', 'dews', 'siluvone', 'durance', 'vonavepranie', 'mmnt', 'aromis', 'rozvoneno', 'ketts', 'totap', 'kvapkavoni', 'alma', 'vunebis', 'esodrogeria', 'candella', 'ravina', 'luxparfum', 'atmanperfumes', 'hypno', 'gom', 'egoist', 'parfums4all', 'yodeymaparfemy', 'odeur', 'elobe', 'topparfemy', 'inparfum', 'aromea', 'kifra', 'scents'];
+    const cosmetics = ['francin', 'etani', 'sumavaforrest', 'verticeramics', 'cipollacaffe', 'qbcoffee', 'redfawn', 'avcoffee', 'rebelbean', 'vontree', 'bylinkokraska', 'essencebliss', 'svetlonosky', 'nabetondesign', 'sojka', 'dews', 'siluvone', 'durance', 'vonavepranie', 'mmnt', 'aromis', 'rozvoneno', 'ketts', 'totap', 'kvapkavoni', 'alma', 'vunebis', 'esodrogeria', 'candella', 'ravina', 'luxparfum', 'atmanperfumes', 'hypno', 'gom', 'egoist', 'parfums4all', 'yodeymaparfemy', 'odeur', 'elobe', 'topparfemy', 'inparfum', 'aromea', 'kifra', 'scents', 'mojehygge', 'mojesoja', 'svickuj'];
     const wine = ['vinarstvisoman', 'vinocapka', 'sivko', 'vinokmeto'];
     const path = cosmetics.includes(demo) ? '/s5.html' : wine.includes(demo) ? '/wine.html' : '';
     if (path) location.replace(path + '?demo=' + encodeURIComponent(demo));
@@ -15,6 +15,9 @@
 </head>
 <body>
   <main><h1>Ukážky poradcov</h1><ul>
+    <li><a href="/s5.html?demo=mojehygge">Moje Hygge</a></li>
+    <li><a href="/s5.html?demo=mojesoja">Můj voňavý krámek / MojeSója</a></li>
+    <li><a href="/s5.html?demo=svickuj">SVÍČKUJ</a></li>
     <li><a href="/s5.html?demo=luxparfum">LUX PARFUM</a></li>
     <li><a href="/s5.html?demo=atmanperfumes">ATMAN</a></li>
     <li><a href="/s5.html?demo=hypno">Moje Hypno</a></li>

@@ -2,6 +2,9 @@
 (function(g){'use strict';
  const norm=s=>String(s||'').normalize('NFD').replace(/\p{Diacritic}/gu,'').toLowerCase();
  const rules={
+  "mojehygge": [{"match": "jasmin|ruze", "ids": ["jasmine"], "includeNotes": true}, {"match": "vanilk|skoric", "ids": ["vanilla"], "includeNotes": true}, {"match": "les|jehlic|smul", "ids": ["forest"], "includeNotes": true}],
+  "mojesoja": [{"match": "pomeranc|skoric", "ids": ["orange"], "includeNotes": true}, {"match": "jehlic|cedr", "ids": ["tree"], "includeNotes": true}, {"match": "malin|kokos", "ids": ["raspberry"], "includeNotes": true}],
+  "svickuj": [{"match": "rybiz|badyan|ambra", "ids": ["cake"], "includeNotes": true}, {"match": "kardamom|tonka", "ids": ["hygge"], "includeNotes": true}, {"match": "osmanthus|ylang", "ids": ["fortune"], "includeNotes": true}],
   "luxparfum": [{"match": "citron.*jabl", "ids": ["lux-036"], "includeNotes": true}, {"match": "bile.*kvet", "ids": ["lux-001"], "includeNotes": true}, {"match": "med.*tabak", "ids": ["lux-1020"], "includeNotes": true}],
   "atmanperfumes": [{"match": "malina.*oud", "ids": ["ambra-rossa"], "includeNotes": true}, {"match": "ribezle.*caj", "ids": ["aura-blanc"], "includeNotes": true}, {"match": "chinotto.*neroli", "ids": ["sole-intimo"], "includeNotes": true}],
   "hypno": [{"match": "bergamot.*skoric", "ids": ["tatrion"], "includeNotes": true}, {"match": "jablko.*mandle", "ids": ["fatria"], "includeNotes": true}, {"match": "pomarancovy.*kvet", "ids": ["betlior"], "includeNotes": true}],

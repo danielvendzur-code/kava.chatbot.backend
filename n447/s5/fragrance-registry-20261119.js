@@ -5563,5 +5563,475 @@ Object.assign(window.S3_REG.demos, {
       "hideStepEstimate": true
     },
     "companyCss": "/n447/s5/brands/scents.css"
+  },
+  "mojehygge": {
+    "series": "s5",
+    "type": "cosmetics",
+    "segment": "fragrance",
+    "name": "Moje Hygge",
+    "country": "CZ",
+    "logos": {
+      "landing": "/assets/s5/mojehygge/logo.png",
+      "header": "/assets/s5/mojehygge/logo.png",
+      "avatar": "/assets/s5/mojehygge/avatar.svg"
+    },
+    "brand": {
+      "name": "Moje Hygge",
+      "domain": "mojehygge.cz",
+      "website": "https://www.mojehygge.cz/",
+      "lang": "cs",
+      "fullName": "Moje Hygge",
+      "url": "https://www.mojehygge.cz/",
+      "logo": "/assets/s5/mojehygge/logo.png",
+      "mark": "/assets/s5/mojehygge/avatar.svg",
+      "greeting": "Dobrý den. Pomohu vám porovnat vybrané vůně svíček, jejich balení a ceny.",
+      "quickChips": [
+        "Jasmín a růže",
+        "Vanilka a skořice",
+        "Lesní vůně",
+        "Porovnat dvě vůně"
+      ],
+      "theme": {
+        "brand": "#302b26",
+        "accent": "#b69a70",
+        "soft": "#f7f3ee",
+        "paper": "#fff",
+        "ink": "#302b27",
+        "line": "#e5dbce"
+      }
+    },
+    "traitCopy": {
+      "g-fresh": [
+        "Květinové nebo lesní tóny",
+        "",
+        "Květinové nebo lesní tóny",
+        ""
+      ],
+      "jasmine": [
+        "Jasmín a růže",
+        "",
+        "Jasmín a růže",
+        ""
+      ],
+      "forest": [
+        "Jehličí, dřevo a smůla",
+        "",
+        "Jehličí, dřevo a smůla",
+        ""
+      ],
+      "g-warm": [
+        "Sladké koření",
+        "",
+        "Sladké koření",
+        ""
+      ],
+      "vanilla": [
+        "Hřejivá skořice a vanilka",
+        "",
+        "Hřejivá skořice a vanilka",
+        ""
+      ],
+      "gingerbread": [
+        "Skořice, červený pomeranč a badyán",
+        "",
+        "Skořice, červený pomeranč a badyán",
+        ""
+      ]
+    },
+    "stepCopy": {
+      "fragranceDirection": [
+        "Jaká vůně je vám blízká?",
+        "",
+        "Vonné tóny"
+      ],
+      "fragranceProfile": [
+        "Která kombinace vás láká?",
+        "",
+        "Vonné tóny"
+      ]
+    },
+    "compareFocus": true,
+    "upsellFocus": {},
+    "choicePhotos": {
+      "g-fresh": [
+        "/assets/s3/scenes-k2/rose.jpg"
+      ],
+      "jasmine": [
+        "/assets/s5/mojehygge/jasmine.jpg"
+      ],
+      "forest": [
+        "/assets/s5/mojehygge/forest.jpg"
+      ],
+      "g-warm": [
+        "/assets/s3/scenes-k2/vanilla.jpg"
+      ],
+      "vanilla": [
+        "/assets/s5/mojehygge/vanilla.jpg"
+      ],
+      "gingerbread": [
+        "/assets/s5/mojehygge/gingerbread.jpg"
+      ]
+    },
+    "compareProductIds": [
+      "jasmine",
+      "gingerbread"
+    ],
+    "segmentText": {
+      "entryNote": "Vonné svíčky · přesné balení · porovnání",
+      "titleSuffix": "výběr vůně svíčky",
+      "tab": "Výběr vůně",
+      "advisorName": "Průvodce vůněmi svíček",
+      "entrySmall": "VŮNĚ SVÍČEK",
+      "entryTitle": "Najděte vůni své svíčky",
+      "placeholder": "Zeptejte se na charakter vůně, balení nebo cenu…",
+      "heading": "Pomozte zákazníkovi vybrat vůni svíčky podle jeho vkusu.",
+      "lead": "Podle odpovědí zobrazí konkrétní svíčku s fotografií, vonným profilem, balením, cenou a odkazem. Dvě odlišné vůně lze porovnat.",
+      "includedChat": "Vonné tóny, balení a ceny vybraných svíček.",
+      "includedAdvisor": "Výběr vůně svíčky a porovnání dvou kompozic.",
+      "greeting": "Dobrý den. Pomohu vám porovnat vybrané vůně svíček, jejich balení a ceny.",
+      "teaserTitle": "Najděte vůni své svíčky",
+      "teaserNote": "Svíčky, balení a ceny",
+      "teaserAria": "Otevřít výběr vůně svíčky",
+      "source": "mojehygge-demo"
+    },
+    "fragranceResultExtras": {
+      "version": 1,
+      "enabled": true,
+      "alternatives": {
+        "jasmine": "forest",
+        "forest": "jasmine",
+        "vanilla": "gingerbread",
+        "gingerbread": "vanilla"
+      },
+      "scentProfile": {
+        "version": 1,
+        "mode": "source-notes-no-numeric-strength"
+      }
+    },
+    "fragrancePresentation": {
+      "version": 1,
+      "hideStepEstimate": true
+    },
+    "companyCss": "/n447/s5/brands/mojehygge.css"
+  },
+  "mojesoja": {
+    "series": "s5",
+    "type": "cosmetics",
+    "segment": "fragrance",
+    "name": "Můj voňavý krámek / MojeSója",
+    "country": "CZ",
+    "logos": {
+      "landing": "/assets/s5/mojesoja/logo.jpg",
+      "header": "/assets/s5/mojesoja/logo.jpg",
+      "avatar": "/assets/s5/mojesoja/avatar.svg"
+    },
+    "brand": {
+      "name": "Můj voňavý krámek / MojeSója",
+      "domain": "mojesoja.cz",
+      "website": "https://www.mojesoja.cz/",
+      "lang": "cs",
+      "fullName": "Můj voňavý krámek / MojeSója",
+      "url": "https://www.mojesoja.cz/",
+      "logo": "/assets/s5/mojesoja/logo.jpg",
+      "mark": "/assets/s5/mojesoja/avatar.svg",
+      "greeting": "Dobrý den. Pomohu vám porovnat vybrané vůně svíček, jejich balení a ceny.",
+      "quickChips": [
+        "Pomeranč a vanilka",
+        "Jehličí a cedr",
+        "Maliny a kokos",
+        "Porovnat dvě vůně"
+      ],
+      "theme": {
+        "brand": "#85623e",
+        "accent": "#d1b481",
+        "soft": "#f7f3ee",
+        "paper": "#fff",
+        "ink": "#302b27",
+        "line": "#e5dbce"
+      }
+    },
+    "traitCopy": {
+      "g-fruit": [
+        "Ovocné kombinace",
+        "",
+        "Ovocné kombinace",
+        ""
+      ],
+      "orange": [
+        "Pomeranč, vanilka a skořice",
+        "",
+        "Pomeranč, vanilka a skořice",
+        ""
+      ],
+      "mango": [
+        "Mango, vanilka, pomeranč a hřebíček",
+        "",
+        "Mango, vanilka, pomeranč a hřebíček",
+        ""
+      ],
+      "raspberry": [
+        "Čerstvé maliny a kokos",
+        "",
+        "Čerstvé maliny a kokos",
+        ""
+      ],
+      "g-green": [
+        "Jehličí nebo zázvor",
+        "",
+        "Jehličí nebo zázvor",
+        ""
+      ],
+      "tree": [
+        "Jehličí, cedr, máta a eukalyptus",
+        "",
+        "Jehličí, cedr, máta a eukalyptus",
+        ""
+      ],
+      "ginger": [
+        "Zázvorová vůně",
+        "",
+        "Zázvorová vůně",
+        ""
+      ]
+    },
+    "stepCopy": {
+      "fragranceDirection": [
+        "Jaká vůně je vám blízká?",
+        "",
+        "Vonné tóny"
+      ],
+      "fragranceProfile": [
+        "Která kombinace vás láká?",
+        "",
+        "Vonné tóny"
+      ]
+    },
+    "compareFocus": true,
+    "upsellFocus": {},
+    "choicePhotos": {
+      "g-fruit": [
+        "/assets/s3/scenes-k2/citrus.jpg"
+      ],
+      "orange": [
+        "/assets/s5/mojesoja/orange.jpg"
+      ],
+      "mango": [
+        "/assets/s5/mojesoja/mango.jpg"
+      ],
+      "raspberry": [
+        "/assets/s5/mojesoja/raspberry.jpg"
+      ],
+      "g-green": [
+        "/assets/s3/scenes-k2/pine.jpg"
+      ],
+      "tree": [
+        "/assets/s5/mojesoja/tree.jpg"
+      ],
+      "ginger": [
+        "/assets/s5/mojesoja/ginger.jpg"
+      ]
+    },
+    "compareProductIds": [
+      "orange",
+      "tree"
+    ],
+    "segmentText": {
+      "entryNote": "Vonné svíčky · přesné balení · porovnání",
+      "titleSuffix": "výběr vůně svíčky",
+      "tab": "Výběr vůně",
+      "advisorName": "Průvodce vůněmi svíček",
+      "entrySmall": "VŮNĚ SVÍČEK",
+      "entryTitle": "Najděte vůni své svíčky",
+      "placeholder": "Zeptejte se na charakter vůně, balení nebo cenu…",
+      "heading": "Pomozte zákazníkovi vybrat vůni svíčky podle jeho vkusu.",
+      "lead": "Podle odpovědí zobrazí konkrétní svíčku s fotografií, vonným profilem, balením, cenou a odkazem. Dvě odlišné vůně lze porovnat.",
+      "includedChat": "Vonné tóny, balení a ceny vybraných svíček.",
+      "includedAdvisor": "Výběr vůně svíčky a porovnání dvou kompozic.",
+      "greeting": "Dobrý den. Pomohu vám porovnat vybrané vůně svíček, jejich balení a ceny.",
+      "teaserTitle": "Najděte vůni své svíčky",
+      "teaserNote": "Svíčky, balení a ceny",
+      "teaserAria": "Otevřít výběr vůně svíčky",
+      "source": "mojesoja-demo"
+    },
+    "fragranceResultExtras": {
+      "version": 1,
+      "enabled": true,
+      "alternatives": {
+        "orange": "mango",
+        "mango": "raspberry",
+        "raspberry": "orange",
+        "tree": "ginger",
+        "ginger": "tree"
+      },
+      "scentProfile": {
+        "version": 1,
+        "mode": "source-notes-no-numeric-strength"
+      }
+    },
+    "fragrancePresentation": {
+      "version": 1,
+      "hideStepEstimate": true
+    },
+    "companyCss": "/n447/s5/brands/mojesoja.css"
+  },
+  "svickuj": {
+    "series": "s5",
+    "type": "cosmetics",
+    "segment": "fragrance",
+    "name": "SVÍČKUJ",
+    "country": "CZ",
+    "logos": {
+      "landing": "/assets/s5/svickuj/logo.jpg",
+      "header": "/assets/s5/svickuj/logo.jpg",
+      "avatar": "/assets/s5/svickuj/avatar.svg"
+    },
+    "brand": {
+      "name": "SVÍČKUJ",
+      "domain": "svickuj.cz",
+      "website": "https://www.svickuj.cz/",
+      "lang": "cs",
+      "fullName": "SVÍČKUJ",
+      "url": "https://www.svickuj.cz/",
+      "logo": "/assets/s5/svickuj/logo.jpg",
+      "mark": "/assets/s5/svickuj/avatar.svg",
+      "greeting": "Dobrý den. Pomohu vám porovnat vybrané vůně svíček, jejich balení a ceny.",
+      "quickChips": [
+        "Rybíz, badyán a ambra",
+        "Skořice a kardamom",
+        "Osmanthus a vanilka",
+        "Porovnat dvě vůně"
+      ],
+      "theme": {
+        "brand": "#64503a",
+        "accent": "#c4aa7d",
+        "soft": "#f7f3ee",
+        "paper": "#fff",
+        "ink": "#302b27",
+        "line": "#e5dbce"
+      }
+    },
+    "traitCopy": {
+      "g-fruit-flower": [
+        "Květiny nebo ovocný akcent",
+        "",
+        "Květiny nebo ovocný akcent",
+        ""
+      ],
+      "cake": [
+        "Černý rybíz, badyán a ambra",
+        "",
+        "Černý rybíz, badyán a ambra",
+        ""
+      ],
+      "fortune": [
+        "Osmanthus, ylang ylang a vanilka",
+        "",
+        "Osmanthus, ylang ylang a vanilka",
+        ""
+      ],
+      "joy": [
+        "Čerstvé růže a pomeranč",
+        "",
+        "Čerstvé růže a pomeranč",
+        ""
+      ],
+      "g-warm": [
+        "Sladké kořeněné vůně",
+        "",
+        "Sladké kořeněné vůně",
+        ""
+      ],
+      "hygge": [
+        "Skořice, kardamom a tonka",
+        "",
+        "Skořice, kardamom a tonka",
+        ""
+      ],
+      "vanilla": [
+        "Sladká vanilka a hřebíček",
+        "",
+        "Sladká vanilka a hřebíček",
+        ""
+      ]
+    },
+    "stepCopy": {
+      "fragranceDirection": [
+        "Jaká vůně je vám blízká?",
+        "",
+        "Vonné tóny"
+      ],
+      "fragranceProfile": [
+        "Která kombinace vás láká?",
+        "",
+        "Vonné tóny"
+      ]
+    },
+    "compareFocus": true,
+    "upsellFocus": {},
+    "choicePhotos": {
+      "g-fruit-flower": [
+        "/assets/s3/scenes-k2/rose.jpg"
+      ],
+      "cake": [
+        "/assets/s5/svickuj/cake.jpg"
+      ],
+      "fortune": [
+        "/assets/s5/svickuj/fortune.jpg"
+      ],
+      "joy": [
+        "/assets/s5/svickuj/joy.jpg"
+      ],
+      "g-warm": [
+        "/assets/s3/scenes-k2/vanilla.jpg"
+      ],
+      "hygge": [
+        "/assets/s5/svickuj/hygge.jpg"
+      ],
+      "vanilla": [
+        "/assets/s5/svickuj/vanilla.jpg"
+      ]
+    },
+    "compareProductIds": [
+      "cake",
+      "fortune"
+    ],
+    "segmentText": {
+      "entryNote": "Vonné svíčky · přesné balení · porovnání",
+      "titleSuffix": "výběr vůně svíčky",
+      "tab": "Výběr vůně",
+      "advisorName": "Průvodce vůněmi svíček",
+      "entrySmall": "VŮNĚ SVÍČEK",
+      "entryTitle": "Najděte vůni své svíčky",
+      "placeholder": "Zeptejte se na charakter vůně, balení nebo cenu…",
+      "heading": "Pomozte zákazníkovi vybrat vůni svíčky podle jeho vkusu.",
+      "lead": "Podle odpovědí zobrazí konkrétní svíčku s fotografií, vonným profilem, balením, cenou a odkazem. Dvě odlišné vůně lze porovnat.",
+      "includedChat": "Vonné tóny, balení a ceny vybraných svíček.",
+      "includedAdvisor": "Výběr vůně svíčky a porovnání dvou kompozic.",
+      "greeting": "Dobrý den. Pomohu vám porovnat vybrané vůně svíček, jejich balení a ceny.",
+      "teaserTitle": "Najděte vůni své svíčky",
+      "teaserNote": "Svíčky, balení a ceny",
+      "teaserAria": "Otevřít výběr vůně svíčky",
+      "source": "svickuj-demo"
+    },
+    "fragranceResultExtras": {
+      "version": 1,
+      "enabled": true,
+      "alternatives": {
+        "cake": "fortune",
+        "fortune": "joy",
+        "joy": "cake",
+        "hygge": "vanilla",
+        "vanilla": "hygge"
+      },
+      "scentProfile": {
+        "version": 1,
+        "mode": "source-notes-no-numeric-strength"
+      }
+    },
+    "fragrancePresentation": {
+      "version": 1,
+      "hideStepEstimate": true
+    },
+    "companyCss": "/n447/s5/brands/svickuj.css"
   }
 });
