@@ -7,7 +7,7 @@
   <title>Ukážky poradcov</title>
   <script>
     const demo = new URLSearchParams(location.search).get('demo');
-    const cosmetics = ['francin', 'etani', 'sumavaforrest', 'verticeramics', 'cipollacaffe', 'qbcoffee', 'redfawn', 'avcoffee', 'rebelbean', 'vontree', 'bylinkokraska'];
+    const cosmetics = ['francin', 'etani', 'sumavaforrest', 'verticeramics', 'cipollacaffe', 'qbcoffee', 'redfawn', 'avcoffee', 'rebelbean', 'vontree', 'bylinkokraska', 'essencebliss', 'svetlonosky', 'nabetondesign', 'sojka', 'dews', 'siluvone', 'durance', 'vonavepranie', 'mmnt', 'aromis', 'rozvoneno', 'ketts', 'totap', 'kvapkavoni', 'alma', 'vunebis', 'esodrogeria', 'candella', 'ravina'];
     const wine = ['vinarstvisoman', 'vinocapka', 'sivko', 'vinokmeto'];
     const path = cosmetics.includes(demo) ? '/s5.html' : wine.includes(demo) ? '/wine.html' : '';
     if (path) location.replace(path + '?demo=' + encodeURIComponent(demo));
@@ -15,6 +15,25 @@
 </head>
 <body>
   <main><h1>Ukážky poradcov</h1><ul>
+    <li><a href="/s5.html?demo=essencebliss">ESSENCE BLISS</a></li>
+    <li><a href="/s5.html?demo=svetlonosky">SVĚTLONOŠKY</a></li>
+    <li><a href="/s5.html?demo=nabetondesign">NABETONdesign</a></li>
+    <li><a href="/s5.html?demo=sojka">SOJKA</a></li>
+    <li><a href="/s5.html?demo=dews">DEWS</a></li>
+    <li><a href="/s5.html?demo=siluvone">SI·LU</a></li>
+    <li><a href="/s5.html?demo=durance">Durance</a></li>
+    <li><a href="/s5.html?demo=vonavepranie">Voňavé pranie</a></li>
+    <li><a href="/s5.html?demo=mmnt">MMNT</a></li>
+    <li><a href="/s5.html?demo=aromis">AROMIS</a></li>
+    <li><a href="/s5.html?demo=rozvoneno">Rozvoněno</a></li>
+    <li><a href="/s5.html?demo=ketts">KETT’S CANDLES</a></li>
+    <li><a href="/s5.html?demo=totap">toTap</a></li>
+    <li><a href="/s5.html?demo=kvapkavoni">Kvapka vôní</a></li>
+    <li><a href="/s5.html?demo=alma">ALMA</a></li>
+    <li><a href="/s5.html?demo=vunebis">Vůně BIS</a></li>
+    <li><a href="/s5.html?demo=esodrogeria">EsoDrogéria</a></li>
+    <li><a href="/s5.html?demo=candella">Candella</a></li>
+    <li><a href="/s5.html?demo=ravina">RAVINA</a></li>
     <li><a href="/s5.html?demo=vontree">VONTREE CANDLE</a></li>
     <li><a href="/s5.html?demo=bylinkokraska">BylinkoKráska</a></li>
     <li><a href="/s5.html?demo=rebelbean">Rebelbean</a></li>
