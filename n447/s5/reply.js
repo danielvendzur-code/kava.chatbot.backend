@@ -31,7 +31,7 @@
   "totap": [{"match": "pizmo|jablk", "ids": ["1"], "includeNotes": true}, {"match": "ruze|oud", "ids": ["2"], "includeNotes": true}, {"match": "kav|vanilk", "ids": ["4"], "includeNotes": true}],
   "kvapkavoni": [{"match": "citrus|ihlic", "ids": ["1"], "includeNotes": true}, {"match": "pizmo|mach", "ids": ["2"], "includeNotes": true}, {"match": "morsk|bergamot", "ids": ["6"], "includeNotes": true}],
   "alma": [{"match": "citrus|tabak", "ids": ["1"], "includeNotes": true}, {"match": "jasmin", "ids": ["2"], "includeNotes": true}, {"match": "ruze", "ids": ["4"], "includeNotes": true}],
-  "vunebis": [{"match": "pizmo|vanilk", "ids": ["musk"], "includeNotes": true}, {"match": "lili|pacul", "ids": ["lily"], "includeNotes": true}, {"match": "kosat", "ids": ["iris"], "includeNotes": true}],
+  "vunebis": [{"match": "kosat", "ids": ["iris"], "includeNotes": true}, {"match": "lili|pacul", "ids": ["lily"], "includeNotes": true}, {"match": "pizmo|vanilk", "ids": ["musk"], "includeNotes": true}],
   "esodrogeria": [{"match": "drevo|citrus", "ids": ["wood"], "includeNotes": true}, {"match": "frezi|hrusk", "ids": ["pear"], "includeNotes": true}, {"match": "olej|pacul", "ids": ["patchouli"], "includeNotes": true}],
   "candella": [{"match": "pomaranc|pomelo", "ids": ["orange"], "includeNotes": true}, {"match": "eukalypt|rozmarin", "ids": ["herbs"], "includeNotes": true}, {"match": "skoric|kardamom", "ids": ["spice"], "includeNotes": true}],
   "ravina": [{"match": "rybiz|vanilk", "ids": ["berry"], "includeNotes": true}, {"match": "citrus|lili", "ids": ["lily"], "includeNotes": true}, {"match": "cen|balen", "ids": ["berry"], "includeNotes": true}],
