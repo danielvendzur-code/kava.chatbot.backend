@@ -1,0 +1,46 @@
+/* Company-scoped integrated perfume presentation. */
+/* Extends the coordinator's existing perfume-card layout only to this new firm. */
+body[data-series=s5][data-cosmetics-demo=gom] #cosmetics-root#cosmetics-root #cx-widget#cx-widget a.lg-wine-card{grid-template-columns:64px minmax(0,1fr)!important;min-width:0!important}
+body[data-series=s5][data-cosmetics-demo=gom] #cosmetics-root#cosmetics-root #cx-widget#cx-widget .lg-wine-foot{flex-wrap:wrap!important;gap:5px!important}
+body[data-series=s5][data-cosmetics-demo=gom] #cosmetics-root#cosmetics-root #cx-widget#cx-widget .lg-wine-foot strong{flex-basis:100%;white-space:normal;overflow-wrap:anywhere}
+body[data-series=s5][data-cosmetics-demo=gom] #cosmetics-root#cosmetics-root #cx-widget#cx-widget .lg-wine-go{flex-basis:100%;text-align:center;white-space:normal!important}
+
+/* Explicit perfume-result extension, review only until MAIN imports the module. */
+body[data-series=s5][data-cosmetics-demo=gom] #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget .s5-product[data-fragrance-result=enhanced]{grid-template-columns:108px minmax(0,1fr)!important;gap:11px!important;background:linear-gradient(145deg,#fcf5f8,#fff 65%)!important;border-color:#e7d6e0!important}
+body[data-series=s5][data-cosmetics-demo=gom] #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget [data-fragrance-result=enhanced] .cx-quality-product-photo{width:108px!important;height:124px!important;background:#fff!important}
+body[data-series=s5][data-cosmetics-demo=gom] #cx-widget .fr-result-extras{margin:10px 0 0}
+body[data-series=s5][data-cosmetics-demo=gom] #cx-widget :is(.fr-extra-notes,.fr-extra-compare) summary{cursor:pointer;font-size:12px;font-weight:650;padding:10px 0;color:var(--cx-brand)}
+body[data-series=s5][data-cosmetics-demo=gom] #cx-widget .fr-extra-notes dl{margin:0 0 12px;font-size:11px;line-height:1.5}
+body[data-series=s5][data-cosmetics-demo=gom] #cx-widget .fr-extra-notes dl>div{display:grid;grid-template-columns:50px minmax(0,1fr);gap:8px;margin:5px 0}
+body[data-series=s5][data-cosmetics-demo=gom] #cx-widget .fr-extra-notes :is(dt,dd){margin:0}
+body[data-series=s5][data-cosmetics-demo=gom] #cx-widget .fr-extra-notes dt{color:#66776e}
+body[data-series=s5][data-cosmetics-demo=gom] #cx-widget .fr-extra-pack{border:1px solid #ddcfb4;background:#faf2e2;border-radius:13px;padding:12px}
+body[data-series=s5][data-cosmetics-demo=gom] #cx-widget .fr-extra-kicker{font-size:9px;text-transform:uppercase;letter-spacing:.1em;color:#756142;margin-bottom:7px}
+body[data-series=s5][data-cosmetics-demo=gom] #cx-widget .fr-extra-pack label{display:flex;gap:10px;align-items:flex-start;cursor:pointer;font-size:13px;line-height:1.4}
+body[data-series=s5][data-cosmetics-demo=gom] #cx-widget .fr-extra-pack input{accent-color:#554a37;width:20px;height:20px;margin:1px 0 0;flex:none}
+body[data-series=s5][data-cosmetics-demo=gom] #cx-widget .fr-extra-pack :is(b,small,strong){display:block}
+body[data-series=s5][data-cosmetics-demo=gom] #cx-widget .fr-extra-pack small{font-size:10px;color:#6e614a;margin:3px 0}
+body[data-series=s5][data-cosmetics-demo=gom] #cx-widget .fr-extra-pack a{display:inline-block;margin:7px 0 3px 30px;font-size:11px;font-weight:650;color:var(--cx-brand)}
+body[data-series=s5][data-cosmetics-demo=gom] #cx-widget .fr-extra-caveat{display:block;font-size:9px!important;line-height:1.5;color:#706554;margin:4px 0 0!important}
+body[data-series=s5][data-cosmetics-demo=gom] #cx-widget .fr-extra-related{border-top:1px solid #e8decc;margin:14px 0 12px;padding-top:12px}
+body[data-series=s5][data-cosmetics-demo=gom] #cx-widget .fr-extra-related h3{font-size:13px;margin:0 0 9px}
+body[data-series=s5][data-cosmetics-demo=gom] #cx-widget .fr-related-card{display:grid;grid-template-columns:68px minmax(0,1fr);gap:11px;align-items:center;background:#fbf8f1;border:1px solid #e9dfce;border-radius:12px;padding:10px}
+body[data-series=s5][data-cosmetics-demo=gom] #cx-widget .fr-related-card img{width:68px;height:88px;object-fit:contain;background:white;border-radius:7px}
+body[data-series=s5][data-cosmetics-demo=gom] #cx-widget .fr-related-card b{display:block;font-size:12px;line-height:1.35}
+body[data-series=s5][data-cosmetics-demo=gom] #cx-widget .fr-related-card small{display:block;font-size:11px;margin-top:4px}
+body[data-series=s5][data-cosmetics-demo=gom] #cx-widget .fr-related-card p{font-size:10px!important;line-height:1.45!important;margin:5px 0!important;color:#566158}
+body[data-series=s5][data-cosmetics-demo=gom] #cx-widget .fr-related-card a{font-size:11px;font-weight:650;color:var(--cx-brand)}
+body[data-series=s5][data-cosmetics-demo=gom] #cx-widget .fr-compare-cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+body[data-series=s5][data-cosmetics-demo=gom] #cx-widget .fr-compare-cols article{border:1px solid #e1e7e1;border-radius:10px;padding:9px;min-width:0;overflow-wrap:anywhere;font-size:11px;line-height:1.5}
+body[data-series=s5][data-cosmetics-demo=gom] #cx-widget .fr-compare-cols b{display:block;font-size:11px}
+body[data-series=s5][data-cosmetics-demo=gom] #cx-widget .fr-compare-cols small{display:block;font-size:10px;margin:5px 0}
+body[data-series=s5][data-cosmetics-demo=gom] #cx-widget .fr-compare-cols p{font-size:10px!important;line-height:1.5!important}
+body[data-series=s5][data-cosmetics-demo=gom] #cx-widget .fr-compare-cols a{color:var(--cx-brand);font-size:10px;font-weight:650}
+
+body[data-series=s5][data-cosmetics-demo=gom] #cx-widget .fr-extra-pack-photo{width:44px;height:70px;object-fit:contain;flex:none;border-radius:6px;background:white}
+
+body[data-series=s5][data-cosmetics-demo=gom] #cosmetics-root#cosmetics-root img.cx-logo{filter:none!important;object-fit:contain!important;background:#e4e1d4;border-radius:5px;padding:4px;box-sizing:border-box}
+body[data-series=s5][data-cosmetics-demo=gom] #cosmetics-root#cosmetics-root .cx-owner-brand img.cx-logo{width:44px!important;height:70px!important;max-height:70px!important}
+body[data-series=s5][data-cosmetics-demo=gom] #cx-widget .cx-widget-brand{position:relative;min-width:140px}
+body[data-series=s5][data-cosmetics-demo=gom] #cosmetics-root#cosmetics-root #cx-widget .cx-widget-brand>img.cx-logo{width:26px!important;height:44px!important;max-width:26px!important;max-height:44px!important}
+body[data-series=s5][data-cosmetics-demo=gom] #cx-widget .cx-widget-brand::after{content:"GOM PERFUMES";position:absolute;left:36px;top:11px;font-family:Arial,sans-serif;font-size:11px;line-height:1.4;font-weight:600;letter-spacing:.04em;white-space:nowrap;color:#f1ede0}

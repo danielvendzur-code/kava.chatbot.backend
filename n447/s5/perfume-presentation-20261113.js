@@ -1,7 +1,7 @@
 /* Owner-requested visual polish for the fifteen reviewed, unsent fragrance demos. */
 (() => {
  'use strict';
- const names='essentique fragrancesamples alexmonhart flakon orion inspirovane leparfumlechic vavavoom rafinad perfumeries1907 veelyn parfumeur beviro spacefluid vonya amoria inparfemy czechfragranceclub vontree bylinkokraska essencebliss svetlonosky nabetondesign sojka dews siluvone durance vonavepranie mmnt aromis rozvoneno ketts totap kvapkavoni alma vunebis esodrogeria candella ravina'.split(' ');
+ const names='essentique fragrancesamples alexmonhart flakon orion inspirovane leparfumlechic vavavoom rafinad perfumeries1907 veelyn parfumeur beviro spacefluid vonya amoria inparfemy czechfragranceclub vontree bylinkokraska essencebliss svetlonosky nabetondesign sojka dews siluvone durance vonavepranie mmnt aromis rozvoneno ketts totap kvapkavoni alma vunebis esodrogeria candella ravina luxparfum atmanperfumes hypno gom egoist parfums4all yodeymaparfemy odeur elobe topparfemy inparfum aromea kifra scents'.split(' ');
  const reg=window.S3_REG?.demos||{};
  const tidy=s=>typeof s==='string'?s.replace(/\b(?:doložených|uvedených|zverejnených|zveřejněných)\s+/gi,'').replace(/\b(?:Doložené|Uvedené|Zverejnené|Zveřejněné)\s+/g,'').trim():s;
  const helper=s=>typeof s==='string'&&/^Vyberte\s+(?:si\s+)?(?:podľa|podle)\b/i.test(s)?'':tidy(s);

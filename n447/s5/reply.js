@@ -2,6 +2,20 @@
 (function(g){'use strict';
  const norm=s=>String(s||'').normalize('NFD').replace(/\p{Diacritic}/gu,'').toLowerCase();
  const rules={
+  "luxparfum": [{"match": "citron.*jabl", "ids": ["lux-036"], "includeNotes": true}, {"match": "bile.*kvet", "ids": ["lux-001"], "includeNotes": true}, {"match": "med.*tabak", "ids": ["lux-1020"], "includeNotes": true}],
+  "atmanperfumes": [{"match": "malina.*oud", "ids": ["ambra-rossa"], "includeNotes": true}, {"match": "ribezle.*caj", "ids": ["aura-blanc"], "includeNotes": true}, {"match": "chinotto.*neroli", "ids": ["sole-intimo"], "includeNotes": true}],
+  "hypno": [{"match": "bergamot.*skoric", "ids": ["tatrion"], "includeNotes": true}, {"match": "jablko.*mandle", "ids": ["fatria"], "includeNotes": true}, {"match": "pomarancovy.*kvet", "ids": ["betlior"], "includeNotes": true}],
+  "gom": [{"match": "bergamot.*limet", "ids": ["chu"], "includeNotes": true}, {"match": "grep.*bily.*caj", "ids": ["nyi-ma"], "includeNotes": true}, {"match": "tabak.*tonka", "ids": ["rgyal-mo"], "includeNotes": true}],
+  "egoist": [{"match": "citrus.*safran", "ids": ["trajan-parfem"], "includeNotes": true}, {"match": "visen.*malin", "ids": ["syn-cherry-parfemova-voda"], "includeNotes": true}, {"match": "vanilk.*santal", "ids": ["vanille-de-tahiti-parfemova-voda"], "includeNotes": true}],
+  "parfums4all": [{"match": "citrus.*morsk", "ids": ["ardagio-aqua-classic-for-men-edp-100ml"], "includeNotes": true}, {"match": "mandarinka.*ruza", "ids": ["elite-edp-100ml"], "includeNotes": true}, {"match": "mandl.*safran", "ids": ["experience-edp-100ml"], "includeNotes": true}],
+  "yodeymaparfemy": [{"match": "jablko.*bambus", "ids": ["kara"], "includeNotes": true}, {"match": "jasmin.*jantar", "ids": ["iris"], "includeNotes": true}, {"match": "grapefruit.*skoric", "ids": ["power"], "includeNotes": true}],
+  "odeur": [{"match": "zazvor.*biele.*kvety", "ids": ["kvet-konvalinky"], "includeNotes": true}, {"match": "mirabelk.*pivonk", "ids": ["sladka-pivonka"], "includeNotes": true}, {"match": "jantar.*garden", "ids": ["jantarove-krystaly"], "includeNotes": true}],
+  "elobe": [{"match": "svestk.*pivonk", "ids": ["plum-tonic"], "includeNotes": true}, {"match": "ryz.*vanilk", "ids": ["vanilla-rice"], "includeNotes": true}, {"match": "hinoki.*kadid", "ids": ["dirty-hinoki"], "includeNotes": true}],
+  "topparfemy": [{"match": "ruz.*karaf", "ids": ["ruze"], "includeNotes": true}, {"match": "merunk.*vanilk", "ids": ["delusional"], "includeNotes": true}, {"match": "citrus.*cedr", "ids": ["portus-black"], "includeNotes": true}],
+  "inparfum": [{"match": "grapefruit.*pacul", "ids": ["m310"], "includeNotes": true}, {"match": "liker.*vanilk", "ids": ["w152"], "includeNotes": true}, {"match": "neroli.*skoric", "ids": ["w147"], "includeNotes": true}],
+  "aromea": [{"match": "kav.*vanilk", "ids": ["cafe-satin"], "includeNotes": true}, {"match": "myrh.*drev", "ids": ["aramaik"], "includeNotes": true}, {"match": "skoric.*mat", "ids": ["ghirlandaio"], "includeNotes": true}],
+  "kifra": [{"match": "oceansk.*sviez", "ids": ["ocean"], "includeNotes": true}, {"match": "mango.*kvet", "ids": ["mango"], "includeNotes": true}, {"match": "levandul.*mat", "ids": ["lavender"], "includeNotes": true}],
+  "scents": [{"match": "vyrazn.*vis", "ids": ["cherry"], "includeNotes": true}, {"match": "jemnej.*vanilk", "ids": ["vanilla"], "includeNotes": true}, {"match": "drevit.*vun", "ids": ["sunset"], "includeNotes": true}],
   "essencebliss": [{"match": "bily caj|salvej", "ids": ["tea"], "includeNotes": true}, {"match": "mango|grapefruit", "ids": ["mango"], "includeNotes": true}, {"match": "jablk|vanilk", "ids": ["amber"], "includeNotes": true}],
   "svetlonosky": [{"match": "vanilk|kokos", "ids": ["vanilla"], "includeNotes": true}, {"match": "pernic", "ids": ["gingerbread"], "includeNotes": true}, {"match": "benzoin|cedr", "ids": ["woods"], "includeNotes": true}],
   "nabetondesign": [{"match": "ciste pradlo|bavln", "ids": ["cotton"], "includeNotes": true}, {"match": "grep", "ids": ["grapefruit"], "includeNotes": true}, {"match": "cedr", "ids": ["cedar"], "includeNotes": true}],

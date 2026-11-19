@@ -3134,5 +3134,2434 @@ Object.assign(window.S3_REG.demos, {
       "hideStepEstimate": true
     },
     "companyCss": "/n447/s5/brands/ravina.css"
+  },
+  "luxparfum": {
+    "series": "s5",
+    "type": "cosmetics",
+    "segment": "fragrance",
+    "name": "LUX PARFUM",
+    "country": "CZ",
+    "logos": {
+      "landing": "/assets/s5/luxparfum/logo.png",
+      "header": "/assets/s5/luxparfum/logo.png",
+      "avatar": "/assets/s5/luxparfum/avatar.png"
+    },
+    "brand": {
+      "name": "LUX PARFUM",
+      "domain": "luxparfum.cz",
+      "website": "https://www.luxparfum.cz/",
+      "lang": "cs",
+      "fullName": "LUX PARFUM",
+      "url": "https://www.luxparfum.cz/",
+      "logo": "/assets/s5/luxparfum/logo.png",
+      "mark": "/assets/s5/luxparfum/avatar.png",
+      "greeting": "Dobrý den. Pomohu vám porovnat šest vybraných vůní LUX PARFUM, jejich tóny, balení a ceny.",
+      "quickChips": [
+        "Citron a jablko",
+        "Bílé květy",
+        "Med a tabák",
+        "Porovnat dvě vůně"
+      ],
+      "theme": {
+        "brand": "#24211c",
+        "accent": "#846222",
+        "soft": "#fbf6ed",
+        "paper": "#ffffff",
+        "ink": "#24211c",
+        "line": "#e7dece"
+      }
+    },
+    "traitCopy": {
+      "fresh": [
+        "Citron a svěží tóny",
+        "",
+        "Citron a svěží tóny",
+        ""
+      ],
+      "lux-036": [
+        "Citron, jablko a cedr",
+        "",
+        "Citron, jablko a cedr",
+        ""
+      ],
+      "lux-261": [
+        "Citron, čaj a zázvor",
+        "",
+        "Citron, čaj a zázvor",
+        ""
+      ],
+      "flowers": [
+        "Květiny a ovoce",
+        "",
+        "Květiny a ovoce",
+        ""
+      ],
+      "lux-001": [
+        "Pomerančový květ a jasmín",
+        "",
+        "Pomerančový květ a jasmín",
+        ""
+      ],
+      "lux-010": [
+        "Hruška, meloun a frézie",
+        "",
+        "Hruška, meloun a frézie",
+        ""
+      ],
+      "sweet": [
+        "Vanilka a sladké tóny",
+        "",
+        "Vanilka a sladké tóny",
+        ""
+      ],
+      "lux-1020": [
+        "Med, skořice a tabák",
+        "",
+        "Med, skořice a tabák",
+        ""
+      ],
+      "lux-912": [
+        "Hruška, vetiver a vanilka",
+        "",
+        "Hruška, vetiver a vanilka",
+        ""
+      ]
+    },
+    "stepCopy": {
+      "fragranceDirection": [
+        "Jaká vůně je vám blízká?",
+        "",
+        "Tóny vůně"
+      ],
+      "fragranceProfile": [
+        "Která kombinace vás láká?",
+        "",
+        "Tóny vůně"
+      ]
+    },
+    "compareFocus": true,
+    "upsellFocus": {},
+    "choicePhotos": {
+      "fresh": [
+        "/assets/s3/scenes-k2/citrus.jpg"
+      ],
+      "lux-036": [
+        "/assets/s5/luxparfum/036.png"
+      ],
+      "lux-261": [
+        "/assets/s5/luxparfum/261.png"
+      ],
+      "flowers": [
+        "/assets/s3/scenes-k2/jasmine.jpg"
+      ],
+      "lux-001": [
+        "/assets/s5/luxparfum/001.png"
+      ],
+      "lux-010": [
+        "/assets/s5/luxparfum/010.png"
+      ],
+      "sweet": [
+        "/assets/s3/scenes-k2/vanilla.jpg"
+      ],
+      "lux-1020": [
+        "/assets/s5/luxparfum/1020.webp"
+      ],
+      "lux-912": [
+        "/assets/s5/luxparfum/912.png"
+      ]
+    },
+    "compareProductIds": [
+      "lux-036",
+      "lux-1020"
+    ],
+    "segmentText": {
+      "entryNote": "Vonné tóny · konkrétní profil · porovnání",
+      "titleSuffix": "výběr vůně",
+      "tab": "Výběr vůně",
+      "advisorName": "Poradce pro výběr vůně",
+      "entrySmall": "VÝBĚR VŮNĚ",
+      "entryTitle": "Najít vůni podle tónů",
+      "placeholder": "Zeptejte se na tóny nebo balení…",
+      "heading": "Pomozte zákazníkovi objevit vůni podle jeho vkusu.",
+      "lead": "Citrusy, květiny nebo vanilka? Průvodce ukáže konkrétní vůni LUX PARFUM s profilem tónů, přesným balením, cenou a odkazem. Dvě vůně lze porovnat.",
+      "includedChat": "Tóny šesti vybraných vůní, přesná 50 ml balení a ceny.",
+      "includedAdvisor": "Výběr vůně, její profil a porovnání dvou kompozic.",
+      "greeting": "Dobrý den. Pomohu vám porovnat šest vybraných vůní LUX PARFUM, jejich tóny, balení a ceny.",
+      "teaserTitle": "Vyberte si vůni podle tónů",
+      "teaserNote": "Otevřít výběr vůně",
+      "teaserAria": "Otevřít výběr vůně",
+      "source": "luxparfum-demo"
+    },
+    "fragranceResultExtras": {
+      "version": 1,
+      "enabled": true,
+      "alternatives": {
+        "lux-036": "lux-261",
+        "lux-261": "lux-036",
+        "lux-001": "lux-010",
+        "lux-010": "lux-001",
+        "lux-1020": "lux-912",
+        "lux-912": "lux-1020"
+      },
+      "scentProfile": {
+        "version": 1,
+        "mode": "source-notes-no-numeric-strength"
+      }
+    },
+    "fragrancePresentation": {
+      "version": 1,
+      "hideStepEstimate": true
+    },
+    "companyCss": "/n447/s5/brands/luxparfum.css"
+  },
+  "atmanperfumes": {
+    "series": "s5",
+    "type": "cosmetics",
+    "segment": "fragrance",
+    "name": "ATMAN",
+    "country": "CZ",
+    "logos": {
+      "landing": "/assets/s5/atmanperfumes/logo.svg",
+      "header": "/assets/s5/atmanperfumes/logo.svg",
+      "avatar": "/assets/s5/atmanperfumes/avatar.png"
+    },
+    "brand": {
+      "name": "ATMAN",
+      "domain": "atmanperfumes.com",
+      "website": "https://www.atmanperfumes.com/",
+      "lang": "sk",
+      "fullName": "ATMAN",
+      "url": "https://www.atmanperfumes.com/",
+      "logo": "/assets/s5/atmanperfumes/logo.svg",
+      "mark": "/assets/s5/atmanperfumes/avatar.png",
+      "greeting": "Dobrý deň. Pomôžem vám porovnať šesť vôní ATMAN, ich tóny, balenia a ceny.",
+      "quickChips": [
+        "Malina a oud",
+        "Ríbezle a čaj",
+        "Chinotto a neroli",
+        "Porovnať dve vône"
+      ],
+      "theme": {
+        "brand": "#291e1b",
+        "accent": "#775a42",
+        "soft": "#faf5ee",
+        "paper": "#ffffff",
+        "ink": "#291e1b",
+        "line": "#e7dbce"
+      }
+    },
+    "traitCopy": {
+      "fruit": [
+        "Ovocie a kvety",
+        "",
+        "Ovocie a kvety",
+        ""
+      ],
+      "ambra-rossa": [
+        "Malina, oud a céder",
+        "",
+        "Malina, oud a céder",
+        ""
+      ],
+      "contesse": [
+        "Hruška, neroli a vanilka",
+        "",
+        "Hruška, neroli a vanilka",
+        ""
+      ],
+      "fresh": [
+        "Citrusy a svieže tóny",
+        "",
+        "Citrusy a svieže tóny",
+        ""
+      ],
+      "aura-blanc": [
+        "Ríbezle, čaj a biele pižmo",
+        "",
+        "Ríbezle, čaj a biele pižmo",
+        ""
+      ],
+      "sole-intimo": [
+        "Chinotto, neroli a vetiver",
+        "",
+        "Chinotto, neroli a vetiver",
+        ""
+      ],
+      "depth": [
+        "Koža, oud a morské tóny",
+        "",
+        "Koža, oud a morské tóny",
+        ""
+      ],
+      "oxymoron": [
+        "Grapefruit, koža a toffee",
+        "",
+        "Grapefruit, koža a toffee",
+        ""
+      ],
+      "tramonto": [
+        "Citrusy, dymový oud a mach",
+        "",
+        "Citrusy, dymový oud a mach",
+        ""
+      ]
+    },
+    "stepCopy": {
+      "fragranceDirection": [
+        "Aká vôňa je vám blízka?",
+        "",
+        "Tóny vône"
+      ],
+      "fragranceProfile": [
+        "Ktorá kombinácia vás láka?",
+        "",
+        "Tóny vône"
+      ]
+    },
+    "compareFocus": true,
+    "upsellFocus": {},
+    "choicePhotos": {
+      "fruit": [
+        "/assets/s3/scenes-k2/rose.jpg"
+      ],
+      "ambra-rossa": [
+        "/assets/s5/atmanperfumes/ambra-rossa.jpg"
+      ],
+      "contesse": [
+        "/assets/s5/atmanperfumes/contesse.jpg"
+      ],
+      "fresh": [
+        "/assets/s3/scenes-k2/citrus.jpg"
+      ],
+      "aura-blanc": [
+        "/assets/s5/atmanperfumes/aura-blanc.jpg"
+      ],
+      "sole-intimo": [
+        "/assets/s5/atmanperfumes/sole-intimo.jpg"
+      ],
+      "depth": [
+        "/assets/s5/atmanperfumes/oxymoron.jpg"
+      ],
+      "oxymoron": [
+        "/assets/s5/atmanperfumes/oxymoron.jpg"
+      ],
+      "tramonto": [
+        "/assets/s5/atmanperfumes/tramonto.jpg"
+      ]
+    },
+    "compareProductIds": [
+      "ambra-rossa",
+      "sole-intimo"
+    ],
+    "segmentText": {
+      "entryNote": "Vonné tóny · konkrétna vôňa · porovnanie",
+      "titleSuffix": "výber vône",
+      "tab": "Výber vône",
+      "advisorName": "Poradca vôní",
+      "entrySmall": "VÝBER VÔNE",
+      "entryTitle": "Nájsť vôňu podľa tónov",
+      "placeholder": "Spýtajte sa na tóny alebo balenie…",
+      "heading": "Pomôžte zákazníkovi objaviť vôňu podľa jeho vkusu.",
+      "lead": "Ovocie, citrusy aj oud. Výber ukáže konkrétnu vôňu ATMAN s fotografiou, profilom tónov, presným 30 ml balením, cenou a odkazom. Dve vône možno porovnať.",
+      "includedChat": "Tóny šiestich vôní, presné 30 ml balenia, ceny a porovnanie.",
+      "includedAdvisor": "Výber vône, jej profil a porovnanie dvoch kompozícií.",
+      "greeting": "Dobrý deň. Pomôžem vám porovnať šesť vôní ATMAN, ich tóny, balenia a ceny.",
+      "teaserTitle": "Vyberte si vôňu podľa tónov",
+      "teaserNote": "Otvoriť výber vône",
+      "teaserAria": "Otvoriť poradcu pre výber vône",
+      "source": "atman-demo"
+    },
+    "fragranceResultExtras": {
+      "version": 1,
+      "enabled": true,
+      "alternatives": {
+        "ambra-rossa": "contesse",
+        "contesse": "ambra-rossa",
+        "aura-blanc": "sole-intimo",
+        "sole-intimo": "aura-blanc",
+        "oxymoron": "tramonto",
+        "tramonto": "oxymoron"
+      },
+      "scentProfile": {
+        "version": 1,
+        "mode": "source-notes-no-numeric-strength"
+      }
+    },
+    "fragrancePresentation": {
+      "version": 1,
+      "hideStepEstimate": true
+    },
+    "companyCss": "/n447/s5/brands/atmanperfumes.css"
+  },
+  "hypno": {
+    "series": "s5",
+    "type": "cosmetics",
+    "segment": "fragrance",
+    "name": "Moje Hypno",
+    "country": "SK",
+    "logos": {
+      "landing": "/assets/s5/hypno/logo.png",
+      "header": "/assets/s5/hypno/logo.png",
+      "avatar": "/assets/s5/hypno/avatar.png"
+    },
+    "brand": {
+      "name": "Moje Hypno",
+      "domain": "mojehypno.sk",
+      "website": "https://www.mojehypno.sk/",
+      "lang": "sk",
+      "fullName": "Moje Hypno",
+      "url": "https://www.mojehypno.sk/",
+      "logo": "/assets/s5/hypno/logo.png",
+      "mark": "/assets/s5/hypno/avatar.png",
+      "greeting": "Dobrý deň. Pomôžem vám porovnať vybrané vône Moje Hypno, ich tóny, balenia a ceny.",
+      "quickChips": [
+        "Bergamot a škorica",
+        "Jablko a mandle",
+        "Pomarančový kvet",
+        "Porovnať dve vône"
+      ],
+      "theme": {
+        "brand": "#690638",
+        "accent": "#845f22",
+        "soft": "#fcf6f7",
+        "paper": "#ffffff",
+        "ink": "#351b28",
+        "line": "#eadce2"
+      }
+    },
+    "traitCopy": {
+      "fresh": [
+        "Citrusy a drevité tóny",
+        "",
+        "Citrusy a drevité tóny",
+        ""
+      ],
+      "tatrion": [
+        "Bergamot, citrón a škorica",
+        "",
+        "Bergamot, citrón a škorica",
+        ""
+      ],
+      "vahrin": [
+        "Grapefruit, ríbezle a vetiver",
+        "",
+        "Grapefruit, ríbezle a vetiver",
+        ""
+      ],
+      "flowers": [
+        "Jablko, kvety a korenie",
+        "",
+        "Jablko, kvety a korenie",
+        ""
+      ],
+      "fatria": [
+        "Jablko, mandle a jazmín",
+        "",
+        "Jablko, mandle a jazmín",
+        ""
+      ],
+      "betlior": [
+        "Pomarančový kvet a kardamóm",
+        "",
+        "Pomarančový kvet a kardamóm",
+        ""
+      ]
+    },
+    "stepCopy": {
+      "fragranceDirection": [
+        "Aká vôňa je vám blízka?",
+        "",
+        "Tóny vône"
+      ],
+      "fragranceProfile": [
+        "Ktorá kombinácia vás láka?",
+        "",
+        "Tóny vône"
+      ]
+    },
+    "compareFocus": true,
+    "upsellFocus": {},
+    "choicePhotos": {
+      "fresh": [
+        "/assets/s3/scenes-k2/citrus.jpg"
+      ],
+      "tatrion": [
+        "/assets/s5/hypno/hypno-tatrion-pansky-parfum-50ml.png"
+      ],
+      "vahrin": [
+        "/assets/s5/hypno/hypno-vahrin-unisex-parfum-50ml.png"
+      ],
+      "flowers": [
+        "/assets/s3/scenes-k2/jasmine.jpg"
+      ],
+      "fatria": [
+        "/assets/s5/hypno/hypno-fatria-damsky-parfum-50ml.png"
+      ],
+      "betlior": [
+        "/assets/s5/hypno/hypno-betlior-unisex-parfum-50ml.png"
+      ]
+    },
+    "compareProductIds": [
+      "fatria",
+      "vahrin"
+    ],
+    "segmentText": {
+      "entryNote": "Vonné tóny · konkrétna vôňa · porovnanie",
+      "titleSuffix": "výber vône",
+      "tab": "Výber vône",
+      "advisorName": "Poradca vôní",
+      "entrySmall": "VÝBER VÔNE",
+      "entryTitle": "Nájsť vôňu podľa tónov",
+      "placeholder": "Spýtajte sa na tóny alebo balenie…",
+      "heading": "Pomôžte zákazníkovi objaviť vôňu podľa jeho vkusu.",
+      "lead": "Výber ukáže konkrétnu vôňu Moje Hypno s fotografiou, profilom tónov, presným balením, cenou a odkazom. Dve odlišné vône možno porovnať.",
+      "includedChat": "Vonné tóny, konkrétne balenia, ceny a porovnanie vybraných vôní.",
+      "includedAdvisor": "Výber vône, jej profil a porovnanie dvoch kompozícií.",
+      "greeting": "Dobrý deň. Pomôžem vám porovnať vybrané vône Moje Hypno, ich tóny, balenia a ceny.",
+      "teaserTitle": "Vyberte si vôňu podľa tónov",
+      "teaserNote": "Otvoriť výber vône",
+      "teaserAria": "Otvoriť poradcu pre výber vône",
+      "source": "hypno-demo"
+    },
+    "fragranceResultExtras": {
+      "version": 1,
+      "enabled": true,
+      "alternatives": {
+        "tatrion": "vahrin",
+        "vahrin": "tatrion",
+        "fatria": "betlior",
+        "betlior": "fatria"
+      },
+      "scentProfile": {
+        "version": 1,
+        "mode": "source-notes-no-numeric-strength"
+      }
+    },
+    "fragrancePresentation": {
+      "version": 1,
+      "hideStepEstimate": true
+    },
+    "companyCss": "/n447/s5/brands/hypno.css"
+  },
+  "gom": {
+    "series": "s5",
+    "type": "cosmetics",
+    "segment": "fragrance",
+    "name": "GOM Perfumes",
+    "country": "CZ",
+    "logos": {
+      "landing": "/assets/s5/gom/logo.svg",
+      "header": "/assets/s5/gom/logo.svg",
+      "avatar": "/assets/s5/gom/avatar.svg"
+    },
+    "brand": {
+      "name": "GOM Perfumes",
+      "domain": "gom-perfumes.cz",
+      "website": "https://gom-perfumes.cz/",
+      "lang": "cs",
+      "fullName": "GOM Perfumes",
+      "url": "https://gom-perfumes.cz/",
+      "logo": "/assets/s5/gom/logo.svg",
+      "mark": "/assets/s5/gom/avatar.svg",
+      "greeting": "Dobrý den. Pomohu vám porovnat pět vůní GOM, jejich tóny, balení a ceny.",
+      "quickChips": [
+        "Bergamot a limeta",
+        "Grep a bílý čaj",
+        "Tabák a tonka",
+        "Porovnat dvě vůně"
+      ],
+      "theme": {
+        "brand": "#282a25",
+        "accent": "#846326",
+        "soft": "#f5f2e9",
+        "paper": "#ffffff",
+        "ink": "#252720",
+        "line": "#e2dfd4"
+      }
+    },
+    "traitCopy": {
+      "citrus": [
+        "Citrusy, čaj a zelené tóny",
+        "",
+        "Citrusy, čaj a zelené tóny",
+        ""
+      ],
+      "chu": [
+        "Bergamot, limeta a šalvěj",
+        "",
+        "Bergamot, limeta a šalvěj",
+        ""
+      ],
+      "nyi-ma": [
+        "Grep, bílý čaj a kardamom",
+        "",
+        "Grep, bílý čaj a kardamom",
+        ""
+      ],
+      "rlung": [
+        "Yuzu, mandarinka a kadidlo",
+        "",
+        "Yuzu, mandarinka a kadidlo",
+        ""
+      ],
+      "woods": [
+        "Tabák, koření a dřevité tóny",
+        "",
+        "Tabák, koření a dřevité tóny",
+        ""
+      ],
+      "rgyal-mo": [
+        "Černý rybíz, tabák a tonka",
+        "",
+        "Černý rybíz, tabák a tonka",
+        ""
+      ],
+      "rgyal-po": [
+        "Pepř, tabák a cedr",
+        "",
+        "Pepř, tabák a cedr",
+        ""
+      ]
+    },
+    "stepCopy": {
+      "fragranceDirection": [
+        "Jaká vůně je vám blízká?",
+        "",
+        "Vonné tóny"
+      ],
+      "fragranceProfile": [
+        "Která kombinace vás láká?",
+        "",
+        "Vonné tóny"
+      ]
+    },
+    "compareFocus": true,
+    "upsellFocus": {},
+    "choicePhotos": {
+      "citrus": [
+        "/assets/s3/scenes-k2/citrus.jpg"
+      ],
+      "chu": [
+        "/assets/s5/gom/chu-50ml.webp"
+      ],
+      "nyi-ma": [
+        "/assets/s5/gom/nyi-ma-50ml.webp"
+      ],
+      "rlung": [
+        "/assets/s5/gom/rlung-50ml.webp"
+      ],
+      "woods": [
+        "/assets/s3/scenes-k2/vanilla.jpg"
+      ],
+      "rgyal-mo": [
+        "/assets/s5/gom/rgyal-mo-50ml.webp"
+      ],
+      "rgyal-po": [
+        "/assets/s5/gom/rgyal-po-50ml.webp"
+      ]
+    },
+    "compareProductIds": [
+      "chu",
+      "rgyal-mo"
+    ],
+    "segmentText": {
+      "entryNote": "Vonné tóny · konkrétní vůně · porovnání",
+      "titleSuffix": "výber vône",
+      "tab": "Výber vône",
+      "advisorName": "Poradca vôní",
+      "entrySmall": "VÝBER VÔNE",
+      "entryTitle": "Nájsť vôňu podľa tónov",
+      "placeholder": "Spýtajte sa na tóny alebo balenie…",
+      "heading": "Pomozte zákazníkovi objevit vůni podle jeho vkusu.",
+      "lead": "Výběr ukáže konkrétní vůni GOM s fotografií, profilem tónů, přesným balením, cenou a odkazem. Dvě odlišné vůně lze porovnat.",
+      "includedChat": "Vonné tóny, konkrétní balení, ceny a porovnání vybraných vůní.",
+      "includedAdvisor": "Výběr vůně, její profil a porovnání dvou kompozic.",
+      "greeting": "Dobrý den. Pomohu vám porovnat pět vůní GOM, jejich tóny, balení a ceny.",
+      "teaserTitle": "Vyberte si vôňu podľa tónov",
+      "teaserNote": "Otvoriť výber vône",
+      "teaserAria": "Otvoriť poradcu pre výber vône",
+      "source": "gom-demo"
+    },
+    "fragranceResultExtras": {
+      "version": 1,
+      "enabled": true,
+      "alternatives": {
+        "chu": "nyi-ma",
+        "nyi-ma": "rlung",
+        "rlung": "chu",
+        "rgyal-mo": "rgyal-po",
+        "rgyal-po": "rgyal-mo"
+      },
+      "scentProfile": {
+        "version": 1,
+        "mode": "source-notes-no-numeric-strength"
+      }
+    },
+    "fragrancePresentation": {
+      "version": 1,
+      "hideStepEstimate": true
+    },
+    "companyCss": "/n447/s5/brands/gom.css"
+  },
+  "egoist": {
+    "series": "s5",
+    "type": "cosmetics",
+    "segment": "fragrance",
+    "name": "Egoist Royal Parfums",
+    "country": "CZ",
+    "logos": {
+      "landing": "/assets/s5/egoist/logo.svg",
+      "header": "/assets/s5/egoist/logo.svg",
+      "avatar": "/assets/s5/egoist/avatar.png"
+    },
+    "brand": {
+      "name": "Egoist Royal Parfums",
+      "domain": "egoist-parfums.cz",
+      "website": "https://egoist-parfums.cz/cs/",
+      "lang": "cs",
+      "fullName": "Egoist Royal Parfums",
+      "url": "https://egoist-parfums.cz/cs/",
+      "logo": "/assets/s5/egoist/logo.svg",
+      "mark": "/assets/s5/egoist/avatar.png",
+      "greeting": "Dobrý den. Pomohu vám porovnat vybrané vůně z nabídky Egoist, jejich tóny, konkrétní balení a ceny.",
+      "quickChips": [
+        "Citrusy a šafrán",
+        "Višeň a malina",
+        "Vanilka a santal",
+        "Porovnat dvě vůně"
+      ],
+      "theme": {
+        "brand": "#49344f",
+        "accent": "#816625",
+        "soft": "#faf5fb",
+        "paper": "#ffffff",
+        "ink": "#302332",
+        "line": "#e7dce9"
+      }
+    },
+    "traitCopy": {
+      "citrus": [
+        "Citrusy a květy",
+        "",
+        "Citrusy a květy",
+        ""
+      ],
+      "trajan-parfem": [
+        "Citrusy, šafrán a levandule",
+        "",
+        "Citrusy, šafrán a levandule",
+        ""
+      ],
+      "sex-on-the-bridge-parfemova-voda": [
+        "Bergamot, tiaré a ylang-ylang",
+        "",
+        "Bergamot, tiaré a ylang-ylang",
+        ""
+      ],
+      "fruity": [
+        "Ovoce, květy a med",
+        "",
+        "Ovoce, květy a med",
+        ""
+      ],
+      "syn-cherry-parfemova-voda": [
+        "Višeň, malina a vanilka",
+        "",
+        "Višeň, malina a vanilka",
+        ""
+      ],
+      "golem-parfemova-voda": [
+        "Jahoda, med a šafrán",
+        "",
+        "Jahoda, med a šafrán",
+        ""
+      ],
+      "vanilla": [
+        "Vanilka, koňak a dřevité tóny",
+        "",
+        "Vanilka, koňak a dřevité tóny",
+        ""
+      ],
+      "morava-parfemova-voda": [
+        "Levandule, koňak a vanilka",
+        "",
+        "Levandule, koňak a vanilka",
+        ""
+      ],
+      "vanille-de-tahiti-parfemova-voda": [
+        "Ylang-ylang, vanilka a santal",
+        "",
+        "Ylang-ylang, vanilka a santal",
+        ""
+      ]
+    },
+    "stepCopy": {
+      "fragranceDirection": [
+        "Jaká vůně je vám blízká?",
+        "",
+        "Vonné tóny"
+      ],
+      "fragranceProfile": [
+        "Která kombinace vás láká?",
+        "",
+        "Vonné tóny"
+      ]
+    },
+    "compareFocus": true,
+    "upsellFocus": {},
+    "choicePhotos": {
+      "citrus": [
+        "/assets/s3/scenes-k2/citrus.jpg"
+      ],
+      "trajan-parfem": [
+        "/assets/s5/egoist/trajan-parfem.jpg"
+      ],
+      "sex-on-the-bridge-parfemova-voda": [
+        "/assets/s5/egoist/sex-on-the-bridge-parfemova-voda.jpg"
+      ],
+      "fruity": [
+        "/assets/s3/scenes-k2/jasmine.jpg"
+      ],
+      "syn-cherry-parfemova-voda": [
+        "/assets/s5/egoist/syn-cherry-parfemova-voda.png"
+      ],
+      "golem-parfemova-voda": [
+        "/assets/s5/egoist/golem-parfemova-voda.jpg"
+      ],
+      "vanilla": [
+        "/assets/s3/scenes-k2/vanilla.jpg"
+      ],
+      "morava-parfemova-voda": [
+        "/assets/s5/egoist/morava-parfemova-voda.jpg"
+      ],
+      "vanille-de-tahiti-parfemova-voda": [
+        "/assets/s5/egoist/vanille-de-tahiti-parfemova-voda.jpg"
+      ]
+    },
+    "compareProductIds": [
+      "trajan-parfem",
+      "syn-cherry-parfemova-voda"
+    ],
+    "segmentText": {
+      "entryNote": "Vonné tóny · konkrétní vůně · porovnání",
+      "titleSuffix": "výber vône",
+      "tab": "Výber vône",
+      "advisorName": "Poradca vôní",
+      "entrySmall": "VÝBER VÔNE",
+      "entryTitle": "Nájsť vôňu podľa tónov",
+      "placeholder": "Spýtajte sa na tóny alebo balenie…",
+      "heading": "Pomozte zákazníkovi objevit vůni podle jeho vkusu.",
+      "lead": "Výběr ukáže konkrétní vůni z nabídky Egoist s fotografií, profilem tónů, přesným balením, cenou a odkazem. Dvě odlišné vůně lze porovnat.",
+      "includedChat": "Vonné tóny, konkrétní balení, ceny a porovnání vybraných vůní.",
+      "includedAdvisor": "Výběr vůně, její profil a porovnání dvou kompozic.",
+      "greeting": "Dobrý den. Pomohu vám porovnat vybrané vůně z nabídky Egoist, jejich tóny, konkrétní balení a ceny.",
+      "teaserTitle": "Vyberte si vôňu podľa tónov",
+      "teaserNote": "Otvoriť výber vône",
+      "teaserAria": "Otvoriť poradcu pre výber vône",
+      "source": "egoist-demo"
+    },
+    "fragranceResultExtras": {
+      "version": 1,
+      "enabled": true,
+      "alternatives": {
+        "trajan-parfem": "sex-on-the-bridge-parfemova-voda",
+        "sex-on-the-bridge-parfemova-voda": "trajan-parfem",
+        "syn-cherry-parfemova-voda": "golem-parfemova-voda",
+        "golem-parfemova-voda": "syn-cherry-parfemova-voda",
+        "morava-parfemova-voda": "vanille-de-tahiti-parfemova-voda",
+        "vanille-de-tahiti-parfemova-voda": "morava-parfemova-voda"
+      },
+      "scentProfile": {
+        "version": 1,
+        "mode": "source-notes-no-numeric-strength"
+      }
+    },
+    "fragrancePresentation": {
+      "version": 1,
+      "hideStepEstimate": true
+    },
+    "companyCss": "/n447/s5/brands/egoist.css"
+  },
+  "parfums4all": {
+    "series": "s5",
+    "type": "cosmetics",
+    "segment": "fragrance",
+    "name": "Parfums4all",
+    "country": "SK",
+    "logos": {
+      "landing": "/assets/s5/parfums4all/logo.png",
+      "header": "/assets/s5/parfums4all/logo.png",
+      "avatar": "/assets/s5/parfums4all/avatar.png"
+    },
+    "brand": {
+      "name": "Parfums4all",
+      "domain": "parfums4all.sk",
+      "website": "https://www.parfums4all.sk/",
+      "lang": "sk",
+      "fullName": "Parfums4all",
+      "url": "https://www.parfums4all.sk/",
+      "logo": "/assets/s5/parfums4all/logo.png",
+      "mark": "/assets/s5/parfums4all/avatar.png",
+      "greeting": "Dobrý deň. Pomôžem vám porovnať vybrané vône, ich tóny, balenia a ceny.",
+      "quickChips": [
+        "Citrusy a morské tóny",
+        "Mandarínka a ruža",
+        "Mandle a šafran",
+        "Porovnať dve vône"
+      ],
+      "theme": {
+        "brand": "#006b5c",
+        "accent": "#a65115",
+        "soft": "#f4faf7",
+        "paper": "#ffffff",
+        "ink": "#133e35",
+        "line": "#dbe9e2"
+      }
+    },
+    "traitCopy": {
+      "fresh": [
+        "Citrusy, morské tóny a kvety",
+        "",
+        "Citrusy, morské tóny a kvety",
+        ""
+      ],
+      "ardagio-aqua-classic-for-men-edp-100ml": [
+        "Citrusy, morské tóny a jazmín",
+        "",
+        "Citrusy, morské tóny a jazmín",
+        ""
+      ],
+      "elite-edp-100ml": [
+        "Mandarínka, frézia a ruža",
+        "",
+        "Mandarínka, frézia a ruža",
+        ""
+      ],
+      "warm": [
+        "Škorica, mandle a drevité tóny",
+        "",
+        "Škorica, mandle a drevité tóny",
+        ""
+      ],
+      "marine-men-edp-100ml": [
+        "Bergamot, mäta, škorica a vanilka",
+        "",
+        "Bergamot, mäta, škorica a vanilka",
+        ""
+      ],
+      "experience-edp-100ml": [
+        "Horká mandľa, šafran a céder",
+        "",
+        "Horká mandľa, šafran a céder",
+        ""
+      ]
+    },
+    "stepCopy": {
+      "fragranceDirection": [
+        "Aká vôňa je vám blízka?",
+        "",
+        "Vonné tóny"
+      ],
+      "fragranceProfile": [
+        "Ktorá kombinácia vás láka?",
+        "",
+        "Vonné tóny"
+      ]
+    },
+    "compareFocus": true,
+    "upsellFocus": {},
+    "choicePhotos": {
+      "fresh": [
+        "/assets/s3/scenes-k2/citrus.jpg"
+      ],
+      "ardagio-aqua-classic-for-men-edp-100ml": [
+        "/assets/s5/parfums4all/ardagio-aqua-classic-for-men-edp-100ml.jpg"
+      ],
+      "elite-edp-100ml": [
+        "/assets/s5/parfums4all/elite-edp-100ml.jpg"
+      ],
+      "warm": [
+        "/assets/s3/scenes-k2/vanilla.jpg"
+      ],
+      "marine-men-edp-100ml": [
+        "/assets/s5/parfums4all/marine-men-edp-100ml.png"
+      ],
+      "experience-edp-100ml": [
+        "/assets/s5/parfums4all/experience-edp-100ml.jpg"
+      ]
+    },
+    "compareProductIds": [
+      "ardagio-aqua-classic-for-men-edp-100ml",
+      "experience-edp-100ml"
+    ],
+    "segmentText": {
+      "entryNote": "Vonné tóny · konkrétna vôňa · porovnanie",
+      "titleSuffix": "výber vône",
+      "tab": "Výber vône",
+      "advisorName": "Poradca vôní",
+      "entrySmall": "VÝBER VÔNE",
+      "entryTitle": "Nájsť vôňu podľa tónov",
+      "placeholder": "Spýtajte sa na tóny alebo balenie…",
+      "heading": "Pomôžte zákazníkovi objaviť vôňu podľa jeho vkusu.",
+      "lead": "Výber ukáže konkrétnu vôňu s fotografiou, profilom tónov, presným balením, cenou a odkazom. Dve odlišné vône možno porovnať.",
+      "includedChat": "Vonné tóny, balenia, ceny a porovnanie vybraných vôní.",
+      "includedAdvisor": "Výber vône, jej profil a porovnanie dvoch kompozícií.",
+      "greeting": "Dobrý deň. Pomôžem vám porovnať vybrané vône, ich tóny, balenia a ceny.",
+      "teaserTitle": "Vyberte si vôňu podľa tónov",
+      "teaserNote": "Otvoriť výber vône",
+      "teaserAria": "Otvoriť poradcu pre výber vône",
+      "source": "parfums4all-demo"
+    },
+    "fragranceResultExtras": {
+      "version": 1,
+      "enabled": true,
+      "alternatives": {
+        "ardagio-aqua-classic-for-men-edp-100ml": "elite-edp-100ml",
+        "elite-edp-100ml": "ardagio-aqua-classic-for-men-edp-100ml",
+        "marine-men-edp-100ml": "experience-edp-100ml",
+        "experience-edp-100ml": "marine-men-edp-100ml"
+      },
+      "scentProfile": {
+        "version": 1,
+        "mode": "source-notes-no-numeric-strength"
+      }
+    },
+    "fragrancePresentation": {
+      "version": 1,
+      "hideStepEstimate": true
+    },
+    "companyCss": "/n447/s5/brands/parfums4all.css"
+  },
+  "yodeymaparfemy": {
+    "series": "s5",
+    "type": "cosmetics",
+    "segment": "fragrance",
+    "name": "Yodeyma parfémy.cz",
+    "country": "CZ",
+    "logos": {
+      "landing": "/assets/s5/yodeymaparfemy/logo.png",
+      "header": "/assets/s5/yodeymaparfemy/logo.png",
+      "avatar": "/assets/s5/yodeymaparfemy/avatar.ico"
+    },
+    "brand": {
+      "name": "Yodeyma parfémy.cz",
+      "domain": "yodeymaparfemy.cz",
+      "website": "https://www.yodeymaparfemy.cz/",
+      "lang": "cs",
+      "fullName": "Yodeyma parfémy.cz",
+      "url": "https://www.yodeymaparfemy.cz/",
+      "logo": "/assets/s5/yodeymaparfemy/logo.png",
+      "mark": "/assets/s5/yodeymaparfemy/avatar.ico",
+      "greeting": "Dobrý den. Pomohu vám porovnat vybrané vůně, jejich tóny, balení a ceny.",
+      "quickChips": [
+        "Jablko a bambus",
+        "Jasmín a jantar",
+        "Grapefruit a skořice",
+        "Porovnat dvě vůně"
+      ],
+      "theme": {
+        "brand": "#272724",
+        "accent": "#8d6535",
+        "soft": "#faf8f1",
+        "paper": "#ffffff",
+        "ink": "#2c2b26",
+        "line": "#e7e1d5"
+      }
+    },
+    "traitCopy": {
+      "fresh": [
+        "Citrusy, jablko a zelené tóny",
+        "",
+        "Citrusy, jablko a zelené tóny",
+        ""
+      ],
+      "kara": [
+        "Jablko, bambus a bílé pižmo",
+        "",
+        "Jablko, bambus a bílé pižmo",
+        ""
+      ],
+      "caribbean": [
+        "Bergamotka, růžový pepř a dřevo",
+        "",
+        "Bergamotka, růžový pepř a dřevo",
+        ""
+      ],
+      "flowers": [
+        "Jasmín, růže a květ pomerančovníku",
+        "",
+        "Jasmín, růže a květ pomerančovníku",
+        ""
+      ],
+      "iris": [
+        "Jasmín, květ pomerančovníku a jantar",
+        "",
+        "Jasmín, květ pomerančovníku a jantar",
+        ""
+      ],
+      "cheante": [
+        "Mandarinka, růže a pačuli",
+        "",
+        "Mandarinka, růže a pačuli",
+        ""
+      ],
+      "grapefruit": [
+        "Grapefruit a pačuli",
+        "",
+        "Grapefruit a pačuli",
+        ""
+      ],
+      "power": [
+        "Grapefruit, skořice a pačuli",
+        "",
+        "Grapefruit, skořice a pačuli",
+        ""
+      ],
+      "root": [
+        "Grapefruit, pelargonie a pačuli",
+        "",
+        "Grapefruit, pelargonie a pačuli",
+        ""
+      ]
+    },
+    "stepCopy": {
+      "fragranceDirection": [
+        "Jaká vůně je vám blízká?",
+        "",
+        "Vonné tóny"
+      ],
+      "fragranceProfile": [
+        "Která kombinace vás láká?",
+        "",
+        "Vonné tóny"
+      ]
+    },
+    "compareFocus": true,
+    "upsellFocus": {},
+    "choicePhotos": {
+      "fresh": [
+        "/assets/s3/scenes-k2/citrus.jpg"
+      ],
+      "kara": [
+        "/assets/s5/yodeymaparfemy/kara-50ml.jpg"
+      ],
+      "caribbean": [
+        "/assets/s5/yodeymaparfemy/caribbean-50ml.jpg"
+      ],
+      "flowers": [
+        "/assets/s3/scenes-k2/jasmine.jpg"
+      ],
+      "iris": [
+        "/assets/s5/yodeymaparfemy/iris-50ml.jpg"
+      ],
+      "cheante": [
+        "/assets/s5/yodeymaparfemy/cheante-50ml.jpg"
+      ],
+      "grapefruit": [
+        "/assets/s3/scenes-k2/vanilla.jpg"
+      ],
+      "power": [
+        "/assets/s5/yodeymaparfemy/power-50ml.jpg"
+      ],
+      "root": [
+        "/assets/s5/yodeymaparfemy/root-50ml.jpg"
+      ]
+    },
+    "compareProductIds": [
+      "kara",
+      "power"
+    ],
+    "segmentText": {
+      "entryNote": "Vonné tóny · konkrétní vůně · porovnání",
+      "titleSuffix": "výber vône",
+      "tab": "Výber vône",
+      "advisorName": "Poradca vôní",
+      "entrySmall": "VÝBER VÔNE",
+      "entryTitle": "Nájsť vôňu podľa tónov",
+      "placeholder": "Spýtajte sa na tóny alebo balenie…",
+      "heading": "Pomozte zákazníkovi objevit vůni podle jeho vkusu.",
+      "lead": "Výběr ukáže konkrétní vůni s fotografií, profilem tónů, přesným balením, cenou a odkazem. Dvě odlišné vůně lze porovnat.",
+      "includedChat": "Vonné tóny, balení, ceny a porovnání vybraných vůní.",
+      "includedAdvisor": "Výběr vůně, její profil a porovnání dvou kompozic.",
+      "greeting": "Dobrý den. Pomohu vám porovnat vybrané vůně, jejich tóny, balení a ceny.",
+      "teaserTitle": "Vyberte si vôňu podľa tónov",
+      "teaserNote": "Otvoriť výber vône",
+      "teaserAria": "Otvoriť poradcu pre výber vône",
+      "source": "yodeymaparfemy-demo"
+    },
+    "fragranceResultExtras": {
+      "version": 1,
+      "enabled": true,
+      "alternatives": {
+        "kara": "caribbean",
+        "caribbean": "kara",
+        "iris": "cheante",
+        "cheante": "iris",
+        "power": "root",
+        "root": "power"
+      },
+      "scentProfile": {
+        "version": 1,
+        "mode": "source-notes-no-numeric-strength"
+      }
+    },
+    "fragrancePresentation": {
+      "version": 1,
+      "hideStepEstimate": true
+    },
+    "companyCss": "/n447/s5/brands/yodeymaparfemy.css"
+  },
+  "odeur": {
+    "series": "s5",
+    "type": "cosmetics",
+    "segment": "fragrance",
+    "name": "ODEUR",
+    "country": "SK",
+    "logos": {
+      "landing": "/assets/s5/odeur/logo.png",
+      "header": "/assets/s5/odeur/logo.png",
+      "avatar": "/assets/s5/odeur/initial.svg"
+    },
+    "brand": {
+      "name": "ODEUR",
+      "domain": "odeur.sk",
+      "website": "https://www.odeur.sk/",
+      "lang": "sk",
+      "fullName": "ODEUR",
+      "url": "https://www.odeur.sk/",
+      "logo": "/assets/s5/odeur/logo.png",
+      "mark": "/assets/s5/odeur/initial.svg",
+      "greeting": "Dobrý deň. Pomôžem vám porovnať vône do prania ODEUR, ich tóny, balenia a ceny.",
+      "quickChips": [
+        "Zázvor a biele kvety",
+        "Mirabelka a pivonka",
+        "Jantár a gardénia",
+        "Porovnať dve vône"
+      ],
+      "theme": {
+        "brand": "#48402c",
+        "accent": "#9b7d37",
+        "soft": "#fcf8ef",
+        "paper": "#ffffff",
+        "ink": "#393326",
+        "line": "#e9e1d1"
+      }
+    },
+    "traitCopy": {
+      "citrus": [
+        "Citrusy, korenie a morské tóny",
+        "",
+        "Citrusy, korenie a morské tóny",
+        ""
+      ],
+      "kvet-konvalinky": [
+        "Pomarančová kôra, zázvor a biele kvety",
+        "",
+        "Pomarančová kôra, zázvor a biele kvety",
+        ""
+      ],
+      "soli-a-kvety-lotosu": [
+        "Bergamot, lotosový kvet a morské soli",
+        "",
+        "Bergamot, lotosový kvet a morské soli",
+        ""
+      ],
+      "fruit": [
+        "Ovocie, kvety a pižmo",
+        "",
+        "Ovocie, kvety a pižmo",
+        ""
+      ],
+      "muskatove-drevo": [
+        "Biela broskyňa, ruža a ambrette",
+        "",
+        "Biela broskyňa, ruža a ambrette",
+        ""
+      ],
+      "sladka-pivonka": [
+        "Mirabelka, pivonka a drevité tóny",
+        "",
+        "Mirabelka, pivonka a drevité tóny",
+        ""
+      ],
+      "wood": [
+        "Jantár a drevité tóny",
+        "",
+        "Jantár a drevité tóny",
+        ""
+      ],
+      "jantarove-krystaly": [
+        "Zelený citrón, gardénia a jantár",
+        "",
+        "Zelený citrón, gardénia a jantár",
+        ""
+      ],
+      "argansky-hodvab": [
+        "Pomaranč, jazmín a cédrové drevo",
+        "",
+        "Pomaranč, jazmín a cédrové drevo",
+        ""
+      ]
+    },
+    "stepCopy": {
+      "fragranceDirection": [
+        "Aká vôňa je vám blízka?",
+        "",
+        "Vonné tóny"
+      ],
+      "fragranceProfile": [
+        "Ktorá kombinácia vás láka?",
+        "",
+        "Vonné tóny"
+      ]
+    },
+    "compareFocus": true,
+    "upsellFocus": {},
+    "choicePhotos": {
+      "citrus": [
+        "/assets/s3/scenes-k2/citrus.jpg"
+      ],
+      "kvet-konvalinky": [
+        "/assets/s5/odeur/kvet-konvalinky.png"
+      ],
+      "soli-a-kvety-lotosu": [
+        "/assets/s5/odeur/soli-a-kvety-lotosu.png"
+      ],
+      "fruit": [
+        "/assets/s3/scenes-k2/jasmine.jpg"
+      ],
+      "muskatove-drevo": [
+        "/assets/s5/odeur/muskatove-drevo.png"
+      ],
+      "sladka-pivonka": [
+        "/assets/s5/odeur/sladka-pivonka.png"
+      ],
+      "wood": [
+        "/assets/s3/scenes-k2/vanilla.jpg"
+      ],
+      "jantarove-krystaly": [
+        "/assets/s5/odeur/jantarove-krystaly.png"
+      ],
+      "argansky-hodvab": [
+        "/assets/s5/odeur/argansky-hodvab.png"
+      ]
+    },
+    "compareProductIds": [
+      "kvet-konvalinky",
+      "jantarove-krystaly"
+    ],
+    "segmentText": {
+      "entryNote": "Parfumy na pranie · vôňový profil · porovnanie",
+      "titleSuffix": "výber vône",
+      "tab": "Výber vône",
+      "advisorName": "Poradca vôní",
+      "entrySmall": "VÝBER VÔNE",
+      "entryTitle": "Nájsť vôňu podľa tónov",
+      "placeholder": "Spýtajte sa na tóny alebo balenie…",
+      "heading": "Pomôžte zákazníkovi objaviť vôňu do prania podľa jeho vkusu.",
+      "lead": "Výber porovná tóny šiestich parfumov na pranie a ukáže 250 ml balenie, cenu, fotografiu a odkaz. Výrobca neodporúča na jemné či farbené tkaniny, hodváb, kašmír a vlnu.",
+      "includedChat": "Vôňové tóny, balenie, ceny a porovnanie vybraných parfumov na pranie.",
+      "includedAdvisor": "Výber vône do prania a porovnanie dvoch kompozícií.",
+      "greeting": "Dobrý deň. Pomôžem vám porovnať vône do prania ODEUR, ich tóny, balenia a ceny.",
+      "teaserTitle": "Vyberte si vôňu podľa tónov",
+      "teaserNote": "Otvoriť výber vône",
+      "teaserAria": "Otvoriť poradcu pre výber vône",
+      "source": "odeur-demo"
+    },
+    "fragranceResultExtras": {
+      "version": 1,
+      "enabled": true,
+      "alternatives": {
+        "kvet-konvalinky": "soli-a-kvety-lotosu",
+        "soli-a-kvety-lotosu": "kvet-konvalinky",
+        "muskatove-drevo": "sladka-pivonka",
+        "sladka-pivonka": "muskatove-drevo",
+        "jantarove-krystaly": "argansky-hodvab",
+        "argansky-hodvab": "jantarove-krystaly"
+      },
+      "scentProfile": {
+        "version": 1,
+        "mode": "source-notes-no-numeric-strength"
+      }
+    },
+    "fragrancePresentation": {
+      "version": 1,
+      "hideStepEstimate": true
+    },
+    "companyCss": "/n447/s5/brands/odeur.css"
+  },
+  "elobe": {
+    "series": "s5",
+    "type": "cosmetics",
+    "segment": "fragrance",
+    "name": "ELOBE",
+    "country": "CZ",
+    "logos": {
+      "landing": "/assets/s5/elobe/logo.jpg",
+      "header": "/assets/s5/elobe/logo.jpg",
+      "avatar": "/assets/s5/elobe/initial.svg"
+    },
+    "brand": {
+      "name": "ELOBE",
+      "domain": "elobe.cz",
+      "website": "https://elobe.cz/",
+      "lang": "cs",
+      "fullName": "ELOBE",
+      "url": "https://elobe.cz/",
+      "logo": "/assets/s5/elobe/logo.jpg",
+      "mark": "/assets/s5/elobe/initial.svg",
+      "greeting": "Dobrý den. Pomohu vám porovnat vybrané vůně, jejich tóny, balení a ceny.",
+      "quickChips": [
+        "Švestka a pivoňka",
+        "Rýže a vanilka",
+        "Hinoki a kadidlo",
+        "Porovnat dvě vůně"
+      ],
+      "theme": {
+        "brand": "#30251f",
+        "accent": "#b08867",
+        "soft": "#faf5ee",
+        "paper": "#ffffff",
+        "ink": "#30251f",
+        "line": "#e9ddd0"
+      }
+    },
+    "traitCopy": {
+      "fruit": [
+        "Švestka, rebarbora a květy",
+        "",
+        "Švestka, rebarbora a květy",
+        ""
+      ],
+      "plum-tonic": [
+        "Švestkový nektar, pivoňka a kašmírové dřevo",
+        "",
+        "Švestkový nektar, pivoňka a kašmírové dřevo",
+        ""
+      ],
+      "rhubarb-thief": [
+        "Grapefruit, rebarbora a dubový mech",
+        "",
+        "Grapefruit, rebarbora a dubový mech",
+        ""
+      ],
+      "sweet": [
+        "Vanilka, rýže a kokos",
+        "",
+        "Vanilka, rýže a kokos",
+        ""
+      ],
+      "vanilla-rice": [
+        "Pražená rýže, kokosové mléko a vanilka",
+        "",
+        "Pražená rýže, kokosové mléko a vanilka",
+        ""
+      ],
+      "dirty-coconut": [
+        "Kokosový extrakt, santal a vanilkový absolue",
+        "",
+        "Kokosový extrakt, santal a vanilkový absolue",
+        ""
+      ],
+      "wood": [
+        "Dřevo, byliny a mořská sůl",
+        "",
+        "Dřevo, byliny a mořská sůl",
+        ""
+      ],
+      "dirty-hinoki": [
+        "Cedr, hinoki a kadidlo",
+        "",
+        "Cedr, hinoki a kadidlo",
+        ""
+      ],
+      "black-salt": [
+        "Limetka, jasmín a uzená mořská sůl",
+        "",
+        "Limetka, jasmín a uzená mořská sůl",
+        ""
+      ]
+    },
+    "stepCopy": {
+      "fragranceDirection": [
+        "Jaká vůně je vám blízká?",
+        "",
+        "Vonné tóny"
+      ],
+      "fragranceProfile": [
+        "Která kombinace vás láká?",
+        "",
+        "Vonné tóny"
+      ]
+    },
+    "compareFocus": true,
+    "upsellFocus": {},
+    "choicePhotos": {
+      "fruit": [
+        "/assets/s3/scenes-k2/citrus.jpg"
+      ],
+      "plum-tonic": [
+        "/assets/s5/elobe/plum-tonic.jpg"
+      ],
+      "rhubarb-thief": [
+        "/assets/s5/elobe/rhubarb-thief.jpg"
+      ],
+      "sweet": [
+        "/assets/s3/scenes-k2/vanilla.jpg"
+      ],
+      "vanilla-rice": [
+        "/assets/s5/elobe/vanilla-rice.jpg"
+      ],
+      "dirty-coconut": [
+        "/assets/s5/elobe/dirty-coconut.jpg"
+      ],
+      "wood": [
+        "/assets/s3/scenes-k2/jasmine.jpg"
+      ],
+      "dirty-hinoki": [
+        "/assets/s5/elobe/dirty-hinoki.jpg"
+      ],
+      "black-salt": [
+        "/assets/s5/elobe/black-salt.jpg"
+      ]
+    },
+    "compareProductIds": [
+      "plum-tonic",
+      "dirty-hinoki"
+    ],
+    "segmentText": {
+      "entryNote": "Vonné tóny · konkrétní vůně · porovnání",
+      "titleSuffix": "výber vône",
+      "tab": "Výber vône",
+      "advisorName": "Poradca vôní",
+      "entrySmall": "VÝBER VÔNE",
+      "entryTitle": "Nájsť vôňu podľa tónov",
+      "placeholder": "Spýtajte sa na tóny alebo balenie…",
+      "heading": "Pomozte zákazníkovi objevit vůni podle jeho vkusu.",
+      "lead": "Výběr ukáže konkrétní vůni s fotografií, profilem tónů, přesným balením, cenou a odkazem. Dvě odlišné vůně lze porovnat.",
+      "includedChat": "Vonné tóny, balení, ceny a porovnání vybraných vůní.",
+      "includedAdvisor": "Výběr vůně, její profil a porovnání dvou kompozic.",
+      "greeting": "Dobrý den. Pomohu vám porovnat vybrané vůně, jejich tóny, balení a ceny.",
+      "teaserTitle": "Vyberte si vôňu podľa tónov",
+      "teaserNote": "Otvoriť výber vône",
+      "teaserAria": "Otvoriť poradcu pre výber vône",
+      "source": "elobe-demo"
+    },
+    "fragranceResultExtras": {
+      "version": 1,
+      "enabled": true,
+      "alternatives": {
+        "plum-tonic": "rhubarb-thief",
+        "rhubarb-thief": "plum-tonic",
+        "vanilla-rice": "dirty-coconut",
+        "dirty-coconut": "vanilla-rice",
+        "dirty-hinoki": "black-salt",
+        "black-salt": "dirty-hinoki"
+      },
+      "scentProfile": {
+        "version": 1,
+        "mode": "source-notes-no-numeric-strength"
+      }
+    },
+    "fragrancePresentation": {
+      "version": 1,
+      "hideStepEstimate": true
+    },
+    "companyCss": "/n447/s5/brands/elobe.css"
+  },
+  "topparfemy": {
+    "series": "s5",
+    "type": "cosmetics",
+    "segment": "fragrance",
+    "name": "Top parfémy",
+    "country": "CZ",
+    "logos": {
+      "landing": "/assets/s5/topparfemy/logo.svg",
+      "header": "/assets/s5/topparfemy/logo.svg",
+      "avatar": "/assets/s5/topparfemy/initial.svg"
+    },
+    "brand": {
+      "name": "Top parfémy",
+      "domain": "top-parfemy.eu",
+      "website": "https://www.top-parfemy.eu/",
+      "lang": "cs",
+      "fullName": "Top parfémy",
+      "url": "https://www.top-parfemy.eu/",
+      "logo": "/assets/s5/topparfemy/logo.svg",
+      "mark": "/assets/s5/topparfemy/initial.svg",
+      "greeting": "Dobrý den. Pomohu vám porovnat vybrané vůně, jejich tóny, balení a ceny.",
+      "quickChips": [
+        "Růže a karafiát",
+        "Meruňka a vanilka",
+        "Citrusy a cedr",
+        "Porovnat dvě vůně"
+      ],
+      "theme": {
+        "brand": "#4b5150",
+        "accent": "#8daca7",
+        "soft": "#f4f7f6",
+        "paper": "#fff",
+        "ink": "#303736",
+        "line": "#dfe8e5"
+      }
+    },
+    "traitCopy": {
+      "flower": [
+        "Bílé květy, růže a zelené tóny",
+        "",
+        "Bílé květy, růže a zelené tóny",
+        ""
+      ],
+      "kopretina": [
+        "Jablko, konvalinka a bílá růže",
+        "",
+        "Jablko, konvalinka a bílá růže",
+        ""
+      ],
+      "ruze": [
+        "Růže, karafiát a bílý mošus",
+        "",
+        "Růže, karafiát a bílý mošus",
+        ""
+      ],
+      "fruit": [
+        "Ovoce, koření a vanilka",
+        "",
+        "Ovoce, koření a vanilka",
+        ""
+      ],
+      "delusional": [
+        "Meruňka, švestka a vanilka",
+        "",
+        "Meruňka, švestka a vanilka",
+        ""
+      ],
+      "bergamot-zazvor": [
+        "Bergamot, zázvor a květy",
+        "",
+        "Bergamot, zázvor a květy",
+        ""
+      ],
+      "wood": [
+        "Citrusy, dřevo a jantar",
+        "",
+        "Citrusy, dřevo a jantar",
+        ""
+      ],
+      "portus-black": [
+        "Citrusy, mořské tóny a cedrové dřevo",
+        "",
+        "Citrusy, mořské tóny a cedrové dřevo",
+        ""
+      ],
+      "crevan": [
+        "Bergamot, bříza, jasmín a jantar",
+        "",
+        "Bergamot, bříza, jasmín a jantar",
+        ""
+      ]
+    },
+    "stepCopy": {
+      "fragranceDirection": [
+        "Jaká vůně je vám blízká?",
+        "",
+        "Vonné tóny"
+      ],
+      "fragranceProfile": [
+        "Která kombinace vás láká?",
+        "",
+        "Vonné tóny"
+      ]
+    },
+    "compareFocus": true,
+    "upsellFocus": {},
+    "choicePhotos": {
+      "flower": [
+        "/assets/s3/scenes-k2/jasmine.jpg"
+      ],
+      "kopretina": [
+        "/assets/s5/topparfemy/kopretina.jpg"
+      ],
+      "ruze": [
+        "/assets/s5/topparfemy/ruze.jpg"
+      ],
+      "fruit": [
+        "/assets/s3/scenes-k2/vanilla.jpg"
+      ],
+      "delusional": [
+        "/assets/s5/topparfemy/delusional.jpg"
+      ],
+      "bergamot-zazvor": [
+        "/assets/s5/topparfemy/bergamot-zazvor.jpg"
+      ],
+      "wood": [
+        "/assets/s3/scenes-k2/citrus.jpg"
+      ],
+      "portus-black": [
+        "/assets/s5/topparfemy/portus-black.jpg"
+      ],
+      "crevan": [
+        "/assets/s5/topparfemy/crevan.jpg"
+      ]
+    },
+    "compareProductIds": [
+      "ruze",
+      "portus-black"
+    ],
+    "segmentText": {
+      "entryNote": "Vonné tóny · konkrétní vůně · porovnání",
+      "titleSuffix": "výber vône",
+      "tab": "Výber vône",
+      "advisorName": "Poradca vôní",
+      "entrySmall": "VÝBER VÔNE",
+      "entryTitle": "Nájsť vôňu podľa tónov",
+      "placeholder": "Spýtajte sa na tóny alebo balenie…",
+      "heading": "Pomozte zákazníkovi objevit vůni podle jeho vkusu.",
+      "lead": "Výběr ukáže konkrétní vůni s fotografií, profilem tónů, přesným balením, cenou a odkazem. Dvě odlišné vůně lze porovnat.",
+      "includedChat": "Vonné tóny, balení, ceny a porovnání vybraných vůní.",
+      "includedAdvisor": "Výběr vůně, její profil a porovnání dvou kompozic.",
+      "greeting": "Dobrý den. Pomohu vám porovnat vybrané vůně, jejich tóny, balení a ceny.",
+      "teaserTitle": "Vyberte si vôňu podľa tónov",
+      "teaserNote": "Otvoriť výber vône",
+      "teaserAria": "Otvoriť poradcu pre výber vône",
+      "source": "topparfemy-demo"
+    },
+    "fragranceResultExtras": {
+      "version": 1,
+      "enabled": true,
+      "alternatives": {
+        "kopretina": "ruze",
+        "ruze": "kopretina",
+        "delusional": "bergamot-zazvor",
+        "bergamot-zazvor": "delusional",
+        "portus-black": "crevan",
+        "crevan": "portus-black"
+      },
+      "scentProfile": {
+        "version": 1,
+        "mode": "source-notes-no-numeric-strength"
+      }
+    },
+    "fragrancePresentation": {
+      "version": 1,
+      "hideStepEstimate": true
+    },
+    "companyCss": "/n447/s5/brands/topparfemy.css"
+  },
+  "inparfum": {
+    "series": "s5",
+    "type": "cosmetics",
+    "segment": "fragrance",
+    "name": "IN PARFUM",
+    "country": "CZ",
+    "logos": {
+      "landing": "/assets/s5/inparfum/logo.svg",
+      "header": "/assets/s5/inparfum/logo.svg",
+      "avatar": "/assets/s5/inparfum/initial.svg"
+    },
+    "brand": {
+      "name": "IN PARFUM",
+      "domain": "inparfum.cz",
+      "website": "https://www.inparfum.cz/",
+      "lang": "cs",
+      "fullName": "IN PARFUM",
+      "url": "https://www.inparfum.cz/",
+      "logo": "/assets/s5/inparfum/logo.svg",
+      "mark": "/assets/s5/inparfum/initial.svg",
+      "greeting": "Dobrý den. Pomohu vám porovnat vybrané vůně, jejich tóny, balení a ceny.",
+      "quickChips": [
+        "Grapefruit a pačuli",
+        "Likér a vanilka",
+        "Neroli a skořice",
+        "Porovnat dvě vůně"
+      ],
+      "theme": {
+        "brand": "#59678f",
+        "accent": "#adbef0",
+        "soft": "#f2f4fb",
+        "paper": "#fff",
+        "ink": "#29314a",
+        "line": "#e1e6f3"
+      }
+    },
+    "traitCopy": {
+      "citrus": [
+        "Bergamot, grapefruit a dřevité tóny",
+        "",
+        "Bergamot, grapefruit a dřevité tóny",
+        ""
+      ],
+      "m310": [
+        "Bergamot, grapefruit a pačuli",
+        "",
+        "Bergamot, grapefruit a pačuli",
+        ""
+      ],
+      "m233": [
+        "Bergamot, list fialky a vetiver",
+        "",
+        "Bergamot, list fialky a vetiver",
+        ""
+      ],
+      "sweet": [
+        "Likér, ovoce a vanilka",
+        "",
+        "Likér, ovoce a vanilka",
+        ""
+      ],
+      "w152": [
+        "Likér, mandle a vanilka",
+        "",
+        "Likér, mandle a vanilka",
+        ""
+      ],
+      "049": [
+        "Bergamot, čokoláda a kadidlo",
+        "",
+        "Bergamot, čokoláda a kadidlo",
+        ""
+      ],
+      "flower": [
+        "Neroli, růže a pižmo",
+        "",
+        "Neroli, růže a pižmo",
+        ""
+      ],
+      "w147": [
+        "Neroli, růže a skořice",
+        "",
+        "Neroli, růže a skořice",
+        ""
+      ],
+      "m209": [
+        "Aldehyd, neroli a vanilka",
+        "",
+        "Aldehyd, neroli a vanilka",
+        ""
+      ]
+    },
+    "stepCopy": {
+      "fragranceDirection": [
+        "Jaká vůně je vám blízká?",
+        "",
+        "Vonné tóny"
+      ],
+      "fragranceProfile": [
+        "Která kombinace vás láká?",
+        "",
+        "Vonné tóny"
+      ]
+    },
+    "compareFocus": true,
+    "upsellFocus": {},
+    "choicePhotos": {
+      "citrus": [
+        "/assets/s3/scenes-k2/citrus.jpg"
+      ],
+      "m310": [
+        "/assets/s5/inparfum/m310.jpg"
+      ],
+      "m233": [
+        "/assets/s5/inparfum/m233.jpg"
+      ],
+      "sweet": [
+        "/assets/s3/scenes-k2/vanilla.jpg"
+      ],
+      "w152": [
+        "/assets/s5/inparfum/w152.jpg"
+      ],
+      "049": [
+        "/assets/s5/inparfum/049.jpg"
+      ],
+      "flower": [
+        "/assets/s3/scenes-k2/jasmine.jpg"
+      ],
+      "w147": [
+        "/assets/s5/inparfum/w147.jpg"
+      ],
+      "m209": [
+        "/assets/s5/inparfum/m209.jpg"
+      ]
+    },
+    "compareProductIds": [
+      "m310",
+      "w152"
+    ],
+    "segmentText": {
+      "entryNote": "Vonné tóny · konkrétní vůně · porovnání",
+      "titleSuffix": "výber vône",
+      "tab": "Výber vône",
+      "advisorName": "Poradca vôní",
+      "entrySmall": "VÝBER VÔNE",
+      "entryTitle": "Nájsť vôňu podľa tónov",
+      "placeholder": "Spýtajte sa na tóny alebo balenie…",
+      "heading": "Pomozte zákazníkovi objevit vůni podle jeho vkusu.",
+      "lead": "Výběr ukáže konkrétní vůni In Parfum, její tóny, fotografii, balení, cenu a odkaz. Nejde o originály jiných značek. Dvě odlišné vůně lze porovnat.",
+      "includedChat": "Vonné tóny, balení, ceny a porovnání vybraných vůní.",
+      "includedAdvisor": "Výběr vůně, její profil a porovnání dvou kompozic.",
+      "greeting": "Dobrý den. Pomohu vám porovnat vybrané vůně, jejich tóny, balení a ceny.",
+      "teaserTitle": "Vyberte si vôňu podľa tónov",
+      "teaserNote": "Otvoriť výber vône",
+      "teaserAria": "Otvoriť poradcu pre výber vône",
+      "source": "inparfum-demo"
+    },
+    "fragranceResultExtras": {
+      "version": 1,
+      "enabled": true,
+      "alternatives": {
+        "m310": "m233",
+        "m233": "m310",
+        "w152": "049",
+        "049": "w152",
+        "w147": "m209",
+        "m209": "w147"
+      },
+      "scentProfile": {
+        "version": 1,
+        "mode": "source-notes-no-numeric-strength"
+      }
+    },
+    "fragrancePresentation": {
+      "version": 1,
+      "hideStepEstimate": true
+    },
+    "companyCss": "/n447/s5/brands/inparfum.css"
+  },
+  "aromea": {
+    "series": "s5",
+    "type": "cosmetics",
+    "segment": "fragrance",
+    "name": "AROMEA",
+    "country": "CZ",
+    "logos": {
+      "landing": "/assets/s5/aromea/logo.png",
+      "header": "/assets/s5/aromea/logo.png",
+      "avatar": "/assets/s5/aromea/initial.svg"
+    },
+    "brand": {
+      "name": "AROMEA",
+      "domain": "aromea.cz",
+      "website": "https://www.aromea.cz/",
+      "lang": "cs",
+      "fullName": "AROMEA",
+      "url": "https://www.aromea.cz/",
+      "logo": "/assets/s5/aromea/logo.png",
+      "mark": "/assets/s5/aromea/initial.svg",
+      "greeting": "Dobrý den. Pomohu vám porovnat vybrané vůně, jejich tóny, balení a ceny.",
+      "quickChips": [
+        "Káva a vanilka",
+        "Myrha a dřevo",
+        "Skořice a máta",
+        "Porovnat dvě vůně"
+      ],
+      "theme": {
+        "brand": "#3a382f",
+        "accent": "#b7a487",
+        "soft": "#faf7f1",
+        "paper": "#fff",
+        "ink": "#343129",
+        "line": "#e9e2d7"
+      }
+    },
+    "traitCopy": {
+      "flower": [
+        "Růže, ovocné tóny a káva",
+        "",
+        "Růže, ovocné tóny a káva",
+        ""
+      ],
+      "linen-buds": [
+        "Černý rybíz, růže a santalové dřevo",
+        "",
+        "Černý rybíz, růže a santalové dřevo",
+        ""
+      ],
+      "cafe-satin": [
+        "Káva, růže a vanilka",
+        "",
+        "Káva, růže a vanilka",
+        ""
+      ],
+      "resin": [
+        "Myrha, ambra a dřevité tóny",
+        "",
+        "Myrha, ambra a dřevité tóny",
+        ""
+      ],
+      "aramaik": [
+        "Hořký pomeranč, myrha a agarové dřevo",
+        "",
+        "Hořký pomeranč, myrha a agarové dřevo",
+        ""
+      ],
+      "dolce-medicea": [
+        "Růžový pepř, zázvor a bourbonská vanilka",
+        "",
+        "Růžový pepř, zázvor a bourbonská vanilka",
+        ""
+      ],
+      "spice": [
+        "Pepř, skořice a kořeněné tóny",
+        "",
+        "Pepř, skořice a kořeněné tóny",
+        ""
+      ],
+      "malabar-pepper": [
+        "Zázvor, černý pepř a cedrové dřevo",
+        "",
+        "Zázvor, černý pepř a cedrové dřevo",
+        ""
+      ],
+      "ghirlandaio": [
+        "Skořice, karafiát a máta",
+        "",
+        "Skořice, karafiát a máta",
+        ""
+      ]
+    },
+    "stepCopy": {
+      "fragranceDirection": [
+        "Jaká vůně je vám blízká?",
+        "",
+        "Vonné tóny"
+      ],
+      "fragranceProfile": [
+        "Která kombinace vás láká?",
+        "",
+        "Vonné tóny"
+      ]
+    },
+    "compareFocus": true,
+    "upsellFocus": {},
+    "choicePhotos": {
+      "flower": [
+        "/assets/s3/scenes-k2/jasmine.jpg"
+      ],
+      "linen-buds": [
+        "/assets/s5/aromea/linen-buds.png"
+      ],
+      "cafe-satin": [
+        "/assets/s5/aromea/cafe-satin.png"
+      ],
+      "resin": [
+        "/assets/s3/scenes-k2/vanilla.jpg"
+      ],
+      "aramaik": [
+        "/assets/s5/aromea/aramaik.png"
+      ],
+      "dolce-medicea": [
+        "/assets/s5/aromea/dolce-medicea.png"
+      ],
+      "spice": [
+        "/assets/s3/scenes-k2/citrus.jpg"
+      ],
+      "malabar-pepper": [
+        "/assets/s5/aromea/malabar-pepper.png"
+      ],
+      "ghirlandaio": [
+        "/assets/s5/aromea/ghirlandaio.png"
+      ]
+    },
+    "compareProductIds": [
+      "cafe-satin",
+      "ghirlandaio"
+    ],
+    "segmentText": {
+      "entryNote": "Vonné tóny · konkrétní vůně · porovnání",
+      "titleSuffix": "výber vône",
+      "tab": "Výber vône",
+      "advisorName": "Poradca vôní",
+      "entrySmall": "VÝBER VÔNE",
+      "entryTitle": "Nájsť vôňu podľa tónov",
+      "placeholder": "Spýtajte sa na tóny alebo balenie…",
+      "heading": "Pomozte zákazníkovi objevit vůni podle jeho vkusu.",
+      "lead": "Výběr ukáže konkrétní vůni s fotografií, profilem tónů, přesným balením, cenou a odkazem. Dvě odlišné vůně lze porovnat.",
+      "includedChat": "Vonné tóny, balení, ceny a porovnání vybraných vůní.",
+      "includedAdvisor": "Výběr vůně, její profil a porovnání dvou kompozic.",
+      "greeting": "Dobrý den. Pomohu vám porovnat vybrané vůně, jejich tóny, balení a ceny.",
+      "teaserTitle": "Vyberte si vôňu podľa tónov",
+      "teaserNote": "Otvoriť výber vône",
+      "teaserAria": "Otvoriť poradcu pre výber vône",
+      "source": "aromea-demo"
+    },
+    "fragranceResultExtras": {
+      "version": 1,
+      "enabled": true,
+      "alternatives": {
+        "linen-buds": "cafe-satin",
+        "cafe-satin": "linen-buds",
+        "aramaik": "dolce-medicea",
+        "dolce-medicea": "aramaik",
+        "malabar-pepper": "ghirlandaio",
+        "ghirlandaio": "malabar-pepper"
+      },
+      "scentProfile": {
+        "version": 1,
+        "mode": "source-notes-no-numeric-strength"
+      }
+    },
+    "fragrancePresentation": {
+      "version": 1,
+      "hideStepEstimate": true
+    },
+    "companyCss": "/n447/s5/brands/aromea.css"
+  },
+  "kifra": {
+    "series": "s5",
+    "type": "cosmetics",
+    "segment": "fragrance",
+    "name": "KIFRA",
+    "country": "SK",
+    "logos": {
+      "landing": "/assets/s5/kifra/logo.svg",
+      "header": "/assets/s5/kifra/logo.svg",
+      "avatar": "/assets/s5/kifra/initial.svg"
+    },
+    "brand": {
+      "name": "KIFRA",
+      "domain": "kifra.sk",
+      "website": "https://www.kifra.sk/",
+      "lang": "sk",
+      "fullName": "KIFRA",
+      "url": "https://www.kifra.sk/",
+      "logo": "/assets/s5/kifra/logo.svg",
+      "mark": "/assets/s5/kifra/initial.svg",
+      "greeting": "Dobrý deň. Pomôžem vám porovnať vybrané vône do prania, ich balenia a ceny.",
+      "quickChips": [
+        "Oceánska sviežosť",
+        "Mango a kvety",
+        "Levanduľa a mäta",
+        "Porovnať dve vône"
+      ],
+      "theme": {
+        "brand": "#655080",
+        "accent": "#bfa8d8",
+        "soft": "#f7f3fb",
+        "paper": "#fff",
+        "ink": "#3f3054",
+        "line": "#e7ddf0"
+      }
+    },
+    "traitCopy": {
+      "fresh": [
+        "Morská a lesná sviežosť",
+        "",
+        "Morská a lesná sviežosť",
+        ""
+      ],
+      "ocean": [
+        "Chladivý a čistý oceánsky charakter",
+        "",
+        "Chladivý a čistý oceánsky charakter",
+        ""
+      ],
+      "fresh-caps": [
+        "Orchidea, ruže a jedľový les",
+        "",
+        "Orchidea, ruže a jedľový les",
+        ""
+      ],
+      "flower": [
+        "Kvety a bylinky",
+        "",
+        "Kvety a bylinky",
+        ""
+      ],
+      "japanese-garden": [
+        "Čerešňové kvety s ovocnými tónmi",
+        "",
+        "Čerešňové kvety s ovocnými tónmi",
+        ""
+      ],
+      "lavender": [
+        "Levanduľa, kvety a svieža mäta",
+        "",
+        "Levanduľa, kvety a svieža mäta",
+        ""
+      ],
+      "fruit": [
+        "Ovocné a citrusové tóny",
+        "",
+        "Ovocné a citrusové tóny",
+        ""
+      ],
+      "mango": [
+        "Tropické mango a letné kvety",
+        "",
+        "Tropické mango a letné kvety",
+        ""
+      ],
+      "orange": [
+        "Pomaranč, citrusy a jemné kvety",
+        "",
+        "Pomaranč, citrusy a jemné kvety",
+        ""
+      ]
+    },
+    "stepCopy": {
+      "fragranceDirection": [
+        "Aká vôňa je vám blízka?",
+        "",
+        "Vonné tóny"
+      ],
+      "fragranceProfile": [
+        "Ktorá kombinácia vás láka?",
+        "",
+        "Vonné tóny"
+      ]
+    },
+    "compareFocus": true,
+    "upsellFocus": {},
+    "choicePhotos": {
+      "fresh": [
+        "/assets/s3/scenes-k2/pine.jpg"
+      ],
+      "ocean": [
+        "/assets/s5/kifra/ocean.jpg"
+      ],
+      "fresh-caps": [
+        "/assets/s5/kifra/fresh-caps.jpg"
+      ],
+      "flower": [
+        "/assets/s3/scenes-k2/jasmine.jpg"
+      ],
+      "japanese-garden": [
+        "/assets/s5/kifra/japanese-garden.jpg"
+      ],
+      "lavender": [
+        "/assets/s5/kifra/lavender.jpg"
+      ],
+      "fruit": [
+        "/assets/s3/scenes-k2/citrus.jpg"
+      ],
+      "mango": [
+        "/assets/s5/kifra/mango.jpg"
+      ],
+      "orange": [
+        "/assets/s5/kifra/orange.jpg"
+      ]
+    },
+    "compareProductIds": [
+      "ocean",
+      "mango"
+    ],
+    "segmentText": {
+      "entryNote": "Vône do prania · presné balenie · porovnanie",
+      "titleSuffix": "výber vône",
+      "tab": "Výber vône",
+      "advisorName": "Poradca vôní",
+      "entrySmall": "VÝBER VÔNE",
+      "entryTitle": "Nájsť vôňu podľa tónov",
+      "placeholder": "Spýtajte sa na tóny alebo balenie…",
+      "heading": "Pomôžte zákazníkovi nájsť vôňu pre jeho bielizeň.",
+      "lead": "Výber ukáže konkrétny parfum do prania s vôňovým profilom, fotografiou, balením, cenou a odkazom. Dve odlišné vône možno porovnať. Dodržujte dávkovanie výrobcu.",
+      "includedChat": "Vône do prania, ich balenia a ceny.",
+      "includedAdvisor": "Výber vône do prania a porovnanie dvoch odlišných vôní.",
+      "greeting": "Dobrý deň. Pomôžem vám porovnať vybrané vône do prania, ich balenia a ceny.",
+      "teaserTitle": "Vyberte si vôňu podľa tónov",
+      "teaserNote": "Otvoriť výber vône",
+      "teaserAria": "Otvoriť poradcu pre výber vône",
+      "source": "kifra-demo"
+    },
+    "fragranceResultExtras": {
+      "version": 1,
+      "enabled": true,
+      "alternatives": {
+        "ocean": "fresh-caps",
+        "fresh-caps": "ocean",
+        "japanese-garden": "lavender",
+        "lavender": "japanese-garden",
+        "mango": "orange",
+        "orange": "mango"
+      },
+      "scentProfile": {
+        "version": 1,
+        "mode": "source-notes-no-numeric-strength"
+      }
+    },
+    "fragrancePresentation": {
+      "version": 1,
+      "hideStepEstimate": true
+    },
+    "companyCss": "/n447/s5/brands/kifra.css"
+  },
+  "scents": {
+    "series": "s5",
+    "type": "cosmetics",
+    "segment": "fragrance",
+    "name": "Scents.cz",
+    "country": "CZ",
+    "logos": {
+      "landing": "/assets/s5/scents/logo.png",
+      "header": "/assets/s5/scents/logo.png",
+      "avatar": "/assets/s5/scents/initial.svg"
+    },
+    "brand": {
+      "name": "Scents.cz",
+      "domain": "scents.cz",
+      "website": "https://scents.cz/",
+      "lang": "cs",
+      "fullName": "Scents.cz",
+      "url": "https://scents.cz/",
+      "logo": "/assets/s5/scents/logo.png",
+      "mark": "/assets/s5/scents/initial.svg",
+      "greeting": "Dobrý den. Pomohu vám porovnat vybrané vůně do auta, jejich balení a ceny.",
+      "quickChips": [
+        "Výrazná višeň",
+        "Jemnější vanilka",
+        "Dřevitá vůně",
+        "Porovnat dvě vůně"
+      ],
+      "theme": {
+        "brand": "#08768a",
+        "accent": "#e0c956",
+        "soft": "#effafd",
+        "paper": "#fff",
+        "ink": "#173f47",
+        "line": "#d7eaee"
+      }
+    },
+    "traitCopy": {
+      "fruit": [
+        "Ovocný a tropický charakter",
+        "",
+        "Ovocný a tropický charakter",
+        ""
+      ],
+      "cherry": [
+        "Výrazná višňová vůně",
+        "",
+        "Výrazná višňová vůně",
+        ""
+      ],
+      "coconut": [
+        "Jemnější kokosová vůně",
+        "",
+        "Jemnější kokosová vůně",
+        ""
+      ],
+      "sweet": [
+        "Vanilka a sladké tóny",
+        "",
+        "Vanilka a sladké tóny",
+        ""
+      ],
+      "vanilla": [
+        "Jemnější vanilková vůně",
+        "",
+        "Jemnější vanilková vůně",
+        ""
+      ],
+      "delight": [
+        "Výrazná žvýkačková vůně",
+        "",
+        "Výrazná žvýkačková vůně",
+        ""
+      ],
+      "fresh": [
+        "Mořský nebo dřevitý charakter",
+        "",
+        "Mořský nebo dřevitý charakter",
+        ""
+      ],
+      "laguna": [
+        "Intenzivní mořská svěžest",
+        "",
+        "Intenzivní mořská svěžest",
+        ""
+      ],
+      "sunset": [
+        "Lehká dřevitá vůně",
+        "",
+        "Lehká dřevitá vůně",
+        ""
+      ]
+    },
+    "stepCopy": {
+      "fragranceDirection": [
+        "Jaká vůně je vám blízká?",
+        "",
+        "Vonné tóny"
+      ],
+      "fragranceProfile": [
+        "Která kombinace vás láká?",
+        "",
+        "Vonné tóny"
+      ]
+    },
+    "compareFocus": true,
+    "upsellFocus": {},
+    "choicePhotos": {
+      "fruit": [
+        "/assets/s3/scenes-k2/citrus.jpg"
+      ],
+      "cherry": [
+        "/assets/s5/scents/cherry.jpg"
+      ],
+      "coconut": [
+        "/assets/s5/scents/coconut.jpg"
+      ],
+      "sweet": [
+        "/assets/s3/scenes-k2/vanilla.jpg"
+      ],
+      "vanilla": [
+        "/assets/s5/scents/vanilla.jpg"
+      ],
+      "delight": [
+        "/assets/s5/scents/delight.jpg"
+      ],
+      "fresh": [
+        "/assets/s3/scenes-k2/pine.jpg"
+      ],
+      "laguna": [
+        "/assets/s5/scents/laguna.jpg"
+      ],
+      "sunset": [
+        "/assets/s5/scents/sunset.jpg"
+      ]
+    },
+    "compareProductIds": [
+      "cherry",
+      "sunset"
+    ],
+    "segmentText": {
+      "entryNote": "Vůně do auta · konkrétní balení · porovnání",
+      "titleSuffix": "výber vône",
+      "tab": "Výber vône",
+      "advisorName": "Poradca vôní",
+      "entrySmall": "VÝBER VÔNE",
+      "entryTitle": "Nájsť vôňu podľa tónov",
+      "placeholder": "Spýtajte sa na tóny alebo balenie…",
+      "heading": "Pomozte zákazníkovi najít vůni do auta podle jeho vkusu.",
+      "lead": "Výběr ukáže konkrétní vůni do auta s fotografií, charakterem, balením 42 g, cenou a odkazem. Dvě odlišné vůně lze porovnat.",
+      "includedChat": "Vůně do auta, jejich charakter, balení a ceny.",
+      "includedAdvisor": "Výběr vůně do auta a porovnání dvou odlišných vůní.",
+      "greeting": "Dobrý den. Pomohu vám porovnat vybrané vůně do auta, jejich balení a ceny.",
+      "teaserTitle": "Vyberte si vôňu podľa tónov",
+      "teaserNote": "Otvoriť výber vône",
+      "teaserAria": "Otvoriť poradcu pre výber vône",
+      "source": "scents-demo"
+    },
+    "fragranceResultExtras": {
+      "version": 1,
+      "enabled": true,
+      "alternatives": {
+        "cherry": "coconut",
+        "coconut": "cherry",
+        "vanilla": "delight",
+        "delight": "vanilla",
+        "laguna": "sunset",
+        "sunset": "laguna"
+      },
+      "scentProfile": {
+        "version": 1,
+        "mode": "source-notes-no-numeric-strength"
+      }
+    },
+    "fragrancePresentation": {
+      "version": 1,
+      "hideStepEstimate": true
+    },
+    "companyCss": "/n447/s5/brands/scents.css"
   }
 });
