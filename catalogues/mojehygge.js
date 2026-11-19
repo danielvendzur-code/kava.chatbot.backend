@@ -555,6 +555,12 @@ globalThis.CX_CATALOGUES.mojehygge = {
     "selectionTraits": {
      "fragranceDirection": "g-herbal",
      "fragranceProfile": "chamomile"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.mojehygge.cz/sojove-svicky/sojova-svicka-120ml-180ml-hermanek-a-materidouska/",
+     "sourceText": "Sójová svíčka 120ml/180ml - Heřmánek a Mateřídouška",
+     "navigationLabel": "heřmánek, mateřídouška",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
     }
    }
   },
@@ -621,6 +627,12 @@ globalThis.CX_CATALOGUES.mojehygge = {
     "selectionTraits": {
      "fragranceDirection": "g-herbal",
      "fragranceProfile": "eucalyptus"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.mojehygge.cz/sojove-svicky/sojova-svicka-120ml-180ml-eukalyptus-a-mata/",
+     "sourceText": "Sójová svíčka 120ml/180ml - Eukalyptus a Máta",
+     "navigationLabel": "eukalyptus, máta",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
     }
    }
   },
@@ -687,6 +699,12 @@ globalThis.CX_CATALOGUES.mojehygge = {
     "selectionTraits": {
      "fragranceDirection": "g-woods",
      "fragranceProfile": "cedar-pine"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.mojehygge.cz/sojove-svicky/sojova-svicka-120ml-cedr-a-borovice/",
+     "sourceText": "Sójová svíčka 120ml/180ml - Cedr a Borovice",
+     "navigationLabel": "cedr, borovice",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
     }
    }
   },
@@ -754,6 +772,12 @@ globalThis.CX_CATALOGUES.mojehygge = {
     "selectionTraits": {
      "fragranceDirection": "g-woods",
      "fragranceProfile": "cedar-sandal"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.mojehygge.cz/sojove-svicky/sojova-svicka-180ml-cedr--pomeranc-a-santalove-drevo/",
+     "sourceText": "Kořeněné tóny cedru, teplá dřevitá vůně santalového dřeva, doplněná citrusovými akordy pomeranče.",
+     "navigationLabel": "cedr, pomeranč, santalové dřevo",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
     }
    }
   },
@@ -820,6 +844,12 @@ globalThis.CX_CATALOGUES.mojehygge = {
     "selectionTraits": {
      "fragranceDirection": "g-citrus",
      "fragranceProfile": "rosemary"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.mojehygge.cz/sojove-svicky/sojova-svicka-120ml-180ml-rozmaryn-a-pomeranc/",
+     "sourceText": "Sójová svíčka 120ml/180ml - Rozmarýn a Pomeranč",
+     "navigationLabel": "rozmarýn, pomeranč",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
     }
    }
   },
@@ -886,6 +916,12 @@ globalThis.CX_CATALOGUES.mojehygge = {
     "selectionTraits": {
      "fragranceDirection": "g-citrus",
      "fragranceProfile": "ginger-orange"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.mojehygge.cz/sojove-svicky/sojova-svicka-180ml-zazvor-a-pomeranc/",
+     "sourceText": "Sójová svíčka 120ml/180ml - Zázvor a Pomeranč",
+     "navigationLabel": "zázvor, pomeranč",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
     }
    }
   },
@@ -953,6 +989,12 @@ globalThis.CX_CATALOGUES.mojehygge = {
     "selectionTraits": {
      "fragranceDirection": "g-citrus",
      "fragranceProfile": "winter"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.mojehygge.cz/sojove-svicky/sojova-svicka-180ml-zimni-cas/",
+     "sourceText": "Kouzlo zimy je směs, která v sobě snoubí ostřejší vůni jehličí v kombinaci s citrusy a tóny litsea cubeby.",
+     "navigationLabel": "jehličí, citrusy, litsea cubeba",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
     }
    }
   },
@@ -1019,6 +1061,12 @@ globalThis.CX_CATALOGUES.mojehygge = {
     "selectionTraits": {
      "fragranceDirection": "g-warm",
      "fragranceProfile": "tobacco"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.mojehygge.cz/sojove-svicky/sojova-svicka-120ml-tabak-a-vanilka/",
+     "sourceText": "Sójová svíčka 120ml/180ml - Tabák a vanilka",
+     "navigationLabel": "tabák, vanilka",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
     }
    }
   }
