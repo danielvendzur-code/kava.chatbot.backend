@@ -17,10 +17,14 @@
     <button type="button" data-width="390">390 px</button>
     <button type="button" data-width="1440">1440 px</button>
   </nav>
-  <p id="width">320 px</p>
+  <p><label>Značka <select id="brand"><option value="caltha">CALTHA</option><option value="madaga">FOR LIFE &amp; MADAGA</option></select></label> · <span id="width">320 px</span></p>
   <iframe title="CALTHA" width="320" src="../skincare/caltha/index.html"></iframe>
   <script>
     const frame = document.querySelector('iframe');
+    document.querySelector('#brand').addEventListener('change', event => {
+      frame.src = '../skincare/' + event.target.value + '/index.html';
+      frame.title = event.target.selectedOptions[0].textContent;
+    });
     document.querySelector('nav').addEventListener('click', event => {
       const width = event.target.dataset.width;
       if (!width) return;

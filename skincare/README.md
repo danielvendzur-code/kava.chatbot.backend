@@ -12,3 +12,15 @@ Průvodce doporučuje konkrétní odličovač, tonikum, hydratační krém nebo 
 - Anela je v historických kandidátech evidována jako existující a má připravený katalog. CALTHA má v historické větvi `claude/n447-kozmetika2-20261029` připravený katalog `catalogues/caltha-refresh.js`. Toto je přepracování rozsahu a výběru pro existující značku.
 
 Lokální vstup po spuštění statického serveru z kořene repozitáře je `/skincare/caltha/index.html`.
+
+## FOR LIFE & MADAGA · nová značka
+
+Průvodce pomáhá porovnat pleťová séra podle hydratace, rozjasnění, olejové výživy a večerního použití. Součástí je kompatibilní krém z řady Hyaluronic Acid. Rozsah 7 produktů včetně čtyř běžných 30ml Skin Boosterů, dvou 30ml sér a jednoho 50ml krému. Vzorky jsou mimo výběr.
+
+- [Český e-shop a oficiální šíře řady Booster](https://www.forlifemadaga.com/cz/booster-3)
+- [Provozovatel](https://www.forlifemadaga.com/cz/obchodni-podminky) · FOR LIFE & MADAGA a.s., IČO 49977580. [Velikost provozovatele](https://www.mesec.cz/rejstrik-firem/firma-for-life-madaga-a-s-49977580) · 20–24 zaměstnanců.
+- [Ověřené produkty, oficiální fotografie, obsah a odkazy](madaga/products.js) · 20. 11. 2026. Při kontrole bylo v nastavení e-shopu zvoleno Česko a Kč. Pokud je na stránce více balení, běžné balení a vzorek mají samostatné prodejní řádky. Ceny se počítají z řádku vybraného objemu, s DPH.
+- Existující sekce „Průvodce výběrem kosmetiky“ ve zkoumané podobě zobrazuje katalog s filtry. Tato ukázka má interaktivní volby a kontextový katalogový chat.
+- [Logo](https://www.forlifemadaga.com/images/thumbs/0003266_logo_new.png) a Noto Sans z e-shopu. Titulní kompozice používá tři nezměněné fotografie balení Skin Booster.
+
+Vstup je `/skincare/madaga/index.html`. Obě ukázky lze při šířkách 320, 390 a 1440 px otevřít na `/tests/skincare-responsive.html` na stejné doméně Preview.

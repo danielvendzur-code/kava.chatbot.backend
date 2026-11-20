@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap');
+
+body[data-brand="madaga"] {
+  --heading: 'Noto Sans', system-ui, sans-serif;
+  --action: #54401c;
+  --muted: #645943;
+  --border: #e1dacb;
+  background: #faf8f2;
+  color: #292318;
+  font-family: 'Noto Sans', system-ui, sans-serif;
+}
+[data-brand="madaga"] :focus-visible { outline-color: #806021; }
+[data-brand="madaga"] .top-inner img { width: clamp(118px, 17vw, 184px); }
+[data-brand="madaga"] .hero { background: #f1ead8; border-radius: 5px; }
+[data-brand="madaga"] .hero-photo { background: #eee3c4; padding: 6%; }
+[data-brand="madaga"] .hero-photo img { object-fit: contain; mix-blend-mode: multiply; }
+[data-brand="madaga"] .hero.compact .hero-photo { padding: 10px; }
+[data-brand="madaga"] .eyebrow, [data-brand="madaga"] .choice > span:last-child { color: #76561b; }
+[data-brand="madaga"] .primary:hover { background: #6b5020; }
+[data-brand="madaga"] .secondary { border-color: #a68c53; }
+[data-brand="madaga"] .workspace, [data-brand="madaga"] .button { border-radius: 6px; }
+[data-brand="madaga"] :is(.secondary:hover,.switcher button:hover,.switcher button[aria-pressed="true"],.choice:hover,.result-card,.message.user) { background: #f2ead7; color: #54401c; }
+[data-brand="madaga"] :is(.choice:hover,.chip:hover) { border-color: #a68c53; }
+[data-brand="madaga"] :is(.chip,.message.bot) { background: #faf6ec; }
+[data-brand="madaga"] .chip:hover { background: #f2ead7; }

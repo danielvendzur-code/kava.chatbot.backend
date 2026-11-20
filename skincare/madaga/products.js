@@ -1,0 +1,168 @@
+/* Ověřeno v českém e-shopu 20. 11. 2026. */
+export const products = {
+  "vitc": {
+    "name": "Skin Booster Vitamin C 30 ml",
+    "url": "https://www.forlifemadaga.com/cz/skin-booster-vitamin-c-30-ml",
+    "photoSource": "https://www.forlifemadaga.com/images/thumbs/0004522_skin-booster-vitamin-c-30-ml.png",
+    "photo": "./media/vitc.webp",
+    "stock": "Skladem",
+    "price": 775,
+    "pack": "30 ml",
+    "inci": "Aqua, Propylene Glycol, Ascorbyl Glucoside, Citric Acid, Helianthus Annuus Seed Oil, Panthenol, Potassium Hydroxide, Sodium Citrate, Sodium Hyaluronate, Tocopherol, Xanthan Gum, Phenoxyethanol, Ethylhexylglycerin, Parfum, Linalyl Acetate, Tetramethyl Acetyloctahydronaphthalenes.",
+    "sku": null,
+    "title": "Skin Booster Vitamin C",
+    "role": "Sérum",
+    "purpose": "Rozjasnění a sjednocení vzhledu pleti",
+    "texture": "Lehké nemastné sérum",
+    "use": "Ráno vmasírujte 3 až 5 kapek pod krém.",
+    "ingredients": "Ascorbyl Glucoside, kyselina hyaluronová, vitamin E, panthenol",
+    "aliases": [
+      "vitamin c",
+      "céčko"
+    ],
+    "difference": "Lehké ranní sérum pro plošné rozjasnění.",
+    "fragranceFree": false
+  },
+  "vite": {
+    "name": "Skin Booster Vitamin E & Rare Oils 30 ml",
+    "url": "https://www.forlifemadaga.com/cz/skin-booster-vitamin-e-rare-oils-30-ml",
+    "photoSource": "https://www.forlifemadaga.com/images/thumbs/0004502_skin-booster-vitamin-e-rare-oils-30-ml.png",
+    "photo": "./media/vite.webp",
+    "stock": "Skladem",
+    "price": 775,
+    "pack": "30 ml",
+    "inci": "Simmondsia Chinensis Seed Oil, Helianthus Annuus Seed Oil, Camellia Oleifera Seed Oil, Citrullus Lanatus Seed Oil, Passiflora Edulis Seed Oil, Rosmarinus Officinalis Extract, Tocopherol, Parfum, Linalyl Acetate, Tetramethyl Acetyloctahydronaphthalenes, Terpineol.",
+    "sku": null,
+    "title": "Skin Booster Vitamin E & Rare Oils",
+    "role": "Olejové sérum",
+    "purpose": "Olejová výživa suché pleti",
+    "texture": "Směs rostlinných olejů",
+    "use": "Večer použijte 3 až 5 kapek pod krém dvakrát týdně. Pro velmi suchou pleť výrobce uvádí použití jednou denně.",
+    "ingredients": "Jojobový, slunečnicový, kaméliový a marakujový olej, tokoferol",
+    "aliases": [
+      "vitamin e",
+      "rare oils"
+    ],
+    "difference": "Olejová péče s vitaminem E pro suchou pleť.",
+    "fragranceFree": false
+  },
+  "vita": {
+    "name": "Skin Booster Vitamin A (Retinol) 30 ml",
+    "url": "https://www.forlifemadaga.com/cz/skin-booster-vitamin-a-retinol-30-ml-2",
+    "photoSource": "https://www.forlifemadaga.com/images/thumbs/0004505_skin-booster-vitamin-a-retinol-30-ml.png",
+    "photo": "./media/vita.webp",
+    "stock": "Skladem",
+    "price": 775,
+    "pack": "30 ml",
+    "inci": "Helianthus Annuus Seed Oil, Simmondsia Chinensis Seed Oil, Retinyl Palmitate, Rosmarinus Officinalis Extract, Tocopherol, Parfum, Linalyl Acetate, Tetramethyl Acetyloctahydronaphthalenes, Terpineol.",
+    "sku": null,
+    "title": "Skin Booster Vitamin A (Retinol)",
+    "role": "Olejové sérum",
+    "purpose": "Večerní kosmetická péče o známky stárnutí",
+    "suitability": "Výrobce přípravek neuvádí pro citlivou pleť, těhotenství ani kojení.",
+    "texture": "Olejové sérum",
+    "use": "Podle štítku aplikujte večer 3 až 5 kapek pod krém, vynechejte oční okolí. Výrobce ho neurčuje pro citlivou pleť, těhotenství ani kojení. Nekombinujte s jinými přípravky s retinoidy.",
+    "ingredients": "Retinyl Palmitate, tokoferol, slunečnicový a jojobový olej",
+    "aliases": [
+      "vitamin a",
+      "retinol",
+      "retinyl palmitate"
+    ],
+    "difference": "Večerní olejové sérum s derivátem vitaminu A.",
+    "fragranceFree": false
+  },
+  "succinic": {
+    "name": "Skin Booster Hyaluronic & Succinic Acid 30 ml",
+    "url": "https://www.forlifemadaga.com/cz/skin-booster-hyaluronic-succinic-acid-30-ml",
+    "photoSource": "https://www.forlifemadaga.com/images/thumbs/0004524_skin-booster-hyaluronic-succinic-acid-30-ml.png",
+    "photo": "./media/succinic.webp",
+    "stock": "Skladem",
+    "price": 775,
+    "pack": "30 ml",
+    "inci": "Aqua, Propylene Glycol, Succinic Acid, Panthenol, Sodium Hyaluronate, Sodium Hydroxide, Xanthan Gum, Phenoxyethanol, Ethylhexylglycerin, Parfum, Linalyl Acetate, Tetramethyl Acetyloctahydronaphthalenes.",
+    "sku": null,
+    "title": "Skin Booster Hyaluronic & Succinic Acid",
+    "role": "Sérum",
+    "purpose": "Lehká večerní hydratace",
+    "texture": "Lehké nemastné sérum",
+    "use": "Večer vmasírujte 3 až 5 kapek pod krém a vynechejte oční okolí.",
+    "ingredients": "Kyselina jantarová, kyselina hyaluronová, panthenol",
+    "aliases": [
+      "succinic",
+      "jantarovou",
+      "jantarová"
+    ],
+    "difference": "Lehké večerní sérum s kyselinou jantarovou.",
+    "fragranceFree": false
+  },
+  "ha": {
+    "name": "Hyaluronic Acid sérum",
+    "url": "https://www.forlifemadaga.com/cz/hyaluronic-acid-serum",
+    "photoSource": "https://www.forlifemadaga.com/images/thumbs/0004540_hyaluronic-acid-serum.png",
+    "photo": "./media/ha.webp",
+    "stock": "Skladem",
+    "price": 877,
+    "pack": "30 ml",
+    "inci": "Aqua, Propylene Glycol, Sodium Hyaluronate, Panthenol, Xanthan Gum, Ectoin, Phenoxyethanol, Ethylhexylglycerin.",
+    "sku": "2587",
+    "title": "Hyaluronic Acid sérum",
+    "role": "Sérum",
+    "purpose": "Hydratace a péče o viditelné jemné linky",
+    "texture": "Hydrofilní, neolejové sérum",
+    "use": "Ráno a večer vtlačte prsty do čisté pleti. Samostatně nebo pod krém.",
+    "ingredients": "Kyselina hyaluronová, panthenol, ectoin",
+    "aliases": [
+      "hyaluronic acid sérum",
+      "hyaluronové sérum"
+    ],
+    "difference": "Neolejové sérum s použitím ráno i večer.",
+    "fragranceFree": true
+  },
+  "white": {
+    "name": "White Concept Anti-pigment sérum",
+    "url": "https://www.forlifemadaga.com/cz/white-concept-anti-pigment-serum",
+    "photoSource": "https://www.forlifemadaga.com/images/thumbs/0004376_white-concept-anti-pigment-serum.png",
+    "photo": "./media/white.webp",
+    "stock": "Skladem",
+    "price": 1063,
+    "pack": "30 ml",
+    "inci": "Aqua, Niacinamide, Propylene Glycol, Glycerin, Magnesium Ascorbyl Phosphate, 1-Methylhydantoin-2-Imide, Aloe Barbadensis Extract, Citric Acid, Xanthan Gum, Ethylhexylglycerin, Phenoxyethanol.",
+    "sku": "1302",
+    "title": "White Concept Anti-pigment sérum",
+    "role": "Lokální sérum",
+    "purpose": "Lokální kosmetická péče o pigmentové skvrny",
+    "texture": "Koncentrované fluidní sérum",
+    "use": "Naneste malé množství lokálně na čistou pleť dvakrát denně. Dodržte pokyny k vrstvení na stránce výrobce.",
+    "ingredients": "Niacinamid, derivát vitaminu C, creatinin, aloe vera",
+    "aliases": [
+      "white concept",
+      "anti-pigment",
+      "antipigment"
+    ],
+    "difference": "Lokální fluid určený přímo na pigmentové skvrny.",
+    "fragranceFree": true
+  },
+  "cream": {
+    "name": "Hyaluronic Acid krém",
+    "url": "https://www.forlifemadaga.com/cz/hyaluronic-acid-krem",
+    "photoSource": "https://www.forlifemadaga.com/images/thumbs/0004302_hyaluronic-acid-krem.png",
+    "photo": "./media/cream.webp",
+    "stock": "Skladem",
+    "price": 918,
+    "pack": "50 ml",
+    "inci": "Aqua, Caprylic/Capric Triglyceride, Ethylhexyl Stearate, Glycerin, Polyglyceryl -3 Methylglucose Distearate, Cetyl Alcohol, Dimethicone, Glyceryl Stearate, Citric Acid, Ectoin, Panthenol, Sodium Hyaluronate, Tocopheryl Acetate, Ethylhexylglycerin, Phenoxyethanol, Parfum, Benzyl Salicylate, Amyl cinnamal, Benzyl Benzoate, Linalool, Linalyl Acetate, Hydroxycitronellal, Terpineol, Geraniol, Citrus Aurantium Bergamia Peel Oil, Eugenol, Limonene..",
+    "sku": "2594",
+    "title": "Hyaluronic Acid krém",
+    "role": "Krém",
+    "purpose": "Samostatná hydratace suché a zralé pleti nebo péče po séru",
+    "texture": "Pleťový krém na den i noc",
+    "use": "Ráno a večer vmasírujte do vyčištěné pleti samostatně nebo po séru.",
+    "ingredients": "Kyselina hyaluronová, panthenol, vitamin E, ectoin",
+    "aliases": [
+      "hyaluronic acid krém",
+      "hyaluronový krém"
+    ],
+    "difference": "Krém můžete nanášet samostatně i přes sérum.",
+    "fragranceFree": false
+  }
+};

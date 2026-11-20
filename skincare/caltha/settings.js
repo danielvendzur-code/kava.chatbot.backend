@@ -1,5 +1,9 @@
 export const brand = {
   name: 'CALTHA',
+  legalName: 'CALTHA přírodní kosmetika',
+  shopLabel: 'Péče o pleť v e-shopu',
+  chatSuggestions: ['Jak použít Olea Pure?', 'Porovnej meduňkový a růžový krém', 'Jaké je pořadí rutiny?'],
+  routineOrder: 'Začněte čisticím krokem. Tonikum patří na vyčištěnou pleť. Pokud použijete hydratační sérum, naneste jej před pleťovým krémem.',
   logo: './media/logo.webp',
   shop: 'https://www.caltha.cz/',
   category: 'https://www.caltha.cz/plet/',
