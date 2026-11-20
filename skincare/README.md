@@ -49,3 +49,11 @@ Poradca odlišuje všetkých 8 pleťových sér z [oficiálnej kategórie](https
 CALTHA má 10 ciest výberu. FOR LIFE & MADAGA, Maat a LIQOIL majú po 8. Všetky cesty boli prejdené na živých nasadeniach tejto vetvy pri šírkach 320, 390 a 1440 px. Kontrolovali sa výsledky podľa odpovede, balenia, ceny, načítanie obrázkov, porovnania a vodorovné presahy. Samostatne boli odskúšané rozpočet, prázdny stav, návrat a nový výber, otázka o použití, porovnanie a reakcia pri chýbajúcom údaji. Pri LIQOIL je pokrytá hranica 10,89 € a 10,90 €. Použiteľné varianty a zdroje sú uložené pri jednotlivých produktoch.
 
 Katalogový chat používa pripravené odpovede z produktových podkladov a výsledok aktuálneho výberu. Zdravotné otázky odkazuje na zloženie a výrobcu. Samostatné subdomény sa riešia až po schválení ukážky a obnovení cien a skladu.
+
+## NEOBOTANICS · nová značka
+
+Výběr pokrývá čtyři séra Beauty v 30ml balení. Vodná séra #1 porovnává podle hydratace a vzhledu pórů. U olejových sér #2 rozlišuje výživu a rozjasnění. Volitelná rutina dodržuje pořadí #1 a #2 podle výrobce a zobrazuje součet.
+
+- [Řada Beauty](https://neobotanics.cz/collections/pletova-sera), [provozovatel](https://neobotanics.cz/pages/vop) · BIOCEN Laboratories s.r.o., IČO 48592633. Dlouhodobou působnost a maloobchodní distribuci dokládá [profil firmy](https://www.detail.cz/firma/48592633-biocen-laboratories-sro-ocelarska-392-9-praha/) a [nabídka řady u Dr. Max](https://www.drmax.cz/neobotanics).
+- [Katalog, ceny, sklad, fotografie a použití](neobotanics/products.js) · 20. 11. 2026. U Youth Booster je na oficiální stránce rozpor mezi popisem a INCI. Vyloučení parfemace se řídí seznamem INCI, který obsahuje Parfum.
+- Oficiální logo, Plus Jakarta Sans a modrá z balení vodného séra. Vstup je `/skincare/neobotanics/index.html`.

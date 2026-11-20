@@ -37,7 +37,7 @@ export function mountAdvisor(brand, products) {
     const total = sequence.reduce((sum, item) => sum + Math.round(item.price * 100), 0) / 100;
     if (sequence.length < 2 || !sequence.every(eligible) || (state.limit !== null && total > state.limit)) return '';
     return `<details><summary>${ui('Sestavit jednoduchou rutinu')} <span>${price(total)}</span></summary>
-      <ol class="routine">${sequence.map(item => `<li><div><strong>${escape(item.role)} · ${escape(item.title)}</strong><p>${escape(item.use)}</p>${productLink(item)}</div><b>${price(item.price)}</b></li>`).join('')}</ol>
+      ${brand.routineNote ? `<p>${escape(brand.routineNote)}</p>` : ''}<ol class="routine">${sequence.map(item => `<li><div><strong>${escape(item.role)} · ${escape(item.title)}</strong><p>${escape(item.use)}</p>${productLink(item)}</div><b>${price(item.price)}</b></li>`).join('')}</ol>
       <div class="total">${ui('Celkem')} <strong>${price(total)}</strong></div></details>`;
   }
 

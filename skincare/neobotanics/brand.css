@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('https://neobotanics.cz/cdn/fonts/plus_jakarta_sans/plusjakartasans_n4.d80b0f185669787ac4b44bf52c1a511eaaf37245.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('https://neobotanics.cz/cdn/fonts/plus_jakarta_sans/plusjakartasans_n6.1f3e62c91e85713f64bb6ec25f414e745828c111.woff2') format('woff2');
+}
+body[data-brand="neobotanics"] {
+  --heading: 'Plus Jakarta Sans', system-ui, sans-serif;
+  --action: #253d60;
+  --muted: #475974;
+  --border: #d4dce8;
+  background: #f4f6fb;
+  color: #182941;
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+[data-brand="neobotanics"] .top-inner img { width: 160px; }
+[data-brand="neobotanics"] .hero { background: #e5edf9; border-radius: 14px; }
+[data-brand="neobotanics"] .hero-photo { background: #e5edf9; }
+[data-brand="neobotanics"] .hero-photo img { object-fit: contain; }
+[data-brand="neobotanics"] .eyebrow, [data-brand="neobotanics"] .choice > span:last-child { color: #365579; }
+[data-brand="neobotanics"] :is(.secondary:hover,.switcher button:hover,.switcher button[aria-pressed="true"],.choice:hover,.result-card,.message.user) { background: #edf2fa; color: #294565; }
+[data-brand="neobotanics"] .primary:hover { background: #38557b; }
+[data-brand="neobotanics"] :is(.chip,.message.bot) { background: #f4f6fb; }
+[data-brand="neobotanics"] :focus-visible { outline-color: #406391; }
