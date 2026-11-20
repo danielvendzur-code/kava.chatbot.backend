@@ -1,5 +1,6 @@
 /* Qualitative note profile. Equal rows describe stages, never invented proportions. */
-body[data-series=s5][data-cosmetics-demo=alexmonhart] .cx-owner-brand .cx-logo {
+body[data-series=s5]:is([data-cosmetics-demo=alexmonhart], [data-cosmetics-demo=inparfum],
+    [data-cosmetics-demo=mmnt]) .cx-owner-brand .cx-logo {
   width: min(174px, 38vw) !important;
   flex: none;
 }
