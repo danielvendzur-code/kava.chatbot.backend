@@ -16,3 +16,7 @@ body[data-brand="liqoil"] {
 [data-brand="liqoil"] :is(.chip,.message.bot) { background: #f9f2eb; }
 [data-brand="liqoil"] .primary:hover { background: #8b4935; }
 [data-brand="liqoil"] :focus-visible { outline-color: #884f3d; }
+@media (max-width: 700px) {
+  [data-brand="liqoil"] .hero:not(.compact) .hero-photo { background: #d1d1d1; }
+  [data-brand="liqoil"] .hero:not(.compact) .hero-photo img { object-fit: contain; }
+}

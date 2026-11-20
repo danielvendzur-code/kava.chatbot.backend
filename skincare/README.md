@@ -43,3 +43,9 @@ Poradca odlišuje všetkých 8 pleťových sér z [oficiálnej kategórie](https
 - [Prevádzkovateľ](https://liqoil.sk/pages/vseobecne-obchodne-podmienky) · liqoil-pharm s.r.o., IČO 48078191, historicky Lakrom. [Finančný profil](https://finstat.sk/48078191) · tržby približne 453 tis. € za celý podnik v roku 2025.
 - [Produktové zdroje, ceny, dostupnosť a fotografie](liqoil/products.js) · 20. 11. 2026, všetkých 8 sér v 30 ml sklenenej fľaši. Titulná fotografia je z oficiálnej galérie Algae-Hyaluronic.
 - Cesta `/skincare/liqoil/index.html`.
+
+## Kontrola Preview
+
+CALTHA má 10 ciest výberu. FOR LIFE & MADAGA, Maat a LIQOIL majú po 8. Všetky cesty boli prejdené na živých nasadeniach tejto vetvy pri šírkach 320, 390 a 1440 px. Kontrolovali sa výsledky podľa odpovede, balenia, ceny, načítanie obrázkov, porovnania a vodorovné presahy. Samostatne boli odskúšané rozpočet, prázdny stav, návrat a nový výber, otázka o použití, porovnanie a reakcia pri chýbajúcom údaji. Pri LIQOIL je pokrytá hranica 10,89 € a 10,90 €. Použiteľné varianty a zdroje sú uložené pri jednotlivých produktoch.
+
+Katalogový chat používa pripravené odpovede z produktových podkladov a výsledok aktuálneho výberu. Zdravotné otázky odkazuje na zloženie a výrobcu. Samostatné subdomény sa riešia až po schválení ukážky a obnovení cien a skladu.
