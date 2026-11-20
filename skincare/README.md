@@ -23,4 +23,15 @@ Průvodce pomáhá porovnat pleťová séra podle hydratace, rozjasnění, olejo
 - Existující sekce „Průvodce výběrem kosmetiky“ ve zkoumané podobě zobrazuje katalog s filtry. Tato ukázka má interaktivní volby a kontextový katalogový chat.
 - [Logo](https://www.forlifemadaga.com/images/thumbs/0003266_logo_new.png) a Noto Sans z e-shopu. Titulní kompozice používá tři nezměněné fotografie balení Skin Booster.
 
-Vstup je `/skincare/madaga/index.html`. Obě ukázky lze při šířkách 320, 390 a 1440 px otevřít na `/tests/skincare-responsive.html` na stejné doméně Preview.
+Vstup je `/skincare/madaga/index.html`. Všechny ukázky lze při šířkách 320, 390 a 1440 px otevřít na `/tests/skincare-responsive.html` na stejné doméně Preview.
+
+## Maat · nová značka
+
+Průvodce vybírá mezi oplachovou emulzí a odličovacím olejem a doporučuje sérum podle textury, hydratace, rozjasnění nebo olejové výživy. Pokrývá 8 receptur, čtyři čisticí přípravky v 30 ml a čtyři séra v 20 ml. Nabízí navazující rutinu s rozpadem ceny.
+
+- [Oficiální obličejový sortiment](https://www.aromaaterapie.cz/collections/oblicej) a [zdroj k pořadí rutiny](https://www.aromaaterapie.cz/pages/jak-zacit)
+- [Provozovatel](https://www.aromaaterapie.cz/pages/obchodni-podminky) · Aromaaterapie s.r.o., IČO 04982851. [Velikost provozovatele](https://firmy.euro.cz/subjekt-aromaaterapie-s-r-o-04982851) · 6–9 zaměstnanců.
+- [Ověřené produkty a zdroje fotografií](maat/products.js) · 20. 11. 2026. Cena a sklad platí pro identifikátor varianty v každém odkazu. E-shop používá společnou fotografii obalu pro různé objemy téže receptury. Karta uvádí prodávaný objem samostatně.
+- [Logo](https://www.aromaaterapie.cz/cdn/shop/files/maat-logo-black.png?v=1755844679&width=386), písmo Figtree a paleta z obalů. Úvodní fotografie je z [galerie séra Hyaluron](https://www.aromaaterapie.cz/products/hydratacni-serum-hyaluron).
+
+Vstup je `/skincare/maat/index.html`.

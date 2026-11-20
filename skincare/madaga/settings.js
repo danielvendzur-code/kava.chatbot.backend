@@ -7,7 +7,7 @@ export const brand = {
   contact: 'https://www.forlifemadaga.com/cz/contactus-2',
   hero: './media/hero.webp',
   heroAlt: 'Oficiální fotografie sér Skin Booster',
-  title: 'Sérum podle toho, co vaše pleť potřebuje.',
+  title: 'Najděte své pleťové sérum.',
   intro: 'Rozjasnění, lehká hydratace nebo olejová výživa. Najděte pleťové sérum a porovnejte jeho texturu i způsob použití.',
   checkedAt: '20. 11. 2026',
   language: 'cs-CZ',

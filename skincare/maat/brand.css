@@ -1,0 +1,27 @@
+@font-face {
+  font-family: Figtree;
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('https://www.aromaaterapie.cz/cdn/fonts/figtree/figtree_n5.3b6b7df38aa5986536945796e1f947445832047c.woff2') format('woff2');
+}
+body[data-brand="maat"] {
+  --heading: Figtree, system-ui, sans-serif;
+  --action: #414530;
+  --muted: #585744;
+  --border: #d9d8cc;
+  background: #faf9f5;
+  color: #27291e;
+  font-family: Figtree, system-ui, sans-serif;
+}
+[data-brand="maat"] .top-inner img { width: 107px; }
+[data-brand="maat"] .hero { background: #e9e6d9; border-radius: 2px; }
+[data-brand="maat"] .hero-text { padding-block: clamp(24px,5vw,72px); }
+[data-brand="maat"] .hero-photo { background: #a8a094; }
+[data-brand="maat"] .hero-photo img { object-position: center 59%; }
+[data-brand="maat"] .eyebrow, [data-brand="maat"] .choice > span:last-child { color: #52583a; }
+[data-brand="maat"] :is(.workspace,.choice,.button,.result-card,.product-visual) { border-radius: 4px; }
+[data-brand="maat"] :is(.secondary:hover,.switcher button:hover,.switcher button[aria-pressed="true"],.choice:hover,.result-card,.message.user) { background: #eeeee2; color: #414530; }
+[data-brand="maat"] :is(.chip,.message.bot) { background: #f4f3ed; }
+[data-brand="maat"] .primary:hover { background: #565b43; }
+[data-brand="maat"] :focus-visible { outline-color: #67704a; }

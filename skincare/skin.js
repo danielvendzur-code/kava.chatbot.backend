@@ -5,7 +5,7 @@ export function mountAdvisor(brand, products) {
   const norm = value => value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
   const price = amount => new Intl.NumberFormat(brand.language, { style: 'currency', currency: brand.currency, maximumFractionDigits: 0 }).format(amount);
   const photo = (product, className = '') => `<img class="${className}" src="${escape(product.photo)}" alt="${escape(product.title)}">`;
-  const productLink = product => `<a href="${escape(product.url)}" target="_blank" rel="noopener">Detail v e-shopu <span aria-hidden="true">↗</span></a>`;
+  const productLink = product => `<a href="${escape(product.url)}" target="_blank" rel="noopener">Detail v e-shopu</a>`;
 
   function eligible(product) {
     return product.stock === 'Skladem' && (state.limit === null || product.price <= state.limit)
@@ -73,7 +73,7 @@ export function mountAdvisor(brand, products) {
         <div class="product-visual">${photo(main)}</div>
         <div class="product-info"><p class="eyebrow">${escape(main.role)}</p><h3>${escape(main.title)}</h3><p>${escape(reason)}</p>
           <div class="product-meta"><strong>${price(main.price)}</strong><span>${escape(main.pack)}</span></div>
-          <a class="button primary" href="${escape(main.url)}" target="_blank" rel="noopener">Zobrazit v e-shopu <span aria-hidden="true">↗</span></a>
+          <a class="button primary" href="${escape(main.url)}" target="_blank" rel="noopener">Zobrazit v e-shopu</a>
         </div>
       </article>
       ${alt ? `<article class="alternative">${photo(alt)}<div><p class="eyebrow">Alternativa</p><h3>${escape(alt.title)}</h3><p>${escape(state.choice.differences?.[altId] ?? alt.difference)}</p><p><strong>${price(alt.price)}</strong> · ${escape(alt.pack)} · ${productLink(alt)}</p></div></article>
@@ -136,7 +136,7 @@ export function mountAdvisor(brand, products) {
   }
 
   function render({ focus = false } = {}) {
-    app.innerHTML = `<header class="top"><div class="top-inner"><a href="${brand.shop}" aria-label="${escape(brand.name)} – e-shop"><img src="${brand.logo}" alt="${escape(brand.name)}"></a><a class="shop-link" href="${brand.category}" target="_blank" rel="noopener">${escape(brand.shopLabel)} <span aria-hidden="true">↗</span></a></div></header>
+    app.innerHTML = `<header class="top"><div class="top-inner"><a href="${brand.shop}" aria-label="${escape(brand.name)} – e-shop"><img src="${brand.logo}" alt="${escape(brand.name)}"></a><a class="shop-link" href="${brand.category}" target="_blank" rel="noopener">${escape(brand.shopLabel)}</a></div></header>
       <main>
         <section class="hero${state.started ? ' compact' : ''}" aria-labelledby="hero-title">
           <div class="hero-text"><p class="eyebrow">${escape(brand.name)} · Pleťová péče</p><h1 id="hero-title">${escape(brand.title)}</h1><p>${escape(brand.intro)}</p>
