@@ -126,7 +126,7 @@ footer { display: flex; justify-content: space-between; gap: 12px; padding-block
   .top-inner img { width: 113px; }
   main { padding-block: 19px 26px; }
   .hero { min-height: 0; grid-template-columns: 1fr; border-radius: 15px; }
-  .hero-photo { aspect-ratio: 1.55; order: -1; }
+  .hero-photo { aspect-ratio: 1.35; order: -1; }
   .hero-photo img { object-position: center 49%; }
   .hero-text { padding: 22px 19px 25px; }
   .hero-text h1 { margin-block: 8px 13px; }

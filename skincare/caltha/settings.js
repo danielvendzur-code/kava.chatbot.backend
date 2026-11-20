@@ -3,7 +3,7 @@ export const brand = {
   logo: './media/logo.webp',
   shop: 'https://www.caltha.cz/',
   category: 'https://www.caltha.cz/plet/',
-  contact: 'https://www.caltha.cz/kontakty/',
+  contact: 'https://www.caltha.cz/o-nakupu/',
   hero: './media/hero.webp',
   heroAlt: 'Oficiální fotografie pleťové péče Caltha',
   title: 'Péče o pleť podle toho, co právě hledáte.',

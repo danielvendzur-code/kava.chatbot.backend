@@ -7,7 +7,7 @@ const escape = value => String(value ?? '').replace(/[&<>"']/g, character => ({ 
 const norm = value => value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
 const price = amount => new Intl.NumberFormat(brand.language, { style: 'currency', currency: brand.currency, maximumFractionDigits: 0 }).format(amount);
 const photo = (product, className = '') => `<img class="${className}" src="${escape(product.photo)}" alt="${escape(product.title)}">`;
-const productLink = product => `<a href="${escape(product.url)}" target="_blank" rel="noopener">Detail na Caltha <span aria-hidden="true">↗</span></a>`;
+const productLink = product => `<a href="${escape(product.url)}" target="_blank" rel="noopener">Detail v e-shopu <span aria-hidden="true">↗</span></a>`;
 
 function eligible(product) {
   return product.stock === 'Skladem' && (state.limit === null || product.price <= state.limit)
@@ -58,7 +58,7 @@ function advisor() {
     const choices = step?.choices ?? brand.steps;
     return `<div class="panel-head"><p class="eyebrow">${step ? escape(step.name) : 'Výběr péče'}</p><h2 id="panel-title" tabindex="-1">${escape(step?.title ?? 'Který krok péče hledáte?')}</h2></div>
       <div class="choice-grid ${step ? 'specific' : ''}">${choices.map((choice, index) => `<button type="button" class="choice" data-action="choose" data-index="${index}">
-        ${photo(products[choice.photo ?? choice.ids[0]])}<span><strong>${escape(choice.title ?? choice.name)}</strong><small>${escape(choice.hint ?? choice.description)}</small></span><span aria-hidden="true">→</span>
+        ${photo(products[choice.photo ?? choice.ids[0]])}<span><strong>${escape(step ? choice.title : choice.name)}</strong><small>${escape(choice.hint ?? choice.description)}</small></span><span aria-hidden="true">→</span>
         </button>`).join('')}</div>${preferences()}
       ${step ? '<button type="button" class="text-button" data-action="back">← Zpět</button>' : ''}`;
   }

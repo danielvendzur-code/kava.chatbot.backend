@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Kontrola šířek skincare průvodce</title>
+  <style>
+    body { margin: 16px; font: 16px/1.4 system-ui, sans-serif; }
+    iframe { display: block; height: 820px; border: 1px solid #aaa; }
+    nav { display: flex; gap: 12px; }
+  </style>
+</head>
+<body>
+  <h1>Kontrola šířky průvodce</h1>
+  <nav aria-label="Šířka okna">
+    <button type="button" data-width="320">320 px</button>
+    <button type="button" data-width="390">390 px</button>
+    <button type="button" data-width="1440">1440 px</button>
+  </nav>
+  <p id="width">320 px</p>
+  <iframe title="CALTHA" width="320" src="../skincare/caltha/index.html"></iframe>
+  <script>
+    const frame = document.querySelector('iframe');
+    document.querySelector('nav').addEventListener('click', event => {
+      const width = event.target.dataset.width;
+      if (!width) return;
+      frame.width = width;
+      document.querySelector('#width').textContent = width + ' px';
+    });
+  </script>
+</body>
+</html>
