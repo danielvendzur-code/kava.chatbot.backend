@@ -35,3 +35,11 @@ Průvodce vybírá mezi oplachovou emulzí a odličovacím olejem a doporučuje 
 - [Logo](https://www.aromaaterapie.cz/cdn/shop/files/maat-logo-black.png?v=1755844679&width=386), písmo Figtree a paleta z obalů. Úvodní fotografie je z [galerie séra Hyaluron](https://www.aromaaterapie.cz/products/hydratacni-serum-hyaluron).
 
 Vstup je `/skincare/maat/index.html`.
+
+## LIQOIL · nová značka
+
+Poradca odlišuje všetkých 8 pleťových sér z [oficiálnej kategórie](https://liqoil.sk/collections/sera) podľa účelu, textúry a zloženia. Zostáva pri výbere jedného kroku rutiny. Rozpočet používa ceny v eurách vrátane centov a rozhranie aj chat sú po slovensky.
+
+- [Prevádzkovateľ](https://liqoil.sk/pages/vseobecne-obchodne-podmienky) · liqoil-pharm s.r.o., IČO 48078191, historicky Lakrom. [Finančný profil](https://finstat.sk/48078191) · tržby približne 453 tis. € za celý podnik v roku 2025.
+- [Produktové zdroje, ceny, dostupnosť a fotografie](liqoil/products.js) · 20. 11. 2026, všetkých 8 sér v 30 ml sklenenej fľaši. Titulná fotografia je z oficiálnej galérie Algae-Hyaluronic.
+- Cesta `/skincare/liqoil/index.html`.

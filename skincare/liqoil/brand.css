@@ -1,0 +1,18 @@
+body[data-brand="liqoil"] {
+  --heading: "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+  --action: #713d2f;
+  --muted: #674d42;
+  --border: #e4d3c9;
+  background: #fff9f5;
+  color: #37221a;
+}
+[data-brand="liqoil"] .top-inner img { width: 46px; }
+[data-brand="liqoil"] .hero { background: #f5e4db; border-radius: 10px; }
+[data-brand="liqoil"] .hero-photo { background: #e5c7bc; }
+[data-brand="liqoil"] .hero-photo img { object-position: center; }
+[data-brand="liqoil"] .eyebrow, [data-brand="liqoil"] .choice > span:last-child { color: #8b4935; }
+[data-brand="liqoil"] :is(.workspace,.choice,.button,.result-card,.product-visual) { border-radius: 8px; }
+[data-brand="liqoil"] :is(.secondary:hover,.switcher button:hover,.switcher button[aria-pressed="true"],.choice:hover,.result-card,.message.user) { background: #f7e7df; color: #713d2f; }
+[data-brand="liqoil"] :is(.chip,.message.bot) { background: #f9f2eb; }
+[data-brand="liqoil"] .primary:hover { background: #8b4935; }
+[data-brand="liqoil"] :focus-visible { outline-color: #884f3d; }
