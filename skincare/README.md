@@ -72,3 +72,18 @@ Vstup je [/skincare/gallery.html](gallery.html). Každá ukážka používa spol
 - [Manufaktura](manufaktura/index.html) · sérum, krém a olej
 - [Biorythme](biorythme/index.html) · bezvodé krémy v 30 ml
 - [RYOR](ryor/index.html) · ceramidové a hyalurónové séra
+
+## Druhá séria skincare poradcov
+
+Spoločná [galéria](gallery.html) obsahuje obe série. Nové ukážky používajú fotografie z e-shopov v otázkach, porovnaní aj odporúčaniach. Ceny a sklad boli skontrolované 20. 11. 2026. Pri viacerých baleniach sa zobrazuje cena uvedeného variantu.
+
+- [Yeskinye](yeskinye/index.html) · séra Uoga Uoga, Nobilis Tilia a Inlight
+- [PURITY VISION](purityvision/index.html) · hyaluron, vitamín C, niacinamid a nočné sérum
+- [NATAVA](natava/index.html) · vodné sérum a tri olejové receptúry
+- [Emerosa](emerosa/index.html) · výber zo štyroch receptúr Lumene
+- [ANNA BRANDEJS](anna/index.html) · dve séra, nočný a očný krém
+- [Dermacol](dermacol/index.html) · štyri séra podľa hlavnej zložky
+- [OMORFIA](omorfia/index.html) · odličovací balzam, krém a dva oleje
+- [Cannor](cannor/index.html) · dve séra a dva pleťové oleje
+- [Mýdlárna ERDÉ](erde/index.html) · odličovanie, tonizácia a krém
+- [Geek & Gorgeous](geek/index.html) · hydratačné tonikum a tri séra

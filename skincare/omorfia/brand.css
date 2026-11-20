@@ -1,0 +1,16 @@
+[data-collection="skincare-20261120"][data-brand="omorfia"] {
+  --action: #526449;
+  --tint: #f3f3e9;
+  --plate: #e4e6d5;
+  --paper: #fafaf4;
+  --heading: "Baskervville", Georgia, serif;
+}
+
+[data-collection][data-brand="omorfia"] .top-inner img {
+  width: 48px;
+  height: 48px;
+  padding: 6px;
+  border-radius: 6px;
+  background: var(--action);
+  object-position: center;
+}
