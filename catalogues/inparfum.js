@@ -901,6 +901,237 @@ globalThis.CX_CATALOGUES.inparfum = {
      "navigationGroupingIsNotOfficialFragranceFamily": true
     }
    }
+  },
+  {
+   "id": "in-185",
+   "name": "In Parfum w158",
+   "url": "https://www.inparfum.cz/obchod/prilezitost/bezny-den/in-parfum-185/",
+   "priceAmount": 399,
+   "price": "399 Kč",
+   "currency": "CZK",
+   "volume": "50 ml",
+   "category": "fragrance",
+   "kind": "Parfémová voda",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Bergamot, zázvor, pomerančový květ. Na e-shopu zvolte 50 ml.",
+   "reason": "Bergamot, zázvor, pomerančový květ. Na e-shopu zvolte 50 ml.",
+   "photo": "/assets/s5/inparfum/in-185.jpg",
+   "source": {
+    "series": "s5",
+    "url": "https://www.inparfum.cz/obchod/prilezitost/bezny-den/in-parfum-185/",
+    "verifiedAt": "2026-11-20T10:34:27+00:00",
+    "sourceSha256": "548258aef2514068b7a67741ede8df1259f81c97104f50e7276b31f8f89be6d3",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "WooCommerce selected variant",
+     "variationId": 1216,
+     "attribute_pa_variant_vone": "50-ml",
+     "isInStock": true
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 399,
+     "currency": "CZK",
+     "vatSource": "https://www.inparfum.cz/obchod/prilezitost/bezny-den/in-parfum-185/"
+    },
+    "packEvidence": {
+     "pack": "50 ml"
+    },
+    "variantSelectionRequired": true,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://www.inparfum.cz/wp-content/uploads/2024/11/w158-50ml-bez-original-1024x683.jpg",
+    "photoEvidence": {
+     "file": "in-185.jpg",
+     "url": "https://www.inparfum.cz/wp-content/uploads/2024/11/w158-50ml-bez-original-1024x683.jpg",
+     "sha256": "a174ade3ea444e6928012b34474ebf618e6277ef08e023a117fac25dfdfd5d34",
+     "selectedPack": "50 ml",
+     "scope": "Official product gallery"
+    },
+    "scent": "Bergamot, zázvor, pomerančový květ",
+    "fragrance": {
+     "notes": [
+      "bergamot",
+      "zázvor",
+      "pomerančový květ"
+     ],
+     "officialFamilies": [],
+     "concentrationDisplay": "Parfémová voda",
+     "notesEvidence": {
+      "url": "https://www.inparfum.cz/obchod/prilezitost/bezny-den/in-parfum-185/",
+      "sourceText": "Vonné tóny: bergamot, zázvor, pomerančový květ",
+      "sourceLanguage": "cs"
+     }
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.inparfum.cz/obchod/prilezitost/bezny-den/in-parfum-185/",
+     "sourceText": "Vonné tóny: bergamot, zázvor, pomerančový květ",
+     "navigationLabel": "bergamot, zázvor, pomerančový květ",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    },
+    "usagePurpose": "personal-inspired-fragrance",
+    "selectionTraits": {
+     "fragranceDirection": "citrus",
+     "fragranceProfile": "in-185"
+    },
+    "identityDisclosure": "Jde o vůni In Parfum."
+   }
+  },
+  {
+   "id": "in-194",
+   "name": "In Parfum w073",
+   "url": "https://www.inparfum.cz/obchod/prilezitost/bezny-den/in-parfum-194/",
+   "priceAmount": 399,
+   "price": "399 Kč",
+   "currency": "CZK",
+   "volume": "50 ml",
+   "category": "fragrance",
+   "kind": "Parfémová voda",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Hruška, káva, mandle. Na e-shopu zvolte 50 ml.",
+   "reason": "Hruška, káva, mandle. Na e-shopu zvolte 50 ml.",
+   "photo": "/assets/s5/inparfum/in-194.jpg",
+   "source": {
+    "series": "s5",
+    "url": "https://www.inparfum.cz/obchod/prilezitost/bezny-den/in-parfum-194/",
+    "verifiedAt": "2026-11-20T10:34:27+00:00",
+    "sourceSha256": "f9180c6a6c24ee1a0b6a27957e77913abe21d49b2c59afec5e0cda1be55d4764",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "WooCommerce selected variant",
+     "variationId": 1171,
+     "attribute_pa_variant_vone": "50-ml",
+     "isInStock": true
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 399,
+     "currency": "CZK",
+     "vatSource": "https://www.inparfum.cz/obchod/prilezitost/bezny-den/in-parfum-194/"
+    },
+    "packEvidence": {
+     "pack": "50 ml"
+    },
+    "variantSelectionRequired": true,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://www.inparfum.cz/wp-content/uploads/2024/11/w073-50ml-bez-original-1024x683.jpg",
+    "photoEvidence": {
+     "file": "in-194.jpg",
+     "url": "https://www.inparfum.cz/wp-content/uploads/2024/11/w073-50ml-bez-original-1024x683.jpg",
+     "sha256": "b26539b93fa4aaf70572f24dc81b45fe7ef7557e943dabcca93d946e5b4d3f41",
+     "selectedPack": "50 ml",
+     "scope": "Official product gallery"
+    },
+    "scent": "Hruška, káva, mandle",
+    "fragrance": {
+     "notes": [
+      "hruška",
+      "káva",
+      "mandle"
+     ],
+     "officialFamilies": [],
+     "concentrationDisplay": "Parfémová voda",
+     "notesEvidence": {
+      "url": "https://www.inparfum.cz/obchod/prilezitost/bezny-den/in-parfum-194/",
+      "sourceText": "Vonné tóny: hruška, káva, mandle",
+      "sourceLanguage": "cs"
+     }
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.inparfum.cz/obchod/prilezitost/bezny-den/in-parfum-194/",
+     "sourceText": "Vonné tóny: hruška, káva, mandle",
+     "navigationLabel": "hruška, káva, mandle",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    },
+    "usagePurpose": "personal-inspired-fragrance",
+    "selectionTraits": {
+     "fragranceDirection": "sweet",
+     "fragranceProfile": "in-194"
+    },
+    "identityDisclosure": "Jde o vůni In Parfum."
+   }
+  },
+  {
+   "id": "in-298",
+   "name": "In Parfum w076",
+   "url": "https://www.inparfum.cz/obchod/vune/aromaticke/in-parfum-298/",
+   "priceAmount": 399,
+   "price": "399 Kč",
+   "currency": "CZK",
+   "volume": "50 ml",
+   "category": "fragrance",
+   "kind": "Parfémová voda",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Zelené jablko, ambroxan, geranium. Na e-shopu zvolte 50 ml.",
+   "reason": "Zelené jablko, ambroxan, geranium. Na e-shopu zvolte 50 ml.",
+   "photo": "/assets/s5/inparfum/in-298.jpg",
+   "source": {
+    "series": "s5",
+    "url": "https://www.inparfum.cz/obchod/vune/aromaticke/in-parfum-298/",
+    "verifiedAt": "2026-11-20T10:34:27+00:00",
+    "sourceSha256": "e8ff0dbc0cc9ddfa64f37e4a069b33aefa3f21e797ca98f89cfb83167cff58c5",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "WooCommerce selected variant",
+     "variationId": 1103,
+     "attribute_pa_variant_vone": "50-ml",
+     "isInStock": true
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 399,
+     "currency": "CZK",
+     "vatSource": "https://www.inparfum.cz/obchod/vune/aromaticke/in-parfum-298/"
+    },
+    "packEvidence": {
+     "pack": "50 ml"
+    },
+    "variantSelectionRequired": true,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://www.inparfum.cz/wp-content/uploads/2024/11/w076-50ml-bez-original-1024x683.jpg",
+    "photoEvidence": {
+     "file": "in-298.jpg",
+     "url": "https://www.inparfum.cz/wp-content/uploads/2024/11/w076-50ml-bez-original-1024x683.jpg",
+     "sha256": "0f082242cf90dc4946e09f7ca06fc68cdf3ab9ff404bb85b3b37340bd5b22e25",
+     "selectedPack": "50 ml",
+     "scope": "Official product gallery"
+    },
+    "scent": "Zelené jablko, ambroxan, geranium",
+    "fragrance": {
+     "notes": [
+      "zelené jablko",
+      "ambroxan",
+      "geranium"
+     ],
+     "officialFamilies": [],
+     "concentrationDisplay": "Parfémová voda",
+     "notesEvidence": {
+      "url": "https://www.inparfum.cz/obchod/vune/aromaticke/in-parfum-298/",
+      "sourceText": "Vonné tóny: zelené jablko, ambroxan, geranium",
+      "sourceLanguage": "cs"
+     }
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.inparfum.cz/obchod/vune/aromaticke/in-parfum-298/",
+     "sourceText": "Vonné tóny: zelené jablko, ambroxan, geranium",
+     "navigationLabel": "zelené jablko, ambroxan, geranium",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    },
+    "usagePurpose": "personal-inspired-fragrance",
+    "selectionTraits": {
+     "fragranceDirection": "flower",
+     "fragranceProfile": "in-298"
+    },
+    "identityDisclosure": "Jde o vůni In Parfum."
+   }
   }
  ],
  "revenue": {
@@ -922,6 +1153,7 @@ globalThis.CX_CATALOGUES.inparfum = {
   "Originalsellerphoto includesdesignerinspirationinset; explicitownbrandnotoriginaldisclosure.",
   "Product185photosreadW158; excludedunresolvedidentity. NewM209existingcanonical232URL/H1+actualphotoM209 verified, no inventedURL.",
   "M310sourcebaseempty, onlyactual3notesdisplayedflat. MixedCZ/SKsourcewording retained, no fakeadditionalnote.",
-  "OwnWPEhome/productcookiesOdmítnout. Manualfilter/converterFIT_REVIEW, notautomaticAI claim. Otherautomationmodesunknown."
+  "OwnWPEhome/productcookiesOdmítnout. Manualfilter/converterFIT_REVIEW, notautomaticAI claim. Otherautomationmodesunknown.",
+  "Rozšířený výběr používá ceny a balení z uvedených produktových stránek."
  ]
 };

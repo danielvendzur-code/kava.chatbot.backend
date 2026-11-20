@@ -1426,9 +1426,9 @@ Object.assign(window.S3_REG.demos, {
       "mark": "/assets/s5/mmnt/avatar.svg",
       "greeting": "Dobrý den. Pomohu vám porovnat dvě vybrané vůně svíček, jejich balení a ceny.",
       "quickChips": [
-        "Dřevitá vůně s fialkou",
-        "Pomeranč a skořice",
-        "Ceny a balení svíček",
+        "Les is more",
+        "Bergamood",
+        "Svíčky jako dárek",
         "Porovnat dvě vůně"
       ],
       "theme": {
@@ -1452,6 +1452,30 @@ Object.assign(window.S3_REG.demos, {
         "",
         "Pomeranč, skořice a hřebíček",
         ""
+      ],
+      "wood-fresh": [
+        "Dřevité a svěží vůně",
+        "",
+        "Dřevité a svěží vůně",
+        ""
+      ],
+      "seasonal-gift": [
+        "Sváteční vůně a dárková sada",
+        "",
+        "Sváteční vůně a dárková sada",
+        ""
+      ],
+      "bergamood": [
+        "Bergamot, mech a kardamom",
+        "",
+        "Bergamot, mech a kardamom",
+        ""
+      ],
+      "duo": [
+        "Duo s bergamotem a cedrem",
+        "",
+        "Duo s bergamotem a cedrem",
+        ""
       ]
     },
     "stepCopy": {
@@ -1474,6 +1498,18 @@ Object.assign(window.S3_REG.demos, {
       ],
       "spice": [
         "/assets/s5/mmnt/spice.jpg"
+      ],
+      "wood-fresh": [
+        "/assets/s5/mmnt/forest.jpg"
+      ],
+      "seasonal-gift": [
+        "/assets/s5/mmnt/duo.jpg"
+      ],
+      "bergamood": [
+        "/assets/s5/mmnt/bergamood.jpg"
+      ],
+      "duo": [
+        "/assets/s5/mmnt/duo.jpg"
       ]
     },
     "compareProductIds": [
@@ -1502,19 +1538,28 @@ Object.assign(window.S3_REG.demos, {
       "version": 1,
       "enabled": true,
       "alternatives": {
-        "forest": "spice",
-        "spice": "forest"
+        "forest": "bergamood",
+        "spice": "duo",
+        "bergamood": "forest",
+        "duo": "spice"
       },
       "scentProfile": {
         "version": 1,
         "mode": "source-notes-no-numeric-strength"
-      }
+      },
+      "maxAlternatives": 2
     },
     "fragrancePresentation": {
       "version": 1,
       "hideStepEstimate": true
     },
-    "companyCss": "/n447/s5/brands/mmnt.css"
+    "companyCss": "/n447/s5/brands/mmnt.css",
+    "catalogueShowcase": {
+      "questions": [
+        "Jak voní Bergamood?",
+        "Jakou svíčku vybrat jako dárek?"
+      ]
+    }
   },
   "aromis": {
     "series": "s5",
@@ -3045,9 +3090,9 @@ Object.assign(window.S3_REG.demos, {
       "mark": "/assets/s5/ravina/avatar.svg",
       "greeting": "Dobrý den. Pomohu vám porovnat vybrané vůně, jejich tóny, balení a ceny.",
       "quickChips": [
-        "Rybíz a vanilka",
-        "Citrusy a lilie",
-        "Ceny a balení parfémů",
+        "Svíčka s vůní jablka",
+        "Květinové svíčky",
+        "Ovocný parfém",
         "Porovnat dvě vůně"
       ],
       "theme": {
@@ -3071,11 +3116,107 @@ Object.assign(window.S3_REG.demos, {
         "",
         "Citrusy, lilie a pižmový základ",
         ""
+      ],
+      "warm-fruit": [
+        "Parfémy · ovoce a hřejivé tóny",
+        "",
+        "Parfémy · ovoce a hřejivé tóny",
+        ""
+      ],
+      "bright-floral": [
+        "Parfémy · citrusy a květiny",
+        "",
+        "Parfémy · citrusy a květiny",
+        ""
+      ],
+      "f022": [
+        "Frézie, lilie a santal",
+        "",
+        "Frézie, lilie a santal",
+        ""
+      ],
+      "f104": [
+        "Bergamot, ylang-ylang a santal",
+        "",
+        "Bergamot, ylang-ylang a santal",
+        ""
+      ],
+      "f103": [
+        "Pivoňka, liči a růžový pepř",
+        "",
+        "Pivoňka, liči a růžový pepř",
+        ""
+      ],
+      "f100": [
+        "Malina, broskev a ambra",
+        "",
+        "Malina, broskev a ambra",
+        ""
+      ],
+      "r-magnolia": [
+        "Magnólie",
+        "",
+        "Magnólie",
+        ""
+      ],
+      "r-rose": [
+        "Růže",
+        "",
+        "Růže",
+        ""
+      ],
+      "r-lavender": [
+        "Levandule",
+        "",
+        "Levandule",
+        ""
+      ],
+      "r-lilac": [
+        "Šeřík",
+        "",
+        "Šeřík",
+        ""
+      ],
+      "r-apple": [
+        "Pečené jablko",
+        "",
+        "Pečené jablko",
+        ""
+      ],
+      "r-pumpkin": [
+        "Dýně",
+        "",
+        "Dýně",
+        ""
+      ],
+      "r-cocoa": [
+        "Horká čokoláda",
+        "",
+        "Horká čokoláda",
+        ""
+      ],
+      "r-wine": [
+        "Svařené víno",
+        "",
+        "Svařené víno",
+        ""
+      ],
+      "candle-flowers": [
+        "Svíčky · květinové a bylinné",
+        "",
+        "Svíčky · květinové a bylinné",
+        ""
+      ],
+      "candle-warm": [
+        "Svíčky · sladké a kořeněné",
+        "",
+        "Svíčky · sladké a kořeněné",
+        ""
       ]
     },
     "stepCopy": {
       "fragranceDirection": [
-        "Jaká vůně je vám blízká?",
+        "Hledáte parfém, nebo svíčku?",
         "",
         "Vonné tóny"
       ],
@@ -3093,6 +3234,54 @@ Object.assign(window.S3_REG.demos, {
       ],
       "lily": [
         "/assets/s5/ravina/lily.jpg"
+      ],
+      "warm-fruit": [
+        "/assets/s5/ravina/berry.jpg"
+      ],
+      "bright-floral": [
+        "/assets/s5/ravina/lily.jpg"
+      ],
+      "f022": [
+        "/assets/s5/ravina/f022.jpg"
+      ],
+      "f104": [
+        "/assets/s5/ravina/apar-standard.jpg"
+      ],
+      "f103": [
+        "/assets/s5/ravina/apar-standard.jpg"
+      ],
+      "f100": [
+        "/assets/s5/ravina/apar-standard.jpg"
+      ],
+      "r-magnolia": [
+        "/assets/s5/ravina/r-magnolia.jpg"
+      ],
+      "r-rose": [
+        "/assets/s5/ravina/r-rose.jpg"
+      ],
+      "r-lavender": [
+        "/assets/s5/ravina/r-lavender.jpg"
+      ],
+      "r-lilac": [
+        "/assets/s5/ravina/r-lilac.jpg"
+      ],
+      "r-apple": [
+        "/assets/s5/ravina/r-apple.jpg"
+      ],
+      "r-pumpkin": [
+        "/assets/s5/ravina/r-pumpkin.jpg"
+      ],
+      "r-cocoa": [
+        "/assets/s5/ravina/r-cocoa.jpg"
+      ],
+      "r-wine": [
+        "/assets/s5/ravina/r-wine.jpg"
+      ],
+      "candle-flowers": [
+        "/assets/s5/ravina/r-lavender.jpg"
+      ],
+      "candle-warm": [
+        "/assets/s5/ravina/r-apple.jpg"
       ]
     },
     "compareProductIds": [
@@ -3104,15 +3293,15 @@ Object.assign(window.S3_REG.demos, {
       "titleSuffix": "výběr vůně",
       "tab": "Výběr vůně",
       "advisorName": "Průvodce výběrem vůně",
-      "entrySmall": "VÝBĚR VŮNĚ",
-      "entryTitle": "Objevte vůni podle svého vkusu",
+      "entrySmall": "Parfémy a svíčky",
+      "entryTitle": "Vyberte parfém nebo svíčku",
       "placeholder": "Zeptejte se na charakter vůně, balení nebo cenu…",
-      "heading": "Pomozte zákazníkovi objevit vůni podle jeho vkusu.",
+      "heading": "Pomozte zákazníkovi vybrat parfém nebo vonnou svíčku.",
       "lead": "Výběr porovná dvě vybrané vůně APAR. Ukáže konkrétní fotografii, charakter vůně, přesné balení, cenu a odkaz. Jde o inspirované vůně, nikoli originály jiných značek.",
       "includedChat": "Vonné tóny, balení, ceny a porovnání vybraných vůní.",
       "includedAdvisor": "Výběr vůně, její profil a porovnání dvou kompozic.",
       "greeting": "Dobrý den. Pomohu vám porovnat vybrané vůně, jejich tóny, balení a ceny.",
-      "teaserTitle": "Objevte vůni podle svého vkusu",
+      "teaserTitle": "Najděte parfém nebo svíčku",
       "teaserNote": "Konkrétní vůně, balení a cena",
       "teaserAria": "Otevřít výběr vůně",
       "source": "ravina-demo"
@@ -3121,19 +3310,30 @@ Object.assign(window.S3_REG.demos, {
       "version": 1,
       "enabled": true,
       "alternatives": {
-        "berry": "lily",
-        "lily": "berry"
+        "berry": "f103",
+        "lily": "f022",
+        "f103": "berry",
+        "f022": "lily",
+        "f104": "f022",
+        "f100": "berry"
       },
       "scentProfile": {
         "version": 1,
         "mode": "source-notes-no-numeric-strength"
-      }
+      },
+      "maxAlternatives": 2
     },
     "fragrancePresentation": {
       "version": 1,
       "hideStepEstimate": true
     },
-    "companyCss": "/n447/s5/brands/ravina.css"
+    "companyCss": "/n447/s5/brands/ravina.css",
+    "catalogueShowcase": {
+      "questions": [
+        "Která svíčka voní po jablku nebo skořici?",
+        "Jaký parfém má ovocné tóny?"
+      ]
+    }
   },
   "luxparfum": {
     "series": "s5",
@@ -4938,6 +5138,24 @@ Object.assign(window.S3_REG.demos, {
         "",
         "Aldehyd, neroli a vanilka",
         ""
+      ],
+      "in-185": [
+        "Bergamot, zázvor, pomerančový květ",
+        "",
+        "Bergamot, zázvor, pomerančový květ",
+        ""
+      ],
+      "in-194": [
+        "Hruška, káva, mandle",
+        "",
+        "Hruška, káva, mandle",
+        ""
+      ],
+      "in-298": [
+        "Zelené jablko, ambroxan, geranium",
+        "",
+        "Zelené jablko, ambroxan, geranium",
+        ""
       ]
     },
     "stepCopy": {
@@ -4981,6 +5199,15 @@ Object.assign(window.S3_REG.demos, {
       ],
       "m209": [
         "/assets/s5/inparfum/m209.jpg"
+      ],
+      "in-185": [
+        "/assets/s5/inparfum/in-185.jpg"
+      ],
+      "in-194": [
+        "/assets/s5/inparfum/in-194.jpg"
+      ],
+      "in-298": [
+        "/assets/s5/inparfum/in-298.jpg"
       ]
     },
     "compareProductIds": [
@@ -5019,13 +5246,20 @@ Object.assign(window.S3_REG.demos, {
       "scentProfile": {
         "version": 1,
         "mode": "source-notes-no-numeric-strength"
-      }
+      },
+      "maxAlternatives": 2
     },
     "fragrancePresentation": {
       "version": 1,
       "hideStepEstimate": true
     },
-    "companyCss": "/n447/s5/brands/inparfum.css"
+    "companyCss": "/n447/s5/brands/inparfum.css",
+    "catalogueShowcase": {
+      "questions": [
+        "Které vůně mají bergamot?",
+        "Co vybrat, když mám rád sladší vůně?"
+      ]
+    }
   },
   "aromea": {
     "series": "s5",
@@ -5475,6 +5709,18 @@ Object.assign(window.S3_REG.demos, {
         "",
         "Lehká dřevitá vůně",
         ""
+      ],
+      "sc-berries": [
+        "Lesní ovoce (Santa Barbara Berry)",
+        "",
+        "Lesní ovoce (Santa Barbara Berry)",
+        ""
+      ],
+      "sc-linen": [
+        "Čerstvě vypráno (Fresh Linen)",
+        "",
+        "Čerstvě vypráno (Fresh Linen)",
+        ""
       ]
     },
     "stepCopy": {
@@ -5518,6 +5764,12 @@ Object.assign(window.S3_REG.demos, {
       ],
       "sunset": [
         "/assets/s5/scents/sunset.jpg"
+      ],
+      "sc-berries": [
+        "/assets/s5/scents/sc-berries.jpg"
+      ],
+      "sc-linen": [
+        "/assets/s5/scents/sc-linen.jpg"
       ]
     },
     "compareProductIds": [
@@ -5556,13 +5808,20 @@ Object.assign(window.S3_REG.demos, {
       "scentProfile": {
         "version": 1,
         "mode": "source-notes-no-numeric-strength"
-      }
+      },
+      "maxAlternatives": 2
     },
     "fragrancePresentation": {
       "version": 1,
       "hideStepEstimate": true
     },
-    "companyCss": "/n447/s5/brands/scents.css"
+    "companyCss": "/n447/s5/brands/scents.css",
+    "catalogueShowcase": {
+      "questions": [
+        "Která vůně do auta je spíš jemná?",
+        "Jak se liší Vůně moře a Čerstvě vypráno?"
+      ]
+    }
   },
   "mojehygge": {
     "series": "s5",

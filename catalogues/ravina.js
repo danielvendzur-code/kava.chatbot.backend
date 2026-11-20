@@ -145,7 +145,7 @@ globalThis.CX_CATALOGUES.ravina = {
     "identityDisclosure": "Own APAR inspiredfragrance, not designeroriginal or guaranteedidenticalsmell.",
     "photoQualification": "Original official productgallery. Selected50mlSTANDARD publicSKU. Publisher altlegendusesPREMIUM inconsistently; actualphoto APAR50ml labelhasnoPREMIUM assertion. Gallerymayinclude separatedesignerinspirationinset, not soldasdesigneroriginal.",
     "selectionTraits": {
-     "fragranceDirection": "berry",
+     "fragranceDirection": "warm-fruit",
      "fragranceProfile": "berry"
     },
     "selectionTraitsEvidence": {
@@ -282,7 +282,7 @@ globalThis.CX_CATALOGUES.ravina = {
     "identityDisclosure": "Own APAR inspiredfragrance, not designeroriginal or guaranteedidenticalsmell.",
     "photoQualification": "Original official productgallery. Selected50mlSTANDARD publicSKU. Publisher altlegendusesPREMIUM inconsistently; actualphoto APAR50ml labelhasnoPREMIUM assertion. Gallerymayinclude separatedesignerinspirationinset, not soldasdesigneroriginal.",
     "selectionTraits": {
-     "fragranceDirection": "lily",
+     "fragranceDirection": "bright-floral",
      "fragranceProfile": "lily"
     },
     "selectionTraitsEvidence": {
@@ -290,6 +290,902 @@ globalThis.CX_CATALOGUES.ravina = {
      "sourceText": "Vonné tóny: citrusy, lilie, frézie, fialka, vanilka, pižmo",
      "navigationLabel": "Citrusy, lilie a pižmový základ",
      "navigationGroupingIsNotOfficialFragranceFamily": true
+    }
+   }
+  },
+  {
+   "id": "f022",
+   "name": "APAR F022",
+   "url": "https://ravina.cz/imitace-damske-parfemy-calvin-klein/677-1117-imitace-parfemu-calvin-klein-eternity.html#/1-objem-50_ml_standard",
+   "priceAmount": 269,
+   "price": "269 Kč",
+   "currency": "CZK",
+   "volume": "50 ml STANDARD",
+   "category": "fragrance",
+   "kind": "Parfém",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Frézie, lilie, santalové dřevo. Vůně APAR. Ilustrační fotografie flakónu APAR.",
+   "reason": "Frézie, lilie, santalové dřevo. Vůně APAR. Ilustrační fotografie flakónu APAR.",
+   "photo": "/assets/s5/ravina/f022.jpg",
+   "source": {
+    "series": "s5",
+    "url": "https://ravina.cz/imitace-damske-parfemy-calvin-klein/677-1117-imitace-parfemu-calvin-klein-eternity.html#/1-objem-50_ml_standard",
+    "verifiedAt": "2026-11-20T10:27:58+00:00",
+    "sourceSha256": "373520a88c327de62e590882a54017ff3fb76b40ac1d24b9c7ff232f13c1e60c",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "PrestaShop selected product attributes",
+     "productId": 677,
+     "variantId": 1117,
+     "quantity": 6,
+     "publisherAvailability": "Skladem"
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 269,
+     "currency": "CZK",
+     "vatSource": "https://ravina.cz/imitace-damske-parfemy-calvin-klein/677-1117-imitace-parfemu-calvin-klein-eternity.html#/1-objem-50_ml_standard"
+    },
+    "packEvidence": {
+     "pack": "50 ml STANDARD"
+    },
+    "variantSelectionRequired": false,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://ravina.cz/1579-large_default/imitace-parfemu-calvin-klein-eternity.jpg",
+    "photoEvidence": {
+     "file": "f022.jpg",
+     "url": "https://ravina.cz/1579-large_default/imitace-parfemu-calvin-klein-eternity.jpg",
+     "sha256": "eb7120ad32924fa2a896bd324bf6ede8fa67be48e4a079c93ce4980412132e0a",
+     "selectedPack": "50 ml STANDARD",
+     "scope": "Official APAR packaging photo, illustrative across fragrances"
+    },
+    "scent": "Frézie, lilie, santalové dřevo",
+    "fragrance": {
+     "notes": [
+      "frézie",
+      "lilie",
+      "santalové dřevo"
+     ],
+     "officialFamilies": [],
+     "concentrationDisplay": "Parfém",
+     "notesEvidence": {
+      "url": "https://ravina.cz/imitace-damske-parfemy-calvin-klein/677-1117-imitace-parfemu-calvin-klein-eternity.html#/1-objem-50_ml_standard",
+      "sourceText": "Vonné tóny: frézie, lilie, santalové dřevo",
+      "sourceLanguage": "cs"
+     }
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://ravina.cz/imitace-damske-parfemy-calvin-klein/677-1117-imitace-parfemu-calvin-klein-eternity.html#/1-objem-50_ml_standard",
+     "sourceText": "Vonné tóny: frézie, lilie, santalové dřevo",
+     "navigationLabel": "frézie, lilie, santalové dřevo",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    },
+    "identityDisclosure": "Jde o vůni APAR, nikoli originál jiné značky.",
+    "photoQualification": "Ilustrační fotografie flakónu APAR. Stejné balení může být použito pro více vůní.",
+    "selectionTraits": {
+     "fragranceDirection": "bright-floral",
+     "fragranceProfile": "f022"
+    }
+   }
+  },
+  {
+   "id": "f104",
+   "name": "APAR F104",
+   "url": "https://ravina.cz/imitace-damske-parfemy-inspirovane-gucci-/712-1181-damsky-parfem-apar-f104-inspirovane-gucci-bamboo-parfemovana-voda.html#/1-objem-50_ml_standard",
+   "priceAmount": 269,
+   "price": "269 Kč",
+   "currency": "CZK",
+   "volume": "50 ml STANDARD",
+   "category": "fragrance",
+   "kind": "Parfém",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Bergamot, ylang-ylang, santalové dřevo. Vůně APAR. Ilustrační fotografie flakónu APAR.",
+   "reason": "Bergamot, ylang-ylang, santalové dřevo. Vůně APAR. Ilustrační fotografie flakónu APAR.",
+   "photo": "/assets/s5/ravina/apar-standard.jpg",
+   "source": {
+    "series": "s5",
+    "url": "https://ravina.cz/imitace-damske-parfemy-inspirovane-gucci-/712-1181-damsky-parfem-apar-f104-inspirovane-gucci-bamboo-parfemovana-voda.html#/1-objem-50_ml_standard",
+    "verifiedAt": "2026-11-20T10:27:58+00:00",
+    "sourceSha256": "0675a86996dd0dbb55b1df8490761e8781757ff646d2a286a445cbb283423090",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "PrestaShop selected product attributes",
+     "productId": 712,
+     "variantId": 1181,
+     "quantity": 4,
+     "publisherAvailability": "Skladem"
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 269,
+     "currency": "CZK",
+     "vatSource": "https://ravina.cz/imitace-damske-parfemy-inspirovane-gucci-/712-1181-damsky-parfem-apar-f104-inspirovane-gucci-bamboo-parfemovana-voda.html#/1-objem-50_ml_standard"
+    },
+    "packEvidence": {
+     "pack": "50 ml STANDARD"
+    },
+    "variantSelectionRequired": false,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://ravina.cz/1653-large_default/damsky-parfem-apar-f104-inspirovane-gucci-bamboo-parfemovana-voda.jpg",
+    "photoEvidence": {
+     "file": "apar-standard.jpg",
+     "url": "https://ravina.cz/1653-large_default/damsky-parfem-apar-f104-inspirovane-gucci-bamboo-parfemovana-voda.jpg",
+     "sha256": "face2eaca3c5f17777ed3a1ade353ba2b8822e69bb49e55264bfa49a9ab0b951",
+     "selectedPack": "50 ml STANDARD",
+     "scope": "Official APAR packaging photo, illustrative across fragrances"
+    },
+    "scent": "Bergamot, ylang-ylang, santalové dřevo",
+    "fragrance": {
+     "notes": [
+      "bergamot",
+      "ylang-ylang",
+      "santalové dřevo"
+     ],
+     "officialFamilies": [],
+     "concentrationDisplay": "Parfém",
+     "notesEvidence": {
+      "url": "https://ravina.cz/imitace-damske-parfemy-inspirovane-gucci-/712-1181-damsky-parfem-apar-f104-inspirovane-gucci-bamboo-parfemovana-voda.html#/1-objem-50_ml_standard",
+      "sourceText": "Vonné tóny: bergamot, ylang-ylang, santalové dřevo",
+      "sourceLanguage": "cs"
+     }
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://ravina.cz/imitace-damske-parfemy-inspirovane-gucci-/712-1181-damsky-parfem-apar-f104-inspirovane-gucci-bamboo-parfemovana-voda.html#/1-objem-50_ml_standard",
+     "sourceText": "Vonné tóny: bergamot, ylang-ylang, santalové dřevo",
+     "navigationLabel": "bergamot, ylang-ylang, santalové dřevo",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    },
+    "identityDisclosure": "Jde o vůni APAR, nikoli originál jiné značky.",
+    "photoQualification": "Ilustrační fotografie flakónu APAR. Stejné balení může být použito pro více vůní.",
+    "selectionTraits": {
+     "fragranceDirection": "bright-floral",
+     "fragranceProfile": "f104"
+    }
+   }
+  },
+  {
+   "id": "f103",
+   "name": "APAR F103",
+   "url": "https://ravina.cz/imitace-damske-parfemy-inspirovane-gucci-/711-1180-damsky-parfem-apar-f103-inspirovane-gucci-envy-me.html#/1-objem-50_ml_standard",
+   "priceAmount": 269,
+   "price": "269 Kč",
+   "currency": "CZK",
+   "volume": "50 ml STANDARD",
+   "category": "fragrance",
+   "kind": "Parfém",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Pivoňka, liči, růžový pepř. Vůně APAR. Ilustrační fotografie flakónu APAR.",
+   "reason": "Pivoňka, liči, růžový pepř. Vůně APAR. Ilustrační fotografie flakónu APAR.",
+   "photo": "/assets/s5/ravina/apar-standard.jpg",
+   "source": {
+    "series": "s5",
+    "url": "https://ravina.cz/imitace-damske-parfemy-inspirovane-gucci-/711-1180-damsky-parfem-apar-f103-inspirovane-gucci-envy-me.html#/1-objem-50_ml_standard",
+    "verifiedAt": "2026-11-20T10:27:58+00:00",
+    "sourceSha256": "bfd1557dcbd54cbcd417668471bfbad24dcacbeb35df2c4ebe1b01e6a5e6247e",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "PrestaShop selected product attributes",
+     "productId": 711,
+     "variantId": 1180,
+     "quantity": 2,
+     "publisherAvailability": "Skladem"
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 269,
+     "currency": "CZK",
+     "vatSource": "https://ravina.cz/imitace-damske-parfemy-inspirovane-gucci-/711-1180-damsky-parfem-apar-f103-inspirovane-gucci-envy-me.html#/1-objem-50_ml_standard"
+    },
+    "packEvidence": {
+     "pack": "50 ml STANDARD"
+    },
+    "variantSelectionRequired": false,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://ravina.cz/1651-large_default/damsky-parfem-apar-f103-inspirovane-gucci-envy-me.jpg",
+    "photoEvidence": {
+     "file": "apar-standard.jpg",
+     "url": "https://ravina.cz/1651-large_default/damsky-parfem-apar-f103-inspirovane-gucci-envy-me.jpg",
+     "sha256": "face2eaca3c5f17777ed3a1ade353ba2b8822e69bb49e55264bfa49a9ab0b951",
+     "selectedPack": "50 ml STANDARD",
+     "scope": "Official APAR packaging photo, illustrative across fragrances"
+    },
+    "scent": "Pivoňka, liči, růžový pepř",
+    "fragrance": {
+     "notes": [
+      "pivoňka",
+      "liči",
+      "růžový pepř"
+     ],
+     "officialFamilies": [],
+     "concentrationDisplay": "Parfém",
+     "notesEvidence": {
+      "url": "https://ravina.cz/imitace-damske-parfemy-inspirovane-gucci-/711-1180-damsky-parfem-apar-f103-inspirovane-gucci-envy-me.html#/1-objem-50_ml_standard",
+      "sourceText": "Vonné tóny: pivoňka, liči, růžový pepř",
+      "sourceLanguage": "cs"
+     }
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://ravina.cz/imitace-damske-parfemy-inspirovane-gucci-/711-1180-damsky-parfem-apar-f103-inspirovane-gucci-envy-me.html#/1-objem-50_ml_standard",
+     "sourceText": "Vonné tóny: pivoňka, liči, růžový pepř",
+     "navigationLabel": "pivoňka, liči, růžový pepř",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    },
+    "identityDisclosure": "Jde o vůni APAR, nikoli originál jiné značky.",
+    "photoQualification": "Ilustrační fotografie flakónu APAR. Stejné balení může být použito pro více vůní.",
+    "selectionTraits": {
+     "fragranceDirection": "warm-fruit",
+     "fragranceProfile": "f103"
+    }
+   }
+  },
+  {
+   "id": "f100",
+   "name": "APAR F100",
+   "url": "https://ravina.cz/imitace-damske-parfemy-inspirovane-gucci-/708-1177-damsky-parfem-parfemovana-voda-apar-f100-inspirovano-gucci-guilty-black.html#/1-objem-50_ml_standard",
+   "priceAmount": 269,
+   "price": "269 Kč",
+   "currency": "CZK",
+   "volume": "50 ml STANDARD",
+   "category": "fragrance",
+   "kind": "Parfém",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Malina, broskev, ambra. Vůně APAR. Ilustrační fotografie flakónu APAR.",
+   "reason": "Malina, broskev, ambra. Vůně APAR. Ilustrační fotografie flakónu APAR.",
+   "photo": "/assets/s5/ravina/apar-standard.jpg",
+   "source": {
+    "series": "s5",
+    "url": "https://ravina.cz/imitace-damske-parfemy-inspirovane-gucci-/708-1177-damsky-parfem-parfemovana-voda-apar-f100-inspirovano-gucci-guilty-black.html#/1-objem-50_ml_standard",
+    "verifiedAt": "2026-11-20T10:27:58+00:00",
+    "sourceSha256": "9a2c0e4df290d11824986e2260b98ceb9062d2d371b7ae72a61521c31e1c2dc1",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "PrestaShop selected product attributes",
+     "productId": 708,
+     "variantId": 1177,
+     "quantity": 4,
+     "publisherAvailability": "Skladem"
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 269,
+     "currency": "CZK",
+     "vatSource": "https://ravina.cz/imitace-damske-parfemy-inspirovane-gucci-/708-1177-damsky-parfem-parfemovana-voda-apar-f100-inspirovano-gucci-guilty-black.html#/1-objem-50_ml_standard"
+    },
+    "packEvidence": {
+     "pack": "50 ml STANDARD"
+    },
+    "variantSelectionRequired": false,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://ravina.cz/1645-large_default/damsky-parfem-parfemovana-voda-apar-f100-inspirovano-gucci-guilty-black.jpg",
+    "photoEvidence": {
+     "file": "apar-standard.jpg",
+     "url": "https://ravina.cz/1645-large_default/damsky-parfem-parfemovana-voda-apar-f100-inspirovano-gucci-guilty-black.jpg",
+     "sha256": "face2eaca3c5f17777ed3a1ade353ba2b8822e69bb49e55264bfa49a9ab0b951",
+     "selectedPack": "50 ml STANDARD",
+     "scope": "Official APAR packaging photo, illustrative across fragrances"
+    },
+    "scent": "Malina, broskev, ambra",
+    "fragrance": {
+     "notes": [
+      "malina",
+      "broskev",
+      "ambra"
+     ],
+     "officialFamilies": [],
+     "concentrationDisplay": "Parfém",
+     "notesEvidence": {
+      "url": "https://ravina.cz/imitace-damske-parfemy-inspirovane-gucci-/708-1177-damsky-parfem-parfemovana-voda-apar-f100-inspirovano-gucci-guilty-black.html#/1-objem-50_ml_standard",
+      "sourceText": "Vonné tóny: malina, broskev, ambra",
+      "sourceLanguage": "cs"
+     }
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://ravina.cz/imitace-damske-parfemy-inspirovane-gucci-/708-1177-damsky-parfem-parfemovana-voda-apar-f100-inspirovano-gucci-guilty-black.html#/1-objem-50_ml_standard",
+     "sourceText": "Vonné tóny: malina, broskev, ambra",
+     "navigationLabel": "malina, broskev, ambra",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    },
+    "identityDisclosure": "Jde o vůni APAR, nikoli originál jiné značky.",
+    "photoQualification": "Ilustrační fotografie flakónu APAR. Stejné balení může být použito pro více vůní.",
+    "selectionTraits": {
+     "fragranceDirection": "warm-fruit",
+     "fragranceProfile": "f100"
+    }
+   }
+  },
+  {
+   "id": "r-magnolia",
+   "name": "Magnólie",
+   "url": "https://ravina.cz/vune-kvet-drevo-sladke/123-ravina-magnolia-sojova-vonna-svicka-ve-skle.html",
+   "priceAmount": 179,
+   "price": "179 Kč",
+   "currency": "CZK",
+   "volume": "175 g",
+   "category": "fragrance",
+   "kind": "Vonná svíčka",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Magnólie.",
+   "reason": "Magnólie.",
+   "photo": "/assets/s5/ravina/r-magnolia.jpg",
+   "source": {
+    "series": "s5",
+    "url": "https://ravina.cz/vune-kvet-drevo-sladke/123-ravina-magnolia-sojova-vonna-svicka-ve-skle.html",
+    "verifiedAt": "2026-11-20T10:34:27+00:00",
+    "sourceSha256": "02ab8046fd5714726279415eb04cd0f73fa01ac3c5cc171791133eec9598fef5",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "PrestaShop public selected product",
+     "productId": 123,
+     "publisherAvailability": "Skladem"
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 179,
+     "currency": "CZK",
+     "vatSource": "https://ravina.cz/vune-kvet-drevo-sladke/123-ravina-magnolia-sojova-vonna-svicka-ve-skle.html"
+    },
+    "packEvidence": {
+     "pack": "175 g"
+    },
+    "variantSelectionRequired": false,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://ravina.cz/184-large_default/ravina-magnolia-sojova-vonna-svicka-ve-skle.jpg",
+    "photoEvidence": {
+     "file": "r-magnolia.jpg",
+     "url": "https://ravina.cz/184-large_default/ravina-magnolia-sojova-vonna-svicka-ve-skle.jpg",
+     "sha256": "743c2f628c9b6acab08bdf35c449ae30059059d51f3243cd7fde9920b65ae742",
+     "selectedPack": "175 g",
+     "scope": "Official product gallery"
+    },
+    "scent": "Magnólie",
+    "fragrance": {
+     "notes": [
+      "magnólie"
+     ],
+     "officialFamilies": [],
+     "concentrationDisplay": "Vonná svíčka",
+     "notesEvidence": {
+      "url": "https://ravina.cz/vune-kvet-drevo-sladke/123-ravina-magnolia-sojova-vonna-svicka-ve-skle.html",
+      "sourceText": "Vonné tóny: magnólie",
+      "sourceLanguage": "cs"
+     }
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://ravina.cz/vune-kvet-drevo-sladke/123-ravina-magnolia-sojova-vonna-svicka-ve-skle.html",
+     "sourceText": "Vonné tóny: magnólie",
+     "navigationLabel": "magnólie",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    },
+    "usagePurpose": "scented-candle",
+    "selectionTraits": {
+     "fragranceDirection": "candle-flowers",
+     "fragranceProfile": "r-magnolia"
+    }
+   }
+  },
+  {
+   "id": "r-rose",
+   "name": "Růže",
+   "url": "https://ravina.cz/vune-kvet-drevo-sladke/113-ruze-sojova-vonna-svicka-ve-skle.html",
+   "priceAmount": 179,
+   "price": "179 Kč",
+   "currency": "CZK",
+   "volume": "175 g",
+   "category": "fragrance",
+   "kind": "Vonná svíčka",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Růže.",
+   "reason": "Růže.",
+   "photo": "/assets/s5/ravina/r-rose.jpg",
+   "source": {
+    "series": "s5",
+    "url": "https://ravina.cz/vune-kvet-drevo-sladke/113-ruze-sojova-vonna-svicka-ve-skle.html",
+    "verifiedAt": "2026-11-20T10:34:27+00:00",
+    "sourceSha256": "526b544ab1e69baf7028e7c8b73fc782a3cb662acf7b5a55a1ac562f979c6c60",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "PrestaShop public selected product",
+     "productId": 113,
+     "publisherAvailability": "Skladem"
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 179,
+     "currency": "CZK",
+     "vatSource": "https://ravina.cz/vune-kvet-drevo-sladke/113-ruze-sojova-vonna-svicka-ve-skle.html"
+    },
+    "packEvidence": {
+     "pack": "175 g"
+    },
+    "variantSelectionRequired": false,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://ravina.cz/2660-large_default/ruze-sojova-vonna-svicka-ve-skle.jpg",
+    "photoEvidence": {
+     "file": "r-rose.jpg",
+     "url": "https://ravina.cz/2660-large_default/ruze-sojova-vonna-svicka-ve-skle.jpg",
+     "sha256": "f2577ffb54e78b1eac502911954190d61794394610a3609c526635f8379fbb6c",
+     "selectedPack": "175 g",
+     "scope": "Official product gallery"
+    },
+    "scent": "Růže",
+    "fragrance": {
+     "notes": [
+      "růže"
+     ],
+     "officialFamilies": [],
+     "concentrationDisplay": "Vonná svíčka",
+     "notesEvidence": {
+      "url": "https://ravina.cz/vune-kvet-drevo-sladke/113-ruze-sojova-vonna-svicka-ve-skle.html",
+      "sourceText": "Vonné tóny: růže",
+      "sourceLanguage": "cs"
+     }
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://ravina.cz/vune-kvet-drevo-sladke/113-ruze-sojova-vonna-svicka-ve-skle.html",
+     "sourceText": "Vonné tóny: růže",
+     "navigationLabel": "růže",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    },
+    "usagePurpose": "scented-candle",
+    "selectionTraits": {
+     "fragranceDirection": "candle-flowers",
+     "fragranceProfile": "r-rose"
+    }
+   }
+  },
+  {
+   "id": "r-lavender",
+   "name": "Levandule",
+   "url": "https://ravina.cz/vune-kvet-drevo-sladke/107-vonna-svicka-levandule-ravina.html",
+   "priceAmount": 179,
+   "price": "179 Kč",
+   "currency": "CZK",
+   "volume": "175 g",
+   "category": "fragrance",
+   "kind": "Vonná svíčka",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Levandule.",
+   "reason": "Levandule.",
+   "photo": "/assets/s5/ravina/r-lavender.jpg",
+   "source": {
+    "series": "s5",
+    "url": "https://ravina.cz/vune-kvet-drevo-sladke/107-vonna-svicka-levandule-ravina.html",
+    "verifiedAt": "2026-11-20T10:34:27+00:00",
+    "sourceSha256": "c2b3ef4c0c5b3b6a4a8ff59d111a5cc10f32ff196c286ccb48501b017b01933b",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "PrestaShop public selected product",
+     "productId": "107",
+     "publisherAvailability": "Skladem"
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 179,
+     "currency": "CZK",
+     "vatSource": "https://ravina.cz/vune-kvet-drevo-sladke/107-vonna-svicka-levandule-ravina.html"
+    },
+    "packEvidence": {
+     "pack": "175 g"
+    },
+    "variantSelectionRequired": false,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://ravina.cz/2658-large_default/vonna-svicka-levandule-ravina.jpg",
+    "photoEvidence": {
+     "file": "r-lavender.jpg",
+     "url": "https://ravina.cz/2658-large_default/vonna-svicka-levandule-ravina.jpg",
+     "sha256": "3051baa902152e6cb7b543fdf003979e82fca6d4461336ce171252ab20cb08a5",
+     "selectedPack": "175 g",
+     "scope": "Official product gallery"
+    },
+    "scent": "Levandule",
+    "fragrance": {
+     "notes": [
+      "levandule"
+     ],
+     "officialFamilies": [],
+     "concentrationDisplay": "Vonná svíčka",
+     "notesEvidence": {
+      "url": "https://ravina.cz/vune-kvet-drevo-sladke/107-vonna-svicka-levandule-ravina.html",
+      "sourceText": "Vonné tóny: levandule",
+      "sourceLanguage": "cs"
+     }
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://ravina.cz/vune-kvet-drevo-sladke/107-vonna-svicka-levandule-ravina.html",
+     "sourceText": "Vonné tóny: levandule",
+     "navigationLabel": "levandule",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    },
+    "usagePurpose": "scented-candle",
+    "selectionTraits": {
+     "fragranceDirection": "candle-flowers",
+     "fragranceProfile": "r-lavender"
+    }
+   }
+  },
+  {
+   "id": "r-lilac",
+   "name": "Šeřík",
+   "url": "https://ravina.cz/vune-kvet-drevo-sladke/128-ravina-vonna-sojova-svicka-vune-seriku-.html",
+   "priceAmount": 179,
+   "price": "179 Kč",
+   "currency": "CZK",
+   "volume": "175 g",
+   "category": "fragrance",
+   "kind": "Vonná svíčka",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Šeřík.",
+   "reason": "Šeřík.",
+   "photo": "/assets/s5/ravina/r-lilac.jpg",
+   "source": {
+    "series": "s5",
+    "url": "https://ravina.cz/vune-kvet-drevo-sladke/128-ravina-vonna-sojova-svicka-vune-seriku-.html",
+    "verifiedAt": "2026-11-20T10:34:27+00:00",
+    "sourceSha256": "42cc1a18c98a9798ffa99bdc244a18e30b0d74a3c6c2d829900644bfb5f14a2d",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "PrestaShop public selected product",
+     "productId": 128,
+     "publisherAvailability": "Skladem"
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 179,
+     "currency": "CZK",
+     "vatSource": "https://ravina.cz/vune-kvet-drevo-sladke/128-ravina-vonna-sojova-svicka-vune-seriku-.html"
+    },
+    "packEvidence": {
+     "pack": "175 g"
+    },
+    "variantSelectionRequired": false,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://ravina.cz/2659-large_default/ravina-vonna-sojova-svicka-vune-seriku-.jpg",
+    "photoEvidence": {
+     "file": "r-lilac.jpg",
+     "url": "https://ravina.cz/2659-large_default/ravina-vonna-sojova-svicka-vune-seriku-.jpg",
+     "sha256": "31e0d9f6c955ab19ef50c8aa56c1f9e47d3a51acc8e0db5319f394188b6d8376",
+     "selectedPack": "175 g",
+     "scope": "Official product gallery"
+    },
+    "scent": "Šeřík",
+    "fragrance": {
+     "notes": [
+      "šeřík"
+     ],
+     "officialFamilies": [],
+     "concentrationDisplay": "Vonná svíčka",
+     "notesEvidence": {
+      "url": "https://ravina.cz/vune-kvet-drevo-sladke/128-ravina-vonna-sojova-svicka-vune-seriku-.html",
+      "sourceText": "Vonné tóny: šeřík",
+      "sourceLanguage": "cs"
+     }
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://ravina.cz/vune-kvet-drevo-sladke/128-ravina-vonna-sojova-svicka-vune-seriku-.html",
+     "sourceText": "Vonné tóny: šeřík",
+     "navigationLabel": "šeřík",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    },
+    "usagePurpose": "scented-candle",
+    "selectionTraits": {
+     "fragranceDirection": "candle-flowers",
+     "fragranceProfile": "r-lilac"
+    }
+   }
+  },
+  {
+   "id": "r-apple",
+   "name": "Pečené jablko",
+   "url": "https://ravina.cz/vanocni-svicky-ravina/110-sojova-svicka-pecene-jablko-ravina.html",
+   "priceAmount": 189,
+   "price": "189 Kč",
+   "currency": "CZK",
+   "volume": "175 g",
+   "category": "fragrance",
+   "kind": "Vonná svíčka",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Pečené jablko.",
+   "reason": "Pečené jablko.",
+   "photo": "/assets/s5/ravina/r-apple.jpg",
+   "source": {
+    "series": "s5",
+    "url": "https://ravina.cz/vanocni-svicky-ravina/110-sojova-svicka-pecene-jablko-ravina.html",
+    "verifiedAt": "2026-11-20T10:34:27+00:00",
+    "sourceSha256": "c5fc7829e569cc6f83eee284dd3eb5c408069bf8932394b917198cbfa827f041",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "PrestaShop public selected product",
+     "productId": 110,
+     "publisherAvailability": "Skladem"
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 189,
+     "currency": "CZK",
+     "vatSource": "https://ravina.cz/vanocni-svicky-ravina/110-sojova-svicka-pecene-jablko-ravina.html"
+    },
+    "packEvidence": {
+     "pack": "175 g"
+    },
+    "variantSelectionRequired": false,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://ravina.cz/2537-large_default/sojova-svicka-pecene-jablko-ravina.jpg",
+    "photoEvidence": {
+     "file": "r-apple.jpg",
+     "url": "https://ravina.cz/2537-large_default/sojova-svicka-pecene-jablko-ravina.jpg",
+     "sha256": "736646ccf5f94d5b7d33326baab870954664a29198e29a9ebd8bcd9bf18cca66",
+     "selectedPack": "175 g",
+     "scope": "Official product gallery"
+    },
+    "scent": "Pečené jablko",
+    "fragrance": {
+     "notes": [
+      "pečené jablko"
+     ],
+     "officialFamilies": [],
+     "concentrationDisplay": "Vonná svíčka",
+     "notesEvidence": {
+      "url": "https://ravina.cz/vanocni-svicky-ravina/110-sojova-svicka-pecene-jablko-ravina.html",
+      "sourceText": "Vonné tóny: pečené jablko",
+      "sourceLanguage": "cs"
+     }
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://ravina.cz/vanocni-svicky-ravina/110-sojova-svicka-pecene-jablko-ravina.html",
+     "sourceText": "Vonné tóny: pečené jablko",
+     "navigationLabel": "pečené jablko",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    },
+    "usagePurpose": "scented-candle",
+    "selectionTraits": {
+     "fragranceDirection": "candle-warm",
+     "fragranceProfile": "r-apple"
+    }
+   }
+  },
+  {
+   "id": "r-pumpkin",
+   "name": "Dýně",
+   "url": "https://ravina.cz/podzimni-vonne-svicky/112-podzimni-svicka-dyne-ravina.html",
+   "priceAmount": 179,
+   "price": "179 Kč",
+   "currency": "CZK",
+   "volume": "175 g",
+   "category": "fragrance",
+   "kind": "Vonná svíčka",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Dýně.",
+   "reason": "Dýně.",
+   "photo": "/assets/s5/ravina/r-pumpkin.jpg",
+   "source": {
+    "series": "s5",
+    "url": "https://ravina.cz/podzimni-vonne-svicky/112-podzimni-svicka-dyne-ravina.html",
+    "verifiedAt": "2026-11-20T10:34:27+00:00",
+    "sourceSha256": "30d3fbe325b04db0a1fc181597f759048e478cf498df32c4965a30fa5cba9aa1",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "PrestaShop public selected product",
+     "productId": "112",
+     "publisherAvailability": "Skladem"
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 179,
+     "currency": "CZK",
+     "vatSource": "https://ravina.cz/podzimni-vonne-svicky/112-podzimni-svicka-dyne-ravina.html"
+    },
+    "packEvidence": {
+     "pack": "175 g"
+    },
+    "variantSelectionRequired": false,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://ravina.cz/6005-large_default/podzimni-svicka-dyne-ravina.jpg",
+    "photoEvidence": {
+     "file": "r-pumpkin.jpg",
+     "url": "https://ravina.cz/6005-large_default/podzimni-svicka-dyne-ravina.jpg",
+     "sha256": "00c9fb38e8b082949dcdd31875f27f1db88c2c2bb04472a5f7424971a1ef985a",
+     "selectedPack": "175 g",
+     "scope": "Official product gallery"
+    },
+    "scent": "Dýně",
+    "fragrance": {
+     "notes": [
+      "dýně"
+     ],
+     "officialFamilies": [],
+     "concentrationDisplay": "Vonná svíčka",
+     "notesEvidence": {
+      "url": "https://ravina.cz/podzimni-vonne-svicky/112-podzimni-svicka-dyne-ravina.html",
+      "sourceText": "Vonné tóny: dýně",
+      "sourceLanguage": "cs"
+     }
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://ravina.cz/podzimni-vonne-svicky/112-podzimni-svicka-dyne-ravina.html",
+     "sourceText": "Vonné tóny: dýně",
+     "navigationLabel": "dýně",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    },
+    "usagePurpose": "scented-candle",
+    "selectionTraits": {
+     "fragranceDirection": "candle-warm",
+     "fragranceProfile": "r-pumpkin"
+    }
+   }
+  },
+  {
+   "id": "r-cocoa",
+   "name": "Horká čokoláda",
+   "url": "https://ravina.cz/vanocni-svicky-ravina/1849-sojova-svicka-horka-cokolada-zimni-vune.html",
+   "priceAmount": 189,
+   "price": "189 Kč",
+   "currency": "CZK",
+   "volume": "175 g",
+   "category": "fragrance",
+   "kind": "Vonná svíčka",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Horká čokoláda.",
+   "reason": "Horká čokoláda.",
+   "photo": "/assets/s5/ravina/r-cocoa.jpg",
+   "source": {
+    "series": "s5",
+    "url": "https://ravina.cz/vanocni-svicky-ravina/1849-sojova-svicka-horka-cokolada-zimni-vune.html",
+    "verifiedAt": "2026-11-20T10:34:27+00:00",
+    "sourceSha256": "32f016fea95a3f1225a9bac953f29ae1fbed5516c4108974b53d2eabd952682e",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "PrestaShop public selected product",
+     "productId": 1849,
+     "publisherAvailability": "Skladem"
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 189,
+     "currency": "CZK",
+     "vatSource": "https://ravina.cz/vanocni-svicky-ravina/1849-sojova-svicka-horka-cokolada-zimni-vune.html"
+    },
+    "packEvidence": {
+     "pack": "175 g"
+    },
+    "variantSelectionRequired": false,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://ravina.cz/6201-large_default/sojova-svicka-horka-cokolada-zimni-vune.jpg",
+    "photoEvidence": {
+     "file": "r-cocoa.jpg",
+     "url": "https://ravina.cz/6201-large_default/sojova-svicka-horka-cokolada-zimni-vune.jpg",
+     "sha256": "05f06825c8c299f35fc10acdc0c23b7ee1c3c1411019deb828a1bec5f50c7e84",
+     "selectedPack": "175 g",
+     "scope": "Official product gallery"
+    },
+    "scent": "Horká čokoláda",
+    "fragrance": {
+     "notes": [
+      "horká čokoláda"
+     ],
+     "officialFamilies": [],
+     "concentrationDisplay": "Vonná svíčka",
+     "notesEvidence": {
+      "url": "https://ravina.cz/vanocni-svicky-ravina/1849-sojova-svicka-horka-cokolada-zimni-vune.html",
+      "sourceText": "Vonné tóny: horká čokoláda",
+      "sourceLanguage": "cs"
+     }
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://ravina.cz/vanocni-svicky-ravina/1849-sojova-svicka-horka-cokolada-zimni-vune.html",
+     "sourceText": "Vonné tóny: horká čokoláda",
+     "navigationLabel": "horká čokoláda",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    },
+    "usagePurpose": "scented-candle",
+    "selectionTraits": {
+     "fragranceDirection": "candle-warm",
+     "fragranceProfile": "r-cocoa"
+    }
+   }
+  },
+  {
+   "id": "r-wine",
+   "name": "Svařené víno",
+   "url": "https://ravina.cz/vanocni-svicky-ravina/101-vanocni-svicka-svarene-vino-ravina.html",
+   "priceAmount": 189,
+   "price": "189 Kč",
+   "currency": "CZK",
+   "volume": "175 g",
+   "category": "fragrance",
+   "kind": "Vonná svíčka",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Svařené víno.",
+   "reason": "Svařené víno.",
+   "photo": "/assets/s5/ravina/r-wine.jpg",
+   "source": {
+    "series": "s5",
+    "url": "https://ravina.cz/vanocni-svicky-ravina/101-vanocni-svicka-svarene-vino-ravina.html",
+    "verifiedAt": "2026-11-20T10:34:27+00:00",
+    "sourceSha256": "a7c36482574c8f993c4cecedc4197b84fb0f517b4e4998b803e0658b3a65a82d",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "PrestaShop public selected product",
+     "productId": 101,
+     "publisherAvailability": "Skladem"
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 189,
+     "currency": "CZK",
+     "vatSource": "https://ravina.cz/vanocni-svicky-ravina/101-vanocni-svicka-svarene-vino-ravina.html"
+    },
+    "packEvidence": {
+     "pack": "175 g"
+    },
+    "variantSelectionRequired": false,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://ravina.cz/2538-large_default/vanocni-svicka-svarene-vino-ravina.jpg",
+    "photoEvidence": {
+     "file": "r-wine.jpg",
+     "url": "https://ravina.cz/2538-large_default/vanocni-svicka-svarene-vino-ravina.jpg",
+     "sha256": "26dbd52d1f9db675e2af96965b2698135d146ee54fbc385b1ff54a7389db7b6c",
+     "selectedPack": "175 g",
+     "scope": "Official product gallery"
+    },
+    "scent": "Svařené víno",
+    "fragrance": {
+     "notes": [
+      "svařené víno"
+     ],
+     "officialFamilies": [],
+     "concentrationDisplay": "Vonná svíčka",
+     "notesEvidence": {
+      "url": "https://ravina.cz/vanocni-svicky-ravina/101-vanocni-svicka-svarene-vino-ravina.html",
+      "sourceText": "Vonné tóny: svařené víno",
+      "sourceLanguage": "cs"
+     }
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://ravina.cz/vanocni-svicky-ravina/101-vanocni-svicka-svarene-vino-ravina.html",
+     "sourceText": "Vonné tóny: svařené víno",
+     "navigationLabel": "svařené víno",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    },
+    "usagePurpose": "scented-candle",
+    "selectionTraits": {
+     "fragranceDirection": "candle-warm",
+     "fragranceProfile": "r-wine"
     }
    }
   }
@@ -305,9 +1201,9 @@ globalThis.CX_CATALOGUES.ravina = {
  "size": "PREFERRED_HISTORICAL_BAND_LATEST_EXACT_UNKNOWN",
  "interest": "NOT_ESTABLISHED",
  "notes": [
-  "Two representative verifiedAPARformulas only: F001/F06550mlSTANDARD269CZK, not a claimonlytwoavailableinstore.",
-  "F219/F163 secondgalleryphotos depict onlydesigneroriginals and areexcludedfromrecommendations. TheirgenericAPARcoversrepeat F001pixels, not used toinflatephotographicrepresentation.",
-  "F001officialownAPAR50mlphoto;F065officialpairphoto ownAPAR+separatedesignerinspiration, visibleownAPARnotoriginaldisclosure. Twoactualdifferentpixelphotos.",
-  "F002/F271OutOfStockexcluded. MALSsame09331221operatoronecompany. MAINbrandguard/integration/livePreview/commercialfitreviewrequired."
+  "Šest parfémů APAR, ověřené varianty 50 ml STANDARD.",
+  "F100, F103 a F104 používají společnou ilustrační fotografii balení APAR zveřejněnou prodejcem.",
+  "F095 ve variantě STANDARD nebyl při kontrole skladem.",
+  "Rozšířený výběr používá ceny a balení z uvedených produktových stránek."
  ]
 };

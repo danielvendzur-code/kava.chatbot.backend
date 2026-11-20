@@ -90,6 +90,24 @@ Object.assign(window.S3_REG.demos, {
         "",
         "Cedr, jedle a borovice",
         ""
+      ],
+      "v-amber": [
+        "Jantar, levandule, tonka",
+        "",
+        "Jantar, levandule, tonka",
+        ""
+      ],
+      "v-berry": [
+        "Jahody, maliny, rebarbora",
+        "",
+        "Jahody, maliny, rebarbora",
+        ""
+      ],
+      "v-ticha": [
+        "Cedr, tuberóza, kokosové mléko",
+        "",
+        "Cedr, tuberóza, kokosové mléko",
+        ""
       ]
     },
     "stepCopy": {
@@ -133,6 +151,15 @@ Object.assign(window.S3_REG.demos, {
       ],
       "forest": [
         "/assets/s5/vontree/forest.jpg"
+      ],
+      "v-amber": [
+        "/assets/s5/vontree/v-amber.jpg"
+      ],
+      "v-berry": [
+        "/assets/s5/vontree/v-berry.jpg"
+      ],
+      "v-ticha": [
+        "/assets/s5/vontree/v-ticha.jpg"
       ]
     },
     "compareProductIds": [
@@ -159,6 +186,7 @@ Object.assign(window.S3_REG.demos, {
     },
     "fragranceResultExtras": {
       "version": 1,
+      "maxAlternatives": 2,
       "enabled": true,
       "alternatives": {
         "lemon": "lavender",
@@ -177,7 +205,13 @@ Object.assign(window.S3_REG.demos, {
       "version": 1,
       "hideStepEstimate": true
     },
-    "companyCss": "/n447/s5/brands/vontree.css"
+    "companyCss": "/n447/s5/brands/vontree.css",
+    "catalogueShowcase": {
+      "questions": [
+        "Která svíčka voní po ovoci?",
+        "Co zvolit, když chci dřevitou vůni?"
+      ]
+    }
   },
   "bylinkokraska": {
     "series": "s5",

@@ -623,6 +623,152 @@ globalThis.CX_CATALOGUES.scents = {
      "navigationGroupingIsNotOfficialFragranceFamily": true
     }
    }
+  },
+  {
+   "id": "sc-berries",
+   "name": "Lesní ovoce (Santa Barbara Berry)",
+   "url": "https://scents.cz/domu/23-lesni-ovoce-santa-barbara-berry.html",
+   "priceAmount": 90,
+   "price": "90 Kč",
+   "currency": "CZK",
+   "volume": "42 g",
+   "category": "fragrance",
+   "kind": "Vůně do auta",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Lesní ovoce.",
+   "reason": "Lesní ovoce.",
+   "photo": "/assets/s5/scents/sc-berries.jpg",
+   "source": {
+    "series": "s5",
+    "url": "https://scents.cz/domu/23-lesni-ovoce-santa-barbara-berry.html",
+    "verifiedAt": "2026-11-20T10:34:27+00:00",
+    "sourceSha256": "f570b6d89597f837b49a00cc8043fda489a4eb29a72919c3ff7fa6cca347f208",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "PrestaShop public selected product",
+     "productId": 23,
+     "publisherAvailability": "Skladem"
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 90,
+     "currency": "CZK",
+     "vatSource": "https://scents.cz/domu/23-lesni-ovoce-santa-barbara-berry.html"
+    },
+    "packEvidence": {
+     "pack": "42 g"
+    },
+    "variantSelectionRequired": false,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://scents.cz/img/p/scents-current/california-scents-santa-barbara-berry-lesni-ovoce-thickbox_default.webp?v=20261011-1",
+    "photoEvidence": {
+     "file": "sc-berries.jpg",
+     "url": "https://scents.cz/img/p/scents-current/california-scents-santa-barbara-berry-lesni-ovoce-thickbox_default.webp?v=20261011-1",
+     "sha256": "36da6ff260a41fc619d1aa9a6af77d3a5c33b661efafe58a32c07491cf3530b9",
+     "selectedPack": "42 g",
+     "scope": "Official product gallery"
+    },
+    "scent": "Lesní ovoce",
+    "fragrance": {
+     "notes": [
+      "lesní ovoce"
+     ],
+     "officialFamilies": [],
+     "concentrationDisplay": "Vůně do auta",
+     "notesEvidence": {
+      "url": "https://scents.cz/domu/23-lesni-ovoce-santa-barbara-berry.html",
+      "sourceText": "Vonné tóny: lesní ovoce",
+      "sourceLanguage": "cs"
+     }
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://scents.cz/domu/23-lesni-ovoce-santa-barbara-berry.html",
+     "sourceText": "Vonné tóny: lesní ovoce",
+     "navigationLabel": "lesní ovoce",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    },
+    "usagePurpose": "car-fragrance",
+    "selectionTraits": {
+     "fragranceDirection": "fruit",
+     "fragranceProfile": "sc-berries"
+    }
+   }
+  },
+  {
+   "id": "sc-linen",
+   "name": "Čerstvě vypráno (Fresh Linen)",
+   "url": "https://scents.cz/domu/46-cerstve-vyprano-fresh-linen.html",
+   "priceAmount": 90,
+   "price": "90 Kč",
+   "currency": "CZK",
+   "volume": "42 g",
+   "category": "fragrance",
+   "kind": "Vůně do auta",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Čisté prádlo.",
+   "reason": "Čisté prádlo.",
+   "photo": "/assets/s5/scents/sc-linen.jpg",
+   "source": {
+    "series": "s5",
+    "url": "https://scents.cz/domu/46-cerstve-vyprano-fresh-linen.html",
+    "verifiedAt": "2026-11-20T10:34:27+00:00",
+    "sourceSha256": "2292776868db7a1da591a43391c44bed469b6267a6d175b18df9566e2f3f0a9e",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "PrestaShop public selected product",
+     "productId": 46,
+     "publisherAvailability": "Skladem"
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 90,
+     "currency": "CZK",
+     "vatSource": "https://scents.cz/domu/46-cerstve-vyprano-fresh-linen.html"
+    },
+    "packEvidence": {
+     "pack": "42 g"
+    },
+    "variantSelectionRequired": false,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://scents.cz/img/p/scents-current/california-scents-fresh-linen-cerstve-pradlo-thickbox_default.webp?v=20261011-1",
+    "photoEvidence": {
+     "file": "sc-linen.jpg",
+     "url": "https://scents.cz/img/p/scents-current/california-scents-fresh-linen-cerstve-pradlo-thickbox_default.webp?v=20261011-1",
+     "sha256": "73ee96a9638e1cead776a99a8f85324e449b5e1459c5d6c53b7373a17c7423a3",
+     "selectedPack": "42 g",
+     "scope": "Official product gallery"
+    },
+    "scent": "Čisté prádlo",
+    "fragrance": {
+     "notes": [
+      "čisté prádlo"
+     ],
+     "officialFamilies": [],
+     "concentrationDisplay": "Vůně do auta",
+     "notesEvidence": {
+      "url": "https://scents.cz/domu/46-cerstve-vyprano-fresh-linen.html",
+      "sourceText": "Vonné tóny: čisté prádlo",
+      "sourceLanguage": "cs"
+     }
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://scents.cz/domu/46-cerstve-vyprano-fresh-linen.html",
+     "sourceText": "Vonné tóny: čisté prádlo",
+     "navigationLabel": "čisté prádlo",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    },
+    "usagePurpose": "car-fragrance",
+    "selectionTraits": {
+     "fragranceDirection": "fresh",
+     "fragranceProfile": "sc-linen"
+    }
+   }
   }
  ],
  "revenue": {
@@ -646,6 +792,7 @@ globalThis.CX_CATALOGUES.scents = {
   "DealerScents.cz notglobalmanufacturer. PublishedretailerlogoCaliforniaScentsbranding preserved, factualSavatar.",
   "Manufacturerregulatorincludedfree: no paidaddon invented; no verifiedothercompatiblepack, distinctalternative+comparisononly.",
   "MAINcarbrandbackendguardreviewrequired, worker sourceIDmockonly; commoncore/backenduntouched.",
-  "CookieUIinitialsavefailed underGETonlyguard; normalactualsame-originprivacyPOSTonlyallowedlater, product/home-after-settings bannerabsent, noforms/messages/cart/captcha orprotectionbypass."
+  "CookieUIinitialsavefailed underGETonlyguard; normalactualsame-originprivacyPOSTonlyallowedlater, product/home-after-settings bannerabsent, noforms/messages/cart/captcha orprotectionbypass.",
+  "Rozšířený výběr používá ceny a balení z uvedených produktových stránek."
  ]
 };

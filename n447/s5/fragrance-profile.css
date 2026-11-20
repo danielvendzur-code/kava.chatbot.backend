@@ -1,4 +1,39 @@
 /* Qualitative note profile. Equal rows describe stages, never invented proportions. */
+body[data-series=s5][data-cosmetics-demo=alexmonhart] .cx-owner-brand .cx-logo {
+  width: min(174px, 38vw) !important;
+  flex: none;
+}
+.s5-brand-name { font-size: clamp(15px, 3.7vw, 23px); white-space: normal; }
+body[data-series=s5] #cx-widget .fr-extra-compare + .fr-related-card { margin-top: 12px; }
+
+.s5-ask { margin-top: 22px; max-width: 450px; }
+.s5-ask h2 { color: inherit; font-size: .9rem; margin: 0 0 8px; }
+.s5-ask-choices { display: flex; flex-wrap: wrap; gap: 7px; }
+.s5-ask-choices button {
+  appearance: none; background: #fff; border: 1px solid #dedbd6; border-radius: 999px;
+  color: #2b2724; cursor: pointer; font: inherit; font-size: .82rem; line-height: 1.35; padding: 7px 12px;
+}
+.s5-ask-choices button:hover { background: #f7f3ee; border-color: #b9aa98; }
+.s5-ask-choices button:focus-visible, .s5-catalogue :is(summary,a):focus-visible {
+  outline: 2px solid #615345; outline-offset: 3px;
+}
+.s5-catalogue { margin: 22px auto; width: min(100%, 1050px); }
+.s5-catalogue summary {
+  background: #f7f3ee; border: 1px solid #e6ded2; border-radius: 12px;
+  color: #2b2724; cursor: pointer; padding: 13px 16px; font-weight: 650;
+}
+.s5-catalogue-list {
+  display: grid; gap: 9px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 218px), 1fr));
+  list-style: none; margin: 9px 0 0; padding: 0;
+}
+.s5-catalogue-list a {
+  align-items: center; background: #fff; border: 1px solid #e6ded2; border-radius: 12px;
+  color: #2b2724; display: flex; gap: 10px; height: 100%; padding: 9px; text-decoration: none;
+}
+.s5-catalogue-list a:hover { border-color: #b9aa98; }
+.s5-catalogue-list img { width: 52px; height: 52px; object-fit: contain; border-radius: 6px; }
+.s5-catalogue-copy { display: grid; gap: 3px; font-size: .85rem; line-height: 1.3; }
+.s5-catalogue-copy :is(span,small) { color: #665d54; }
 body[data-series=s5][data-fragrance-profile=visual-v1] #cx-widget .fr-note-profile{margin:3px 0 14px;padding:15px 13px 12px;border:1px solid #e4e1dc;border-radius:15px;background:linear-gradient(145deg,#fbf9f4,#fff 76%);overflow:hidden}
 body[data-series=s5][data-fragrance-profile=visual-v1] #cx-widget .fr-note-heading{display:flex;align-items:center;gap:9px;margin:0 0 13px;color:var(--cx-ink,#252a27);font-size:14px;line-height:1.3;font-weight:750;letter-spacing:-.02em}
 body[data-series=s5][data-fragrance-profile=visual-v1] #cx-widget .fr-note-symbol{display:grid;gap:3px;width:19px;flex:none;justify-items:center}

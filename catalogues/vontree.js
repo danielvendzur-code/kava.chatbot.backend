@@ -764,6 +764,234 @@ globalThis.CX_CATALOGUES.vontree = {
      "navigationGroupingIsNotOfficialFragranceFamily": true
     }
    }
+  },
+  {
+   "id": "v-amber",
+   "name": "Jantar & Levandule & Tonka",
+   "url": "https://www.vontreecandle.cz/sojova-svicka-jantar-levandule/",
+   "priceAmount": 389,
+   "price": "389 Kč",
+   "currency": "CZK",
+   "volume": "190 g · korkové víčko",
+   "category": "fragrance",
+   "kind": "Vonná svíčka",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Jantar, levandule, tonka. Na e-shopu zvolte korkové víčko.",
+   "reason": "Jantar, levandule, tonka. Na e-shopu zvolte korkové víčko.",
+   "photo": "/assets/s5/vontree/v-amber.jpg",
+   "source": {
+    "series": "s5",
+    "url": "https://www.vontreecandle.cz/sojova-svicka-jantar-levandule/",
+    "verifiedAt": "2026-11-20T10:34:27+00:00",
+    "sourceSha256": "85933f8b0a048ca65e66ab36d2a3ca558f2ebe273d44dd10c40236ebeec7000f",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "Shoptet selected lid offer",
+     "sku": "SC25-012/KOR",
+     "nativeParameterValue": "696",
+     "variantSelectionRequired": true
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 389,
+     "currency": "CZK",
+     "vatSource": "https://www.vontreecandle.cz/sojova-svicka-jantar-levandule/"
+    },
+    "packEvidence": {
+     "pack": "190 g · korkové víčko"
+    },
+    "variantSelectionRequired": true,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://cdn.myshoptet.com/usr/www.vontreecandle.cz/user/shop/big/77-2_svicka-levandule-jantar-tonka.jpg?ff=1&x=1024&y=1024&q=95&ts=661cdca6&sg=be5d3501",
+    "photoEvidence": {
+     "file": "v-amber.jpg",
+     "url": "https://cdn.myshoptet.com/usr/www.vontreecandle.cz/user/shop/big/77-2_svicka-levandule-jantar-tonka.jpg?ff=1&x=1024&y=1024&q=95&ts=661cdca6&sg=be5d3501",
+     "sha256": "0900169ba9a29803c6062a520366c146e4eb53ee6ba671e3dc77b31275b6892b",
+     "selectedPack": "190 g · korkové víčko",
+     "scope": "Official product gallery"
+    },
+    "scent": "Jantar, levandule, tonka",
+    "fragrance": {
+     "notes": [
+      "jantar",
+      "levandule",
+      "tonka"
+     ],
+     "officialFamilies": [],
+     "concentrationDisplay": "Vonná svíčka",
+     "notesEvidence": {
+      "url": "https://www.vontreecandle.cz/sojova-svicka-jantar-levandule/",
+      "sourceText": "Vonné tóny: jantar, levandule, tonka",
+      "sourceLanguage": "cs"
+     }
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.vontreecandle.cz/sojova-svicka-jantar-levandule/",
+     "sourceText": "Vonné tóny: jantar, levandule, tonka",
+     "navigationLabel": "jantar, levandule, tonka",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    },
+    "usagePurpose": "scented-candle",
+    "selectionTraits": {
+     "fragranceDirection": "warm",
+     "fragranceProfile": "v-amber"
+    }
+   }
+  },
+  {
+   "id": "v-berry",
+   "name": "Lesní ovoce",
+   "url": "https://www.vontreecandle.cz/lesni-ovoce/",
+   "priceAmount": 389,
+   "price": "389 Kč",
+   "currency": "CZK",
+   "volume": "190 g · korkové víčko",
+   "category": "fragrance",
+   "kind": "Vonná svíčka",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Jahody, maliny, rebarbora. Na e-shopu zvolte korkové víčko.",
+   "reason": "Jahody, maliny, rebarbora. Na e-shopu zvolte korkové víčko.",
+   "photo": "/assets/s5/vontree/v-berry.jpg",
+   "source": {
+    "series": "s5",
+    "url": "https://www.vontreecandle.cz/lesni-ovoce/",
+    "verifiedAt": "2026-11-20T10:34:27+00:00",
+    "sourceSha256": "421b077ae4f5dc26f6c7eaecc5d12dabe82852897cd4652cc988b1df4aac480f",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "Shoptet selected lid offer",
+     "sku": "SC25-004/KOR",
+     "nativeParameterValue": "696",
+     "variantSelectionRequired": true
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 389,
+     "currency": "CZK",
+     "vatSource": "https://www.vontreecandle.cz/lesni-ovoce/"
+    },
+    "packEvidence": {
+     "pack": "190 g · korkové víčko"
+    },
+    "variantSelectionRequired": true,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://cdn.myshoptet.com/usr/www.vontreecandle.cz/user/shop/big/53_ovocna-sojova-svicka-s-jahodami.jpg?ff=1&x=1024&y=1024&q=95&ts=69328845&sg=be5d3501",
+    "photoEvidence": {
+     "file": "v-berry.jpg",
+     "url": "https://cdn.myshoptet.com/usr/www.vontreecandle.cz/user/shop/big/53_ovocna-sojova-svicka-s-jahodami.jpg?ff=1&x=1024&y=1024&q=95&ts=69328845&sg=be5d3501",
+     "sha256": "7d7f20cdf0e8402c7963d2d106231e31f7cdb9b618ac7561324e757d9dd581f2",
+     "selectedPack": "190 g · korkové víčko",
+     "scope": "Official product gallery"
+    },
+    "scent": "Jahody, maliny, rebarbora",
+    "fragrance": {
+     "notes": [
+      "jahody",
+      "maliny",
+      "rebarbora"
+     ],
+     "officialFamilies": [],
+     "concentrationDisplay": "Vonná svíčka",
+     "notesEvidence": {
+      "url": "https://www.vontreecandle.cz/lesni-ovoce/",
+      "sourceText": "Vonné tóny: jahody, maliny, rebarbora",
+      "sourceLanguage": "cs"
+     }
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.vontreecandle.cz/lesni-ovoce/",
+     "sourceText": "Vonné tóny: jahody, maliny, rebarbora",
+     "navigationLabel": "jahody, maliny, rebarbora",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    },
+    "usagePurpose": "scented-candle",
+    "selectionTraits": {
+     "fragranceDirection": "fresh",
+     "fragranceProfile": "v-berry"
+    }
+   }
+  },
+  {
+   "id": "v-ticha",
+   "name": "Tichá noc",
+   "url": "https://www.vontreecandle.cz/sojova-vonna-svicka-ticha-noc/",
+   "priceAmount": 389,
+   "price": "389 Kč",
+   "currency": "CZK",
+   "volume": "190 g · korkové víčko",
+   "category": "fragrance",
+   "kind": "Vonná svíčka",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Cedr, tuberóza, kokosové mléko. Na e-shopu zvolte korkové víčko.",
+   "reason": "Cedr, tuberóza, kokosové mléko. Na e-shopu zvolte korkové víčko.",
+   "photo": "/assets/s5/vontree/v-ticha.jpg",
+   "source": {
+    "series": "s5",
+    "url": "https://www.vontreecandle.cz/sojova-vonna-svicka-ticha-noc/",
+    "verifiedAt": "2026-11-20T10:34:27+00:00",
+    "sourceSha256": "fc94d9dec5623d8a17d95d305db1ab031d062f33c22080b9ac93507d820bc031",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "Shoptet selected lid offer",
+     "sku": "SC25-011/KOR",
+     "nativeParameterValue": "696",
+     "variantSelectionRequired": true
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 389,
+     "currency": "CZK",
+     "vatSource": "https://www.vontreecandle.cz/sojova-vonna-svicka-ticha-noc/"
+    },
+    "packEvidence": {
+     "pack": "190 g · korkové víčko"
+    },
+    "variantSelectionRequired": true,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://cdn.myshoptet.com/usr/www.vontreecandle.cz/user/shop/big/869_sojova-svicka-ve-skle-ticha-noc.jpg?ff=1&x=1024&y=1024&q=95&ts=6922c53f&sg=be5d3501",
+    "photoEvidence": {
+     "file": "v-ticha.jpg",
+     "url": "https://cdn.myshoptet.com/usr/www.vontreecandle.cz/user/shop/big/869_sojova-svicka-ve-skle-ticha-noc.jpg?ff=1&x=1024&y=1024&q=95&ts=6922c53f&sg=be5d3501",
+     "sha256": "23bf09c98f2628b641d978fdf45c98370c9573db5a3d878139bc0b99ab0fad92",
+     "selectedPack": "190 g · korkové víčko",
+     "scope": "Official product gallery"
+    },
+    "scent": "Cedr, tuberóza, kokosové mléko",
+    "fragrance": {
+     "notes": [
+      "cedr",
+      "tuberóza",
+      "kokosové mléko"
+     ],
+     "officialFamilies": [],
+     "concentrationDisplay": "Vonná svíčka",
+     "notesEvidence": {
+      "url": "https://www.vontreecandle.cz/sojova-vonna-svicka-ticha-noc/",
+      "sourceText": "Vonné tóny: cedr, tuberóza, kokosové mléko",
+      "sourceLanguage": "cs"
+     }
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.vontreecandle.cz/sojova-vonna-svicka-ticha-noc/",
+     "sourceText": "Vonné tóny: cedr, tuberóza, kokosové mléko",
+     "navigationLabel": "cedr, tuberóza, kokosové mléko",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    },
+    "usagePurpose": "scented-candle",
+    "selectionTraits": {
+     "fragranceDirection": "woods",
+     "fragranceProfile": "v-ticha"
+    }
+   }
   }
  ],
  "revenue": {
@@ -780,6 +1008,7 @@ globalThis.CX_CATALOGUES.vontree = {
   "Six distinct source fragranceformulas; no sameformula container/size inflation. Fullretail candles, not samples.",
   "Interiorcandleuse only, no source medical/mentalhealth/sleep/pet/pregnancy/IFRA/nontoxic/smokefree/burn/magic guarantees copied.",
   "Exactsource snapshots, notliveinventory; no budgetquestion; no fake compatiblepaidaccessorycontract. MAIN owns sharedruntime/backend/integration/livePreviewQA.",
-  "Default cork190g/389CZK notwithoutlid369minimum; woodlid300g559 notOutOfStock529. Ambra title400ml/short425ml unresolved, serveunambiguous300gwax. Forest180ml has40gshort typo, notsilentlycorrected to140g. Optionalengraving is unimplemented, no prices/budgetincludingengraving claimed."
+  "Default cork190g/389CZK notwithoutlid369minimum; woodlid300g559 notOutOfStock529. Ambra title400ml/short425ml unresolved, serveunambiguous300gwax. Forest180ml has40gshort typo, notsilentlycorrected to140g. Optionalengraving is unimplemented, no prices/budgetincludingengraving claimed.",
+  "Rozšířený výběr používá ceny a balení z uvedených produktových stránek."
  ]
 };
