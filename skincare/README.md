@@ -57,3 +57,18 @@ Výběr pokrývá čtyři séra Beauty v 30ml balení. Vodná séra #1 porovnáv
 - [Řada Beauty](https://neobotanics.cz/collections/pletova-sera), [provozovatel](https://neobotanics.cz/pages/vop) · BIOCEN Laboratories s.r.o., IČO 48592633. Dlouhodobou působnost a maloobchodní distribuci dokládá [profil firmy](https://www.detail.cz/firma/48592633-biocen-laboratories-sro-ocelarska-392-9-praha/) a [nabídka řady u Dr. Max](https://www.drmax.cz/neobotanics).
 - [Katalog, ceny, sklad, fotografie a použití](neobotanics/products.js) · 20. 11. 2026. U Youth Booster je na oficiální stránce rozpor mezi popisem a INCI. Vyloučení parfemace se řídí seznamem INCI, který obsahuje Parfum.
 - Oficiální logo, Plus Jakarta Sans a modrá z balení vodného séra. Vstup je `/skincare/neobotanics/index.html`.
+
+## Kolekcia desiatich poradcov
+
+Vstup je [/skincare/gallery.html](gallery.html). Každá ukážka používa spoločné rozhranie skincare a vlastnú paletu, logo a produktové fotky z oficiálneho e-shopu. Výber pokrýva štyri produkty na značku vrátane porovnania. Ceny a dostupnosť sú z kontroly 20. 11. 2026. Zdroj stránky a fotografie je uložený pri každom produkte. Pri YEMNA sa ceny vzťahujú na vybrané plné balenia, nie na vzorky.
+
+- [LOBEY](lobey/index.html) · hydratácia, olej, rozjasnenie a vzhľad pórov
+- [Havlíkova apotéka](havlik/index.html) · séra a výrobcom odporúčaná dvojica Alabaster a Opium
+- [YAGE Organics](yage/index.html) · séra a pleťové oleje
+- [SAVON](savon/index.html) · hydratačné a peptidové sérum, olej a krém
+- [Renovality](renovality/index.html) · štyri rozdielne séra v 30 ml
+- [YEMNA](yemna/index.html) · rozjasnenie a výživnejšia textúra
+- [LucyLab](lucylab/index.html) · rozjasnenie, hydratácia a kombinácia s krémom
+- [Manufaktura](manufaktura/index.html) · sérum, krém a olej
+- [Biorythme](biorythme/index.html) · bezvodé krémy v 30 ml
+- [RYOR](ryor/index.html) · ceramidové a hyalurónové séra

@@ -21,7 +21,7 @@ export function mountAdvisor(brand, products) {
 
   function comparison(first, second) {
     const rows = [
-      ['Účel', 'purpose'], [ui('Textura'), 'texture'], [ui('Použití'), 'use'], [ui('Balení'), 'pack'], ['Cena', 'price'],
+      [ui('Účel'), 'purpose'], [ui('Textura'), 'texture'], [ui('Použití'), 'use'], [ui('Balení'), 'pack'], ['Cena', 'price'],
     ];
     return `<table class="comparison">
       <caption>${ui('Porovnání výrobků')}</caption>
@@ -117,9 +117,9 @@ export function mountAdvisor(brand, products) {
     const current = recommendations();
     const item = match[0] ?? current[0];
     const link = item ? productLink(item) : `<a href="${brand.category}" target="_blank" rel="noopener">${ui('Oficiální nabídka péče o pleť')}</a>`;
-    if (/alerg|ekzem|rosace|dermatit|tehot|kojen|akne|snas|znas|reakc/.test(text)) {
-      return `<p>${ui('Snášenlivost ani vhodnost při zdravotních potížích nemohu potvrdit.')} ${item ? `${ui('Výrobce u tohoto produktu uvádí následující složení.')} ${escape(item.suitability ?? "")}` : ui('Upřesněte název produktu a mohu dohledat uvedené složení.')}</p>
-        ${item ? `<p class="ingredients">${escape(item.inci)}</p>` : ''}<p>${link} · <a href="${brand.contact}" target="_blank" rel="noopener">Kontakt ${escape(brand.name)}</a></p>`;
+    if (/alerg|ekzem|rosace|dermatit|tehot|kojen|dojcen|akne|snas|znas|reakc/.test(text)) {
+      return `<p>${ui('Snášenlivost ani vhodnost při zdravotních potížích nemohu potvrdit.')} ${item ? escape(item.suitability ?? '') : ui('Upřesněte název produktu a mohu dohledat uvedené složení.')}</p>
+        ${item?.inci ? `<p>${ui('Výrobce u tohoto produktu uvádí následující složení.')}</p><p class="ingredients">${escape(item.inci)}</p>` : ''}<p>${link} · <a href="${brand.contact}" target="_blank" rel="noopener">Kontakt ${escape(brand.name)}</a></p>`;
     }
     if (/porovn|rozdil|rozdiel|versus|\bvs\b/.test(text)) {
       const pair = match.length === 2 ? match : match.length === 0 ? current.slice(0, 2) : [];
@@ -131,7 +131,7 @@ export function mountAdvisor(brand, products) {
     }
     if (item) {
       if (/cen[auy]|kolik stoji|kolko stoji|objem|baleni|balenie|skladem|skladom|dostupnost/.test(text)) return `<p><strong>${escape(item.title)}</strong> · ${escape(item.pack)} · ${price(item.price)}. ${ui('Stav při kontrole')} (${brand.checkedAt}) ${ui('byl skladem.')}</p><p>${link}</p>`;
-      if (/slozen|inci|obsahuje|z ceho|ingredien|parfem|vune|vona|vonu/.test(text)) return `<p><strong>${escape(item.title)}</strong></p><p>${escape(item.ingredients)}.</p><details><summary>${ui('Úplné uvedené složení')}</summary><p class="ingredients">${escape(item.inci)}</p></details><p>${link}</p>`;
+      if (/[sz]lozen|inci|obsahuje|z ceho|ingredien|parfem|vune|vona|vonu/.test(text)) return `<p><strong>${escape(item.title)}</strong></p><p>${escape(item.ingredients)}.</p>${item.inci ? `<details><summary>${ui('Úplné uvedené složení')}</summary><p class="ingredients">${escape(item.inci)}</p></details>` : ''}<p>${link}</p>`;
       if (/pouzi|nan[aá]s|(?:(?:jak|ako) .*aplik|aplikovat|aplikujte|aplikuje)|[ov]plach|textur|k cemu|na co|kazdy den/.test(text)) return `<p><strong>${escape(item.title)}</strong> · ${escape(item.texture)}.</p><p>${escape(item.use)}</p><p>${link}</p>`;
       if (match.length === 1 && (norm(item.title) === text.trim() || /^(co je|rekni mi o|povedz mi o|ukaz)/.test(text))) return `<p><strong>${escape(item.title)}</strong> · ${escape(item.pack)} · ${price(item.price)}.</p><p>${escape(item.purpose)}. ${escape(item.use)}</p><p>${link}</p>`;
     }
@@ -144,7 +144,7 @@ export function mountAdvisor(brand, products) {
         <section class="hero${state.started ? ' compact' : ''}" aria-labelledby="hero-title">
           <div class="hero-text"><p class="eyebrow">${escape(brand.name)} · ${ui('Pleťová péče')}</p><h1 id="hero-title">${escape(brand.title)}</h1><p>${escape(brand.intro)}</p>
             ${state.started ? '' : `<div class="hero-actions"><button type="button" class="button primary" data-action="start">${ui('Najít péči')} <span aria-hidden="true">→</span></button><button type="button" class="button secondary" data-action="chat">${ui('Napsat do chatu')}</button></div>`}
-          </div><div class="hero-photo"><img src="${brand.hero}" alt="${escape(brand.heroAlt)}"></div>
+          </div><div class="hero-photo${brand.heroSecondary ? ' product-pair' : ''}"><img src="${escape(brand.hero)}" alt="${escape(brand.heroAlt)}">${brand.heroSecondary && !state.started ? `<img src="${escape(brand.heroSecondary)}" alt="">` : ''}</div>
         </section>
         <section class="workspace" aria-labelledby="panel-title" ${state.started ? '' : 'hidden'}>
           <nav class="switcher" aria-label="${ui('Režim poradny')}"><button type="button" data-action="advisor" aria-pressed="${state.tab === 'advisor'}">${ui('Průvodce výběrem')}</button><button type="button" data-action="chat" aria-pressed="${state.tab === 'chat'}">Chat</button></nav>
