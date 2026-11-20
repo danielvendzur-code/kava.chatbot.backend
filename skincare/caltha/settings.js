@@ -1,0 +1,57 @@
+export const brand = {
+  name: 'CALTHA',
+  logo: './media/logo.webp',
+  shop: 'https://www.caltha.cz/',
+  category: 'https://www.caltha.cz/plet/',
+  contact: 'https://www.caltha.cz/kontakty/',
+  hero: './media/hero.webp',
+  heroAlt: 'Oficiální fotografie pleťové péče Caltha',
+  title: 'Péče o pleť podle toho, co právě hledáte.',
+  intro: 'Vyberte odličování, krém nebo hydratační sérum. Průvodce vám ukáže konkrétní produkt a pomůže porovnat rozdíly.',
+  checkedAt: '20. 11. 2026',
+  language: 'cs-CZ',
+  currency: 'CZK',
+  budgets: [200, 300, 400, 500],
+  steps: [
+    {
+      id: 'clean', name: 'Čištění a odličování', description: 'Každodenní očista, make-up nebo SPF', photo: 'milk',
+      title: 'Co má čisticí krok zvládnout?',
+      choices: [
+        { title: 'Běžné každodenní čištění', hint: 'Sametové mléko na tamponek', ids: ['milk', 'oil'], why: 'Pro každodenní čištění jste zvolili jemný způsob aplikace. Mléko se nanáší na tamponek a podle návodu se neoplachuje.' },
+        { title: 'Odstranit SPF a make-up', hint: 'Oplachovací olejová emulze', ids: ['oil'], why: 'Hledáte přípravek na SPF nebo make-up. Olea Pure je k tomuto účelu přímo určený a s vodou vytvoří mléčnou emulzi.' },
+        { title: 'Tuhý formát na cesty', hint: 'Balzám v hliníkové dóze', ids: ['balm'], why: 'Chcete tuhý odličovač na cesty. Balzám v dóze se po navlhčení používá přímo na pleť.' },
+        { title: 'Osvěžení po čištění', hint: 'Vodové tonikum ve spreji', ids: ['tonic'], why: 'Hledáte tonizaci po čištění. Bílou růži můžete nastříkat na obličej nebo použít na tamponek.' },
+      ],
+    },
+    {
+      id: 'cream', name: 'Pleťový krém', description: 'Hydratace a péče podle potřeb pleti', photo: 'melissa',
+      title: 'Co od krému čekáte?',
+      choices: [
+        { title: 'Hydrataci suché pleti', hint: 'Meduňkový nebo růžový krém', ids: ['melissa', 'rose', 'rice'], why: 'Hledáte hydrataci pro suchou pleť. Meduňková varianta spojuje lehkou texturu s avokádovým olejem a bambuckým máslem.', differences: { rose: 'Má růžovou vůni a značka jej cílí i na velmi suchou pleť.', rice: 'Výživnější varianta s rýžovým olejem a koenzymem Q10.' } },
+        { title: 'Péči o velmi suchou pleť', hint: 'Růžový krém s bambuckým máslem', ids: ['rose', 'rice'], why: 'Pro velmi suchou pleť jste zvolili výživnější péči. Růžový krém je podle výrobce určený i pro velmi suchou pleť.', differences: { rice: 'Místo růžového a mandlového základu staví na rýžovém a pupalkovém oleji a Q10.' } },
+        { title: 'Lehkou péči pro problematickou pleť', hint: 'Rychle se vstřebávající krém', ids: ['clove'], why: 'Chcete lehký krém určený pro problematickou pleť. Hřebíčkový krém má podle výrobce rychle vstřebatelnou texturu.' },
+        { title: 'Péči o jemné linky', hint: 'Kyselina hyaluronová nebo Q10', ids: ['ha', 'rice'], why: 'Hledáte krém na jemné linky s lehkou texturou. Tento obsahuje kyselinu hyaluronovou, aloe vera a arganový olej.', differences: { rice: 'Je výživnější a obsahuje koenzym Q10. Hodí se, pokud je vaše pleť také suchá.' } },
+      ],
+    },
+    {
+      id: 'serum', name: 'Hydratační sérum', description: 'Lehký krok před krémem', photo: 'serum',
+      title: 'Jaký hydratační krok hledáte?',
+      choices: [
+        { title: 'Sérum pod oblíbený krém', hint: 'Hydrokomplex s kyselinou hyaluronovou', ids: ['serum'], why: 'Chcete lehký krok, který můžete přidat pod krém. Sérum je v roll-onu a spojuje kyselinu hyaluronovou s hydratačním komplexem.' },
+        { title: 'Samostatnou hydratační péči', hint: 'Lehký krém s kyselinou hyaluronovou', ids: ['ha', 'melissa'], why: 'Hledáte jeden krok místo vrstvení. Lehký krém spojuje kyselinu hyaluronovou, aloe vera a olejovou složku.', differences: { melissa: 'Jednodušší hydratační krém pro suchou pleť s mandlovým a avokádovým olejem.' } },
+      ],
+    },
+  ],
+  routine: {
+    milk: ['milk', 'tonic'],
+    oil: ['oil', 'tonic'],
+    balm: ['balm', 'tonic'],
+    tonic: ['milk', 'tonic'],
+    melissa: ['milk', 'melissa'],
+    rose: ['milk', 'rose'],
+    clove: ['milk', 'clove'],
+    ha: ['milk', 'ha'],
+    rice: ['milk', 'rice'],
+    serum: ['milk', 'serum', 'ha'],
+  },
+};
